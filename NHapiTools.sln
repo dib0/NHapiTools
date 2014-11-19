@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{839E0755-9BDB-4C87-9905-4424BD62A874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Base", "Base\NHapiTools.Base.csproj", "{0EEC8FA4-9791-4302-AF37-F95D901D2AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V23", "Model.V23\NHapiTools.Model.V23.csproj", "{6A837FB8-2B9E-4939-BBA3-46B52D83956F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V24", "Model.V24\NHapiTools.Model.V24.csproj", "{5159ED1E-6672-4217-9EE0-20BF1C81D69D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{AEB85FC5-F9BA-46E2-8AB8-C17EFCD0F1C2}"
+	ProjectSection(SolutionItems) = preProject
+		References\NHapi.Base.dll = References\NHapi.Base.dll
+		References\NHapi.Model.V23.dll = References\NHapi.Model.V23.dll
+		References\NHapi.Model.V231.dll = References\NHapi.Model.V231.dll
+		References\NHapi.Model.V24.dll = References\NHapi.Model.V24.dll
+		References\NHapi.Model.V25.dll = References\NHapi.Model.V25.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V231", "Model.V231\NHapiTools.Model.V231.csproj", "{EA876B02-015F-4269-B05C-57569D0A0D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V25", "Model.V25\NHapiTools.Model.V25.csproj", "{A7898668-F12E-4B98-9A68-34823505F8AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.CustomImplementation.V23", "TestApp.CustomImplementation.V23\TestApp.CustomImplementation.V23.csproj", "{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4D70F3C-7FFF-4559-BBD4-0EE29D0E497F}"
+	ProjectSection(SolutionItems) = preProject
+		Release\Release notes.txt = Release\Release notes.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{839E0755-9BDB-4C87-9905-4424BD62A874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839E0755-9BDB-4C87-9905-4424BD62A874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839E0755-9BDB-4C87-9905-4424BD62A874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839E0755-9BDB-4C87-9905-4424BD62A874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEC8FA4-9791-4302-AF37-F95D901D2AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEC8FA4-9791-4302-AF37-F95D901D2AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEC8FA4-9791-4302-AF37-F95D901D2AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEC8FA4-9791-4302-AF37-F95D901D2AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A837FB8-2B9E-4939-BBA3-46B52D83956F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A837FB8-2B9E-4939-BBA3-46B52D83956F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A837FB8-2B9E-4939-BBA3-46B52D83956F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A837FB8-2B9E-4939-BBA3-46B52D83956F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5159ED1E-6672-4217-9EE0-20BF1C81D69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5159ED1E-6672-4217-9EE0-20BF1C81D69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5159ED1E-6672-4217-9EE0-20BF1C81D69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5159ED1E-6672-4217-9EE0-20BF1C81D69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA876B02-015F-4269-B05C-57569D0A0D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA876B02-015F-4269-B05C-57569D0A0D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA876B02-015F-4269-B05C-57569D0A0D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA876B02-015F-4269-B05C-57569D0A0D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7898668-F12E-4B98-9A68-34823505F8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7898668-F12E-4B98-9A68-34823505F8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7898668-F12E-4B98-9A68-34823505F8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7898668-F12E-4B98-9A68-34823505F8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

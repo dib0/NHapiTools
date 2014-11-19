@@ -181,3 +181,16 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+Output/V23/Group/GroupExtensions.cs
+Output/V23/Message/MessageExtensions.cs
+Output/V23/Segment/SegmentExtensions.cs
+Output/V231/Group/GroupExtensions.cs
+Output/V231/Message/MessageExtensions.cs
+Output/V231/Message/MessageExtensions.cs
+Output/V231/Segment/SegmentExtensions.cs
+Output/V24/Group/GroupExtensions.cs
+Output/V24/Message/MessageExtensions.cs
+Output/V24/Segment/SegmentExtensions.cs
+Output/V25/Group/GroupExtensions.cs
+Output/V25/Message/MessageExtensions.cs
+Output/V25/Segment/SegmentExtensions.cs
