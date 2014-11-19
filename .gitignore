@@ -194,3 +194,13 @@ Output/V24/Segment/SegmentExtensions.cs
 Output/V25/Group/GroupExtensions.cs
 Output/V25/Message/MessageExtensions.cs
 Output/V25/Segment/SegmentExtensions.cs
+BuildResult/NHapiTools.Base.dll
+BuildResult/NHapiTools.Base.XML
+BuildResult/NHapiTools.Model.V23.dll
+BuildResult/NHapiTools.Model.V23.XML
+BuildResult/NHapiTools.Model.V231.dll
+BuildResult/NHapiTools.Model.V231.XML
+BuildResult/NHapiTools.Model.V24.dll
+BuildResult/NHapiTools.Model.V24.XML
+BuildResult/NHapiTools.Model.V25.dll
+BuildResult/NHapiTools.Model.V25.XML

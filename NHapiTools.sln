@@ -26,7 +26,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.CustomImplementatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4D70F3C-7FFF-4559-BBD4-0EE29D0E497F}"
 	ProjectSection(SolutionItems) = preProject
-		Release\Release notes.txt = Release\Release notes.txt
+		BuildResult\Release notes.txt = BuildResult\Release notes.txt
 	EndProjectSection
 EndProject
 Global
