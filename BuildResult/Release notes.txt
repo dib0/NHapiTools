@@ -1,0 +1,30 @@
+1. Release notes NHapiTools
+The NHapiTools are tools that will make using NHapi (the open source .Net HL7 implementation) easier. NHapi has a steep learning 
+curve and not everything works as easy as it should. NHapiTools aims to improve that without tampering with NHapi itselves.
+
+2. Functionality
+- Source generation that will generate extension methods on NHapi assemblies. (some generated assemblies are provided)
+- Generic extention methods.
+- Easy IO tools for reading multiple files, implementing MLLP and filtering Base64 data reducing memory use and increasing speed.
+- Tools to generate ACK messages based on any message
+- Tools to implement custom (standard) segments (which is not possible with NHapi)
+- Default validation rules to be used by the NHapi parser
+- Two sets of context implementation to easily add all or configurable validation rules.
+
+3. Changelog
+- V1.3 Release (September 2014)
+  Fixed bug in ACK message generation for HL7 V2.3.1 messages.
+
+- V1.2 Release (March 2014)
+  Added a Simple MLLP Client class for easy client server communication. The class supports plain TCP/IP as wel as SSL (including 
+  authentication through a client certificate). Cleaned up compiler warnings (including generated code) and changed the output
+  directory in code generation from "Messages" to "Message", which is in line with the namespace.
+
+- V1.1 Release (March 2014)
+  Added stream to filter Base64 data from HL7 messages. This improves performance while parsing messages with NHapi, especially 
+  if messages contain large chunks of data.
+
+- V1.0 Release (Januari 2014)
+  First release of the NHapiTools. Containing source generation, generated extention methods for V2.3, V2.3.1, V2.4 and V2.5, 
+  MultipleFileStream, HL7MessageEnumerators, MLLP, ACK tools, support for validation rules using automated and configurable contexts and
+  standard segment override using EhancedModelClassFactory and the GenericMessageWrapper. Including test/example project.
