@@ -58,8 +58,16 @@ namespace TestApp
         private static void TestSourceGenerator()
         {
             Console.WriteLine("\n==============================================\nTesting source generation.");
+            Console.WriteLine("Generating source for V21.");
+            Generator gen = new Generator(basePath + "\\References\\NHapi.Model.V21.dll", basePath + "\\Output");
+            SpinnerWhileWaiting(gen.Generate);
+
+            Console.WriteLine("Generating source for V22.");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V22.dll", basePath + "\\Output");
+            SpinnerWhileWaiting(gen.Generate);
+
             Console.WriteLine("Generating source for V23.");
-            Generator gen = new Generator(basePath + "\\References\\NHapi.Model.V23.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V23.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V231.");
@@ -72,6 +80,10 @@ namespace TestApp
 
             Console.WriteLine("Generating source for V25.");
             gen = new Generator(basePath + "\\References\\NHapi.Model.V25.dll", basePath + "\\Output");
+            SpinnerWhileWaiting(gen.Generate);
+
+            Console.WriteLine("Generating source for V251.");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V251.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
         }
 

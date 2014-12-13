@@ -12,10 +12,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{AEB85FC5-F9BA-46E2-8AB8-C17EFCD0F1C2}"
 	ProjectSection(SolutionItems) = preProject
 		References\NHapi.Base.dll = References\NHapi.Base.dll
+		References\NHapi.Model.V21.dll = References\NHapi.Model.V21.dll
+		References\NHapi.Model.V22.dll = References\NHapi.Model.V22.dll
 		References\NHapi.Model.V23.dll = References\NHapi.Model.V23.dll
 		References\NHapi.Model.V231.dll = References\NHapi.Model.V231.dll
 		References\NHapi.Model.V24.dll = References\NHapi.Model.V24.dll
 		References\NHapi.Model.V25.dll = References\NHapi.Model.V25.dll
+		References\NHapi.Model.V251.dll = References\NHapi.Model.V251.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V231", "Model.V231\NHapiTools.Model.V231.csproj", "{EA876B02-015F-4269-B05C-57569D0A0D15}"
@@ -28,6 +31,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		BuildResult\Release notes.txt = BuildResult\Release notes.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V21", "Model.V21\NHapiTools.Model.V21.csproj", "{858AD8BD-9AC2-4C9C-8741-E143F604C402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V22", "Model.V22\NHapiTools.Model.V22.csproj", "{D095EF57-1F71-429B-9C0A-8EAAF68BD2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V251", "Model.V251\NHapiTools.Model.V251.csproj", "{E3FB387D-F2F3-4C24-9F7B-901B4BB7667A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +72,18 @@ Global
 		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EC0BC60-0BB7-414E-A8AC-CE683145AEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858AD8BD-9AC2-4C9C-8741-E143F604C402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858AD8BD-9AC2-4C9C-8741-E143F604C402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858AD8BD-9AC2-4C9C-8741-E143F604C402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858AD8BD-9AC2-4C9C-8741-E143F604C402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D095EF57-1F71-429B-9C0A-8EAAF68BD2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D095EF57-1F71-429B-9C0A-8EAAF68BD2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D095EF57-1F71-429B-9C0A-8EAAF68BD2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D095EF57-1F71-429B-9C0A-8EAAF68BD2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FB387D-F2F3-4C24-9F7B-901B4BB7667A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FB387D-F2F3-4C24-9F7B-901B4BB7667A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FB387D-F2F3-4C24-9F7B-901B4BB7667A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FB387D-F2F3-4C24-9F7B-901B4BB7667A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

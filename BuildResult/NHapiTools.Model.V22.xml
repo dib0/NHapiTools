@@ -1,0 +1,2973 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NHapiTools.Model.V22</name>
+    </assembly>
+    <members>
+        <member name="T:NHapiTools.Model.V22.Group.GroupExtensions">
+            <summary>
+            Extention methods
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R01_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORU_R01_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R01_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORU_R01_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORR_O02_ORDER)">
+            <summary>
+            Get NTE Records from ORR_O02_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORR_O02_ORDER)">
+            <summary>
+            Get all NTE Records from ORR_O02_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATUS)">
+            <summary>
+            Get NTE Records from NMD_N01_APP_STATUS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATUS)">
+            <summary>
+            Get all NTE Records from NMD_N01_APP_STATUS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get NTE Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get all NTE Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDERRecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get ORDER Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllORDERRecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get all ORDER Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATS)">
+            <summary>
+            Get NTE Records from NMD_N01_APP_STATS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATS)">
+            <summary>
+            Get all NTE Records from NMD_N01_APP_STATS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_CLOCK)">
+            <summary>
+            Get NTE Records from NMD_N01_CLOCK
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMD_N01_CLOCK)">
+            <summary>
+            Get all NTE Records from NMD_N01_CLOCK
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_PATIENT)">
+            <summary>
+            Get NTE Records from ORU_R03_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R03_PATIENT)">
+            <summary>
+            Get all NTE Records from ORU_R03_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORU_R01_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORU_R01_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Get OBSERVATION Records from ORU_R01_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Get all OBSERVATION Records from ORU_R01_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORU_R03_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORU_R03_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORU_R03_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORU_R03_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Get OBSERVATION Records from ORU_R03_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Get all OBSERVATION Records from ORU_R03_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R01_PATIENT)">
+            <summary>
+            Get NTE Records from ORU_R01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R01_PATIENT)">
+            <summary>
+            Get all NTE Records from ORU_R01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORM_O01_PATIENT)">
+            <summary>
+            Get NTE Records from ORM_O01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORM_O01_PATIENT)">
+            <summary>
+            Get all NTE Records from ORM_O01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_PATIENT_RESULT)">
+            <summary>
+            Get ORDER_OBSERVATION Records from ORU_R03_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_PATIENT_RESULT)">
+            <summary>
+            Get all ORDER_OBSERVATION Records from ORU_R03_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNK1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get NK1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNK1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all NK1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get OBX Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all OBX Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAL1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get AL1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllAL1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all AL1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetDG1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get DG1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllDG1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all DG1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetPR1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get PR1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllPR1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all PR1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetGT1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get GT1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllGT1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all GT1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetINSURANCERecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get INSURANCE Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Get all INSURANCE Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_PATIENT_RESULT)">
+            <summary>
+            Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_PATIENT_RESULT)">
+            <summary>
+            Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORF_R04_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORF_R04_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORF_R04_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Get NTE Records from ORF_R04_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Get all NTE Records from ORF_R04_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Get OBSERVATION Records from ORF_R04_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBSERVATIONRecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Get all OBSERVATION Records from ORF_R04_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get NTE Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get all NTE Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get NTE2 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTE2Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get all NTE2 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE3Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get NTE3 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTE3Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Get all NTE3 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get NTE Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all NTE Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get OBX Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all OBX Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get NTE2 Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTE2Records(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all NTE2 Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_QUERY_RESPONSE)">
+            <summary>
+            Get NTE Records from ORF_R04_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORF_R04_QUERY_RESPONSE)">
+            <summary>
+            Get all NTE Records from ORF_R04_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get OBX Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all OBX Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAL1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get AL1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllAL1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all AL1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetDG1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get DG1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllDG1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all DG1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetPR1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get PR1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllPR1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all PR1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetGT1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get GT1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllGT1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all GT1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNK1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get NK1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNK1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all NK1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetINSURANCERecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get INSURANCE Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Get all INSURANCE Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="T:NHapiTools.Model.V22.Message.MessageExtensions">
+            <summary>
+            Message extention methods
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetVISITRecords(NHapi.Model.V22.Message.BAR_P01)">
+            <summary>
+            Get VISIT Records from BAR_P01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllVISITRecords(NHapi.Model.V22.Message.BAR_P01)">
+            <summary>
+            Get all VISIT Records from BAR_P01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATS_WITH_NOTES_ALTRecords(NHapi.Model.V22.Message.NMR_N02)">
+            <summary>
+            Get CLOCK_AND_STATS_WITH_NOTES_ALT Records from NMR_N02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllCLOCK_AND_STATS_WITH_NOTES_ALTRecords(NHapi.Model.V22.Message.NMR_N02)">
+            <summary>
+            Get all CLOCK_AND_STATS_WITH_NOTES_ALT Records from NMR_N02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R03)">
+            <summary>
+            Get PATIENT_RESULT Records from ORU_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R03)">
+            <summary>
+            Get all PATIENT_RESULT Records from ORU_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATS_WITH_NOTESRecords(NHapi.Model.V22.Message.NMD_N01)">
+            <summary>
+            Get CLOCK_AND_STATS_WITH_NOTES Records from NMD_N01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllCLOCK_AND_STATS_WITH_NOTESRecords(NHapi.Model.V22.Message.NMD_N01)">
+            <summary>
+            Get all CLOCK_AND_STATS_WITH_NOTES Records from NMD_N01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Get OBX Records from DFT_P03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Get all OBX Records from DFT_P03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetFT1Records(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Get FT1 Records from DFT_P03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllFT1Records(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Get all FT1 Records from DFT_P03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M03)">
+            <summary>
+            Get MFA Records from MFD_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFD_M03)">
+            <summary>
+            Get all MFA Records from MFD_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Get OBX Records from ADT_A09
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Get all OBX Records from ADT_A09
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Get DG1 Records from ADT_A09
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Get all DG1 Records from ADT_A09
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R01)">
+            <summary>
+            Get PATIENT_RESULT Records from ORU_R01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R01)">
+            <summary>
+            Get all PATIENT_RESULT Records from ORU_R01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_TESTRecords(NHapi.Model.V22.Message.MFR_M03)">
+            <summary>
+            Get MF_TEST Records from MFR_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMF_TESTRecords(NHapi.Model.V22.Message.MFR_M03)">
+            <summary>
+            Get all MF_TEST Records from MFR_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M02)">
+            <summary>
+            Get MFA Records from MFD_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFD_M02)">
+            <summary>
+            Get all MFA Records from MFD_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get NK1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all NK1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get OBX Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all OBX Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get AL1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all AL1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get DG1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all DG1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get PR1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all PR1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get GT1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all GT1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get INSURANCE Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Get all INSURANCE Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNTERecords(NHapi.Model.V22.Message.ORR_O02)">
+            <summary>
+            Get NTE Records from ORR_O02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNTERecords(NHapi.Model.V22.Message.ORR_O02)">
+            <summary>
+            Get all NTE Records from ORR_O02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_STAFFRecords(NHapi.Model.V22.Message.MFR_M02)">
+            <summary>
+            Get MF_STAFF Records from MFR_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMF_STAFFRecords(NHapi.Model.V22.Message.MFR_M02)">
+            <summary>
+            Get all MF_STAFF Records from MFR_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M01)">
+            <summary>
+            Get MFA Records from MFD_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFD_M01)">
+            <summary>
+            Get all MFA Records from MFD_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A29)">
+            <summary>
+            Get OBX Records from ADT_A29
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A29)">
+            <summary>
+            Get all OBX Records from ADT_A29
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get NK1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all NK1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get OBX Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all OBX Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get AL1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all AL1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get DG1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all DG1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get PR1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all PR1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get GT1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all GT1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get INSURANCE Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Get all INSURANCE Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFRecords(NHapi.Model.V22.Message.MFR_M01)">
+            <summary>
+            Get MF Records from MFR_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFRecords(NHapi.Model.V22.Message.MFR_M01)">
+            <summary>
+            Get all MF Records from MFR_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get NK1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all NK1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get OBX Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all OBX Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get AL1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all AL1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get DG1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all DG1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get PR1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all PR1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get GT1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all GT1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get INSURANCE Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Get all INSURANCE Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Get OBX Records from ADT_A17
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Get all OBX Records from ADT_A17
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBX2Records(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Get OBX2 Records from ADT_A17
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBX2Records(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Get all OBX2 Records from ADT_A17
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get NK1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all NK1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get OBX Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all OBX Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get AL1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all AL1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get DG1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all DG1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get PR1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all PR1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get GT1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all GT1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get INSURANCE Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Get all INSURANCE Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A27)">
+            <summary>
+            Get OBX Records from ADT_A27
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A27)">
+            <summary>
+            Get all OBX Records from ADT_A27
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Get OBX Records from ADT_A16
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Get all OBX Records from ADT_A16
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Get DG1 Records from ADT_A16
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Get all DG1 Records from ADT_A16
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get NK1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all NK1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get OBX Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all OBX Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get AL1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all AL1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get DG1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all DG1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get PR1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all PR1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get GT1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all GT1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get INSURANCE Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Get all INSURANCE Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A26)">
+            <summary>
+            Get OBX Records from ADT_A26
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A26)">
+            <summary>
+            Get all OBX Records from ADT_A26
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Get OBX Records from ADT_A15
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Get all OBX Records from ADT_A15
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Get DG1 Records from ADT_A15
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Get all DG1 Records from ADT_A15
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get NK1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all NK1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get OBX Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all OBX Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get AL1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all AL1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get DG1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all DG1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get PR1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all PR1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get GT1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all GT1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get INSURANCE Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Get all INSURANCE Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A25)">
+            <summary>
+            Get OBX Records from ADT_A25
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A25)">
+            <summary>
+            Get all OBX Records from ADT_A25
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get NK1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all NK1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get OBX Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all OBX Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get AL1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all AL1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get DG1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all DG1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get PR1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all PR1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get GT1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all GT1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get INSURANCE Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Get all INSURANCE Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A03)">
+            <summary>
+            Get OBX Records from ADT_A03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A03)">
+            <summary>
+            Get all OBX Records from ADT_A03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNTERecords(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Get NTE Records from ORM_O01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNTERecords(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Get all NTE Records from ORM_O01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetORDERRecords(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Get ORDER Records from ORM_O01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllORDERRecords(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Get all ORDER Records from ORM_O01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get NK1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all NK1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get OBX Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all OBX Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get AL1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all AL1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get DG1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all DG1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get PR1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all PR1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get GT1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all GT1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get INSURANCE Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Get all INSURANCE Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A02)">
+            <summary>
+            Get OBX Records from ADT_A02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A02)">
+            <summary>
+            Get all OBX Records from ADT_A02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_R03)">
+            <summary>
+            Get DSP Records from DSR_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_R03)">
+            <summary>
+            Get all DSP Records from DSR_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetQUERY_RESPONSERecords(NHapi.Model.V22.Message.ARD_A19)">
+            <summary>
+            Get QUERY_RESPONSE Records from ARD_A19
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllQUERY_RESPONSERecords(NHapi.Model.V22.Message.ARD_A19)">
+            <summary>
+            Get all QUERY_RESPONSE Records from ARD_A19
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A23)">
+            <summary>
+            Get OBX Records from ADT_A23
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A23)">
+            <summary>
+            Get all OBX Records from ADT_A23
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Get OBX Records from ADT_A12
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Get all OBX Records from ADT_A12
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Get DG1 Records from ADT_A12
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Get all DG1 Records from ADT_A12
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get NK1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all NK1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get OBX Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all OBX Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get AL1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all AL1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get DG1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all DG1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get PR1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all PR1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get GT1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all GT1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get INSURANCE Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Get all INSURANCE Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetQUERY_RESPONSERecords(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Get QUERY_RESPONSE Records from ORF_R04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllQUERY_RESPONSERecords(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Get all QUERY_RESPONSE Records from ORF_R04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetORDERRecords(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Get ORDER Records from ORF_R04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllORDERRecords(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Get all ORDER Records from ORF_R04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATISTICSRecords(NHapi.Model.V22.Message.NMQ_N02)">
+            <summary>
+            Get CLOCK_AND_STATISTICS Records from NMQ_N02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllCLOCK_AND_STATISTICSRecords(NHapi.Model.V22.Message.NMQ_N02)">
+            <summary>
+            Get all CLOCK_AND_STATISTICS Records from NMQ_N02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M03)">
+            <summary>
+            Get MFA Records from MFK_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFK_M03)">
+            <summary>
+            Get all MFA Records from MFK_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_Q03)">
+            <summary>
+            Get DSP Records from DSR_Q03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_Q03)">
+            <summary>
+            Get all DSP Records from DSR_Q03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_P04)">
+            <summary>
+            Get DSP Records from DSR_P04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_P04)">
+            <summary>
+            Get all DSP Records from DSR_P04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A33)">
+            <summary>
+            Get OBX Records from ADT_A33
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A33)">
+            <summary>
+            Get all OBX Records from ADT_A33
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A22)">
+            <summary>
+            Get OBX Records from ADT_A22
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A22)">
+            <summary>
+            Get all OBX Records from ADT_A22
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Get OBX Records from ADT_A11
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Get all OBX Records from ADT_A11
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Get DG1 Records from ADT_A11
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Get all DG1 Records from ADT_A11
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_TESTRecords(NHapi.Model.V22.Message.MFN_M03)">
+            <summary>
+            Get MF_TEST Records from MFN_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMF_TESTRecords(NHapi.Model.V22.Message.MFN_M03)">
+            <summary>
+            Get all MF_TEST Records from MFN_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M02)">
+            <summary>
+            Get MFA Records from MFK_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFK_M02)">
+            <summary>
+            Get all MFA Records from MFK_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A32)">
+            <summary>
+            Get OBX Records from ADT_A32
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A32)">
+            <summary>
+            Get all OBX Records from ADT_A32
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A21)">
+            <summary>
+            Get OBX Records from ADT_A21
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A21)">
+            <summary>
+            Get all OBX Records from ADT_A21
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Get OBX Records from ADT_A10
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Get all OBX Records from ADT_A10
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Get DG1 Records from ADT_A10
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Get all DG1 Records from ADT_A10
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.UDM_Q05)">
+            <summary>
+            Get DSP Records from UDM_Q05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.UDM_Q05)">
+            <summary>
+            Get all DSP Records from UDM_Q05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_STAFFRecords(NHapi.Model.V22.Message.MFN_M02)">
+            <summary>
+            Get MF_STAFF Records from MFN_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMF_STAFFRecords(NHapi.Model.V22.Message.MFN_M02)">
+            <summary>
+            Get all MF_STAFF Records from MFN_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M01)">
+            <summary>
+            Get MFA Records from MFK_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFK_M01)">
+            <summary>
+            Get all MFA Records from MFK_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_Q01)">
+            <summary>
+            Get DSP Records from DSR_Q01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_Q01)">
+            <summary>
+            Get all DSP Records from DSR_Q01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get NK1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all NK1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get OBX Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all OBX Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get AL1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all AL1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get DG1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all DG1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get PR1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all PR1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get GT1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all GT1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get INSURANCE Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Get all INSURANCE Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFRecords(NHapi.Model.V22.Message.MFN_M01)">
+            <summary>
+            Get MF Records from MFN_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFRecords(NHapi.Model.V22.Message.MFN_M01)">
+            <summary>
+            Get all MF Records from MFN_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENTRecords(NHapi.Model.V22.Message.BAR_P02)">
+            <summary>
+            Get PATIENT Records from BAR_P02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPATIENTRecords(NHapi.Model.V22.Message.BAR_P02)">
+            <summary>
+            Get all PATIENT Records from BAR_P02
+            </summary>
+        </member>
+        <member name="T:NHapiTools.Model.V22.Segment.SegmentExtensions">
+            <summary>
+            Extention methods
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhoSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get RUWhoSubjectDefinition Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhoSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get all RUWhoSubjectDefinition Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get RUWhatSubjectDefinition Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhatSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get all RUWhatSubjectDefinition Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatDepartmentCodeRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get RUWhatDepartmentCode Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhatDepartmentCodeRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get all RUWhatDepartmentCode Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDisplayPrintLocationsRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get RUDisplayPrintLocations Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUDisplayPrintLocationsRecords(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Get all RUDisplayPrintLocations Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode2430Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get ConditionCode2430 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllConditionCode2430Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all ConditionCode2430 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode3941Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get ValueAmountAndCode3941 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllValueAmountAndCode3941Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all ValueAmountAndCode3941 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceCodeAndDate3235Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get OccurrenceCodeAndDate3235 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOccurrenceCodeAndDate3235Records(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all OccurrenceCodeAndDate3235 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceSpanCodeDatesRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get OccurrenceSpanCodeDates Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOccurrenceSpanCodeDatesRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all OccurrenceSpanCodeDates Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator2StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get UB92Locator2State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator2StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all UB92Locator2State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator11StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get UB92Locator11State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator11StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all UB92Locator11State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDocumentControlNumberRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get DocumentControlNumber Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDocumentControlNumberRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all DocumentControlNumber Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator49NationalRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get UB92Locator49National Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator49NationalRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all UB92Locator49National Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator56StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get UB92Locator56State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator56StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all UB92Locator56State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator78StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get UB92Locator78State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator78StateRecords(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Get all UB92Locator78State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSIConversionFactorRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get SIConversionFactor Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllSIConversionFactorRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get all SIConversionFactor Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReferenceNormalRangeOrdinalContinuousObservationsRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get ReferenceNormalRangeOrdinalContinuousObservations Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReferenceNormalRangeOrdinalContinuousObservationsRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get all ReferenceNormalRangeOrdinalContinuousObservations Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDeltaCheckCriteriaRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get DeltaCheckCriteria Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDeltaCheckCriteriaRecords(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Get all DeltaCheckCriteria Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberRecords(NHapi.Model.V22.Segment.NK1)">
+            <summary>
+            Get PhoneNumber Records from NK1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberRecords(NHapi.Model.V22.Segment.NK1)">
+            <summary>
+            Get all PhoneNumber Records from NK1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDiagnosisCodeRecords(NHapi.Model.V22.Segment.FT1)">
+            <summary>
+            Get DiagnosisCode Records from FT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDiagnosisCodeRecords(NHapi.Model.V22.Segment.FT1)">
+            <summary>
+            Get all DiagnosisCode Records from FT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode3539Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get ConditionCode3539 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllConditionCode3539Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get all ConditionCode3539 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode4649Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get ValueAmountAndCode4649 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllValueAmountAndCode4649Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get all ValueAmountAndCode4649 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrence2832Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get Occurrence2832 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOccurrence2832Records(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Get all Occurrence2832 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPermittedDataTypesRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get PermittedDataTypes Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPermittedDataTypesRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all PermittedDataTypes Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherNamesRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get OtherNames Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOtherNamesRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all OtherNames Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetIdentityOfInstrumentUsedToPerformThisStudyRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get IdentityOfInstrumentUsedToPerformThisStudy Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllIdentityOfInstrumentUsedToPerformThisStudyRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all IdentityOfInstrumentUsedToPerformThisStudy Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCodedRepresentationOfMethodRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get CodedRepresentationOfMethod Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCodedRepresentationOfMethodRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all CodedRepresentationOfMethod Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationProducingDepartmentSectionRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get ObservationProducingDepartmentSection Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllObservationProducingDepartmentSectionRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all ObservationProducingDepartmentSection Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcessingPriorityRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get ProcessingPriority Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcessingPriorityRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all ProcessingPriority Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOutsideSiteSWhereObservationMayBePerformedRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get OutsideSiteSWhereObservationMayBePerformed Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOutsideSiteSWhereObservationMayBePerformedRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all OutsideSiteSWhereObservationMayBePerformed Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAddressOfOutsideSiteSRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get AddressOfOutsideSiteS Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAddressOfOutsideSiteSRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all AddressOfOutsideSiteS Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberOfOutsideSiteRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get PhoneNumberOfOutsideSite Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberOfOutsideSiteRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all PhoneNumberOfOutsideSite Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationsRequiredToInterpretTheObservationRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get ObservationsRequiredToInterpretTheObservation Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllObservationsRequiredToInterpretTheObservationRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all ObservationsRequiredToInterpretTheObservation Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContraindicationsToObservationsRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get ContraindicationsToObservations Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContraindicationsToObservationsRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all ContraindicationsToObservations Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReflexTestsObservationsRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get ReflexTestsObservations Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReflexTestsObservationsRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all ReflexTestsObservations Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFixedCannedMessageRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get FixedCannedMessage Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllFixedCannedMessageRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all FixedCannedMessage Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestObservationPerformanceScheduleRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get TestObservationPerformanceSchedule Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTestObservationPerformanceScheduleRecords(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Get all TestObservationPerformanceSchedule Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhereSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUWhereSubjectDefinition Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhereSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUWhereSubjectDefinition Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatUserQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUWhatUserQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhatUserQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUWhatUserQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUOtherResultsSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUOtherResultsSubjectDefinition Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUOtherResultsSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUOtherResultsSubjectDefinition Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUWhichDateTimeQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUWhichDateTimeQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUWhichDateTimeStatusQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUWhichDateTimeStatusQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get RUDateTimeSelectionQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Get all RUDateTimeSelectionQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffIDCodeRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get StaffIDCode Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllStaffIDCodeRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all StaffIDCode Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffTypeRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get StaffType Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllStaffTypeRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all StaffType Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDepartmentRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get Department Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDepartmentRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all Department Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServiceRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get Service Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServiceRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all Service Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get Phone Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all Phone Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOfficeHomeAddressRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get OfficeHomeAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOfficeHomeAddressRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all OfficeHomeAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetActivationDateRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get ActivationDate Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllActivationDateRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all ActivationDate Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInactivationDateRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get InactivationDate Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllInactivationDateRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all InactivationDate Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetBackupPersonIDRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get BackupPersonID Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllBackupPersonIDRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all BackupPersonID Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetEMailAddressRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get EMailAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllEMailAddressRecords(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Get all EMailAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhereSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get WhereSubjectFilter Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhereSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all WhereSubjectFilter Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatUserQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get WhatUserQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatUserQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all WhatUserQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherQRYSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get OtherQRYSubjectFilter Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOtherQRYSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all OtherQRYSubjectFilter Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get WhichDateTimeQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all WhichDateTimeQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get WhichDateTimeStatusQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all WhichDateTimeStatusQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get DateTimeSelectionQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Get all DateTimeSelectionQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetErrorCodeAndLocationRecords(NHapi.Model.V22.Segment.ERR)">
+            <summary>
+            Get ErrorCodeAndLocation Records from ERR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllErrorCodeAndLocationRecords(NHapi.Model.V22.Segment.ERR)">
+            <summary>
+            Get all ErrorCodeAndLocation Records from ERR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhoSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get WhoSubjectFilter Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhoSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get all WhoSubjectFilter Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get WhatSubjectFilter Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get all WhatSubjectFilter Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDepartmentDataCodeRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get WhatDepartmentDataCode Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatDepartmentDataCodeRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get all WhatDepartmentDataCode Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDataCodeValueQualifierRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get WhatDataCodeValueQualifier Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatDataCodeValueQualifierRecords(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Get all WhatDataCodeValueQualifier Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAbnormalFlagsRecords(NHapi.Model.V22.Segment.OBX)">
+            <summary>
+            Get AbnormalFlags Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAbnormalFlagsRecords(NHapi.Model.V22.Segment.OBX)">
+            <summary>
+            Get all AbnormalFlags Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodingMethodRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get ProcedureCodingMethod Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedureCodingMethodRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get all ProcedureCodingMethod Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodeRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get ProcedureCode Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedureCodeRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get all ProcedureCode Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureDescriptionRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get ProcedureDescription Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedureDescriptionRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get all ProcedureDescription Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedurePractitionerRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get ProcedurePractitioner Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedurePractitionerRecords(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Get all ProcedurePractitioner Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Get QuantityTiming Records from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Get all QuantityTiming Records from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPharmacySpecialAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Get PharmacySpecialAdministrationInstructions Records from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPharmacySpecialAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Get all PharmacySpecialAdministrationInstructions Records from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationContactPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get CertificationContactPhoneNumber Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCertificationContactPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get all CertificationContactPhoneNumber Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationAgencyPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get CertificationAgencyPhoneNumber Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCertificationAgencyPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get all CertificationAgencyPhoneNumber Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPreCertificationRequiredWindowRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get PreCertificationRequiredWindow Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPreCertificationRequiredWindowRecords(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Get all PreCertificationRequiredWindow Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetBatchTotalsRecords(NHapi.Model.V22.Segment.BTS)">
+            <summary>
+            Get BatchTotals Records from BTS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllBatchTotalsRecords(NHapi.Model.V22.Segment.BTS)">
+            <summary>
+            Get all BatchTotals Records from BTS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Get QuantityTiming Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Get all QuantityTiming Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCallBackPhoneNumberRecords(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Get CallBackPhoneNumber Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCallBackPhoneNumberRecords(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Get all CallBackPhoneNumber Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNonCoveredInsuranceCodeRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get NonCoveredInsuranceCode Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllNonCoveredInsuranceCodeRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get all NonCoveredInsuranceCode Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRoomCoverageTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get RoomCoverageTypeAmount Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRoomCoverageTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get all RoomCoverageTypeAmount Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPolicyTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get PolicyTypeAmount Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPolicyTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Get all PolicyTypeAmount Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Get QuantityTiming Records from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Get all QuantityTiming Records from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Get ProviderSAdministrationInstructions Records from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Get all ProviderSAdministrationInstructions Records from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientValuablesRecords(NHapi.Model.V22.Segment.PV2)">
+            <summary>
+            Get PatientValuables Records from PV2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientValuablesRecords(NHapi.Model.V22.Segment.PV2)">
+            <summary>
+            Get all PatientValuables Records from PV2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerGroupRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get PractitionerGroup Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPractitionerGroupRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get all PractitionerGroup Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerCategoryRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get PractitionerCategory Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPractitionerCategoryRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get all PractitionerCategory Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecialtyRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get Specialty Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllSpecialtyRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get all Specialty Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerIDNumbersRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get PractitionerIDNumbers Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPractitionerIDNumbersRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get all PractitionerIDNumbers Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrivilegesRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get Privileges Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPrivilegesRecords(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Get all Privileges Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCommentRecords(NHapi.Model.V22.Segment.NTE)">
+            <summary>
+            Get Comment Records from NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCommentRecords(NHapi.Model.V22.Segment.NTE)">
+            <summary>
+            Get all Comment Records from NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInsuranceCompanyPhoneNumberRecords(NHapi.Model.V22.Segment.IN1)">
+            <summary>
+            Get InsuranceCompanyPhoneNumber Records from IN1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllInsuranceCompanyPhoneNumberRecords(NHapi.Model.V22.Segment.IN1)">
+            <summary>
+            Get all InsuranceCompanyPhoneNumber Records from IN1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDispenseNotesRecords(NHapi.Model.V22.Segment.RXD)">
+            <summary>
+            Get DispenseNotes Records from RXD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDispenseNotesRecords(NHapi.Model.V22.Segment.RXD)">
+            <summary>
+            Get all DispenseNotes Records from RXD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConsultingDoctorRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get ConsultingDoctor Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllConsultingDoctorRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all ConsultingDoctor Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAmbulatoryStatusRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get AmbulatoryStatus Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAmbulatoryStatusRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all AmbulatoryStatus Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFinancialClassRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get FinancialClass Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllFinancialClassRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all FinancialClass Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractCodeRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get ContractCode Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractCodeRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all ContractCode Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractEffectiveDateRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get ContractEffectiveDate Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractEffectiveDateRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all ContractEffectiveDate Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractAmountRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get ContractAmount Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractAmountRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all ContractAmount Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractPeriodRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get ContractPeriod Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractPeriodRecords(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Get all ContractPeriod Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Get ServicePeriod Records from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServicePeriodRecords(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Get all ServicePeriod Records from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Get TextInstruction Records from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTextInstructionRecords(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Get all TextInstruction Records from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCollectorIdentifierRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get CollectorIdentifier Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCollectorIdentifierRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all CollectorIdentifier Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOrderCallbackPhoneNumberRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get OrderCallbackPhoneNumber Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOrderCallbackPhoneNumberRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all OrderCallbackPhoneNumber Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get QuantityTiming Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all QuantityTiming Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetResultCopiesToRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get ResultCopiesTo Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllResultCopiesToRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all ResultCopiesTo Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReasonForStudyRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get ReasonForStudy Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReasonForStudyRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all ReasonForStudy Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAssistantResultInterpreterRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get AssistantResultInterpreter Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAssistantResultInterpreterRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all AssistantResultInterpreter Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTechnicianRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get Technician Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTechnicianRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all Technician Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTranscriptionistRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get Transcriptionist Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTranscriptionistRecords(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Get all Transcriptionist Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get ServicePeriod Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServicePeriodRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get all ServicePeriod Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDietSupplementOrPreferenceCodeRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get DietSupplementOrPreferenceCode Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDietSupplementOrPreferenceCodeRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get all DietSupplementOrPreferenceCode Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get TextInstruction Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTextInstructionRecords(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Get all TextInstruction Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFE)">
+            <summary>
+            Get PrimaryKeyValue Records from MFE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFE)">
+            <summary>
+            Get all PrimaryKeyValue Records from MFE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientIDInternalIDRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get PatientIDInternalID Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientIDInternalIDRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all PatientIDInternalID Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAliasRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get PatientAlias Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientAliasRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all PatientAlias Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAddressRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get PatientAddress Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientAddressRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all PatientAddress Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberHomeRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get PhoneNumberHome Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberHomeRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all PhoneNumberHome Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get PhoneNumberBusiness Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all PhoneNumberBusiness Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCitizenshipRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get Citizenship Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCitizenshipRecords(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Get all Citizenship Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestsObservationsIncludedWithinAnOrderedTestBatteryRecords(NHapi.Model.V22.Segment.OM5)">
+            <summary>
+            Get TestsObservationsIncludedWithinAnOrderedTestBattery Records from OM5
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTestsObservationsIncludedWithinAnOrderedTestBatteryRecords(NHapi.Model.V22.Segment.OM5)">
+            <summary>
+            Get all TestsObservationsIncludedWithinAnOrderedTestBattery Records from OM5
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSPharmacyInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Get ProviderSPharmacyInstructions Records from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProviderSPharmacyInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Get all ProviderSPharmacyInstructions Records from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Get ProviderSAdministrationInstructions Records from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Get all ProviderSAdministrationInstructions Records from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecimenPrioritiesRecords(NHapi.Model.V22.Segment.OM4)">
+            <summary>
+            Get SpecimenPriorities Records from OM4
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllSpecimenPrioritiesRecords(NHapi.Model.V22.Segment.OM4)">
+            <summary>
+            Get all SpecimenPriorities Records from OM4
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValidCodedAnswersRecords(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Get ValidCodedAnswers Records from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllValidCodedAnswersRecords(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Get all ValidCodedAnswers Records from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNormalTestCodesForCategoricalObservationsRecords(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Get NormalTestCodesForCategoricalObservations Records from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllNormalTestCodesForCategoricalObservationsRecords(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Get all NormalTestCodesForCategoricalObservations Records from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFA)">
+            <summary>
+            Get PrimaryKeyValue Records from MFA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFA)">
+            <summary>
+            Get all PrimaryKeyValue Records from MFA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberHomeRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get GuarantorPhoneNumberHome Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllGuarantorPhoneNumberHomeRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get all GuarantorPhoneNumberHome Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get GuarantorPhoneNumberBusiness Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllGuarantorPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get all GuarantorPhoneNumberBusiness Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorEmployPhoneNumberRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get GuarantorEmployPhoneNumber Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllGuarantorEmployPhoneNumberRecords(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Get all GuarantorEmployPhoneNumber Records from GT1
+            </summary>
+        </member>
+    </members>
+</doc>
