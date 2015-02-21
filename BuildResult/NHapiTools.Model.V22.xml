@@ -19,6 +19,11 @@
             Get all NTE Records from ORU_R01_OBSERVATION
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R01_OBSERVATION)">
+            <summary>
+            Add a new ORU_R01_OBSERVATION to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORR_O02_ORDER)">
             <summary>
             Get NTE Records from ORR_O02_ORDER
@@ -27,6 +32,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORR_O02_ORDER)">
             <summary>
             Get all NTE Records from ORR_O02_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORR_O02_ORDER)">
+            <summary>
+            Add a new ORR_O02_ORDER to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATUS)">
@@ -39,6 +49,11 @@
             Get all NTE Records from NMD_N01_APP_STATUS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.NMD_N01_APP_STATUS)">
+            <summary>
+            Add a new NMD_N01_APP_STATUS to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
             <summary>
             Get NTE Records from ORR_O02_PATIENT
@@ -47,6 +62,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
             <summary>
             Get all NTE Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Add a new ORR_O02_PATIENT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDERRecords(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
@@ -59,6 +79,11 @@
             Get all ORDER Records from ORR_O02_PATIENT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddORDER(NHapi.Model.V22.Group.ORR_O02_PATIENT)">
+            <summary>
+            Add a new ORR_O02_PATIENT to ORDER
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATS)">
             <summary>
             Get NTE Records from NMD_N01_APP_STATS
@@ -67,6 +92,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMD_N01_APP_STATS)">
             <summary>
             Get all NTE Records from NMD_N01_APP_STATS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.NMD_N01_APP_STATS)">
+            <summary>
+            Add a new NMD_N01_APP_STATS to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMD_N01_CLOCK)">
@@ -79,6 +109,11 @@
             Get all NTE Records from NMD_N01_CLOCK
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.NMD_N01_CLOCK)">
+            <summary>
+            Add a new NMD_N01_CLOCK to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_PATIENT)">
             <summary>
             Get NTE Records from ORU_R03_PATIENT
@@ -87,6 +122,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R03_PATIENT)">
             <summary>
             Get all NTE Records from ORU_R03_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R03_PATIENT)">
+            <summary>
+            Add a new ORU_R03_PATIENT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
@@ -99,6 +139,11 @@
             Get all NTE Records from ORU_R01_ORDER_OBSERVATION
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Add a new ORU_R01_ORDER_OBSERVATION to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
             <summary>
             Get OBSERVATION Records from ORU_R01_ORDER_OBSERVATION
@@ -107,6 +152,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
             <summary>
             Get all OBSERVATION Records from ORU_R01_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBSERVATION(NHapi.Model.V22.Group.ORU_R01_ORDER_OBSERVATION)">
+            <summary>
+            Add a new ORU_R01_ORDER_OBSERVATION to OBSERVATION
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_OBSERVATION)">
@@ -119,6 +169,11 @@
             Get all NTE Records from ORU_R03_OBSERVATION
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Add a new ORU_R03_OBSERVATION to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
             <summary>
             Get NTE Records from ORU_R03_ORDER_OBSERVATION
@@ -127,6 +182,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
             <summary>
             Get all NTE Records from ORU_R03_ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Add a new ORU_R03_ORDER_OBSERVATION to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
@@ -139,6 +199,11 @@
             Get all OBSERVATION Records from ORU_R03_ORDER_OBSERVATION
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBSERVATION(NHapi.Model.V22.Group.ORU_R03_ORDER_OBSERVATION)">
+            <summary>
+            Add a new ORU_R03_ORDER_OBSERVATION to OBSERVATION
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORU_R01_PATIENT)">
             <summary>
             Get NTE Records from ORU_R01_PATIENT
@@ -147,6 +212,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORU_R01_PATIENT)">
             <summary>
             Get all NTE Records from ORU_R01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORU_R01_PATIENT)">
+            <summary>
+            Add a new ORU_R01_PATIENT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORM_O01_PATIENT)">
@@ -159,6 +229,11 @@
             Get all NTE Records from ORM_O01_PATIENT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORM_O01_PATIENT)">
+            <summary>
+            Add a new ORM_O01_PATIENT to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_PATIENT_RESULT)">
             <summary>
             Get ORDER_OBSERVATION Records from ORU_R03_PATIENT_RESULT
@@ -167,6 +242,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R03_PATIENT_RESULT)">
             <summary>
             Get all ORDER_OBSERVATION Records from ORU_R03_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddORDER_OBSERVATION(NHapi.Model.V22.Group.ORU_R03_PATIENT_RESULT)">
+            <summary>
+            Add a new ORU_R03_PATIENT_RESULT to ORDER_OBSERVATION
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNK1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
@@ -179,6 +259,11 @@
             Get all NK1 Records from ARD_A19_QUERY_RESPONSE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNK1(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get OBX Records from ARD_A19_QUERY_RESPONSE
@@ -187,6 +272,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get all OBX Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBX(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAL1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
@@ -199,6 +289,11 @@
             Get all AL1 Records from ARD_A19_QUERY_RESPONSE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddAL1(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetDG1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get DG1 Records from ARD_A19_QUERY_RESPONSE
@@ -207,6 +302,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllDG1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get all DG1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddDG1(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetPR1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
@@ -219,6 +319,11 @@
             Get all PR1 Records from ARD_A19_QUERY_RESPONSE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddPR1(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetGT1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get GT1 Records from ARD_A19_QUERY_RESPONSE
@@ -227,6 +332,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllGT1Records(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
             <summary>
             Get all GT1 Records from ARD_A19_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddGT1(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetINSURANCERecords(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
@@ -239,6 +349,11 @@
             Get all INSURANCE Records from ARD_A19_QUERY_RESPONSE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddINSURANCE(NHapi.Model.V22.Group.ARD_A19_QUERY_RESPONSE)">
+            <summary>
+            Add a new ARD_A19_QUERY_RESPONSE to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_PATIENT_RESULT)">
             <summary>
             Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
@@ -247,6 +362,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V22.Group.ORU_R01_PATIENT_RESULT)">
             <summary>
             Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddORDER_OBSERVATION(NHapi.Model.V22.Group.ORU_R01_PATIENT_RESULT)">
+            <summary>
+            Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_OBSERVATION)">
@@ -259,6 +379,11 @@
             Get all NTE Records from ORF_R04_OBSERVATION
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORF_R04_OBSERVATION)">
+            <summary>
+            Add a new ORF_R04_OBSERVATION to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
             <summary>
             Get NTE Records from ORF_R04_ORDER
@@ -267,6 +392,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
             <summary>
             Get all NTE Records from ORF_R04_ORDER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Add a new ORF_R04_ORDER to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBSERVATIONRecords(NHapi.Model.V22.Group.ORF_R04_ORDER)">
@@ -279,6 +409,11 @@
             Get all OBSERVATION Records from ORF_R04_ORDER
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBSERVATION(NHapi.Model.V22.Group.ORF_R04_ORDER)">
+            <summary>
+            Add a new ORF_R04_ORDER to OBSERVATION
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
             <summary>
             Get NTE Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
@@ -287,6 +422,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
             <summary>
             Get all NTE Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Add a new NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
@@ -299,6 +439,11 @@
             Get all NTE2 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE2(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Add a new NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT to NTE2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE3Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
             <summary>
             Get NTE3 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
@@ -307,6 +452,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTE3Records(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
             <summary>
             Get all NTE3 Records from NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE3(NHapi.Model.V22.Group.NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT)">
+            <summary>
+            Add a new NMR_N02_CLOCK_AND_STATS_WITH_NOTES_ALT to NTE3
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
@@ -319,6 +469,11 @@
             Get all NTE Records from ORM_O01_ORDER_DETAIL
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
             <summary>
             Get OBX Records from ORM_O01_ORDER_DETAIL
@@ -327,6 +482,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
             <summary>
             Get all OBX Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBX(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
@@ -339,6 +499,11 @@
             Get all NTE2 Records from ORM_O01_ORDER_DETAIL
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE2(NHapi.Model.V22.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to NTE2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNTERecords(NHapi.Model.V22.Group.ORF_R04_QUERY_RESPONSE)">
             <summary>
             Get NTE Records from ORF_R04_QUERY_RESPONSE
@@ -347,6 +512,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V22.Group.ORF_R04_QUERY_RESPONSE)">
             <summary>
             Get all NTE Records from ORF_R04_QUERY_RESPONSE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNTE(NHapi.Model.V22.Group.ORF_R04_QUERY_RESPONSE)">
+            <summary>
+            Add a new ORF_R04_QUERY_RESPONSE to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
@@ -359,6 +529,11 @@
             Get all OBX Records from BAR_P01_VISIT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddOBX(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAL1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get AL1 Records from BAR_P01_VISIT
@@ -367,6 +542,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllAL1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get all AL1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddAL1(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to AL1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetDG1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
@@ -379,6 +559,11 @@
             Get all DG1 Records from BAR_P01_VISIT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddDG1(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetPR1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get PR1 Records from BAR_P01_VISIT
@@ -387,6 +572,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllPR1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get all PR1 Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddPR1(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetGT1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
@@ -399,6 +589,11 @@
             Get all GT1 Records from BAR_P01_VISIT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddGT1(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to GT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetNK1Records(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get NK1 Records from BAR_P01_VISIT
@@ -409,6 +604,11 @@
             Get all NK1 Records from BAR_P01_VISIT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddNK1(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetINSURANCERecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get INSURANCE Records from BAR_P01_VISIT
@@ -417,6 +617,11 @@
         <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Group.BAR_P01_VISIT)">
             <summary>
             Get all INSURANCE Records from BAR_P01_VISIT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Group.GroupExtensions.AddINSURANCE(NHapi.Model.V22.Group.BAR_P01_VISIT)">
+            <summary>
+            Add a new BAR_P01_VISIT to INSURANCE
             </summary>
         </member>
         <member name="T:NHapiTools.Model.V22.Message.MessageExtensions">
@@ -434,6 +639,11 @@
             Get all VISIT Records from BAR_P01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddVISIT(NHapi.Model.V22.Message.BAR_P01)">
+            <summary>
+            Add a new BAR_P01 to VISIT
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATS_WITH_NOTES_ALTRecords(NHapi.Model.V22.Message.NMR_N02)">
             <summary>
             Get CLOCK_AND_STATS_WITH_NOTES_ALT Records from NMR_N02
@@ -442,6 +652,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllCLOCK_AND_STATS_WITH_NOTES_ALTRecords(NHapi.Model.V22.Message.NMR_N02)">
             <summary>
             Get all CLOCK_AND_STATS_WITH_NOTES_ALT Records from NMR_N02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddCLOCK_AND_STATS_WITH_NOTES_ALT(NHapi.Model.V22.Message.NMR_N02)">
+            <summary>
+            Add a new NMR_N02 to CLOCK_AND_STATS_WITH_NOTES_ALT
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R03)">
@@ -454,6 +669,11 @@
             Get all PATIENT_RESULT Records from ORU_R03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V22.Message.ORU_R03)">
+            <summary>
+            Add a new ORU_R03 to PATIENT_RESULT
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATS_WITH_NOTESRecords(NHapi.Model.V22.Message.NMD_N01)">
             <summary>
             Get CLOCK_AND_STATS_WITH_NOTES Records from NMD_N01
@@ -462,6 +682,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllCLOCK_AND_STATS_WITH_NOTESRecords(NHapi.Model.V22.Message.NMD_N01)">
             <summary>
             Get all CLOCK_AND_STATS_WITH_NOTES Records from NMD_N01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddCLOCK_AND_STATS_WITH_NOTES(NHapi.Model.V22.Message.NMD_N01)">
+            <summary>
+            Add a new NMD_N01 to CLOCK_AND_STATS_WITH_NOTES
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.DFT_P03)">
@@ -474,6 +699,11 @@
             Get all OBX Records from DFT_P03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Add a new DFT_P03 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetFT1Records(NHapi.Model.V22.Message.DFT_P03)">
             <summary>
             Get FT1 Records from DFT_P03
@@ -482,6 +712,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllFT1Records(NHapi.Model.V22.Message.DFT_P03)">
             <summary>
             Get all FT1 Records from DFT_P03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddFT1(NHapi.Model.V22.Message.DFT_P03)">
+            <summary>
+            Add a new DFT_P03 to FT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M03)">
@@ -494,6 +729,11 @@
             Get all MFA Records from MFD_M03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFD_M03)">
+            <summary>
+            Add a new MFD_M03 to MFA
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A09)">
             <summary>
             Get OBX Records from ADT_A09
@@ -502,6 +742,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A09)">
             <summary>
             Get all OBX Records from ADT_A09
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Add a new ADT_A09 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A09)">
@@ -514,6 +759,11 @@
             Get all DG1 Records from ADT_A09
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A09)">
+            <summary>
+            Add a new ADT_A09 to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R01)">
             <summary>
             Get PATIENT_RESULT Records from ORU_R01
@@ -522,6 +772,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V22.Message.ORU_R01)">
             <summary>
             Get all PATIENT_RESULT Records from ORU_R01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V22.Message.ORU_R01)">
+            <summary>
+            Add a new ORU_R01 to PATIENT_RESULT
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_TESTRecords(NHapi.Model.V22.Message.MFR_M03)">
@@ -534,6 +789,11 @@
             Get all MF_TEST Records from MFR_M03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF_TEST(NHapi.Model.V22.Message.MFR_M03)">
+            <summary>
+            Add a new MFR_M03 to MF_TEST
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M02)">
             <summary>
             Get MFA Records from MFD_M02
@@ -542,6 +802,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFD_M02)">
             <summary>
             Get all MFA Records from MFD_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFD_M02)">
+            <summary>
+            Add a new MFD_M02 to MFA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A08)">
@@ -554,6 +819,11 @@
             Get all NK1 Records from ADT_A08
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get OBX Records from ADT_A08
@@ -562,6 +832,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get all OBX Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A08)">
@@ -574,6 +849,11 @@
             Get all AL1 Records from ADT_A08
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get DG1 Records from ADT_A08
@@ -582,6 +862,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get all DG1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A08)">
@@ -594,6 +879,11 @@
             Get all PR1 Records from ADT_A08
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get GT1 Records from ADT_A08
@@ -602,6 +892,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A08)">
             <summary>
             Get all GT1 Records from ADT_A08
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A08)">
@@ -614,6 +909,11 @@
             Get all INSURANCE Records from ADT_A08
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A08)">
+            <summary>
+            Add a new ADT_A08 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNTERecords(NHapi.Model.V22.Message.ORR_O02)">
             <summary>
             Get NTE Records from ORR_O02
@@ -622,6 +922,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNTERecords(NHapi.Model.V22.Message.ORR_O02)">
             <summary>
             Get all NTE Records from ORR_O02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNTE(NHapi.Model.V22.Message.ORR_O02)">
+            <summary>
+            Add a new ORR_O02 to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_STAFFRecords(NHapi.Model.V22.Message.MFR_M02)">
@@ -634,6 +939,11 @@
             Get all MF_STAFF Records from MFR_M02
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF_STAFF(NHapi.Model.V22.Message.MFR_M02)">
+            <summary>
+            Add a new MFR_M02 to MF_STAFF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFD_M01)">
             <summary>
             Get MFA Records from MFD_M01
@@ -642,6 +952,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFD_M01)">
             <summary>
             Get all MFA Records from MFD_M01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFD_M01)">
+            <summary>
+            Add a new MFD_M01 to MFA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A29)">
@@ -654,6 +969,11 @@
             Get all OBX Records from ADT_A29
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A29)">
+            <summary>
+            Add a new ADT_A29 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get NK1 Records from ADT_A07
@@ -662,6 +982,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get all NK1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to NK1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A07)">
@@ -674,6 +999,11 @@
             Get all OBX Records from ADT_A07
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get AL1 Records from ADT_A07
@@ -682,6 +1012,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get all AL1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to AL1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A07)">
@@ -694,6 +1029,11 @@
             Get all DG1 Records from ADT_A07
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get PR1 Records from ADT_A07
@@ -702,6 +1042,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get all PR1 Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A07)">
@@ -714,6 +1059,11 @@
             Get all GT1 Records from ADT_A07
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to GT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get INSURANCE Records from ADT_A07
@@ -722,6 +1072,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A07)">
             <summary>
             Get all INSURANCE Records from ADT_A07
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A07)">
+            <summary>
+            Add a new ADT_A07 to INSURANCE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFRecords(NHapi.Model.V22.Message.MFR_M01)">
@@ -734,6 +1089,11 @@
             Get all MF Records from MFR_M01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF(NHapi.Model.V22.Message.MFR_M01)">
+            <summary>
+            Add a new MFR_M01 to MF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get NK1 Records from ADT_A28
@@ -742,6 +1102,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get all NK1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to NK1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A28)">
@@ -754,6 +1119,11 @@
             Get all OBX Records from ADT_A28
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get AL1 Records from ADT_A28
@@ -762,6 +1132,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get all AL1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to AL1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A28)">
@@ -774,6 +1149,11 @@
             Get all DG1 Records from ADT_A28
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get PR1 Records from ADT_A28
@@ -782,6 +1162,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get all PR1 Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A28)">
@@ -794,6 +1179,11 @@
             Get all GT1 Records from ADT_A28
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to GT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get INSURANCE Records from ADT_A28
@@ -802,6 +1192,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A28)">
             <summary>
             Get all INSURANCE Records from ADT_A28
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A28)">
+            <summary>
+            Add a new ADT_A28 to INSURANCE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A17)">
@@ -814,6 +1209,11 @@
             Get all OBX Records from ADT_A17
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Add a new ADT_A17 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBX2Records(NHapi.Model.V22.Message.ADT_A17)">
             <summary>
             Get OBX2 Records from ADT_A17
@@ -822,6 +1222,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBX2Records(NHapi.Model.V22.Message.ADT_A17)">
             <summary>
             Get all OBX2 Records from ADT_A17
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX2(NHapi.Model.V22.Message.ADT_A17)">
+            <summary>
+            Add a new ADT_A17 to OBX2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A06)">
@@ -834,6 +1239,11 @@
             Get all NK1 Records from ADT_A06
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get OBX Records from ADT_A06
@@ -842,6 +1252,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get all OBX Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A06)">
@@ -854,6 +1269,11 @@
             Get all AL1 Records from ADT_A06
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get DG1 Records from ADT_A06
@@ -862,6 +1282,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get all DG1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A06)">
@@ -874,6 +1299,11 @@
             Get all PR1 Records from ADT_A06
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get GT1 Records from ADT_A06
@@ -882,6 +1312,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A06)">
             <summary>
             Get all GT1 Records from ADT_A06
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A06)">
@@ -894,6 +1329,11 @@
             Get all INSURANCE Records from ADT_A06
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A06)">
+            <summary>
+            Add a new ADT_A06 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A27)">
             <summary>
             Get OBX Records from ADT_A27
@@ -902,6 +1342,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A27)">
             <summary>
             Get all OBX Records from ADT_A27
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A27)">
+            <summary>
+            Add a new ADT_A27 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A16)">
@@ -914,6 +1359,11 @@
             Get all OBX Records from ADT_A16
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Add a new ADT_A16 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A16)">
             <summary>
             Get DG1 Records from ADT_A16
@@ -922,6 +1372,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A16)">
             <summary>
             Get all DG1 Records from ADT_A16
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A16)">
+            <summary>
+            Add a new ADT_A16 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A05)">
@@ -934,6 +1389,11 @@
             Get all NK1 Records from ADT_A05
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get OBX Records from ADT_A05
@@ -942,6 +1402,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get all OBX Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A05)">
@@ -954,6 +1419,11 @@
             Get all AL1 Records from ADT_A05
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get DG1 Records from ADT_A05
@@ -962,6 +1432,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get all DG1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A05)">
@@ -974,6 +1449,11 @@
             Get all PR1 Records from ADT_A05
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get GT1 Records from ADT_A05
@@ -982,6 +1462,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A05)">
             <summary>
             Get all GT1 Records from ADT_A05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A05)">
@@ -994,6 +1479,11 @@
             Get all INSURANCE Records from ADT_A05
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A05)">
+            <summary>
+            Add a new ADT_A05 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A26)">
             <summary>
             Get OBX Records from ADT_A26
@@ -1002,6 +1492,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A26)">
             <summary>
             Get all OBX Records from ADT_A26
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A26)">
+            <summary>
+            Add a new ADT_A26 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A15)">
@@ -1014,6 +1509,11 @@
             Get all OBX Records from ADT_A15
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Add a new ADT_A15 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A15)">
             <summary>
             Get DG1 Records from ADT_A15
@@ -1022,6 +1522,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A15)">
             <summary>
             Get all DG1 Records from ADT_A15
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A15)">
+            <summary>
+            Add a new ADT_A15 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A04)">
@@ -1034,6 +1539,11 @@
             Get all NK1 Records from ADT_A04
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get OBX Records from ADT_A04
@@ -1042,6 +1552,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get all OBX Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A04)">
@@ -1054,6 +1569,11 @@
             Get all AL1 Records from ADT_A04
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get DG1 Records from ADT_A04
@@ -1062,6 +1582,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get all DG1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A04)">
@@ -1074,6 +1599,11 @@
             Get all PR1 Records from ADT_A04
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get GT1 Records from ADT_A04
@@ -1082,6 +1612,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A04)">
             <summary>
             Get all GT1 Records from ADT_A04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A04)">
@@ -1094,6 +1629,11 @@
             Get all INSURANCE Records from ADT_A04
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A04)">
+            <summary>
+            Add a new ADT_A04 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A25)">
             <summary>
             Get OBX Records from ADT_A25
@@ -1102,6 +1642,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A25)">
             <summary>
             Get all OBX Records from ADT_A25
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A25)">
+            <summary>
+            Add a new ADT_A25 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A14)">
@@ -1114,6 +1659,11 @@
             Get all NK1 Records from ADT_A14
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get OBX Records from ADT_A14
@@ -1122,6 +1672,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get all OBX Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A14)">
@@ -1134,6 +1689,11 @@
             Get all AL1 Records from ADT_A14
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get DG1 Records from ADT_A14
@@ -1142,6 +1702,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get all DG1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A14)">
@@ -1154,6 +1719,11 @@
             Get all PR1 Records from ADT_A14
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get GT1 Records from ADT_A14
@@ -1162,6 +1732,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A14)">
             <summary>
             Get all GT1 Records from ADT_A14
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A14)">
@@ -1174,6 +1749,11 @@
             Get all INSURANCE Records from ADT_A14
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A14)">
+            <summary>
+            Add a new ADT_A14 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A03)">
             <summary>
             Get OBX Records from ADT_A03
@@ -1182,6 +1762,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A03)">
             <summary>
             Get all OBX Records from ADT_A03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A03)">
+            <summary>
+            Add a new ADT_A03 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNTERecords(NHapi.Model.V22.Message.ORM_O01)">
@@ -1194,6 +1779,11 @@
             Get all NTE Records from ORM_O01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNTE(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Add a new ORM_O01 to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetORDERRecords(NHapi.Model.V22.Message.ORM_O01)">
             <summary>
             Get ORDER Records from ORM_O01
@@ -1202,6 +1792,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllORDERRecords(NHapi.Model.V22.Message.ORM_O01)">
             <summary>
             Get all ORDER Records from ORM_O01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddORDER(NHapi.Model.V22.Message.ORM_O01)">
+            <summary>
+            Add a new ORM_O01 to ORDER
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A13)">
@@ -1214,6 +1809,11 @@
             Get all NK1 Records from ADT_A13
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get OBX Records from ADT_A13
@@ -1222,6 +1822,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get all OBX Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A13)">
@@ -1234,6 +1839,11 @@
             Get all AL1 Records from ADT_A13
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get DG1 Records from ADT_A13
@@ -1242,6 +1852,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get all DG1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A13)">
@@ -1254,6 +1869,11 @@
             Get all PR1 Records from ADT_A13
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get GT1 Records from ADT_A13
@@ -1262,6 +1882,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A13)">
             <summary>
             Get all GT1 Records from ADT_A13
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A13)">
@@ -1274,6 +1899,11 @@
             Get all INSURANCE Records from ADT_A13
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A13)">
+            <summary>
+            Add a new ADT_A13 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A02)">
             <summary>
             Get OBX Records from ADT_A02
@@ -1282,6 +1912,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A02)">
             <summary>
             Get all OBX Records from ADT_A02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A02)">
+            <summary>
+            Add a new ADT_A02 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_R03)">
@@ -1294,6 +1929,11 @@
             Get all DSP Records from DSR_R03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDSP(NHapi.Model.V22.Message.DSR_R03)">
+            <summary>
+            Add a new DSR_R03 to DSP
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetQUERY_RESPONSERecords(NHapi.Model.V22.Message.ARD_A19)">
             <summary>
             Get QUERY_RESPONSE Records from ARD_A19
@@ -1302,6 +1942,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllQUERY_RESPONSERecords(NHapi.Model.V22.Message.ARD_A19)">
             <summary>
             Get all QUERY_RESPONSE Records from ARD_A19
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddQUERY_RESPONSE(NHapi.Model.V22.Message.ARD_A19)">
+            <summary>
+            Add a new ARD_A19 to QUERY_RESPONSE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A23)">
@@ -1314,6 +1959,11 @@
             Get all OBX Records from ADT_A23
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A23)">
+            <summary>
+            Add a new ADT_A23 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A12)">
             <summary>
             Get OBX Records from ADT_A12
@@ -1322,6 +1972,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A12)">
             <summary>
             Get all OBX Records from ADT_A12
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Add a new ADT_A12 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A12)">
@@ -1334,6 +1989,11 @@
             Get all DG1 Records from ADT_A12
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A12)">
+            <summary>
+            Add a new ADT_A12 to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get NK1 Records from ADT_A01
@@ -1342,6 +2002,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllNK1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get all NK1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to NK1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A01)">
@@ -1354,6 +2019,11 @@
             Get all OBX Records from ADT_A01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get AL1 Records from ADT_A01
@@ -1362,6 +2032,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllAL1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get all AL1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to AL1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A01)">
@@ -1374,6 +2049,11 @@
             Get all DG1 Records from ADT_A01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to DG1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get PR1 Records from ADT_A01
@@ -1382,6 +2062,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPR1Records(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get all PR1 Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A01)">
@@ -1394,6 +2079,11 @@
             Get all GT1 Records from ADT_A01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to GT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get INSURANCE Records from ADT_A01
@@ -1402,6 +2092,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllINSURANCERecords(NHapi.Model.V22.Message.ADT_A01)">
             <summary>
             Get all INSURANCE Records from ADT_A01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A01)">
+            <summary>
+            Add a new ADT_A01 to INSURANCE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetQUERY_RESPONSERecords(NHapi.Model.V22.Message.ORF_R04)">
@@ -1414,6 +2109,11 @@
             Get all QUERY_RESPONSE Records from ORF_R04
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddQUERY_RESPONSE(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Add a new ORF_R04 to QUERY_RESPONSE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetORDERRecords(NHapi.Model.V22.Message.ORF_R04)">
             <summary>
             Get ORDER Records from ORF_R04
@@ -1422,6 +2122,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllORDERRecords(NHapi.Model.V22.Message.ORF_R04)">
             <summary>
             Get all ORDER Records from ORF_R04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddORDER(NHapi.Model.V22.Message.ORF_R04)">
+            <summary>
+            Add a new ORF_R04 to ORDER
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetCLOCK_AND_STATISTICSRecords(NHapi.Model.V22.Message.NMQ_N02)">
@@ -1434,6 +2139,11 @@
             Get all CLOCK_AND_STATISTICS Records from NMQ_N02
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddCLOCK_AND_STATISTICS(NHapi.Model.V22.Message.NMQ_N02)">
+            <summary>
+            Add a new NMQ_N02 to CLOCK_AND_STATISTICS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M03)">
             <summary>
             Get MFA Records from MFK_M03
@@ -1442,6 +2152,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFK_M03)">
             <summary>
             Get all MFA Records from MFK_M03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFK_M03)">
+            <summary>
+            Add a new MFK_M03 to MFA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_Q03)">
@@ -1454,6 +2169,11 @@
             Get all DSP Records from DSR_Q03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDSP(NHapi.Model.V22.Message.DSR_Q03)">
+            <summary>
+            Add a new DSR_Q03 to DSP
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_P04)">
             <summary>
             Get DSP Records from DSR_P04
@@ -1462,6 +2182,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_P04)">
             <summary>
             Get all DSP Records from DSR_P04
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDSP(NHapi.Model.V22.Message.DSR_P04)">
+            <summary>
+            Add a new DSR_P04 to DSP
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A33)">
@@ -1474,6 +2199,11 @@
             Get all OBX Records from ADT_A33
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A33)">
+            <summary>
+            Add a new ADT_A33 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A22)">
             <summary>
             Get OBX Records from ADT_A22
@@ -1482,6 +2212,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A22)">
             <summary>
             Get all OBX Records from ADT_A22
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A22)">
+            <summary>
+            Add a new ADT_A22 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A11)">
@@ -1494,6 +2229,11 @@
             Get all OBX Records from ADT_A11
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Add a new ADT_A11 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A11)">
             <summary>
             Get DG1 Records from ADT_A11
@@ -1502,6 +2242,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A11)">
             <summary>
             Get all DG1 Records from ADT_A11
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A11)">
+            <summary>
+            Add a new ADT_A11 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_TESTRecords(NHapi.Model.V22.Message.MFN_M03)">
@@ -1514,6 +2259,11 @@
             Get all MF_TEST Records from MFN_M03
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF_TEST(NHapi.Model.V22.Message.MFN_M03)">
+            <summary>
+            Add a new MFN_M03 to MF_TEST
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M02)">
             <summary>
             Get MFA Records from MFK_M02
@@ -1522,6 +2272,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMFARecords(NHapi.Model.V22.Message.MFK_M02)">
             <summary>
             Get all MFA Records from MFK_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFK_M02)">
+            <summary>
+            Add a new MFK_M02 to MFA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A32)">
@@ -1534,6 +2289,11 @@
             Get all OBX Records from ADT_A32
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A32)">
+            <summary>
+            Add a new ADT_A32 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A21)">
             <summary>
             Get OBX Records from ADT_A21
@@ -1542,6 +2302,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A21)">
             <summary>
             Get all OBX Records from ADT_A21
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A21)">
+            <summary>
+            Add a new ADT_A21 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A10)">
@@ -1554,6 +2319,11 @@
             Get all OBX Records from ADT_A10
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Add a new ADT_A10 to OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A10)">
             <summary>
             Get DG1 Records from ADT_A10
@@ -1562,6 +2332,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A10)">
             <summary>
             Get all DG1 Records from ADT_A10
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A10)">
+            <summary>
+            Add a new ADT_A10 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.UDM_Q05)">
@@ -1574,6 +2349,11 @@
             Get all DSP Records from UDM_Q05
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDSP(NHapi.Model.V22.Message.UDM_Q05)">
+            <summary>
+            Add a new UDM_Q05 to DSP
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMF_STAFFRecords(NHapi.Model.V22.Message.MFN_M02)">
             <summary>
             Get MF_STAFF Records from MFN_M02
@@ -1582,6 +2362,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllMF_STAFFRecords(NHapi.Model.V22.Message.MFN_M02)">
             <summary>
             Get all MF_STAFF Records from MFN_M02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF_STAFF(NHapi.Model.V22.Message.MFN_M02)">
+            <summary>
+            Add a new MFN_M02 to MF_STAFF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFARecords(NHapi.Model.V22.Message.MFK_M01)">
@@ -1594,6 +2379,11 @@
             Get all MFA Records from MFK_M01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMFA(NHapi.Model.V22.Message.MFK_M01)">
+            <summary>
+            Add a new MFK_M01 to MFA
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V22.Message.DSR_Q01)">
             <summary>
             Get DSP Records from DSR_Q01
@@ -1602,6 +2392,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V22.Message.DSR_Q01)">
             <summary>
             Get all DSP Records from DSR_Q01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDSP(NHapi.Model.V22.Message.DSR_Q01)">
+            <summary>
+            Add a new DSR_Q01 to DSP
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetNK1Records(NHapi.Model.V22.Message.ADT_A31)">
@@ -1614,6 +2409,11 @@
             Get all NK1 Records from ADT_A31
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddNK1(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to NK1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetOBXRecords(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get OBX Records from ADT_A31
@@ -1622,6 +2422,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllOBXRecords(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get all OBX Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddOBX(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAL1Records(NHapi.Model.V22.Message.ADT_A31)">
@@ -1634,6 +2439,11 @@
             Get all AL1 Records from ADT_A31
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddAL1(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to AL1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetDG1Records(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get DG1 Records from ADT_A31
@@ -1642,6 +2452,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllDG1Records(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get all DG1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddDG1(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to DG1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPR1Records(NHapi.Model.V22.Message.ADT_A31)">
@@ -1654,6 +2469,11 @@
             Get all PR1 Records from ADT_A31
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPR1(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetGT1Records(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get GT1 Records from ADT_A31
@@ -1662,6 +2482,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllGT1Records(NHapi.Model.V22.Message.ADT_A31)">
             <summary>
             Get all GT1 Records from ADT_A31
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddGT1(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetINSURANCERecords(NHapi.Model.V22.Message.ADT_A31)">
@@ -1674,6 +2499,11 @@
             Get all INSURANCE Records from ADT_A31
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddINSURANCE(NHapi.Model.V22.Message.ADT_A31)">
+            <summary>
+            Add a new ADT_A31 to INSURANCE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetMFRecords(NHapi.Model.V22.Message.MFN_M01)">
             <summary>
             Get MF Records from MFN_M01
@@ -1684,6 +2514,11 @@
             Get all MF Records from MFN_M01
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddMF(NHapi.Model.V22.Message.MFN_M01)">
+            <summary>
+            Add a new MFN_M01 to MF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetPATIENTRecords(NHapi.Model.V22.Message.BAR_P02)">
             <summary>
             Get PATIENT Records from BAR_P02
@@ -1692,6 +2527,11 @@
         <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.GetAllPATIENTRecords(NHapi.Model.V22.Message.BAR_P02)">
             <summary>
             Get all PATIENT Records from BAR_P02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Message.MessageExtensions.AddPATIENT(NHapi.Model.V22.Message.BAR_P02)">
+            <summary>
+            Add a new BAR_P02 to PATIENT
             </summary>
         </member>
         <member name="T:NHapiTools.Model.V22.Segment.SegmentExtensions">
@@ -1709,6 +2549,11 @@
             Get all RUWhoSubjectDefinition Records from URD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhoSubjectDefinition(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Add a new URD to RUWhoSubjectDefinition
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get RUWhatSubjectDefinition Records from URD
@@ -1717,6 +2562,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhatSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get all RUWhatSubjectDefinition Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhatSubjectDefinition(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Add a new URD to RUWhatSubjectDefinition
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatDepartmentCodeRecords(NHapi.Model.V22.Segment.URD)">
@@ -1729,6 +2579,11 @@
             Get all RUWhatDepartmentCode Records from URD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhatDepartmentCode(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Add a new URD to RUWhatDepartmentCode
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDisplayPrintLocationsRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get RUDisplayPrintLocations Records from URD
@@ -1737,6 +2592,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUDisplayPrintLocationsRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get all RUDisplayPrintLocations Records from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUDisplayPrintLocations(NHapi.Model.V22.Segment.URD)">
+            <summary>
+            Add a new URD to RUDisplayPrintLocations
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode2430Records(NHapi.Model.V22.Segment.UB2)">
@@ -1749,6 +2609,11 @@
             Get all ConditionCode2430 Records from UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddConditionCode2430(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to ConditionCode2430
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode3941Records(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get ValueAmountAndCode3941 Records from UB2
@@ -1757,6 +2622,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllValueAmountAndCode3941Records(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get all ValueAmountAndCode3941 Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddValueAmountAndCode3941(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to ValueAmountAndCode3941
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceCodeAndDate3235Records(NHapi.Model.V22.Segment.UB2)">
@@ -1769,6 +2639,11 @@
             Get all OccurrenceCodeAndDate3235 Records from UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOccurrenceCodeAndDate3235(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to OccurrenceCodeAndDate3235
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceSpanCodeDatesRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get OccurrenceSpanCodeDates Records from UB2
@@ -1777,6 +2652,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOccurrenceSpanCodeDatesRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get all OccurrenceSpanCodeDates Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOccurrenceSpanCodeDates(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to OccurrenceSpanCodeDates
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator2StateRecords(NHapi.Model.V22.Segment.UB2)">
@@ -1789,6 +2669,11 @@
             Get all UB92Locator2State Records from UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator2State(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to UB92Locator2State
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator11StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get UB92Locator11State Records from UB2
@@ -1797,6 +2682,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator11StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get all UB92Locator11State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator11State(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to UB92Locator11State
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDocumentControlNumberRecords(NHapi.Model.V22.Segment.UB2)">
@@ -1809,6 +2699,11 @@
             Get all DocumentControlNumber Records from UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDocumentControlNumber(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to DocumentControlNumber
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator49NationalRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get UB92Locator49National Records from UB2
@@ -1817,6 +2712,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator49NationalRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get all UB92Locator49National Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator49National(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to UB92Locator49National
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator56StateRecords(NHapi.Model.V22.Segment.UB2)">
@@ -1829,6 +2729,11 @@
             Get all UB92Locator56State Records from UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator56State(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to UB92Locator56State
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator78StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get UB92Locator78State Records from UB2
@@ -1837,6 +2742,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllUB92Locator78StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get all UB92Locator78State Records from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator78State(NHapi.Model.V22.Segment.UB2)">
+            <summary>
+            Add a new UB2 to UB92Locator78State
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSIConversionFactorRecords(NHapi.Model.V22.Segment.OM2)">
@@ -1849,6 +2759,11 @@
             Get all SIConversionFactor Records from OM2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddSIConversionFactor(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Add a new OM2 to SIConversionFactor
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReferenceNormalRangeOrdinalContinuousObservationsRecords(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Get ReferenceNormalRangeOrdinalContinuousObservations Records from OM2
@@ -1857,6 +2772,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReferenceNormalRangeOrdinalContinuousObservationsRecords(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Get all ReferenceNormalRangeOrdinalContinuousObservations Records from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddReferenceNormalRangeOrdinalContinuousObservations(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Add a new OM2 to ReferenceNormalRangeOrdinalContinuousObservations
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDeltaCheckCriteriaRecords(NHapi.Model.V22.Segment.OM2)">
@@ -1869,6 +2789,11 @@
             Get all DeltaCheckCriteria Records from OM2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDeltaCheckCriteria(NHapi.Model.V22.Segment.OM2)">
+            <summary>
+            Add a new OM2 to DeltaCheckCriteria
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberRecords(NHapi.Model.V22.Segment.NK1)">
             <summary>
             Get PhoneNumber Records from NK1
@@ -1877,6 +2802,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberRecords(NHapi.Model.V22.Segment.NK1)">
             <summary>
             Get all PhoneNumber Records from NK1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumber(NHapi.Model.V22.Segment.NK1)">
+            <summary>
+            Add a new NK1 to PhoneNumber
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDiagnosisCodeRecords(NHapi.Model.V22.Segment.FT1)">
@@ -1889,6 +2819,11 @@
             Get all DiagnosisCode Records from FT1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDiagnosisCode(NHapi.Model.V22.Segment.FT1)">
+            <summary>
+            Add a new FT1 to DiagnosisCode
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode3539Records(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Get ConditionCode3539 Records from UB1
@@ -1897,6 +2832,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllConditionCode3539Records(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Get all ConditionCode3539 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddConditionCode3539(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Add a new UB1 to ConditionCode3539
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode4649Records(NHapi.Model.V22.Segment.UB1)">
@@ -1909,6 +2849,11 @@
             Get all ValueAmountAndCode4649 Records from UB1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddValueAmountAndCode4649(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Add a new UB1 to ValueAmountAndCode4649
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrence2832Records(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Get Occurrence2832 Records from UB1
@@ -1917,6 +2862,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOccurrence2832Records(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Get all Occurrence2832 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOccurrence2832(NHapi.Model.V22.Segment.UB1)">
+            <summary>
+            Add a new UB1 to Occurrence2832
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPermittedDataTypesRecords(NHapi.Model.V22.Segment.OM1)">
@@ -1929,6 +2879,11 @@
             Get all PermittedDataTypes Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPermittedDataTypes(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to PermittedDataTypes
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherNamesRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get OtherNames Records from OM1
@@ -1937,6 +2892,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOtherNamesRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all OtherNames Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOtherNames(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to OtherNames
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetIdentityOfInstrumentUsedToPerformThisStudyRecords(NHapi.Model.V22.Segment.OM1)">
@@ -1949,6 +2909,11 @@
             Get all IdentityOfInstrumentUsedToPerformThisStudy Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddIdentityOfInstrumentUsedToPerformThisStudy(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to IdentityOfInstrumentUsedToPerformThisStudy
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCodedRepresentationOfMethodRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get CodedRepresentationOfMethod Records from OM1
@@ -1957,6 +2922,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCodedRepresentationOfMethodRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all CodedRepresentationOfMethod Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCodedRepresentationOfMethod(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to CodedRepresentationOfMethod
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationProducingDepartmentSectionRecords(NHapi.Model.V22.Segment.OM1)">
@@ -1969,6 +2939,11 @@
             Get all ObservationProducingDepartmentSection Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddObservationProducingDepartmentSection(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to ObservationProducingDepartmentSection
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcessingPriorityRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get ProcessingPriority Records from OM1
@@ -1977,6 +2952,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcessingPriorityRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all ProcessingPriority Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcessingPriority(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to ProcessingPriority
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOutsideSiteSWhereObservationMayBePerformedRecords(NHapi.Model.V22.Segment.OM1)">
@@ -1989,6 +2969,11 @@
             Get all OutsideSiteSWhereObservationMayBePerformed Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOutsideSiteSWhereObservationMayBePerformed(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to OutsideSiteSWhereObservationMayBePerformed
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAddressOfOutsideSiteSRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get AddressOfOutsideSiteS Records from OM1
@@ -1997,6 +2982,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAddressOfOutsideSiteSRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all AddressOfOutsideSiteS Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddAddressOfOutsideSiteS(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to AddressOfOutsideSiteS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberOfOutsideSiteRecords(NHapi.Model.V22.Segment.OM1)">
@@ -2009,6 +2999,11 @@
             Get all PhoneNumberOfOutsideSite Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumberOfOutsideSite(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to PhoneNumberOfOutsideSite
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationsRequiredToInterpretTheObservationRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get ObservationsRequiredToInterpretTheObservation Records from OM1
@@ -2017,6 +3012,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllObservationsRequiredToInterpretTheObservationRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all ObservationsRequiredToInterpretTheObservation Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddObservationsRequiredToInterpretTheObservation(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to ObservationsRequiredToInterpretTheObservation
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContraindicationsToObservationsRecords(NHapi.Model.V22.Segment.OM1)">
@@ -2029,6 +3029,11 @@
             Get all ContraindicationsToObservations Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContraindicationsToObservations(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to ContraindicationsToObservations
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReflexTestsObservationsRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get ReflexTestsObservations Records from OM1
@@ -2037,6 +3042,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReflexTestsObservationsRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all ReflexTestsObservations Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddReflexTestsObservations(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to ReflexTestsObservations
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFixedCannedMessageRecords(NHapi.Model.V22.Segment.OM1)">
@@ -2049,6 +3059,11 @@
             Get all FixedCannedMessage Records from OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddFixedCannedMessage(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to FixedCannedMessage
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestObservationPerformanceScheduleRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get TestObservationPerformanceSchedule Records from OM1
@@ -2057,6 +3072,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTestObservationPerformanceScheduleRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get all TestObservationPerformanceSchedule Records from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTestObservationPerformanceSchedule(NHapi.Model.V22.Segment.OM1)">
+            <summary>
+            Add a new OM1 to TestObservationPerformanceSchedule
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhereSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
@@ -2069,6 +3089,11 @@
             Get all RUWhereSubjectDefinition Records from URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhereSubjectDefinition(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUWhereSubjectDefinition
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatUserQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUWhatUserQualifier Records from URS
@@ -2077,6 +3102,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhatUserQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get all RUWhatUserQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhatUserQualifier(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUWhatUserQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUOtherResultsSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
@@ -2089,6 +3119,11 @@
             Get all RUOtherResultsSubjectDefinition Records from URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUOtherResultsSubjectDefinition(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUOtherResultsSubjectDefinition
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUWhichDateTimeQualifier Records from URS
@@ -2097,6 +3132,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get all RUWhichDateTimeQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhichDateTimeQualifier(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUWhichDateTimeQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.URS)">
@@ -2109,6 +3149,11 @@
             Get all RUWhichDateTimeStatusQualifier Records from URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUWhichDateTimeStatusQualifier
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUDateTimeSelectionQualifier Records from URS
@@ -2117,6 +3162,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRUDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get all RUDateTimeSelectionQualifier Records from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUDateTimeSelectionQualifier(NHapi.Model.V22.Segment.URS)">
+            <summary>
+            Add a new URS to RUDateTimeSelectionQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffIDCodeRecords(NHapi.Model.V22.Segment.STF)">
@@ -2129,6 +3179,11 @@
             Get all StaffIDCode Records from STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddStaffIDCode(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to StaffIDCode
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffTypeRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get StaffType Records from STF
@@ -2137,6 +3192,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllStaffTypeRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get all StaffType Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddStaffType(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to StaffType
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDepartmentRecords(NHapi.Model.V22.Segment.STF)">
@@ -2149,6 +3209,11 @@
             Get all Department Records from STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDepartment(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to Department
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServiceRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get Service Records from STF
@@ -2157,6 +3222,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServiceRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get all Service Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddService(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to Service
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneRecords(NHapi.Model.V22.Segment.STF)">
@@ -2169,6 +3239,11 @@
             Get all Phone Records from STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhone(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to Phone
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOfficeHomeAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get OfficeHomeAddress Records from STF
@@ -2177,6 +3252,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllOfficeHomeAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get all OfficeHomeAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOfficeHomeAddress(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to OfficeHomeAddress
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetActivationDateRecords(NHapi.Model.V22.Segment.STF)">
@@ -2189,6 +3269,11 @@
             Get all ActivationDate Records from STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddActivationDate(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to ActivationDate
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInactivationDateRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get InactivationDate Records from STF
@@ -2197,6 +3282,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllInactivationDateRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get all InactivationDate Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddInactivationDate(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to InactivationDate
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetBackupPersonIDRecords(NHapi.Model.V22.Segment.STF)">
@@ -2209,6 +3299,11 @@
             Get all BackupPersonID Records from STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddBackupPersonID(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to BackupPersonID
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetEMailAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get EMailAddress Records from STF
@@ -2217,6 +3312,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllEMailAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get all EMailAddress Records from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddEMailAddress(NHapi.Model.V22.Segment.STF)">
+            <summary>
+            Add a new STF to EMailAddress
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhereSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
@@ -2229,6 +3329,11 @@
             Get all WhereSubjectFilter Records from QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhereSubjectFilter(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to WhereSubjectFilter
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatUserQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get WhatUserQualifier Records from QRF
@@ -2237,6 +3342,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatUserQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get all WhatUserQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhatUserQualifier(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to WhatUserQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherQRYSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
@@ -2249,6 +3359,11 @@
             Get all OtherQRYSubjectFilter Records from QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOtherQRYSubjectFilter(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to OtherQRYSubjectFilter
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get WhichDateTimeQualifier Records from QRF
@@ -2257,6 +3372,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get all WhichDateTimeQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhichDateTimeQualifier(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to WhichDateTimeQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.QRF)">
@@ -2269,6 +3389,11 @@
             Get all WhichDateTimeStatusQualifier Records from QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to WhichDateTimeStatusQualifier
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get DateTimeSelectionQualifier Records from QRF
@@ -2277,6 +3402,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get all DateTimeSelectionQualifier Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDateTimeSelectionQualifier(NHapi.Model.V22.Segment.QRF)">
+            <summary>
+            Add a new QRF to DateTimeSelectionQualifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetErrorCodeAndLocationRecords(NHapi.Model.V22.Segment.ERR)">
@@ -2289,6 +3419,11 @@
             Get all ErrorCodeAndLocation Records from ERR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddErrorCodeAndLocation(NHapi.Model.V22.Segment.ERR)">
+            <summary>
+            Add a new ERR to ErrorCodeAndLocation
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhoSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get WhoSubjectFilter Records from QRD
@@ -2297,6 +3432,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhoSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get all WhoSubjectFilter Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhoSubjectFilter(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Add a new QRD to WhoSubjectFilter
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
@@ -2309,6 +3449,11 @@
             Get all WhatSubjectFilter Records from QRD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhatSubjectFilter(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Add a new QRD to WhatSubjectFilter
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDepartmentDataCodeRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get WhatDepartmentDataCode Records from QRD
@@ -2317,6 +3462,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllWhatDepartmentDataCodeRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get all WhatDepartmentDataCode Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhatDepartmentDataCode(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Add a new QRD to WhatDepartmentDataCode
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDataCodeValueQualifierRecords(NHapi.Model.V22.Segment.QRD)">
@@ -2329,6 +3479,11 @@
             Get all WhatDataCodeValueQualifier Records from QRD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhatDataCodeValueQualifier(NHapi.Model.V22.Segment.QRD)">
+            <summary>
+            Add a new QRD to WhatDataCodeValueQualifier
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAbnormalFlagsRecords(NHapi.Model.V22.Segment.OBX)">
             <summary>
             Get AbnormalFlags Records from OBX
@@ -2337,6 +3492,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAbnormalFlagsRecords(NHapi.Model.V22.Segment.OBX)">
             <summary>
             Get all AbnormalFlags Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddAbnormalFlags(NHapi.Model.V22.Segment.OBX)">
+            <summary>
+            Add a new OBX to AbnormalFlags
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodingMethodRecords(NHapi.Model.V22.Segment.PR1)">
@@ -2349,6 +3509,11 @@
             Get all ProcedureCodingMethod Records from PR1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedureCodingMethod(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Add a new PR1 to ProcedureCodingMethod
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodeRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get ProcedureCode Records from PR1
@@ -2357,6 +3522,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedureCodeRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get all ProcedureCode Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedureCode(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Add a new PR1 to ProcedureCode
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureDescriptionRecords(NHapi.Model.V22.Segment.PR1)">
@@ -2369,6 +3539,11 @@
             Get all ProcedureDescription Records from PR1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedureDescription(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Add a new PR1 to ProcedureDescription
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedurePractitionerRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get ProcedurePractitioner Records from PR1
@@ -2377,6 +3552,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProcedurePractitionerRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get all ProcedurePractitioner Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedurePractitioner(NHapi.Model.V22.Segment.PR1)">
+            <summary>
+            Add a new PR1 to ProcedurePractitioner
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXG)">
@@ -2389,6 +3569,11 @@
             Get all QuantityTiming Records from RXG
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddQuantityTiming(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Add a new RXG to QuantityTiming
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPharmacySpecialAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXG)">
             <summary>
             Get PharmacySpecialAdministrationInstructions Records from RXG
@@ -2397,6 +3582,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPharmacySpecialAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXG)">
             <summary>
             Get all PharmacySpecialAdministrationInstructions Records from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPharmacySpecialAdministrationInstructions(NHapi.Model.V22.Segment.RXG)">
+            <summary>
+            Add a new RXG to PharmacySpecialAdministrationInstructions
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationContactPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
@@ -2409,6 +3599,11 @@
             Get all CertificationContactPhoneNumber Records from IN3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCertificationContactPhoneNumber(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Add a new IN3 to CertificationContactPhoneNumber
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationAgencyPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
             <summary>
             Get CertificationAgencyPhoneNumber Records from IN3
@@ -2417,6 +3612,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCertificationAgencyPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
             <summary>
             Get all CertificationAgencyPhoneNumber Records from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCertificationAgencyPhoneNumber(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Add a new IN3 to CertificationAgencyPhoneNumber
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPreCertificationRequiredWindowRecords(NHapi.Model.V22.Segment.IN3)">
@@ -2429,6 +3629,11 @@
             Get all PreCertificationRequiredWindow Records from IN3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPreCertificationRequiredWindow(NHapi.Model.V22.Segment.IN3)">
+            <summary>
+            Add a new IN3 to PreCertificationRequiredWindow
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetBatchTotalsRecords(NHapi.Model.V22.Segment.BTS)">
             <summary>
             Get BatchTotals Records from BTS
@@ -2437,6 +3642,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllBatchTotalsRecords(NHapi.Model.V22.Segment.BTS)">
             <summary>
             Get all BatchTotals Records from BTS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddBatchTotals(NHapi.Model.V22.Segment.BTS)">
+            <summary>
+            Add a new BTS to BatchTotals
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.ORC)">
@@ -2449,6 +3659,11 @@
             Get all QuantityTiming Records from ORC
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddQuantityTiming(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Add a new ORC to QuantityTiming
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCallBackPhoneNumberRecords(NHapi.Model.V22.Segment.ORC)">
             <summary>
             Get CallBackPhoneNumber Records from ORC
@@ -2457,6 +3672,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCallBackPhoneNumberRecords(NHapi.Model.V22.Segment.ORC)">
             <summary>
             Get all CallBackPhoneNumber Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCallBackPhoneNumber(NHapi.Model.V22.Segment.ORC)">
+            <summary>
+            Add a new ORC to CallBackPhoneNumber
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNonCoveredInsuranceCodeRecords(NHapi.Model.V22.Segment.IN2)">
@@ -2469,6 +3689,11 @@
             Get all NonCoveredInsuranceCode Records from IN2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddNonCoveredInsuranceCode(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Add a new IN2 to NonCoveredInsuranceCode
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRoomCoverageTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Get RoomCoverageTypeAmount Records from IN2
@@ -2477,6 +3702,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllRoomCoverageTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Get all RoomCoverageTypeAmount Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRoomCoverageTypeAmount(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Add a new IN2 to RoomCoverageTypeAmount
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPolicyTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
@@ -2489,6 +3719,11 @@
             Get all PolicyTypeAmount Records from IN2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPolicyTypeAmount(NHapi.Model.V22.Segment.IN2)">
+            <summary>
+            Add a new IN2 to PolicyTypeAmount
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXE)">
             <summary>
             Get QuantityTiming Records from RXE
@@ -2497,6 +3732,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.RXE)">
             <summary>
             Get all QuantityTiming Records from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddQuantityTiming(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Add a new RXE to QuantityTiming
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXE)">
@@ -2509,6 +3749,11 @@
             Get all ProviderSAdministrationInstructions Records from RXE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXE)">
+            <summary>
+            Add a new RXE to ProviderSAdministrationInstructions
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientValuablesRecords(NHapi.Model.V22.Segment.PV2)">
             <summary>
             Get PatientValuables Records from PV2
@@ -2517,6 +3762,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientValuablesRecords(NHapi.Model.V22.Segment.PV2)">
             <summary>
             Get all PatientValuables Records from PV2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPatientValuables(NHapi.Model.V22.Segment.PV2)">
+            <summary>
+            Add a new PV2 to PatientValuables
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerGroupRecords(NHapi.Model.V22.Segment.PRA)">
@@ -2529,6 +3779,11 @@
             Get all PractitionerGroup Records from PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPractitionerGroup(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Add a new PRA to PractitionerGroup
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerCategoryRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get PractitionerCategory Records from PRA
@@ -2537,6 +3792,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPractitionerCategoryRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get all PractitionerCategory Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPractitionerCategory(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Add a new PRA to PractitionerCategory
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecialtyRecords(NHapi.Model.V22.Segment.PRA)">
@@ -2549,6 +3809,11 @@
             Get all Specialty Records from PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddSpecialty(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Add a new PRA to Specialty
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerIDNumbersRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get PractitionerIDNumbers Records from PRA
@@ -2557,6 +3822,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPractitionerIDNumbersRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get all PractitionerIDNumbers Records from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPractitionerIDNumbers(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Add a new PRA to PractitionerIDNumbers
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrivilegesRecords(NHapi.Model.V22.Segment.PRA)">
@@ -2569,6 +3839,11 @@
             Get all Privileges Records from PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPrivileges(NHapi.Model.V22.Segment.PRA)">
+            <summary>
+            Add a new PRA to Privileges
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCommentRecords(NHapi.Model.V22.Segment.NTE)">
             <summary>
             Get Comment Records from NTE
@@ -2577,6 +3852,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCommentRecords(NHapi.Model.V22.Segment.NTE)">
             <summary>
             Get all Comment Records from NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddComment(NHapi.Model.V22.Segment.NTE)">
+            <summary>
+            Add a new NTE to Comment
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInsuranceCompanyPhoneNumberRecords(NHapi.Model.V22.Segment.IN1)">
@@ -2589,6 +3869,11 @@
             Get all InsuranceCompanyPhoneNumber Records from IN1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddInsuranceCompanyPhoneNumber(NHapi.Model.V22.Segment.IN1)">
+            <summary>
+            Add a new IN1 to InsuranceCompanyPhoneNumber
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDispenseNotesRecords(NHapi.Model.V22.Segment.RXD)">
             <summary>
             Get DispenseNotes Records from RXD
@@ -2597,6 +3882,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllDispenseNotesRecords(NHapi.Model.V22.Segment.RXD)">
             <summary>
             Get all DispenseNotes Records from RXD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDispenseNotes(NHapi.Model.V22.Segment.RXD)">
+            <summary>
+            Add a new RXD to DispenseNotes
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConsultingDoctorRecords(NHapi.Model.V22.Segment.PV1)">
@@ -2609,6 +3899,11 @@
             Get all ConsultingDoctor Records from PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddConsultingDoctor(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to ConsultingDoctor
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAmbulatoryStatusRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get AmbulatoryStatus Records from PV1
@@ -2617,6 +3912,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllAmbulatoryStatusRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get all AmbulatoryStatus Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddAmbulatoryStatus(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to AmbulatoryStatus
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFinancialClassRecords(NHapi.Model.V22.Segment.PV1)">
@@ -2629,6 +3929,11 @@
             Get all FinancialClass Records from PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddFinancialClass(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to FinancialClass
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractCodeRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get ContractCode Records from PV1
@@ -2637,6 +3942,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractCodeRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get all ContractCode Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractCode(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to ContractCode
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractEffectiveDateRecords(NHapi.Model.V22.Segment.PV1)">
@@ -2649,6 +3959,11 @@
             Get all ContractEffectiveDate Records from PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractEffectiveDate(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to ContractEffectiveDate
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractAmountRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get ContractAmount Records from PV1
@@ -2657,6 +3972,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllContractAmountRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get all ContractAmount Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractAmount(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to ContractAmount
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractPeriodRecords(NHapi.Model.V22.Segment.PV1)">
@@ -2669,6 +3989,11 @@
             Get all ContractPeriod Records from PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractPeriod(NHapi.Model.V22.Segment.PV1)">
+            <summary>
+            Add a new PV1 to ContractPeriod
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODT)">
             <summary>
             Get ServicePeriod Records from ODT
@@ -2677,6 +4002,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServicePeriodRecords(NHapi.Model.V22.Segment.ODT)">
             <summary>
             Get all ServicePeriod Records from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddServicePeriod(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Add a new ODT to ServicePeriod
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODT)">
@@ -2689,6 +4019,11 @@
             Get all TextInstruction Records from ODT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTextInstruction(NHapi.Model.V22.Segment.ODT)">
+            <summary>
+            Add a new ODT to TextInstruction
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCollectorIdentifierRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get CollectorIdentifier Records from OBR
@@ -2697,6 +4032,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllCollectorIdentifierRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get all CollectorIdentifier Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCollectorIdentifier(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to CollectorIdentifier
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOrderCallbackPhoneNumberRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2709,6 +4049,11 @@
             Get all OrderCallbackPhoneNumber Records from OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOrderCallbackPhoneNumber(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to OrderCallbackPhoneNumber
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get QuantityTiming Records from OBR
@@ -2717,6 +4062,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllQuantityTimingRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get all QuantityTiming Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddQuantityTiming(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to QuantityTiming
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetResultCopiesToRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2729,6 +4079,11 @@
             Get all ResultCopiesTo Records from OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddResultCopiesTo(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to ResultCopiesTo
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReasonForStudyRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get ReasonForStudy Records from OBR
@@ -2737,6 +4092,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllReasonForStudyRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get all ReasonForStudy Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddReasonForStudy(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to ReasonForStudy
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAssistantResultInterpreterRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2749,6 +4109,11 @@
             Get all AssistantResultInterpreter Records from OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddAssistantResultInterpreter(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to AssistantResultInterpreter
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTechnicianRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get Technician Records from OBR
@@ -2757,6 +4122,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTechnicianRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get all Technician Records from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTechnician(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to Technician
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTranscriptionistRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2769,6 +4139,11 @@
             Get all Transcriptionist Records from OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTranscriptionist(NHapi.Model.V22.Segment.OBR)">
+            <summary>
+            Add a new OBR to Transcriptionist
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Get ServicePeriod Records from ODS
@@ -2777,6 +4152,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllServicePeriodRecords(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Get all ServicePeriod Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddServicePeriod(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Add a new ODS to ServicePeriod
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDietSupplementOrPreferenceCodeRecords(NHapi.Model.V22.Segment.ODS)">
@@ -2789,6 +4169,11 @@
             Get all DietSupplementOrPreferenceCode Records from ODS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDietSupplementOrPreferenceCode(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Add a new ODS to DietSupplementOrPreferenceCode
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Get TextInstruction Records from ODS
@@ -2797,6 +4182,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTextInstructionRecords(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Get all TextInstruction Records from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTextInstruction(NHapi.Model.V22.Segment.ODS)">
+            <summary>
+            Add a new ODS to TextInstruction
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFE)">
@@ -2809,6 +4199,11 @@
             Get all PrimaryKeyValue Records from MFE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPrimaryKeyValue(NHapi.Model.V22.Segment.MFE)">
+            <summary>
+            Add a new MFE to PrimaryKeyValue
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientIDInternalIDRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get PatientIDInternalID Records from PID
@@ -2817,6 +4212,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientIDInternalIDRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get all PatientIDInternalID Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPatientIDInternalID(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to PatientIDInternalID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAliasRecords(NHapi.Model.V22.Segment.PID)">
@@ -2829,6 +4229,11 @@
             Get all PatientAlias Records from PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPatientAlias(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to PatientAlias
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAddressRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get PatientAddress Records from PID
@@ -2837,6 +4242,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPatientAddressRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get all PatientAddress Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPatientAddress(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to PatientAddress
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberHomeRecords(NHapi.Model.V22.Segment.PID)">
@@ -2849,6 +4259,11 @@
             Get all PhoneNumberHome Records from PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumberHome(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to PhoneNumberHome
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get PhoneNumberBusiness Records from PID
@@ -2857,6 +4272,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get all PhoneNumberBusiness Records from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumberBusiness(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to PhoneNumberBusiness
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCitizenshipRecords(NHapi.Model.V22.Segment.PID)">
@@ -2869,6 +4289,11 @@
             Get all Citizenship Records from PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCitizenship(NHapi.Model.V22.Segment.PID)">
+            <summary>
+            Add a new PID to Citizenship
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestsObservationsIncludedWithinAnOrderedTestBatteryRecords(NHapi.Model.V22.Segment.OM5)">
             <summary>
             Get TestsObservationsIncludedWithinAnOrderedTestBattery Records from OM5
@@ -2877,6 +4302,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllTestsObservationsIncludedWithinAnOrderedTestBatteryRecords(NHapi.Model.V22.Segment.OM5)">
             <summary>
             Get all TestsObservationsIncludedWithinAnOrderedTestBattery Records from OM5
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTestsObservationsIncludedWithinAnOrderedTestBattery(NHapi.Model.V22.Segment.OM5)">
+            <summary>
+            Add a new OM5 to TestsObservationsIncludedWithinAnOrderedTestBattery
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSPharmacyInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
@@ -2889,6 +4319,11 @@
             Get all ProviderSPharmacyInstructions Records from RXO
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProviderSPharmacyInstructions(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Add a new RXO to ProviderSPharmacyInstructions
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
             <summary>
             Get ProviderSAdministrationInstructions Records from RXO
@@ -2897,6 +4332,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
             <summary>
             Get all ProviderSAdministrationInstructions Records from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXO)">
+            <summary>
+            Add a new RXO to ProviderSAdministrationInstructions
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecimenPrioritiesRecords(NHapi.Model.V22.Segment.OM4)">
@@ -2909,6 +4349,11 @@
             Get all SpecimenPriorities Records from OM4
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddSpecimenPriorities(NHapi.Model.V22.Segment.OM4)">
+            <summary>
+            Add a new OM4 to SpecimenPriorities
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValidCodedAnswersRecords(NHapi.Model.V22.Segment.OM3)">
             <summary>
             Get ValidCodedAnswers Records from OM3
@@ -2917,6 +4362,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllValidCodedAnswersRecords(NHapi.Model.V22.Segment.OM3)">
             <summary>
             Get all ValidCodedAnswers Records from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddValidCodedAnswers(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Add a new OM3 to ValidCodedAnswers
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNormalTestCodesForCategoricalObservationsRecords(NHapi.Model.V22.Segment.OM3)">
@@ -2929,6 +4379,11 @@
             Get all NormalTestCodesForCategoricalObservations Records from OM3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddNormalTestCodesForCategoricalObservations(NHapi.Model.V22.Segment.OM3)">
+            <summary>
+            Add a new OM3 to NormalTestCodesForCategoricalObservations
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFA)">
             <summary>
             Get PrimaryKeyValue Records from MFA
@@ -2937,6 +4392,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFA)">
             <summary>
             Get all PrimaryKeyValue Records from MFA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPrimaryKeyValue(NHapi.Model.V22.Segment.MFA)">
+            <summary>
+            Add a new MFA to PrimaryKeyValue
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberHomeRecords(NHapi.Model.V22.Segment.GT1)">
@@ -2949,6 +4409,11 @@
             Get all GuarantorPhoneNumberHome Records from GT1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddGuarantorPhoneNumberHome(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Add a new GT1 to GuarantorPhoneNumberHome
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Get GuarantorPhoneNumberBusiness Records from GT1
@@ -2959,6 +4424,11 @@
             Get all GuarantorPhoneNumberBusiness Records from GT1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddGuarantorPhoneNumberBusiness(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Add a new GT1 to GuarantorPhoneNumberBusiness
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorEmployPhoneNumberRecords(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Get GuarantorEmployPhoneNumber Records from GT1
@@ -2967,6 +4437,11 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAllGuarantorEmployPhoneNumberRecords(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Get all GuarantorEmployPhoneNumber Records from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddGuarantorEmployPhoneNumber(NHapi.Model.V22.Segment.GT1)">
+            <summary>
+            Add a new GT1 to GuarantorEmployPhoneNumber
             </summary>
         </member>
     </members>

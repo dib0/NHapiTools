@@ -42,6 +42,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TQ2 to RelatedPlacerNumber
+        /// </summary>
+        public static EI AddRelatedPlacerNumber(this TQ2 message)
+        {
+            return message.GetRelatedPlacerNumber(message.RelatedPlacerNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RelatedFillerNumber Records from TQ2
         /// </summary>
         public static IEnumerable GetRelatedFillerNumberRecords(this TQ2 message)
@@ -61,6 +69,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllRelatedFillerNumberRecords(this TQ2 message)
         {
             return message.GetAllRecords<EI>("RelatedFillerNumberRepetitionsUsed", "GetRelatedFillerNumber");
+        }
+
+        /// <summary>
+        /// Add a new TQ2 to RelatedFillerNumber
+        /// </summary>
+        public static EI AddRelatedFillerNumber(this TQ2 message)
+        {
+            return message.GetRelatedFillerNumber(message.RelatedFillerNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -86,6 +102,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TQ2 to RelatedPlacerGroupNumber
+        /// </summary>
+        public static EI AddRelatedPlacerGroupNumber(this TQ2 message)
+        {
+            return message.GetRelatedPlacerGroupNumber(message.RelatedPlacerGroupNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MatchReasonCode Records from QRI
         /// </summary>
         public static IEnumerable GetMatchReasonCodeRecords(this QRI message)
@@ -105,6 +129,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllMatchReasonCodeRecords(this QRI message)
         {
             return message.GetAllRecords<IS>("MatchReasonCodeRepetitionsUsed", "GetMatchReasonCode");
+        }
+
+        /// <summary>
+        /// Add a new QRI to MatchReasonCode
+        /// </summary>
+        public static IS AddMatchReasonCode(this QRI message)
+        {
+            return message.GetMatchReasonCode(message.MatchReasonCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -130,6 +162,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM3 to NormalTextCodesForCategoricalObservations
+        /// </summary>
+        public static CE AddNormalTextCodesForCategoricalObservations(this OM3 message)
+        {
+            return message.GetNormalTextCodesForCategoricalObservations(message.NormalTextCodesForCategoricalObservationsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AbnormalTextCodesForCategoricalObservations Records from OM3
         /// </summary>
         public static IEnumerable GetAbnormalTextCodesForCategoricalObservationsRecords(this OM3 message)
@@ -149,6 +189,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllAbnormalTextCodesForCategoricalObservationsRecords(this OM3 message)
         {
             return message.GetAllRecords<CE>("AbnormalTextCodesForCategoricalObservationsRepetitionsUsed", "GetAbnormalTextCodesForCategoricalObservations");
+        }
+
+        /// <summary>
+        /// Add a new OM3 to AbnormalTextCodesForCategoricalObservations
+        /// </summary>
+        public static CE AddAbnormalTextCodesForCategoricalObservations(this OM3 message)
+        {
+            return message.GetAbnormalTextCodesForCategoricalObservations(message.AbnormalTextCodesForCategoricalObservationsRepetitionsUsed);
         }
 
         /// <summary>
@@ -174,6 +222,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM3 to CriticalTextCodesForCategoricalObservations
+        /// </summary>
+        public static CE AddCriticalTextCodesForCategoricalObservations(this OM3 message)
+        {
+            return message.GetCriticalTextCodesForCategoricalObservations(message.CriticalTextCodesForCategoricalObservationsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PrimaryKeyValueMFA Records from MFA
         /// </summary>
         public static IEnumerable GetPrimaryKeyValueMFARecords(this MFA message)
@@ -193,6 +249,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<Varies> GetAllPrimaryKeyValueMFARecords(this MFA message)
         {
             return message.GetAllRecords<Varies>("PrimaryKeyValueMFARepetitionsUsed", "GetPrimaryKeyValueMFA");
+        }
+
+        /// <summary>
+        /// Add a new MFA to PrimaryKeyValueMFA
+        /// </summary>
+        public static Varies AddPrimaryKeyValueMFA(this MFA message)
+        {
+            return message.GetPrimaryKeyValueMFA(message.PrimaryKeyValueMFARepetitionsUsed);
         }
 
         /// <summary>
@@ -218,6 +282,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new MFA to PrimaryKeyValueTypeMFA
+        /// </summary>
+        public static ID AddPrimaryKeyValueTypeMFA(this MFA message)
+        {
+            return message.GetPrimaryKeyValueTypeMFA(message.PrimaryKeyValueTypeMFARepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LanguageAbilityCode Records from LAN
         /// </summary>
         public static IEnumerable GetLanguageAbilityCodeRecords(this LAN message)
@@ -237,6 +309,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllLanguageAbilityCodeRecords(this LAN message)
         {
             return message.GetAllRecords<CE>("LanguageAbilityCodeRepetitionsUsed", "GetLanguageAbilityCode");
+        }
+
+        /// <summary>
+        /// Add a new LAN to LanguageAbilityCode
+        /// </summary>
+        public static CE AddLanguageAbilityCode(this LAN message)
+        {
+            return message.GetLanguageAbilityCode(message.LanguageAbilityCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -262,6 +342,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorNumber
+        /// </summary>
+        public static CX AddGuarantorNumber(this GT1 message)
+        {
+            return message.GetGuarantorNumber(message.GuarantorNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorName Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorNameRecords(this GT1 message)
@@ -281,6 +369,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllGuarantorNameRecords(this GT1 message)
         {
             return message.GetAllRecords<XPN>("GuarantorNameRepetitionsUsed", "GetGuarantorName");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorName
+        /// </summary>
+        public static XPN AddGuarantorName(this GT1 message)
+        {
+            return message.GetGuarantorName(message.GuarantorNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -306,6 +402,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorSpouseName
+        /// </summary>
+        public static XPN AddGuarantorSpouseName(this GT1 message)
+        {
+            return message.GetGuarantorSpouseName(message.GuarantorSpouseNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorAddress Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorAddressRecords(this GT1 message)
@@ -325,6 +429,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllGuarantorAddressRecords(this GT1 message)
         {
             return message.GetAllRecords<XAD>("GuarantorAddressRepetitionsUsed", "GetGuarantorAddress");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorAddress
+        /// </summary>
+        public static XAD AddGuarantorAddress(this GT1 message)
+        {
+            return message.GetGuarantorAddress(message.GuarantorAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -350,6 +462,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorPhNumHome
+        /// </summary>
+        public static XTN AddGuarantorPhNumHome(this GT1 message)
+        {
+            return message.GetGuarantorPhNumHome(message.GuarantorPhNumHomeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorPhNumBusiness Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorPhNumBusinessRecords(this GT1 message)
@@ -369,6 +489,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllGuarantorPhNumBusinessRecords(this GT1 message)
         {
             return message.GetAllRecords<XTN>("GuarantorPhNumBusinessRepetitionsUsed", "GetGuarantorPhNumBusiness");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorPhNumBusiness
+        /// </summary>
+        public static XTN AddGuarantorPhNumBusiness(this GT1 message)
+        {
+            return message.GetGuarantorPhNumBusiness(message.GuarantorPhNumBusinessRepetitionsUsed);
         }
 
         /// <summary>
@@ -394,6 +522,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorEmployerName
+        /// </summary>
+        public static XPN AddGuarantorEmployerName(this GT1 message)
+        {
+            return message.GetGuarantorEmployerName(message.GuarantorEmployerNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorEmployerAddress Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorEmployerAddressRecords(this GT1 message)
@@ -413,6 +549,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllGuarantorEmployerAddressRecords(this GT1 message)
         {
             return message.GetAllRecords<XAD>("GuarantorEmployerAddressRepetitionsUsed", "GetGuarantorEmployerAddress");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorEmployerAddress
+        /// </summary>
+        public static XAD AddGuarantorEmployerAddress(this GT1 message)
+        {
+            return message.GetGuarantorEmployerAddress(message.GuarantorEmployerAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -438,6 +582,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorEmployerPhoneNumber
+        /// </summary>
+        public static XTN AddGuarantorEmployerPhoneNumber(this GT1 message)
+        {
+            return message.GetGuarantorEmployerPhoneNumber(message.GuarantorEmployerPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorEmployeeIDNumber Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorEmployeeIDNumberRecords(this GT1 message)
@@ -457,6 +609,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllGuarantorEmployeeIDNumberRecords(this GT1 message)
         {
             return message.GetAllRecords<CX>("GuarantorEmployeeIDNumberRepetitionsUsed", "GetGuarantorEmployeeIDNumber");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorEmployeeIDNumber
+        /// </summary>
+        public static CX AddGuarantorEmployeeIDNumber(this GT1 message)
+        {
+            return message.GetGuarantorEmployeeIDNumber(message.GuarantorEmployeeIDNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -482,6 +642,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorOrganizationName
+        /// </summary>
+        public static XON AddGuarantorOrganizationName(this GT1 message)
+        {
+            return message.GetGuarantorOrganizationName(message.GuarantorOrganizationNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorEmployerIDNumber Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorEmployerIDNumberRecords(this GT1 message)
@@ -501,6 +669,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllGuarantorEmployerIDNumberRecords(this GT1 message)
         {
             return message.GetAllRecords<CX>("GuarantorEmployerIDNumberRepetitionsUsed", "GetGuarantorEmployerIDNumber");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorEmployerIDNumber
+        /// </summary>
+        public static CX AddGuarantorEmployerIDNumber(this GT1 message)
+        {
+            return message.GetGuarantorEmployerIDNumber(message.GuarantorEmployerIDNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -526,6 +702,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this GT1 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Citizenship Records from GT1
         /// </summary>
         public static IEnumerable GetCitizenshipRecords(this GT1 message)
@@ -545,6 +729,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCitizenshipRecords(this GT1 message)
         {
             return message.GetAllRecords<CE>("CitizenshipRepetitionsUsed", "GetCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to Citizenship
+        /// </summary>
+        public static CE AddCitizenship(this GT1 message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -570,6 +762,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to MotherSMaidenName
+        /// </summary>
+        public static XPN AddMotherSMaidenName(this GT1 message)
+        {
+            return message.GetMotherSMaidenName(message.MotherSMaidenNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EthnicGroup Records from GT1
         /// </summary>
         public static IEnumerable GetEthnicGroupRecords(this GT1 message)
@@ -589,6 +789,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllEthnicGroupRecords(this GT1 message)
         {
             return message.GetAllRecords<CE>("EthnicGroupRepetitionsUsed", "GetEthnicGroup");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to EthnicGroup
+        /// </summary>
+        public static CE AddEthnicGroup(this GT1 message)
+        {
+            return message.GetEthnicGroup(message.EthnicGroupRepetitionsUsed);
         }
 
         /// <summary>
@@ -614,6 +822,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to ContactPersonSName
+        /// </summary>
+        public static XPN AddContactPersonSName(this GT1 message)
+        {
+            return message.GetContactPersonSName(message.ContactPersonSNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactPersonSTelephoneNumber Records from GT1
         /// </summary>
         public static IEnumerable GetContactPersonSTelephoneNumberRecords(this GT1 message)
@@ -633,6 +849,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllContactPersonSTelephoneNumberRecords(this GT1 message)
         {
             return message.GetAllRecords<XTN>("ContactPersonSTelephoneNumberRepetitionsUsed", "GetContactPersonSTelephoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to ContactPersonSTelephoneNumber
+        /// </summary>
+        public static XTN AddContactPersonSTelephoneNumber(this GT1 message)
+        {
+            return message.GetContactPersonSTelephoneNumber(message.ContactPersonSTelephoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -658,6 +882,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GT1 to GuarantorEmployerSOrganizationName
+        /// </summary>
+        public static XON AddGuarantorEmployerSOrganizationName(this GT1 message)
+        {
+            return message.GetGuarantorEmployerSOrganizationName(message.GuarantorEmployerSOrganizationNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GuarantorRace Records from GT1
         /// </summary>
         public static IEnumerable GetGuarantorRaceRecords(this GT1 message)
@@ -677,6 +909,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllGuarantorRaceRecords(this GT1 message)
         {
             return message.GetAllRecords<CE>("GuarantorRaceRepetitionsUsed", "GetGuarantorRace");
+        }
+
+        /// <summary>
+        /// Add a new GT1 to GuarantorRace
+        /// </summary>
+        public static CE AddGuarantorRace(this GT1 message)
+        {
+            return message.GetGuarantorRace(message.GuarantorRaceRepetitionsUsed);
         }
 
         /// <summary>
@@ -702,6 +942,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FAC to FacilityAddress
+        /// </summary>
+        public static XAD AddFacilityAddress(this FAC message)
+        {
+            return message.GetFacilityAddress(message.FacilityAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactPerson Records from FAC
         /// </summary>
         public static IEnumerable GetContactPersonRecords(this FAC message)
@@ -721,6 +969,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllContactPersonRecords(this FAC message)
         {
             return message.GetAllRecords<XCN>("ContactPersonRepetitionsUsed", "GetContactPerson");
+        }
+
+        /// <summary>
+        /// Add a new FAC to ContactPerson
+        /// </summary>
+        public static XCN AddContactPerson(this FAC message)
+        {
+            return message.GetContactPerson(message.ContactPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -746,6 +1002,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FAC to ContactTitle
+        /// </summary>
+        public static ST AddContactTitle(this FAC message)
+        {
+            return message.GetContactTitle(message.ContactTitleRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactAddress Records from FAC
         /// </summary>
         public static IEnumerable GetContactAddressRecords(this FAC message)
@@ -765,6 +1029,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllContactAddressRecords(this FAC message)
         {
             return message.GetAllRecords<XAD>("ContactAddressRepetitionsUsed", "GetContactAddress");
+        }
+
+        /// <summary>
+        /// Add a new FAC to ContactAddress
+        /// </summary>
+        public static XAD AddContactAddress(this FAC message)
+        {
+            return message.GetContactAddress(message.ContactAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -790,6 +1062,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FAC to ContactTelecommunication
+        /// </summary>
+        public static XTN AddContactTelecommunication(this FAC message)
+        {
+            return message.GetContactTelecommunication(message.ContactTelecommunicationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SignatureAuthority Records from FAC
         /// </summary>
         public static IEnumerable GetSignatureAuthorityRecords(this FAC message)
@@ -809,6 +1089,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllSignatureAuthorityRecords(this FAC message)
         {
             return message.GetAllRecords<XCN>("SignatureAuthorityRepetitionsUsed", "GetSignatureAuthority");
+        }
+
+        /// <summary>
+        /// Add a new FAC to SignatureAuthority
+        /// </summary>
+        public static XCN AddSignatureAuthority(this FAC message)
+        {
+            return message.GetSignatureAuthority(message.SignatureAuthorityRepetitionsUsed);
         }
 
         /// <summary>
@@ -834,6 +1122,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FAC to SignatureAuthorityAddress
+        /// </summary>
+        public static XAD AddSignatureAuthorityAddress(this FAC message)
+        {
+            return message.GetSignatureAuthorityAddress(message.SignatureAuthorityAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PersonnelResourceID Records from AIP
         /// </summary>
         public static IEnumerable GetPersonnelResourceIDRecords(this AIP message)
@@ -853,6 +1149,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllPersonnelResourceIDRecords(this AIP message)
         {
             return message.GetAllRecords<XCN>("PersonnelResourceIDRepetitionsUsed", "GetPersonnelResourceID");
+        }
+
+        /// <summary>
+        /// Add a new AIP to PersonnelResourceID
+        /// </summary>
+        public static XCN AddPersonnelResourceID(this AIP message)
+        {
+            return message.GetPersonnelResourceID(message.PersonnelResourceIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -878,6 +1182,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new URD to RUWhoSubjectDefinition
+        /// </summary>
+        public static XCN AddRUWhoSubjectDefinition(this URD message)
+        {
+            return message.GetRUWhoSubjectDefinition(message.RUWhoSubjectDefinitionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RUWhatSubjectDefinition Records from URD
         /// </summary>
         public static IEnumerable GetRUWhatSubjectDefinitionRecords(this URD message)
@@ -897,6 +1209,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllRUWhatSubjectDefinitionRecords(this URD message)
         {
             return message.GetAllRecords<CE>("RUWhatSubjectDefinitionRepetitionsUsed", "GetRUWhatSubjectDefinition");
+        }
+
+        /// <summary>
+        /// Add a new URD to RUWhatSubjectDefinition
+        /// </summary>
+        public static CE AddRUWhatSubjectDefinition(this URD message)
+        {
+            return message.GetRUWhatSubjectDefinition(message.RUWhatSubjectDefinitionRepetitionsUsed);
         }
 
         /// <summary>
@@ -922,6 +1242,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new URD to RUWhatDepartmentCode
+        /// </summary>
+        public static CE AddRUWhatDepartmentCode(this URD message)
+        {
+            return message.GetRUWhatDepartmentCode(message.RUWhatDepartmentCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RUDisplayPrintLocations Records from URD
         /// </summary>
         public static IEnumerable GetRUDisplayPrintLocationsRecords(this URD message)
@@ -941,6 +1269,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllRUDisplayPrintLocationsRecords(this URD message)
         {
             return message.GetAllRecords<ST>("RUDisplayPrintLocationsRepetitionsUsed", "GetRUDisplayPrintLocations");
+        }
+
+        /// <summary>
+        /// Add a new URD to RUDisplayPrintLocations
+        /// </summary>
+        public static ST AddRUDisplayPrintLocations(this URD message)
+        {
+            return message.GetRUDisplayPrintLocations(message.RUDisplayPrintLocationsRepetitionsUsed);
         }
 
         /// <summary>
@@ -966,6 +1302,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB2 to ConditionCode2430
+        /// </summary>
+        public static IS AddConditionCode2430(this UB2 message)
+        {
+            return message.GetConditionCode2430(message.ConditionCode2430RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ValueAmountCode Records from UB2
         /// </summary>
         public static IEnumerable GetValueAmountCodeRecords(this UB2 message)
@@ -985,6 +1329,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<UVC> GetAllValueAmountCodeRecords(this UB2 message)
         {
             return message.GetAllRecords<UVC>("ValueAmountCodeRepetitionsUsed", "GetValueAmountCode");
+        }
+
+        /// <summary>
+        /// Add a new UB2 to ValueAmountCode
+        /// </summary>
+        public static UVC AddValueAmountCode(this UB2 message)
+        {
+            return message.GetValueAmountCode(message.ValueAmountCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -1010,6 +1362,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB2 to OccurrenceCodeDate3235
+        /// </summary>
+        public static OCD AddOccurrenceCodeDate3235(this UB2 message)
+        {
+            return message.GetOccurrenceCodeDate3235(message.OccurrenceCodeDate3235RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OccurrenceSpanCodeDates Records from UB2
         /// </summary>
         public static IEnumerable GetOccurrenceSpanCodeDatesRecords(this UB2 message)
@@ -1029,6 +1389,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<OSP> GetAllOccurrenceSpanCodeDatesRecords(this UB2 message)
         {
             return message.GetAllRecords<OSP>("OccurrenceSpanCodeDatesRepetitionsUsed", "GetOccurrenceSpanCodeDates");
+        }
+
+        /// <summary>
+        /// Add a new UB2 to OccurrenceSpanCodeDates
+        /// </summary>
+        public static OSP AddOccurrenceSpanCodeDates(this UB2 message)
+        {
+            return message.GetOccurrenceSpanCodeDates(message.OccurrenceSpanCodeDatesRepetitionsUsed);
         }
 
         /// <summary>
@@ -1054,6 +1422,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB2 to UB92Locator2State
+        /// </summary>
+        public static ST AddUB92Locator2State(this UB2 message)
+        {
+            return message.GetUB92Locator2State(message.UB92Locator2StateRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get UB92Locator11State Records from UB2
         /// </summary>
         public static IEnumerable GetUB92Locator11StateRecords(this UB2 message)
@@ -1073,6 +1449,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllUB92Locator11StateRecords(this UB2 message)
         {
             return message.GetAllRecords<ST>("UB92Locator11StateRepetitionsUsed", "GetUB92Locator11State");
+        }
+
+        /// <summary>
+        /// Add a new UB2 to UB92Locator11State
+        /// </summary>
+        public static ST AddUB92Locator11State(this UB2 message)
+        {
+            return message.GetUB92Locator11State(message.UB92Locator11StateRepetitionsUsed);
         }
 
         /// <summary>
@@ -1098,6 +1482,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB2 to DocumentControlNumber
+        /// </summary>
+        public static ST AddDocumentControlNumber(this UB2 message)
+        {
+            return message.GetDocumentControlNumber(message.DocumentControlNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get UB92Locator49National Records from UB2
         /// </summary>
         public static IEnumerable GetUB92Locator49NationalRecords(this UB2 message)
@@ -1117,6 +1509,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllUB92Locator49NationalRecords(this UB2 message)
         {
             return message.GetAllRecords<ST>("UB92Locator49NationalRepetitionsUsed", "GetUB92Locator49National");
+        }
+
+        /// <summary>
+        /// Add a new UB2 to UB92Locator49National
+        /// </summary>
+        public static ST AddUB92Locator49National(this UB2 message)
+        {
+            return message.GetUB92Locator49National(message.UB92Locator49NationalRepetitionsUsed);
         }
 
         /// <summary>
@@ -1142,6 +1542,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB2 to UB92Locator56State
+        /// </summary>
+        public static ST AddUB92Locator56State(this UB2 message)
+        {
+            return message.GetUB92Locator56State(message.UB92Locator56StateRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get UB92Locator78State Records from UB2
         /// </summary>
         public static IEnumerable GetUB92Locator78StateRecords(this UB2 message)
@@ -1161,6 +1569,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllUB92Locator78StateRecords(this UB2 message)
         {
             return message.GetAllRecords<ST>("UB92Locator78StateRepetitionsUsed", "GetUB92Locator78State");
+        }
+
+        /// <summary>
+        /// Add a new UB2 to UB92Locator78State
+        /// </summary>
+        public static ST AddUB92Locator78State(this UB2 message)
+        {
+            return message.GetUB92Locator78State(message.UB92Locator78StateRepetitionsUsed);
         }
 
         /// <summary>
@@ -1186,6 +1602,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TQ1 to RepeatPattern
+        /// </summary>
+        public static RPT AddRepeatPattern(this TQ1 message)
+        {
+            return message.GetRepeatPattern(message.RepeatPatternRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ExplicitTime Records from TQ1
         /// </summary>
         public static IEnumerable GetExplicitTimeRecords(this TQ1 message)
@@ -1205,6 +1629,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TM> GetAllExplicitTimeRecords(this TQ1 message)
         {
             return message.GetAllRecords<TM>("ExplicitTimeRepetitionsUsed", "GetExplicitTime");
+        }
+
+        /// <summary>
+        /// Add a new TQ1 to ExplicitTime
+        /// </summary>
+        public static TM AddExplicitTime(this TQ1 message)
+        {
+            return message.GetExplicitTime(message.ExplicitTimeRepetitionsUsed);
         }
 
         /// <summary>
@@ -1230,6 +1662,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TQ1 to RelativeTimeAndUnits
+        /// </summary>
+        public static CQ AddRelativeTimeAndUnits(this TQ1 message)
+        {
+            return message.GetRelativeTimeAndUnits(message.RelativeTimeAndUnitsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Priority Records from TQ1
         /// </summary>
         public static IEnumerable GetPriorityRecords(this TQ1 message)
@@ -1249,6 +1689,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllPriorityRecords(this TQ1 message)
         {
             return message.GetAllRecords<CWE>("PriorityRepetitionsUsed", "GetPriority");
+        }
+
+        /// <summary>
+        /// Add a new TQ1 to Priority
+        /// </summary>
+        public static CWE AddPriority(this TQ1 message)
+        {
+            return message.GetPriority(message.PriorityRepetitionsUsed);
         }
 
         /// <summary>
@@ -1274,6 +1722,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SCH to AppointmentTimingQuantity
+        /// </summary>
+        public static TQ AddAppointmentTimingQuantity(this SCH message)
+        {
+            return message.GetAppointmentTimingQuantity(message.AppointmentTimingQuantityRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerContactPerson Records from SCH
         /// </summary>
         public static IEnumerable GetPlacerContactPersonRecords(this SCH message)
@@ -1293,6 +1749,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllPlacerContactPersonRecords(this SCH message)
         {
             return message.GetAllRecords<XCN>("PlacerContactPersonRepetitionsUsed", "GetPlacerContactPerson");
+        }
+
+        /// <summary>
+        /// Add a new SCH to PlacerContactPerson
+        /// </summary>
+        public static XCN AddPlacerContactPerson(this SCH message)
+        {
+            return message.GetPlacerContactPerson(message.PlacerContactPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -1318,6 +1782,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SCH to PlacerContactAddress
+        /// </summary>
+        public static XAD AddPlacerContactAddress(this SCH message)
+        {
+            return message.GetPlacerContactAddress(message.PlacerContactAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FillerContactPerson Records from SCH
         /// </summary>
         public static IEnumerable GetFillerContactPersonRecords(this SCH message)
@@ -1337,6 +1809,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllFillerContactPersonRecords(this SCH message)
         {
             return message.GetAllRecords<XCN>("FillerContactPersonRepetitionsUsed", "GetFillerContactPerson");
+        }
+
+        /// <summary>
+        /// Add a new SCH to FillerContactPerson
+        /// </summary>
+        public static XCN AddFillerContactPerson(this SCH message)
+        {
+            return message.GetFillerContactPerson(message.FillerContactPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -1362,6 +1842,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SCH to FillerContactAddress
+        /// </summary>
+        public static XAD AddFillerContactAddress(this SCH message)
+        {
+            return message.GetFillerContactAddress(message.FillerContactAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EnteredByPerson Records from SCH
         /// </summary>
         public static IEnumerable GetEnteredByPersonRecords(this SCH message)
@@ -1381,6 +1869,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllEnteredByPersonRecords(this SCH message)
         {
             return message.GetAllRecords<XCN>("EnteredByPersonRepetitionsUsed", "GetEnteredByPerson");
+        }
+
+        /// <summary>
+        /// Add a new SCH to EnteredByPerson
+        /// </summary>
+        public static XCN AddEnteredByPerson(this SCH message)
+        {
+            return message.GetEnteredByPerson(message.EnteredByPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -1406,6 +1902,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SCH to EnteredByPhoneNumber
+        /// </summary>
+        public static XTN AddEnteredByPhoneNumber(this SCH message)
+        {
+            return message.GetEnteredByPhoneNumber(message.EnteredByPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerOrderNumber Records from SCH
         /// </summary>
         public static IEnumerable GetPlacerOrderNumberRecords(this SCH message)
@@ -1425,6 +1929,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllPlacerOrderNumberRecords(this SCH message)
         {
             return message.GetAllRecords<EI>("PlacerOrderNumberRepetitionsUsed", "GetPlacerOrderNumber");
+        }
+
+        /// <summary>
+        /// Add a new SCH to PlacerOrderNumber
+        /// </summary>
+        public static EI AddPlacerOrderNumber(this SCH message)
+        {
+            return message.GetPlacerOrderNumber(message.PlacerOrderNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -1450,6 +1962,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SCH to FillerOrderNumber
+        /// </summary>
+        public static EI AddFillerOrderNumber(this SCH message)
+        {
+            return message.GetFillerOrderNumber(message.FillerOrderNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RangeOfDecimalPrecision Records from OM2
         /// </summary>
         public static IEnumerable GetRangeOfDecimalPrecisionRecords(this OM2 message)
@@ -1469,6 +1989,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<NM> GetAllRangeOfDecimalPrecisionRecords(this OM2 message)
         {
             return message.GetAllRecords<NM>("RangeOfDecimalPrecisionRepetitionsUsed", "GetRangeOfDecimalPrecision");
+        }
+
+        /// <summary>
+        /// Add a new OM2 to RangeOfDecimalPrecision
+        /// </summary>
+        public static NM AddRangeOfDecimalPrecision(this OM2 message)
+        {
+            return message.GetRangeOfDecimalPrecision(message.RangeOfDecimalPrecisionRepetitionsUsed);
         }
 
         /// <summary>
@@ -1494,6 +2022,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM2 to ReferenceNormalRangeOrdinalAndContinuousObservations
+        /// </summary>
+        public static RFR AddReferenceNormalRangeOrdinalAndContinuousObservations(this OM2 message)
+        {
+            return message.GetReferenceNormalRangeOrdinalAndContinuousObservations(message.ReferenceNormalRangeOrdinalAndContinuousObservationsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CriticalRangeForOrdinalAndContinuousObservations Records from OM2
         /// </summary>
         public static IEnumerable GetCriticalRangeForOrdinalAndContinuousObservationsRecords(this OM2 message)
@@ -1513,6 +2049,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<RFR> GetAllCriticalRangeForOrdinalAndContinuousObservationsRecords(this OM2 message)
         {
             return message.GetAllRecords<RFR>("CriticalRangeForOrdinalAndContinuousObservationsRepetitionsUsed", "GetCriticalRangeForOrdinalAndContinuousObservations");
+        }
+
+        /// <summary>
+        /// Add a new OM2 to CriticalRangeForOrdinalAndContinuousObservations
+        /// </summary>
+        public static RFR AddCriticalRangeForOrdinalAndContinuousObservations(this OM2 message)
+        {
+            return message.GetCriticalRangeForOrdinalAndContinuousObservations(message.CriticalRangeForOrdinalAndContinuousObservationsRepetitionsUsed);
         }
 
         /// <summary>
@@ -1538,6 +2082,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM2 to DeltaCheckCriteria
+        /// </summary>
+        public static DLT AddDeltaCheckCriteria(this OM2 message)
+        {
+            return message.GetDeltaCheckCriteria(message.DeltaCheckCriteriaRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Name Records from NK1
         /// </summary>
         public static IEnumerable GetNameRecords(this NK1 message)
@@ -1557,6 +2109,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllNameRecords(this NK1 message)
         {
             return message.GetAllRecords<XPN>("NameRepetitionsUsed", "GetName");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to Name
+        /// </summary>
+        public static XPN AddName(this NK1 message)
+        {
+            return message.GetName(message.NameRepetitionsUsed);
         }
 
         /// <summary>
@@ -1582,6 +2142,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to Address
+        /// </summary>
+        public static XAD AddAddress(this NK1 message)
+        {
+            return message.GetAddress(message.AddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PhoneNumber Records from NK1
         /// </summary>
         public static IEnumerable GetPhoneNumberRecords(this NK1 message)
@@ -1601,6 +2169,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllPhoneNumberRecords(this NK1 message)
         {
             return message.GetAllRecords<XTN>("PhoneNumberRepetitionsUsed", "GetPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to PhoneNumber
+        /// </summary>
+        public static XTN AddPhoneNumber(this NK1 message)
+        {
+            return message.GetPhoneNumber(message.PhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -1626,6 +2202,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to BusinessPhoneNumber
+        /// </summary>
+        public static XTN AddBusinessPhoneNumber(this NK1 message)
+        {
+            return message.GetBusinessPhoneNumber(message.BusinessPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrganizationNameNK1 Records from NK1
         /// </summary>
         public static IEnumerable GetOrganizationNameNK1Records(this NK1 message)
@@ -1645,6 +2229,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllOrganizationNameNK1Records(this NK1 message)
         {
             return message.GetAllRecords<XON>("OrganizationNameNK1RepetitionsUsed", "GetOrganizationNameNK1");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to OrganizationNameNK1
+        /// </summary>
+        public static XON AddOrganizationNameNK1(this NK1 message)
+        {
+            return message.GetOrganizationNameNK1(message.OrganizationNameNK1RepetitionsUsed);
         }
 
         /// <summary>
@@ -1670,6 +2262,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to LivingDependency
+        /// </summary>
+        public static IS AddLivingDependency(this NK1 message)
+        {
+            return message.GetLivingDependency(message.LivingDependencyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AmbulatoryStatus Records from NK1
         /// </summary>
         public static IEnumerable GetAmbulatoryStatusRecords(this NK1 message)
@@ -1689,6 +2289,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllAmbulatoryStatusRecords(this NK1 message)
         {
             return message.GetAllRecords<IS>("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this NK1 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
         }
 
         /// <summary>
@@ -1714,6 +2322,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to Citizenship
+        /// </summary>
+        public static CE AddCitizenship(this NK1 message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MotherSMaidenName Records from NK1
         /// </summary>
         public static IEnumerable GetMotherSMaidenNameRecords(this NK1 message)
@@ -1733,6 +2349,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllMotherSMaidenNameRecords(this NK1 message)
         {
             return message.GetAllRecords<XPN>("MotherSMaidenNameRepetitionsUsed", "GetMotherSMaidenName");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to MotherSMaidenName
+        /// </summary>
+        public static XPN AddMotherSMaidenName(this NK1 message)
+        {
+            return message.GetMotherSMaidenName(message.MotherSMaidenNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -1758,6 +2382,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to EthnicGroup
+        /// </summary>
+        public static CE AddEthnicGroup(this NK1 message)
+        {
+            return message.GetEthnicGroup(message.EthnicGroupRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactReason Records from NK1
         /// </summary>
         public static IEnumerable GetContactReasonRecords(this NK1 message)
@@ -1777,6 +2409,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllContactReasonRecords(this NK1 message)
         {
             return message.GetAllRecords<CE>("ContactReasonRepetitionsUsed", "GetContactReason");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to ContactReason
+        /// </summary>
+        public static CE AddContactReason(this NK1 message)
+        {
+            return message.GetContactReason(message.ContactReasonRepetitionsUsed);
         }
 
         /// <summary>
@@ -1802,6 +2442,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to ContactPersonSName
+        /// </summary>
+        public static XPN AddContactPersonSName(this NK1 message)
+        {
+            return message.GetContactPersonSName(message.ContactPersonSNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactPersonSTelephoneNumber Records from NK1
         /// </summary>
         public static IEnumerable GetContactPersonSTelephoneNumberRecords(this NK1 message)
@@ -1821,6 +2469,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllContactPersonSTelephoneNumberRecords(this NK1 message)
         {
             return message.GetAllRecords<XTN>("ContactPersonSTelephoneNumberRepetitionsUsed", "GetContactPersonSTelephoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to ContactPersonSTelephoneNumber
+        /// </summary>
+        public static XTN AddContactPersonSTelephoneNumber(this NK1 message)
+        {
+            return message.GetContactPersonSTelephoneNumber(message.ContactPersonSTelephoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -1846,6 +2502,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to ContactPersonSAddress
+        /// </summary>
+        public static XAD AddContactPersonSAddress(this NK1 message)
+        {
+            return message.GetContactPersonSAddress(message.ContactPersonSAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NextOfKinAssociatedPartySIdentifiers Records from NK1
         /// </summary>
         public static IEnumerable GetNextOfKinAssociatedPartySIdentifiersRecords(this NK1 message)
@@ -1865,6 +2529,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllNextOfKinAssociatedPartySIdentifiersRecords(this NK1 message)
         {
             return message.GetAllRecords<CX>("NextOfKinAssociatedPartySIdentifiersRepetitionsUsed", "GetNextOfKinAssociatedPartySIdentifiers");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to NextOfKinAssociatedPartySIdentifiers
+        /// </summary>
+        public static CX AddNextOfKinAssociatedPartySIdentifiers(this NK1 message)
+        {
+            return message.GetNextOfKinAssociatedPartySIdentifiers(message.NextOfKinAssociatedPartySIdentifiersRepetitionsUsed);
         }
 
         /// <summary>
@@ -1890,6 +2562,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new NK1 to Race
+        /// </summary>
+        public static CE AddRace(this NK1 message)
+        {
+            return message.GetRace(message.RaceRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LocationService Records from LDP
         /// </summary>
         public static IEnumerable GetLocationServiceRecords(this LDP message)
@@ -1909,6 +2589,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllLocationServiceRecords(this LDP message)
         {
             return message.GetAllRecords<IS>("LocationServiceRepetitionsUsed", "GetLocationService");
+        }
+
+        /// <summary>
+        /// Add a new LDP to LocationService
+        /// </summary>
+        public static IS AddLocationService(this LDP message)
+        {
+            return message.GetLocationService(message.LocationServiceRepetitionsUsed);
         }
 
         /// <summary>
@@ -1934,6 +2622,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LDP to SpecialtyType
+        /// </summary>
+        public static CE AddSpecialtyType(this LDP message)
+        {
+            return message.GetSpecialtyType(message.SpecialtyTypeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ValidPatientClasses Records from LDP
         /// </summary>
         public static IEnumerable GetValidPatientClassesRecords(this LDP message)
@@ -1953,6 +2649,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllValidPatientClassesRecords(this LDP message)
         {
             return message.GetAllRecords<IS>("ValidPatientClassesRepetitionsUsed", "GetValidPatientClasses");
+        }
+
+        /// <summary>
+        /// Add a new LDP to ValidPatientClasses
+        /// </summary>
+        public static IS AddValidPatientClasses(this LDP message)
+        {
+            return message.GetValidPatientClasses(message.ValidPatientClassesRepetitionsUsed);
         }
 
         /// <summary>
@@ -1978,6 +2682,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LDP to VisitingHours
+        /// </summary>
+        public static VH AddVisitingHours(this LDP message)
+        {
+            return message.GetVisitingHours(message.VisitingHoursRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DiagnosisCodeFT1 Records from FT1
         /// </summary>
         public static IEnumerable GetDiagnosisCodeFT1Records(this FT1 message)
@@ -1997,6 +2709,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllDiagnosisCodeFT1Records(this FT1 message)
         {
             return message.GetAllRecords<CE>("DiagnosisCodeFT1RepetitionsUsed", "GetDiagnosisCodeFT1");
+        }
+
+        /// <summary>
+        /// Add a new FT1 to DiagnosisCodeFT1
+        /// </summary>
+        public static CE AddDiagnosisCodeFT1(this FT1 message)
+        {
+            return message.GetDiagnosisCodeFT1(message.DiagnosisCodeFT1RepetitionsUsed);
         }
 
         /// <summary>
@@ -2022,6 +2742,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FT1 to PerformedByCode
+        /// </summary>
+        public static XCN AddPerformedByCode(this FT1 message)
+        {
+            return message.GetPerformedByCode(message.PerformedByCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderedByCode Records from FT1
         /// </summary>
         public static IEnumerable GetOrderedByCodeRecords(this FT1 message)
@@ -2041,6 +2769,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOrderedByCodeRecords(this FT1 message)
         {
             return message.GetAllRecords<XCN>("OrderedByCodeRepetitionsUsed", "GetOrderedByCode");
+        }
+
+        /// <summary>
+        /// Add a new FT1 to OrderedByCode
+        /// </summary>
+        public static XCN AddOrderedByCode(this FT1 message)
+        {
+            return message.GetOrderedByCode(message.OrderedByCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -2066,6 +2802,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FT1 to EnteredByCode
+        /// </summary>
+        public static XCN AddEnteredByCode(this FT1 message)
+        {
+            return message.GetEnteredByCode(message.EnteredByCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProcedureCodeModifier Records from FT1
         /// </summary>
         public static IEnumerable GetProcedureCodeModifierRecords(this FT1 message)
@@ -2085,6 +2829,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProcedureCodeModifierRecords(this FT1 message)
         {
             return message.GetAllRecords<CE>("ProcedureCodeModifierRepetitionsUsed", "GetProcedureCodeModifier");
+        }
+
+        /// <summary>
+        /// Add a new FT1 to ProcedureCodeModifier
+        /// </summary>
+        public static CE AddProcedureCodeModifier(this FT1 message)
+        {
+            return message.GetProcedureCodeModifier(message.ProcedureCodeModifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -2110,6 +2862,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new FT1 to TransactionReferenceKey
+        /// </summary>
+        public static SI AddTransactionReferenceKey(this FT1 message)
+        {
+            return message.GetTransactionReferenceKey(message.TransactionReferenceKeyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ConditionCode3539 Records from UB1
         /// </summary>
         public static IEnumerable GetConditionCode3539Records(this UB1 message)
@@ -2129,6 +2889,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllConditionCode3539Records(this UB1 message)
         {
             return message.GetAllRecords<IS>("ConditionCode3539RepetitionsUsed", "GetConditionCode3539");
+        }
+
+        /// <summary>
+        /// Add a new UB1 to ConditionCode3539
+        /// </summary>
+        public static IS AddConditionCode3539(this UB1 message)
+        {
+            return message.GetConditionCode3539(message.ConditionCode3539RepetitionsUsed);
         }
 
         /// <summary>
@@ -2154,6 +2922,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new UB1 to ValueAmountCode4649
+        /// </summary>
+        public static UVC AddValueAmountCode4649(this UB1 message)
+        {
+            return message.GetValueAmountCode4649(message.ValueAmountCode4649RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Occurrence2832 Records from UB1
         /// </summary>
         public static IEnumerable GetOccurrence2832Records(this UB1 message)
@@ -2173,6 +2949,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<OCD> GetAllOccurrence2832Records(this UB1 message)
         {
             return message.GetAllRecords<OCD>("Occurrence2832RepetitionsUsed", "GetOccurrence2832");
+        }
+
+        /// <summary>
+        /// Add a new UB1 to Occurrence2832
+        /// </summary>
+        public static OCD AddOccurrence2832(this UB1 message)
+        {
+            return message.GetOccurrence2832(message.Occurrence2832RepetitionsUsed);
         }
 
         /// <summary>
@@ -2198,6 +2982,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM1 to PermittedDataTypes
+        /// </summary>
+        public static ID AddPermittedDataTypes(this OM1 message)
+        {
+            return message.GetPermittedDataTypes(message.PermittedDataTypesRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OtherNames Records from OM1
         /// </summary>
         public static IEnumerable GetOtherNamesRecords(this OM1 message)
@@ -2217,6 +3009,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllOtherNamesRecords(this OM1 message)
         {
             return message.GetAllRecords<ST>("OtherNamesRepetitionsUsed", "GetOtherNames");
+        }
+
+        /// <summary>
+        /// Add a new OM1 to OtherNames
+        /// </summary>
+        public static ST AddOtherNames(this OM1 message)
+        {
+            return message.GetOtherNames(message.OtherNamesRepetitionsUsed);
         }
 
         /// <summary>
@@ -2242,6 +3042,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM1 to IdentityOfInstrumentUsedToPerformThisStudy
+        /// </summary>
+        public static CE AddIdentityOfInstrumentUsedToPerformThisStudy(this OM1 message)
+        {
+            return message.GetIdentityOfInstrumentUsedToPerformThisStudy(message.IdentityOfInstrumentUsedToPerformThisStudyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CodedRepresentationOfMethod Records from OM1
         /// </summary>
         public static IEnumerable GetCodedRepresentationOfMethodRecords(this OM1 message)
@@ -2261,6 +3069,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCodedRepresentationOfMethodRecords(this OM1 message)
         {
             return message.GetAllRecords<CE>("CodedRepresentationOfMethodRepetitionsUsed", "GetCodedRepresentationOfMethod");
+        }
+
+        /// <summary>
+        /// Add a new OM1 to CodedRepresentationOfMethod
+        /// </summary>
+        public static CE AddCodedRepresentationOfMethod(this OM1 message)
+        {
+            return message.GetCodedRepresentationOfMethod(message.CodedRepresentationOfMethodRepetitionsUsed);
         }
 
         /// <summary>
@@ -2286,6 +3102,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM1 to ObservationProducingDepartmentSection
+        /// </summary>
+        public static CE AddObservationProducingDepartmentSection(this OM1 message)
+        {
+            return message.GetObservationProducingDepartmentSection(message.ObservationProducingDepartmentSectionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProcessingPriority Records from OM1
         /// </summary>
         public static IEnumerable GetProcessingPriorityRecords(this OM1 message)
@@ -2305,6 +3129,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllProcessingPriorityRecords(this OM1 message)
         {
             return message.GetAllRecords<ID>("ProcessingPriorityRepetitionsUsed", "GetProcessingPriority");
+        }
+
+        /// <summary>
+        /// Add a new OM1 to ProcessingPriority
+        /// </summary>
+        public static ID AddProcessingPriority(this OM1 message)
+        {
+            return message.GetProcessingPriority(message.ProcessingPriorityRepetitionsUsed);
         }
 
         /// <summary>
@@ -2330,6 +3162,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM1 to OutsideSiteSWhereObservationMayBePerformed
+        /// </summary>
+        public static CE AddOutsideSiteSWhereObservationMayBePerformed(this OM1 message)
+        {
+            return message.GetOutsideSiteSWhereObservationMayBePerformed(message.OutsideSiteSWhereObservationMayBePerformedRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AddressOfOutsideSiteS Records from OM1
         /// </summary>
         public static IEnumerable GetAddressOfOutsideSiteSRecords(this OM1 message)
@@ -2349,6 +3189,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllAddressOfOutsideSiteSRecords(this OM1 message)
         {
             return message.GetAllRecords<XAD>("AddressOfOutsideSiteSRepetitionsUsed", "GetAddressOfOutsideSiteS");
+        }
+
+        /// <summary>
+        /// Add a new OM1 to AddressOfOutsideSiteS
+        /// </summary>
+        public static XAD AddAddressOfOutsideSiteS(this OM1 message)
+        {
+            return message.GetAddressOfOutsideSiteS(message.AddressOfOutsideSiteSRepetitionsUsed);
         }
 
         /// <summary>
@@ -2374,6 +3222,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM1 to ReflexTestsObservations
+        /// </summary>
+        public static CE AddReflexTestsObservations(this OM1 message)
+        {
+            return message.GetReflexTestsObservations(message.ReflexTestsObservationsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ServiceTestObservationPerformanceSchedule Records from OM1
         /// </summary>
         public static IEnumerable GetServiceTestObservationPerformanceScheduleRecords(this OM1 message)
@@ -2393,6 +3249,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllServiceTestObservationPerformanceScheduleRecords(this OM1 message)
         {
             return message.GetAllRecords<ST>("ServiceTestObservationPerformanceScheduleRepetitionsUsed", "GetServiceTestObservationPerformanceSchedule");
+        }
+
+        /// <summary>
+        /// Add a new OM1 to ServiceTestObservationPerformanceSchedule
+        /// </summary>
+        public static ST AddServiceTestObservationPerformanceSchedule(this OM1 message)
+        {
+            return message.GetServiceTestObservationPerformanceSchedule(message.ServiceTestObservationPerformanceScheduleRepetitionsUsed);
         }
 
         /// <summary>
@@ -2418,6 +3282,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LRL to OrganizationalLocationRelationshipValue
+        /// </summary>
+        public static XON AddOrganizationalLocationRelationshipValue(this LRL message)
+        {
+            return message.GetOrganizationalLocationRelationshipValue(message.OrganizationalLocationRelationshipValueRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Parameters Records from ECD
         /// </summary>
         public static IEnumerable GetParametersRecords(this ECD message)
@@ -2437,6 +3309,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TX> GetAllParametersRecords(this ECD message)
         {
             return message.GetAllRecords<TX>("ParametersRepetitionsUsed", "GetParameters");
+        }
+
+        /// <summary>
+        /// Add a new ECD to Parameters
+        /// </summary>
+        public static TX AddParameters(this ECD message)
+        {
+            return message.GetParameters(message.ParametersRepetitionsUsed);
         }
 
         /// <summary>
@@ -2462,6 +3342,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new DB1 to DisabledPersonIdentifier
+        /// </summary>
+        public static CX AddDisabledPersonIdentifier(this DB1 message)
+        {
+            return message.GetDisabledPersonIdentifier(message.DisabledPersonIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BPAdverseReactionType Records from BTX
         /// </summary>
         public static IEnumerable GetBPAdverseReactionTypeRecords(this BTX message)
@@ -2481,6 +3369,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllBPAdverseReactionTypeRecords(this BTX message)
         {
             return message.GetAllRecords<CWE>("BPAdverseReactionTypeRepetitionsUsed", "GetBPAdverseReactionType");
+        }
+
+        /// <summary>
+        /// Add a new BTX to BPAdverseReactionType
+        /// </summary>
+        public static CWE AddBPAdverseReactionType(this BTX message)
+        {
+            return message.GetBPAdverseReactionType(message.BPAdverseReactionTypeRepetitionsUsed);
         }
 
         /// <summary>
@@ -2506,6 +3402,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new VAR to VarianceOriginator
+        /// </summary>
+        public static XCN AddVarianceOriginator(this VAR message)
+        {
+            return message.GetVarianceOriginator(message.VarianceOriginatorRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get VarianceDescription Records from VAR
         /// </summary>
         public static IEnumerable GetVarianceDescriptionRecords(this VAR message)
@@ -2525,6 +3429,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllVarianceDescriptionRecords(this VAR message)
         {
             return message.GetAllRecords<ST>("VarianceDescriptionRepetitionsUsed", "GetVarianceDescription");
+        }
+
+        /// <summary>
+        /// Add a new VAR to VarianceDescription
+        /// </summary>
+        public static ST AddVarianceDescription(this VAR message)
+        {
+            return message.GetVarianceDescription(message.VarianceDescriptionRepetitionsUsed);
         }
 
         /// <summary>
@@ -2550,6 +3462,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new URS to RUWhereSubjectDefinition
+        /// </summary>
+        public static ST AddRUWhereSubjectDefinition(this URS message)
+        {
+            return message.GetRUWhereSubjectDefinition(message.RUWhereSubjectDefinitionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RUWhatUserQualifier Records from URS
         /// </summary>
         public static IEnumerable GetRUWhatUserQualifierRecords(this URS message)
@@ -2569,6 +3489,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllRUWhatUserQualifierRecords(this URS message)
         {
             return message.GetAllRecords<ST>("RUWhatUserQualifierRepetitionsUsed", "GetRUWhatUserQualifier");
+        }
+
+        /// <summary>
+        /// Add a new URS to RUWhatUserQualifier
+        /// </summary>
+        public static ST AddRUWhatUserQualifier(this URS message)
+        {
+            return message.GetRUWhatUserQualifier(message.RUWhatUserQualifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -2594,6 +3522,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new URS to RUOtherResultsSubjectDefinition
+        /// </summary>
+        public static ST AddRUOtherResultsSubjectDefinition(this URS message)
+        {
+            return message.GetRUOtherResultsSubjectDefinition(message.RUOtherResultsSubjectDefinitionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RUWhichDateTimeQualifier Records from URS
         /// </summary>
         public static IEnumerable GetRUWhichDateTimeQualifierRecords(this URS message)
@@ -2613,6 +3549,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllRUWhichDateTimeQualifierRecords(this URS message)
         {
             return message.GetAllRecords<ID>("RUWhichDateTimeQualifierRepetitionsUsed", "GetRUWhichDateTimeQualifier");
+        }
+
+        /// <summary>
+        /// Add a new URS to RUWhichDateTimeQualifier
+        /// </summary>
+        public static ID AddRUWhichDateTimeQualifier(this URS message)
+        {
+            return message.GetRUWhichDateTimeQualifier(message.RUWhichDateTimeQualifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -2638,6 +3582,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new URS to RUWhichDateTimeStatusQualifier
+        /// </summary>
+        public static ID AddRUWhichDateTimeStatusQualifier(this URS message)
+        {
+            return message.GetRUWhichDateTimeStatusQualifier(message.RUWhichDateTimeStatusQualifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RUDateTimeSelectionQualifier Records from URS
         /// </summary>
         public static IEnumerable GetRUDateTimeSelectionQualifierRecords(this URS message)
@@ -2657,6 +3609,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllRUDateTimeSelectionQualifierRecords(this URS message)
         {
             return message.GetAllRecords<ID>("RUDateTimeSelectionQualifierRepetitionsUsed", "GetRUDateTimeSelectionQualifier");
+        }
+
+        /// <summary>
+        /// Add a new URS to RUDateTimeSelectionQualifier
+        /// </summary>
+        public static ID AddRUDateTimeSelectionQualifier(this URS message)
+        {
+            return message.GetRUDateTimeSelectionQualifier(message.RUDateTimeSelectionQualifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -2682,6 +3642,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to StaffIdentifierList
+        /// </summary>
+        public static CX AddStaffIdentifierList(this STF message)
+        {
+            return message.GetStaffIdentifierList(message.StaffIdentifierListRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get StaffName Records from STF
         /// </summary>
         public static IEnumerable GetStaffNameRecords(this STF message)
@@ -2701,6 +3669,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllStaffNameRecords(this STF message)
         {
             return message.GetAllRecords<XPN>("StaffNameRepetitionsUsed", "GetStaffName");
+        }
+
+        /// <summary>
+        /// Add a new STF to StaffName
+        /// </summary>
+        public static XPN AddStaffName(this STF message)
+        {
+            return message.GetStaffName(message.StaffNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -2726,6 +3702,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to StaffType
+        /// </summary>
+        public static IS AddStaffType(this STF message)
+        {
+            return message.GetStaffType(message.StaffTypeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Department Records from STF
         /// </summary>
         public static IEnumerable GetDepartmentRecords(this STF message)
@@ -2745,6 +3729,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllDepartmentRecords(this STF message)
         {
             return message.GetAllRecords<CE>("DepartmentRepetitionsUsed", "GetDepartment");
+        }
+
+        /// <summary>
+        /// Add a new STF to Department
+        /// </summary>
+        public static CE AddDepartment(this STF message)
+        {
+            return message.GetDepartment(message.DepartmentRepetitionsUsed);
         }
 
         /// <summary>
@@ -2770,6 +3762,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to HospitalServiceSTF
+        /// </summary>
+        public static CE AddHospitalServiceSTF(this STF message)
+        {
+            return message.GetHospitalServiceSTF(message.HospitalServiceSTFRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Phone Records from STF
         /// </summary>
         public static IEnumerable GetPhoneRecords(this STF message)
@@ -2789,6 +3789,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllPhoneRecords(this STF message)
         {
             return message.GetAllRecords<XTN>("PhoneRepetitionsUsed", "GetPhone");
+        }
+
+        /// <summary>
+        /// Add a new STF to Phone
+        /// </summary>
+        public static XTN AddPhone(this STF message)
+        {
+            return message.GetPhone(message.PhoneRepetitionsUsed);
         }
 
         /// <summary>
@@ -2814,6 +3822,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to OfficeHomeAddressBirthplace
+        /// </summary>
+        public static XAD AddOfficeHomeAddressBirthplace(this STF message)
+        {
+            return message.GetOfficeHomeAddressBirthplace(message.OfficeHomeAddressBirthplaceRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InstitutionActivationDate Records from STF
         /// </summary>
         public static IEnumerable GetInstitutionActivationDateRecords(this STF message)
@@ -2833,6 +3849,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<DIN> GetAllInstitutionActivationDateRecords(this STF message)
         {
             return message.GetAllRecords<DIN>("InstitutionActivationDateRepetitionsUsed", "GetInstitutionActivationDate");
+        }
+
+        /// <summary>
+        /// Add a new STF to InstitutionActivationDate
+        /// </summary>
+        public static DIN AddInstitutionActivationDate(this STF message)
+        {
+            return message.GetInstitutionActivationDate(message.InstitutionActivationDateRepetitionsUsed);
         }
 
         /// <summary>
@@ -2858,6 +3882,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to InstitutionInactivationDate
+        /// </summary>
+        public static DIN AddInstitutionInactivationDate(this STF message)
+        {
+            return message.GetInstitutionInactivationDate(message.InstitutionInactivationDateRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BackupPersonID Records from STF
         /// </summary>
         public static IEnumerable GetBackupPersonIDRecords(this STF message)
@@ -2877,6 +3909,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllBackupPersonIDRecords(this STF message)
         {
             return message.GetAllRecords<CE>("BackupPersonIDRepetitionsUsed", "GetBackupPersonID");
+        }
+
+        /// <summary>
+        /// Add a new STF to BackupPersonID
+        /// </summary>
+        public static CE AddBackupPersonID(this STF message)
+        {
+            return message.GetBackupPersonID(message.BackupPersonIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -2902,6 +3942,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to EMailAddress
+        /// </summary>
+        public static ST AddEMailAddress(this STF message)
+        {
+            return message.GetEMailAddress(message.EMailAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Citizenship Records from STF
         /// </summary>
         public static IEnumerable GetCitizenshipRecords(this STF message)
@@ -2921,6 +3969,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCitizenshipRecords(this STF message)
         {
             return message.GetAllRecords<CE>("CitizenshipRepetitionsUsed", "GetCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new STF to Citizenship
+        /// </summary>
+        public static CE AddCitizenship(this STF message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -2946,6 +4002,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new STF to CostCenterCode
+        /// </summary>
+        public static CWE AddCostCenterCode(this STF message)
+        {
+            return message.GetCostCenterCode(message.CostCenterCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get WhereSubjectFilter Records from QRF
         /// </summary>
         public static IEnumerable GetWhereSubjectFilterRecords(this QRF message)
@@ -2965,6 +4029,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllWhereSubjectFilterRecords(this QRF message)
         {
             return message.GetAllRecords<ST>("WhereSubjectFilterRepetitionsUsed", "GetWhereSubjectFilter");
+        }
+
+        /// <summary>
+        /// Add a new QRF to WhereSubjectFilter
+        /// </summary>
+        public static ST AddWhereSubjectFilter(this QRF message)
+        {
+            return message.GetWhereSubjectFilter(message.WhereSubjectFilterRepetitionsUsed);
         }
 
         /// <summary>
@@ -2990,6 +4062,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new QRF to WhatUserQualifier
+        /// </summary>
+        public static ST AddWhatUserQualifier(this QRF message)
+        {
+            return message.GetWhatUserQualifier(message.WhatUserQualifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OtherQRYSubjectFilter Records from QRF
         /// </summary>
         public static IEnumerable GetOtherQRYSubjectFilterRecords(this QRF message)
@@ -3009,6 +4089,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllOtherQRYSubjectFilterRecords(this QRF message)
         {
             return message.GetAllRecords<ST>("OtherQRYSubjectFilterRepetitionsUsed", "GetOtherQRYSubjectFilter");
+        }
+
+        /// <summary>
+        /// Add a new QRF to OtherQRYSubjectFilter
+        /// </summary>
+        public static ST AddOtherQRYSubjectFilter(this QRF message)
+        {
+            return message.GetOtherQRYSubjectFilter(message.OtherQRYSubjectFilterRepetitionsUsed);
         }
 
         /// <summary>
@@ -3034,6 +4122,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new QRF to WhichDateTimeQualifier
+        /// </summary>
+        public static ID AddWhichDateTimeQualifier(this QRF message)
+        {
+            return message.GetWhichDateTimeQualifier(message.WhichDateTimeQualifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get WhichDateTimeStatusQualifier Records from QRF
         /// </summary>
         public static IEnumerable GetWhichDateTimeStatusQualifierRecords(this QRF message)
@@ -3053,6 +4149,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllWhichDateTimeStatusQualifierRecords(this QRF message)
         {
             return message.GetAllRecords<ID>("WhichDateTimeStatusQualifierRepetitionsUsed", "GetWhichDateTimeStatusQualifier");
+        }
+
+        /// <summary>
+        /// Add a new QRF to WhichDateTimeStatusQualifier
+        /// </summary>
+        public static ID AddWhichDateTimeStatusQualifier(this QRF message)
+        {
+            return message.GetWhichDateTimeStatusQualifier(message.WhichDateTimeStatusQualifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -3078,6 +4182,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new QRF to DateTimeSelectionQualifier
+        /// </summary>
+        public static ID AddDateTimeSelectionQualifier(this QRF message)
+        {
+            return message.GetDateTimeSelectionQualifier(message.DateTimeSelectionQualifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NumberOfProductExperienceReportsFiledByFacility Records from PSH
         /// </summary>
         public static IEnumerable GetNumberOfProductExperienceReportsFiledByFacilityRecords(this PSH message)
@@ -3097,6 +4209,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<NM> GetAllNumberOfProductExperienceReportsFiledByFacilityRecords(this PSH message)
         {
             return message.GetAllRecords<NM>("NumberOfProductExperienceReportsFiledByFacilityRepetitionsUsed", "GetNumberOfProductExperienceReportsFiledByFacility");
+        }
+
+        /// <summary>
+        /// Add a new PSH to NumberOfProductExperienceReportsFiledByFacility
+        /// </summary>
+        public static NM AddNumberOfProductExperienceReportsFiledByFacility(this PSH message)
+        {
+            return message.GetNumberOfProductExperienceReportsFiledByFacility(message.NumberOfProductExperienceReportsFiledByFacilityRepetitionsUsed);
         }
 
         /// <summary>
@@ -3122,6 +4242,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PSH to NumberOfProductExperienceReportsFiledByDistributor
+        /// </summary>
+        public static NM AddNumberOfProductExperienceReportsFiledByDistributor(this PSH message)
+        {
+            return message.GetNumberOfProductExperienceReportsFiledByDistributor(message.NumberOfProductExperienceReportsFiledByDistributorRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ErrorCodeAndLocation Records from ERR
         /// </summary>
         public static IEnumerable GetErrorCodeAndLocationRecords(this ERR message)
@@ -3141,6 +4269,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ELD> GetAllErrorCodeAndLocationRecords(this ERR message)
         {
             return message.GetAllRecords<ELD>("ErrorCodeAndLocationRepetitionsUsed", "GetErrorCodeAndLocation");
+        }
+
+        /// <summary>
+        /// Add a new ERR to ErrorCodeAndLocation
+        /// </summary>
+        public static ELD AddErrorCodeAndLocation(this ERR message)
+        {
+            return message.GetErrorCodeAndLocation(message.ErrorCodeAndLocationRepetitionsUsed);
         }
 
         /// <summary>
@@ -3166,6 +4302,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ERR to ErrorLocation
+        /// </summary>
+        public static ERL AddErrorLocation(this ERR message)
+        {
+            return message.GetErrorLocation(message.ErrorLocationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ApplicationErrorParameter Records from ERR
         /// </summary>
         public static IEnumerable GetApplicationErrorParameterRecords(this ERR message)
@@ -3185,6 +4329,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllApplicationErrorParameterRecords(this ERR message)
         {
             return message.GetAllRecords<ST>("ApplicationErrorParameterRepetitionsUsed", "GetApplicationErrorParameter");
+        }
+
+        /// <summary>
+        /// Add a new ERR to ApplicationErrorParameter
+        /// </summary>
+        public static ST AddApplicationErrorParameter(this ERR message)
+        {
+            return message.GetApplicationErrorParameter(message.ApplicationErrorParameterRepetitionsUsed);
         }
 
         /// <summary>
@@ -3210,6 +4362,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ERR to InformPersonIndicator
+        /// </summary>
+        public static IS AddInformPersonIndicator(this ERR message)
+        {
+            return message.GetInformPersonIndicator(message.InformPersonIndicatorRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OverrideReasonCode Records from ERR
         /// </summary>
         public static IEnumerable GetOverrideReasonCodeRecords(this ERR message)
@@ -3229,6 +4389,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllOverrideReasonCodeRecords(this ERR message)
         {
             return message.GetAllRecords<CWE>("OverrideReasonCodeRepetitionsUsed", "GetOverrideReasonCode");
+        }
+
+        /// <summary>
+        /// Add a new ERR to OverrideReasonCode
+        /// </summary>
+        public static CWE AddOverrideReasonCode(this ERR message)
+        {
+            return message.GetOverrideReasonCode(message.OverrideReasonCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -3254,6 +4422,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ERR to HelpDeskContactPoint
+        /// </summary>
+        public static XTN AddHelpDeskContactPoint(this ERR message)
+        {
+            return message.GetHelpDeskContactPoint(message.HelpDeskContactPointRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MajorFieldOfStudy Records from EDU
         /// </summary>
         public static IEnumerable GetMajorFieldOfStudyRecords(this EDU message)
@@ -3273,6 +4449,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllMajorFieldOfStudyRecords(this EDU message)
         {
             return message.GetAllRecords<CWE>("MajorFieldOfStudyRepetitionsUsed", "GetMajorFieldOfStudy");
+        }
+
+        /// <summary>
+        /// Add a new EDU to MajorFieldOfStudy
+        /// </summary>
+        public static CWE AddMajorFieldOfStudy(this EDU message)
+        {
+            return message.GetMajorFieldOfStudy(message.MajorFieldOfStudyRepetitionsUsed);
         }
 
         /// <summary>
@@ -3298,6 +4482,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPR to InputParameterList
+        /// </summary>
+        public static QIP AddInputParameterList(this SPR message)
+        {
+            return message.GetInputParameterList(message.InputParameterListRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Location Records from SAC
         /// </summary>
         public static IEnumerable GetLocationRecords(this SAC message)
@@ -3317,6 +4509,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllLocationRecords(this SAC message)
         {
             return message.GetAllRecords<CE>("LocationRepetitionsUsed", "GetLocation");
+        }
+
+        /// <summary>
+        /// Add a new SAC to Location
+        /// </summary>
+        public static CE AddLocation(this SAC message)
+        {
+            return message.GetLocation(message.LocationRepetitionsUsed);
         }
 
         /// <summary>
@@ -3342,6 +4542,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SAC to Additive
+        /// </summary>
+        public static CWE AddAdditive(this SAC message)
+        {
+            return message.GetAdditive(message.AdditiveRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SystemInducedContaminants Records from SAC
         /// </summary>
         public static IEnumerable GetSystemInducedContaminantsRecords(this SAC message)
@@ -3361,6 +4569,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllSystemInducedContaminantsRecords(this SAC message)
         {
             return message.GetAllRecords<CE>("SystemInducedContaminantsRepetitionsUsed", "GetSystemInducedContaminants");
+        }
+
+        /// <summary>
+        /// Add a new SAC to SystemInducedContaminants
+        /// </summary>
+        public static CE AddSystemInducedContaminants(this SAC message)
+        {
+            return message.GetSystemInducedContaminants(message.SystemInducedContaminantsRepetitionsUsed);
         }
 
         /// <summary>
@@ -3386,6 +4602,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SAC to DrugInterference
+        /// </summary>
+        public static CE AddDrugInterference(this SAC message)
+        {
+            return message.GetDrugInterference(message.DrugInterferenceRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecialHandlingCode Records from SAC
         /// </summary>
         public static IEnumerable GetSpecialHandlingCodeRecords(this SAC message)
@@ -3405,6 +4629,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSpecialHandlingCodeRecords(this SAC message)
         {
             return message.GetAllRecords<CWE>("SpecialHandlingCodeRepetitionsUsed", "GetSpecialHandlingCode");
+        }
+
+        /// <summary>
+        /// Add a new SAC to SpecialHandlingCode
+        /// </summary>
+        public static CWE AddSpecialHandlingCode(this SAC message)
+        {
+            return message.GetSpecialHandlingCode(message.SpecialHandlingCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -3430,6 +4662,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SAC to OtherEnvironmentalFactors
+        /// </summary>
+        public static CE AddOtherEnvironmentalFactors(this SAC message)
+        {
+            return message.GetOtherEnvironmentalFactors(message.OtherEnvironmentalFactorsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AllergyReactionCode Records from IAM
         /// </summary>
         public static IEnumerable GetAllergyReactionCodeRecords(this IAM message)
@@ -3449,6 +4689,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllAllergyReactionCodeRecords(this IAM message)
         {
             return message.GetAllRecords<ST>("AllergyReactionCodeRepetitionsUsed", "GetAllergyReactionCode");
+        }
+
+        /// <summary>
+        /// Add a new IAM to AllergyReactionCode
+        /// </summary>
+        public static ST AddAllergyReactionCode(this IAM message)
+        {
+            return message.GetAllergyReactionCode(message.AllergyReactionCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -3474,6 +4722,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GOL to GoalEvaluationComment
+        /// </summary>
+        public static ST AddGoalEvaluationComment(this GOL message)
+        {
+            return message.GetGoalEvaluationComment(message.GoalEvaluationCommentRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GoalTargetType Records from GOL
         /// </summary>
         public static IEnumerable GetGoalTargetTypeRecords(this GOL message)
@@ -3493,6 +4749,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllGoalTargetTypeRecords(this GOL message)
         {
             return message.GetAllRecords<CE>("GoalTargetTypeRepetitionsUsed", "GetGoalTargetType");
+        }
+
+        /// <summary>
+        /// Add a new GOL to GoalTargetType
+        /// </summary>
+        public static CE AddGoalTargetType(this GOL message)
+        {
+            return message.GetGoalTargetType(message.GoalTargetTypeRepetitionsUsed);
         }
 
         /// <summary>
@@ -3518,6 +4782,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GOL to GoalTargetName
+        /// </summary>
+        public static XPN AddGoalTargetName(this GOL message)
+        {
+            return message.GetGoalTargetName(message.GoalTargetNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InputParameterList Records from ERQ
         /// </summary>
         public static IEnumerable GetInputParameterListRecords(this ERQ message)
@@ -3537,6 +4809,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<QIP> GetAllInputParameterListRecords(this ERQ message)
         {
             return message.GetAllRecords<QIP>("InputParameterListRepetitionsUsed", "GetInputParameterList");
+        }
+
+        /// <summary>
+        /// Add a new ERQ to InputParameterList
+        /// </summary>
+        public static QIP AddInputParameterList(this ERQ message)
+        {
+            return message.GetInputParameterList(message.InputParameterListRepetitionsUsed);
         }
 
         /// <summary>
@@ -3562,6 +4842,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CTD to ContactRole
+        /// </summary>
+        public static CE AddContactRole(this CTD message)
+        {
+            return message.GetContactRole(message.ContactRoleRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactName Records from CTD
         /// </summary>
         public static IEnumerable GetContactNameRecords(this CTD message)
@@ -3581,6 +4869,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllContactNameRecords(this CTD message)
         {
             return message.GetAllRecords<XPN>("ContactNameRepetitionsUsed", "GetContactName");
+        }
+
+        /// <summary>
+        /// Add a new CTD to ContactName
+        /// </summary>
+        public static XPN AddContactName(this CTD message)
+        {
+            return message.GetContactName(message.ContactNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -3606,6 +4902,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CTD to ContactAddress
+        /// </summary>
+        public static XAD AddContactAddress(this CTD message)
+        {
+            return message.GetContactAddress(message.ContactAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactCommunicationInformation Records from CTD
         /// </summary>
         public static IEnumerable GetContactCommunicationInformationRecords(this CTD message)
@@ -3625,6 +4929,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllContactCommunicationInformationRecords(this CTD message)
         {
             return message.GetAllRecords<XTN>("ContactCommunicationInformationRepetitionsUsed", "GetContactCommunicationInformation");
+        }
+
+        /// <summary>
+        /// Add a new CTD to ContactCommunicationInformation
+        /// </summary>
+        public static XTN AddContactCommunicationInformation(this CTD message)
+        {
+            return message.GetContactCommunicationInformation(message.ContactCommunicationInformationRepetitionsUsed);
         }
 
         /// <summary>
@@ -3650,6 +4962,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CTD to ContactIdentifiers
+        /// </summary>
+        public static PLN AddContactIdentifiers(this CTD message)
+        {
+            return message.GetContactIdentifiers(message.ContactIdentifiersRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LocationResourceID Records from AIL
         /// </summary>
         public static IEnumerable GetLocationResourceIDRecords(this AIL message)
@@ -3669,6 +4989,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<PL> GetAllLocationResourceIDRecords(this AIL message)
         {
             return message.GetAllRecords<PL>("LocationResourceIDRepetitionsUsed", "GetLocationResourceID");
+        }
+
+        /// <summary>
+        /// Add a new AIL to LocationResourceID
+        /// </summary>
+        public static PL AddLocationResourceID(this AIL message)
+        {
+            return message.GetLocationResourceID(message.LocationResourceIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -3694,6 +5022,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RDF to ColumnDescription
+        /// </summary>
+        public static RCD AddColumnDescription(this RDF message)
+        {
+            return message.GetColumnDescription(message.ColumnDescriptionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get WhoSubjectFilter Records from QRD
         /// </summary>
         public static IEnumerable GetWhoSubjectFilterRecords(this QRD message)
@@ -3713,6 +5049,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllWhoSubjectFilterRecords(this QRD message)
         {
             return message.GetAllRecords<XCN>("WhoSubjectFilterRepetitionsUsed", "GetWhoSubjectFilter");
+        }
+
+        /// <summary>
+        /// Add a new QRD to WhoSubjectFilter
+        /// </summary>
+        public static XCN AddWhoSubjectFilter(this QRD message)
+        {
+            return message.GetWhoSubjectFilter(message.WhoSubjectFilterRepetitionsUsed);
         }
 
         /// <summary>
@@ -3738,6 +5082,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new QRD to WhatSubjectFilter
+        /// </summary>
+        public static CE AddWhatSubjectFilter(this QRD message)
+        {
+            return message.GetWhatSubjectFilter(message.WhatSubjectFilterRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get WhatDepartmentDataCode Records from QRD
         /// </summary>
         public static IEnumerable GetWhatDepartmentDataCodeRecords(this QRD message)
@@ -3757,6 +5109,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllWhatDepartmentDataCodeRecords(this QRD message)
         {
             return message.GetAllRecords<CE>("WhatDepartmentDataCodeRepetitionsUsed", "GetWhatDepartmentDataCode");
+        }
+
+        /// <summary>
+        /// Add a new QRD to WhatDepartmentDataCode
+        /// </summary>
+        public static CE AddWhatDepartmentDataCode(this QRD message)
+        {
+            return message.GetWhatDepartmentDataCode(message.WhatDepartmentDataCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -3782,6 +5142,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new QRD to WhatDataCodeValueQual
+        /// </summary>
+        public static VR AddWhatDataCodeValueQual(this QRD message)
+        {
+            return message.GetWhatDataCodeValueQual(message.WhatDataCodeValueQualRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ObservationValue Records from OBX
         /// </summary>
         public static IEnumerable GetObservationValueRecords(this OBX message)
@@ -3801,6 +5169,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<Varies> GetAllObservationValueRecords(this OBX message)
         {
             return message.GetAllRecords<Varies>("ObservationValueRepetitionsUsed", "GetObservationValue");
+        }
+
+        /// <summary>
+        /// Add a new OBX to ObservationValue
+        /// </summary>
+        public static Varies AddObservationValue(this OBX message)
+        {
+            return message.GetObservationValue(message.ObservationValueRepetitionsUsed);
         }
 
         /// <summary>
@@ -3826,6 +5202,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBX to AbnormalFlags
+        /// </summary>
+        public static IS AddAbnormalFlags(this OBX message)
+        {
+            return message.GetAbnormalFlags(message.AbnormalFlagsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NatureOfAbnormalTest Records from OBX
         /// </summary>
         public static IEnumerable GetNatureOfAbnormalTestRecords(this OBX message)
@@ -3845,6 +5229,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllNatureOfAbnormalTestRecords(this OBX message)
         {
             return message.GetAllRecords<ID>("NatureOfAbnormalTestRepetitionsUsed", "GetNatureOfAbnormalTest");
+        }
+
+        /// <summary>
+        /// Add a new OBX to NatureOfAbnormalTest
+        /// </summary>
+        public static ID AddNatureOfAbnormalTest(this OBX message)
+        {
+            return message.GetNatureOfAbnormalTest(message.NatureOfAbnormalTestRepetitionsUsed);
         }
 
         /// <summary>
@@ -3870,6 +5262,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBX to ResponsibleObserver
+        /// </summary>
+        public static XCN AddResponsibleObserver(this OBX message)
+        {
+            return message.GetResponsibleObserver(message.ResponsibleObserverRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ObservationMethod Records from OBX
         /// </summary>
         public static IEnumerable GetObservationMethodRecords(this OBX message)
@@ -3889,6 +5289,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllObservationMethodRecords(this OBX message)
         {
             return message.GetAllRecords<CE>("ObservationMethodRepetitionsUsed", "GetObservationMethod");
+        }
+
+        /// <summary>
+        /// Add a new OBX to ObservationMethod
+        /// </summary>
+        public static CE AddObservationMethod(this OBX message)
+        {
+            return message.GetObservationMethod(message.ObservationMethodRepetitionsUsed);
         }
 
         /// <summary>
@@ -3914,6 +5322,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBX to EquipmentInstanceIdentifier
+        /// </summary>
+        public static EI AddEquipmentInstanceIdentifier(this OBX message)
+        {
+            return message.GetEquipmentInstanceIdentifier(message.EquipmentInstanceIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CommandResponseParameters Records from ECR
         /// </summary>
         public static IEnumerable GetCommandResponseParametersRecords(this ECR message)
@@ -3933,6 +5349,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TX> GetAllCommandResponseParametersRecords(this ECR message)
         {
             return message.GetAllRecords<TX>("CommandResponseParametersRepetitionsUsed", "GetCommandResponseParameters");
+        }
+
+        /// <summary>
+        /// Add a new ECR to CommandResponseParameters
+        /// </summary>
+        public static TX AddCommandResponseParameters(this ECR message)
+        {
+            return message.GetCommandResponseParameters(message.CommandResponseParametersRepetitionsUsed);
         }
 
         /// <summary>
@@ -3958,6 +5382,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CSS to StudyQualityControlCodes
+        /// </summary>
+        public static CE AddStudyQualityControlCodes(this CSS message)
+        {
+            return message.GetStudyQualityControlCodes(message.StudyQualityControlCodesRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TimeSelectionCriteria Records from APR
         /// </summary>
         public static IEnumerable GetTimeSelectionCriteriaRecords(this APR message)
@@ -3977,6 +5409,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<SCV> GetAllTimeSelectionCriteriaRecords(this APR message)
         {
             return message.GetAllRecords<SCV>("TimeSelectionCriteriaRepetitionsUsed", "GetTimeSelectionCriteria");
+        }
+
+        /// <summary>
+        /// Add a new APR to TimeSelectionCriteria
+        /// </summary>
+        public static SCV AddTimeSelectionCriteria(this APR message)
+        {
+            return message.GetTimeSelectionCriteria(message.TimeSelectionCriteriaRepetitionsUsed);
         }
 
         /// <summary>
@@ -4002,6 +5442,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new APR to ResourceSelectionCriteria
+        /// </summary>
+        public static SCV AddResourceSelectionCriteria(this APR message)
+        {
+            return message.GetResourceSelectionCriteria(message.ResourceSelectionCriteriaRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LocationSelectionCriteria Records from APR
         /// </summary>
         public static IEnumerable GetLocationSelectionCriteriaRecords(this APR message)
@@ -4021,6 +5469,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<SCV> GetAllLocationSelectionCriteriaRecords(this APR message)
         {
             return message.GetAllRecords<SCV>("LocationSelectionCriteriaRepetitionsUsed", "GetLocationSelectionCriteria");
+        }
+
+        /// <summary>
+        /// Add a new APR to LocationSelectionCriteria
+        /// </summary>
+        public static SCV AddLocationSelectionCriteria(this APR message)
+        {
+            return message.GetLocationSelectionCriteria(message.LocationSelectionCriteriaRepetitionsUsed);
         }
 
         /// <summary>
@@ -4046,6 +5502,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new APR to FillerOverrideCriteria
+        /// </summary>
+        public static SCV AddFillerOverrideCriteria(this APR message)
+        {
+            return message.GetFillerOverrideCriteria(message.FillerOverrideCriteriaRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SelectionCriteria Records from VTQ
         /// </summary>
         public static IEnumerable GetSelectionCriteriaRecords(this VTQ message)
@@ -4065,6 +5529,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<QSC> GetAllSelectionCriteriaRecords(this VTQ message)
         {
             return message.GetAllRecords<QSC>("SelectionCriteriaRepetitionsUsed", "GetSelectionCriteria");
+        }
+
+        /// <summary>
+        /// Add a new VTQ to SelectionCriteria
+        /// </summary>
+        public static QSC AddSelectionCriteria(this VTQ message)
+        {
+            return message.GetSelectionCriteria(message.SelectionCriteriaRepetitionsUsed);
         }
 
         /// <summary>
@@ -4090,6 +5562,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRD to ProviderRole
+        /// </summary>
+        public static CE AddProviderRole(this PRD message)
+        {
+            return message.GetProviderRole(message.ProviderRoleRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProviderName Records from PRD
         /// </summary>
         public static IEnumerable GetProviderNameRecords(this PRD message)
@@ -4109,6 +5589,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllProviderNameRecords(this PRD message)
         {
             return message.GetAllRecords<XPN>("ProviderNameRepetitionsUsed", "GetProviderName");
+        }
+
+        /// <summary>
+        /// Add a new PRD to ProviderName
+        /// </summary>
+        public static XPN AddProviderName(this PRD message)
+        {
+            return message.GetProviderName(message.ProviderNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -4134,6 +5622,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRD to ProviderAddress
+        /// </summary>
+        public static XAD AddProviderAddress(this PRD message)
+        {
+            return message.GetProviderAddress(message.ProviderAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProviderCommunicationInformation Records from PRD
         /// </summary>
         public static IEnumerable GetProviderCommunicationInformationRecords(this PRD message)
@@ -4153,6 +5649,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllProviderCommunicationInformationRecords(this PRD message)
         {
             return message.GetAllRecords<XTN>("ProviderCommunicationInformationRepetitionsUsed", "GetProviderCommunicationInformation");
+        }
+
+        /// <summary>
+        /// Add a new PRD to ProviderCommunicationInformation
+        /// </summary>
+        public static XTN AddProviderCommunicationInformation(this PRD message)
+        {
+            return message.GetProviderCommunicationInformation(message.ProviderCommunicationInformationRepetitionsUsed);
         }
 
         /// <summary>
@@ -4178,6 +5682,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRD to ProviderIdentifiers
+        /// </summary>
+        public static PLN AddProviderIdentifiers(this PRD message)
+        {
+            return message.GetProviderIdentifiers(message.ProviderIdentifiersRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Anesthesiologist Records from PR1
         /// </summary>
         public static IEnumerable GetAnesthesiologistRecords(this PR1 message)
@@ -4197,6 +5709,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllAnesthesiologistRecords(this PR1 message)
         {
             return message.GetAllRecords<XCN>("AnesthesiologistRepetitionsUsed", "GetAnesthesiologist");
+        }
+
+        /// <summary>
+        /// Add a new PR1 to Anesthesiologist
+        /// </summary>
+        public static XCN AddAnesthesiologist(this PR1 message)
+        {
+            return message.GetAnesthesiologist(message.AnesthesiologistRepetitionsUsed);
         }
 
         /// <summary>
@@ -4222,6 +5742,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PR1 to Surgeon
+        /// </summary>
+        public static XCN AddSurgeon(this PR1 message)
+        {
+            return message.GetSurgeon(message.SurgeonRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProcedurePractitioner Records from PR1
         /// </summary>
         public static IEnumerable GetProcedurePractitionerRecords(this PR1 message)
@@ -4241,6 +5769,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllProcedurePractitionerRecords(this PR1 message)
         {
             return message.GetAllRecords<XCN>("ProcedurePractitionerRepetitionsUsed", "GetProcedurePractitioner");
+        }
+
+        /// <summary>
+        /// Add a new PR1 to ProcedurePractitioner
+        /// </summary>
+        public static XCN AddProcedurePractitioner(this PR1 message)
+        {
+            return message.GetProcedurePractitioner(message.ProcedurePractitionerRepetitionsUsed);
         }
 
         /// <summary>
@@ -4266,6 +5802,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PR1 to ProcedureCodeModifier
+        /// </summary>
+        public static CE AddProcedureCodeModifier(this PR1 message)
+        {
+            return message.GetProcedureCodeModifier(message.ProcedureCodeModifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TissueTypeCode Records from PR1
         /// </summary>
         public static IEnumerable GetTissueTypeCodeRecords(this PR1 message)
@@ -4285,6 +5829,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllTissueTypeCodeRecords(this PR1 message)
         {
             return message.GetAllRecords<CE>("TissueTypeCodeRepetitionsUsed", "GetTissueTypeCode");
+        }
+
+        /// <summary>
+        /// Add a new PR1 to TissueTypeCode
+        /// </summary>
+        public static CE AddTissueTypeCode(this PR1 message)
+        {
+            return message.GetTissueTypeCode(message.TissueTypeCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -4310,6 +5862,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new MSH to CharacterSet
+        /// </summary>
+        public static ID AddCharacterSet(this MSH message)
+        {
+            return message.GetCharacterSet(message.CharacterSetRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MessageProfileIdentifier Records from MSH
         /// </summary>
         public static IEnumerable GetMessageProfileIdentifierRecords(this MSH message)
@@ -4329,6 +5889,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllMessageProfileIdentifierRecords(this MSH message)
         {
             return message.GetAllRecords<EI>("MessageProfileIdentifierRepetitionsUsed", "GetMessageProfileIdentifier");
+        }
+
+        /// <summary>
+        /// Add a new MSH to MessageProfileIdentifier
+        /// </summary>
+        public static EI AddMessageProfileIdentifier(this MSH message)
+        {
+            return message.GetMessageProfileIdentifier(message.MessageProfileIdentifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -4354,6 +5922,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new MRG to PriorPatientIdentifierList
+        /// </summary>
+        public static CX AddPriorPatientIdentifierList(this MRG message)
+        {
+            return message.GetPriorPatientIdentifierList(message.PriorPatientIdentifierListRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PriorAlternatePatientID Records from MRG
         /// </summary>
         public static IEnumerable GetPriorAlternatePatientIDRecords(this MRG message)
@@ -4373,6 +5949,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllPriorAlternatePatientIDRecords(this MRG message)
         {
             return message.GetAllRecords<CX>("PriorAlternatePatientIDRepetitionsUsed", "GetPriorAlternatePatientID");
+        }
+
+        /// <summary>
+        /// Add a new MRG to PriorAlternatePatientID
+        /// </summary>
+        public static CX AddPriorAlternatePatientID(this MRG message)
+        {
+            return message.GetPriorAlternatePatientID(message.PriorAlternatePatientIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -4398,6 +5982,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new MRG to PriorPatientName
+        /// </summary>
+        public static XPN AddPriorPatientName(this MRG message)
+        {
+            return message.GetPriorPatientName(message.PriorPatientNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PersonPerformingStudyRegistration Records from CSR
         /// </summary>
         public static IEnumerable GetPersonPerformingStudyRegistrationRecords(this CSR message)
@@ -4417,6 +6009,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllPersonPerformingStudyRegistrationRecords(this CSR message)
         {
             return message.GetAllRecords<XCN>("PersonPerformingStudyRegistrationRepetitionsUsed", "GetPersonPerformingStudyRegistration");
+        }
+
+        /// <summary>
+        /// Add a new CSR to PersonPerformingStudyRegistration
+        /// </summary>
+        public static XCN AddPersonPerformingStudyRegistration(this CSR message)
+        {
+            return message.GetPersonPerformingStudyRegistration(message.PersonPerformingStudyRegistrationRepetitionsUsed);
         }
 
         /// <summary>
@@ -4442,6 +6042,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CSR to StudyAuthorizingProvider
+        /// </summary>
+        public static XCN AddStudyAuthorizingProvider(this CSR message)
+        {
+            return message.GetStudyAuthorizingProvider(message.StudyAuthorizingProviderRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get StudyRandomizationDateTime Records from CSR
         /// </summary>
         public static IEnumerable GetStudyRandomizationDateTimeRecords(this CSR message)
@@ -4461,6 +6069,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllStudyRandomizationDateTimeRecords(this CSR message)
         {
             return message.GetAllRecords<TS>("StudyRandomizationDateTimeRepetitionsUsed", "GetStudyRandomizationDateTime");
+        }
+
+        /// <summary>
+        /// Add a new CSR to StudyRandomizationDateTime
+        /// </summary>
+        public static TS AddStudyRandomizationDateTime(this CSR message)
+        {
+            return message.GetStudyRandomizationDateTime(message.StudyRandomizationDateTimeRepetitionsUsed);
         }
 
         /// <summary>
@@ -4486,6 +6102,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CSR to RandomizedStudyArm
+        /// </summary>
+        public static CE AddRandomizedStudyArm(this CSR message)
+        {
+            return message.GetRandomizedStudyArm(message.RandomizedStudyArmRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get StratumForStudyRandomization Records from CSR
         /// </summary>
         public static IEnumerable GetStratumForStudyRandomizationRecords(this CSR message)
@@ -4505,6 +6129,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllStratumForStudyRandomizationRecords(this CSR message)
         {
             return message.GetAllRecords<CE>("StratumForStudyRandomizationRepetitionsUsed", "GetStratumForStudyRandomization");
+        }
+
+        /// <summary>
+        /// Add a new CSR to StratumForStudyRandomization
+        /// </summary>
+        public static CE AddStratumForStudyRandomization(this CSR message)
+        {
+            return message.GetStratumForStudyRandomization(message.StratumForStudyRandomizationRepetitionsUsed);
         }
 
         /// <summary>
@@ -4530,6 +6162,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXG to AdministrationNotes
+        /// </summary>
+        public static CE AddAdministrationNotes(this RXG message)
+        {
+            return message.GetAdministrationNotes(message.AdministrationNotesRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PharmacyTreatmentSupplierSSpecialAdministrationInstructions Records from RXG
         /// </summary>
         public static IEnumerable GetPharmacyTreatmentSupplierSSpecialAdministrationInstructionsRecords(this RXG message)
@@ -4549,6 +6189,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllPharmacyTreatmentSupplierSSpecialAdministrationInstructionsRecords(this RXG message)
         {
             return message.GetAllRecords<CE>("PharmacyTreatmentSupplierSSpecialAdministrationInstructionsRepetitionsUsed", "GetPharmacyTreatmentSupplierSSpecialAdministrationInstructions");
+        }
+
+        /// <summary>
+        /// Add a new RXG to PharmacyTreatmentSupplierSSpecialAdministrationInstructions
+        /// </summary>
+        public static CE AddPharmacyTreatmentSupplierSSpecialAdministrationInstructions(this RXG message)
+        {
+            return message.GetPharmacyTreatmentSupplierSSpecialAdministrationInstructions(message.PharmacyTreatmentSupplierSSpecialAdministrationInstructionsRepetitionsUsed);
         }
 
         /// <summary>
@@ -4574,6 +6222,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXG to SubstanceLotNumber
+        /// </summary>
+        public static ST AddSubstanceLotNumber(this RXG message)
+        {
+            return message.GetSubstanceLotNumber(message.SubstanceLotNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SubstanceExpirationDate Records from RXG
         /// </summary>
         public static IEnumerable GetSubstanceExpirationDateRecords(this RXG message)
@@ -4593,6 +6249,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllSubstanceExpirationDateRecords(this RXG message)
         {
             return message.GetAllRecords<TS>("SubstanceExpirationDateRepetitionsUsed", "GetSubstanceExpirationDate");
+        }
+
+        /// <summary>
+        /// Add a new RXG to SubstanceExpirationDate
+        /// </summary>
+        public static TS AddSubstanceExpirationDate(this RXG message)
+        {
+            return message.GetSubstanceExpirationDate(message.SubstanceExpirationDateRepetitionsUsed);
         }
 
         /// <summary>
@@ -4618,6 +6282,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXG to SubstanceManufacturerName
+        /// </summary>
+        public static CE AddSubstanceManufacturerName(this RXG message)
+        {
+            return message.GetSubstanceManufacturerName(message.SubstanceManufacturerNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Indication Records from RXG
         /// </summary>
         public static IEnumerable GetIndicationRecords(this RXG message)
@@ -4637,6 +6309,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllIndicationRecords(this RXG message)
         {
             return message.GetAllRecords<CE>("IndicationRepetitionsUsed", "GetIndication");
+        }
+
+        /// <summary>
+        /// Add a new RXG to Indication
+        /// </summary>
+        public static CE AddIndication(this RXG message)
+        {
+            return message.GetIndication(message.IndicationRepetitionsUsed);
         }
 
         /// <summary>
@@ -4662,6 +6342,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRC to FacilityIDPRC
+        /// </summary>
+        public static CE AddFacilityIDPRC(this PRC message)
+        {
+            return message.GetFacilityIDPRC(message.FacilityIDPRCRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Department Records from PRC
         /// </summary>
         public static IEnumerable GetDepartmentRecords(this PRC message)
@@ -4681,6 +6369,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllDepartmentRecords(this PRC message)
         {
             return message.GetAllRecords<CE>("DepartmentRepetitionsUsed", "GetDepartment");
+        }
+
+        /// <summary>
+        /// Add a new PRC to Department
+        /// </summary>
+        public static CE AddDepartment(this PRC message)
+        {
+            return message.GetDepartment(message.DepartmentRepetitionsUsed);
         }
 
         /// <summary>
@@ -4706,6 +6402,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRC to ValidPatientClasses
+        /// </summary>
+        public static IS AddValidPatientClasses(this PRC message)
+        {
+            return message.GetValidPatientClasses(message.ValidPatientClassesRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Price Records from PRC
         /// </summary>
         public static IEnumerable GetPriceRecords(this PRC message)
@@ -4725,6 +6429,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CP> GetAllPriceRecords(this PRC message)
         {
             return message.GetAllRecords<CP>("PriceRepetitionsUsed", "GetPrice");
+        }
+
+        /// <summary>
+        /// Add a new PRC to Price
+        /// </summary>
+        public static CP AddPrice(this PRC message)
+        {
+            return message.GetPrice(message.PriceRepetitionsUsed);
         }
 
         /// <summary>
@@ -4750,6 +6462,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRC to Formula
+        /// </summary>
+        public static ST AddFormula(this PRC message)
+        {
+            return message.GetFormula(message.FormulaRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BillingCategory Records from PRC
         /// </summary>
         public static IEnumerable GetBillingCategoryRecords(this PRC message)
@@ -4769,6 +6489,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllBillingCategoryRecords(this PRC message)
         {
             return message.GetAllRecords<CE>("BillingCategoryRepetitionsUsed", "GetBillingCategory");
+        }
+
+        /// <summary>
+        /// Add a new PRC to BillingCategory
+        /// </summary>
+        public static CE AddBillingCategory(this PRC message)
+        {
+            return message.GetBillingCategory(message.BillingCategoryRepetitionsUsed);
         }
 
         /// <summary>
@@ -4794,6 +6522,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN3 to CertifiedBy
+        /// </summary>
+        public static XCN AddCertifiedBy(this IN3 message)
+        {
+            return message.GetCertifiedBy(message.CertifiedByRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Operator Records from IN3
         /// </summary>
         public static IEnumerable GetOperatorRecords(this IN3 message)
@@ -4813,6 +6549,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOperatorRecords(this IN3 message)
         {
             return message.GetAllRecords<XCN>("OperatorRepetitionsUsed", "GetOperator");
+        }
+
+        /// <summary>
+        /// Add a new IN3 to Operator
+        /// </summary>
+        public static XCN AddOperator(this IN3 message)
+        {
+            return message.GetOperator(message.OperatorRepetitionsUsed);
         }
 
         /// <summary>
@@ -4838,6 +6582,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN3 to PhysicianReviewer
+        /// </summary>
+        public static XCN AddPhysicianReviewer(this IN3 message)
+        {
+            return message.GetPhysicianReviewer(message.PhysicianReviewerRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CertificationContactPhoneNumber Records from IN3
         /// </summary>
         public static IEnumerable GetCertificationContactPhoneNumberRecords(this IN3 message)
@@ -4857,6 +6609,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllCertificationContactPhoneNumberRecords(this IN3 message)
         {
             return message.GetAllRecords<XTN>("CertificationContactPhoneNumberRepetitionsUsed", "GetCertificationContactPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new IN3 to CertificationContactPhoneNumber
+        /// </summary>
+        public static XTN AddCertificationContactPhoneNumber(this IN3 message)
+        {
+            return message.GetCertificationContactPhoneNumber(message.CertificationContactPhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -4882,6 +6642,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN3 to CertificationAgencyPhoneNumber
+        /// </summary>
+        public static XTN AddCertificationAgencyPhoneNumber(this IN3 message)
+        {
+            return message.GetCertificationAgencyPhoneNumber(message.CertificationAgencyPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PreCertificationRequirement Records from IN3
         /// </summary>
         public static IEnumerable GetPreCertificationRequirementRecords(this IN3 message)
@@ -4901,6 +6669,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ICD> GetAllPreCertificationRequirementRecords(this IN3 message)
         {
             return message.GetAllRecords<ICD>("PreCertificationRequirementRepetitionsUsed", "GetPreCertificationRequirement");
+        }
+
+        /// <summary>
+        /// Add a new IN3 to PreCertificationRequirement
+        /// </summary>
+        public static ICD AddPreCertificationRequirement(this IN3 message)
+        {
+            return message.GetPreCertificationRequirement(message.PreCertificationRequirementRepetitionsUsed);
         }
 
         /// <summary>
@@ -4926,6 +6702,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN3 to SecondOpinionDocumentationReceived
+        /// </summary>
+        public static IS AddSecondOpinionDocumentationReceived(this IN3 message)
+        {
+            return message.GetSecondOpinionDocumentationReceived(message.SecondOpinionDocumentationReceivedRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SecondOpinionPhysician Records from IN3
         /// </summary>
         public static IEnumerable GetSecondOpinionPhysicianRecords(this IN3 message)
@@ -4945,6 +6729,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllSecondOpinionPhysicianRecords(this IN3 message)
         {
             return message.GetAllRecords<XCN>("SecondOpinionPhysicianRepetitionsUsed", "GetSecondOpinionPhysician");
+        }
+
+        /// <summary>
+        /// Add a new IN3 to SecondOpinionPhysician
+        /// </summary>
+        public static XCN AddSecondOpinionPhysician(this IN3 message)
+        {
+            return message.GetSecondOpinionPhysician(message.SecondOpinionPhysicianRepetitionsUsed);
         }
 
         /// <summary>
@@ -4970,6 +6762,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new DG1 to DiagnosingClinician
+        /// </summary>
+        public static XCN AddDiagnosingClinician(this DG1 message)
+        {
+            return message.GetDiagnosingClinician(message.DiagnosingClinicianRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BatchTotals Records from BTS
         /// </summary>
         public static IEnumerable GetBatchTotalsRecords(this BTS message)
@@ -4989,6 +6789,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<NM> GetAllBatchTotalsRecords(this BTS message)
         {
             return message.GetAllRecords<NM>("BatchTotalsRepetitionsUsed", "GetBatchTotals");
+        }
+
+        /// <summary>
+        /// Add a new BTS to BatchTotals
+        /// </summary>
+        public static NM AddBatchTotals(this BTS message)
+        {
+            return message.GetBatchTotals(message.BatchTotalsRepetitionsUsed);
         }
 
         /// <summary>
@@ -5014,6 +6822,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new BPO to BPProcessingRequirements
+        /// </summary>
+        public static CWE AddBPProcessingRequirements(this BPO message)
+        {
+            return message.GetBPProcessingRequirements(message.BPProcessingRequirementsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BPIndicationForUse Records from BPO
         /// </summary>
         public static IEnumerable GetBPIndicationForUseRecords(this BPO message)
@@ -5033,6 +6849,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllBPIndicationForUseRecords(this BPO message)
         {
             return message.GetAllRecords<CWE>("BPIndicationForUseRepetitionsUsed", "GetBPIndicationForUse");
+        }
+
+        /// <summary>
+        /// Add a new BPO to BPIndicationForUse
+        /// </summary>
+        public static CWE AddBPIndicationForUse(this BPO message)
+        {
+            return message.GetBPIndicationForUse(message.BPIndicationForUseRepetitionsUsed);
         }
 
         /// <summary>
@@ -5058,6 +6882,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new AFF to ProfessionalOrganizationAffiliationDateRange
+        /// </summary>
+        public static DR AddProfessionalOrganizationAffiliationDateRange(this AFF message)
+        {
+            return message.GetProfessionalOrganizationAffiliationDateRange(message.ProfessionalOrganizationAffiliationDateRangeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProblemManagementDiscipline Records from PRB
         /// </summary>
         public static IEnumerable GetProblemManagementDisciplineRecords(this PRB message)
@@ -5077,6 +6909,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProblemManagementDisciplineRecords(this PRB message)
         {
             return message.GetAllRecords<CE>("ProblemManagementDisciplineRepetitionsUsed", "GetProblemManagementDiscipline");
+        }
+
+        /// <summary>
+        /// Add a new PRB to ProblemManagementDiscipline
+        /// </summary>
+        public static CE AddProblemManagementDiscipline(this PRB message)
+        {
+            return message.GetProblemManagementDiscipline(message.ProblemManagementDisciplineRepetitionsUsed);
         }
 
         /// <summary>
@@ -5102,6 +6942,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ORC to QuantityTiming
+        /// </summary>
+        public static TQ AddQuantityTiming(this ORC message)
+        {
+            return message.GetQuantityTiming(message.QuantityTimingRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EnteredBy Records from ORC
         /// </summary>
         public static IEnumerable GetEnteredByRecords(this ORC message)
@@ -5121,6 +6969,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllEnteredByRecords(this ORC message)
         {
             return message.GetAllRecords<XCN>("EnteredByRepetitionsUsed", "GetEnteredBy");
+        }
+
+        /// <summary>
+        /// Add a new ORC to EnteredBy
+        /// </summary>
+        public static XCN AddEnteredBy(this ORC message)
+        {
+            return message.GetEnteredBy(message.EnteredByRepetitionsUsed);
         }
 
         /// <summary>
@@ -5146,6 +7002,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ORC to VerifiedBy
+        /// </summary>
+        public static XCN AddVerifiedBy(this ORC message)
+        {
+            return message.GetVerifiedBy(message.VerifiedByRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderingProvider Records from ORC
         /// </summary>
         public static IEnumerable GetOrderingProviderRecords(this ORC message)
@@ -5165,6 +7029,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOrderingProviderRecords(this ORC message)
         {
             return message.GetAllRecords<XCN>("OrderingProviderRepetitionsUsed", "GetOrderingProvider");
+        }
+
+        /// <summary>
+        /// Add a new ORC to OrderingProvider
+        /// </summary>
+        public static XCN AddOrderingProvider(this ORC message)
+        {
+            return message.GetOrderingProvider(message.OrderingProviderRepetitionsUsed);
         }
 
         /// <summary>
@@ -5190,6 +7062,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ORC to CallBackPhoneNumber
+        /// </summary>
+        public static XTN AddCallBackPhoneNumber(this ORC message)
+        {
+            return message.GetCallBackPhoneNumber(message.CallBackPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ActionBy Records from ORC
         /// </summary>
         public static IEnumerable GetActionByRecords(this ORC message)
@@ -5209,6 +7089,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllActionByRecords(this ORC message)
         {
             return message.GetAllRecords<XCN>("ActionByRepetitionsUsed", "GetActionBy");
+        }
+
+        /// <summary>
+        /// Add a new ORC to ActionBy
+        /// </summary>
+        public static XCN AddActionBy(this ORC message)
+        {
+            return message.GetActionBy(message.ActionByRepetitionsUsed);
         }
 
         /// <summary>
@@ -5234,6 +7122,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ORC to OrderingFacilityName
+        /// </summary>
+        public static XON AddOrderingFacilityName(this ORC message)
+        {
+            return message.GetOrderingFacilityName(message.OrderingFacilityNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderingFacilityAddress Records from ORC
         /// </summary>
         public static IEnumerable GetOrderingFacilityAddressRecords(this ORC message)
@@ -5253,6 +7149,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllOrderingFacilityAddressRecords(this ORC message)
         {
             return message.GetAllRecords<XAD>("OrderingFacilityAddressRepetitionsUsed", "GetOrderingFacilityAddress");
+        }
+
+        /// <summary>
+        /// Add a new ORC to OrderingFacilityAddress
+        /// </summary>
+        public static XAD AddOrderingFacilityAddress(this ORC message)
+        {
+            return message.GetOrderingFacilityAddress(message.OrderingFacilityAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -5278,6 +7182,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ORC to OrderingFacilityPhoneNumber
+        /// </summary>
+        public static XTN AddOrderingFacilityPhoneNumber(this ORC message)
+        {
+            return message.GetOrderingFacilityPhoneNumber(message.OrderingFacilityPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderingProviderAddress Records from ORC
         /// </summary>
         public static IEnumerable GetOrderingProviderAddressRecords(this ORC message)
@@ -5297,6 +7209,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllOrderingProviderAddressRecords(this ORC message)
         {
             return message.GetAllRecords<XAD>("OrderingProviderAddressRepetitionsUsed", "GetOrderingProviderAddress");
+        }
+
+        /// <summary>
+        /// Add a new ORC to OrderingProviderAddress
+        /// </summary>
+        public static XAD AddOrderingProviderAddress(this ORC message)
+        {
+            return message.GetOrderingProviderAddress(message.OrderingProviderAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -5322,6 +7242,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LOC to LocationTypeLOC
+        /// </summary>
+        public static IS AddLocationTypeLOC(this LOC message)
+        {
+            return message.GetLocationTypeLOC(message.LocationTypeLOCRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrganizationNameLOC Records from LOC
         /// </summary>
         public static IEnumerable GetOrganizationNameLOCRecords(this LOC message)
@@ -5341,6 +7269,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllOrganizationNameLOCRecords(this LOC message)
         {
             return message.GetAllRecords<XON>("OrganizationNameLOCRepetitionsUsed", "GetOrganizationNameLOC");
+        }
+
+        /// <summary>
+        /// Add a new LOC to OrganizationNameLOC
+        /// </summary>
+        public static XON AddOrganizationNameLOC(this LOC message)
+        {
+            return message.GetOrganizationNameLOC(message.OrganizationNameLOCRepetitionsUsed);
         }
 
         /// <summary>
@@ -5366,6 +7302,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LOC to LocationAddress
+        /// </summary>
+        public static XAD AddLocationAddress(this LOC message)
+        {
+            return message.GetLocationAddress(message.LocationAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LocationPhone Records from LOC
         /// </summary>
         public static IEnumerable GetLocationPhoneRecords(this LOC message)
@@ -5385,6 +7329,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllLocationPhoneRecords(this LOC message)
         {
             return message.GetAllRecords<XTN>("LocationPhoneRepetitionsUsed", "GetLocationPhone");
+        }
+
+        /// <summary>
+        /// Add a new LOC to LocationPhone
+        /// </summary>
+        public static XTN AddLocationPhone(this LOC message)
+        {
+            return message.GetLocationPhone(message.LocationPhoneRepetitionsUsed);
         }
 
         /// <summary>
@@ -5410,6 +7362,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LOC to LicenseNumber
+        /// </summary>
+        public static CE AddLicenseNumber(this LOC message)
+        {
+            return message.GetLicenseNumber(message.LicenseNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LocationEquipment Records from LOC
         /// </summary>
         public static IEnumerable GetLocationEquipmentRecords(this LOC message)
@@ -5429,6 +7389,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllLocationEquipmentRecords(this LOC message)
         {
             return message.GetAllRecords<IS>("LocationEquipmentRepetitionsUsed", "GetLocationEquipment");
+        }
+
+        /// <summary>
+        /// Add a new LOC to LocationEquipment
+        /// </summary>
+        public static IS AddLocationEquipment(this LOC message)
+        {
+            return message.GetLocationEquipment(message.LocationEquipmentRepetitionsUsed);
         }
 
         /// <summary>
@@ -5454,6 +7422,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new INV to SubstanceStatus
+        /// </summary>
+        public static CE AddSubstanceStatus(this INV message)
+        {
+            return message.GetSubstanceStatus(message.SubstanceStatusRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TestFluidIdentifierS Records from INV
         /// </summary>
         public static IEnumerable GetTestFluidIdentifierSRecords(this INV message)
@@ -5473,6 +7449,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllTestFluidIdentifierSRecords(this INV message)
         {
             return message.GetAllRecords<CE>("TestFluidIdentifierSRepetitionsUsed", "GetTestFluidIdentifierS");
+        }
+
+        /// <summary>
+        /// Add a new INV to TestFluidIdentifierS
+        /// </summary>
+        public static CE AddTestFluidIdentifierS(this INV message)
+        {
+            return message.GetTestFluidIdentifierS(message.TestFluidIdentifierSRepetitionsUsed);
         }
 
         /// <summary>
@@ -5498,6 +7482,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to InsuredSEmployeeID
+        /// </summary>
+        public static CX AddInsuredSEmployeeID(this IN2 message)
+        {
+            return message.GetInsuredSEmployeeID(message.InsuredSEmployeeIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSEmployerSNameAndID Records from IN2
         /// </summary>
         public static IEnumerable GetInsuredSEmployerSNameAndIDRecords(this IN2 message)
@@ -5517,6 +7509,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllInsuredSEmployerSNameAndIDRecords(this IN2 message)
         {
             return message.GetAllRecords<XCN>("InsuredSEmployerSNameAndIDRepetitionsUsed", "GetInsuredSEmployerSNameAndID");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to InsuredSEmployerSNameAndID
+        /// </summary>
+        public static XCN AddInsuredSEmployerSNameAndID(this IN2 message)
+        {
+            return message.GetInsuredSEmployerSNameAndID(message.InsuredSEmployerSNameAndIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -5542,6 +7542,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to MailClaimParty
+        /// </summary>
+        public static IS AddMailClaimParty(this IN2 message)
+        {
+            return message.GetMailClaimParty(message.MailClaimPartyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MedicaidCaseName Records from IN2
         /// </summary>
         public static IEnumerable GetMedicaidCaseNameRecords(this IN2 message)
@@ -5561,6 +7569,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllMedicaidCaseNameRecords(this IN2 message)
         {
             return message.GetAllRecords<XPN>("MedicaidCaseNameRepetitionsUsed", "GetMedicaidCaseName");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to MedicaidCaseName
+        /// </summary>
+        public static XPN AddMedicaidCaseName(this IN2 message)
+        {
+            return message.GetMedicaidCaseName(message.MedicaidCaseNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -5586,6 +7602,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to MilitarySponsorName
+        /// </summary>
+        public static XPN AddMilitarySponsorName(this IN2 message)
+        {
+            return message.GetMilitarySponsorName(message.MilitarySponsorNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecialCoverageApprovalName Records from IN2
         /// </summary>
         public static IEnumerable GetSpecialCoverageApprovalNameRecords(this IN2 message)
@@ -5605,6 +7629,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllSpecialCoverageApprovalNameRecords(this IN2 message)
         {
             return message.GetAllRecords<XPN>("SpecialCoverageApprovalNameRepetitionsUsed", "GetSpecialCoverageApprovalName");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to SpecialCoverageApprovalName
+        /// </summary>
+        public static XPN AddSpecialCoverageApprovalName(this IN2 message)
+        {
+            return message.GetSpecialCoverageApprovalName(message.SpecialCoverageApprovalNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -5630,6 +7662,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to NonCoveredInsuranceCode
+        /// </summary>
+        public static IS AddNonCoveredInsuranceCode(this IN2 message)
+        {
+            return message.GetNonCoveredInsuranceCode(message.NonCoveredInsuranceCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PayorID Records from IN2
         /// </summary>
         public static IEnumerable GetPayorIDRecords(this IN2 message)
@@ -5649,6 +7689,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllPayorIDRecords(this IN2 message)
         {
             return message.GetAllRecords<CX>("PayorIDRepetitionsUsed", "GetPayorID");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to PayorID
+        /// </summary>
+        public static CX AddPayorID(this IN2 message)
+        {
+            return message.GetPayorID(message.PayorIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -5674,6 +7722,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to PayorSubscriberID
+        /// </summary>
+        public static CX AddPayorSubscriberID(this IN2 message)
+        {
+            return message.GetPayorSubscriberID(message.PayorSubscriberIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RoomCoverageTypeAmount Records from IN2
         /// </summary>
         public static IEnumerable GetRoomCoverageTypeAmountRecords(this IN2 message)
@@ -5693,6 +7749,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<RMC> GetAllRoomCoverageTypeAmountRecords(this IN2 message)
         {
             return message.GetAllRecords<RMC>("RoomCoverageTypeAmountRepetitionsUsed", "GetRoomCoverageTypeAmount");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to RoomCoverageTypeAmount
+        /// </summary>
+        public static RMC AddRoomCoverageTypeAmount(this IN2 message)
+        {
+            return message.GetRoomCoverageTypeAmount(message.RoomCoverageTypeAmountRepetitionsUsed);
         }
 
         /// <summary>
@@ -5718,6 +7782,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to PolicyTypeAmount
+        /// </summary>
+        public static PTA AddPolicyTypeAmount(this IN2 message)
+        {
+            return message.GetPolicyTypeAmount(message.PolicyTypeAmountRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AmbulatoryStatus Records from IN2
         /// </summary>
         public static IEnumerable GetAmbulatoryStatusRecords(this IN2 message)
@@ -5737,6 +7809,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllAmbulatoryStatusRecords(this IN2 message)
         {
             return message.GetAllRecords<IS>("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this IN2 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
         }
 
         /// <summary>
@@ -5762,6 +7842,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to Citizenship
+        /// </summary>
+        public static CE AddCitizenship(this IN2 message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MotherSMaidenName Records from IN2
         /// </summary>
         public static IEnumerable GetMotherSMaidenNameRecords(this IN2 message)
@@ -5781,6 +7869,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllMotherSMaidenNameRecords(this IN2 message)
         {
             return message.GetAllRecords<XPN>("MotherSMaidenNameRepetitionsUsed", "GetMotherSMaidenName");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to MotherSMaidenName
+        /// </summary>
+        public static XPN AddMotherSMaidenName(this IN2 message)
+        {
+            return message.GetMotherSMaidenName(message.MotherSMaidenNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -5806,6 +7902,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to EthnicGroup
+        /// </summary>
+        public static CE AddEthnicGroup(this IN2 message)
+        {
+            return message.GetEthnicGroup(message.EthnicGroupRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MaritalStatus Records from IN2
         /// </summary>
         public static IEnumerable GetMaritalStatusRecords(this IN2 message)
@@ -5825,6 +7929,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllMaritalStatusRecords(this IN2 message)
         {
             return message.GetAllRecords<CE>("MaritalStatusRepetitionsUsed", "GetMaritalStatus");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to MaritalStatus
+        /// </summary>
+        public static CE AddMaritalStatus(this IN2 message)
+        {
+            return message.GetMaritalStatus(message.MaritalStatusRepetitionsUsed);
         }
 
         /// <summary>
@@ -5850,6 +7962,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to EmployerContactPersonName
+        /// </summary>
+        public static XPN AddEmployerContactPersonName(this IN2 message)
+        {
+            return message.GetEmployerContactPersonName(message.EmployerContactPersonNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EmployerContactPersonPhoneNumber Records from IN2
         /// </summary>
         public static IEnumerable GetEmployerContactPersonPhoneNumberRecords(this IN2 message)
@@ -5869,6 +7989,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllEmployerContactPersonPhoneNumberRecords(this IN2 message)
         {
             return message.GetAllRecords<XTN>("EmployerContactPersonPhoneNumberRepetitionsUsed", "GetEmployerContactPersonPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to EmployerContactPersonPhoneNumber
+        /// </summary>
+        public static XTN AddEmployerContactPersonPhoneNumber(this IN2 message)
+        {
+            return message.GetEmployerContactPersonPhoneNumber(message.EmployerContactPersonPhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -5894,6 +8022,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to InsuredSContactPersonSName
+        /// </summary>
+        public static XPN AddInsuredSContactPersonSName(this IN2 message)
+        {
+            return message.GetInsuredSContactPersonSName(message.InsuredSContactPersonSNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSContactPersonPhoneNumber Records from IN2
         /// </summary>
         public static IEnumerable GetInsuredSContactPersonPhoneNumberRecords(this IN2 message)
@@ -5913,6 +8049,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllInsuredSContactPersonPhoneNumberRecords(this IN2 message)
         {
             return message.GetAllRecords<XTN>("InsuredSContactPersonPhoneNumberRepetitionsUsed", "GetInsuredSContactPersonPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to InsuredSContactPersonPhoneNumber
+        /// </summary>
+        public static XTN AddInsuredSContactPersonPhoneNumber(this IN2 message)
+        {
+            return message.GetInsuredSContactPersonPhoneNumber(message.InsuredSContactPersonPhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -5938,6 +8082,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to InsuredSContactPersonReason
+        /// </summary>
+        public static IS AddInsuredSContactPersonReason(this IN2 message)
+        {
+            return message.GetInsuredSContactPersonReason(message.InsuredSContactPersonReasonRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RelationshipToThePatientStopDate Records from IN2
         /// </summary>
         public static IEnumerable GetRelationshipToThePatientStopDateRecords(this IN2 message)
@@ -5957,6 +8109,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<DT> GetAllRelationshipToThePatientStopDateRecords(this IN2 message)
         {
             return message.GetAllRecords<DT>("RelationshipToThePatientStopDateRepetitionsUsed", "GetRelationshipToThePatientStopDate");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to RelationshipToThePatientStopDate
+        /// </summary>
+        public static DT AddRelationshipToThePatientStopDate(this IN2 message)
+        {
+            return message.GetRelationshipToThePatientStopDate(message.RelationshipToThePatientStopDateRepetitionsUsed);
         }
 
         /// <summary>
@@ -5982,6 +8142,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to InsuredSPhoneNumberHome
+        /// </summary>
+        public static XTN AddInsuredSPhoneNumberHome(this IN2 message)
+        {
+            return message.GetInsuredSPhoneNumberHome(message.InsuredSPhoneNumberHomeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSEmployerPhoneNumber Records from IN2
         /// </summary>
         public static IEnumerable GetInsuredSEmployerPhoneNumberRecords(this IN2 message)
@@ -6001,6 +8169,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllInsuredSEmployerPhoneNumberRecords(this IN2 message)
         {
             return message.GetAllRecords<XTN>("InsuredSEmployerPhoneNumberRepetitionsUsed", "GetInsuredSEmployerPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to InsuredSEmployerPhoneNumber
+        /// </summary>
+        public static XTN AddInsuredSEmployerPhoneNumber(this IN2 message)
+        {
+            return message.GetInsuredSEmployerPhoneNumber(message.InsuredSEmployerPhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -6026,6 +8202,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to InsuredOrganizationNameAndID
+        /// </summary>
+        public static XON AddInsuredOrganizationNameAndID(this IN2 message)
+        {
+            return message.GetInsuredOrganizationNameAndID(message.InsuredOrganizationNameAndIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredEmployerOrganizationNameAndID Records from IN2
         /// </summary>
         public static IEnumerable GetInsuredEmployerOrganizationNameAndIDRecords(this IN2 message)
@@ -6045,6 +8229,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllInsuredEmployerOrganizationNameAndIDRecords(this IN2 message)
         {
             return message.GetAllRecords<XON>("InsuredEmployerOrganizationNameAndIDRepetitionsUsed", "GetInsuredEmployerOrganizationNameAndID");
+        }
+
+        /// <summary>
+        /// Add a new IN2 to InsuredEmployerOrganizationNameAndID
+        /// </summary>
+        public static XON AddInsuredEmployerOrganizationNameAndID(this IN2 message)
+        {
+            return message.GetInsuredEmployerOrganizationNameAndID(message.InsuredEmployerOrganizationNameAndIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -6070,6 +8262,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN2 to Race
+        /// </summary>
+        public static CE AddRace(this IN2 message)
+        {
+            return message.GetRace(message.RaceRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RequestedStartDateTimeRange Records from ARQ
         /// </summary>
         public static IEnumerable GetRequestedStartDateTimeRangeRecords(this ARQ message)
@@ -6089,6 +8289,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<DR> GetAllRequestedStartDateTimeRangeRecords(this ARQ message)
         {
             return message.GetAllRecords<DR>("RequestedStartDateTimeRangeRepetitionsUsed", "GetRequestedStartDateTimeRange");
+        }
+
+        /// <summary>
+        /// Add a new ARQ to RequestedStartDateTimeRange
+        /// </summary>
+        public static DR AddRequestedStartDateTimeRange(this ARQ message)
+        {
+            return message.GetRequestedStartDateTimeRange(message.RequestedStartDateTimeRangeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6114,6 +8322,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ARQ to PlacerContactPerson
+        /// </summary>
+        public static XCN AddPlacerContactPerson(this ARQ message)
+        {
+            return message.GetPlacerContactPerson(message.PlacerContactPersonRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerContactPhoneNumber Records from ARQ
         /// </summary>
         public static IEnumerable GetPlacerContactPhoneNumberRecords(this ARQ message)
@@ -6133,6 +8349,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllPlacerContactPhoneNumberRecords(this ARQ message)
         {
             return message.GetAllRecords<XTN>("PlacerContactPhoneNumberRepetitionsUsed", "GetPlacerContactPhoneNumber");
+        }
+
+        /// <summary>
+        /// Add a new ARQ to PlacerContactPhoneNumber
+        /// </summary>
+        public static XTN AddPlacerContactPhoneNumber(this ARQ message)
+        {
+            return message.GetPlacerContactPhoneNumber(message.PlacerContactPhoneNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -6158,6 +8382,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ARQ to PlacerContactAddress
+        /// </summary>
+        public static XAD AddPlacerContactAddress(this ARQ message)
+        {
+            return message.GetPlacerContactAddress(message.PlacerContactAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EnteredByPerson Records from ARQ
         /// </summary>
         public static IEnumerable GetEnteredByPersonRecords(this ARQ message)
@@ -6177,6 +8409,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllEnteredByPersonRecords(this ARQ message)
         {
             return message.GetAllRecords<XCN>("EnteredByPersonRepetitionsUsed", "GetEnteredByPerson");
+        }
+
+        /// <summary>
+        /// Add a new ARQ to EnteredByPerson
+        /// </summary>
+        public static XCN AddEnteredByPerson(this ARQ message)
+        {
+            return message.GetEnteredByPerson(message.EnteredByPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -6202,6 +8442,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ARQ to EnteredByPhoneNumber
+        /// </summary>
+        public static XTN AddEnteredByPhoneNumber(this ARQ message)
+        {
+            return message.GetEnteredByPhoneNumber(message.EnteredByPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerOrderNumber Records from ARQ
         /// </summary>
         public static IEnumerable GetPlacerOrderNumberRecords(this ARQ message)
@@ -6221,6 +8469,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllPlacerOrderNumberRecords(this ARQ message)
         {
             return message.GetAllRecords<EI>("PlacerOrderNumberRepetitionsUsed", "GetPlacerOrderNumber");
+        }
+
+        /// <summary>
+        /// Add a new ARQ to PlacerOrderNumber
+        /// </summary>
+        public static EI AddPlacerOrderNumber(this ARQ message)
+        {
+            return message.GetPlacerOrderNumber(message.PlacerOrderNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -6246,6 +8502,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ARQ to FillerOrderNumber
+        /// </summary>
+        public static EI AddFillerOrderNumber(this ARQ message)
+        {
+            return message.GetFillerOrderNumber(message.FillerOrderNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenParentIDs Records from SPM
         /// </summary>
         public static IEnumerable GetSpecimenParentIDsRecords(this SPM message)
@@ -6265,6 +8529,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EIP> GetAllSpecimenParentIDsRecords(this SPM message)
         {
             return message.GetAllRecords<EIP>("SpecimenParentIDsRepetitionsUsed", "GetSpecimenParentIDs");
+        }
+
+        /// <summary>
+        /// Add a new SPM to SpecimenParentIDs
+        /// </summary>
+        public static EIP AddSpecimenParentIDs(this SPM message)
+        {
+            return message.GetSpecimenParentIDs(message.SpecimenParentIDsRepetitionsUsed);
         }
 
         /// <summary>
@@ -6290,6 +8562,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPM to SpecimenTypeModifier
+        /// </summary>
+        public static CWE AddSpecimenTypeModifier(this SPM message)
+        {
+            return message.GetSpecimenTypeModifier(message.SpecimenTypeModifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenAdditives Records from SPM
         /// </summary>
         public static IEnumerable GetSpecimenAdditivesRecords(this SPM message)
@@ -6309,6 +8589,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSpecimenAdditivesRecords(this SPM message)
         {
             return message.GetAllRecords<CWE>("SpecimenAdditivesRepetitionsUsed", "GetSpecimenAdditives");
+        }
+
+        /// <summary>
+        /// Add a new SPM to SpecimenAdditives
+        /// </summary>
+        public static CWE AddSpecimenAdditives(this SPM message)
+        {
+            return message.GetSpecimenAdditives(message.SpecimenAdditivesRepetitionsUsed);
         }
 
         /// <summary>
@@ -6334,6 +8622,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPM to SpecimenSourceSiteModifier
+        /// </summary>
+        public static CWE AddSpecimenSourceSiteModifier(this SPM message)
+        {
+            return message.GetSpecimenSourceSiteModifier(message.SpecimenSourceSiteModifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenRole Records from SPM
         /// </summary>
         public static IEnumerable GetSpecimenRoleRecords(this SPM message)
@@ -6353,6 +8649,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSpecimenRoleRecords(this SPM message)
         {
             return message.GetAllRecords<CWE>("SpecimenRoleRepetitionsUsed", "GetSpecimenRole");
+        }
+
+        /// <summary>
+        /// Add a new SPM to SpecimenRole
+        /// </summary>
+        public static CWE AddSpecimenRole(this SPM message)
+        {
+            return message.GetSpecimenRole(message.SpecimenRoleRepetitionsUsed);
         }
 
         /// <summary>
@@ -6378,6 +8682,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPM to SpecimenDescription
+        /// </summary>
+        public static ST AddSpecimenDescription(this SPM message)
+        {
+            return message.GetSpecimenDescription(message.SpecimenDescriptionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenHandlingCode Records from SPM
         /// </summary>
         public static IEnumerable GetSpecimenHandlingCodeRecords(this SPM message)
@@ -6397,6 +8709,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSpecimenHandlingCodeRecords(this SPM message)
         {
             return message.GetAllRecords<CWE>("SpecimenHandlingCodeRepetitionsUsed", "GetSpecimenHandlingCode");
+        }
+
+        /// <summary>
+        /// Add a new SPM to SpecimenHandlingCode
+        /// </summary>
+        public static CWE AddSpecimenHandlingCode(this SPM message)
+        {
+            return message.GetSpecimenHandlingCode(message.SpecimenHandlingCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6422,6 +8742,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPM to SpecimenRiskCode
+        /// </summary>
+        public static CWE AddSpecimenRiskCode(this SPM message)
+        {
+            return message.GetSpecimenRiskCode(message.SpecimenRiskCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenRejectReason Records from SPM
         /// </summary>
         public static IEnumerable GetSpecimenRejectReasonRecords(this SPM message)
@@ -6441,6 +8769,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSpecimenRejectReasonRecords(this SPM message)
         {
             return message.GetAllRecords<CWE>("SpecimenRejectReasonRepetitionsUsed", "GetSpecimenRejectReason");
+        }
+
+        /// <summary>
+        /// Add a new SPM to SpecimenRejectReason
+        /// </summary>
+        public static CWE AddSpecimenRejectReason(this SPM message)
+        {
+            return message.GetSpecimenRejectReason(message.SpecimenRejectReasonRepetitionsUsed);
         }
 
         /// <summary>
@@ -6466,6 +8802,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new SPM to SpecimenCondition
+        /// </summary>
+        public static CWE AddSpecimenCondition(this SPM message)
+        {
+            return message.GetSpecimenCondition(message.SpecimenConditionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProviderSAdministrationInstructions Records from RXE
         /// </summary>
         public static IEnumerable GetProviderSAdministrationInstructionsRecords(this RXE message)
@@ -6485,6 +8829,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProviderSAdministrationInstructionsRecords(this RXE message)
         {
             return message.GetAllRecords<CE>("ProviderSAdministrationInstructionsRepetitionsUsed", "GetProviderSAdministrationInstructions");
+        }
+
+        /// <summary>
+        /// Add a new RXE to ProviderSAdministrationInstructions
+        /// </summary>
+        public static CE AddProviderSAdministrationInstructions(this RXE message)
+        {
+            return message.GetProviderSAdministrationInstructions(message.ProviderSAdministrationInstructionsRepetitionsUsed);
         }
 
         /// <summary>
@@ -6510,6 +8862,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXE to OrderingProviderSDEANumber
+        /// </summary>
+        public static XCN AddOrderingProviderSDEANumber(this RXE message)
+        {
+            return message.GetOrderingProviderSDEANumber(message.OrderingProviderSDEANumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PharmacistTreatmentSupplierSVerifierID Records from RXE
         /// </summary>
         public static IEnumerable GetPharmacistTreatmentSupplierSVerifierIDRecords(this RXE message)
@@ -6529,6 +8889,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllPharmacistTreatmentSupplierSVerifierIDRecords(this RXE message)
         {
             return message.GetAllRecords<XCN>("PharmacistTreatmentSupplierSVerifierIDRepetitionsUsed", "GetPharmacistTreatmentSupplierSVerifierID");
+        }
+
+        /// <summary>
+        /// Add a new RXE to PharmacistTreatmentSupplierSVerifierID
+        /// </summary>
+        public static XCN AddPharmacistTreatmentSupplierSVerifierID(this RXE message)
+        {
+            return message.GetPharmacistTreatmentSupplierSVerifierID(message.PharmacistTreatmentSupplierSVerifierIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -6554,6 +8922,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXE to PharmacyTreatmentSupplierSSpecialDispensingInstructions
+        /// </summary>
+        public static CE AddPharmacyTreatmentSupplierSSpecialDispensingInstructions(this RXE message)
+        {
+            return message.GetPharmacyTreatmentSupplierSSpecialDispensingInstructions(message.PharmacyTreatmentSupplierSSpecialDispensingInstructionsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GiveIndication Records from RXE
         /// </summary>
         public static IEnumerable GetGiveIndicationRecords(this RXE message)
@@ -6573,6 +8949,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllGiveIndicationRecords(this RXE message)
         {
             return message.GetAllRecords<CE>("GiveIndicationRepetitionsUsed", "GetGiveIndication");
+        }
+
+        /// <summary>
+        /// Add a new RXE to GiveIndication
+        /// </summary>
+        public static CE AddGiveIndication(this RXE message)
+        {
+            return message.GetGiveIndication(message.GiveIndicationRepetitionsUsed);
         }
 
         /// <summary>
@@ -6598,6 +8982,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXE to SupplementaryCode
+        /// </summary>
+        public static CE AddSupplementaryCode(this RXE message)
+        {
+            return message.GetSupplementaryCode(message.SupplementaryCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PharmaceuticalSubstanceAlternative Records from RXE
         /// </summary>
         public static IEnumerable GetPharmaceuticalSubstanceAlternativeRecords(this RXE message)
@@ -6617,6 +9009,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllPharmaceuticalSubstanceAlternativeRecords(this RXE message)
         {
             return message.GetAllRecords<CWE>("PharmaceuticalSubstanceAlternativeRepetitionsUsed", "GetPharmaceuticalSubstanceAlternative");
+        }
+
+        /// <summary>
+        /// Add a new RXE to PharmaceuticalSubstanceAlternative
+        /// </summary>
+        public static CWE AddPharmaceuticalSubstanceAlternative(this RXE message)
+        {
+            return message.GetPharmaceuticalSubstanceAlternative(message.PharmaceuticalSubstanceAlternativeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6642,6 +9042,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RF1 to ReferralDisposition
+        /// </summary>
+        public static CE AddReferralDisposition(this RF1 message)
+        {
+            return message.GetReferralDisposition(message.ReferralDispositionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ReferralReason Records from RF1
         /// </summary>
         public static IEnumerable GetReferralReasonRecords(this RF1 message)
@@ -6661,6 +9069,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllReferralReasonRecords(this RF1 message)
         {
             return message.GetAllRecords<CE>("ReferralReasonRepetitionsUsed", "GetReferralReason");
+        }
+
+        /// <summary>
+        /// Add a new RF1 to ReferralReason
+        /// </summary>
+        public static CE AddReferralReason(this RF1 message)
+        {
+            return message.GetReferralReason(message.ReferralReasonRepetitionsUsed);
         }
 
         /// <summary>
@@ -6686,6 +9102,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RF1 to ExternalReferralIdentifier
+        /// </summary>
+        public static EI AddExternalReferralIdentifier(this RF1 message)
+        {
+            return message.GetExternalReferralIdentifier(message.ExternalReferralIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PatientValuables Records from PV2
         /// </summary>
         public static IEnumerable GetPatientValuablesRecords(this PV2 message)
@@ -6705,6 +9129,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllPatientValuablesRecords(this PV2 message)
         {
             return message.GetAllRecords<ST>("PatientValuablesRepetitionsUsed", "GetPatientValuables");
+        }
+
+        /// <summary>
+        /// Add a new PV2 to PatientValuables
+        /// </summary>
+        public static ST AddPatientValuables(this PV2 message)
+        {
+            return message.GetPatientValuables(message.PatientValuablesRepetitionsUsed);
         }
 
         /// <summary>
@@ -6730,6 +9162,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV2 to VisitUserCode
+        /// </summary>
+        public static IS AddVisitUserCode(this PV2 message)
+        {
+            return message.GetVisitUserCode(message.VisitUserCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ReferralSourceCode Records from PV2
         /// </summary>
         public static IEnumerable GetReferralSourceCodeRecords(this PV2 message)
@@ -6749,6 +9189,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllReferralSourceCodeRecords(this PV2 message)
         {
             return message.GetAllRecords<XCN>("ReferralSourceCodeRepetitionsUsed", "GetReferralSourceCode");
+        }
+
+        /// <summary>
+        /// Add a new PV2 to ReferralSourceCode
+        /// </summary>
+        public static XCN AddReferralSourceCode(this PV2 message)
+        {
+            return message.GetReferralSourceCode(message.ReferralSourceCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6774,6 +9222,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV2 to ClinicOrganizationName
+        /// </summary>
+        public static XON AddClinicOrganizationName(this PV2 message)
+        {
+            return message.GetClinicOrganizationName(message.ClinicOrganizationNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RecreationalDrugUseCode Records from PV2
         /// </summary>
         public static IEnumerable GetRecreationalDrugUseCodeRecords(this PV2 message)
@@ -6793,6 +9249,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllRecreationalDrugUseCodeRecords(this PV2 message)
         {
             return message.GetAllRecords<CE>("RecreationalDrugUseCodeRepetitionsUsed", "GetRecreationalDrugUseCode");
+        }
+
+        /// <summary>
+        /// Add a new PV2 to RecreationalDrugUseCode
+        /// </summary>
+        public static CE AddRecreationalDrugUseCode(this PV2 message)
+        {
+            return message.GetRecreationalDrugUseCode(message.RecreationalDrugUseCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6818,6 +9282,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV2 to PrecautionCode
+        /// </summary>
+        public static CE AddPrecautionCode(this PV2 message)
+        {
+            return message.GetPrecautionCode(message.PrecautionCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AdvanceDirectiveCode Records from PV2
         /// </summary>
         public static IEnumerable GetAdvanceDirectiveCodeRecords(this PV2 message)
@@ -6837,6 +9309,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllAdvanceDirectiveCodeRecords(this PV2 message)
         {
             return message.GetAllRecords<CE>("AdvanceDirectiveCodeRepetitionsUsed", "GetAdvanceDirectiveCode");
+        }
+
+        /// <summary>
+        /// Add a new PV2 to AdvanceDirectiveCode
+        /// </summary>
+        public static CE AddAdvanceDirectiveCode(this PV2 message)
+        {
+            return message.GetAdvanceDirectiveCode(message.AdvanceDirectiveCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -6862,6 +9342,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV2 to NotifyClergyCode
+        /// </summary>
+        public static IS AddNotifyClergyCode(this PV2 message)
+        {
+            return message.GetNotifyClergyCode(message.NotifyClergyCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PractitionerGroup Records from PRA
         /// </summary>
         public static IEnumerable GetPractitionerGroupRecords(this PRA message)
@@ -6881,6 +9369,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllPractitionerGroupRecords(this PRA message)
         {
             return message.GetAllRecords<CE>("PractitionerGroupRepetitionsUsed", "GetPractitionerGroup");
+        }
+
+        /// <summary>
+        /// Add a new PRA to PractitionerGroup
+        /// </summary>
+        public static CE AddPractitionerGroup(this PRA message)
+        {
+            return message.GetPractitionerGroup(message.PractitionerGroupRepetitionsUsed);
         }
 
         /// <summary>
@@ -6906,6 +9402,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRA to PractitionerCategory
+        /// </summary>
+        public static IS AddPractitionerCategory(this PRA message)
+        {
+            return message.GetPractitionerCategory(message.PractitionerCategoryRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Specialty Records from PRA
         /// </summary>
         public static IEnumerable GetSpecialtyRecords(this PRA message)
@@ -6925,6 +9429,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<SPD> GetAllSpecialtyRecords(this PRA message)
         {
             return message.GetAllRecords<SPD>("SpecialtyRepetitionsUsed", "GetSpecialty");
+        }
+
+        /// <summary>
+        /// Add a new PRA to Specialty
+        /// </summary>
+        public static SPD AddSpecialty(this PRA message)
+        {
+            return message.GetSpecialty(message.SpecialtyRepetitionsUsed);
         }
 
         /// <summary>
@@ -6950,6 +9462,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRA to PractitionerIDNumbers
+        /// </summary>
+        public static PLN AddPractitionerIDNumbers(this PRA message)
+        {
+            return message.GetPractitionerIDNumbers(message.PractitionerIDNumbersRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Privileges Records from PRA
         /// </summary>
         public static IEnumerable GetPrivilegesRecords(this PRA message)
@@ -6969,6 +9489,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<PIP> GetAllPrivilegesRecords(this PRA message)
         {
             return message.GetAllRecords<PIP>("PrivilegesRepetitionsUsed", "GetPrivileges");
+        }
+
+        /// <summary>
+        /// Add a new PRA to Privileges
+        /// </summary>
+        public static PIP AddPrivileges(this PRA message)
+        {
+            return message.GetPrivileges(message.PrivilegesRepetitionsUsed);
         }
 
         /// <summary>
@@ -6994,6 +9522,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PRA to GovernmentReimbursementBillingEligibility
+        /// </summary>
+        public static CE AddGovernmentReimbursementBillingEligibility(this PRA message)
+        {
+            return message.GetGovernmentReimbursementBillingEligibility(message.GovernmentReimbursementBillingEligibilityRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get LivingDependency Records from PD1
         /// </summary>
         public static IEnumerable GetLivingDependencyRecords(this PD1 message)
@@ -7013,6 +9549,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllLivingDependencyRecords(this PD1 message)
         {
             return message.GetAllRecords<IS>("LivingDependencyRepetitionsUsed", "GetLivingDependency");
+        }
+
+        /// <summary>
+        /// Add a new PD1 to LivingDependency
+        /// </summary>
+        public static IS AddLivingDependency(this PD1 message)
+        {
+            return message.GetLivingDependency(message.LivingDependencyRepetitionsUsed);
         }
 
         /// <summary>
@@ -7038,6 +9582,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PD1 to PatientPrimaryFacility
+        /// </summary>
+        public static XON AddPatientPrimaryFacility(this PD1 message)
+        {
+            return message.GetPatientPrimaryFacility(message.PatientPrimaryFacilityRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PatientPrimaryCareProviderNameIDNo Records from PD1
         /// </summary>
         public static IEnumerable GetPatientPrimaryCareProviderNameIDNoRecords(this PD1 message)
@@ -7057,6 +9609,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllPatientPrimaryCareProviderNameIDNoRecords(this PD1 message)
         {
             return message.GetAllRecords<XCN>("PatientPrimaryCareProviderNameIDNoRepetitionsUsed", "GetPatientPrimaryCareProviderNameIDNo");
+        }
+
+        /// <summary>
+        /// Add a new PD1 to PatientPrimaryCareProviderNameIDNo
+        /// </summary>
+        public static XCN AddPatientPrimaryCareProviderNameIDNo(this PD1 message)
+        {
+            return message.GetPatientPrimaryCareProviderNameIDNo(message.PatientPrimaryCareProviderNameIDNoRepetitionsUsed);
         }
 
         /// <summary>
@@ -7082,6 +9642,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PD1 to DuplicatePatient
+        /// </summary>
+        public static CX AddDuplicatePatient(this PD1 message)
+        {
+            return message.GetDuplicatePatient(message.DuplicatePatientRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlaceOfWorship Records from PD1
         /// </summary>
         public static IEnumerable GetPlaceOfWorshipRecords(this PD1 message)
@@ -7101,6 +9669,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllPlaceOfWorshipRecords(this PD1 message)
         {
             return message.GetAllRecords<XON>("PlaceOfWorshipRepetitionsUsed", "GetPlaceOfWorship");
+        }
+
+        /// <summary>
+        /// Add a new PD1 to PlaceOfWorship
+        /// </summary>
+        public static XON AddPlaceOfWorship(this PD1 message)
+        {
+            return message.GetPlaceOfWorship(message.PlaceOfWorshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -7126,6 +9702,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PD1 to AdvanceDirectiveCode
+        /// </summary>
+        public static CE AddAdvanceDirectiveCode(this PD1 message)
+        {
+            return message.GetAdvanceDirectiveCode(message.AdvanceDirectiveCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Comment Records from NTE
         /// </summary>
         public static IEnumerable GetCommentRecords(this NTE message)
@@ -7145,6 +9729,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<FT> GetAllCommentRecords(this NTE message)
         {
             return message.GetAllRecords<FT>("CommentRepetitionsUsed", "GetComment");
+        }
+
+        /// <summary>
+        /// Add a new NTE to Comment
+        /// </summary>
+        public static FT AddComment(this NTE message)
+        {
+            return message.GetComment(message.CommentRepetitionsUsed);
         }
 
         /// <summary>
@@ -7170,6 +9762,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to InsuranceCompanyID
+        /// </summary>
+        public static CX AddInsuranceCompanyID(this IN1 message)
+        {
+            return message.GetInsuranceCompanyID(message.InsuranceCompanyIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuranceCompanyName Records from IN1
         /// </summary>
         public static IEnumerable GetInsuranceCompanyNameRecords(this IN1 message)
@@ -7189,6 +9789,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllInsuranceCompanyNameRecords(this IN1 message)
         {
             return message.GetAllRecords<XON>("InsuranceCompanyNameRepetitionsUsed", "GetInsuranceCompanyName");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to InsuranceCompanyName
+        /// </summary>
+        public static XON AddInsuranceCompanyName(this IN1 message)
+        {
+            return message.GetInsuranceCompanyName(message.InsuranceCompanyNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -7214,6 +9822,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to InsuranceCompanyAddress
+        /// </summary>
+        public static XAD AddInsuranceCompanyAddress(this IN1 message)
+        {
+            return message.GetInsuranceCompanyAddress(message.InsuranceCompanyAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuranceCoContactPerson Records from IN1
         /// </summary>
         public static IEnumerable GetInsuranceCoContactPersonRecords(this IN1 message)
@@ -7233,6 +9849,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllInsuranceCoContactPersonRecords(this IN1 message)
         {
             return message.GetAllRecords<XPN>("InsuranceCoContactPersonRepetitionsUsed", "GetInsuranceCoContactPerson");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to InsuranceCoContactPerson
+        /// </summary>
+        public static XPN AddInsuranceCoContactPerson(this IN1 message)
+        {
+            return message.GetInsuranceCoContactPerson(message.InsuranceCoContactPersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -7258,6 +9882,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to InsuranceCoPhoneNumber
+        /// </summary>
+        public static XTN AddInsuranceCoPhoneNumber(this IN1 message)
+        {
+            return message.GetInsuranceCoPhoneNumber(message.InsuranceCoPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GroupName Records from IN1
         /// </summary>
         public static IEnumerable GetGroupNameRecords(this IN1 message)
@@ -7277,6 +9909,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllGroupNameRecords(this IN1 message)
         {
             return message.GetAllRecords<XON>("GroupNameRepetitionsUsed", "GetGroupName");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to GroupName
+        /// </summary>
+        public static XON AddGroupName(this IN1 message)
+        {
+            return message.GetGroupName(message.GroupNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -7302,6 +9942,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to InsuredSGroupEmpID
+        /// </summary>
+        public static CX AddInsuredSGroupEmpID(this IN1 message)
+        {
+            return message.GetInsuredSGroupEmpID(message.InsuredSGroupEmpIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSGroupEmpName Records from IN1
         /// </summary>
         public static IEnumerable GetInsuredSGroupEmpNameRecords(this IN1 message)
@@ -7321,6 +9969,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllInsuredSGroupEmpNameRecords(this IN1 message)
         {
             return message.GetAllRecords<XON>("InsuredSGroupEmpNameRepetitionsUsed", "GetInsuredSGroupEmpName");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to InsuredSGroupEmpName
+        /// </summary>
+        public static XON AddInsuredSGroupEmpName(this IN1 message)
+        {
+            return message.GetInsuredSGroupEmpName(message.InsuredSGroupEmpNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -7346,6 +10002,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to NameOfInsured
+        /// </summary>
+        public static XPN AddNameOfInsured(this IN1 message)
+        {
+            return message.GetNameOfInsured(message.NameOfInsuredRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSAddress Records from IN1
         /// </summary>
         public static IEnumerable GetInsuredSAddressRecords(this IN1 message)
@@ -7365,6 +10029,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllInsuredSAddressRecords(this IN1 message)
         {
             return message.GetAllRecords<XAD>("InsuredSAddressRepetitionsUsed", "GetInsuredSAddress");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to InsuredSAddress
+        /// </summary>
+        public static XAD AddInsuredSAddress(this IN1 message)
+        {
+            return message.GetInsuredSAddress(message.InsuredSAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -7390,6 +10062,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to VerificationBy
+        /// </summary>
+        public static XCN AddVerificationBy(this IN1 message)
+        {
+            return message.GetVerificationBy(message.VerificationByRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InsuredSEmployerSAddress Records from IN1
         /// </summary>
         public static IEnumerable GetInsuredSEmployerSAddressRecords(this IN1 message)
@@ -7409,6 +10089,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllInsuredSEmployerSAddressRecords(this IN1 message)
         {
             return message.GetAllRecords<XAD>("InsuredSEmployerSAddressRepetitionsUsed", "GetInsuredSEmployerSAddress");
+        }
+
+        /// <summary>
+        /// Add a new IN1 to InsuredSEmployerSAddress
+        /// </summary>
+        public static XAD AddInsuredSEmployerSAddress(this IN1 message)
+        {
+            return message.GetInsuredSEmployerSAddress(message.InsuredSEmployerSAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -7434,6 +10122,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IN1 to InsuredSIDNumber
+        /// </summary>
+        public static CX AddInsuredSIDNumber(this IN1 message)
+        {
+            return message.GetInsuredSIDNumber(message.InsuredSIDNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SubjectDirectoryAttributeExtensionHealthProfessionalData Records from CER
         /// </summary>
         public static IEnumerable GetSubjectDirectoryAttributeExtensionHealthProfessionalDataRecords(this CER message)
@@ -7453,6 +10149,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllSubjectDirectoryAttributeExtensionHealthProfessionalDataRecords(this CER message)
         {
             return message.GetAllRecords<CWE>("SubjectDirectoryAttributeExtensionHealthProfessionalDataRepetitionsUsed", "GetSubjectDirectoryAttributeExtensionHealthProfessionalData");
+        }
+
+        /// <summary>
+        /// Add a new CER to SubjectDirectoryAttributeExtensionHealthProfessionalData
+        /// </summary>
+        public static CWE AddSubjectDirectoryAttributeExtensionHealthProfessionalData(this CER message)
+        {
+            return message.GetSubjectDirectoryAttributeExtensionHealthProfessionalData(message.SubjectDirectoryAttributeExtensionHealthProfessionalDataRepetitionsUsed);
         }
 
         /// <summary>
@@ -7478,6 +10182,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CER to CRLDistributionPoint
+        /// </summary>
+        public static CWE AddCRLDistributionPoint(this CER message)
+        {
+            return message.GetCRLDistributionPoint(message.CRLDistributionPointRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get JurisdictionBreadth Records from CER
         /// </summary>
         public static IEnumerable GetJurisdictionBreadthRecords(this CER message)
@@ -7497,6 +10209,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllJurisdictionBreadthRecords(this CER message)
         {
             return message.GetAllRecords<CWE>("JurisdictionBreadthRepetitionsUsed", "GetJurisdictionBreadth");
+        }
+
+        /// <summary>
+        /// Add a new CER to JurisdictionBreadth
+        /// </summary>
+        public static CWE AddJurisdictionBreadth(this CER message)
+        {
+            return message.GetJurisdictionBreadth(message.JurisdictionBreadthRepetitionsUsed);
         }
 
         /// <summary>
@@ -7522,6 +10242,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new AIG to ResourceGroup
+        /// </summary>
+        public static CE AddResourceGroup(this AIG message)
+        {
+            return message.GetResourceGroup(message.ResourceGroupRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DispenseNotes Records from RXD
         /// </summary>
         public static IEnumerable GetDispenseNotesRecords(this RXD message)
@@ -7541,6 +10269,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllDispenseNotesRecords(this RXD message)
         {
             return message.GetAllRecords<ST>("DispenseNotesRepetitionsUsed", "GetDispenseNotes");
+        }
+
+        /// <summary>
+        /// Add a new RXD to DispenseNotes
+        /// </summary>
+        public static ST AddDispenseNotes(this RXD message)
+        {
+            return message.GetDispenseNotes(message.DispenseNotesRepetitionsUsed);
         }
 
         /// <summary>
@@ -7566,6 +10302,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXD to DispensingProvider
+        /// </summary>
+        public static XCN AddDispensingProvider(this RXD message)
+        {
+            return message.GetDispensingProvider(message.DispensingProviderRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PharmacyTreatmentSupplierSSpecialDispensingInstructions Records from RXD
         /// </summary>
         public static IEnumerable GetPharmacyTreatmentSupplierSSpecialDispensingInstructionsRecords(this RXD message)
@@ -7585,6 +10329,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllPharmacyTreatmentSupplierSSpecialDispensingInstructionsRecords(this RXD message)
         {
             return message.GetAllRecords<CE>("PharmacyTreatmentSupplierSSpecialDispensingInstructionsRepetitionsUsed", "GetPharmacyTreatmentSupplierSSpecialDispensingInstructions");
+        }
+
+        /// <summary>
+        /// Add a new RXD to PharmacyTreatmentSupplierSSpecialDispensingInstructions
+        /// </summary>
+        public static CE AddPharmacyTreatmentSupplierSSpecialDispensingInstructions(this RXD message)
+        {
+            return message.GetPharmacyTreatmentSupplierSSpecialDispensingInstructions(message.PharmacyTreatmentSupplierSSpecialDispensingInstructionsRepetitionsUsed);
         }
 
         /// <summary>
@@ -7610,6 +10362,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXD to SubstanceLotNumber
+        /// </summary>
+        public static ST AddSubstanceLotNumber(this RXD message)
+        {
+            return message.GetSubstanceLotNumber(message.SubstanceLotNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SubstanceExpirationDate Records from RXD
         /// </summary>
         public static IEnumerable GetSubstanceExpirationDateRecords(this RXD message)
@@ -7629,6 +10389,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllSubstanceExpirationDateRecords(this RXD message)
         {
             return message.GetAllRecords<TS>("SubstanceExpirationDateRepetitionsUsed", "GetSubstanceExpirationDate");
+        }
+
+        /// <summary>
+        /// Add a new RXD to SubstanceExpirationDate
+        /// </summary>
+        public static TS AddSubstanceExpirationDate(this RXD message)
+        {
+            return message.GetSubstanceExpirationDate(message.SubstanceExpirationDateRepetitionsUsed);
         }
 
         /// <summary>
@@ -7654,6 +10422,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXD to SubstanceManufacturerName
+        /// </summary>
+        public static CE AddSubstanceManufacturerName(this RXD message)
+        {
+            return message.GetSubstanceManufacturerName(message.SubstanceManufacturerNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Indication Records from RXD
         /// </summary>
         public static IEnumerable GetIndicationRecords(this RXD message)
@@ -7673,6 +10449,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllIndicationRecords(this RXD message)
         {
             return message.GetAllRecords<CE>("IndicationRepetitionsUsed", "GetIndication");
+        }
+
+        /// <summary>
+        /// Add a new RXD to Indication
+        /// </summary>
+        public static CE AddIndication(this RXD message)
+        {
+            return message.GetIndication(message.IndicationRepetitionsUsed);
         }
 
         /// <summary>
@@ -7698,6 +10482,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXD to SupplementaryCode
+        /// </summary>
+        public static CE AddSupplementaryCode(this RXD message)
+        {
+            return message.GetSupplementaryCode(message.SupplementaryCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RolePerson Records from ROL
         /// </summary>
         public static IEnumerable GetRolePersonRecords(this ROL message)
@@ -7717,6 +10509,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllRolePersonRecords(this ROL message)
         {
             return message.GetAllRecords<XCN>("RolePersonRepetitionsUsed", "GetRolePerson");
+        }
+
+        /// <summary>
+        /// Add a new ROL to RolePerson
+        /// </summary>
+        public static XCN AddRolePerson(this ROL message)
+        {
+            return message.GetRolePerson(message.RolePersonRepetitionsUsed);
         }
 
         /// <summary>
@@ -7742,6 +10542,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ROL to ProviderType
+        /// </summary>
+        public static CE AddProviderType(this ROL message)
+        {
+            return message.GetProviderType(message.ProviderTypeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OfficeHomeAddressBirthplace Records from ROL
         /// </summary>
         public static IEnumerable GetOfficeHomeAddressBirthplaceRecords(this ROL message)
@@ -7761,6 +10569,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllOfficeHomeAddressBirthplaceRecords(this ROL message)
         {
             return message.GetAllRecords<XAD>("OfficeHomeAddressBirthplaceRepetitionsUsed", "GetOfficeHomeAddressBirthplace");
+        }
+
+        /// <summary>
+        /// Add a new ROL to OfficeHomeAddressBirthplace
+        /// </summary>
+        public static XAD AddOfficeHomeAddressBirthplace(this ROL message)
+        {
+            return message.GetOfficeHomeAddressBirthplace(message.OfficeHomeAddressBirthplaceRepetitionsUsed);
         }
 
         /// <summary>
@@ -7786,6 +10602,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ROL to Phone
+        /// </summary>
+        public static XTN AddPhone(this ROL message)
+        {
+            return message.GetPhone(message.PhoneRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AttendingDoctor Records from PV1
         /// </summary>
         public static IEnumerable GetAttendingDoctorRecords(this PV1 message)
@@ -7805,6 +10629,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllAttendingDoctorRecords(this PV1 message)
         {
             return message.GetAllRecords<XCN>("AttendingDoctorRepetitionsUsed", "GetAttendingDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to AttendingDoctor
+        /// </summary>
+        public static XCN AddAttendingDoctor(this PV1 message)
+        {
+            return message.GetAttendingDoctor(message.AttendingDoctorRepetitionsUsed);
         }
 
         /// <summary>
@@ -7830,6 +10662,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to ReferringDoctor
+        /// </summary>
+        public static XCN AddReferringDoctor(this PV1 message)
+        {
+            return message.GetReferringDoctor(message.ReferringDoctorRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ConsultingDoctor Records from PV1
         /// </summary>
         public static IEnumerable GetConsultingDoctorRecords(this PV1 message)
@@ -7849,6 +10689,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllConsultingDoctorRecords(this PV1 message)
         {
             return message.GetAllRecords<XCN>("ConsultingDoctorRepetitionsUsed", "GetConsultingDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to ConsultingDoctor
+        /// </summary>
+        public static XCN AddConsultingDoctor(this PV1 message)
+        {
+            return message.GetConsultingDoctor(message.ConsultingDoctorRepetitionsUsed);
         }
 
         /// <summary>
@@ -7874,6 +10722,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this PV1 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AdmittingDoctor Records from PV1
         /// </summary>
         public static IEnumerable GetAdmittingDoctorRecords(this PV1 message)
@@ -7893,6 +10749,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllAdmittingDoctorRecords(this PV1 message)
         {
             return message.GetAllRecords<XCN>("AdmittingDoctorRepetitionsUsed", "GetAdmittingDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to AdmittingDoctor
+        /// </summary>
+        public static XCN AddAdmittingDoctor(this PV1 message)
+        {
+            return message.GetAdmittingDoctor(message.AdmittingDoctorRepetitionsUsed);
         }
 
         /// <summary>
@@ -7918,6 +10782,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to FinancialClass
+        /// </summary>
+        public static FC AddFinancialClass(this PV1 message)
+        {
+            return message.GetFinancialClass(message.FinancialClassRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContractCode Records from PV1
         /// </summary>
         public static IEnumerable GetContractCodeRecords(this PV1 message)
@@ -7937,6 +10809,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllContractCodeRecords(this PV1 message)
         {
             return message.GetAllRecords<IS>("ContractCodeRepetitionsUsed", "GetContractCode");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to ContractCode
+        /// </summary>
+        public static IS AddContractCode(this PV1 message)
+        {
+            return message.GetContractCode(message.ContractCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -7962,6 +10842,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to ContractEffectiveDate
+        /// </summary>
+        public static DT AddContractEffectiveDate(this PV1 message)
+        {
+            return message.GetContractEffectiveDate(message.ContractEffectiveDateRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContractAmount Records from PV1
         /// </summary>
         public static IEnumerable GetContractAmountRecords(this PV1 message)
@@ -7981,6 +10869,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<NM> GetAllContractAmountRecords(this PV1 message)
         {
             return message.GetAllRecords<NM>("ContractAmountRepetitionsUsed", "GetContractAmount");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to ContractAmount
+        /// </summary>
+        public static NM AddContractAmount(this PV1 message)
+        {
+            return message.GetContractAmount(message.ContractAmountRepetitionsUsed);
         }
 
         /// <summary>
@@ -8006,6 +10902,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to ContractPeriod
+        /// </summary>
+        public static NM AddContractPeriod(this PV1 message)
+        {
+            return message.GetContractPeriod(message.ContractPeriodRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DischargeDateTime Records from PV1
         /// </summary>
         public static IEnumerable GetDischargeDateTimeRecords(this PV1 message)
@@ -8025,6 +10929,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllDischargeDateTimeRecords(this PV1 message)
         {
             return message.GetAllRecords<TS>("DischargeDateTimeRepetitionsUsed", "GetDischargeDateTime");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to DischargeDateTime
+        /// </summary>
+        public static TS AddDischargeDateTime(this PV1 message)
+        {
+            return message.GetDischargeDateTime(message.DischargeDateTimeRepetitionsUsed);
         }
 
         /// <summary>
@@ -8050,6 +10962,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PV1 to OtherHealthcareProvider
+        /// </summary>
+        public static XCN AddOtherHealthcareProvider(this PV1 message)
+        {
+            return message.GetOtherHealthcareProvider(message.OtherHealthcareProviderRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ManufacturerDistributor Records from PDC
         /// </summary>
         public static IEnumerable GetManufacturerDistributorRecords(this PDC message)
@@ -8069,6 +10989,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllManufacturerDistributorRecords(this PDC message)
         {
             return message.GetAllRecords<XON>("ManufacturerDistributorRepetitionsUsed", "GetManufacturerDistributor");
+        }
+
+        /// <summary>
+        /// Add a new PDC to ManufacturerDistributor
+        /// </summary>
+        public static XON AddManufacturerDistributor(this PDC message)
+        {
+            return message.GetManufacturerDistributor(message.ManufacturerDistributorRepetitionsUsed);
         }
 
         /// <summary>
@@ -8094,6 +11022,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PDC to ModelIdentifier
+        /// </summary>
+        public static ST AddModelIdentifier(this PDC message)
+        {
+            return message.GetModelIdentifier(message.ModelIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OtherIdentifier Records from PDC
         /// </summary>
         public static IEnumerable GetOtherIdentifierRecords(this PDC message)
@@ -8113,6 +11049,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllOtherIdentifierRecords(this PDC message)
         {
             return message.GetAllRecords<ST>("OtherIdentifierRepetitionsUsed", "GetOtherIdentifier");
+        }
+
+        /// <summary>
+        /// Add a new PDC to OtherIdentifier
+        /// </summary>
+        public static ST AddOtherIdentifier(this PDC message)
+        {
+            return message.GetOtherIdentifier(message.OtherIdentifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -8138,6 +11082,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TXA to PrimaryActivityProviderCodeName
+        /// </summary>
+        public static XCN AddPrimaryActivityProviderCodeName(this TXA message)
+        {
+            return message.GetPrimaryActivityProviderCodeName(message.PrimaryActivityProviderCodeNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EditDateTime Records from TXA
         /// </summary>
         public static IEnumerable GetEditDateTimeRecords(this TXA message)
@@ -8157,6 +11109,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllEditDateTimeRecords(this TXA message)
         {
             return message.GetAllRecords<TS>("EditDateTimeRepetitionsUsed", "GetEditDateTime");
+        }
+
+        /// <summary>
+        /// Add a new TXA to EditDateTime
+        /// </summary>
+        public static TS AddEditDateTime(this TXA message)
+        {
+            return message.GetEditDateTime(message.EditDateTimeRepetitionsUsed);
         }
 
         /// <summary>
@@ -8182,6 +11142,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TXA to OriginatorCodeName
+        /// </summary>
+        public static XCN AddOriginatorCodeName(this TXA message)
+        {
+            return message.GetOriginatorCodeName(message.OriginatorCodeNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AssignedDocumentAuthenticator Records from TXA
         /// </summary>
         public static IEnumerable GetAssignedDocumentAuthenticatorRecords(this TXA message)
@@ -8201,6 +11169,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllAssignedDocumentAuthenticatorRecords(this TXA message)
         {
             return message.GetAllRecords<XCN>("AssignedDocumentAuthenticatorRepetitionsUsed", "GetAssignedDocumentAuthenticator");
+        }
+
+        /// <summary>
+        /// Add a new TXA to AssignedDocumentAuthenticator
+        /// </summary>
+        public static XCN AddAssignedDocumentAuthenticator(this TXA message)
+        {
+            return message.GetAssignedDocumentAuthenticator(message.AssignedDocumentAuthenticatorRepetitionsUsed);
         }
 
         /// <summary>
@@ -8226,6 +11202,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TXA to TranscriptionistCodeName
+        /// </summary>
+        public static XCN AddTranscriptionistCodeName(this TXA message)
+        {
+            return message.GetTranscriptionistCodeName(message.TranscriptionistCodeNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerOrderNumber Records from TXA
         /// </summary>
         public static IEnumerable GetPlacerOrderNumberRecords(this TXA message)
@@ -8245,6 +11229,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllPlacerOrderNumberRecords(this TXA message)
         {
             return message.GetAllRecords<EI>("PlacerOrderNumberRepetitionsUsed", "GetPlacerOrderNumber");
+        }
+
+        /// <summary>
+        /// Add a new TXA to PlacerOrderNumber
+        /// </summary>
+        public static EI AddPlacerOrderNumber(this TXA message)
+        {
+            return message.GetPlacerOrderNumber(message.PlacerOrderNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -8270,6 +11262,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new TXA to AuthenticationPersonTimeStamp
+        /// </summary>
+        public static PPN AddAuthenticationPersonTimeStamp(this TXA message)
+        {
+            return message.GetAuthenticationPersonTimeStamp(message.AuthenticationPersonTimeStampRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DistributedCopiesCodeandNameofRecipients Records from TXA
         /// </summary>
         public static IEnumerable GetDistributedCopiesCodeandNameofRecipientsRecords(this TXA message)
@@ -8289,6 +11289,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllDistributedCopiesCodeandNameofRecipientsRecords(this TXA message)
         {
             return message.GetAllRecords<XCN>("DistributedCopiesCodeandNameofRecipientsRepetitionsUsed", "GetDistributedCopiesCodeandNameofRecipients");
+        }
+
+        /// <summary>
+        /// Add a new TXA to DistributedCopiesCodeandNameofRecipients
+        /// </summary>
+        public static XCN AddDistributedCopiesCodeandNameofRecipients(this TXA message)
+        {
+            return message.GetDistributedCopiesCodeandNameofRecipients(message.DistributedCopiesCodeandNameofRecipientsRepetitionsUsed);
         }
 
         /// <summary>
@@ -8314,6 +11322,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXC to SupplementaryCode
+        /// </summary>
+        public static CE AddSupplementaryCode(this RXC message)
+        {
+            return message.GetSupplementaryCode(message.SupplementaryCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SortByField Records from RCP
         /// </summary>
         public static IEnumerable GetSortByFieldRecords(this RCP message)
@@ -8333,6 +11349,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<SRT> GetAllSortByFieldRecords(this RCP message)
         {
             return message.GetAllRecords<SRT>("SortByFieldRepetitionsUsed", "GetSortByField");
+        }
+
+        /// <summary>
+        /// Add a new RCP to SortByField
+        /// </summary>
+        public static SRT AddSortByField(this RCP message)
+        {
+            return message.GetSortByField(message.SortByFieldRepetitionsUsed);
         }
 
         /// <summary>
@@ -8358,6 +11382,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RCP to SegmentGroupInclusion
+        /// </summary>
+        public static ID AddSegmentGroupInclusion(this RCP message)
+        {
+            return message.GetSegmentGroupInclusion(message.SegmentGroupInclusionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProductSerialLotNumber Records from PCR
         /// </summary>
         public static IEnumerable GetProductSerialLotNumberRecords(this PCR message)
@@ -8377,6 +11409,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ST> GetAllProductSerialLotNumberRecords(this PCR message)
         {
             return message.GetAllRecords<ST>("ProductSerialLotNumberRepetitionsUsed", "GetProductSerialLotNumber");
+        }
+
+        /// <summary>
+        /// Add a new PCR to ProductSerialLotNumber
+        /// </summary>
+        public static ST AddProductSerialLotNumber(this PCR message)
+        {
+            return message.GetProductSerialLotNumber(message.ProductSerialLotNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -8402,6 +11442,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PCR to ActionTakenInResponseToTheEvent
+        /// </summary>
+        public static ID AddActionTakenInResponseToTheEvent(this PCR message)
+        {
+            return message.GetActionTakenInResponseToTheEvent(message.ActionTakenInResponseToTheEventRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventCausalityObservations Records from PCR
         /// </summary>
         public static IEnumerable GetEventCausalityObservationsRecords(this PCR message)
@@ -8421,6 +11469,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllEventCausalityObservationsRecords(this PCR message)
         {
             return message.GetAllRecords<ID>("EventCausalityObservationsRepetitionsUsed", "GetEventCausalityObservations");
+        }
+
+        /// <summary>
+        /// Add a new PCR to EventCausalityObservations
+        /// </summary>
+        public static ID AddEventCausalityObservations(this PCR message)
+        {
+            return message.GetEventCausalityObservations(message.EventCausalityObservationsRepetitionsUsed);
         }
 
         /// <summary>
@@ -8446,6 +11502,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PCR to IndirectExposureMechanism
+        /// </summary>
+        public static ID AddIndirectExposureMechanism(this PCR message)
+        {
+            return message.GetIndirectExposureMechanism(message.IndirectExposureMechanismRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ServicePeriod Records from ODT
         /// </summary>
         public static IEnumerable GetServicePeriodRecords(this ODT message)
@@ -8465,6 +11529,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllServicePeriodRecords(this ODT message)
         {
             return message.GetAllRecords<CE>("ServicePeriodRepetitionsUsed", "GetServicePeriod");
+        }
+
+        /// <summary>
+        /// Add a new ODT to ServicePeriod
+        /// </summary>
+        public static CE AddServicePeriod(this ODT message)
+        {
+            return message.GetServicePeriod(message.ServicePeriodRepetitionsUsed);
         }
 
         /// <summary>
@@ -8490,6 +11562,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to CollectorIdentifier
+        /// </summary>
+        public static XCN AddCollectorIdentifier(this OBR message)
+        {
+            return message.GetCollectorIdentifier(message.CollectorIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderingProvider Records from OBR
         /// </summary>
         public static IEnumerable GetOrderingProviderRecords(this OBR message)
@@ -8509,6 +11589,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOrderingProviderRecords(this OBR message)
         {
             return message.GetAllRecords<XCN>("OrderingProviderRepetitionsUsed", "GetOrderingProvider");
+        }
+
+        /// <summary>
+        /// Add a new OBR to OrderingProvider
+        /// </summary>
+        public static XCN AddOrderingProvider(this OBR message)
+        {
+            return message.GetOrderingProvider(message.OrderingProviderRepetitionsUsed);
         }
 
         /// <summary>
@@ -8534,6 +11622,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to OrderCallbackPhoneNumber
+        /// </summary>
+        public static XTN AddOrderCallbackPhoneNumber(this OBR message)
+        {
+            return message.GetOrderCallbackPhoneNumber(message.OrderCallbackPhoneNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get QuantityTiming Records from OBR
         /// </summary>
         public static IEnumerable GetQuantityTimingRecords(this OBR message)
@@ -8553,6 +11649,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TQ> GetAllQuantityTimingRecords(this OBR message)
         {
             return message.GetAllRecords<TQ>("QuantityTimingRepetitionsUsed", "GetQuantityTiming");
+        }
+
+        /// <summary>
+        /// Add a new OBR to QuantityTiming
+        /// </summary>
+        public static TQ AddQuantityTiming(this OBR message)
+        {
+            return message.GetQuantityTiming(message.QuantityTimingRepetitionsUsed);
         }
 
         /// <summary>
@@ -8578,6 +11682,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to ResultCopiesTo
+        /// </summary>
+        public static XCN AddResultCopiesTo(this OBR message)
+        {
+            return message.GetResultCopiesTo(message.ResultCopiesToRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ReasonForStudy Records from OBR
         /// </summary>
         public static IEnumerable GetReasonForStudyRecords(this OBR message)
@@ -8597,6 +11709,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllReasonForStudyRecords(this OBR message)
         {
             return message.GetAllRecords<CE>("ReasonForStudyRepetitionsUsed", "GetReasonForStudy");
+        }
+
+        /// <summary>
+        /// Add a new OBR to ReasonForStudy
+        /// </summary>
+        public static CE AddReasonForStudy(this OBR message)
+        {
+            return message.GetReasonForStudy(message.ReasonForStudyRepetitionsUsed);
         }
 
         /// <summary>
@@ -8622,6 +11742,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to AssistantResultInterpreter
+        /// </summary>
+        public static NDL AddAssistantResultInterpreter(this OBR message)
+        {
+            return message.GetAssistantResultInterpreter(message.AssistantResultInterpreterRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Technician Records from OBR
         /// </summary>
         public static IEnumerable GetTechnicianRecords(this OBR message)
@@ -8641,6 +11769,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<NDL> GetAllTechnicianRecords(this OBR message)
         {
             return message.GetAllRecords<NDL>("TechnicianRepetitionsUsed", "GetTechnician");
+        }
+
+        /// <summary>
+        /// Add a new OBR to Technician
+        /// </summary>
+        public static NDL AddTechnician(this OBR message)
+        {
+            return message.GetTechnician(message.TechnicianRepetitionsUsed);
         }
 
         /// <summary>
@@ -8666,6 +11802,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to Transcriptionist
+        /// </summary>
+        public static NDL AddTranscriptionist(this OBR message)
+        {
+            return message.GetTranscriptionist(message.TranscriptionistRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TransportLogisticsOfCollectedSample Records from OBR
         /// </summary>
         public static IEnumerable GetTransportLogisticsOfCollectedSampleRecords(this OBR message)
@@ -8685,6 +11829,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllTransportLogisticsOfCollectedSampleRecords(this OBR message)
         {
             return message.GetAllRecords<CE>("TransportLogisticsOfCollectedSampleRepetitionsUsed", "GetTransportLogisticsOfCollectedSample");
+        }
+
+        /// <summary>
+        /// Add a new OBR to TransportLogisticsOfCollectedSample
+        /// </summary>
+        public static CE AddTransportLogisticsOfCollectedSample(this OBR message)
+        {
+            return message.GetTransportLogisticsOfCollectedSample(message.TransportLogisticsOfCollectedSampleRepetitionsUsed);
         }
 
         /// <summary>
@@ -8710,6 +11862,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to CollectorSComment
+        /// </summary>
+        public static CE AddCollectorSComment(this OBR message)
+        {
+            return message.GetCollectorSComment(message.CollectorSCommentRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlannedPatientTransportComment Records from OBR
         /// </summary>
         public static IEnumerable GetPlannedPatientTransportCommentRecords(this OBR message)
@@ -8729,6 +11889,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllPlannedPatientTransportCommentRecords(this OBR message)
         {
             return message.GetAllRecords<CE>("PlannedPatientTransportCommentRepetitionsUsed", "GetPlannedPatientTransportComment");
+        }
+
+        /// <summary>
+        /// Add a new OBR to PlannedPatientTransportComment
+        /// </summary>
+        public static CE AddPlannedPatientTransportComment(this OBR message)
+        {
+            return message.GetPlannedPatientTransportComment(message.PlannedPatientTransportCommentRepetitionsUsed);
         }
 
         /// <summary>
@@ -8754,6 +11922,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to ProcedureCodeModifier
+        /// </summary>
+        public static CE AddProcedureCodeModifier(this OBR message)
+        {
+            return message.GetProcedureCodeModifier(message.ProcedureCodeModifierRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PlacerSupplementalServiceInformation Records from OBR
         /// </summary>
         public static IEnumerable GetPlacerSupplementalServiceInformationRecords(this OBR message)
@@ -8773,6 +11949,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllPlacerSupplementalServiceInformationRecords(this OBR message)
         {
             return message.GetAllRecords<CE>("PlacerSupplementalServiceInformationRepetitionsUsed", "GetPlacerSupplementalServiceInformation");
+        }
+
+        /// <summary>
+        /// Add a new OBR to PlacerSupplementalServiceInformation
+        /// </summary>
+        public static CE AddPlacerSupplementalServiceInformation(this OBR message)
+        {
+            return message.GetPlacerSupplementalServiceInformation(message.PlacerSupplementalServiceInformationRepetitionsUsed);
         }
 
         /// <summary>
@@ -8798,6 +11982,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OBR to FillerSupplementalServiceInformation
+        /// </summary>
+        public static CE AddFillerSupplementalServiceInformation(this OBR message)
+        {
+            return message.GetFillerSupplementalServiceInformation(message.FillerSupplementalServiceInformationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OperatorID Records from EVN
         /// </summary>
         public static IEnumerable GetOperatorIDRecords(this EVN message)
@@ -8817,6 +12009,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOperatorIDRecords(this EVN message)
         {
             return message.GetAllRecords<XCN>("OperatorIDRepetitionsUsed", "GetOperatorID");
+        }
+
+        /// <summary>
+        /// Add a new EVN to OperatorID
+        /// </summary>
+        public static XCN AddOperatorID(this EVN message)
+        {
+            return message.GetOperatorID(message.OperatorIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -8842,6 +12042,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PES to SenderOrganizationName
+        /// </summary>
+        public static XON AddSenderOrganizationName(this PES message)
+        {
+            return message.GetSenderOrganizationName(message.SenderOrganizationNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SenderIndividualName Records from PES
         /// </summary>
         public static IEnumerable GetSenderIndividualNameRecords(this PES message)
@@ -8861,6 +12069,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllSenderIndividualNameRecords(this PES message)
         {
             return message.GetAllRecords<XCN>("SenderIndividualNameRepetitionsUsed", "GetSenderIndividualName");
+        }
+
+        /// <summary>
+        /// Add a new PES to SenderIndividualName
+        /// </summary>
+        public static XCN AddSenderIndividualName(this PES message)
+        {
+            return message.GetSenderIndividualName(message.SenderIndividualNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -8886,6 +12102,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PES to SenderAddress
+        /// </summary>
+        public static XAD AddSenderAddress(this PES message)
+        {
+            return message.GetSenderAddress(message.SenderAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SenderTelephone Records from PES
         /// </summary>
         public static IEnumerable GetSenderTelephoneRecords(this PES message)
@@ -8905,6 +12129,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllSenderTelephoneRecords(this PES message)
         {
             return message.GetAllRecords<XTN>("SenderTelephoneRepetitionsUsed", "GetSenderTelephone");
+        }
+
+        /// <summary>
+        /// Add a new PES to SenderTelephone
+        /// </summary>
+        public static XTN AddSenderTelephone(this PES message)
+        {
+            return message.GetSenderTelephone(message.SenderTelephoneRepetitionsUsed);
         }
 
         /// <summary>
@@ -8930,6 +12162,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PES to SenderEventDescription
+        /// </summary>
+        public static FT AddSenderEventDescription(this PES message)
+        {
+            return message.GetSenderEventDescription(message.SenderEventDescriptionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventReportTimingType Records from PES
         /// </summary>
         public static IEnumerable GetEventReportTimingTypeRecords(this PES message)
@@ -8949,6 +12189,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllEventReportTimingTypeRecords(this PES message)
         {
             return message.GetAllRecords<ID>("EventReportTimingTypeRepetitionsUsed", "GetEventReportTimingType");
+        }
+
+        /// <summary>
+        /// Add a new PES to EventReportTimingType
+        /// </summary>
+        public static ID AddEventReportTimingType(this PES message)
+        {
+            return message.GetEventReportTimingType(message.EventReportTimingTypeRepetitionsUsed);
         }
 
         /// <summary>
@@ -8974,6 +12222,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PES to EventReportedTo
+        /// </summary>
+        public static ID AddEventReportedTo(this PES message)
+        {
+            return message.GetEventReportedTo(message.EventReportedToRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DeathCauseCode Records from PDA
         /// </summary>
         public static IEnumerable GetDeathCauseCodeRecords(this PDA message)
@@ -8993,6 +12249,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllDeathCauseCodeRecords(this PDA message)
         {
             return message.GetAllRecords<CE>("DeathCauseCodeRepetitionsUsed", "GetDeathCauseCode");
+        }
+
+        /// <summary>
+        /// Add a new PDA to DeathCauseCode
+        /// </summary>
+        public static CE AddDeathCauseCode(this PDA message)
+        {
+            return message.GetDeathCauseCode(message.DeathCauseCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9018,6 +12282,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ODS to ServicePeriod
+        /// </summary>
+        public static CE AddServicePeriod(this ODS message)
+        {
+            return message.GetServicePeriod(message.ServicePeriodRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DietSupplementOrPreferenceCode Records from ODS
         /// </summary>
         public static IEnumerable GetDietSupplementOrPreferenceCodeRecords(this ODS message)
@@ -9037,6 +12309,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllDietSupplementOrPreferenceCodeRecords(this ODS message)
         {
             return message.GetAllRecords<CE>("DietSupplementOrPreferenceCodeRepetitionsUsed", "GetDietSupplementOrPreferenceCode");
+        }
+
+        /// <summary>
+        /// Add a new ODS to DietSupplementOrPreferenceCode
+        /// </summary>
+        public static CE AddDietSupplementOrPreferenceCode(this ODS message)
+        {
+            return message.GetDietSupplementOrPreferenceCode(message.DietSupplementOrPreferenceCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9062,6 +12342,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new ODS to TextInstruction
+        /// </summary>
+        public static ST AddTextInstruction(this ODS message)
+        {
+            return message.GetTextInstruction(message.TextInstructionRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProtocolCode Records from IPC
         /// </summary>
         public static IEnumerable GetProtocolCodeRecords(this IPC message)
@@ -9081,6 +12369,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProtocolCodeRecords(this IPC message)
         {
             return message.GetAllRecords<CE>("ProtocolCodeRepetitionsUsed", "GetProtocolCode");
+        }
+
+        /// <summary>
+        /// Add a new IPC to ProtocolCode
+        /// </summary>
+        public static CE AddProtocolCode(this IPC message)
+        {
+            return message.GetProtocolCode(message.ProtocolCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9106,6 +12402,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new IPC to ScheduledProcedureStepLocation
+        /// </summary>
+        public static CE AddScheduledProcedureStepLocation(this IPC message)
+        {
+            return message.GetScheduledProcedureStepLocation(message.ScheduledProcedureStepLocationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProcedureCodeModifier Records from IIM
         /// </summary>
         public static IEnumerable GetProcedureCodeModifierRecords(this IIM message)
@@ -9125,6 +12429,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProcedureCodeModifierRecords(this IIM message)
         {
             return message.GetAllRecords<CE>("ProcedureCodeModifierRepetitionsUsed", "GetProcedureCodeModifier");
+        }
+
+        /// <summary>
+        /// Add a new IIM to ProcedureCodeModifier
+        /// </summary>
+        public static CE AddProcedureCodeModifier(this IIM message)
+        {
+            return message.GetProcedureCodeModifier(message.ProcedureCodeModifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -9150,6 +12462,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GP2 to OCEEditCode
+        /// </summary>
+        public static IS AddOCEEditCode(this GP2 message)
+        {
+            return message.GetOCEEditCode(message.OCEEditCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ModifierEditCode Records from GP2
         /// </summary>
         public static IEnumerable GetModifierEditCodeRecords(this GP2 message)
@@ -9169,6 +12489,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllModifierEditCodeRecords(this GP2 message)
         {
             return message.GetAllRecords<IS>("ModifierEditCodeRepetitionsUsed", "GetModifierEditCode");
+        }
+
+        /// <summary>
+        /// Add a new GP2 to ModifierEditCode
+        /// </summary>
+        public static IS AddModifierEditCode(this GP2 message)
+        {
+            return message.GetModifierEditCode(message.ModifierEditCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9194,6 +12522,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXA to AdministrationNotes
+        /// </summary>
+        public static CE AddAdministrationNotes(this RXA message)
+        {
+            return message.GetAdministrationNotes(message.AdministrationNotesRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AdministeringProvider Records from RXA
         /// </summary>
         public static IEnumerable GetAdministeringProviderRecords(this RXA message)
@@ -9213,6 +12549,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllAdministeringProviderRecords(this RXA message)
         {
             return message.GetAllRecords<XCN>("AdministeringProviderRepetitionsUsed", "GetAdministeringProvider");
+        }
+
+        /// <summary>
+        /// Add a new RXA to AdministeringProvider
+        /// </summary>
+        public static XCN AddAdministeringProvider(this RXA message)
+        {
+            return message.GetAdministeringProvider(message.AdministeringProviderRepetitionsUsed);
         }
 
         /// <summary>
@@ -9238,6 +12582,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXA to SubstanceLotNumber
+        /// </summary>
+        public static ST AddSubstanceLotNumber(this RXA message)
+        {
+            return message.GetSubstanceLotNumber(message.SubstanceLotNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SubstanceExpirationDate Records from RXA
         /// </summary>
         public static IEnumerable GetSubstanceExpirationDateRecords(this RXA message)
@@ -9257,6 +12609,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<TS> GetAllSubstanceExpirationDateRecords(this RXA message)
         {
             return message.GetAllRecords<TS>("SubstanceExpirationDateRepetitionsUsed", "GetSubstanceExpirationDate");
+        }
+
+        /// <summary>
+        /// Add a new RXA to SubstanceExpirationDate
+        /// </summary>
+        public static TS AddSubstanceExpirationDate(this RXA message)
+        {
+            return message.GetSubstanceExpirationDate(message.SubstanceExpirationDateRepetitionsUsed);
         }
 
         /// <summary>
@@ -9282,6 +12642,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXA to SubstanceManufacturerName
+        /// </summary>
+        public static CE AddSubstanceManufacturerName(this RXA message)
+        {
+            return message.GetSubstanceManufacturerName(message.SubstanceManufacturerNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SubstanceTreatmentRefusalReason Records from RXA
         /// </summary>
         public static IEnumerable GetSubstanceTreatmentRefusalReasonRecords(this RXA message)
@@ -9301,6 +12669,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllSubstanceTreatmentRefusalReasonRecords(this RXA message)
         {
             return message.GetAllRecords<CE>("SubstanceTreatmentRefusalReasonRepetitionsUsed", "GetSubstanceTreatmentRefusalReason");
+        }
+
+        /// <summary>
+        /// Add a new RXA to SubstanceTreatmentRefusalReason
+        /// </summary>
+        public static CE AddSubstanceTreatmentRefusalReason(this RXA message)
+        {
+            return message.GetSubstanceTreatmentRefusalReason(message.SubstanceTreatmentRefusalReasonRepetitionsUsed);
         }
 
         /// <summary>
@@ -9326,6 +12702,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXA to Indication
+        /// </summary>
+        public static CE AddIndication(this RXA message)
+        {
+            return message.GetIndication(message.IndicationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CategoryIdentifier Records from OM7
         /// </summary>
         public static IEnumerable GetCategoryIdentifierRecords(this OM7 message)
@@ -9345,6 +12729,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCategoryIdentifierRecords(this OM7 message)
         {
             return message.GetAllRecords<CE>("CategoryIdentifierRepetitionsUsed", "GetCategoryIdentifier");
+        }
+
+        /// <summary>
+        /// Add a new OM7 to CategoryIdentifier
+        /// </summary>
+        public static CE AddCategoryIdentifier(this OM7 message)
+        {
+            return message.GetCategoryIdentifier(message.CategoryIdentifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -9370,6 +12762,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM7 to CategorySynonym
+        /// </summary>
+        public static ST AddCategorySynonym(this OM7 message)
+        {
+            return message.GetCategorySynonym(message.CategorySynonymRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderableAtLocation Records from OM7
         /// </summary>
         public static IEnumerable GetOrderableAtLocationRecords(this OM7 message)
@@ -9389,6 +12789,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<PL> GetAllOrderableAtLocationRecords(this OM7 message)
         {
             return message.GetAllRecords<PL>("OrderableAtLocationRepetitionsUsed", "GetOrderableAtLocation");
+        }
+
+        /// <summary>
+        /// Add a new OM7 to OrderableAtLocation
+        /// </summary>
+        public static PL AddOrderableAtLocation(this OM7 message)
+        {
+            return message.GetOrderableAtLocation(message.OrderableAtLocationRepetitionsUsed);
         }
 
         /// <summary>
@@ -9414,6 +12822,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM7 to PrimaryKeyValueCDM
+        /// </summary>
+        public static CE AddPrimaryKeyValueCDM(this OM7 message)
+        {
+            return message.GetPrimaryKeyValueCDM(message.PrimaryKeyValueCDMRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PrimaryKeyValueMFE Records from MFE
         /// </summary>
         public static IEnumerable GetPrimaryKeyValueMFERecords(this MFE message)
@@ -9433,6 +12849,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<Varies> GetAllPrimaryKeyValueMFERecords(this MFE message)
         {
             return message.GetAllRecords<Varies>("PrimaryKeyValueMFERepetitionsUsed", "GetPrimaryKeyValueMFE");
+        }
+
+        /// <summary>
+        /// Add a new MFE to PrimaryKeyValueMFE
+        /// </summary>
+        public static Varies AddPrimaryKeyValueMFE(this MFE message)
+        {
+            return message.GetPrimaryKeyValueMFE(message.PrimaryKeyValueMFERepetitionsUsed);
         }
 
         /// <summary>
@@ -9458,6 +12882,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new MFE to PrimaryKeyValueType
+        /// </summary>
+        public static ID AddPrimaryKeyValueType(this MFE message)
+        {
+            return message.GetPrimaryKeyValueType(message.PrimaryKeyValueTypeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AccommodationType Records from LCC
         /// </summary>
         public static IEnumerable GetAccommodationTypeRecords(this LCC message)
@@ -9477,6 +12909,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllAccommodationTypeRecords(this LCC message)
         {
             return message.GetAllRecords<CE>("AccommodationTypeRepetitionsUsed", "GetAccommodationType");
+        }
+
+        /// <summary>
+        /// Add a new LCC to AccommodationType
+        /// </summary>
+        public static CE AddAccommodationType(this LCC message)
+        {
+            return message.GetAccommodationType(message.AccommodationTypeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9502,6 +12942,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new LCC to ChargeCode
+        /// </summary>
+        public static CE AddChargeCode(this LCC message)
+        {
+            return message.GetChargeCode(message.ChargeCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RevenueCode Records from GP1
         /// </summary>
         public static IEnumerable GetRevenueCodeRecords(this GP1 message)
@@ -9521,6 +12969,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<IS> GetAllRevenueCodeRecords(this GP1 message)
         {
             return message.GetAllRecords<IS>("RevenueCodeRepetitionsUsed", "GetRevenueCode");
+        }
+
+        /// <summary>
+        /// Add a new GP1 to RevenueCode
+        /// </summary>
+        public static IS AddRevenueCode(this GP1 message)
+        {
+            return message.GetRevenueCode(message.RevenueCodeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9546,6 +13002,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new GP1 to OCEEditsPerVisitCode
+        /// </summary>
+        public static IS AddOCEEditsPerVisitCode(this GP1 message)
+        {
+            return message.GetOCEEditsPerVisitCode(message.OCEEditsPerVisitCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventsScheduledThisTimePoint Records from CM2
         /// </summary>
         public static IEnumerable GetEventsScheduledThisTimePointRecords(this CM2 message)
@@ -9565,6 +13029,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllEventsScheduledThisTimePointRecords(this CM2 message)
         {
             return message.GetAllRecords<CE>("EventsScheduledThisTimePointRepetitionsUsed", "GetEventsScheduledThisTimePoint");
+        }
+
+        /// <summary>
+        /// Add a new CM2 to EventsScheduledThisTimePoint
+        /// </summary>
+        public static CE AddEventsScheduledThisTimePoint(this CM2 message)
+        {
+            return message.GetEventsScheduledThisTimePoint(message.EventsScheduledThisTimePointRepetitionsUsed);
         }
 
         /// <summary>
@@ -9590,6 +13062,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CDM to ChargeCodeAlias
+        /// </summary>
+        public static CE AddChargeCodeAlias(this CDM message)
+        {
+            return message.GetChargeCodeAlias(message.ChargeCodeAliasRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ExplodingCharges Records from CDM
         /// </summary>
         public static IEnumerable GetExplodingChargesRecords(this CDM message)
@@ -9609,6 +13089,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllExplodingChargesRecords(this CDM message)
         {
             return message.GetAllRecords<CE>("ExplodingChargesRepetitionsUsed", "GetExplodingCharges");
+        }
+
+        /// <summary>
+        /// Add a new CDM to ExplodingCharges
+        /// </summary>
+        public static CE AddExplodingCharges(this CDM message)
+        {
+            return message.GetExplodingCharges(message.ExplodingChargesRepetitionsUsed);
         }
 
         /// <summary>
@@ -9634,6 +13122,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CDM to ProcedureCode
+        /// </summary>
+        public static CE AddProcedureCode(this CDM message)
+        {
+            return message.GetProcedureCode(message.ProcedureCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get InventoryNumber Records from CDM
         /// </summary>
         public static IEnumerable GetInventoryNumberRecords(this CDM message)
@@ -9653,6 +13149,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllInventoryNumberRecords(this CDM message)
         {
             return message.GetAllRecords<CE>("InventoryNumberRepetitionsUsed", "GetInventoryNumber");
+        }
+
+        /// <summary>
+        /// Add a new CDM to InventoryNumber
+        /// </summary>
+        public static CE AddInventoryNumber(this CDM message)
+        {
+            return message.GetInventoryNumber(message.InventoryNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -9678,6 +13182,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CDM to ContractNumber
+        /// </summary>
+        public static CX AddContractNumber(this CDM message)
+        {
+            return message.GetContractNumber(message.ContractNumberRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContractOrganization Records from CDM
         /// </summary>
         public static IEnumerable GetContractOrganizationRecords(this CDM message)
@@ -9697,6 +13209,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XON> GetAllContractOrganizationRecords(this CDM message)
         {
             return message.GetAllRecords<XON>("ContractOrganizationRepetitionsUsed", "GetContractOrganization");
+        }
+
+        /// <summary>
+        /// Add a new CDM to ContractOrganization
+        /// </summary>
+        public static XON AddContractOrganization(this CDM message)
+        {
+            return message.GetContractOrganization(message.ContractOrganizationRepetitionsUsed);
         }
 
         /// <summary>
@@ -9722,6 +13242,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to PatientIdentifierList
+        /// </summary>
+        public static CX AddPatientIdentifierList(this PID message)
+        {
+            return message.GetPatientIdentifierList(message.PatientIdentifierListRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AlternatePatientIDPID Records from PID
         /// </summary>
         public static IEnumerable GetAlternatePatientIDPIDRecords(this PID message)
@@ -9741,6 +13269,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllAlternatePatientIDPIDRecords(this PID message)
         {
             return message.GetAllRecords<CX>("AlternatePatientIDPIDRepetitionsUsed", "GetAlternatePatientIDPID");
+        }
+
+        /// <summary>
+        /// Add a new PID to AlternatePatientIDPID
+        /// </summary>
+        public static CX AddAlternatePatientIDPID(this PID message)
+        {
+            return message.GetAlternatePatientIDPID(message.AlternatePatientIDPIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -9766,6 +13302,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to PatientName
+        /// </summary>
+        public static XPN AddPatientName(this PID message)
+        {
+            return message.GetPatientName(message.PatientNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MotherSMaidenName Records from PID
         /// </summary>
         public static IEnumerable GetMotherSMaidenNameRecords(this PID message)
@@ -9785,6 +13329,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XPN> GetAllMotherSMaidenNameRecords(this PID message)
         {
             return message.GetAllRecords<XPN>("MotherSMaidenNameRepetitionsUsed", "GetMotherSMaidenName");
+        }
+
+        /// <summary>
+        /// Add a new PID to MotherSMaidenName
+        /// </summary>
+        public static XPN AddMotherSMaidenName(this PID message)
+        {
+            return message.GetMotherSMaidenName(message.MotherSMaidenNameRepetitionsUsed);
         }
 
         /// <summary>
@@ -9810,6 +13362,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to PatientAlias
+        /// </summary>
+        public static XPN AddPatientAlias(this PID message)
+        {
+            return message.GetPatientAlias(message.PatientAliasRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Race Records from PID
         /// </summary>
         public static IEnumerable GetRaceRecords(this PID message)
@@ -9829,6 +13389,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllRaceRecords(this PID message)
         {
             return message.GetAllRecords<CE>("RaceRepetitionsUsed", "GetRace");
+        }
+
+        /// <summary>
+        /// Add a new PID to Race
+        /// </summary>
+        public static CE AddRace(this PID message)
+        {
+            return message.GetRace(message.RaceRepetitionsUsed);
         }
 
         /// <summary>
@@ -9854,6 +13422,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to PatientAddress
+        /// </summary>
+        public static XAD AddPatientAddress(this PID message)
+        {
+            return message.GetPatientAddress(message.PatientAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PhoneNumberHome Records from PID
         /// </summary>
         public static IEnumerable GetPhoneNumberHomeRecords(this PID message)
@@ -9873,6 +13449,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XTN> GetAllPhoneNumberHomeRecords(this PID message)
         {
             return message.GetAllRecords<XTN>("PhoneNumberHomeRepetitionsUsed", "GetPhoneNumberHome");
+        }
+
+        /// <summary>
+        /// Add a new PID to PhoneNumberHome
+        /// </summary>
+        public static XTN AddPhoneNumberHome(this PID message)
+        {
+            return message.GetPhoneNumberHome(message.PhoneNumberHomeRepetitionsUsed);
         }
 
         /// <summary>
@@ -9898,6 +13482,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to PhoneNumberBusiness
+        /// </summary>
+        public static XTN AddPhoneNumberBusiness(this PID message)
+        {
+            return message.GetPhoneNumberBusiness(message.PhoneNumberBusinessRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get MotherSIdentifier Records from PID
         /// </summary>
         public static IEnumerable GetMotherSIdentifierRecords(this PID message)
@@ -9917,6 +13509,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CX> GetAllMotherSIdentifierRecords(this PID message)
         {
             return message.GetAllRecords<CX>("MotherSIdentifierRepetitionsUsed", "GetMotherSIdentifier");
+        }
+
+        /// <summary>
+        /// Add a new PID to MotherSIdentifier
+        /// </summary>
+        public static CX AddMotherSIdentifier(this PID message)
+        {
+            return message.GetMotherSIdentifier(message.MotherSIdentifierRepetitionsUsed);
         }
 
         /// <summary>
@@ -9942,6 +13542,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to EthnicGroup
+        /// </summary>
+        public static CE AddEthnicGroup(this PID message)
+        {
+            return message.GetEthnicGroup(message.EthnicGroupRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Citizenship Records from PID
         /// </summary>
         public static IEnumerable GetCitizenshipRecords(this PID message)
@@ -9961,6 +13569,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCitizenshipRecords(this PID message)
         {
             return message.GetAllRecords<CE>("CitizenshipRepetitionsUsed", "GetCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new PID to Citizenship
+        /// </summary>
+        public static CE AddCitizenship(this PID message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -9986,6 +13602,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PID to IdentityReliabilityCode
+        /// </summary>
+        public static IS AddIdentityReliabilityCode(this PID message)
+        {
+            return message.GetIdentityReliabilityCode(message.IdentityReliabilityCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TribalCitizenship Records from PID
         /// </summary>
         public static IEnumerable GetTribalCitizenshipRecords(this PID message)
@@ -10005,6 +13629,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CWE> GetAllTribalCitizenshipRecords(this PID message)
         {
             return message.GetAllRecords<CWE>("TribalCitizenshipRepetitionsUsed", "GetTribalCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new PID to TribalCitizenship
+        /// </summary>
+        public static CWE AddTribalCitizenship(this PID message)
+        {
+            return message.GetTribalCitizenship(message.TribalCitizenshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -10030,6 +13662,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new AIS to PlacerSupplementalServiceInformation
+        /// </summary>
+        public static CE AddPlacerSupplementalServiceInformation(this AIS message)
+        {
+            return message.GetPlacerSupplementalServiceInformation(message.PlacerSupplementalServiceInformationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FillerSupplementalServiceInformation Records from AIS
         /// </summary>
         public static IEnumerable GetFillerSupplementalServiceInformationRecords(this AIS message)
@@ -10049,6 +13689,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllFillerSupplementalServiceInformationRecords(this AIS message)
         {
             return message.GetAllRecords<CE>("FillerSupplementalServiceInformationRepetitionsUsed", "GetFillerSupplementalServiceInformation");
+        }
+
+        /// <summary>
+        /// Add a new AIS to FillerSupplementalServiceInformation
+        /// </summary>
+        public static CE AddFillerSupplementalServiceInformation(this AIS message)
+        {
+            return message.GetFillerSupplementalServiceInformation(message.FillerSupplementalServiceInformationRepetitionsUsed);
         }
 
         /// <summary>
@@ -10074,6 +13722,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new OM5 to TestObservationsIncludedWithinAnOrderedTestBattery
+        /// </summary>
+        public static CE AddTestObservationsIncludedWithinAnOrderedTestBattery(this OM5 message)
+        {
+            return message.GetTestObservationsIncludedWithinAnOrderedTestBattery(message.TestObservationsIncludedWithinAnOrderedTestBatteryRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AlternateStudyID Records from CM0
         /// </summary>
         public static IEnumerable GetAlternateStudyIDRecords(this CM0 message)
@@ -10093,6 +13749,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<EI> GetAllAlternateStudyIDRecords(this CM0 message)
         {
             return message.GetAllRecords<EI>("AlternateStudyIDRepetitionsUsed", "GetAlternateStudyID");
+        }
+
+        /// <summary>
+        /// Add a new CM0 to AlternateStudyID
+        /// </summary>
+        public static EI AddAlternateStudyID(this CM0 message)
+        {
+            return message.GetAlternateStudyID(message.AlternateStudyIDRepetitionsUsed);
         }
 
         /// <summary>
@@ -10118,6 +13782,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CM0 to ChairmanOfStudy
+        /// </summary>
+        public static XCN AddChairmanOfStudy(this CM0 message)
+        {
+            return message.GetChairmanOfStudy(message.ChairmanOfStudyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactForStudy Records from CM0
         /// </summary>
         public static IEnumerable GetContactForStudyRecords(this CM0 message)
@@ -10137,6 +13809,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllContactForStudyRecords(this CM0 message)
         {
             return message.GetAllRecords<XCN>("ContactForStudyRepetitionsUsed", "GetContactForStudy");
+        }
+
+        /// <summary>
+        /// Add a new CM0 to ContactForStudy
+        /// </summary>
+        public static XCN AddContactForStudy(this CM0 message)
+        {
+            return message.GetContactForStudy(message.ContactForStudyRepetitionsUsed);
         }
 
         /// <summary>
@@ -10162,6 +13842,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new CM0 to ContactSAddress
+        /// </summary>
+        public static XAD AddContactSAddress(this CM0 message)
+        {
+            return message.GetContactSAddress(message.ContactSAddressRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BCSpecialTesting Records from BPX
         /// </summary>
         public static IEnumerable GetBCSpecialTestingRecords(this BPX message)
@@ -10181,6 +13869,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CNE> GetAllBCSpecialTestingRecords(this BPX message)
         {
             return message.GetAllRecords<CNE>("BCSpecialTestingRepetitionsUsed", "GetBCSpecialTesting");
+        }
+
+        /// <summary>
+        /// Add a new BPX to BCSpecialTesting
+        /// </summary>
+        public static CNE AddBCSpecialTesting(this BPX message)
+        {
+            return message.GetBCSpecialTesting(message.BCSpecialTestingRepetitionsUsed);
         }
 
         /// <summary>
@@ -10206,6 +13902,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new AL1 to AllergyReactionCode
+        /// </summary>
+        public static ST AddAllergyReactionCode(this AL1 message)
+        {
+            return message.GetAllergyReactionCode(message.AllergyReactionCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ProviderSPharmacyTreatmentInstructions Records from RXO
         /// </summary>
         public static IEnumerable GetProviderSPharmacyTreatmentInstructionsRecords(this RXO message)
@@ -10225,6 +13929,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllProviderSPharmacyTreatmentInstructionsRecords(this RXO message)
         {
             return message.GetAllRecords<CE>("ProviderSPharmacyTreatmentInstructionsRepetitionsUsed", "GetProviderSPharmacyTreatmentInstructions");
+        }
+
+        /// <summary>
+        /// Add a new RXO to ProviderSPharmacyTreatmentInstructions
+        /// </summary>
+        public static CE AddProviderSPharmacyTreatmentInstructions(this RXO message)
+        {
+            return message.GetProviderSPharmacyTreatmentInstructions(message.ProviderSPharmacyTreatmentInstructionsRepetitionsUsed);
         }
 
         /// <summary>
@@ -10250,6 +13962,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXO to ProviderSAdministrationInstructions
+        /// </summary>
+        public static CE AddProviderSAdministrationInstructions(this RXO message)
+        {
+            return message.GetProviderSAdministrationInstructions(message.ProviderSAdministrationInstructionsRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OrderingProviderSDEANumber Records from RXO
         /// </summary>
         public static IEnumerable GetOrderingProviderSDEANumberRecords(this RXO message)
@@ -10269,6 +13989,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XCN> GetAllOrderingProviderSDEANumberRecords(this RXO message)
         {
             return message.GetAllRecords<XCN>("OrderingProviderSDEANumberRepetitionsUsed", "GetOrderingProviderSDEANumber");
+        }
+
+        /// <summary>
+        /// Add a new RXO to OrderingProviderSDEANumber
+        /// </summary>
+        public static XCN AddOrderingProviderSDEANumber(this RXO message)
+        {
+            return message.GetOrderingProviderSDEANumber(message.OrderingProviderSDEANumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -10294,6 +14022,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXO to PharmacistTreatmentSupplierSVerifierID
+        /// </summary>
+        public static XCN AddPharmacistTreatmentSupplierSVerifierID(this RXO message)
+        {
+            return message.GetPharmacistTreatmentSupplierSVerifierID(message.PharmacistTreatmentSupplierSVerifierIDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get Indication Records from RXO
         /// </summary>
         public static IEnumerable GetIndicationRecords(this RXO message)
@@ -10313,6 +14049,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllIndicationRecords(this RXO message)
         {
             return message.GetAllRecords<CE>("IndicationRepetitionsUsed", "GetIndication");
+        }
+
+        /// <summary>
+        /// Add a new RXO to Indication
+        /// </summary>
+        public static CE AddIndication(this RXO message)
+        {
+            return message.GetIndication(message.IndicationRepetitionsUsed);
         }
 
         /// <summary>
@@ -10338,6 +14082,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new RXO to SupplementaryCode
+        /// </summary>
+        public static CE AddSupplementaryCode(this RXO message)
+        {
+            return message.GetSupplementaryCode(message.SupplementaryCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventIdentifiersUsed Records from PEO
         /// </summary>
         public static IEnumerable GetEventIdentifiersUsedRecords(this PEO message)
@@ -10357,6 +14109,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllEventIdentifiersUsedRecords(this PEO message)
         {
             return message.GetAllRecords<CE>("EventIdentifiersUsedRepetitionsUsed", "GetEventIdentifiersUsed");
+        }
+
+        /// <summary>
+        /// Add a new PEO to EventIdentifiersUsed
+        /// </summary>
+        public static CE AddEventIdentifiersUsed(this PEO message)
+        {
+            return message.GetEventIdentifiersUsed(message.EventIdentifiersUsedRepetitionsUsed);
         }
 
         /// <summary>
@@ -10382,6 +14142,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to EventSymptomDiagnosisCode
+        /// </summary>
+        public static CE AddEventSymptomDiagnosisCode(this PEO message)
+        {
+            return message.GetEventSymptomDiagnosisCode(message.EventSymptomDiagnosisCodeRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventLocationOccurredAddress Records from PEO
         /// </summary>
         public static IEnumerable GetEventLocationOccurredAddressRecords(this PEO message)
@@ -10401,6 +14169,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllEventLocationOccurredAddressRecords(this PEO message)
         {
             return message.GetAllRecords<XAD>("EventLocationOccurredAddressRepetitionsUsed", "GetEventLocationOccurredAddress");
+        }
+
+        /// <summary>
+        /// Add a new PEO to EventLocationOccurredAddress
+        /// </summary>
+        public static XAD AddEventLocationOccurredAddress(this PEO message)
+        {
+            return message.GetEventLocationOccurredAddress(message.EventLocationOccurredAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -10426,6 +14202,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to EventQualification
+        /// </summary>
+        public static ID AddEventQualification(this PEO message)
+        {
+            return message.GetEventQualification(message.EventQualificationRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventOutcome Records from PEO
         /// </summary>
         public static IEnumerable GetEventOutcomeRecords(this PEO message)
@@ -10445,6 +14229,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllEventOutcomeRecords(this PEO message)
         {
             return message.GetAllRecords<ID>("EventOutcomeRepetitionsUsed", "GetEventOutcome");
+        }
+
+        /// <summary>
+        /// Add a new PEO to EventOutcome
+        /// </summary>
+        public static ID AddEventOutcome(this PEO message)
+        {
+            return message.GetEventOutcome(message.EventOutcomeRepetitionsUsed);
         }
 
         /// <summary>
@@ -10470,6 +14262,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to EventDescriptionFromOthers
+        /// </summary>
+        public static FT AddEventDescriptionFromOthers(this PEO message)
+        {
+            return message.GetEventDescriptionFromOthers(message.EventDescriptionFromOthersRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventFromOriginalReporter Records from PEO
         /// </summary>
         public static IEnumerable GetEventFromOriginalReporterRecords(this PEO message)
@@ -10489,6 +14289,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<FT> GetAllEventFromOriginalReporterRecords(this PEO message)
         {
             return message.GetAllRecords<FT>("EventFromOriginalReporterRepetitionsUsed", "GetEventFromOriginalReporter");
+        }
+
+        /// <summary>
+        /// Add a new PEO to EventFromOriginalReporter
+        /// </summary>
+        public static FT AddEventFromOriginalReporter(this PEO message)
+        {
+            return message.GetEventFromOriginalReporter(message.EventFromOriginalReporterRepetitionsUsed);
         }
 
         /// <summary>
@@ -10514,6 +14322,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to EventDescriptionFromPatient
+        /// </summary>
+        public static FT AddEventDescriptionFromPatient(this PEO message)
+        {
+            return message.GetEventDescriptionFromPatient(message.EventDescriptionFromPatientRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get EventDescriptionFromPractitioner Records from PEO
         /// </summary>
         public static IEnumerable GetEventDescriptionFromPractitionerRecords(this PEO message)
@@ -10533,6 +14349,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<FT> GetAllEventDescriptionFromPractitionerRecords(this PEO message)
         {
             return message.GetAllRecords<FT>("EventDescriptionFromPractitionerRepetitionsUsed", "GetEventDescriptionFromPractitioner");
+        }
+
+        /// <summary>
+        /// Add a new PEO to EventDescriptionFromPractitioner
+        /// </summary>
+        public static FT AddEventDescriptionFromPractitioner(this PEO message)
+        {
+            return message.GetEventDescriptionFromPractitioner(message.EventDescriptionFromPractitionerRepetitionsUsed);
         }
 
         /// <summary>
@@ -10558,6 +14382,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to EventDescriptionFromAutopsy
+        /// </summary>
+        public static FT AddEventDescriptionFromAutopsy(this PEO message)
+        {
+            return message.GetEventDescriptionFromAutopsy(message.EventDescriptionFromAutopsyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CauseOfDeath Records from PEO
         /// </summary>
         public static IEnumerable GetCauseOfDeathRecords(this PEO message)
@@ -10577,6 +14409,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<CE> GetAllCauseOfDeathRecords(this PEO message)
         {
             return message.GetAllRecords<CE>("CauseOfDeathRepetitionsUsed", "GetCauseOfDeath");
+        }
+
+        /// <summary>
+        /// Add a new PEO to CauseOfDeath
+        /// </summary>
+        public static CE AddCauseOfDeath(this PEO message)
+        {
+            return message.GetCauseOfDeath(message.CauseOfDeathRepetitionsUsed);
         }
 
         /// <summary>
@@ -10602,6 +14442,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to PrimaryObserverName
+        /// </summary>
+        public static XPN AddPrimaryObserverName(this PEO message)
+        {
+            return message.GetPrimaryObserverName(message.PrimaryObserverNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PrimaryObserverAddress Records from PEO
         /// </summary>
         public static IEnumerable GetPrimaryObserverAddressRecords(this PEO message)
@@ -10621,6 +14469,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<XAD> GetAllPrimaryObserverAddressRecords(this PEO message)
         {
             return message.GetAllRecords<XAD>("PrimaryObserverAddressRepetitionsUsed", "GetPrimaryObserverAddress");
+        }
+
+        /// <summary>
+        /// Add a new PEO to PrimaryObserverAddress
+        /// </summary>
+        public static XAD AddPrimaryObserverAddress(this PEO message)
+        {
+            return message.GetPrimaryObserverAddress(message.PrimaryObserverAddressRepetitionsUsed);
         }
 
         /// <summary>
@@ -10646,6 +14502,14 @@ namespace NHapiTools.Model.V251.Segment
         }
 
         /// <summary>
+        /// Add a new PEO to PrimaryObserverTelephone
+        /// </summary>
+        public static XTN AddPrimaryObserverTelephone(this PEO message)
+        {
+            return message.GetPrimaryObserverTelephone(message.PrimaryObserverTelephoneRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SpecimenPriorities Records from OM4
         /// </summary>
         public static IEnumerable GetSpecimenPrioritiesRecords(this OM4 message)
@@ -10665,6 +14529,14 @@ namespace NHapiTools.Model.V251.Segment
         public static List<ID> GetAllSpecimenPrioritiesRecords(this OM4 message)
         {
             return message.GetAllRecords<ID>("SpecimenPrioritiesRepetitionsUsed", "GetSpecimenPriorities");
+        }
+
+        /// <summary>
+        /// Add a new OM4 to SpecimenPriorities
+        /// </summary>
+        public static ID AddSpecimenPriorities(this OM4 message)
+        {
+            return message.GetSpecimenPriorities(message.SpecimenPrioritiesRepetitionsUsed);
         }
         #endregion
     }

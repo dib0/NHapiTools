@@ -123,6 +123,14 @@ namespace NHapiTools.Base.ModelToolsGenerator
             messagesOutput.Append("        {\n");
             messagesOutput.Append(string.Format("            return message.GetAllRecords<{1}>(\"{0}RepetitionsUsed\", \"Get{0}\");\n", name, returnType));
             messagesOutput.Append("        }\n");
+            messagesOutput.Append("\n");
+            messagesOutput.Append("        /// <summary>\n");
+            messagesOutput.Append(string.Format("        /// Add a new {0} to {1}\n", typeName, name));
+            messagesOutput.Append("        /// </summary>\n");
+            messagesOutput.Append(string.Format("        public static {0} Add{1}(this {2} message)\n", returnType, name, typeName));
+            messagesOutput.Append("        {\n");
+            messagesOutput.Append(string.Format("            return message.Get{0}(message.{0}RepetitionsUsed);\n", name, returnType));
+            messagesOutput.Append("        }\n");
         }
 
         private void AddMessagesHeader()
@@ -229,6 +237,14 @@ namespace NHapiTools.Base.ModelToolsGenerator
             segmentOutput.Append(string.Format("        public static List<{0}> GetAll{1}Records(this {2} message)\n", returnType, name, typeName));
             segmentOutput.Append("        {\n");
             segmentOutput.Append(string.Format("            return message.GetAllRecords<{1}>(\"{0}RepetitionsUsed\", \"Get{0}\");\n", name, returnType));
+            segmentOutput.Append("        }\n");
+            segmentOutput.Append("\n");
+            segmentOutput.Append("        /// <summary>\n");
+            segmentOutput.Append(string.Format("        /// Add a new {0} to {1}\n", typeName, name));
+            segmentOutput.Append("        /// </summary>\n");
+            segmentOutput.Append(string.Format("        public static {0} Add{1}(this {2} message)\n", returnType, name, typeName));
+            segmentOutput.Append("        {\n");
+            segmentOutput.Append(string.Format("            return message.Get{0}(message.{0}RepetitionsUsed);\n", name, returnType));
             segmentOutput.Append("        }\n");
         }
 
@@ -337,6 +353,14 @@ namespace NHapiTools.Base.ModelToolsGenerator
             groupOutput.Append(string.Format("        public static List<{0}> GetAll{1}Records(this {2} message)\n", returnType, name, typeName));
             groupOutput.Append("        {\n");
             groupOutput.Append(string.Format("            return message.GetAllRecords<{1}>(\"{0}RepetitionsUsed\", \"Get{0}\");\n", name, returnType));
+            groupOutput.Append("        }\n");
+            groupOutput.Append("\n");
+            groupOutput.Append("        /// <summary>\n");
+            groupOutput.Append(string.Format("        /// Add a new {0} to {1}\n", typeName, name));
+            groupOutput.Append("        /// </summary>\n");
+            groupOutput.Append(string.Format("        public static {0} Add{1}(this {2} message)\n", returnType, name, typeName));
+            groupOutput.Append("        {\n");
+            groupOutput.Append(string.Format("            return message.Get{0}(message.{0}RepetitionsUsed);\n", name, returnType));
             groupOutput.Append("        }\n");
         }
 

@@ -303,9 +303,10 @@ namespace TestApp
                 Console.WriteLine("PID1 {0} PID2.", s1.IsEqual(s2) ? "is the same as": "isn't the same as");
                 Console.WriteLine("");
 
+                ADT_A08 a08msg = null;
                 foreach (IMessage msg in a08)
                 {
-                    ADT_A08 a08msg = (ADT_A08)msg;
+                    a08msg = (ADT_A08)msg;
                     Console.WriteLine("Getting address from message.");
 
                     foreach (XAD xad in a08msg.PID.GetPatientAddressRecords())
@@ -313,6 +314,21 @@ namespace TestApp
                         string x = xad.StreetAddress.Value;
                         Console.WriteLine("Found street record '{0}'.", x);
                     }
+                }
+
+                if (a08msg != null)
+                {
+                    Console.WriteLine("Testing Add method.");
+                    int x = a08msg.PID.PatientAddressRepetitionsUsed;
+                    Console.WriteLine("Message has {0} PatientAddress record(s).", x);
+
+                    Console.WriteLine("Adding record.");
+                    a08msg.PID.AddPatientAddress();
+                    Console.Write("Message has {0} PatientAddress record(s): ", a08msg.PID.PatientAddressRepetitionsUsed);
+                    if ((a08msg.PID.PatientAddressRepetitionsUsed - x) == 1)
+                        Console.WriteLine("OK!");
+                    else
+                        Console.WriteLine("Failure!");
                 }
 
                 Console.WriteLine("\nDone!");

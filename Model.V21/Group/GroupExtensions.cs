@@ -42,6 +42,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORU_R03_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R03_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
         /// </summary>
         public static IEnumerable GetORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
@@ -61,6 +69,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<ORU_R01_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
         {
             return message.GetAllRecords<ORU_R01_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
+        /// </summary>
+        public static ORU_R01_ORDER_OBSERVATION AddORDER_OBSERVATION(this ORU_R01_PATIENT_RESULT message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -86,6 +102,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new BAR_P01_VISIT to DG1
+        /// </summary>
+        public static DG1 AddDG1(this BAR_P01_VISIT message)
+        {
+            return message.GetDG1(message.DG1RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PR1 Records from BAR_P01_VISIT
         /// </summary>
         public static IEnumerable GetPR1Records(this BAR_P01_VISIT message)
@@ -105,6 +129,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<PR1> GetAllPR1Records(this BAR_P01_VISIT message)
         {
             return message.GetAllRecords<PR1>("PR1RepetitionsUsed", "GetPR1");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P01_VISIT to PR1
+        /// </summary>
+        public static PR1 AddPR1(this BAR_P01_VISIT message)
+        {
+            return message.GetPR1(message.PR1RepetitionsUsed);
         }
 
         /// <summary>
@@ -130,6 +162,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new BAR_P01_VISIT to GT1
+        /// </summary>
+        public static GT1 AddGT1(this BAR_P01_VISIT message)
+        {
+            return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NK1 Records from BAR_P01_VISIT
         /// </summary>
         public static IEnumerable GetNK1Records(this BAR_P01_VISIT message)
@@ -149,6 +189,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NK1> GetAllNK1Records(this BAR_P01_VISIT message)
         {
             return message.GetAllRecords<NK1>("NK1RepetitionsUsed", "GetNK1");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P01_VISIT to NK1
+        /// </summary>
+        public static NK1 AddNK1(this BAR_P01_VISIT message)
+        {
+            return message.GetNK1(message.NK1RepetitionsUsed);
         }
 
         /// <summary>
@@ -174,6 +222,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new BAR_P01_VISIT to IN1
+        /// </summary>
+        public static IN1 AddIN1(this BAR_P01_VISIT message)
+        {
+            return message.GetIN1(message.IN1RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORR_O02_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this ORR_O02_ORDER message)
@@ -193,6 +249,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORR_O02_ORDER message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORR_O02_ORDER to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORR_O02_ORDER message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -218,6 +282,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORU_R01_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R01_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORU_R01_ORDER_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this ORU_R01_ORDER_OBSERVATION message)
@@ -237,6 +309,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORU_R01_ORDER_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R01_ORDER_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R01_ORDER_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -262,6 +342,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORU_R01_ORDER_OBSERVATION to OBSERVATION
+        /// </summary>
+        public static ORU_R01_OBSERVATION AddOBSERVATION(this ORU_R01_ORDER_OBSERVATION message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORU_R01_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this ORU_R01_PATIENT message)
@@ -281,6 +369,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORU_R01_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R01_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R01_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -306,6 +402,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORM_O01_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORM_O01_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORU_R03_ORDER_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this ORU_R03_ORDER_OBSERVATION message)
@@ -325,6 +429,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORU_R03_ORDER_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R03_ORDER_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R03_ORDER_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -350,6 +462,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORU_R03_ORDER_OBSERVATION to OBSERVATION
+        /// </summary>
+        public static ORU_R03_OBSERVATION AddOBSERVATION(this ORU_R03_ORDER_OBSERVATION message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORU_R03_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this ORU_R03_OBSERVATION message)
@@ -369,6 +489,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORU_R03_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R03_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORU_R03_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -394,6 +522,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORU_R03_PATIENT_RESULT to ORDER_OBSERVATION
+        /// </summary>
+        public static ORU_R03_ORDER_OBSERVATION AddORDER_OBSERVATION(this ORU_R03_PATIENT_RESULT message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORR_O02_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this ORR_O02_PATIENT message)
@@ -413,6 +549,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORR_O02_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORR_O02_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORR_O02_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -438,6 +582,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORR_O02_PATIENT to ORDER
+        /// </summary>
+        public static ORR_O02_ORDER AddORDER(this ORR_O02_PATIENT message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORM_O01_ORDER_DETAIL
         /// </summary>
         public static IEnumerable GetNTERecords(this ORM_O01_ORDER_DETAIL message)
@@ -457,6 +609,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTERecords(this ORM_O01_ORDER_DETAIL message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
@@ -482,6 +642,14 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to OBX
+        /// </summary>
+        public static OBX AddOBX(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE2 Records from ORM_O01_ORDER_DETAIL
         /// </summary>
         public static IEnumerable GetNTE2Records(this ORM_O01_ORDER_DETAIL message)
@@ -501,6 +669,14 @@ namespace NHapiTools.Model.V21.Group
         public static List<NTE> GetAllNTE2Records(this ORM_O01_ORDER_DETAIL message)
         {
             return message.GetAllRecords<NTE>("NTE2RepetitionsUsed", "GetNTE2");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to NTE2
+        /// </summary>
+        public static NTE AddNTE2(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetNTE2(message.NTE2RepetitionsUsed);
         }
         #endregion
     }
