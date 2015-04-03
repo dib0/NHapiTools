@@ -35,6 +35,12 @@
     <Reference Include="NHapi.Base">
       <HintPath>..\References\NHapi.Base.dll</HintPath>
     </Reference>
+    <Reference Include="NHapi.Model.V21">
+      <HintPath>..\References\NHapi.Model.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="NHapi.Model.V22">
+      <HintPath>..\References\NHapi.Model.V22.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -58,6 +64,8 @@
     <Compile Include="Configuration\EncodingRuleElement.cs" />
     <Compile Include="Configuration\RuleElementCollection.cs" />
     <Compile Include="Configuration\ValidationSection.cs" />
+    <Compile Include="CustomImplementation\V21\Messages\ACK.cs" />
+    <Compile Include="CustomImplementation\V22\Messages\ACK.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="IO\HL7FilterBase64AttachmentsStream.cs" />
     <Compile Include="IO\HL7InputStreamMessageEnumerator.cs" />

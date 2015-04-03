@@ -12,6 +12,9 @@ curve and not everything works as easy as it should. NHapiTools aims to improve 
 - Two sets of context implementation to easily add all or configurable validation rules.
 
 3. Changelog
+- V1.5 Release (April 2015)
+  Fixzed bug in ERR segment. Added custom ACK message classes for HL7 V2.2 and V2.1 since these seem to be missing from NHapi.
+
 - V1.4 Release (December 2014)
   Added more HL7 versions. Finished documentation.
 

@@ -74,7 +74,16 @@ namespace NHapiTools.Base.Util
             // Get an object from the right ACK class
             string ackClassType = string.Format("NHapi.Model.V{0}.Message.ACK, NHapi.Model.V{0}", inboundMessage.Version.Replace(".", ""));
             Type x = Type.GetType(ackClassType);
-            ackMessage = (IMessage)Activator.CreateInstance(x);
+            if (x != null)
+                ackMessage = (IMessage)Activator.CreateInstance(x);
+            else
+            {
+                // Fix for V2.2 and V2.1 Since tha ACK message class is missing there in NHapi
+                if (inboundMessage.Version == "2.1")
+                    ackMessage = (IMessage)new NHapiTools.Base.CustomImplementation.V21.Messages.ACK();
+                if (inboundMessage.Version == "2.2")
+                    ackMessage = (IMessage)new NHapiTools.Base.CustomImplementation.V22.Messages.ACK();
+            }
 
             Terser inboundTerser = new Terser(inboundMessage);
             ISegment inboundHeader = null;
@@ -116,7 +125,7 @@ namespace NHapiTools.Base.Util
 
             // Set error message
             if (errorMessage != null)
-                terser.Set("/ERR-7", errorMessage);
+                terser.Set("/ERR-1-1", errorMessage);
 
             return ackMessage;
         }
