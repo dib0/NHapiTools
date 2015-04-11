@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NHapiTools</id>
+    <version>1.5.0.0</version>
+    <authors>Division by Zero</authors>
+    <owners>Division by Zero</owners>
+	<licenseUrl>https://github.com/dib0/NHapiTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dib0/NHapiTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The NHapiTools are tools that will make using NHapi (the open source .Net HL7 implementation) easier. NHapi has a steep learning curve and not everything works as easy as it should. NHapiTools aims to improve that without tampering with NHapi itselves.</description>
+    <releaseNotes>Fixed bug in ERR segment. Added custom ACK message classes for HL7 V2.2 and V2.1 since these seem to be missing from NHapi.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>HL7 NHapi NHapiTools</tags>
+    <dependencies>
+      <dependency id="nHapi" version="2.4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="..\BuildResult\NHapiTools.Base.dll" target="lib\NHapiTools.Base.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V21.dll" target="lib\NHapiTools.Model.V21.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V22.dll" target="lib\NHapiTools.Model.V22.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V23.dll" target="lib\NHapiTools.Model.V23.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V231.dll" target="lib\NHapiTools.Model.V231.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V24.dll" target="lib\NHapiTools.Model.V24.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V25.dll" target="lib\NHapiTools.Model.V25.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V251.dll" target="lib\NHapiTools.Model.V251.dll" /> 
+  </files>
+</package>
