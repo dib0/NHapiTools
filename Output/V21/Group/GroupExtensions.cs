@@ -20,66 +20,6 @@ namespace NHapiTools.Model.V21.Group
     {
         #region Extension methods
         /// <summary>
-        /// Get NTE Records from ORU_R03_PATIENT
-        /// </summary>
-        public static IEnumerable GetNTERecords(this ORU_R03_PATIENT message)
-        {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE Records from ORU_R03_PATIENT
-        /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORU_R03_PATIENT message)
-        {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
-        }
-
-        /// <summary>
-        /// Add a new ORU_R03_PATIENT to NTE
-        /// </summary>
-        public static NTE AddNTE(this ORU_R03_PATIENT message)
-        {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
-        /// </summary>
-        public static IEnumerable GetORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
-        {
-            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
-        /// </summary>
-        public static List<ORU_R01_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
-        {
-            return message.GetAllRecords<ORU_R01_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
-        }
-
-        /// <summary>
-        /// Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
-        /// </summary>
-        public static ORU_R01_ORDER_OBSERVATION AddORDER_OBSERVATION(this ORU_R01_PATIENT_RESULT message)
-        {
-            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get DG1 Records from BAR_P01_VISIT
         /// </summary>
         public static IEnumerable GetDG1Records(this BAR_P01_VISIT message)
@@ -230,6 +170,126 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
+        /// Get NTE Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetNTERecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBX Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static List<OBX> GetAllOBXRecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to OBX
+        /// </summary>
+        public static OBX AddOBX(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE2 Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetNTE2Records(this ORM_O01_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("NTE2RepetitionsUsed", "GetNTE2");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE2 Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static List<NTE> GetAllNTE2Records(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<NTE>("NTE2RepetitionsUsed", "GetNTE2");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to NTE2
+        /// </summary>
+        public static NTE AddNTE2(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetNTE2(message.NTE2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from ORM_O01_PATIENT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this ORM_O01_PATIENT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from ORM_O01_PATIENT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this ORM_O01_PATIENT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORM_O01_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORR_O02_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this ORR_O02_ORDER message)
@@ -257,6 +317,66 @@ namespace NHapiTools.Model.V21.Group
         public static NTE AddNTE(this ORR_O02_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from ORR_O02_PATIENT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this ORR_O02_PATIENT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from ORR_O02_PATIENT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this ORR_O02_PATIENT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORR_O02_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORR_O02_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from ORR_O02_PATIENT
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this ORR_O02_PATIENT message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from ORR_O02_PATIENT
+        /// </summary>
+        public static List<ORR_O02_ORDER> GetAllORDERRecords(this ORR_O02_PATIENT message)
+        {
+            return message.GetAllRecords<ORR_O02_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new ORR_O02_PATIENT to ORDER
+        /// </summary>
+        public static ORR_O02_ORDER AddORDER(this ORR_O02_PATIENT message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -380,9 +500,39 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
-        /// Get NTE Records from ORM_O01_PATIENT
+        /// Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORM_O01_PATIENT message)
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
+        /// </summary>
+        public static List<ORU_R01_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this ORU_R01_PATIENT_RESULT message)
+        {
+            return message.GetAllRecords<ORU_R01_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
+        /// </summary>
+        public static ORU_R01_ORDER_OBSERVATION AddORDER_OBSERVATION(this ORU_R01_PATIENT_RESULT message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from ORU_R03_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetNTERecords(this ORU_R03_OBSERVATION message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -394,17 +544,17 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from ORM_O01_PATIENT
+        /// Get all NTE Records from ORU_R03_OBSERVATION
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORM_O01_PATIENT message)
+        public static List<NTE> GetAllNTERecords(this ORU_R03_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new ORM_O01_PATIENT to NTE
+        /// Add a new ORU_R03_OBSERVATION to NTE
         /// </summary>
-        public static NTE AddNTE(this ORM_O01_PATIENT message)
+        public static NTE AddNTE(this ORU_R03_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
@@ -470,9 +620,9 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
-        /// Get NTE Records from ORU_R03_OBSERVATION
+        /// Get NTE Records from ORU_R03_PATIENT
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORU_R03_OBSERVATION message)
+        public static IEnumerable GetNTERecords(this ORU_R03_PATIENT message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -484,17 +634,17 @@ namespace NHapiTools.Model.V21.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from ORU_R03_OBSERVATION
+        /// Get all NTE Records from ORU_R03_PATIENT
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORU_R03_OBSERVATION message)
+        public static List<NTE> GetAllNTERecords(this ORU_R03_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new ORU_R03_OBSERVATION to NTE
+        /// Add a new ORU_R03_PATIENT to NTE
         /// </summary>
-        public static NTE AddNTE(this ORU_R03_OBSERVATION message)
+        public static NTE AddNTE(this ORU_R03_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
@@ -527,156 +677,6 @@ namespace NHapiTools.Model.V21.Group
         public static ORU_R03_ORDER_OBSERVATION AddORDER_OBSERVATION(this ORU_R03_PATIENT_RESULT message)
         {
             return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NTE Records from ORR_O02_PATIENT
-        /// </summary>
-        public static IEnumerable GetNTERecords(this ORR_O02_PATIENT message)
-        {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE Records from ORR_O02_PATIENT
-        /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORR_O02_PATIENT message)
-        {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
-        }
-
-        /// <summary>
-        /// Add a new ORR_O02_PATIENT to NTE
-        /// </summary>
-        public static NTE AddNTE(this ORR_O02_PATIENT message)
-        {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get ORDER Records from ORR_O02_PATIENT
-        /// </summary>
-        public static IEnumerable GetORDERRecords(this ORR_O02_PATIENT message)
-        {
-            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all ORDER Records from ORR_O02_PATIENT
-        /// </summary>
-        public static List<ORR_O02_ORDER> GetAllORDERRecords(this ORR_O02_PATIENT message)
-        {
-            return message.GetAllRecords<ORR_O02_ORDER>("ORDERRepetitionsUsed", "GetORDER");
-        }
-
-        /// <summary>
-        /// Add a new ORR_O02_PATIENT to ORDER
-        /// </summary>
-        public static ORR_O02_ORDER AddORDER(this ORR_O02_PATIENT message)
-        {
-            return message.GetORDER(message.ORDERRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NTE Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static IEnumerable GetNTERecords(this ORM_O01_ORDER_DETAIL message)
-        {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
-        }
-
-        /// <summary>
-        /// Add a new ORM_O01_ORDER_DETAIL to NTE
-        /// </summary>
-        public static NTE AddNTE(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get OBX Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static IEnumerable GetOBXRecords(this ORM_O01_ORDER_DETAIL message)
-        {
-            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all OBX Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static List<OBX> GetAllOBXRecords(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
-        }
-
-        /// <summary>
-        /// Add a new ORM_O01_ORDER_DETAIL to OBX
-        /// </summary>
-        public static OBX AddOBX(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetOBX(message.OBXRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NTE2 Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static IEnumerable GetNTE2Records(this ORM_O01_ORDER_DETAIL message)
-        {
-            object[] result = message.GetRecords("NTE2RepetitionsUsed", "GetNTE2");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE2 Records from ORM_O01_ORDER_DETAIL
-        /// </summary>
-        public static List<NTE> GetAllNTE2Records(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetAllRecords<NTE>("NTE2RepetitionsUsed", "GetNTE2");
-        }
-
-        /// <summary>
-        /// Add a new ORM_O01_ORDER_DETAIL to NTE2
-        /// </summary>
-        public static NTE AddNTE2(this ORM_O01_ORDER_DETAIL message)
-        {
-            return message.GetNTE2(message.NTE2RepetitionsUsed);
         }
         #endregion
     }

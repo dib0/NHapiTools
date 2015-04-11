@@ -20,6 +20,9 @@ namespace NHapiTools.Base.CustomImplementation.V21.Messages
     [Serializable]
     public class ACK : AbstractMessage
     {
+        /// <summary>
+        /// Version
+        /// </summary>
         public override string Version
         {
             get

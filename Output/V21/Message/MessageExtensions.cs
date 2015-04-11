@@ -19,11 +19,11 @@ namespace NHapiTools.Model.V21.Message
     {
         #region Extension methods
         /// <summary>
-        /// Get DSP Records from DSR_Q03
+        /// Get PATIENT Records from ADT_A17
         /// </summary>
-        public static IEnumerable GetDSPRecords(this DSR_Q03 message)
+        public static IEnumerable GetPATIENTRecords(this ADT_A17 message)
         {
-            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
+            object[] result = message.GetRecords("PATIENTRepetitionsUsed", "GetPATIENT");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -33,19 +33,19 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get all DSP Records from DSR_Q03
+        /// Get all PATIENT Records from ADT_A17
         /// </summary>
-        public static List<DSP> GetAllDSPRecords(this DSR_Q03 message)
+        public static List<ADT_A17_PATIENT> GetAllPATIENTRecords(this ADT_A17 message)
         {
-            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
+            return message.GetAllRecords<ADT_A17_PATIENT>("PATIENTRepetitionsUsed", "GetPATIENT");
         }
 
         /// <summary>
-        /// Add a new DSR_Q03 to DSP
+        /// Add a new ADT_A17 to PATIENT
         /// </summary>
-        public static DSP AddDSP(this DSR_Q03 message)
+        public static ADT_A17_PATIENT AddPATIENT(this ADT_A17 message)
         {
-            return message.GetDSP(message.DSPRepetitionsUsed);
+            return message.GetPATIENT(message.PATIENTRepetitionsUsed);
         }
 
         /// <summary>
@@ -79,11 +79,11 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get DSP Records from DSR_Q01
+        /// Get VISIT Records from BAR_P01
         /// </summary>
-        public static IEnumerable GetDSPRecords(this DSR_Q01 message)
+        public static IEnumerable GetVISITRecords(this BAR_P01 message)
         {
-            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
+            object[] result = message.GetRecords("VISITRepetitionsUsed", "GetVISIT");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -93,49 +93,19 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get all DSP Records from DSR_Q01
+        /// Get all VISIT Records from BAR_P01
         /// </summary>
-        public static List<DSP> GetAllDSPRecords(this DSR_Q01 message)
+        public static List<BAR_P01_VISIT> GetAllVISITRecords(this BAR_P01 message)
         {
-            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
+            return message.GetAllRecords<BAR_P01_VISIT>("VISITRepetitionsUsed", "GetVISIT");
         }
 
         /// <summary>
-        /// Add a new DSR_Q01 to DSP
+        /// Add a new BAR_P01 to VISIT
         /// </summary>
-        public static DSP AddDSP(this DSR_Q01 message)
+        public static BAR_P01_VISIT AddVISIT(this BAR_P01 message)
         {
-            return message.GetDSP(message.DSPRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get DSP Records from UDM_Q05
-        /// </summary>
-        public static IEnumerable GetDSPRecords(this UDM_Q05 message)
-        {
-            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all DSP Records from UDM_Q05
-        /// </summary>
-        public static List<DSP> GetAllDSPRecords(this UDM_Q05 message)
-        {
-            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
-        }
-
-        /// <summary>
-        /// Add a new UDM_Q05 to DSP
-        /// </summary>
-        public static DSP AddDSP(this UDM_Q05 message)
-        {
-            return message.GetDSP(message.DSPRepetitionsUsed);
+            return message.GetVISIT(message.VISITRepetitionsUsed);
         }
 
         /// <summary>
@@ -169,66 +139,6 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get VISIT Records from BAR_P01
-        /// </summary>
-        public static IEnumerable GetVISITRecords(this BAR_P01 message)
-        {
-            object[] result = message.GetRecords("VISITRepetitionsUsed", "GetVISIT");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all VISIT Records from BAR_P01
-        /// </summary>
-        public static List<BAR_P01_VISIT> GetAllVISITRecords(this BAR_P01 message)
-        {
-            return message.GetAllRecords<BAR_P01_VISIT>("VISITRepetitionsUsed", "GetVISIT");
-        }
-
-        /// <summary>
-        /// Add a new BAR_P01 to VISIT
-        /// </summary>
-        public static BAR_P01_VISIT AddVISIT(this BAR_P01 message)
-        {
-            return message.GetVISIT(message.VISITRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get PATIENT_RESULT Records from ORU_R03
-        /// </summary>
-        public static IEnumerable GetPATIENT_RESULTRecords(this ORU_R03 message)
-        {
-            object[] result = message.GetRecords("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all PATIENT_RESULT Records from ORU_R03
-        /// </summary>
-        public static List<ORU_R03_PATIENT_RESULT> GetAllPATIENT_RESULTRecords(this ORU_R03 message)
-        {
-            return message.GetAllRecords<ORU_R03_PATIENT_RESULT>("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
-        }
-
-        /// <summary>
-        /// Add a new ORU_R03 to PATIENT_RESULT
-        /// </summary>
-        public static ORU_R03_PATIENT_RESULT AddPATIENT_RESULT(this ORU_R03 message)
-        {
-            return message.GetPATIENT_RESULT(message.PATIENT_RESULTRepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get FT1 Records from DFT_P03
         /// </summary>
         public static IEnumerable GetFT1Records(this DFT_P03 message)
@@ -259,11 +169,11 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get PATIENT_RESULT Records from ORU_R01
+        /// Get DSP Records from DSR_Q01
         /// </summary>
-        public static IEnumerable GetPATIENT_RESULTRecords(this ORU_R01 message)
+        public static IEnumerable GetDSPRecords(this DSR_Q01 message)
         {
-            object[] result = message.GetRecords("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -273,27 +183,27 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get all PATIENT_RESULT Records from ORU_R01
+        /// Get all DSP Records from DSR_Q01
         /// </summary>
-        public static List<ORU_R01_PATIENT_RESULT> GetAllPATIENT_RESULTRecords(this ORU_R01 message)
+        public static List<DSP> GetAllDSPRecords(this DSR_Q01 message)
         {
-            return message.GetAllRecords<ORU_R01_PATIENT_RESULT>("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
         }
 
         /// <summary>
-        /// Add a new ORU_R01 to PATIENT_RESULT
+        /// Add a new DSR_Q01 to DSP
         /// </summary>
-        public static ORU_R01_PATIENT_RESULT AddPATIENT_RESULT(this ORU_R01 message)
+        public static DSP AddDSP(this DSR_Q01 message)
         {
-            return message.GetPATIENT_RESULT(message.PATIENT_RESULTRepetitionsUsed);
+            return message.GetDSP(message.DSPRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get NTE Records from ORR_O02
+        /// Get DSP Records from DSR_Q03
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORR_O02 message)
+        public static IEnumerable GetDSPRecords(this DSR_Q03 message)
         {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -303,49 +213,19 @@ namespace NHapiTools.Model.V21.Message
         }
 
         /// <summary>
-        /// Get all NTE Records from ORR_O02
+        /// Get all DSP Records from DSR_Q03
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORR_O02 message)
+        public static List<DSP> GetAllDSPRecords(this DSR_Q03 message)
         {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
         }
 
         /// <summary>
-        /// Add a new ORR_O02 to NTE
+        /// Add a new DSR_Q03 to DSP
         /// </summary>
-        public static NTE AddNTE(this ORR_O02 message)
+        public static DSP AddDSP(this DSR_Q03 message)
         {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get PATIENT Records from ADT_A17
-        /// </summary>
-        public static IEnumerable GetPATIENTRecords(this ADT_A17 message)
-        {
-            object[] result = message.GetRecords("PATIENTRepetitionsUsed", "GetPATIENT");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all PATIENT Records from ADT_A17
-        /// </summary>
-        public static List<ADT_A17_PATIENT> GetAllPATIENTRecords(this ADT_A17 message)
-        {
-            return message.GetAllRecords<ADT_A17_PATIENT>("PATIENTRepetitionsUsed", "GetPATIENT");
-        }
-
-        /// <summary>
-        /// Add a new ADT_A17 to PATIENT
-        /// </summary>
-        public static ADT_A17_PATIENT AddPATIENT(this ADT_A17 message)
-        {
-            return message.GetPATIENT(message.PATIENTRepetitionsUsed);
+            return message.GetDSP(message.DSPRepetitionsUsed);
         }
 
         /// <summary>
@@ -406,6 +286,126 @@ namespace NHapiTools.Model.V21.Message
         public static ORM_O01_ORDER AddORDER(this ORM_O01 message)
         {
             return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from ORR_O02
+        /// </summary>
+        public static IEnumerable GetNTERecords(this ORR_O02 message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from ORR_O02
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this ORR_O02 message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new ORR_O02 to NTE
+        /// </summary>
+        public static NTE AddNTE(this ORR_O02 message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATIENT_RESULT Records from ORU_R01
+        /// </summary>
+        public static IEnumerable GetPATIENT_RESULTRecords(this ORU_R01 message)
+        {
+            object[] result = message.GetRecords("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATIENT_RESULT Records from ORU_R01
+        /// </summary>
+        public static List<ORU_R01_PATIENT_RESULT> GetAllPATIENT_RESULTRecords(this ORU_R01 message)
+        {
+            return message.GetAllRecords<ORU_R01_PATIENT_RESULT>("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R01 to PATIENT_RESULT
+        /// </summary>
+        public static ORU_R01_PATIENT_RESULT AddPATIENT_RESULT(this ORU_R01 message)
+        {
+            return message.GetPATIENT_RESULT(message.PATIENT_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATIENT_RESULT Records from ORU_R03
+        /// </summary>
+        public static IEnumerable GetPATIENT_RESULTRecords(this ORU_R03 message)
+        {
+            object[] result = message.GetRecords("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATIENT_RESULT Records from ORU_R03
+        /// </summary>
+        public static List<ORU_R03_PATIENT_RESULT> GetAllPATIENT_RESULTRecords(this ORU_R03 message)
+        {
+            return message.GetAllRecords<ORU_R03_PATIENT_RESULT>("PATIENT_RESULTRepetitionsUsed", "GetPATIENT_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R03 to PATIENT_RESULT
+        /// </summary>
+        public static ORU_R03_PATIENT_RESULT AddPATIENT_RESULT(this ORU_R03 message)
+        {
+            return message.GetPATIENT_RESULT(message.PATIENT_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get DSP Records from UDM_Q05
+        /// </summary>
+        public static IEnumerable GetDSPRecords(this UDM_Q05 message)
+        {
+            object[] result = message.GetRecords("DSPRepetitionsUsed", "GetDSP");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all DSP Records from UDM_Q05
+        /// </summary>
+        public static List<DSP> GetAllDSPRecords(this UDM_Q05 message)
+        {
+            return message.GetAllRecords<DSP>("DSPRepetitionsUsed", "GetDSP");
+        }
+
+        /// <summary>
+        /// Add a new UDM_Q05 to DSP
+        /// </summary>
+        public static DSP AddDSP(this UDM_Q05 message)
+        {
+            return message.GetDSP(message.DSPRepetitionsUsed);
         }
         #endregion
     }

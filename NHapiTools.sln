@@ -9,18 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V23", "Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V24", "Model.V24\NHapiTools.Model.V24.csproj", "{5159ED1E-6672-4217-9EE0-20BF1C81D69D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{AEB85FC5-F9BA-46E2-8AB8-C17EFCD0F1C2}"
-	ProjectSection(SolutionItems) = preProject
-		References\NHapi.Base.dll = References\NHapi.Base.dll
-		References\NHapi.Model.V21.dll = References\NHapi.Model.V21.dll
-		References\NHapi.Model.V22.dll = References\NHapi.Model.V22.dll
-		References\NHapi.Model.V23.dll = References\NHapi.Model.V23.dll
-		References\NHapi.Model.V231.dll = References\NHapi.Model.V231.dll
-		References\NHapi.Model.V24.dll = References\NHapi.Model.V24.dll
-		References\NHapi.Model.V25.dll = References\NHapi.Model.V25.dll
-		References\NHapi.Model.V251.dll = References\NHapi.Model.V251.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V231", "Model.V231\NHapiTools.Model.V231.csproj", "{EA876B02-015F-4269-B05C-57569D0A0D15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHapiTools.Model.V25", "Model.V25\NHapiTools.Model.V25.csproj", "{A7898668-F12E-4B98-9A68-34823505F8AC}"

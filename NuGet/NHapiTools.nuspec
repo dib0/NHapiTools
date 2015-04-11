@@ -13,7 +13,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
     <dependencies>
-      <dependency id="nHapi" version="2.4.0" />
+      <dependency id="nHapi" version="2.4.10" />
     </dependencies>
   </metadata>
   <files>
