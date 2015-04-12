@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NHapiTools</id>
-    <version>1.6.0.0</version>
+    <version>1.6.0.1</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
 	<licenseUrl>https://github.com/dib0/NHapiTools/blob/master/LICENSE</licenseUrl>
@@ -13,7 +13,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
     <dependencies>
-      <dependency id="nHapi" version="2.4.10" />
+      <dependency id="nHapi" version="2.4.0.10" />
     </dependencies>
   </metadata>
   <files>
