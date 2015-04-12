@@ -77,8 +77,6 @@
     <Compile Include="Model\GenericMessageWrapper.cs" />
     <Compile Include="Net\SimpleMLLPClient.cs" />
     <Compile Include="Parser\EnhancedModelClassFactory.cs" />
-    <Compile Include="Parser\HL7Package.cs" />
-    <Compile Include="Parser\PackageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\Ack.cs" />
     <Compile Include="IO\HL7InputStreamMessageStringEnumerator.cs" />

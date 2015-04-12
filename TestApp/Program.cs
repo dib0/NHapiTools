@@ -234,8 +234,8 @@ namespace TestApp
             EnhancedModelClassFactory emch = new EnhancedModelClassFactory();
             PipeParser parser = new PipeParser(emch);
             emch.ValidationContext = parser.ValidationContext;
+            IMessage im=parser.Parse(txtMessage);
 
-            IMessage im = parser.Parse(txtMessage);
             GenericMessageWrapper gcw = im as GenericMessageWrapper;
             if (gcw != null)
             {

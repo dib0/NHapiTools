@@ -47,7 +47,11 @@ namespace NHapiTools.Base.IO
         {
             get
             {
-                return parser.Parse(enumerator.Current);
+                string curr = enumerator.Current;
+                if (string.IsNullOrEmpty(curr))
+                    return null;
+
+                return parser.Parse(curr);
             }
         }
 

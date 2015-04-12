@@ -50,6 +50,14 @@ namespace NHapiTools.Base.Parser
 
             return typeof(NHapiTools.Base.Model.GenericMessageWrapper);
         }
+
+        public override Type GetSegmentClass(string theName, string theVersion)
+        {
+            List<string> l = DefaultModelClassFactory.PackageList("2.3");
+
+            Type t = base.GetSegmentClass(theName, theVersion);
+            return t;
+        }
         #endregion
 
         #region Public properties
