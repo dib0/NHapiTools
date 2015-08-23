@@ -33,36 +33,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NHapi.Base, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Base.dll</HintPath>
+    <Reference Include="NHapi.Base, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V21, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V21.dll</HintPath>
+    <Reference Include="NHapi.Model.V21, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V21.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V22, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V22.dll</HintPath>
+    <Reference Include="NHapi.Model.V22, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V22.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V23, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V23.dll</HintPath>
+    <Reference Include="NHapi.Model.V23, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V23.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V231, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V231.dll</HintPath>
+    <Reference Include="NHapi.Model.V231, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V231.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V24, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V24.dll</HintPath>
+    <Reference Include="NHapi.Model.V24, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V24.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NHapi.Model.V25, Version=2.4.0.10, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V25.dll</HintPath>
+    <Reference Include="NHapi.Model.V25, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V25.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NHapi.Model.V251, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V251.dll</HintPath>
+      <HintPath>..\packages\nHapi.2.4.0.11\lib\NHapi.Model.V251.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

@@ -59,31 +59,31 @@ namespace TestApp
         {
             Console.WriteLine("\n==============================================\nTesting source generation.");
             Console.WriteLine("Generating source for V21.");
-            Generator gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V21.dll", basePath + "\\Output");
+            Generator gen = new Generator(basePath + "\\References\\NHapi.Model.V21.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V22.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V22.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V22.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V23.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V23.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V23.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V231.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V231.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V231.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V24.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V24.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V24.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V25.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V25.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V25.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
 
             Console.WriteLine("Generating source for V251.");
-            gen = new Generator(basePath + "\\TestApp\\bin\\Debug\\NHapi.Model.V251.dll", basePath + "\\Output");
+            gen = new Generator(basePath + "\\References\\NHapi.Model.V251.dll", basePath + "\\Output");
             SpinnerWhileWaiting(gen.Generate);
         }
 

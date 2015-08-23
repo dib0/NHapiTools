@@ -32,13 +32,13 @@
     <DocumentationFile>bin\Release\NHapiTools.Model.V231.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NHapi.Base, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+    <Reference Include="NHapi.Base, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Base.dll</HintPath>
+      <HintPath>..\References\NHapi.Base.dll</HintPath>
     </Reference>
-    <Reference Include="NHapi.Model.V231, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+    <Reference Include="NHapi.Model.V231, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V231.dll</HintPath>
+      <HintPath>..\References\NHapi.Model.V231.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

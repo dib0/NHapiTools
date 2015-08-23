@@ -9,36 +9,6 @@
             Extention methods
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
-            <summary>
-            Get NTE Records from ORU_R03_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
-            <summary>
-            Get all NTE Records from ORU_R03_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
-            <summary>
-            Add a new ORU_R03_PATIENT to NTE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
-            <summary>
-            Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
-            <summary>
-            Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddORDER_OBSERVATION(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
-            <summary>
-            Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
-            </summary>
-        </member>
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetDG1Records(NHapi.Model.V21.Group.BAR_P01_VISIT)">
             <summary>
             Get DG1 Records from BAR_P01_VISIT
@@ -114,6 +84,66 @@
             Add a new BAR_P01_VISIT to IN1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get NTE Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all NTE Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get OBX Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all OBX Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddOBX(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get NTE2 Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTE2Records(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Get all NTE2 Records from ORM_O01_ORDER_DETAIL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE2(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
+            <summary>
+            Add a new ORM_O01_ORDER_DETAIL to NTE2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+            <summary>
+            Get NTE Records from ORM_O01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+            <summary>
+            Get all NTE Records from ORM_O01_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+            <summary>
+            Add a new ORM_O01_PATIENT to NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORR_O02_ORDER)">
             <summary>
             Get NTE Records from ORR_O02_ORDER
@@ -127,6 +157,36 @@
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORR_O02_ORDER)">
             <summary>
             Add a new ORR_O02_ORDER to NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get NTE Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get all NTE Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Add a new ORR_O02_PATIENT to NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetORDERRecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get ORDER Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllORDERRecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Get all ORDER Records from ORR_O02_PATIENT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddORDER(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
+            <summary>
+            Add a new ORR_O02_PATIENT to ORDER
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R01_OBSERVATION)">
@@ -189,19 +249,34 @@
             Add a new ORU_R01_PATIENT to NTE
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
             <summary>
-            Get NTE Records from ORM_O01_PATIENT
+            Get ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllORDER_OBSERVATIONRecords(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
             <summary>
-            Get all NTE Records from ORM_O01_PATIENT
+            Get all ORDER_OBSERVATION Records from ORU_R01_PATIENT_RESULT
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORM_O01_PATIENT)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddORDER_OBSERVATION(NHapi.Model.V21.Group.ORU_R01_PATIENT_RESULT)">
             <summary>
-            Add a new ORM_O01_PATIENT to NTE
+            Add a new ORU_R01_PATIENT_RESULT to ORDER_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Get NTE Records from ORU_R03_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Get all NTE Records from ORU_R03_OBSERVATION
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+            <summary>
+            Add a new ORU_R03_OBSERVATION to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R03_ORDER_OBSERVATION)">
@@ -234,19 +309,19 @@
             Add a new ORU_R03_ORDER_OBSERVATION to OBSERVATION
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
             <summary>
-            Get NTE Records from ORU_R03_OBSERVATION
+            Get NTE Records from ORU_R03_PATIENT
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
             <summary>
-            Get all NTE Records from ORU_R03_OBSERVATION
+            Get all NTE Records from ORU_R03_PATIENT
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORU_R03_OBSERVATION)">
+        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORU_R03_PATIENT)">
             <summary>
-            Add a new ORU_R03_OBSERVATION to NTE
+            Add a new ORU_R03_PATIENT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetORDER_OBSERVATIONRecords(NHapi.Model.V21.Group.ORU_R03_PATIENT_RESULT)">
@@ -264,99 +339,24 @@
             Add a new ORU_R03_PATIENT_RESULT to ORDER_OBSERVATION
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Get NTE Records from ORR_O02_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Get all NTE Records from ORR_O02_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Add a new ORR_O02_PATIENT to NTE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetORDERRecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Get ORDER Records from ORR_O02_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllORDERRecords(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Get all ORDER Records from ORR_O02_PATIENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddORDER(NHapi.Model.V21.Group.ORR_O02_PATIENT)">
-            <summary>
-            Add a new ORR_O02_PATIENT to ORDER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTERecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get NTE Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTERecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get all NTE Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Add a new ORM_O01_ORDER_DETAIL to NTE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get OBX Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get all OBX Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddOBX(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Add a new ORM_O01_ORDER_DETAIL to OBX
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetNTE2Records(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get NTE2 Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.GetAllNTE2Records(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Get all NTE2 Records from ORM_O01_ORDER_DETAIL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Group.GroupExtensions.AddNTE2(NHapi.Model.V21.Group.ORM_O01_ORDER_DETAIL)">
-            <summary>
-            Add a new ORM_O01_ORDER_DETAIL to NTE2
-            </summary>
-        </member>
         <member name="T:NHapiTools.Model.V21.Message.MessageExtensions">
             <summary>
             Message extention methods
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.DSR_Q03)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENTRecords(NHapi.Model.V21.Message.ADT_A17)">
             <summary>
-            Get DSP Records from DSR_Q03
+            Get PATIENT Records from ADT_A17
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.DSR_Q03)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENTRecords(NHapi.Model.V21.Message.ADT_A17)">
             <summary>
-            Get all DSP Records from DSR_Q03
+            Get all PATIENT Records from ADT_A17
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.DSR_Q03)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT(NHapi.Model.V21.Message.ADT_A17)">
             <summary>
-            Add a new DSR_Q03 to DSP
+            Add a new ADT_A17 to PATIENT
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetQUERY_RESPONSERecords(NHapi.Model.V21.Message.ARD_A19)">
@@ -374,34 +374,19 @@
             Add a new ARD_A19 to QUERY_RESPONSE
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.DSR_Q01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetVISITRecords(NHapi.Model.V21.Message.BAR_P01)">
             <summary>
-            Get DSP Records from DSR_Q01
+            Get VISIT Records from BAR_P01
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.DSR_Q01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllVISITRecords(NHapi.Model.V21.Message.BAR_P01)">
             <summary>
-            Get all DSP Records from DSR_Q01
+            Get all VISIT Records from BAR_P01
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.DSR_Q01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddVISIT(NHapi.Model.V21.Message.BAR_P01)">
             <summary>
-            Add a new DSR_Q01 to DSP
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.UDM_Q05)">
-            <summary>
-            Get DSP Records from UDM_Q05
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.UDM_Q05)">
-            <summary>
-            Get all DSP Records from UDM_Q05
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.UDM_Q05)">
-            <summary>
-            Add a new UDM_Q05 to DSP
+            Add a new BAR_P01 to VISIT
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENTRecords(NHapi.Model.V21.Message.BAR_P02)">
@@ -419,36 +404,6 @@
             Add a new BAR_P02 to PATIENT
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetVISITRecords(NHapi.Model.V21.Message.BAR_P01)">
-            <summary>
-            Get VISIT Records from BAR_P01
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllVISITRecords(NHapi.Model.V21.Message.BAR_P01)">
-            <summary>
-            Get all VISIT Records from BAR_P01
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddVISIT(NHapi.Model.V21.Message.BAR_P01)">
-            <summary>
-            Add a new BAR_P01 to VISIT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R03)">
-            <summary>
-            Get PATIENT_RESULT Records from ORU_R03
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R03)">
-            <summary>
-            Get all PATIENT_RESULT Records from ORU_R03
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V21.Message.ORU_R03)">
-            <summary>
-            Add a new ORU_R03 to PATIENT_RESULT
-            </summary>
-        </member>
         <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetFT1Records(NHapi.Model.V21.Message.DFT_P03)">
             <summary>
             Get FT1 Records from DFT_P03
@@ -464,49 +419,34 @@
             Add a new DFT_P03 to FT1
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.DSR_Q01)">
             <summary>
-            Get PATIENT_RESULT Records from ORU_R01
+            Get DSP Records from DSR_Q01
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.DSR_Q01)">
             <summary>
-            Get all PATIENT_RESULT Records from ORU_R01
+            Get all DSP Records from DSR_Q01
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V21.Message.ORU_R01)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.DSR_Q01)">
             <summary>
-            Add a new ORU_R01 to PATIENT_RESULT
+            Add a new DSR_Q01 to DSP
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetNTERecords(NHapi.Model.V21.Message.ORR_O02)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.DSR_Q03)">
             <summary>
-            Get NTE Records from ORR_O02
+            Get DSP Records from DSR_Q03
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllNTERecords(NHapi.Model.V21.Message.ORR_O02)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.DSR_Q03)">
             <summary>
-            Get all NTE Records from ORR_O02
+            Get all DSP Records from DSR_Q03
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddNTE(NHapi.Model.V21.Message.ORR_O02)">
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.DSR_Q03)">
             <summary>
-            Add a new ORR_O02 to NTE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENTRecords(NHapi.Model.V21.Message.ADT_A17)">
-            <summary>
-            Get PATIENT Records from ADT_A17
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENTRecords(NHapi.Model.V21.Message.ADT_A17)">
-            <summary>
-            Get all PATIENT Records from ADT_A17
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT(NHapi.Model.V21.Message.ADT_A17)">
-            <summary>
-            Add a new ADT_A17 to PATIENT
+            Add a new DSR_Q03 to DSP
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetNTERecords(NHapi.Model.V21.Message.ORM_O01)">
@@ -539,114 +479,99 @@
             Add a new ORM_O01 to ORDER
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetNTERecords(NHapi.Model.V21.Message.ORR_O02)">
+            <summary>
+            Get NTE Records from ORR_O02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllNTERecords(NHapi.Model.V21.Message.ORR_O02)">
+            <summary>
+            Get all NTE Records from ORR_O02
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddNTE(NHapi.Model.V21.Message.ORR_O02)">
+            <summary>
+            Add a new ORR_O02 to NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R01)">
+            <summary>
+            Get PATIENT_RESULT Records from ORU_R01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R01)">
+            <summary>
+            Get all PATIENT_RESULT Records from ORU_R01
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V21.Message.ORU_R01)">
+            <summary>
+            Add a new ORU_R01 to PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R03)">
+            <summary>
+            Get PATIENT_RESULT Records from ORU_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllPATIENT_RESULTRecords(NHapi.Model.V21.Message.ORU_R03)">
+            <summary>
+            Get all PATIENT_RESULT Records from ORU_R03
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddPATIENT_RESULT(NHapi.Model.V21.Message.ORU_R03)">
+            <summary>
+            Add a new ORU_R03 to PATIENT_RESULT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetDSPRecords(NHapi.Model.V21.Message.UDM_Q05)">
+            <summary>
+            Get DSP Records from UDM_Q05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.GetAllDSPRecords(NHapi.Model.V21.Message.UDM_Q05)">
+            <summary>
+            Get all DSP Records from UDM_Q05
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Message.MessageExtensions.AddDSP(NHapi.Model.V21.Message.UDM_Q05)">
+            <summary>
+            Add a new UDM_Q05 to DSP
+            </summary>
+        </member>
         <member name="T:NHapiTools.Model.V21.Segment.SegmentExtensions">
             <summary>
             Extention methods
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHOSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetERRORCODEANDLOCATIONRecords(NHapi.Model.V21.Segment.ERR)">
             <summary>
-            Get WHOSUBJECTFILTER Records from QRD
+            Get ERRORCODEANDLOCATION Records from ERR
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHOSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllERRORCODEANDLOCATIONRecords(NHapi.Model.V21.Segment.ERR)">
             <summary>
-            Get all WHOSUBJECTFILTER Records from QRD
+            Get all ERRORCODEANDLOCATION Records from ERR
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHOSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddERRORCODEANDLOCATION(NHapi.Model.V21.Segment.ERR)">
             <summary>
-            Add a new QRD to WHOSUBJECTFILTER
+            Add a new ERR to ERRORCODEANDLOCATION
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetNEXTOFKINPHONENUMBERRecords(NHapi.Model.V21.Segment.NK1)">
             <summary>
-            Get WHATSUBJECTFILTER Records from QRD
+            Get NEXTOFKINPHONENUMBER Records from NK1
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllNEXTOFKINPHONENUMBERRecords(NHapi.Model.V21.Segment.NK1)">
             <summary>
-            Get all WHATSUBJECTFILTER Records from QRD
+            Get all NEXTOFKINPHONENUMBER Records from NK1
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddNEXTOFKINPHONENUMBER(NHapi.Model.V21.Segment.NK1)">
             <summary>
-            Add a new QRD to WHATSUBJECTFILTER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDEPARTMENTDATACODERecords(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Get WHATDEPARTMENTDATACODE Records from QRD
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATDEPARTMENTDATACODERecords(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Get all WHATDEPARTMENTDATACODE Records from QRD
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDEPARTMENTDATACODE(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Add a new QRD to WHATDEPARTMENTDATACODE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDATACODEVALUEQUALRecords(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Get WHATDATACODEVALUEQUAL Records from QRD
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATDATACODEVALUEQUALRecords(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Get all WHATDATACODEVALUEQUAL Records from QRD
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDATACODEVALUEQUAL(NHapi.Model.V21.Segment.QRD)">
-            <summary>
-            Add a new QRD to WHATDATACODEVALUEQUAL
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetABNORMALFLAGSRecords(NHapi.Model.V21.Segment.OBX)">
-            <summary>
-            Get ABNORMALFLAGS Records from OBX
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllABNORMALFLAGSRecords(NHapi.Model.V21.Segment.OBX)">
-            <summary>
-            Get all ABNORMALFLAGS Records from OBX
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddABNORMALFLAGS(NHapi.Model.V21.Segment.OBX)">
-            <summary>
-            Add a new OBX to ABNORMALFLAGS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetSETIDPROCEDURERecords(NHapi.Model.V21.Segment.PR1)">
-            <summary>
-            Get SETIDPROCEDURE Records from PR1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllSETIDPROCEDURERecords(NHapi.Model.V21.Segment.PR1)">
-            <summary>
-            Get all SETIDPROCEDURE Records from PR1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddSETIDPROCEDURE(NHapi.Model.V21.Segment.PR1)">
-            <summary>
-            Add a new PR1 to SETIDPROCEDURE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCALLBACKPHONENUMBERRecords(NHapi.Model.V21.Segment.ORC)">
-            <summary>
-            Get CALLBACKPHONENUMBER Records from ORC
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCALLBACKPHONENUMBERRecords(NHapi.Model.V21.Segment.ORC)">
-            <summary>
-            Get all CALLBACKPHONENUMBER Records from ORC
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCALLBACKPHONENUMBER(NHapi.Model.V21.Segment.ORC)">
-            <summary>
-            Add a new ORC to CALLBACKPHONENUMBER
+            Add a new NK1 to NEXTOFKINPHONENUMBER
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOMMENTRecords(NHapi.Model.V21.Segment.NTE)">
@@ -662,156 +587,6 @@
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOMMENT(NHapi.Model.V21.Segment.NTE)">
             <summary>
             Add a new NTE to COMMENT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOMPONENTDRUGIDSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get COMPONENTDRUGIDS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCOMPONENTDRUGIDSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get all COMPONENTDRUGIDS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOMPONENTDRUGIDS(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Add a new RX1 to COMPONENTDRUGIDS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPHARMACYINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get PHARMACYINSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllPHARMACYINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get all PHARMACYINSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHARMACYINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Add a new RX1 to PHARMACYINSTRUCTIONS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPATIENTINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get PATIENTINSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllPATIENTINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get all PATIENTINSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPATIENTINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Add a new RX1 to PATIENTINSTRUCTIONS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get INSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Get all INSTRUCTIONS Records from RX1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
-            <summary>
-            Add a new RX1 to INSTRUCTIONS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONSULTINGDOCTORRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get CONSULTINGDOCTOR Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONSULTINGDOCTORRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all CONSULTINGDOCTOR Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONSULTINGDOCTOR(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to CONSULTINGDOCTOR
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetFINANCIALCLASSRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get FINANCIALCLASS Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllFINANCIALCLASSRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all FINANCIALCLASS Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddFINANCIALCLASS(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to FINANCIALCLASS
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTCODERecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get CONTRACTCODE Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTCODERecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all CONTRACTCODE Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTCODE(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to CONTRACTCODE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTEFFECTIVEDATERecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get CONTRACTEFFECTIVEDATE Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTEFFECTIVEDATERecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all CONTRACTEFFECTIVEDATE Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTEFFECTIVEDATE(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to CONTRACTEFFECTIVEDATE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTAMOUNTRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get CONTRACTAMOUNT Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTAMOUNTRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all CONTRACTAMOUNT Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTAMOUNT(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to CONTRACTAMOUNT
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTPERIODRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get CONTRACTPERIOD Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTPERIODRecords(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Get all CONTRACTPERIOD Records from PV1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTPERIOD(NHapi.Model.V21.Segment.PV1)">
-            <summary>
-            Add a new PV1 to CONTRACTPERIOD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOLLECTORIDENTIFIERRecords(NHapi.Model.V21.Segment.OBR)">
@@ -904,6 +679,36 @@
             Add a new OBR to REASONFORSTUDY
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetABNORMALFLAGSRecords(NHapi.Model.V21.Segment.OBX)">
+            <summary>
+            Get ABNORMALFLAGS Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllABNORMALFLAGSRecords(NHapi.Model.V21.Segment.OBX)">
+            <summary>
+            Get all ABNORMALFLAGS Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddABNORMALFLAGS(NHapi.Model.V21.Segment.OBX)">
+            <summary>
+            Add a new OBX to ABNORMALFLAGS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCALLBACKPHONENUMBERRecords(NHapi.Model.V21.Segment.ORC)">
+            <summary>
+            Get CALLBACKPHONENUMBER Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCALLBACKPHONENUMBERRecords(NHapi.Model.V21.Segment.ORC)">
+            <summary>
+            Get all CALLBACKPHONENUMBER Records from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCALLBACKPHONENUMBER(NHapi.Model.V21.Segment.ORC)">
+            <summary>
+            Add a new ORC to CALLBACKPHONENUMBER
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRESULTSCOPIESTORecords(NHapi.Model.V21.Segment.ORO)">
             <summary>
             Get RESULTSCOPIESTO Records from ORO
@@ -962,6 +767,321 @@
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHONENUMBERBUSINESS(NHapi.Model.V21.Segment.PID)">
             <summary>
             Add a new PID to PHONENUMBERBUSINESS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetSETIDPROCEDURERecords(NHapi.Model.V21.Segment.PR1)">
+            <summary>
+            Get SETIDPROCEDURE Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllSETIDPROCEDURERecords(NHapi.Model.V21.Segment.PR1)">
+            <summary>
+            Get all SETIDPROCEDURE Records from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddSETIDPROCEDURE(NHapi.Model.V21.Segment.PR1)">
+            <summary>
+            Add a new PR1 to SETIDPROCEDURE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONSULTINGDOCTORRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get CONSULTINGDOCTOR Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONSULTINGDOCTORRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all CONSULTINGDOCTOR Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONSULTINGDOCTOR(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to CONSULTINGDOCTOR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetFINANCIALCLASSRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get FINANCIALCLASS Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllFINANCIALCLASSRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all FINANCIALCLASS Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddFINANCIALCLASS(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to FINANCIALCLASS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTCODERecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get CONTRACTCODE Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTCODERecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all CONTRACTCODE Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTCODE(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to CONTRACTCODE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTEFFECTIVEDATERecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get CONTRACTEFFECTIVEDATE Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTEFFECTIVEDATERecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all CONTRACTEFFECTIVEDATE Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTEFFECTIVEDATE(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to CONTRACTEFFECTIVEDATE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTAMOUNTRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get CONTRACTAMOUNT Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTAMOUNTRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all CONTRACTAMOUNT Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTAMOUNT(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to CONTRACTAMOUNT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTPERIODRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get CONTRACTPERIOD Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONTRACTPERIODRecords(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Get all CONTRACTPERIOD Records from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTPERIOD(NHapi.Model.V21.Segment.PV1)">
+            <summary>
+            Add a new PV1 to CONTRACTPERIOD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHOSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get WHOSUBJECTFILTER Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHOSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get all WHOSUBJECTFILTER Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHOSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Add a new QRD to WHOSUBJECTFILTER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get WHATSUBJECTFILTER Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get all WHATSUBJECTFILTER Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Add a new QRD to WHATSUBJECTFILTER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDEPARTMENTDATACODERecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get WHATDEPARTMENTDATACODE Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATDEPARTMENTDATACODERecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get all WHATDEPARTMENTDATACODE Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDEPARTMENTDATACODE(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Add a new QRD to WHATDEPARTMENTDATACODE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDATACODEVALUEQUALRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get WHATDATACODEVALUEQUAL Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATDATACODEVALUEQUALRecords(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Get all WHATDATACODEVALUEQUAL Records from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDATACODEVALUEQUAL(NHapi.Model.V21.Segment.QRD)">
+            <summary>
+            Add a new QRD to WHATDATACODEVALUEQUAL
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHERESUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get WHERESUBJECTFILTER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHERESUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get all WHERESUBJECTFILTER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHERESUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Add a new QRF to WHERESUBJECTFILTER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get WHATUSERQUALIFIER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get all WHATUSERQUALIFIER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATUSERQUALIFIER(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Add a new QRF to WHATUSERQUALIFIER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOTHERQRYSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get OTHERQRYSUBJECTFILTER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllOTHERQRYSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Get all OTHERQRYSUBJECTFILTER Records from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOTHERQRYSUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
+            <summary>
+            Add a new QRF to OTHERQRYSUBJECTFILTER
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOMPONENTDRUGIDSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get COMPONENTDRUGIDS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCOMPONENTDRUGIDSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get all COMPONENTDRUGIDS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOMPONENTDRUGIDS(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Add a new RX1 to COMPONENTDRUGIDS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPHARMACYINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get PHARMACYINSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllPHARMACYINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get all PHARMACYINSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHARMACYINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Add a new RX1 to PHARMACYINSTRUCTIONS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPATIENTINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get PATIENTINSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllPATIENTINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get all PATIENTINSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPATIENTINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Add a new RX1 to PATIENTINSTRUCTIONS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get INSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Get all INSTRUCTIONS Records from RX1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
+            <summary>
+            Add a new RX1 to INSTRUCTIONS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONDITIONCODERecords(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get CONDITIONCODE Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONDITIONCODERecords(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get all CONDITIONCODE Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONDITIONCODE(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Add a new UB1 to CONDITIONCODE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetVALUEAMOUNTCODERecords(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get VALUEAMOUNTCODE Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllVALUEAMOUNTCODERecords(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get all VALUEAMOUNTCODE Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddVALUEAMOUNTCODE(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Add a new UB1 to VALUEAMOUNTCODE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOCCURRENCE2832Records(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get OCCURRENCE2832 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllOCCURRENCE2832Records(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Get all OCCURRENCE2832 Records from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOCCURRENCE2832(NHapi.Model.V21.Segment.UB1)">
+            <summary>
+            Add a new UB1 to OCCURRENCE2832
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHOSUBJECTDEFINITIONRecords(NHapi.Model.V21.Segment.URD)">
@@ -1024,66 +1144,6 @@
             Add a new URD to RUDISPLAYPRINTLOCATIONS
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetNEXTOFKINPHONENUMBERRecords(NHapi.Model.V21.Segment.NK1)">
-            <summary>
-            Get NEXTOFKINPHONENUMBER Records from NK1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllNEXTOFKINPHONENUMBERRecords(NHapi.Model.V21.Segment.NK1)">
-            <summary>
-            Get all NEXTOFKINPHONENUMBER Records from NK1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddNEXTOFKINPHONENUMBER(NHapi.Model.V21.Segment.NK1)">
-            <summary>
-            Add a new NK1 to NEXTOFKINPHONENUMBER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONDITIONCODERecords(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get CONDITIONCODE Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllCONDITIONCODERecords(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get all CONDITIONCODE Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONDITIONCODE(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Add a new UB1 to CONDITIONCODE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetVALUEAMOUNTCODERecords(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get VALUEAMOUNTCODE Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllVALUEAMOUNTCODERecords(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get all VALUEAMOUNTCODE Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddVALUEAMOUNTCODE(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Add a new UB1 to VALUEAMOUNTCODE
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOCCURRENCE2832Records(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get OCCURRENCE2832 Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllOCCURRENCE2832Records(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Get all OCCURRENCE2832 Records from UB1
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOCCURRENCE2832(NHapi.Model.V21.Segment.UB1)">
-            <summary>
-            Add a new UB1 to OCCURRENCE2832
-            </summary>
-        </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHERESUBJECTDEFINITIONRecords(NHapi.Model.V21.Segment.URS)">
             <summary>
             Get RUWHERESUBJECTDEFINITION Records from URS
@@ -1127,66 +1187,6 @@
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUOTHERRESULTSSUBJECTDEFINI(NHapi.Model.V21.Segment.URS)">
             <summary>
             Add a new URS to RUOTHERRESULTSSUBJECTDEFINI
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHERESUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get WHERESUBJECTFILTER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHERESUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get all WHERESUBJECTFILTER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHERESUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Add a new QRF to WHERESUBJECTFILTER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get WHATUSERQUALIFIER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get all WHATUSERQUALIFIER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATUSERQUALIFIER(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Add a new QRF to WHATUSERQUALIFIER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOTHERQRYSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get OTHERQRYSUBJECTFILTER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllOTHERQRYSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Get all OTHERQRYSUBJECTFILTER Records from QRF
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOTHERQRYSUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
-            <summary>
-            Add a new QRF to OTHERQRYSUBJECTFILTER
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetERRORCODEANDLOCATIONRecords(NHapi.Model.V21.Segment.ERR)">
-            <summary>
-            Get ERRORCODEANDLOCATION Records from ERR
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetAllERRORCODEANDLOCATIONRecords(NHapi.Model.V21.Segment.ERR)">
-            <summary>
-            Get all ERRORCODEANDLOCATION Records from ERR
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddERRORCODEANDLOCATION(NHapi.Model.V21.Segment.ERR)">
-            <summary>
-            Add a new ERR to ERRORCODEANDLOCATION
             </summary>
         </member>
     </members>

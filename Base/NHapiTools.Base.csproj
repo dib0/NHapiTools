@@ -32,17 +32,17 @@
     <DocumentationFile>bin\Release\NHapiTools.Base.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NHapi.Base, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+    <Reference Include="NHapi.Base, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Base.dll</HintPath>
+      <HintPath>..\References\NHapi.Base.dll</HintPath>
     </Reference>
-    <Reference Include="NHapi.Model.V21, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+    <Reference Include="NHapi.Model.V21, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V21.dll</HintPath>
+      <HintPath>..\References\NHapi.Model.V21.dll</HintPath>
     </Reference>
-    <Reference Include="NHapi.Model.V22, Version=2.4.0.0, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+    <Reference Include="NHapi.Model.V22, Version=2.4.0.11, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.4.0.10\lib\NHapi.Model.V22.dll</HintPath>
+      <HintPath>..\References\NHapi.Model.V22.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -96,7 +96,9 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y $(TargetDir)*Tools.* $(TargetDir)\..\..\..\BuildResult</PostBuildEvent>
+    <PostBuildEvent>del /f $(TargetDir)\..\..\..\BuildResult\*.*
+xcopy /Y $(TargetDir)*Tools.* $(TargetDir)\..\..\..\BuildResult
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,18 +2,18 @@
 <package >
   <metadata>
     <id>NHapiTools</id>
-    <version>1.6.0.1</version>
+    <version>1.6.0.3</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
 	<licenseUrl>https://github.com/dib0/NHapiTools/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/dib0/NHapiTools</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The NHapiTools are tools that will make using NHapi (the open source .Net HL7 implementation) easier. NHapi has a steep learning curve and not everything works as easy as it should. NHapiTools aims to improve that without tampering with NHapi itselves.</description>
-    <releaseNotes>Fixed bug in ERR segment. Added custom ACK message classes for HL7 V2.2 and V2.1 since these seem to be missing from NHapi.</releaseNotes>
+    <releaseNotes>Updated references to latest versions and corrected the references in the solution.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
     <dependencies>
-      <dependency id="nHapi" version="2.4.0.10" />
+      <dependency id="nHapi" version="2.4.0.11" />
     </dependencies>
   </metadata>
   <files>

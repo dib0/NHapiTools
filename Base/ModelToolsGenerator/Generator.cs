@@ -170,7 +170,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
         private void SaveMessagesFile()
         {
             string filename = outputDir.EndsWith("\\")?outputDir : outputDir + "\\";
-            filename += version + "\\Message";
+            filename += "Model." + version + "\\Message";
             if (!Directory.Exists(filename))
                 Directory.CreateDirectory(filename);
             filename += "\\MessageExtensions.cs";
@@ -286,7 +286,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
         private void SaveSegmentsFile()
         {
             string filename = outputDir.EndsWith("\\") ? outputDir : outputDir + "\\";
-            filename += version + "\\Segment";
+            filename += "Model." + version + "\\Segment";
             if (!Directory.Exists(filename))
                 Directory.CreateDirectory(filename);
             filename += "\\SegmentExtensions.cs";
@@ -402,7 +402,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
         private void SaveGroupFile()
         {
             string filename = outputDir.EndsWith("\\") ? outputDir : outputDir + "\\";
-            filename += version + "\\Group";
+            filename += "Model." + version + "\\Group";
             if (!Directory.Exists(filename))
                 Directory.CreateDirectory(filename);
             filename += "\\GroupExtensions.cs";
