@@ -233,17 +233,3 @@ GenericMessageWrapper gcw = im as GenericMessageWrapper;
 if (gcw != null)
     IMessage originalMessage = gcw.Unwrap();
 ```
-
-****
-
-##About The Author
-Bas van den Berg lives in The Netherlands. He studied Information Technology (bachelor degree) and Theology (master degree, specialized in pastoral counseling). He's working as a domain architect (enterprise architecture specifically for one of the divisions of the company) with the largest insurance company in the Netherlands. Besides being a coach and pastoral counselor in his spare time he loves to enable people to work together as efficiently as possible. Creating solutions for business problems and developing business strategy is a part of that.<br />
-Bas has experience with quite a lot of different technologies, like Linux, Windows, AS/400 and Web, and programming languages, like Java, C#, C++, Cool:plex, classic ASP, Coldfusion and Delphi (among others). He's a big fan of open source and worldwide standards.
-
-##Connect with Me Online
-Twitter:  http://twitter.com/Division_by_Zer<br />
-LinkedIn:  http://nl.linkedin.com/in/basvdb<br />
-Smashwords:  https://www.smashwords.com/profile/view/BvdBerg<br />
-My blog: http://www.dib0.nl
-
-*(C)opyright 2016, Division by Zero*
