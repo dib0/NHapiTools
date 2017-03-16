@@ -1160,6 +1160,216 @@ namespace NHapiTools.Model.V25.Segment
         }
 
         /// <summary>
+        /// Get ConsentText Records from CON
+        /// </summary>
+        public static IEnumerable GetConsentTextRecords(this CON message)
+        {
+            object[] result = message.GetRecords("ConsentTextRepetitionsUsed", "GetConsentText");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ConsentText Records from CON
+        /// </summary>
+        public static List<FT> GetAllConsentTextRecords(this CON message)
+        {
+            return message.GetAllRecords<FT>("ConsentTextRepetitionsUsed", "GetConsentText");
+        }
+
+        /// <summary>
+        /// Add a new CON to ConsentText
+        /// </summary>
+        public static FT AddConsentText(this CON message)
+        {
+            return message.GetConsentText(message.ConsentTextRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SubjectSpecificConsentText Records from CON
+        /// </summary>
+        public static IEnumerable GetSubjectSpecificConsentTextRecords(this CON message)
+        {
+            object[] result = message.GetRecords("SubjectSpecificConsentTextRepetitionsUsed", "GetSubjectSpecificConsentText");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SubjectSpecificConsentText Records from CON
+        /// </summary>
+        public static List<FT> GetAllSubjectSpecificConsentTextRecords(this CON message)
+        {
+            return message.GetAllRecords<FT>("SubjectSpecificConsentTextRepetitionsUsed", "GetSubjectSpecificConsentText");
+        }
+
+        /// <summary>
+        /// Add a new CON to SubjectSpecificConsentText
+        /// </summary>
+        public static FT AddSubjectSpecificConsentText(this CON message)
+        {
+            return message.GetSubjectSpecificConsentText(message.SubjectSpecificConsentTextRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ConsentBackground Records from CON
+        /// </summary>
+        public static IEnumerable GetConsentBackgroundRecords(this CON message)
+        {
+            object[] result = message.GetRecords("ConsentBackgroundRepetitionsUsed", "GetConsentBackground");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ConsentBackground Records from CON
+        /// </summary>
+        public static List<FT> GetAllConsentBackgroundRecords(this CON message)
+        {
+            return message.GetAllRecords<FT>("ConsentBackgroundRepetitionsUsed", "GetConsentBackground");
+        }
+
+        /// <summary>
+        /// Add a new CON to ConsentBackground
+        /// </summary>
+        public static FT AddConsentBackground(this CON message)
+        {
+            return message.GetConsentBackground(message.ConsentBackgroundRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SubjectSpecificConsentBackground Records from CON
+        /// </summary>
+        public static IEnumerable GetSubjectSpecificConsentBackgroundRecords(this CON message)
+        {
+            object[] result = message.GetRecords("SubjectSpecificConsentBackgroundRepetitionsUsed", "GetSubjectSpecificConsentBackground");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SubjectSpecificConsentBackground Records from CON
+        /// </summary>
+        public static List<FT> GetAllSubjectSpecificConsentBackgroundRecords(this CON message)
+        {
+            return message.GetAllRecords<FT>("SubjectSpecificConsentBackgroundRepetitionsUsed", "GetSubjectSpecificConsentBackground");
+        }
+
+        /// <summary>
+        /// Add a new CON to SubjectSpecificConsentBackground
+        /// </summary>
+        public static FT AddSubjectSpecificConsentBackground(this CON message)
+        {
+            return message.GetSubjectSpecificConsentBackground(message.SubjectSpecificConsentBackgroundRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ConsenterImposedLimitations Records from CON
+        /// </summary>
+        public static IEnumerable GetConsenterImposedLimitationsRecords(this CON message)
+        {
+            object[] result = message.GetRecords("ConsenterImposedLimitationsRepetitionsUsed", "GetConsenterImposedLimitations");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ConsenterImposedLimitations Records from CON
+        /// </summary>
+        public static List<FT> GetAllConsenterImposedLimitationsRecords(this CON message)
+        {
+            return message.GetAllRecords<FT>("ConsenterImposedLimitationsRepetitionsUsed", "GetConsenterImposedLimitations");
+        }
+
+        /// <summary>
+        /// Add a new CON to ConsenterImposedLimitations
+        /// </summary>
+        public static FT AddConsenterImposedLimitations(this CON message)
+        {
+            return message.GetConsenterImposedLimitations(message.ConsenterImposedLimitationsRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ConsenterID Records from CON
+        /// </summary>
+        public static IEnumerable GetConsenterIDRecords(this CON message)
+        {
+            object[] result = message.GetRecords("ConsenterIDRepetitionsUsed", "GetConsenterID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ConsenterID Records from CON
+        /// </summary>
+        public static List<XPN> GetAllConsenterIDRecords(this CON message)
+        {
+            return message.GetAllRecords<XPN>("ConsenterIDRepetitionsUsed", "GetConsenterID");
+        }
+
+        /// <summary>
+        /// Add a new CON to ConsenterID
+        /// </summary>
+        public static XPN AddConsenterID(this CON message)
+        {
+            return message.GetConsenterID(message.ConsenterIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RelationshipToSubjectTable Records from CON
+        /// </summary>
+        public static IEnumerable GetRelationshipToSubjectTableRecords(this CON message)
+        {
+            object[] result = message.GetRecords("RelationshipToSubjectTableRepetitionsUsed", "GetRelationshipToSubjectTable");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RelationshipToSubjectTable Records from CON
+        /// </summary>
+        public static List<IS> GetAllRelationshipToSubjectTableRecords(this CON message)
+        {
+            return message.GetAllRecords<IS>("RelationshipToSubjectTableRepetitionsUsed", "GetRelationshipToSubjectTable");
+        }
+
+        /// <summary>
+        /// Add a new CON to RelationshipToSubjectTable
+        /// </summary>
+        public static IS AddRelationshipToSubjectTable(this CON message)
+        {
+            return message.GetRelationshipToSubjectTable(message.RelationshipToSubjectTableRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PersonPerformingStudyRegistration Records from CSR
         /// </summary>
         public static IEnumerable GetPersonPerformingStudyRegistrationRecords(this CSR message)

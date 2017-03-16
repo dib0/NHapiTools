@@ -2870,6 +2870,126 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
+        /// Get LivingDependency Records from NK1
+        /// </summary>
+        public static IEnumerable GetLivingDependencyRecords(this NK1 message)
+        {
+            object[] result = message.GetRecords("LivingDependencyRepetitionsUsed", "GetLivingDependency");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LivingDependency Records from NK1
+        /// </summary>
+        public static List<IS> GetAllLivingDependencyRecords(this NK1 message)
+        {
+            return message.GetAllRecords<IS>("LivingDependencyRepetitionsUsed", "GetLivingDependency");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to LivingDependency
+        /// </summary>
+        public static IS AddLivingDependency(this NK1 message)
+        {
+            return message.GetLivingDependency(message.LivingDependencyRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AmbulatoryStatus Records from NK1
+        /// </summary>
+        public static IEnumerable GetAmbulatoryStatusRecords(this NK1 message)
+        {
+            object[] result = message.GetRecords("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AmbulatoryStatus Records from NK1
+        /// </summary>
+        public static List<IS> GetAllAmbulatoryStatusRecords(this NK1 message)
+        {
+            return message.GetAllRecords<IS>("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this NK1 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get Citizenship Records from NK1
+        /// </summary>
+        public static IEnumerable GetCitizenshipRecords(this NK1 message)
+        {
+            object[] result = message.GetRecords("CitizenshipRepetitionsUsed", "GetCitizenship");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all Citizenship Records from NK1
+        /// </summary>
+        public static List<IS> GetAllCitizenshipRecords(this NK1 message)
+        {
+            return message.GetAllRecords<IS>("CitizenshipRepetitionsUsed", "GetCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to Citizenship
+        /// </summary>
+        public static IS AddCitizenship(this NK1 message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ContactReason Records from NK1
+        /// </summary>
+        public static IEnumerable GetContactReasonRecords(this NK1 message)
+        {
+            object[] result = message.GetRecords("ContactReasonRepetitionsUsed", "GetContactReason");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ContactReason Records from NK1
+        /// </summary>
+        public static List<CE> GetAllContactReasonRecords(this NK1 message)
+        {
+            return message.GetAllRecords<CE>("ContactReasonRepetitionsUsed", "GetContactReason");
+        }
+
+        /// <summary>
+        /// Add a new NK1 to ContactReason
+        /// </summary>
+        public static CE AddContactReason(this NK1 message)
+        {
+            return message.GetContactReason(message.ContactReasonRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ContactPersonSName Records from NK1
         /// </summary>
         public static IEnumerable GetContactPersonSNameRecords(this NK1 message)
@@ -3017,36 +3137,6 @@ namespace NHapiTools.Model.V23.Segment
         public static FT AddComment(this NTE message)
         {
             return message.GetComment(message.CommentRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get PlacerOrderNumber Records from OBR
-        /// </summary>
-        public static IEnumerable GetPlacerOrderNumberRecords(this OBR message)
-        {
-            object[] result = message.GetRecords("PlacerOrderNumberRepetitionsUsed", "GetPlacerOrderNumber");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all PlacerOrderNumber Records from OBR
-        /// </summary>
-        public static List<EI> GetAllPlacerOrderNumberRecords(this OBR message)
-        {
-            return message.GetAllRecords<EI>("PlacerOrderNumberRepetitionsUsed", "GetPlacerOrderNumber");
-        }
-
-        /// <summary>
-        /// Add a new OBR to PlacerOrderNumber
-        /// </summary>
-        public static EI AddPlacerOrderNumber(this OBR message)
-        {
-            return message.GetPlacerOrderNumber(message.PlacerOrderNumberRepetitionsUsed);
         }
 
         /// <summary>
@@ -4130,6 +4220,36 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
+        /// Get LivingDependency Records from PD1
+        /// </summary>
+        public static IEnumerable GetLivingDependencyRecords(this PD1 message)
+        {
+            object[] result = message.GetRecords("LivingDependencyRepetitionsUsed", "GetLivingDependency");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LivingDependency Records from PD1
+        /// </summary>
+        public static List<IS> GetAllLivingDependencyRecords(this PD1 message)
+        {
+            return message.GetAllRecords<IS>("LivingDependencyRepetitionsUsed", "GetLivingDependency");
+        }
+
+        /// <summary>
+        /// Add a new PD1 to LivingDependency
+        /// </summary>
+        public static IS AddLivingDependency(this PD1 message)
+        {
+            return message.GetLivingDependency(message.LivingDependencyRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PatientPrimaryFacility Records from PD1
         /// </summary>
         public static IEnumerable GetPatientPrimaryFacilityRecords(this PD1 message)
@@ -4850,6 +4970,66 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
+        /// Get AlternatePatientID Records from PID
+        /// </summary>
+        public static IEnumerable GetAlternatePatientIDRecords(this PID message)
+        {
+            object[] result = message.GetRecords("AlternatePatientIDRepetitionsUsed", "GetAlternatePatientID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AlternatePatientID Records from PID
+        /// </summary>
+        public static List<CX> GetAllAlternatePatientIDRecords(this PID message)
+        {
+            return message.GetAllRecords<CX>("AlternatePatientIDRepetitionsUsed", "GetAlternatePatientID");
+        }
+
+        /// <summary>
+        /// Add a new PID to AlternatePatientID
+        /// </summary>
+        public static CX AddAlternatePatientID(this PID message)
+        {
+            return message.GetAlternatePatientID(message.AlternatePatientIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PatientName Records from PID
+        /// </summary>
+        public static IEnumerable GetPatientNameRecords(this PID message)
+        {
+            object[] result = message.GetRecords("PatientNameRepetitionsUsed", "GetPatientName");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PatientName Records from PID
+        /// </summary>
+        public static List<XPN> GetAllPatientNameRecords(this PID message)
+        {
+            return message.GetAllRecords<XPN>("PatientNameRepetitionsUsed", "GetPatientName");
+        }
+
+        /// <summary>
+        /// Add a new PID to PatientName
+        /// </summary>
+        public static XPN AddPatientName(this PID message)
+        {
+            return message.GetPatientName(message.PatientNameRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PatientAlias Records from PID
         /// </summary>
         public static IEnumerable GetPatientAliasRecords(this PID message)
@@ -4926,15 +5106,15 @@ namespace NHapiTools.Model.V23.Segment
         /// <summary>
         /// Get all PhoneNumberHome Records from PID
         /// </summary>
-        public static List<TN> GetAllPhoneNumberHomeRecords(this PID message)
+        public static List<XTN> GetAllPhoneNumberHomeRecords(this PID message)
         {
-            return message.GetAllRecords<TN>("PhoneNumberHomeRepetitionsUsed", "GetPhoneNumberHome");
+            return message.GetAllRecords<XTN>("PhoneNumberHomeRepetitionsUsed", "GetPhoneNumberHome");
         }
 
         /// <summary>
         /// Add a new PID to PhoneNumberHome
         /// </summary>
-        public static TN AddPhoneNumberHome(this PID message)
+        public static XTN AddPhoneNumberHome(this PID message)
         {
             return message.GetPhoneNumberHome(message.PhoneNumberHomeRepetitionsUsed);
         }
@@ -4956,25 +5136,25 @@ namespace NHapiTools.Model.V23.Segment
         /// <summary>
         /// Get all PhoneNumberBusiness Records from PID
         /// </summary>
-        public static List<TN> GetAllPhoneNumberBusinessRecords(this PID message)
+        public static List<XTN> GetAllPhoneNumberBusinessRecords(this PID message)
         {
-            return message.GetAllRecords<TN>("PhoneNumberBusinessRepetitionsUsed", "GetPhoneNumberBusiness");
+            return message.GetAllRecords<XTN>("PhoneNumberBusinessRepetitionsUsed", "GetPhoneNumberBusiness");
         }
 
         /// <summary>
         /// Add a new PID to PhoneNumberBusiness
         /// </summary>
-        public static TN AddPhoneNumberBusiness(this PID message)
+        public static XTN AddPhoneNumberBusiness(this PID message)
         {
             return message.GetPhoneNumberBusiness(message.PhoneNumberBusinessRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get MaritalStatus Records from PID
+        /// Get MotherSIdentifier Records from PID
         /// </summary>
-        public static IEnumerable GetMaritalStatusRecords(this PID message)
+        public static IEnumerable GetMotherSIdentifierRecords(this PID message)
         {
-            object[] result = message.GetRecords("MaritalStatusRepetitionsUsed", "GetMaritalStatus");
+            object[] result = message.GetRecords("MotherSIdentifierRepetitionsUsed", "GetMotherSIdentifier");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -4984,19 +5164,49 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
-        /// Get all MaritalStatus Records from PID
+        /// Get all MotherSIdentifier Records from PID
         /// </summary>
-        public static List<IS> GetAllMaritalStatusRecords(this PID message)
+        public static List<CX> GetAllMotherSIdentifierRecords(this PID message)
         {
-            return message.GetAllRecords<IS>("MaritalStatusRepetitionsUsed", "GetMaritalStatus");
+            return message.GetAllRecords<CX>("MotherSIdentifierRepetitionsUsed", "GetMotherSIdentifier");
         }
 
         /// <summary>
-        /// Add a new PID to MaritalStatus
+        /// Add a new PID to MotherSIdentifier
         /// </summary>
-        public static IS AddMaritalStatus(this PID message)
+        public static CX AddMotherSIdentifier(this PID message)
         {
-            return message.GetMaritalStatus(message.MaritalStatusRepetitionsUsed);
+            return message.GetMotherSIdentifier(message.MotherSIdentifierRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get Citizenship Records from PID
+        /// </summary>
+        public static IEnumerable GetCitizenshipRecords(this PID message)
+        {
+            object[] result = message.GetRecords("CitizenshipRepetitionsUsed", "GetCitizenship");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all Citizenship Records from PID
+        /// </summary>
+        public static List<IS> GetAllCitizenshipRecords(this PID message)
+        {
+            return message.GetAllRecords<IS>("CitizenshipRepetitionsUsed", "GetCitizenship");
+        }
+
+        /// <summary>
+        /// Add a new PID to Citizenship
+        /// </summary>
+        public static IS AddCitizenship(this PID message)
+        {
+            return message.GetCitizenship(message.CitizenshipRepetitionsUsed);
         }
 
         /// <summary>
@@ -5630,6 +5840,66 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
+        /// Get AttendingDoctor Records from PV1
+        /// </summary>
+        public static IEnumerable GetAttendingDoctorRecords(this PV1 message)
+        {
+            object[] result = message.GetRecords("AttendingDoctorRepetitionsUsed", "GetAttendingDoctor");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AttendingDoctor Records from PV1
+        /// </summary>
+        public static List<XCN> GetAllAttendingDoctorRecords(this PV1 message)
+        {
+            return message.GetAllRecords<XCN>("AttendingDoctorRepetitionsUsed", "GetAttendingDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to AttendingDoctor
+        /// </summary>
+        public static XCN AddAttendingDoctor(this PV1 message)
+        {
+            return message.GetAttendingDoctor(message.AttendingDoctorRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ReferringDoctor Records from PV1
+        /// </summary>
+        public static IEnumerable GetReferringDoctorRecords(this PV1 message)
+        {
+            object[] result = message.GetRecords("ReferringDoctorRepetitionsUsed", "GetReferringDoctor");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ReferringDoctor Records from PV1
+        /// </summary>
+        public static List<XCN> GetAllReferringDoctorRecords(this PV1 message)
+        {
+            return message.GetAllRecords<XCN>("ReferringDoctorRepetitionsUsed", "GetReferringDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to ReferringDoctor
+        /// </summary>
+        public static XCN AddReferringDoctor(this PV1 message)
+        {
+            return message.GetReferringDoctor(message.ReferringDoctorRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ConsultingDoctor Records from PV1
         /// </summary>
         public static IEnumerable GetConsultingDoctorRecords(this PV1 message)
@@ -5657,6 +5927,66 @@ namespace NHapiTools.Model.V23.Segment
         public static XCN AddConsultingDoctor(this PV1 message)
         {
             return message.GetConsultingDoctor(message.ConsultingDoctorRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AmbulatoryStatus Records from PV1
+        /// </summary>
+        public static IEnumerable GetAmbulatoryStatusRecords(this PV1 message)
+        {
+            object[] result = message.GetRecords("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AmbulatoryStatus Records from PV1
+        /// </summary>
+        public static List<IS> GetAllAmbulatoryStatusRecords(this PV1 message)
+        {
+            return message.GetAllRecords<IS>("AmbulatoryStatusRepetitionsUsed", "GetAmbulatoryStatus");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to AmbulatoryStatus
+        /// </summary>
+        public static IS AddAmbulatoryStatus(this PV1 message)
+        {
+            return message.GetAmbulatoryStatus(message.AmbulatoryStatusRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AdmittingDoctor Records from PV1
+        /// </summary>
+        public static IEnumerable GetAdmittingDoctorRecords(this PV1 message)
+        {
+            object[] result = message.GetRecords("AdmittingDoctorRepetitionsUsed", "GetAdmittingDoctor");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AdmittingDoctor Records from PV1
+        /// </summary>
+        public static List<XCN> GetAllAdmittingDoctorRecords(this PV1 message)
+        {
+            return message.GetAllRecords<XCN>("AdmittingDoctorRepetitionsUsed", "GetAdmittingDoctor");
+        }
+
+        /// <summary>
+        /// Add a new PV1 to AdmittingDoctor
+        /// </summary>
+        public static XCN AddAdmittingDoctor(this PV1 message)
+        {
+            return message.GetAdmittingDoctor(message.AdmittingDoctorRepetitionsUsed);
         }
 
         /// <summary>

@@ -379,6 +379,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADT_A01
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADT_A01 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADT_A01
+        /// </summary>
+        public static List<ADT_A01_PROCEDURE> GetAllPROCEDURERecords(this ADT_A01 message)
+        {
+            return message.GetAllRecords<ADT_A01_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A01 to PROCEDURE
+        /// </summary>
+        public static ADT_A01_PROCEDURE AddPROCEDURE(this ADT_A01 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from ADT_A01
         /// </summary>
         public static IEnumerable GetGT1Records(this ADT_A01 message)
@@ -406,6 +436,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this ADT_A01 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADT_A01
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADT_A01 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADT_A01
+        /// </summary>
+        public static List<ADT_A01_INSURANCE> GetAllINSURANCERecords(this ADT_A01 message)
+        {
+            return message.GetAllRecords<ADT_A01_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A01 to INSURANCE
+        /// </summary>
+        public static ADT_A01_INSURANCE AddINSURANCE(this ADT_A01 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -769,6 +829,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADT_A03
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADT_A03 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADT_A03
+        /// </summary>
+        public static List<ADT_A03_PROCEDURE> GetAllPROCEDURERecords(this ADT_A03 message)
+        {
+            return message.GetAllRecords<ADT_A03_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A03 to PROCEDURE
+        /// </summary>
+        public static ADT_A03_PROCEDURE AddPROCEDURE(this ADT_A03 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBX Records from ADT_A03
         /// </summary>
         public static IEnumerable GetOBXRecords(this ADT_A03 message)
@@ -826,6 +916,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this ADT_A03 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADT_A03
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADT_A03 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADT_A03
+        /// </summary>
+        public static List<ADT_A03_INSURANCE> GetAllINSURANCERecords(this ADT_A03 message)
+        {
+            return message.GetAllRecords<ADT_A03_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A03 to INSURANCE
+        /// </summary>
+        public static ADT_A03_INSURANCE AddINSURANCE(this ADT_A03 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1069,6 +1189,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADT_A05
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADT_A05 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADT_A05
+        /// </summary>
+        public static List<ADT_A05_PROCEDURE> GetAllPROCEDURERecords(this ADT_A05 message)
+        {
+            return message.GetAllRecords<ADT_A05_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A05 to PROCEDURE
+        /// </summary>
+        public static ADT_A05_PROCEDURE AddPROCEDURE(this ADT_A05 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from ADT_A05
         /// </summary>
         public static IEnumerable GetGT1Records(this ADT_A05 message)
@@ -1096,6 +1246,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this ADT_A05 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADT_A05
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADT_A05 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADT_A05
+        /// </summary>
+        public static List<ADT_A05_INSURANCE> GetAllINSURANCERecords(this ADT_A05 message)
+        {
+            return message.GetAllRecords<ADT_A05_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A05 to INSURANCE
+        /// </summary>
+        public static ADT_A05_INSURANCE AddINSURANCE(this ADT_A05 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1339,6 +1519,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADT_A06
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADT_A06 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADT_A06
+        /// </summary>
+        public static List<ADT_A06_PROCEDURE> GetAllPROCEDURERecords(this ADT_A06 message)
+        {
+            return message.GetAllRecords<ADT_A06_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A06 to PROCEDURE
+        /// </summary>
+        public static ADT_A06_PROCEDURE AddPROCEDURE(this ADT_A06 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from ADT_A06
         /// </summary>
         public static IEnumerable GetGT1Records(this ADT_A06 message)
@@ -1366,6 +1576,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this ADT_A06 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADT_A06
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADT_A06 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADT_A06
+        /// </summary>
+        public static List<ADT_A06_INSURANCE> GetAllINSURANCERecords(this ADT_A06 message)
+        {
+            return message.GetAllRecords<ADT_A06_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A06 to INSURANCE
+        /// </summary>
+        public static ADT_A06_INSURANCE AddINSURANCE(this ADT_A06 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1999,6 +2239,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADT_A16
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADT_A16 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADT_A16
+        /// </summary>
+        public static List<ADT_A16_PROCEDURE> GetAllPROCEDURERecords(this ADT_A16 message)
+        {
+            return message.GetAllRecords<ADT_A16_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A16 to PROCEDURE
+        /// </summary>
+        public static ADT_A16_PROCEDURE AddPROCEDURE(this ADT_A16 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from ADT_A16
         /// </summary>
         public static IEnumerable GetGT1Records(this ADT_A16 message)
@@ -2026,6 +2296,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this ADT_A16 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADT_A16
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADT_A16 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADT_A16
+        /// </summary>
+        public static List<ADT_A16_INSURANCE> GetAllINSURANCERecords(this ADT_A16 message)
+        {
+            return message.GetAllRecords<ADT_A16_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADT_A16 to INSURANCE
+        /// </summary>
+        public static ADT_A16_INSURANCE AddINSURANCE(this ADT_A16 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -3469,6 +3769,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from BAR_P10
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this BAR_P10 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from BAR_P10
+        /// </summary>
+        public static List<BAR_P10_PROCEDURE> GetAllPROCEDURERecords(this BAR_P10 message)
+        {
+            return message.GetAllRecords<BAR_P10_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P10 to PROCEDURE
+        /// </summary>
+        public static BAR_P10_PROCEDURE AddPROCEDURE(this BAR_P10 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SFT Records from BAR_P12
         /// </summary>
         public static IEnumerable GetSFTRecords(this BAR_P12 message)
@@ -3526,6 +3856,36 @@ namespace NHapiTools.Model.V251.Message
         public static DG1 AddDG1(this BAR_P12 message)
         {
             return message.GetDG1(message.DG1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROCEDURE Records from BAR_P12
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this BAR_P12 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from BAR_P12
+        /// </summary>
+        public static List<BAR_P12_PROCEDURE> GetAllPROCEDURERecords(this BAR_P12 message)
+        {
+            return message.GetAllRecords<BAR_P12_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P12 to PROCEDURE
+        /// </summary>
+        public static BAR_P12_PROCEDURE AddPROCEDURE(this BAR_P12 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
         }
 
         /// <summary>
@@ -4129,6 +4489,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get COMMON_ORDER Records from DFT_P03
+        /// </summary>
+        public static IEnumerable GetCOMMON_ORDERRecords(this DFT_P03 message)
+        {
+            object[] result = message.GetRecords("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMMON_ORDER Records from DFT_P03
+        /// </summary>
+        public static List<DFT_P03_COMMON_ORDER> GetAllCOMMON_ORDERRecords(this DFT_P03 message)
+        {
+            return message.GetAllRecords<DFT_P03_COMMON_ORDER>("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03 to COMMON_ORDER
+        /// </summary>
+        public static DFT_P03_COMMON_ORDER AddCOMMON_ORDER(this DFT_P03 message)
+        {
+            return message.GetCOMMON_ORDER(message.COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FINANCIAL Records from DFT_P03
         /// </summary>
         public static IEnumerable GetFINANCIALRecords(this DFT_P03 message)
@@ -4216,6 +4606,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this DFT_P03 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from DFT_P03
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this DFT_P03 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from DFT_P03
+        /// </summary>
+        public static List<DFT_P03_INSURANCE> GetAllINSURANCERecords(this DFT_P03 message)
+        {
+            return message.GetAllRecords<DFT_P03_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03 to INSURANCE
+        /// </summary>
+        public static DFT_P03_INSURANCE AddINSURANCE(this DFT_P03 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -4339,6 +4759,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get COMMON_ORDER Records from DFT_P11
+        /// </summary>
+        public static IEnumerable GetCOMMON_ORDERRecords(this DFT_P11 message)
+        {
+            object[] result = message.GetRecords("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMMON_ORDER Records from DFT_P11
+        /// </summary>
+        public static List<DFT_P11_COMMON_ORDER> GetAllCOMMON_ORDERRecords(this DFT_P11 message)
+        {
+            return message.GetAllRecords<DFT_P11_COMMON_ORDER>("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11 to COMMON_ORDER
+        /// </summary>
+        public static DFT_P11_COMMON_ORDER AddCOMMON_ORDER(this DFT_P11 message)
+        {
+            return message.GetCOMMON_ORDER(message.COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DG1 Records from DFT_P11
         /// </summary>
         public static IEnumerable GetDG1Records(this DFT_P11 message)
@@ -4396,6 +4846,36 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this DFT_P11 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from DFT_P11
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this DFT_P11 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from DFT_P11
+        /// </summary>
+        public static List<DFT_P11_INSURANCE> GetAllINSURANCERecords(this DFT_P11 message)
+        {
+            return message.GetAllRecords<DFT_P11_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11 to INSURANCE
+        /// </summary>
+        public static DFT_P11_INSURANCE AddINSURANCE(this DFT_P11 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -5179,6 +5659,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get COMMON_ORDER Records from MDM_T01
+        /// </summary>
+        public static IEnumerable GetCOMMON_ORDERRecords(this MDM_T01 message)
+        {
+            object[] result = message.GetRecords("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMMON_ORDER Records from MDM_T01
+        /// </summary>
+        public static List<MDM_T01_COMMON_ORDER> GetAllCOMMON_ORDERRecords(this MDM_T01 message)
+        {
+            return message.GetAllRecords<MDM_T01_COMMON_ORDER>("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
+        }
+
+        /// <summary>
+        /// Add a new MDM_T01 to COMMON_ORDER
+        /// </summary>
+        public static MDM_T01_COMMON_ORDER AddCOMMON_ORDER(this MDM_T01 message)
+        {
+            return message.GetCOMMON_ORDER(message.COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SFT Records from MDM_T02
         /// </summary>
         public static IEnumerable GetSFTRecords(this MDM_T02 message)
@@ -5209,11 +5719,11 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get OBXNTE Records from MDM_T02
+        /// Get COMMON_ORDER Records from MDM_T02
         /// </summary>
-        public static IEnumerable GetOBXNTERecords(this MDM_T02 message)
+        public static IEnumerable GetCOMMON_ORDERRecords(this MDM_T02 message)
         {
-            object[] result = message.GetRecords("OBXNTERepetitionsUsed", "GetOBXNTE");
+            object[] result = message.GetRecords("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -5223,19 +5733,49 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get all OBXNTE Records from MDM_T02
+        /// Get all COMMON_ORDER Records from MDM_T02
         /// </summary>
-        public static List<MDM_T02_OBXNTE> GetAllOBXNTERecords(this MDM_T02 message)
+        public static List<MDM_T02_COMMON_ORDER> GetAllCOMMON_ORDERRecords(this MDM_T02 message)
         {
-            return message.GetAllRecords<MDM_T02_OBXNTE>("OBXNTERepetitionsUsed", "GetOBXNTE");
+            return message.GetAllRecords<MDM_T02_COMMON_ORDER>("COMMON_ORDERRepetitionsUsed", "GetCOMMON_ORDER");
         }
 
         /// <summary>
-        /// Add a new MDM_T02 to OBXNTE
+        /// Add a new MDM_T02 to COMMON_ORDER
         /// </summary>
-        public static MDM_T02_OBXNTE AddOBXNTE(this MDM_T02 message)
+        public static MDM_T02_COMMON_ORDER AddCOMMON_ORDER(this MDM_T02 message)
         {
-            return message.GetOBXNTE(message.OBXNTERepetitionsUsed);
+            return message.GetCOMMON_ORDER(message.COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from MDM_T02
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this MDM_T02 message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from MDM_T02
+        /// </summary>
+        public static List<MDM_T02_OBSERVATION> GetAllOBSERVATIONRecords(this MDM_T02 message)
+        {
+            return message.GetAllRecords<MDM_T02_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new MDM_T02 to OBSERVATION
+        /// </summary>
+        public static MDM_T02_OBSERVATION AddOBSERVATION(this MDM_T02 message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -7099,6 +7639,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get ORDER_TRAY Records from OMD_O03
+        /// </summary>
+        public static IEnumerable GetORDER_TRAYRecords(this OMD_O03 message)
+        {
+            object[] result = message.GetRecords("ORDER_TRAYRepetitionsUsed", "GetORDER_TRAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_TRAY Records from OMD_O03
+        /// </summary>
+        public static List<OMD_O03_ORDER_TRAY> GetAllORDER_TRAYRecords(this OMD_O03 message)
+        {
+            return message.GetAllRecords<OMD_O03_ORDER_TRAY>("ORDER_TRAYRepetitionsUsed", "GetORDER_TRAY");
+        }
+
+        /// <summary>
+        /// Add a new OMD_O03 to ORDER_TRAY
+        /// </summary>
+        public static OMD_O03_ORDER_TRAY AddORDER_TRAY(this OMD_O03 message)
+        {
+            return message.GetORDER_TRAY(message.ORDER_TRAYRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SFT Records from OMG_O19
         /// </summary>
         public static IEnumerable GetSFTRecords(this OMG_O19 message)
@@ -8029,11 +8599,11 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI Records from ORF_R04
+        /// Get QUERY_RESPONSE Records from ORF_R04
         /// </summary>
-        public static IEnumerable GetPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTIRecords(this ORF_R04 message)
+        public static IEnumerable GetQUERY_RESPONSERecords(this ORF_R04 message)
         {
-            object[] result = message.GetRecords("PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed", "GetPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI");
+            object[] result = message.GetRecords("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -8043,19 +8613,19 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get all PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI Records from ORF_R04
+        /// Get all QUERY_RESPONSE Records from ORF_R04
         /// </summary>
-        public static List<ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI> GetAllPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTIRecords(this ORF_R04 message)
+        public static List<ORF_R04_QUERY_RESPONSE> GetAllQUERY_RESPONSERecords(this ORF_R04 message)
         {
-            return message.GetAllRecords<ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI>("PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed", "GetPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI");
+            return message.GetAllRecords<ORF_R04_QUERY_RESPONSE>("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
         }
 
         /// <summary>
-        /// Add a new ORF_R04 to PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Add a new ORF_R04 to QUERY_RESPONSE
         /// </summary>
-        public static ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI AddPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI(this ORF_R04 message)
+        public static ORF_R04_QUERY_RESPONSE AddQUERY_RESPONSE(this ORF_R04 message)
         {
-            return message.GetPIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI(message.PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed);
+            return message.GetQUERY_RESPONSE(message.QUERY_RESPONSERepetitionsUsed);
         }
 
         /// <summary>
@@ -9049,6 +9619,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get TIMING_QTY Records from ORU_R30
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this ORU_R30 message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from ORU_R30
+        /// </summary>
+        public static List<ORU_R30_TIMING_QTY> GetAllTIMING_QTYRecords(this ORU_R30 message)
+        {
+            return message.GetAllRecords<ORU_R30_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new ORU_R30 to TIMING_QTY
+        /// </summary>
+        public static ORU_R30_TIMING_QTY AddTIMING_QTY(this ORU_R30 message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION Records from ORU_R30
         /// </summary>
         public static IEnumerable GetOBSERVATIONRecords(this ORU_R30 message)
@@ -9349,11 +9949,11 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI Records from OUL_R23
+        /// Get SPECIMEN Records from OUL_R23
         /// </summary>
-        public static IEnumerable GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRecords(this OUL_R23 message)
+        public static IEnumerable GetSPECIMENRecords(this OUL_R23 message)
         {
-            object[] result = message.GetRecords("SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed", "GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI");
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -9363,19 +9963,19 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get all SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI Records from OUL_R23
+        /// Get all SPECIMEN Records from OUL_R23
         /// </summary>
-        public static List<OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI> GetAllSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRecords(this OUL_R23 message)
+        public static List<OUL_R23_SPECIMEN> GetAllSPECIMENRecords(this OUL_R23 message)
         {
-            return message.GetAllRecords<OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI>("SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed", "GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI");
+            return message.GetAllRecords<OUL_R23_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
         }
 
         /// <summary>
-        /// Add a new OUL_R23 to SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
+        /// Add a new OUL_R23 to SPECIMEN
         /// </summary>
-        public static OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI AddSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI(this OUL_R23 message)
+        public static OUL_R23_SPECIMEN AddSPECIMEN(this OUL_R23 message)
         {
-            return message.GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI(message.SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed);
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
         }
 
         /// <summary>
@@ -12679,6 +13279,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get INSURANCE Records from RPA_I08
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this RPA_I08 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from RPA_I08
+        /// </summary>
+        public static List<RPA_I08_INSURANCE> GetAllINSURANCERecords(this RPA_I08 message)
+        {
+            return message.GetAllRecords<RPA_I08_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new RPA_I08 to INSURANCE
+        /// </summary>
+        public static RPA_I08_INSURANCE AddINSURANCE(this RPA_I08 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DG1 Records from RPA_I08
         /// </summary>
         public static IEnumerable GetDG1Records(this RPA_I08 message)
@@ -12796,6 +13426,36 @@ namespace NHapiTools.Model.V251.Message
         public static RPA_I08_PROCEDURE AddPROCEDURE(this RPA_I08 message)
         {
             return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from RPA_I08
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RPA_I08 message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RPA_I08
+        /// </summary>
+        public static List<RPA_I08_OBSERVATION> GetAllOBSERVATIONRecords(this RPA_I08 message)
+        {
+            return message.GetAllRecords<RPA_I08_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RPA_I08 to OBSERVATION
+        /// </summary>
+        public static RPA_I08_OBSERVATION AddOBSERVATION(this RPA_I08 message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -13486,6 +14146,66 @@ namespace NHapiTools.Model.V251.Message
         public static AL1 AddAL1(this RQA_I08 message)
         {
             return message.GetAL1(message.AL1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROCEDURE Records from RQA_I08
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this RQA_I08 message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from RQA_I08
+        /// </summary>
+        public static List<RQA_I08_PROCEDURE> GetAllPROCEDURERecords(this RQA_I08 message)
+        {
+            return message.GetAllRecords<RQA_I08_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new RQA_I08 to PROCEDURE
+        /// </summary>
+        public static RQA_I08_PROCEDURE AddPROCEDURE(this RQA_I08 message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from RQA_I08
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RQA_I08 message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RQA_I08
+        /// </summary>
+        public static List<RQA_I08_OBSERVATION> GetAllOBSERVATIONRecords(this RQA_I08 message)
+        {
+            return message.GetAllRecords<RQA_I08_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RQA_I08 to OBSERVATION
+        /// </summary>
+        public static RQA_I08_OBSERVATION AddOBSERVATION(this RQA_I08 message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -15319,6 +16039,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get PATIENT Records from SIU_S12
+        /// </summary>
+        public static IEnumerable GetPATIENTRecords(this SIU_S12 message)
+        {
+            object[] result = message.GetRecords("PATIENTRepetitionsUsed", "GetPATIENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATIENT Records from SIU_S12
+        /// </summary>
+        public static List<SIU_S12_PATIENT> GetAllPATIENTRecords(this SIU_S12 message)
+        {
+            return message.GetAllRecords<SIU_S12_PATIENT>("PATIENTRepetitionsUsed", "GetPATIENT");
+        }
+
+        /// <summary>
+        /// Add a new SIU_S12 to PATIENT
+        /// </summary>
+        public static SIU_S12_PATIENT AddPATIENT(this SIU_S12 message)
+        {
+            return message.GetPATIENT(message.PATIENTRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RESOURCES Records from SIU_S12
         /// </summary>
         public static IEnumerable GetRESOURCESRecords(this SIU_S12 message)
@@ -15409,6 +16159,36 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get SCHEDULE Records from SQR_S25
+        /// </summary>
+        public static IEnumerable GetSCHEDULERecords(this SQR_S25 message)
+        {
+            object[] result = message.GetRecords("SCHEDULERepetitionsUsed", "GetSCHEDULE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SCHEDULE Records from SQR_S25
+        /// </summary>
+        public static List<SQR_S25_SCHEDULE> GetAllSCHEDULERecords(this SQR_S25 message)
+        {
+            return message.GetAllRecords<SQR_S25_SCHEDULE>("SCHEDULERepetitionsUsed", "GetSCHEDULE");
+        }
+
+        /// <summary>
+        /// Add a new SQR_S25 to SCHEDULE
+        /// </summary>
+        public static SQR_S25_SCHEDULE AddSCHEDULE(this SQR_S25 message)
+        {
+            return message.GetSCHEDULE(message.SCHEDULERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from SRM_S01
         /// </summary>
         public static IEnumerable GetNTERecords(this SRM_S01 message)
@@ -15436,6 +16216,36 @@ namespace NHapiTools.Model.V251.Message
         public static NTE AddNTE(this SRM_S01 message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATIENT Records from SRM_S01
+        /// </summary>
+        public static IEnumerable GetPATIENTRecords(this SRM_S01 message)
+        {
+            object[] result = message.GetRecords("PATIENTRepetitionsUsed", "GetPATIENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATIENT Records from SRM_S01
+        /// </summary>
+        public static List<SRM_S01_PATIENT> GetAllPATIENTRecords(this SRM_S01 message)
+        {
+            return message.GetAllRecords<SRM_S01_PATIENT>("PATIENTRepetitionsUsed", "GetPATIENT");
+        }
+
+        /// <summary>
+        /// Add a new SRM_S01 to PATIENT
+        /// </summary>
+        public static SRM_S01_PATIENT AddPATIENT(this SRM_S01 message)
+        {
+            return message.GetPATIENT(message.PATIENTRepetitionsUsed);
         }
 
         /// <summary>
@@ -15619,11 +16429,11 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get FACPSHPDCPSHFACPDCNTEED Records from SUR_P09
+        /// Get FACILITY Records from SUR_P09
         /// </summary>
-        public static IEnumerable GetFACPSHPDCPSHFACPDCNTEEDRecords(this SUR_P09 message)
+        public static IEnumerable GetFACILITYRecords(this SUR_P09 message)
         {
-            object[] result = message.GetRecords("FACPSHPDCPSHFACPDCNTEEDRepetitionsUsed", "GetFACPSHPDCPSHFACPDCNTEED");
+            object[] result = message.GetRecords("FACILITYRepetitionsUsed", "GetFACILITY");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -15633,19 +16443,19 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
-        /// Get all FACPSHPDCPSHFACPDCNTEED Records from SUR_P09
+        /// Get all FACILITY Records from SUR_P09
         /// </summary>
-        public static List<SUR_P09_FACPSHPDCPSHFACPDCNTEED> GetAllFACPSHPDCPSHFACPDCNTEEDRecords(this SUR_P09 message)
+        public static List<SUR_P09_FACILITY> GetAllFACILITYRecords(this SUR_P09 message)
         {
-            return message.GetAllRecords<SUR_P09_FACPSHPDCPSHFACPDCNTEED>("FACPSHPDCPSHFACPDCNTEEDRepetitionsUsed", "GetFACPSHPDCPSHFACPDCNTEED");
+            return message.GetAllRecords<SUR_P09_FACILITY>("FACILITYRepetitionsUsed", "GetFACILITY");
         }
 
         /// <summary>
-        /// Add a new SUR_P09 to FACPSHPDCPSHFACPDCNTEED
+        /// Add a new SUR_P09 to FACILITY
         /// </summary>
-        public static SUR_P09_FACPSHPDCPSHFACPDCNTEED AddFACPSHPDCPSHFACPDCNTEED(this SUR_P09 message)
+        public static SUR_P09_FACILITY AddFACILITY(this SUR_P09 message)
         {
-            return message.GetFACPSHPDCPSHFACPDCNTEED(message.FACPSHPDCPSHFACPDCNTEEDRepetitionsUsed);
+            return message.GetFACILITY(message.FACILITYRepetitionsUsed);
         }
 
         /// <summary>
@@ -15979,6 +16789,66 @@ namespace NHapiTools.Model.V251.Message
         }
 
         /// <summary>
+        /// Get INSURANCE Records from VXR_V03
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this VXR_V03 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from VXR_V03
+        /// </summary>
+        public static List<VXR_V03_INSURANCE> GetAllINSURANCERecords(this VXR_V03 message)
+        {
+            return message.GetAllRecords<VXR_V03_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new VXR_V03 to INSURANCE
+        /// </summary>
+        public static VXR_V03_INSURANCE AddINSURANCE(this VXR_V03 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from VXR_V03
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this VXR_V03 message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from VXR_V03
+        /// </summary>
+        public static List<VXR_V03_ORDER> GetAllORDERRecords(this VXR_V03 message)
+        {
+            return message.GetAllRecords<VXR_V03_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new VXR_V03 to ORDER
+        /// </summary>
+        public static VXR_V03_ORDER AddORDER(this VXR_V03 message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SFT Records from VXU_V04
         /// </summary>
         public static IEnumerable GetSFTRecords(this VXU_V04 message)
@@ -16066,6 +16936,66 @@ namespace NHapiTools.Model.V251.Message
         public static GT1 AddGT1(this VXU_V04 message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from VXU_V04
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this VXU_V04 message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from VXU_V04
+        /// </summary>
+        public static List<VXU_V04_INSURANCE> GetAllINSURANCERecords(this VXU_V04 message)
+        {
+            return message.GetAllRecords<VXU_V04_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new VXU_V04 to INSURANCE
+        /// </summary>
+        public static VXU_V04_INSURANCE AddINSURANCE(this VXU_V04 message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from VXU_V04
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this VXU_V04 message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from VXU_V04
+        /// </summary>
+        public static List<VXU_V04_ORDER> GetAllORDERRecords(this VXU_V04 message)
+        {
+            return message.GetAllRecords<VXU_V04_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new VXU_V04 to ORDER
+        /// </summary>
+        public static VXU_V04_ORDER AddORDER(this VXU_V04 message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>

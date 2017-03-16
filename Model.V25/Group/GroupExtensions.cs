@@ -3860,6 +3860,36 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
+        /// Get NTE Records from MDM_T02_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetNTERecords(this MDM_T02_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from MDM_T02_OBSERVATION
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this MDM_T02_OBSERVATION message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new MDM_T02_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this MDM_T02_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from MDM_T02_OBXNTE
         /// </summary>
         public static IEnumerable GetNTERecords(this MDM_T02_OBXNTE message)
@@ -6890,11 +6920,11 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TIIMING Records from OML_O21_ORDER
+        /// Get TIMING Records from OML_O21_ORDER
         /// </summary>
-        public static IEnumerable GetTIIMINGRecords(this OML_O21_ORDER message)
+        public static IEnumerable GetTIMINGRecords(this OML_O21_ORDER message)
         {
-            object[] result = message.GetRecords("TIIMINGRepetitionsUsed", "GetTIIMING");
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -6904,19 +6934,19 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TIIMING Records from OML_O21_ORDER
+        /// Get all TIMING Records from OML_O21_ORDER
         /// </summary>
-        public static List<OML_O21_TIIMING> GetAllTIIMINGRecords(this OML_O21_ORDER message)
+        public static List<OML_O21_TIMING> GetAllTIMINGRecords(this OML_O21_ORDER message)
         {
-            return message.GetAllRecords<OML_O21_TIIMING>("TIIMINGRepetitionsUsed", "GetTIIMING");
+            return message.GetAllRecords<OML_O21_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
         }
 
         /// <summary>
-        /// Add a new OML_O21_ORDER to TIIMING
+        /// Add a new OML_O21_ORDER to TIMING
         /// </summary>
-        public static OML_O21_TIIMING AddTIIMING(this OML_O21_ORDER message)
+        public static OML_O21_TIMING AddTIMING(this OML_O21_ORDER message)
         {
-            return message.GetTIIMING(message.TIIMINGRepetitionsUsed);
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -7310,9 +7340,9 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TQ2 Records from OML_O21_TIIMING
+        /// Get TQ2 Records from OML_O21_TIMING
         /// </summary>
-        public static IEnumerable GetTQ2Records(this OML_O21_TIIMING message)
+        public static IEnumerable GetTQ2Records(this OML_O21_TIMING message)
         {
             object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
 
@@ -7324,17 +7354,17 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TQ2 Records from OML_O21_TIIMING
+        /// Get all TQ2 Records from OML_O21_TIMING
         /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this OML_O21_TIIMING message)
+        public static List<TQ2> GetAllTQ2Records(this OML_O21_TIMING message)
         {
             return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
         }
 
         /// <summary>
-        /// Add a new OML_O21_TIIMING to TQ2
+        /// Add a new OML_O21_TIMING to TQ2
         /// </summary>
-        public static TQ2 AddTQ2(this OML_O21_TIIMING message)
+        public static TQ2 AddTQ2(this OML_O21_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
         }
@@ -7550,11 +7580,11 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TIIMING Records from OML_O33_ORDER
+        /// Get TIMING Records from OML_O33_ORDER
         /// </summary>
-        public static IEnumerable GetTIIMINGRecords(this OML_O33_ORDER message)
+        public static IEnumerable GetTIMINGRecords(this OML_O33_ORDER message)
         {
-            object[] result = message.GetRecords("TIIMINGRepetitionsUsed", "GetTIIMING");
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -7564,19 +7594,19 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TIIMING Records from OML_O33_ORDER
+        /// Get all TIMING Records from OML_O33_ORDER
         /// </summary>
-        public static List<OML_O33_TIIMING> GetAllTIIMINGRecords(this OML_O33_ORDER message)
+        public static List<OML_O33_TIMING> GetAllTIMINGRecords(this OML_O33_ORDER message)
         {
-            return message.GetAllRecords<OML_O33_TIIMING>("TIIMINGRepetitionsUsed", "GetTIIMING");
+            return message.GetAllRecords<OML_O33_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
         }
 
         /// <summary>
-        /// Add a new OML_O33_ORDER to TIIMING
+        /// Add a new OML_O33_ORDER to TIMING
         /// </summary>
-        public static OML_O33_TIIMING AddTIIMING(this OML_O33_ORDER message)
+        public static OML_O33_TIMING AddTIMING(this OML_O33_ORDER message)
         {
-            return message.GetTIIMING(message.TIIMINGRepetitionsUsed);
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8000,9 +8030,9 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TQ2 Records from OML_O33_TIIMING
+        /// Get TQ2 Records from OML_O33_TIMING
         /// </summary>
-        public static IEnumerable GetTQ2Records(this OML_O33_TIIMING message)
+        public static IEnumerable GetTQ2Records(this OML_O33_TIMING message)
         {
             object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
 
@@ -8014,17 +8044,17 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TQ2 Records from OML_O33_TIIMING
+        /// Get all TQ2 Records from OML_O33_TIMING
         /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this OML_O33_TIIMING message)
+        public static List<TQ2> GetAllTQ2Records(this OML_O33_TIMING message)
         {
             return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
         }
 
         /// <summary>
-        /// Add a new OML_O33_TIIMING to TQ2
+        /// Add a new OML_O33_TIMING to TQ2
         /// </summary>
-        public static TQ2 AddTQ2(this OML_O33_TIIMING message)
+        public static TQ2 AddTQ2(this OML_O33_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
         }
@@ -8240,11 +8270,11 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TIIMING Records from OML_O35_ORDER
+        /// Get TIMING Records from OML_O35_ORDER
         /// </summary>
-        public static IEnumerable GetTIIMINGRecords(this OML_O35_ORDER message)
+        public static IEnumerable GetTIMINGRecords(this OML_O35_ORDER message)
         {
-            object[] result = message.GetRecords("TIIMINGRepetitionsUsed", "GetTIIMING");
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -8254,19 +8284,19 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TIIMING Records from OML_O35_ORDER
+        /// Get all TIMING Records from OML_O35_ORDER
         /// </summary>
-        public static List<OML_O35_TIIMING> GetAllTIIMINGRecords(this OML_O35_ORDER message)
+        public static List<OML_O35_TIMING> GetAllTIMINGRecords(this OML_O35_ORDER message)
         {
-            return message.GetAllRecords<OML_O35_TIIMING>("TIIMINGRepetitionsUsed", "GetTIIMING");
+            return message.GetAllRecords<OML_O35_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
         }
 
         /// <summary>
-        /// Add a new OML_O35_ORDER to TIIMING
+        /// Add a new OML_O35_ORDER to TIMING
         /// </summary>
-        public static OML_O35_TIIMING AddTIIMING(this OML_O35_ORDER message)
+        public static OML_O35_TIMING AddTIMING(this OML_O35_ORDER message)
         {
-            return message.GetTIIMING(message.TIIMINGRepetitionsUsed);
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8690,9 +8720,9 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get TQ2 Records from OML_O35_TIIMING
+        /// Get TQ2 Records from OML_O35_TIMING
         /// </summary>
-        public static IEnumerable GetTQ2Records(this OML_O35_TIIMING message)
+        public static IEnumerable GetTQ2Records(this OML_O35_TIMING message)
         {
             object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
 
@@ -8704,17 +8734,17 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get all TQ2 Records from OML_O35_TIIMING
+        /// Get all TQ2 Records from OML_O35_TIMING
         /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this OML_O35_TIIMING message)
+        public static List<TQ2> GetAllTQ2Records(this OML_O35_TIMING message)
         {
             return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
         }
 
         /// <summary>
-        /// Add a new OML_O35_TIIMING to TQ2
+        /// Add a new OML_O35_TIMING to TQ2
         /// </summary>
-        public static TQ2 AddTQ2(this OML_O35_TIIMING message)
+        public static TQ2 AddTQ2(this OML_O35_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
         }
@@ -13547,6 +13577,66 @@ namespace NHapiTools.Model.V25.Group
         public static NTE AddNTE(this OUL_R23_RESULT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this OUL_R23_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBX Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static List<OBX> GetAllOBXRecords(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_SPECIMEN to OBX
+        /// </summary>
+        public static OBX AddOBX(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get CONTAINER Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetCONTAINERRecords(this OUL_R23_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static List<OUL_R23_CONTAINER> GetAllCONTAINERRecords(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetAllRecords<OUL_R23_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OUL_R23_CONTAINER AddCONTAINER(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
         }
 
         /// <summary>

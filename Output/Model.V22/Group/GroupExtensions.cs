@@ -20,6 +20,216 @@ namespace NHapiTools.Model.V22.Group
     {
         #region Extension methods
         /// <summary>
+        /// Get NK1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetNK1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("NK1RepetitionsUsed", "GetNK1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NK1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<NK1> GetAllNK1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<NK1>("NK1RepetitionsUsed", "GetNK1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to NK1
+        /// </summary>
+        public static NK1 AddNK1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBX Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<OBX> GetAllOBXRecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to OBX
+        /// </summary>
+        public static OBX AddOBX(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AL1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetAL1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("AL1RepetitionsUsed", "GetAL1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AL1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<AL1> GetAllAL1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<AL1>("AL1RepetitionsUsed", "GetAL1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to AL1
+        /// </summary>
+        public static AL1 AddAL1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAL1(message.AL1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get DG1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetDG1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("DG1RepetitionsUsed", "GetDG1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all DG1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<DG1> GetAllDG1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<DG1>("DG1RepetitionsUsed", "GetDG1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to DG1
+        /// </summary>
+        public static DG1 AddDG1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetDG1(message.DG1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PR1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetPR1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("PR1RepetitionsUsed", "GetPR1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PR1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<PR1> GetAllPR1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<PR1>("PR1RepetitionsUsed", "GetPR1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to PR1
+        /// </summary>
+        public static PR1 AddPR1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetPR1(message.PR1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GT1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetGT1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("GT1RepetitionsUsed", "GetGT1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GT1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<GT1> GetAllGT1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<GT1>("GT1RepetitionsUsed", "GetGT1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to GT1
+        /// </summary>
+        public static GT1 AddGT1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<ADR_A19_INSURANCE> GetAllINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<ADR_A19_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to INSURANCE
+        /// </summary>
+        public static ADR_A19_INSURANCE AddINSURANCE(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NK1 Records from ARD_A19_QUERY_RESPONSE
         /// </summary>
         public static IEnumerable GetNK1Records(this ARD_A19_QUERY_RESPONSE message)

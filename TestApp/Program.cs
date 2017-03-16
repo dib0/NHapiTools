@@ -1,40 +1,41 @@
-﻿using System;
+﻿using NHapi.Base.Model;
+using NHapi.Base.Parser;
+using NHapi.Model.V23.Datatype;
+using NHapi.Model.V23.Message;
+using NHapi.Model.V23.Segment;
+using NHapiTools.Base;
+using NHapiTools.Base.IO;
+using NHapiTools.Base.Model;
+using NHapiTools.Base.ModelToolsGenerator;
+using NHapiTools.Base.Parser;
+using NHapiTools.Base.Util;
+using NHapiTools.Base.Validation;
+using NHapiTools.Model.V23.Segment;
+using NuGet;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using NHapi.Base.Parser;
-using NHapi.Base.Model;
-using NHapi.Model.V23.Message;
-using NHapi.Model.V23.Segment;
-using NHapi.Model.V23.Datatype;
-using NHapi.Base.validation;
-using NHapiTools.Base;
-using NHapiTools.Base.ModelToolsGenerator;
-using NHapiTools.Base.IO;
-using NHapiTools.Base.Parser;
-using NHapiTools.Base.Validation;
-using NHapiTools.Model.V23.Segment;
-using NHapiTools.Base.Model;
-using NHapiTools.Base.Util;
 
 namespace TestApp
 {
     /// <summary>
     /// Multiple tests for the NHapi Tools
     /// </summary>
-    class Program
+    internal class Program
     {
         #region Private static properties
+
         private static string basePath;
         private static List<string> messages;
         private static List<IMessage> parsedMessages;
-        #endregion
+
+        #endregion Private static properties
 
         #region Static methods
-        static void Main(string[] args)
+
+        private static void Main(string[] args)
         {
             basePath = AppDomain.CurrentDomain.BaseDirectory;
             basePath = basePath.Remove(basePath.IndexOf("\\TestApp"));
@@ -57,34 +58,33 @@ namespace TestApp
 
         private static void TestSourceGenerator()
         {
+            string packageFile = Path.Combine(basePath, "TestApp", "packages.config");
+            var file = new PackageReferenceFile(packageFile);
+            // Default the version in case the package is removed or unavailable
+            string version = "2.5.0.6";
+
+            foreach (var package in file.GetPackageReferences())
+            {
+                if (package.Id == "nHapi")
+                {
+                    version = package.Version.ToString();
+                    break;
+                }
+            }
+            var nHapiPath = Path.Combine($"packages\\nHapi.{version}\\lib");
+            var dllFiles = Directory.GetFiles(Path.Combine(basePath, nHapiPath), "*.dll");
             Console.WriteLine("\n==============================================\nTesting source generation.");
-            Console.WriteLine("Generating source for V21.");
-            Generator gen = new Generator(basePath + "\\References\\NHapi.Model.V21.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V22.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V22.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V23.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V23.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V231.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V231.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V24.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V24.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V25.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V25.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
-
-            Console.WriteLine("Generating source for V251.");
-            gen = new Generator(basePath + "\\References\\NHapi.Model.V251.dll", basePath + "\\Output");
-            SpinnerWhileWaiting(gen.Generate);
+            foreach (var dllFile in dllFiles)
+            {
+                if (dllFile.Contains("NHapi.Model.V"))
+                {
+                    Console.WriteLine($"Generating source for {dllFile}.");
+                    Generator gen2 = new Generator(dllFile, basePath);
+                    SpinnerWhileWaiting(gen2.Generate);
+                    Generator gen = new Generator(dllFile, Path.Combine(basePath + "\\Output"));
+                    SpinnerWhileWaiting(gen.Generate);
+                }
+            }
         }
 
         private static void TestHL7FileStream()
@@ -102,7 +102,7 @@ namespace TestApp
             using (HL7InputStreamMessageStringEnumerator stream = new HL7InputStreamMessageStringEnumerator(mfs))
             {
                 int x = 0;
-                Console.WriteLine("\nReading files from: '{0}'.", path);        
+                Console.WriteLine("\nReading files from: '{0}'.", path);
                 while (stream.MoveNext())
                 {
                     string message = stream.Current;
@@ -114,7 +114,7 @@ namespace TestApp
                     }
                     else
                         Console.WriteLine("Message not read.");
-                    
+
                     stream.MoveNext();
                 }
                 Console.WriteLine("{0} files read.\n", x);
@@ -217,7 +217,7 @@ namespace TestApp
                 {
                     IMessage im = parser.Parse(m);
                     parsedMessages.Add(im);
-                    
+
                     string structure = im.GetStructureName();
                     Console.WriteLine("Parsed {0}, V{1}.", structure, im.Version);
                     count++;
@@ -234,7 +234,7 @@ namespace TestApp
             EnhancedModelClassFactory emch = new EnhancedModelClassFactory();
             PipeParser parser = new PipeParser(emch);
             emch.ValidationContext = parser.ValidationContext;
-            IMessage im=parser.Parse(txtMessage);
+            IMessage im = parser.Parse(txtMessage);
 
             GenericMessageWrapper gcw = im as GenericMessageWrapper;
             if (gcw != null)
@@ -253,7 +253,7 @@ namespace TestApp
 
                     PID pid1 = ((ADT_A01)originalMessage).PID;
                     TestApp.CustomImplementation.V23.Segment.PID pid2 = (TestApp.CustomImplementation.V23.Segment.PID)pid;
-                    
+
                     Console.WriteLine("");
                     Console.WriteLine("Compare PID segments.");
                     Console.WriteLine("PID from original message {0} custom PID.", pid1.IsEqual(pid2) ? "is the same as" : "isn't the same as");
@@ -291,16 +291,16 @@ namespace TestApp
                 // Compare messages
                 Console.WriteLine("");
                 Console.WriteLine("Compare A08 messages.");
-                Console.WriteLine("A08_1 {0} A08_1.", a08[0].IsEqual(a08[0]) ? "is the same as": "isn't the same as");
-                Console.WriteLine("A08_1 {0} A08_2.", a08[0].IsEqual(a08[1]) ? "is the same as": "isn't the same as");
+                Console.WriteLine("A08_1 {0} A08_1.", a08[0].IsEqual(a08[0]) ? "is the same as" : "isn't the same as");
+                Console.WriteLine("A08_1 {0} A08_2.", a08[0].IsEqual(a08[1]) ? "is the same as" : "isn't the same as");
 
                 // Compare segments
                 ISegment s1 = (ISegment)a08[0].GetStructure("PID");
                 ISegment s2 = (ISegment)a08[1].GetStructure("PID");
                 Console.WriteLine("");
                 Console.WriteLine("Compare PID segments.");
-                Console.WriteLine("PID1 {0} PID1.", s1.IsEqual(s1) ? "is the same as": "isn't the same as");
-                Console.WriteLine("PID1 {0} PID2.", s1.IsEqual(s2) ? "is the same as": "isn't the same as");
+                Console.WriteLine("PID1 {0} PID1.", s1.IsEqual(s1) ? "is the same as" : "isn't the same as");
+                Console.WriteLine("PID1 {0} PID2.", s1.IsEqual(s2) ? "is the same as" : "isn't the same as");
                 Console.WriteLine("");
 
                 ADT_A08 a08msg = null;
@@ -426,10 +426,12 @@ namespace TestApp
             Console.CursorVisible = oldCursorVisibility;
             Console.WriteLine("... Done!");
         }
-        #endregion
+
+        #endregion Static methods
 
         #region Events
-        static void mfs_FileCompleted(object sender, FileCompletedEventArgs e)
+
+        private static void mfs_FileCompleted(object sender, FileCompletedEventArgs e)
         {
             string path = basePath + "\\TestApp\\TestMessages\\Done";
 
@@ -437,6 +439,7 @@ namespace TestApp
             fi.MoveTo(path + "\\" + fi.Name);
             Console.WriteLine("File '{0}' moved.", fi.Name);
         }
-        #endregion
+
+        #endregion Events
     }
 }

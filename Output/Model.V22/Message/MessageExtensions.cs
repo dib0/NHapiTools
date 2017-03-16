@@ -19,6 +19,36 @@ namespace NHapiTools.Model.V22.Message
     {
         #region Extension methods
         /// <summary>
+        /// Get QUERY_RESPONSE Records from ADR_A19
+        /// </summary>
+        public static IEnumerable GetQUERY_RESPONSERecords(this ADR_A19 message)
+        {
+            object[] result = message.GetRecords("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all QUERY_RESPONSE Records from ADR_A19
+        /// </summary>
+        public static List<ADR_A19_QUERY_RESPONSE> GetAllQUERY_RESPONSERecords(this ADR_A19 message)
+        {
+            return message.GetAllRecords<ADR_A19_QUERY_RESPONSE>("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19 to QUERY_RESPONSE
+        /// </summary>
+        public static ADR_A19_QUERY_RESPONSE AddQUERY_RESPONSE(this ADR_A19 message)
+        {
+            return message.GetQUERY_RESPONSE(message.QUERY_RESPONSERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NK1 Records from ADT_A01
         /// </summary>
         public static IEnumerable GetNK1Records(this ADT_A01 message)
