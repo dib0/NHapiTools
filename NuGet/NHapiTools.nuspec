@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NHapiTools</id>
-    <version>1.6.0.3</version>
+    <version>1.7.0.0</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
 	<licenseUrl>https://github.com/dib0/NHapiTools/blob/master/LICENSE</licenseUrl>
@@ -13,7 +13,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
     <dependencies>
-      <dependency id="nHapi" version="2.4.0.11" />
+      <dependency id="nHapi" version="2.5.0.6" />
     </dependencies>
   </metadata>
   <files>
@@ -24,6 +24,11 @@
 	<file src="..\BuildResult\NHapiTools.Model.V231.dll" target="lib\NHapiTools.Model.V231.dll" /> 
 	<file src="..\BuildResult\NHapiTools.Model.V24.dll" target="lib\NHapiTools.Model.V24.dll" /> 
 	<file src="..\BuildResult\NHapiTools.Model.V25.dll" target="lib\NHapiTools.Model.V25.dll" /> 
-	<file src="..\BuildResult\NHapiTools.Model.V251.dll" target="lib\NHapiTools.Model.V251.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V251.dll" target="lib\NHapiTools.Model.V251.dll" />
+	<file src="..\BuildResult\NHapiTools.Model.V26.dll" target="lib\NHapiTools.Model.V26.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V27.dll" target="lib\NHapiTools.Model.V27.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V271.dll" target="lib\NHapiTools.Model.V271.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V28.dll" target="lib\NHapiTools.Model.V28.dll" /> 
+	<file src="..\BuildResult\NHapiTools.Model.V281.dll" target="lib\NHapiTools.Model.V281.dll" /> 
   </files>
 </package>

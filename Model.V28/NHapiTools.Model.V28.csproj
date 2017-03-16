@@ -94,4 +94,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y $(TargetDir)*Tools.* $(TargetDir)\..\..\..\BuildResult</PostBuildEvent>
+  </PropertyGroup>
 </Project>
