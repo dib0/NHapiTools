@@ -320,6 +320,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<ADR_A19_PROCEDURE> GetAllPROCEDURERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<ADR_A19_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to PROCEDURE
+        /// </summary>
+        public static ADR_A19_PROCEDURE AddPROCEDURE(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from ADR_A19_QUERY_RESPONSE
         /// </summary>
         public static IEnumerable GetGT1Records(this ADR_A19_QUERY_RESPONSE message)
@@ -347,6 +377,36 @@ namespace NHapiTools.Model.V251.Group
         public static GT1 AddGT1(this ADR_A19_QUERY_RESPONSE message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<ADR_A19_INSURANCE> GetAllINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<ADR_A19_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to INSURANCE
+        /// </summary>
+        public static ADR_A19_INSURANCE AddINSURANCE(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1040,6 +1100,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from BAR_P01_VISIT
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this BAR_P01_VISIT message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from BAR_P01_VISIT
+        /// </summary>
+        public static List<BAR_P01_PROCEDURE> GetAllPROCEDURERecords(this BAR_P01_VISIT message)
+        {
+            return message.GetAllRecords<BAR_P01_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P01_VISIT to PROCEDURE
+        /// </summary>
+        public static BAR_P01_PROCEDURE AddPROCEDURE(this BAR_P01_VISIT message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from BAR_P01_VISIT
         /// </summary>
         public static IEnumerable GetGT1Records(this BAR_P01_VISIT message)
@@ -1097,6 +1187,36 @@ namespace NHapiTools.Model.V251.Group
         public static NK1 AddNK1(this BAR_P01_VISIT message)
         {
             return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from BAR_P01_VISIT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this BAR_P01_VISIT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from BAR_P01_VISIT
+        /// </summary>
+        public static List<BAR_P01_INSURANCE> GetAllINSURANCERecords(this BAR_P01_VISIT message)
+        {
+            return message.GetAllRecords<BAR_P01_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P01_VISIT to INSURANCE
+        /// </summary>
+        public static BAR_P01_INSURANCE AddINSURANCE(this BAR_P01_VISIT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1370,6 +1490,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROCEDURE Records from BAR_P05_VISIT
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this BAR_P05_VISIT message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from BAR_P05_VISIT
+        /// </summary>
+        public static List<BAR_P05_PROCEDURE> GetAllPROCEDURERecords(this BAR_P05_VISIT message)
+        {
+            return message.GetAllRecords<BAR_P05_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P05_VISIT to PROCEDURE
+        /// </summary>
+        public static BAR_P05_PROCEDURE AddPROCEDURE(this BAR_P05_VISIT message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GT1 Records from BAR_P05_VISIT
         /// </summary>
         public static IEnumerable GetGT1Records(this BAR_P05_VISIT message)
@@ -1427,6 +1577,36 @@ namespace NHapiTools.Model.V251.Group
         public static NK1 AddNK1(this BAR_P05_VISIT message)
         {
             return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from BAR_P05_VISIT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this BAR_P05_VISIT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from BAR_P05_VISIT
+        /// </summary>
+        public static List<BAR_P05_INSURANCE> GetAllINSURANCERecords(this BAR_P05_VISIT message)
+        {
+            return message.GetAllRecords<BAR_P05_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new BAR_P05_VISIT to INSURANCE
+        /// </summary>
+        public static BAR_P05_INSURANCE AddINSURANCE(this BAR_P05_VISIT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -1490,6 +1670,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from BPS_O29_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this BPS_O29_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from BPS_O29_ORDER
+        /// </summary>
+        public static List<BPS_O29_TIMING> GetAllTIMINGRecords(this BPS_O29_ORDER message)
+        {
+            return message.GetAllRecords<BPS_O29_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new BPS_O29_ORDER to TIMING
+        /// </summary>
+        public static BPS_O29_TIMING AddTIMING(this BPS_O29_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from BPS_O29_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this BPS_O29_ORDER message)
@@ -1517,6 +1727,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this BPS_O29_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRODUCT Records from BPS_O29_ORDER
+        /// </summary>
+        public static IEnumerable GetPRODUCTRecords(this BPS_O29_ORDER message)
+        {
+            object[] result = message.GetRecords("PRODUCTRepetitionsUsed", "GetPRODUCT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRODUCT Records from BPS_O29_ORDER
+        /// </summary>
+        public static List<BPS_O29_PRODUCT> GetAllPRODUCTRecords(this BPS_O29_ORDER message)
+        {
+            return message.GetAllRecords<BPS_O29_PRODUCT>("PRODUCTRepetitionsUsed", "GetPRODUCT");
+        }
+
+        /// <summary>
+        /// Add a new BPS_O29_ORDER to PRODUCT
+        /// </summary>
+        public static BPS_O29_PRODUCT AddPRODUCT(this BPS_O29_ORDER message)
+        {
+            return message.GetPRODUCT(message.PRODUCTRepetitionsUsed);
         }
 
         /// <summary>
@@ -1610,6 +1850,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from BRP_O30_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this BRP_O30_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from BRP_O30_ORDER
+        /// </summary>
+        public static List<BRP_O30_TIMING> GetAllTIMINGRecords(this BRP_O30_ORDER message)
+        {
+            return message.GetAllRecords<BRP_O30_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new BRP_O30_ORDER to TIMING
+        /// </summary>
+        public static BRP_O30_TIMING AddTIMING(this BRP_O30_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BPX Records from BRP_O30_ORDER
         /// </summary>
         public static IEnumerable GetBPXRecords(this BRP_O30_ORDER message)
@@ -1637,6 +1907,36 @@ namespace NHapiTools.Model.V251.Group
         public static BPX AddBPX(this BRP_O30_ORDER message)
         {
             return message.GetBPX(message.BPXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from BRP_O30_PATIENT
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this BRP_O30_PATIENT message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from BRP_O30_PATIENT
+        /// </summary>
+        public static List<BRP_O30_ORDER> GetAllORDERRecords(this BRP_O30_PATIENT message)
+        {
+            return message.GetAllRecords<BRP_O30_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new BRP_O30_PATIENT to ORDER
+        /// </summary>
+        public static BRP_O30_ORDER AddORDER(this BRP_O30_PATIENT message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -1670,6 +1970,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from BRT_O32_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this BRT_O32_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from BRT_O32_ORDER
+        /// </summary>
+        public static List<BRT_O32_TIMING> GetAllTIMINGRecords(this BRT_O32_ORDER message)
+        {
+            return message.GetAllRecords<BRT_O32_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new BRT_O32_ORDER to TIMING
+        /// </summary>
+        public static BRT_O32_TIMING AddTIMING(this BRT_O32_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get BTX Records from BRT_O32_ORDER
         /// </summary>
         public static IEnumerable GetBTXRecords(this BRT_O32_ORDER message)
@@ -1697,6 +2027,36 @@ namespace NHapiTools.Model.V251.Group
         public static BTX AddBTX(this BRT_O32_ORDER message)
         {
             return message.GetBTX(message.BTXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from BRT_O32_RESPONSE
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this BRT_O32_RESPONSE message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from BRT_O32_RESPONSE
+        /// </summary>
+        public static List<BRT_O32_ORDER> GetAllORDERRecords(this BRT_O32_RESPONSE message)
+        {
+            return message.GetAllRecords<BRT_O32_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new BRT_O32_RESPONSE to ORDER
+        /// </summary>
+        public static BRT_O32_ORDER AddORDER(this BRT_O32_RESPONSE message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -1730,6 +2090,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from BTS_O31_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this BTS_O31_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from BTS_O31_ORDER
+        /// </summary>
+        public static List<BTS_O31_TIMING> GetAllTIMINGRecords(this BTS_O31_ORDER message)
+        {
+            return message.GetAllRecords<BTS_O31_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new BTS_O31_ORDER to TIMING
+        /// </summary>
+        public static BTS_O31_TIMING AddTIMING(this BTS_O31_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from BTS_O31_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this BTS_O31_ORDER message)
@@ -1757,6 +2147,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this BTS_O31_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRODUCT_STATUS Records from BTS_O31_ORDER
+        /// </summary>
+        public static IEnumerable GetPRODUCT_STATUSRecords(this BTS_O31_ORDER message)
+        {
+            object[] result = message.GetRecords("PRODUCT_STATUSRepetitionsUsed", "GetPRODUCT_STATUS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRODUCT_STATUS Records from BTS_O31_ORDER
+        /// </summary>
+        public static List<BTS_O31_PRODUCT_STATUS> GetAllPRODUCT_STATUSRecords(this BTS_O31_ORDER message)
+        {
+            return message.GetAllRecords<BTS_O31_PRODUCT_STATUS>("PRODUCT_STATUSRepetitionsUsed", "GetPRODUCT_STATUS");
+        }
+
+        /// <summary>
+        /// Add a new BTS_O31_ORDER to PRODUCT_STATUS
+        /// </summary>
+        public static BTS_O31_PRODUCT_STATUS AddPRODUCT_STATUS(this BTS_O31_ORDER message)
+        {
+            return message.GetPRODUCT_STATUS(message.PRODUCT_STATUSRepetitionsUsed);
         }
 
         /// <summary>
@@ -1880,36 +2300,6 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get RXARXR Records from CSU_C09_ORCRXARXR
-        /// </summary>
-        public static IEnumerable GetRXARXRRecords(this CSU_C09_ORCRXARXR message)
-        {
-            object[] result = message.GetRecords("RXARXRRepetitionsUsed", "GetRXARXR");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all RXARXR Records from CSU_C09_ORCRXARXR
-        /// </summary>
-        public static List<CSU_C09_RXARXR> GetAllRXARXRRecords(this CSU_C09_ORCRXARXR message)
-        {
-            return message.GetAllRecords<CSU_C09_RXARXR>("RXARXRRepetitionsUsed", "GetRXARXR");
-        }
-
-        /// <summary>
-        /// Add a new CSU_C09_ORCRXARXR to RXARXR
-        /// </summary>
-        public static CSU_C09_RXARXR AddRXARXR(this CSU_C09_ORCRXARXR message)
-        {
-            return message.GetRXARXR(message.RXARXRRepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get NTE Records from CSU_C09_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this CSU_C09_PATIENT message)
@@ -1970,6 +2360,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_QTY Records from CSU_C09_STUDY_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this CSU_C09_STUDY_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from CSU_C09_STUDY_OBSERVATION
+        /// </summary>
+        public static List<CSU_C09_TIMING_QTY> GetAllTIMING_QTYRecords(this CSU_C09_STUDY_OBSERVATION message)
+        {
+            return message.GetAllRecords<CSU_C09_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new CSU_C09_STUDY_OBSERVATION to TIMING_QTY
+        /// </summary>
+        public static CSU_C09_TIMING_QTY AddTIMING_QTY(this CSU_C09_STUDY_OBSERVATION message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBX Records from CSU_C09_STUDY_OBSERVATION
         /// </summary>
         public static IEnumerable GetOBXRecords(this CSU_C09_STUDY_OBSERVATION message)
@@ -1997,6 +2417,36 @@ namespace NHapiTools.Model.V251.Group
         public static OBX AddOBX(this CSU_C09_STUDY_OBSERVATION message)
         {
             return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RX_ADMIN Records from CSU_C09_STUDY_PHARM
+        /// </summary>
+        public static IEnumerable GetRX_ADMINRecords(this CSU_C09_STUDY_PHARM message)
+        {
+            object[] result = message.GetRecords("RX_ADMINRepetitionsUsed", "GetRX_ADMIN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RX_ADMIN Records from CSU_C09_STUDY_PHARM
+        /// </summary>
+        public static List<CSU_C09_RX_ADMIN> GetAllRX_ADMINRecords(this CSU_C09_STUDY_PHARM message)
+        {
+            return message.GetAllRecords<CSU_C09_RX_ADMIN>("RX_ADMINRepetitionsUsed", "GetRX_ADMIN");
+        }
+
+        /// <summary>
+        /// Add a new CSU_C09_STUDY_PHARM to RX_ADMIN
+        /// </summary>
+        public static CSU_C09_RX_ADMIN AddRX_ADMIN(this CSU_C09_STUDY_PHARM message)
+        {
+            return message.GetRX_ADMIN(message.RX_ADMINRepetitionsUsed);
         }
 
         /// <summary>
@@ -2060,11 +2510,11 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get ORCRXARXR Records from CSU_C09_STUDY_SCHEDULE
+        /// Get STUDY_PHARM Records from CSU_C09_STUDY_SCHEDULE
         /// </summary>
-        public static IEnumerable GetORCRXARXRRecords(this CSU_C09_STUDY_SCHEDULE message)
+        public static IEnumerable GetSTUDY_PHARMRecords(this CSU_C09_STUDY_SCHEDULE message)
         {
-            object[] result = message.GetRecords("ORCRXARXRRepetitionsUsed", "GetORCRXARXR");
+            object[] result = message.GetRecords("STUDY_PHARMRepetitionsUsed", "GetSTUDY_PHARM");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -2074,19 +2524,19 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all ORCRXARXR Records from CSU_C09_STUDY_SCHEDULE
+        /// Get all STUDY_PHARM Records from CSU_C09_STUDY_SCHEDULE
         /// </summary>
-        public static List<CSU_C09_ORCRXARXR> GetAllORCRXARXRRecords(this CSU_C09_STUDY_SCHEDULE message)
+        public static List<CSU_C09_STUDY_PHARM> GetAllSTUDY_PHARMRecords(this CSU_C09_STUDY_SCHEDULE message)
         {
-            return message.GetAllRecords<CSU_C09_ORCRXARXR>("ORCRXARXRRepetitionsUsed", "GetORCRXARXR");
+            return message.GetAllRecords<CSU_C09_STUDY_PHARM>("STUDY_PHARMRepetitionsUsed", "GetSTUDY_PHARM");
         }
 
         /// <summary>
-        /// Add a new CSU_C09_STUDY_SCHEDULE to ORCRXARXR
+        /// Add a new CSU_C09_STUDY_SCHEDULE to STUDY_PHARM
         /// </summary>
-        public static CSU_C09_ORCRXARXR AddORCRXARXR(this CSU_C09_STUDY_SCHEDULE message)
+        public static CSU_C09_STUDY_PHARM AddSTUDY_PHARM(this CSU_C09_STUDY_SCHEDULE message)
         {
-            return message.GetORCRXARXR(message.ORCRXARXRRepetitionsUsed);
+            return message.GetSTUDY_PHARM(message.STUDY_PHARMRepetitionsUsed);
         }
 
         /// <summary>
@@ -2117,6 +2567,186 @@ namespace NHapiTools.Model.V251.Group
         public static TQ2 AddTQ2(this CSU_C09_TIMING_QTY message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_QUANTITY Records from DFT_P03_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_QUANTITYRecords(this DFT_P03_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_QUANTITYRepetitionsUsed", "GetTIMING_QUANTITY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QUANTITY Records from DFT_P03_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P03_TIMING_QUANTITY> GetAllTIMING_QUANTITYRecords(this DFT_P03_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P03_TIMING_QUANTITY>("TIMING_QUANTITYRepetitionsUsed", "GetTIMING_QUANTITY");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_COMMON_ORDER to TIMING_QUANTITY
+        /// </summary>
+        public static DFT_P03_TIMING_QUANTITY AddTIMING_QUANTITY(this DFT_P03_COMMON_ORDER message)
+        {
+            return message.GetTIMING_QUANTITY(message.TIMING_QUANTITYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from DFT_P03_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this DFT_P03_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from DFT_P03_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P03_OBSERVATION> GetAllOBSERVATIONRecords(this DFT_P03_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P03_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_COMMON_ORDER to OBSERVATION
+        /// </summary>
+        public static DFT_P03_OBSERVATION AddOBSERVATION(this DFT_P03_COMMON_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_PROCEDURE Records from DFT_P03_FINANCIAL
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_PROCEDURERecords(this DFT_P03_FINANCIAL message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_PROCEDURERepetitionsUsed", "GetFINANCIAL_PROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_PROCEDURE Records from DFT_P03_FINANCIAL
+        /// </summary>
+        public static List<DFT_P03_FINANCIAL_PROCEDURE> GetAllFINANCIAL_PROCEDURERecords(this DFT_P03_FINANCIAL message)
+        {
+            return message.GetAllRecords<DFT_P03_FINANCIAL_PROCEDURE>("FINANCIAL_PROCEDURERepetitionsUsed", "GetFINANCIAL_PROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_FINANCIAL to FINANCIAL_PROCEDURE
+        /// </summary>
+        public static DFT_P03_FINANCIAL_PROCEDURE AddFINANCIAL_PROCEDURE(this DFT_P03_FINANCIAL message)
+        {
+            return message.GetFINANCIAL_PROCEDURE(message.FINANCIAL_PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_COMMON_ORDER Records from DFT_P03_FINANCIAL
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_COMMON_ORDERRecords(this DFT_P03_FINANCIAL message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_COMMON_ORDERRepetitionsUsed", "GetFINANCIAL_COMMON_ORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_COMMON_ORDER Records from DFT_P03_FINANCIAL
+        /// </summary>
+        public static List<DFT_P03_FINANCIAL_COMMON_ORDER> GetAllFINANCIAL_COMMON_ORDERRecords(this DFT_P03_FINANCIAL message)
+        {
+            return message.GetAllRecords<DFT_P03_FINANCIAL_COMMON_ORDER>("FINANCIAL_COMMON_ORDERRepetitionsUsed", "GetFINANCIAL_COMMON_ORDER");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_FINANCIAL to FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static DFT_P03_FINANCIAL_COMMON_ORDER AddFINANCIAL_COMMON_ORDER(this DFT_P03_FINANCIAL message)
+        {
+            return message.GetFINANCIAL_COMMON_ORDER(message.FINANCIAL_COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_TIMING_QUANTITY Records from DFT_P03_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_TIMING_QUANTITYRecords(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_TIMING_QUANTITYRepetitionsUsed", "GetFINANCIAL_TIMING_QUANTITY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_TIMING_QUANTITY Records from DFT_P03_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P03_FINANCIAL_TIMING_QUANTITY> GetAllFINANCIAL_TIMING_QUANTITYRecords(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P03_FINANCIAL_TIMING_QUANTITY>("FINANCIAL_TIMING_QUANTITYRepetitionsUsed", "GetFINANCIAL_TIMING_QUANTITY");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_FINANCIAL_COMMON_ORDER to FINANCIAL_TIMING_QUANTITY
+        /// </summary>
+        public static DFT_P03_FINANCIAL_TIMING_QUANTITY AddFINANCIAL_TIMING_QUANTITY(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetFINANCIAL_TIMING_QUANTITY(message.FINANCIAL_TIMING_QUANTITYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_OBSERVATION Records from DFT_P03_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_OBSERVATIONRecords(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_OBSERVATIONRepetitionsUsed", "GetFINANCIAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_OBSERVATION Records from DFT_P03_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P03_FINANCIAL_OBSERVATION> GetAllFINANCIAL_OBSERVATIONRecords(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P03_FINANCIAL_OBSERVATION>("FINANCIAL_OBSERVATIONRepetitionsUsed", "GetFINANCIAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P03_FINANCIAL_COMMON_ORDER to FINANCIAL_OBSERVATION
+        /// </summary>
+        public static DFT_P03_FINANCIAL_OBSERVATION AddFINANCIAL_OBSERVATION(this DFT_P03_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetFINANCIAL_OBSERVATION(message.FINANCIAL_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -2390,6 +3020,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_QUANTITY Records from DFT_P11_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_QUANTITYRecords(this DFT_P11_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_QUANTITYRepetitionsUsed", "GetTIMING_QUANTITY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QUANTITY Records from DFT_P11_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P11_TIMING_QUANTITY> GetAllTIMING_QUANTITYRecords(this DFT_P11_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P11_TIMING_QUANTITY>("TIMING_QUANTITYRepetitionsUsed", "GetTIMING_QUANTITY");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_COMMON_ORDER to TIMING_QUANTITY
+        /// </summary>
+        public static DFT_P11_TIMING_QUANTITY AddTIMING_QUANTITY(this DFT_P11_COMMON_ORDER message)
+        {
+            return message.GetTIMING_QUANTITY(message.TIMING_QUANTITYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from DFT_P11_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this DFT_P11_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from DFT_P11_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P11_OBSERVATION> GetAllOBSERVATIONRecords(this DFT_P11_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P11_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_COMMON_ORDER to OBSERVATION
+        /// </summary>
+        public static DFT_P11_OBSERVATION AddOBSERVATION(this DFT_P11_COMMON_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_PROCEDURE Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_PROCEDURERecords(this DFT_P11_FINANCIAL message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_PROCEDURERepetitionsUsed", "GetFINANCIAL_PROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_PROCEDURE Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static List<DFT_P11_FINANCIAL_PROCEDURE> GetAllFINANCIAL_PROCEDURERecords(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetAllRecords<DFT_P11_FINANCIAL_PROCEDURE>("FINANCIAL_PROCEDURERepetitionsUsed", "GetFINANCIAL_PROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_FINANCIAL to FINANCIAL_PROCEDURE
+        /// </summary>
+        public static DFT_P11_FINANCIAL_PROCEDURE AddFINANCIAL_PROCEDURE(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetFINANCIAL_PROCEDURE(message.FINANCIAL_PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_COMMON_ORDER Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_COMMON_ORDERRecords(this DFT_P11_FINANCIAL message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_COMMON_ORDERRepetitionsUsed", "GetFINANCIAL_COMMON_ORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_COMMON_ORDER Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static List<DFT_P11_FINANCIAL_COMMON_ORDER> GetAllFINANCIAL_COMMON_ORDERRecords(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetAllRecords<DFT_P11_FINANCIAL_COMMON_ORDER>("FINANCIAL_COMMON_ORDERRepetitionsUsed", "GetFINANCIAL_COMMON_ORDER");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_FINANCIAL to FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static DFT_P11_FINANCIAL_COMMON_ORDER AddFINANCIAL_COMMON_ORDER(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetFINANCIAL_COMMON_ORDER(message.FINANCIAL_COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DG1 Records from DFT_P11_FINANCIAL
         /// </summary>
         public static IEnumerable GetDG1Records(this DFT_P11_FINANCIAL message)
@@ -2447,6 +3197,96 @@ namespace NHapiTools.Model.V251.Group
         public static GT1 AddGT1(this DFT_P11_FINANCIAL message)
         {
             return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_INSURANCE Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_INSURANCERecords(this DFT_P11_FINANCIAL message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_INSURANCERepetitionsUsed", "GetFINANCIAL_INSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_INSURANCE Records from DFT_P11_FINANCIAL
+        /// </summary>
+        public static List<DFT_P11_FINANCIAL_INSURANCE> GetAllFINANCIAL_INSURANCERecords(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetAllRecords<DFT_P11_FINANCIAL_INSURANCE>("FINANCIAL_INSURANCERepetitionsUsed", "GetFINANCIAL_INSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_FINANCIAL to FINANCIAL_INSURANCE
+        /// </summary>
+        public static DFT_P11_FINANCIAL_INSURANCE AddFINANCIAL_INSURANCE(this DFT_P11_FINANCIAL message)
+        {
+            return message.GetFINANCIAL_INSURANCE(message.FINANCIAL_INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_TIMING_QUANTITY Records from DFT_P11_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_TIMING_QUANTITYRecords(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_TIMING_QUANTITYRepetitionsUsed", "GetFINANCIAL_TIMING_QUANTITY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_TIMING_QUANTITY Records from DFT_P11_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P11_FINANCIAL_TIMING_QUANTITY> GetAllFINANCIAL_TIMING_QUANTITYRecords(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P11_FINANCIAL_TIMING_QUANTITY>("FINANCIAL_TIMING_QUANTITYRepetitionsUsed", "GetFINANCIAL_TIMING_QUANTITY");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_FINANCIAL_COMMON_ORDER to FINANCIAL_TIMING_QUANTITY
+        /// </summary>
+        public static DFT_P11_FINANCIAL_TIMING_QUANTITY AddFINANCIAL_TIMING_QUANTITY(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetFINANCIAL_TIMING_QUANTITY(message.FINANCIAL_TIMING_QUANTITYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FINANCIAL_OBSERVATION Records from DFT_P11_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetFINANCIAL_OBSERVATIONRecords(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("FINANCIAL_OBSERVATIONRepetitionsUsed", "GetFINANCIAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FINANCIAL_OBSERVATION Records from DFT_P11_FINANCIAL_COMMON_ORDER
+        /// </summary>
+        public static List<DFT_P11_FINANCIAL_OBSERVATION> GetAllFINANCIAL_OBSERVATIONRecords(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<DFT_P11_FINANCIAL_OBSERVATION>("FINANCIAL_OBSERVATIONRepetitionsUsed", "GetFINANCIAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new DFT_P11_FINANCIAL_COMMON_ORDER to FINANCIAL_OBSERVATION
+        /// </summary>
+        public static DFT_P11_FINANCIAL_OBSERVATION AddFINANCIAL_OBSERVATION(this DFT_P11_FINANCIAL_COMMON_ORDER message)
+        {
+            return message.GetFINANCIAL_OBSERVATION(message.FINANCIAL_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -2870,6 +3710,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from MDM_T01_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this MDM_T01_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from MDM_T01_COMMON_ORDER
+        /// </summary>
+        public static List<MDM_T01_TIMING> GetAllTIMINGRecords(this MDM_T01_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<MDM_T01_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new MDM_T01_COMMON_ORDER to TIMING
+        /// </summary>
+        public static MDM_T01_TIMING AddTIMING(this MDM_T01_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from MDM_T01_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this MDM_T01_COMMON_ORDER message)
@@ -2930,6 +3800,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from MDM_T02_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this MDM_T02_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from MDM_T02_COMMON_ORDER
+        /// </summary>
+        public static List<MDM_T02_TIMING> GetAllTIMINGRecords(this MDM_T02_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<MDM_T02_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new MDM_T02_COMMON_ORDER to TIMING
+        /// </summary>
+        public static MDM_T02_TIMING AddTIMING(this MDM_T02_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from MDM_T02_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this MDM_T02_COMMON_ORDER message)
@@ -2960,9 +3860,9 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get NTE Records from MDM_T02_OBXNTE
+        /// Get NTE Records from MDM_T02_OBSERVATION
         /// </summary>
-        public static IEnumerable GetNTERecords(this MDM_T02_OBXNTE message)
+        public static IEnumerable GetNTERecords(this MDM_T02_OBSERVATION message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -2974,17 +3874,17 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from MDM_T02_OBXNTE
+        /// Get all NTE Records from MDM_T02_OBSERVATION
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this MDM_T02_OBXNTE message)
+        public static List<NTE> GetAllNTERecords(this MDM_T02_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new MDM_T02_OBXNTE to NTE
+        /// Add a new MDM_T02_OBSERVATION to NTE
         /// </summary>
-        public static NTE AddNTE(this MDM_T02_OBXNTE message)
+        public static NTE AddNTE(this MDM_T02_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
@@ -3407,6 +4307,36 @@ namespace NHapiTools.Model.V251.Group
         public static LCC AddLCC(this MFN_M05_MF_LOC_DEPT message)
         {
             return message.GetLCC(message.LCCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get MF_PHASE_SCHED_DETAIL Records from MFN_M06_MF_CLIN_STUDY
+        /// </summary>
+        public static IEnumerable GetMF_PHASE_SCHED_DETAILRecords(this MFN_M06_MF_CLIN_STUDY message)
+        {
+            object[] result = message.GetRecords("MF_PHASE_SCHED_DETAILRepetitionsUsed", "GetMF_PHASE_SCHED_DETAIL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all MF_PHASE_SCHED_DETAIL Records from MFN_M06_MF_CLIN_STUDY
+        /// </summary>
+        public static List<MFN_M06_MF_PHASE_SCHED_DETAIL> GetAllMF_PHASE_SCHED_DETAILRecords(this MFN_M06_MF_CLIN_STUDY message)
+        {
+            return message.GetAllRecords<MFN_M06_MF_PHASE_SCHED_DETAIL>("MF_PHASE_SCHED_DETAILRepetitionsUsed", "GetMF_PHASE_SCHED_DETAIL");
+        }
+
+        /// <summary>
+        /// Add a new MFN_M06_MF_CLIN_STUDY to MF_PHASE_SCHED_DETAIL
+        /// </summary>
+        public static MFN_M06_MF_PHASE_SCHED_DETAIL AddMF_PHASE_SCHED_DETAIL(this MFN_M06_MF_CLIN_STUDY message)
+        {
+            return message.GetMF_PHASE_SCHED_DETAIL(message.MF_PHASE_SCHED_DETAILRepetitionsUsed);
         }
 
         /// <summary>
@@ -4010,6 +4940,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMB_O27_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMB_O27_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMB_O27_ORDER
+        /// </summary>
+        public static List<OMB_O27_TIMING> GetAllTIMINGRecords(this OMB_O27_ORDER message)
+        {
+            return message.GetAllRecords<OMB_O27_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMB_O27_ORDER to TIMING
+        /// </summary>
+        public static OMB_O27_TIMING AddTIMING(this OMB_O27_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMB_O27_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMB_O27_ORDER message)
@@ -4070,6 +5030,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMB_O27_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMB_O27_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMB_O27_ORDER
+        /// </summary>
+        public static List<OMB_O27_OBSERVATION> GetAllOBSERVATIONRecords(this OMB_O27_ORDER message)
+        {
+            return message.GetAllRecords<OMB_O27_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMB_O27_ORDER to OBSERVATION
+        /// </summary>
+        public static OMB_O27_OBSERVATION AddOBSERVATION(this OMB_O27_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OMB_O27_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OMB_O27_ORDER message)
@@ -4127,6 +5117,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMB_O27_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMB_O27_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMB_O27_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMB_O27_PATIENT
+        /// </summary>
+        public static List<OMB_O27_INSURANCE> GetAllINSURANCERecords(this OMB_O27_PATIENT message)
+        {
+            return message.GetAllRecords<OMB_O27_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMB_O27_PATIENT to INSURANCE
+        /// </summary>
+        public static OMB_O27_INSURANCE AddINSURANCE(this OMB_O27_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -4250,6 +5270,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMD_O03_DIET
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMD_O03_DIET message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMD_O03_DIET
+        /// </summary>
+        public static List<OMD_O03_OBSERVATION> GetAllOBSERVATIONRecords(this OMD_O03_DIET message)
+        {
+            return message.GetAllRecords<OMD_O03_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMD_O03_DIET to OBSERVATION
+        /// </summary>
+        public static OMD_O03_OBSERVATION AddOBSERVATION(this OMD_O03_DIET message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMD_O03_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this OMD_O03_OBSERVATION message)
@@ -4277,6 +5327,66 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMD_O03_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_DIET Records from OMD_O03_ORDER_DIET
+        /// </summary>
+        public static IEnumerable GetTIMING_DIETRecords(this OMD_O03_ORDER_DIET message)
+        {
+            object[] result = message.GetRecords("TIMING_DIETRepetitionsUsed", "GetTIMING_DIET");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_DIET Records from OMD_O03_ORDER_DIET
+        /// </summary>
+        public static List<OMD_O03_TIMING_DIET> GetAllTIMING_DIETRecords(this OMD_O03_ORDER_DIET message)
+        {
+            return message.GetAllRecords<OMD_O03_TIMING_DIET>("TIMING_DIETRepetitionsUsed", "GetTIMING_DIET");
+        }
+
+        /// <summary>
+        /// Add a new OMD_O03_ORDER_DIET to TIMING_DIET
+        /// </summary>
+        public static OMD_O03_TIMING_DIET AddTIMING_DIET(this OMD_O03_ORDER_DIET message)
+        {
+            return message.GetTIMING_DIET(message.TIMING_DIETRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_TRAY Records from OMD_O03_ORDER_TRAY
+        /// </summary>
+        public static IEnumerable GetTIMING_TRAYRecords(this OMD_O03_ORDER_TRAY message)
+        {
+            object[] result = message.GetRecords("TIMING_TRAYRepetitionsUsed", "GetTIMING_TRAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_TRAY Records from OMD_O03_ORDER_TRAY
+        /// </summary>
+        public static List<OMD_O03_TIMING_TRAY> GetAllTIMING_TRAYRecords(this OMD_O03_ORDER_TRAY message)
+        {
+            return message.GetAllRecords<OMD_O03_TIMING_TRAY>("TIMING_TRAYRepetitionsUsed", "GetTIMING_TRAY");
+        }
+
+        /// <summary>
+        /// Add a new OMD_O03_ORDER_TRAY to TIMING_TRAY
+        /// </summary>
+        public static OMD_O03_TIMING_TRAY AddTIMING_TRAY(this OMD_O03_ORDER_TRAY message)
+        {
+            return message.GetTIMING_TRAY(message.TIMING_TRAYRepetitionsUsed);
         }
 
         /// <summary>
@@ -4367,6 +5477,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMD_O03_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMD_O03_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMD_O03_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMD_O03_PATIENT
+        /// </summary>
+        public static List<OMD_O03_INSURANCE> GetAllINSURANCERecords(this OMD_O03_PATIENT message)
+        {
+            return message.GetAllRecords<OMD_O03_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMD_O03_PATIENT to INSURANCE
+        /// </summary>
+        public static OMD_O03_INSURANCE AddINSURANCE(this OMD_O03_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -4550,6 +5690,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMG_O19_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMG_O19_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMG_O19_ORDER
+        /// </summary>
+        public static List<OMG_O19_TIMING> GetAllTIMINGRecords(this OMG_O19_ORDER message)
+        {
+            return message.GetAllRecords<OMG_O19_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_ORDER to TIMING
+        /// </summary>
+        public static OMG_O19_TIMING AddTIMING(this OMG_O19_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMG_O19_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMG_O19_ORDER message)
@@ -4610,6 +5780,96 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMG_O19_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMG_O19_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMG_O19_ORDER
+        /// </summary>
+        public static List<OMG_O19_OBSERVATION> GetAllOBSERVATIONRecords(this OMG_O19_ORDER message)
+        {
+            return message.GetAllRecords<OMG_O19_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_ORDER to OBSERVATION
+        /// </summary>
+        public static OMG_O19_OBSERVATION AddOBSERVATION(this OMG_O19_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from OMG_O19_ORDER
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this OMG_O19_ORDER message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from OMG_O19_ORDER
+        /// </summary>
+        public static List<OMG_O19_SPECIMEN> GetAllSPECIMENRecords(this OMG_O19_ORDER message)
+        {
+            return message.GetAllRecords<OMG_O19_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_ORDER to SPECIMEN
+        /// </summary>
+        public static OMG_O19_SPECIMEN AddSPECIMEN(this OMG_O19_ORDER message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRIOR_RESULT Records from OMG_O19_ORDER
+        /// </summary>
+        public static IEnumerable GetPRIOR_RESULTRecords(this OMG_O19_ORDER message)
+        {
+            object[] result = message.GetRecords("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRIOR_RESULT Records from OMG_O19_ORDER
+        /// </summary>
+        public static List<OMG_O19_PRIOR_RESULT> GetAllPRIOR_RESULTRecords(this OMG_O19_ORDER message)
+        {
+            return message.GetAllRecords<OMG_O19_PRIOR_RESULT>("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_ORDER to PRIOR_RESULT
+        /// </summary>
+        public static OMG_O19_PRIOR_RESULT AddPRIOR_RESULT(this OMG_O19_ORDER message)
+        {
+            return message.GetPRIOR_RESULT(message.PRIOR_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OMG_O19_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OMG_O19_ORDER message)
@@ -4667,6 +5927,36 @@ namespace NHapiTools.Model.V251.Group
         public static CTI AddCTI(this OMG_O19_ORDER message)
         {
             return message.GetCTI(message.CTIRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_PRIOR Records from OMG_O19_ORDER_PRIOR
+        /// </summary>
+        public static IEnumerable GetTIMING_PRIORRecords(this OMG_O19_ORDER_PRIOR message)
+        {
+            object[] result = message.GetRecords("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_PRIOR Records from OMG_O19_ORDER_PRIOR
+        /// </summary>
+        public static List<OMG_O19_TIMING_PRIOR> GetAllTIMING_PRIORRecords(this OMG_O19_ORDER_PRIOR message)
+        {
+            return message.GetAllRecords<OMG_O19_TIMING_PRIOR>("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_ORDER_PRIOR to TIMING_PRIOR
+        /// </summary>
+        public static OMG_O19_TIMING_PRIOR AddTIMING_PRIOR(this OMG_O19_ORDER_PRIOR message)
+        {
+            return message.GetTIMING_PRIOR(message.TIMING_PRIORRepetitionsUsed);
         }
 
         /// <summary>
@@ -4790,6 +6080,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get INSURANCE Records from OMG_O19_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMG_O19_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMG_O19_PATIENT
+        /// </summary>
+        public static List<OMG_O19_INSURANCE> GetAllINSURANCERecords(this OMG_O19_PATIENT message)
+        {
+            return message.GetAllRecords<OMG_O19_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_PATIENT to INSURANCE
+        /// </summary>
+        public static OMG_O19_INSURANCE AddINSURANCE(this OMG_O19_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AL1 Records from OMG_O19_PATIENT
         /// </summary>
         public static IEnumerable GetAL1Records(this OMG_O19_PATIENT message)
@@ -4910,6 +6230,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get CONTAINER Records from OMG_O19_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetCONTAINERRecords(this OMG_O19_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OMG_O19_SPECIMEN
+        /// </summary>
+        public static List<OMG_O19_CONTAINER> GetAllCONTAINERRecords(this OMG_O19_SPECIMEN message)
+        {
+            return message.GetAllRecords<OMG_O19_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OMG_O19_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OMG_O19_CONTAINER AddCONTAINER(this OMG_O19_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ2 Records from OMG_O19_TIMING
         /// </summary>
         public static IEnumerable GetTQ2Records(this OMG_O19_TIMING message)
@@ -5000,6 +6350,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMI_O23_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMI_O23_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMI_O23_ORDER
+        /// </summary>
+        public static List<OMI_O23_TIMING> GetAllTIMINGRecords(this OMI_O23_ORDER message)
+        {
+            return message.GetAllRecords<OMI_O23_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMI_O23_ORDER to TIMING
+        /// </summary>
+        public static OMI_O23_TIMING AddTIMING(this OMI_O23_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMI_O23_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMI_O23_ORDER message)
@@ -5060,6 +6440,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMI_O23_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMI_O23_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMI_O23_ORDER
+        /// </summary>
+        public static List<OMI_O23_OBSERVATION> GetAllOBSERVATIONRecords(this OMI_O23_ORDER message)
+        {
+            return message.GetAllRecords<OMI_O23_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMI_O23_ORDER to OBSERVATION
+        /// </summary>
+        public static OMI_O23_OBSERVATION AddOBSERVATION(this OMI_O23_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get IPC Records from OMI_O23_ORDER
         /// </summary>
         public static IEnumerable GetIPCRecords(this OMI_O23_ORDER message)
@@ -5117,6 +6527,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMI_O23_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMI_O23_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMI_O23_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMI_O23_PATIENT
+        /// </summary>
+        public static List<OMI_O23_INSURANCE> GetAllINSURANCERecords(this OMI_O23_PATIENT message)
+        {
+            return message.GetAllRecords<OMI_O23_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMI_O23_PATIENT to INSURANCE
+        /// </summary>
+        public static OMI_O23_INSURANCE AddINSURANCE(this OMI_O23_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -5330,6 +6770,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O21_OBSERVATION> GetAllOBSERVATIONRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O21_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_OBSERVATION_REQUEST to OBSERVATION
+        /// </summary>
+        public static OML_O21_OBSERVATION AddOBSERVATION(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O21_SPECIMEN> GetAllSPECIMENRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O21_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_OBSERVATION_REQUEST to SPECIMEN
+        /// </summary>
+        public static OML_O21_SPECIMEN AddSPECIMEN(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRIOR_RESULT Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetPRIOR_RESULTRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRIOR_RESULT Records from OML_O21_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O21_PRIOR_RESULT> GetAllPRIOR_RESULTRecords(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O21_PRIOR_RESULT>("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_OBSERVATION_REQUEST to PRIOR_RESULT
+        /// </summary>
+        public static OML_O21_PRIOR_RESULT AddPRIOR_RESULT(this OML_O21_OBSERVATION_REQUEST message)
+        {
+            return message.GetPRIOR_RESULT(message.PRIOR_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from OML_O21_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OML_O21_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OML_O21_ORDER
+        /// </summary>
+        public static List<OML_O21_TIMING> GetAllTIMINGRecords(this OML_O21_ORDER message)
+        {
+            return message.GetAllRecords<OML_O21_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_ORDER to TIMING
+        /// </summary>
+        public static OML_O21_TIMING AddTIMING(this OML_O21_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OML_O21_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OML_O21_ORDER message)
@@ -5420,6 +6980,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_PRIOR Records from OML_O21_ORDER_PRIOR
+        /// </summary>
+        public static IEnumerable GetTIMING_PRIORRecords(this OML_O21_ORDER_PRIOR message)
+        {
+            object[] result = message.GetRecords("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_PRIOR Records from OML_O21_ORDER_PRIOR
+        /// </summary>
+        public static List<OML_O21_TIMING_PRIOR> GetAllTIMING_PRIORRecords(this OML_O21_ORDER_PRIOR message)
+        {
+            return message.GetAllRecords<OML_O21_TIMING_PRIOR>("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_ORDER_PRIOR to TIMING_PRIOR
+        /// </summary>
+        public static OML_O21_TIMING_PRIOR AddTIMING_PRIOR(this OML_O21_ORDER_PRIOR message)
+        {
+            return message.GetTIMING_PRIOR(message.TIMING_PRIORRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION_PRIOR Records from OML_O21_ORDER_PRIOR
         /// </summary>
         public static IEnumerable GetOBSERVATION_PRIORRecords(this OML_O21_ORDER_PRIOR message)
@@ -5507,6 +7097,36 @@ namespace NHapiTools.Model.V251.Group
         public static NK1 AddNK1(this OML_O21_PATIENT message)
         {
             return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OML_O21_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OML_O21_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OML_O21_PATIENT
+        /// </summary>
+        public static List<OML_O21_INSURANCE> GetAllINSURANCERecords(this OML_O21_PATIENT message)
+        {
+            return message.GetAllRecords<OML_O21_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_PATIENT to INSURANCE
+        /// </summary>
+        public static OML_O21_INSURANCE AddINSURANCE(this OML_O21_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -5627,6 +7247,36 @@ namespace NHapiTools.Model.V251.Group
         public static OBX AddOBX(this OML_O21_SPECIMEN message)
         {
             return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get CONTAINER Records from OML_O21_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetCONTAINERRecords(this OML_O21_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OML_O21_SPECIMEN
+        /// </summary>
+        public static List<OML_O21_CONTAINER> GetAllCONTAINERRecords(this OML_O21_SPECIMEN message)
+        {
+            return message.GetAllRecords<OML_O21_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OML_O21_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OML_O21_CONTAINER AddCONTAINER(this OML_O21_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
         }
 
         /// <summary>
@@ -5810,6 +7460,96 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OML_O33_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OML_O33_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O33_OBSERVATION> GetAllOBSERVATIONRecords(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O33_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OML_O33_OBSERVATION_REQUEST to OBSERVATION
+        /// </summary>
+        public static OML_O33_OBSERVATION AddOBSERVATION(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRIOR_RESULT Records from OML_O33_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetPRIOR_RESULTRecords(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRIOR_RESULT Records from OML_O33_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O33_PRIOR_RESULT> GetAllPRIOR_RESULTRecords(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O33_PRIOR_RESULT>("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new OML_O33_OBSERVATION_REQUEST to PRIOR_RESULT
+        /// </summary>
+        public static OML_O33_PRIOR_RESULT AddPRIOR_RESULT(this OML_O33_OBSERVATION_REQUEST message)
+        {
+            return message.GetPRIOR_RESULT(message.PRIOR_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from OML_O33_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OML_O33_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OML_O33_ORDER
+        /// </summary>
+        public static List<OML_O33_TIMING> GetAllTIMINGRecords(this OML_O33_ORDER message)
+        {
+            return message.GetAllRecords<OML_O33_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OML_O33_ORDER to TIMING
+        /// </summary>
+        public static OML_O33_TIMING AddTIMING(this OML_O33_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OML_O33_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OML_O33_ORDER message)
@@ -5900,6 +7640,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_PRIOR Records from OML_O33_ORDER_PRIOR
+        /// </summary>
+        public static IEnumerable GetTIMING_PRIORRecords(this OML_O33_ORDER_PRIOR message)
+        {
+            object[] result = message.GetRecords("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_PRIOR Records from OML_O33_ORDER_PRIOR
+        /// </summary>
+        public static List<OML_O33_TIMING_PRIOR> GetAllTIMING_PRIORRecords(this OML_O33_ORDER_PRIOR message)
+        {
+            return message.GetAllRecords<OML_O33_TIMING_PRIOR>("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+        }
+
+        /// <summary>
+        /// Add a new OML_O33_ORDER_PRIOR to TIMING_PRIOR
+        /// </summary>
+        public static OML_O33_TIMING_PRIOR AddTIMING_PRIOR(this OML_O33_ORDER_PRIOR message)
+        {
+            return message.GetTIMING_PRIOR(message.TIMING_PRIORRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION_PRIOR Records from OML_O33_ORDER_PRIOR
         /// </summary>
         public static IEnumerable GetOBSERVATION_PRIORRecords(this OML_O33_ORDER_PRIOR message)
@@ -5987,6 +7757,36 @@ namespace NHapiTools.Model.V251.Group
         public static NK1 AddNK1(this OML_O33_PATIENT message)
         {
             return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OML_O33_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OML_O33_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OML_O33_PATIENT
+        /// </summary>
+        public static List<OML_O33_INSURANCE> GetAllINSURANCERecords(this OML_O33_PATIENT message)
+        {
+            return message.GetAllRecords<OML_O33_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OML_O33_PATIENT to INSURANCE
+        /// </summary>
+        public static OML_O33_INSURANCE AddINSURANCE(this OML_O33_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -6350,6 +8150,96 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OML_O35_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OML_O35_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O35_OBSERVATION> GetAllOBSERVATIONRecords(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O35_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OML_O35_OBSERVATION_REQUEST to OBSERVATION
+        /// </summary>
+        public static OML_O35_OBSERVATION AddOBSERVATION(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PRIOR_RESULT Records from OML_O35_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetPRIOR_RESULTRecords(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PRIOR_RESULT Records from OML_O35_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<OML_O35_PRIOR_RESULT> GetAllPRIOR_RESULTRecords(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<OML_O35_PRIOR_RESULT>("PRIOR_RESULTRepetitionsUsed", "GetPRIOR_RESULT");
+        }
+
+        /// <summary>
+        /// Add a new OML_O35_OBSERVATION_REQUEST to PRIOR_RESULT
+        /// </summary>
+        public static OML_O35_PRIOR_RESULT AddPRIOR_RESULT(this OML_O35_OBSERVATION_REQUEST message)
+        {
+            return message.GetPRIOR_RESULT(message.PRIOR_RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from OML_O35_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OML_O35_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OML_O35_ORDER
+        /// </summary>
+        public static List<OML_O35_TIMING> GetAllTIMINGRecords(this OML_O35_ORDER message)
+        {
+            return message.GetAllRecords<OML_O35_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OML_O35_ORDER to TIMING
+        /// </summary>
+        public static OML_O35_TIMING AddTIMING(this OML_O35_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OML_O35_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OML_O35_ORDER message)
@@ -6440,6 +8330,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_PRIOR Records from OML_O35_ORDER_PRIOR
+        /// </summary>
+        public static IEnumerable GetTIMING_PRIORRecords(this OML_O35_ORDER_PRIOR message)
+        {
+            object[] result = message.GetRecords("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_PRIOR Records from OML_O35_ORDER_PRIOR
+        /// </summary>
+        public static List<OML_O35_TIMING_PRIOR> GetAllTIMING_PRIORRecords(this OML_O35_ORDER_PRIOR message)
+        {
+            return message.GetAllRecords<OML_O35_TIMING_PRIOR>("TIMING_PRIORRepetitionsUsed", "GetTIMING_PRIOR");
+        }
+
+        /// <summary>
+        /// Add a new OML_O35_ORDER_PRIOR to TIMING_PRIOR
+        /// </summary>
+        public static OML_O35_TIMING_PRIOR AddTIMING_PRIOR(this OML_O35_ORDER_PRIOR message)
+        {
+            return message.GetTIMING_PRIOR(message.TIMING_PRIORRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION_PRIOR Records from OML_O35_ORDER_PRIOR
         /// </summary>
         public static IEnumerable GetOBSERVATION_PRIORRecords(this OML_O35_ORDER_PRIOR message)
@@ -6527,6 +8447,36 @@ namespace NHapiTools.Model.V251.Group
         public static NK1 AddNK1(this OML_O35_PATIENT message)
         {
             return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OML_O35_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OML_O35_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OML_O35_PATIENT
+        /// </summary>
+        public static List<OML_O35_INSURANCE> GetAllINSURANCERecords(this OML_O35_PATIENT message)
+        {
+            return message.GetAllRecords<OML_O35_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OML_O35_PATIENT to INSURANCE
+        /// </summary>
+        public static OML_O35_INSURANCE AddINSURANCE(this OML_O35_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -6800,6 +8750,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMN_O07_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMN_O07_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMN_O07_ORDER
+        /// </summary>
+        public static List<OMN_O07_TIMING> GetAllTIMINGRecords(this OMN_O07_ORDER message)
+        {
+            return message.GetAllRecords<OMN_O07_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMN_O07_ORDER to TIMING
+        /// </summary>
+        public static OMN_O07_TIMING AddTIMING(this OMN_O07_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMN_O07_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMN_O07_ORDER message)
@@ -6830,6 +8810,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMN_O07_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMN_O07_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMN_O07_ORDER
+        /// </summary>
+        public static List<OMN_O07_OBSERVATION> GetAllOBSERVATIONRecords(this OMN_O07_ORDER message)
+        {
+            return message.GetAllRecords<OMN_O07_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMN_O07_ORDER to OBSERVATION
+        /// </summary>
+        public static OMN_O07_OBSERVATION AddOBSERVATION(this OMN_O07_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMN_O07_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this OMN_O07_PATIENT message)
@@ -6857,6 +8867,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMN_O07_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMN_O07_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMN_O07_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMN_O07_PATIENT
+        /// </summary>
+        public static List<OMN_O07_INSURANCE> GetAllINSURANCERecords(this OMN_O07_PATIENT message)
+        {
+            return message.GetAllRecords<OMN_O07_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMN_O07_PATIENT to INSURANCE
+        /// </summary>
+        public static OMN_O07_INSURANCE AddINSURANCE(this OMN_O07_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -6980,6 +9020,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMP_O09_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMP_O09_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMP_O09_ORDER
+        /// </summary>
+        public static List<OMP_O09_TIMING> GetAllTIMINGRecords(this OMP_O09_ORDER message)
+        {
+            return message.GetAllRecords<OMP_O09_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMP_O09_ORDER to TIMING
+        /// </summary>
+        public static OMP_O09_TIMING AddTIMING(this OMP_O09_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMP_O09_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMP_O09_ORDER message)
@@ -7040,6 +9110,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get COMPONENT Records from OMP_O09_ORDER
+        /// </summary>
+        public static IEnumerable GetCOMPONENTRecords(this OMP_O09_ORDER message)
+        {
+            object[] result = message.GetRecords("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENT Records from OMP_O09_ORDER
+        /// </summary>
+        public static List<OMP_O09_COMPONENT> GetAllCOMPONENTRecords(this OMP_O09_ORDER message)
+        {
+            return message.GetAllRecords<OMP_O09_COMPONENT>("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+        }
+
+        /// <summary>
+        /// Add a new OMP_O09_ORDER to COMPONENT
+        /// </summary>
+        public static OMP_O09_COMPONENT AddCOMPONENT(this OMP_O09_ORDER message)
+        {
+            return message.GetCOMPONENT(message.COMPONENTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from OMP_O09_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMP_O09_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMP_O09_ORDER
+        /// </summary>
+        public static List<OMP_O09_OBSERVATION> GetAllOBSERVATIONRecords(this OMP_O09_ORDER message)
+        {
+            return message.GetAllRecords<OMP_O09_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMP_O09_ORDER to OBSERVATION
+        /// </summary>
+        public static OMP_O09_OBSERVATION AddOBSERVATION(this OMP_O09_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from OMP_O09_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this OMP_O09_ORDER message)
@@ -7097,6 +9227,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMP_O09_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMP_O09_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMP_O09_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMP_O09_PATIENT
+        /// </summary>
+        public static List<OMP_O09_INSURANCE> GetAllINSURANCERecords(this OMP_O09_PATIENT message)
+        {
+            return message.GetAllRecords<OMP_O09_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMP_O09_PATIENT to INSURANCE
+        /// </summary>
+        public static OMP_O09_INSURANCE AddINSURANCE(this OMP_O09_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -7190,6 +9350,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OMS_O05_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OMS_O05_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OMS_O05_ORDER
+        /// </summary>
+        public static List<OMS_O05_TIMING> GetAllTIMINGRecords(this OMS_O05_ORDER message)
+        {
+            return message.GetAllRecords<OMS_O05_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OMS_O05_ORDER to TIMING
+        /// </summary>
+        public static OMS_O05_TIMING AddTIMING(this OMS_O05_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMS_O05_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OMS_O05_ORDER message)
@@ -7220,6 +9410,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from OMS_O05_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this OMS_O05_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from OMS_O05_ORDER
+        /// </summary>
+        public static List<OMS_O05_OBSERVATION> GetAllOBSERVATIONRecords(this OMS_O05_ORDER message)
+        {
+            return message.GetAllRecords<OMS_O05_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new OMS_O05_ORDER to OBSERVATION
+        /// </summary>
+        public static OMS_O05_OBSERVATION AddOBSERVATION(this OMS_O05_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OMS_O05_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this OMS_O05_PATIENT message)
@@ -7247,6 +9467,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OMS_O05_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from OMS_O05_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this OMS_O05_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from OMS_O05_PATIENT
+        /// </summary>
+        public static List<OMS_O05_INSURANCE> GetAllINSURANCERecords(this OMS_O05_PATIENT message)
+        {
+            return message.GetAllRecords<OMS_O05_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new OMS_O05_PATIENT to INSURANCE
+        /// </summary>
+        public static OMS_O05_INSURANCE AddINSURANCE(this OMS_O05_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -7310,6 +9560,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from ORB_O28_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORB_O28_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORB_O28_ORDER
+        /// </summary>
+        public static List<ORB_O28_TIMING> GetAllTIMINGRecords(this ORB_O28_ORDER message)
+        {
+            return message.GetAllRecords<ORB_O28_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORB_O28_ORDER to TIMING
+        /// </summary>
+        public static ORB_O28_TIMING AddTIMING(this ORB_O28_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from ORB_O28_PATIENT
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this ORB_O28_PATIENT message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from ORB_O28_PATIENT
+        /// </summary>
+        public static List<ORB_O28_ORDER> GetAllORDERRecords(this ORB_O28_PATIENT message)
+        {
+            return message.GetAllRecords<ORB_O28_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new ORB_O28_PATIENT to ORDER
+        /// </summary>
+        public static ORB_O28_ORDER AddORDER(this ORB_O28_PATIENT message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ2 Records from ORB_O28_TIMING
         /// </summary>
         public static IEnumerable GetTQ2Records(this ORB_O28_TIMING message)
@@ -7337,6 +9647,36 @@ namespace NHapiTools.Model.V251.Group
         public static TQ2 AddTQ2(this ORB_O28_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_DIET Records from ORD_O04_ORDER_DIET
+        /// </summary>
+        public static IEnumerable GetTIMING_DIETRecords(this ORD_O04_ORDER_DIET message)
+        {
+            object[] result = message.GetRecords("TIMING_DIETRepetitionsUsed", "GetTIMING_DIET");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_DIET Records from ORD_O04_ORDER_DIET
+        /// </summary>
+        public static List<ORD_O04_TIMING_DIET> GetAllTIMING_DIETRecords(this ORD_O04_ORDER_DIET message)
+        {
+            return message.GetAllRecords<ORD_O04_TIMING_DIET>("TIMING_DIETRepetitionsUsed", "GetTIMING_DIET");
+        }
+
+        /// <summary>
+        /// Add a new ORD_O04_ORDER_DIET to TIMING_DIET
+        /// </summary>
+        public static ORD_O04_TIMING_DIET AddTIMING_DIET(this ORD_O04_ORDER_DIET message)
+        {
+            return message.GetTIMING_DIET(message.TIMING_DIETRepetitionsUsed);
         }
 
         /// <summary>
@@ -7397,6 +9737,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this ORD_O04_ORDER_DIET message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_TRAY Records from ORD_O04_ORDER_TRAY
+        /// </summary>
+        public static IEnumerable GetTIMING_TRAYRecords(this ORD_O04_ORDER_TRAY message)
+        {
+            object[] result = message.GetRecords("TIMING_TRAYRepetitionsUsed", "GetTIMING_TRAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_TRAY Records from ORD_O04_ORDER_TRAY
+        /// </summary>
+        public static List<ORD_O04_TIMING_TRAY> GetAllTIMING_TRAYRecords(this ORD_O04_ORDER_TRAY message)
+        {
+            return message.GetAllRecords<ORD_O04_TIMING_TRAY>("TIMING_TRAYRepetitionsUsed", "GetTIMING_TRAY");
+        }
+
+        /// <summary>
+        /// Add a new ORD_O04_ORDER_TRAY to TIMING_TRAY
+        /// </summary>
+        public static ORD_O04_TIMING_TRAY AddTIMING_TRAY(this ORD_O04_ORDER_TRAY message)
+        {
+            return message.GetTIMING_TRAY(message.TIMING_TRAYRepetitionsUsed);
         }
 
         /// <summary>
@@ -7520,6 +9890,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get ORDER_TRAY Records from ORD_O04_RESPONSE
+        /// </summary>
+        public static IEnumerable GetORDER_TRAYRecords(this ORD_O04_RESPONSE message)
+        {
+            object[] result = message.GetRecords("ORDER_TRAYRepetitionsUsed", "GetORDER_TRAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_TRAY Records from ORD_O04_RESPONSE
+        /// </summary>
+        public static List<ORD_O04_ORDER_TRAY> GetAllORDER_TRAYRecords(this ORD_O04_RESPONSE message)
+        {
+            return message.GetAllRecords<ORD_O04_ORDER_TRAY>("ORDER_TRAYRepetitionsUsed", "GetORDER_TRAY");
+        }
+
+        /// <summary>
+        /// Add a new ORD_O04_RESPONSE to ORDER_TRAY
+        /// </summary>
+        public static ORD_O04_ORDER_TRAY AddORDER_TRAY(this ORD_O04_RESPONSE message)
+        {
+            return message.GetORDER_TRAY(message.ORDER_TRAYRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ2 Records from ORD_O04_TIMING_DIET
         /// </summary>
         public static IEnumerable GetTQ2Records(this ORD_O04_TIMING_DIET message)
@@ -7580,9 +9980,9 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get NTE Records from ORF_R04_OBXNTE
+        /// Get NTE Records from ORF_R04_OBSERVATION
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORF_R04_OBXNTE message)
+        public static IEnumerable GetNTERecords(this ORF_R04_OBSERVATION message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -7594,25 +9994,25 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from ORF_R04_OBXNTE
+        /// Get all NTE Records from ORF_R04_OBSERVATION
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORF_R04_OBXNTE message)
+        public static List<NTE> GetAllNTERecords(this ORF_R04_OBSERVATION message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_OBXNTE to NTE
+        /// Add a new ORF_R04_OBSERVATION to NTE
         /// </summary>
-        public static NTE AddNTE(this ORF_R04_OBXNTE message)
+        public static NTE AddNTE(this ORF_R04_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
-        /// Get NTE Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get NTE Records from ORF_R04_ORDER
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static IEnumerable GetNTERecords(this ORF_R04_ORDER message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -7624,27 +10024,27 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get all NTE Records from ORF_R04_ORDER
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static List<NTE> GetAllNTERecords(this ORF_R04_ORDER message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI to NTE
+        /// Add a new ORF_R04_ORDER to NTE
         /// </summary>
-        public static NTE AddNTE(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static NTE AddNTE(this ORF_R04_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
-        /// Get OBXNTE Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get TIMING_QTY Records from ORF_R04_ORDER
         /// </summary>
-        public static IEnumerable GetOBXNTERecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static IEnumerable GetTIMING_QTYRecords(this ORF_R04_ORDER message)
         {
-            object[] result = message.GetRecords("OBXNTERepetitionsUsed", "GetOBXNTE");
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -7654,25 +10054,55 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all OBXNTE Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get all TIMING_QTY Records from ORF_R04_ORDER
         /// </summary>
-        public static List<ORF_R04_OBXNTE> GetAllOBXNTERecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static List<ORF_R04_TIMING_QTY> GetAllTIMING_QTYRecords(this ORF_R04_ORDER message)
         {
-            return message.GetAllRecords<ORF_R04_OBXNTE>("OBXNTERepetitionsUsed", "GetOBXNTE");
+            return message.GetAllRecords<ORF_R04_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI to OBXNTE
+        /// Add a new ORF_R04_ORDER to TIMING_QTY
         /// </summary>
-        public static ORF_R04_OBXNTE AddOBXNTE(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static ORF_R04_TIMING_QTY AddTIMING_QTY(this ORF_R04_ORDER message)
         {
-            return message.GetOBXNTE(message.OBXNTERepetitionsUsed);
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get CTI Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get OBSERVATION Records from ORF_R04_ORDER
         /// </summary>
-        public static IEnumerable GetCTIRecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static IEnumerable GetOBSERVATIONRecords(this ORF_R04_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from ORF_R04_ORDER
+        /// </summary>
+        public static List<ORF_R04_OBSERVATION> GetAllOBSERVATIONRecords(this ORF_R04_ORDER message)
+        {
+            return message.GetAllRecords<ORF_R04_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new ORF_R04_ORDER to OBSERVATION
+        /// </summary>
+        public static ORF_R04_OBSERVATION AddOBSERVATION(this ORF_R04_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get CTI Records from ORF_R04_ORDER
+        /// </summary>
+        public static IEnumerable GetCTIRecords(this ORF_R04_ORDER message)
         {
             object[] result = message.GetRecords("CTIRepetitionsUsed", "GetCTI");
 
@@ -7684,25 +10114,25 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all CTI Records from ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get all CTI Records from ORF_R04_ORDER
         /// </summary>
-        public static List<CTI> GetAllCTIRecords(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static List<CTI> GetAllCTIRecords(this ORF_R04_ORDER message)
         {
             return message.GetAllRecords<CTI>("CTIRepetitionsUsed", "GetCTI");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI to CTI
+        /// Add a new ORF_R04_ORDER to CTI
         /// </summary>
-        public static CTI AddCTI(this ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static CTI AddCTI(this ORF_R04_ORDER message)
         {
             return message.GetCTI(message.CTIRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get NTE Records from ORF_R04_PIDNTE
+        /// Get NTE Records from ORF_R04_PATIENT
         /// </summary>
-        public static IEnumerable GetNTERecords(this ORF_R04_PIDNTE message)
+        public static IEnumerable GetNTERecords(this ORF_R04_PATIENT message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -7714,27 +10144,27 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from ORF_R04_PIDNTE
+        /// Get all NTE Records from ORF_R04_PATIENT
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this ORF_R04_PIDNTE message)
+        public static List<NTE> GetAllNTERecords(this ORF_R04_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_PIDNTE to NTE
+        /// Add a new ORF_R04_PATIENT to NTE
         /// </summary>
-        public static NTE AddNTE(this ORF_R04_PIDNTE message)
+        public static NTE AddNTE(this ORF_R04_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
-        /// Get ORCOBRNTETQ1TQ2CTDOBXNTECTI Records from ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get ORDER Records from ORF_R04_QUERY_RESPONSE
         /// </summary>
-        public static IEnumerable GetORCOBRNTETQ1TQ2CTDOBXNTECTIRecords(this ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static IEnumerable GetORDERRecords(this ORF_R04_QUERY_RESPONSE message)
         {
-            object[] result = message.GetRecords("ORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed", "GetORCOBRNTETQ1TQ2CTDOBXNTECTI");
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -7744,25 +10174,25 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all ORCOBRNTETQ1TQ2CTDOBXNTECTI Records from ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Get all ORDER Records from ORF_R04_QUERY_RESPONSE
         /// </summary>
-        public static List<ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI> GetAllORCOBRNTETQ1TQ2CTDOBXNTECTIRecords(this ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static List<ORF_R04_ORDER> GetAllORDERRecords(this ORF_R04_QUERY_RESPONSE message)
         {
-            return message.GetAllRecords<ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI>("ORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed", "GetORCOBRNTETQ1TQ2CTDOBXNTECTI");
+            return message.GetAllRecords<ORF_R04_ORDER>("ORDERRepetitionsUsed", "GetORDER");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI to ORCOBRNTETQ1TQ2CTDOBXNTECTI
+        /// Add a new ORF_R04_QUERY_RESPONSE to ORDER
         /// </summary>
-        public static ORF_R04_ORCOBRNTETQ1TQ2CTDOBXNTECTI AddORCOBRNTETQ1TQ2CTDOBXNTECTI(this ORF_R04_PIDNTEORCOBRNTETQ1TQ2CTDOBXNTECTI message)
+        public static ORF_R04_ORDER AddORDER(this ORF_R04_QUERY_RESPONSE message)
         {
-            return message.GetORCOBRNTETQ1TQ2CTDOBXNTECTI(message.ORCOBRNTETQ1TQ2CTDOBXNTECTIRepetitionsUsed);
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get TQ2 Records from ORF_R04_TQ1TQ2
+        /// Get TQ2 Records from ORF_R04_TIMING_QTY
         /// </summary>
-        public static IEnumerable GetTQ2Records(this ORF_R04_TQ1TQ2 message)
+        public static IEnumerable GetTQ2Records(this ORF_R04_TIMING_QTY message)
         {
             object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
 
@@ -7774,19 +10204,49 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all TQ2 Records from ORF_R04_TQ1TQ2
+        /// Get all TQ2 Records from ORF_R04_TIMING_QTY
         /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this ORF_R04_TQ1TQ2 message)
+        public static List<TQ2> GetAllTQ2Records(this ORF_R04_TIMING_QTY message)
         {
             return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
         }
 
         /// <summary>
-        /// Add a new ORF_R04_TQ1TQ2 to TQ2
+        /// Add a new ORF_R04_TIMING_QTY to TQ2
         /// </summary>
-        public static TQ2 AddTQ2(this ORF_R04_TQ1TQ2 message)
+        public static TQ2 AddTQ2(this ORF_R04_TIMING_QTY message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORG_O20_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORG_O20_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORG_O20_ORDER
+        /// </summary>
+        public static List<ORG_O20_TIMING> GetAllTIMINGRecords(this ORG_O20_ORDER message)
+        {
+            return message.GetAllRecords<ORG_O20_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORG_O20_ORDER to TIMING
+        /// </summary>
+        public static ORG_O20_TIMING AddTIMING(this ORG_O20_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -7847,6 +10307,36 @@ namespace NHapiTools.Model.V251.Group
         public static CTI AddCTI(this ORG_O20_ORDER message)
         {
             return message.GetCTI(message.CTIRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from ORG_O20_ORDER
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this ORG_O20_ORDER message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from ORG_O20_ORDER
+        /// </summary>
+        public static List<ORG_O20_SPECIMEN> GetAllSPECIMENRecords(this ORG_O20_ORDER message)
+        {
+            return message.GetAllRecords<ORG_O20_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new ORG_O20_ORDER to SPECIMEN
+        /// </summary>
+        public static ORG_O20_SPECIMEN AddSPECIMEN(this ORG_O20_ORDER message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
         }
 
         /// <summary>
@@ -7967,6 +10457,36 @@ namespace NHapiTools.Model.V251.Group
         public static TQ2 AddTQ2(this ORG_O20_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORI_O24_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORI_O24_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORI_O24_ORDER
+        /// </summary>
+        public static List<ORI_O24_TIMING> GetAllTIMINGRecords(this ORI_O24_ORDER message)
+        {
+            return message.GetAllRecords<ORI_O24_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORI_O24_ORDER to TIMING
+        /// </summary>
+        public static ORI_O24_TIMING AddTIMING(this ORI_O24_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8120,6 +10640,96 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get SPECIMEN Records from ORL_O22_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this ORL_O22_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from ORL_O22_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<ORL_O22_SPECIMEN> GetAllSPECIMENRecords(this ORL_O22_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<ORL_O22_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O22_OBSERVATION_REQUEST to SPECIMEN
+        /// </summary>
+        public static ORL_O22_SPECIMEN AddSPECIMEN(this ORL_O22_OBSERVATION_REQUEST message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORL_O22_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORL_O22_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORL_O22_ORDER
+        /// </summary>
+        public static List<ORL_O22_TIMING> GetAllTIMINGRecords(this ORL_O22_ORDER message)
+        {
+            return message.GetAllRecords<ORL_O22_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O22_ORDER to TIMING
+        /// </summary>
+        public static ORL_O22_TIMING AddTIMING(this ORL_O22_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from ORL_O22_PATIENT
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this ORL_O22_PATIENT message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from ORL_O22_PATIENT
+        /// </summary>
+        public static List<ORL_O22_ORDER> GetAllORDERRecords(this ORL_O22_PATIENT message)
+        {
+            return message.GetAllRecords<ORL_O22_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O22_PATIENT to ORDER
+        /// </summary>
+        public static ORL_O22_ORDER AddORDER(this ORL_O22_PATIENT message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get SAC Records from ORL_O22_SPECIMEN
         /// </summary>
         public static IEnumerable GetSACRecords(this ORL_O22_SPECIMEN message)
@@ -8177,6 +10787,66 @@ namespace NHapiTools.Model.V251.Group
         public static TQ2 AddTQ2(this ORL_O22_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+        /// </summary>
+        public static List<ORL_O34_SPECIMEN> GetAllSPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
+        {
+            return message.GetAllRecords<ORL_O34_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O34_OBSERVATION_REQUEST to SPECIMEN
+        /// </summary>
+        public static ORL_O34_SPECIMEN AddSPECIMEN(this ORL_O34_OBSERVATION_REQUEST message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORL_O34_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORL_O34_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORL_O34_ORDER
+        /// </summary>
+        public static List<ORL_O34_TIMING> GetAllTIMINGRecords(this ORL_O34_ORDER message)
+        {
+            return message.GetAllRecords<ORL_O34_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O34_ORDER to TIMING
+        /// </summary>
+        public static ORL_O34_TIMING AddTIMING(this ORL_O34_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8270,6 +10940,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get ORDER Records from ORL_O34_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this ORL_O34_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from ORL_O34_SPECIMEN
+        /// </summary>
+        public static List<ORL_O34_ORDER> GetAllORDERRecords(this ORL_O34_SPECIMEN message)
+        {
+            return message.GetAllRecords<ORL_O34_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O34_SPECIMEN to ORDER
+        /// </summary>
+        public static ORL_O34_ORDER AddORDER(this ORL_O34_SPECIMEN message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ2 Records from ORL_O34_TIMING
         /// </summary>
         public static IEnumerable GetTQ2Records(this ORL_O34_TIMING message)
@@ -8297,6 +10997,36 @@ namespace NHapiTools.Model.V251.Group
         public static TQ2 AddTQ2(this ORL_O34_TIMING message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORL_O36_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORL_O36_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORL_O36_ORDER
+        /// </summary>
+        public static List<ORL_O36_TIMING> GetAllTIMINGRecords(this ORL_O36_ORDER message)
+        {
+            return message.GetAllRecords<ORL_O36_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O36_ORDER to TIMING
+        /// </summary>
+        public static ORL_O36_TIMING AddTIMING(this ORL_O36_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8387,6 +11117,36 @@ namespace NHapiTools.Model.V251.Group
         public static ORL_O36_SPECIMEN_CONTAINER AddSPECIMEN_CONTAINER(this ORL_O36_SPECIMEN message)
         {
             return message.GetSPECIMEN_CONTAINER(message.SPECIMEN_CONTAINERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from ORL_O36_SPECIMEN_CONTAINER
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this ORL_O36_SPECIMEN_CONTAINER message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from ORL_O36_SPECIMEN_CONTAINER
+        /// </summary>
+        public static List<ORL_O36_ORDER> GetAllORDERRecords(this ORL_O36_SPECIMEN_CONTAINER message)
+        {
+            return message.GetAllRecords<ORL_O36_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O36_SPECIMEN_CONTAINER to ORDER
+        /// </summary>
+        public static ORL_O36_ORDER AddORDER(this ORL_O36_SPECIMEN_CONTAINER message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -8570,6 +11330,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from ORM_O01_ORDER_DETAIL
+        /// </summary>
+        public static List<ORM_O01_OBSERVATION> GetAllOBSERVATIONRecords(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<ORM_O01_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_ORDER_DETAIL to OBSERVATION
+        /// </summary>
+        public static ORM_O01_OBSERVATION AddOBSERVATION(this ORM_O01_ORDER_DETAIL message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORM_O01_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this ORM_O01_PATIENT message)
@@ -8600,6 +11390,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get INSURANCE Records from ORM_O01_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ORM_O01_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ORM_O01_PATIENT
+        /// </summary>
+        public static List<ORM_O01_INSURANCE> GetAllINSURANCERecords(this ORM_O01_PATIENT message)
+        {
+            return message.GetAllRecords<ORM_O01_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ORM_O01_PATIENT to INSURANCE
+        /// </summary>
+        public static ORM_O01_INSURANCE AddINSURANCE(this ORM_O01_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get AL1 Records from ORM_O01_PATIENT
         /// </summary>
         public static IEnumerable GetAL1Records(this ORM_O01_PATIENT message)
@@ -8627,6 +11447,36 @@ namespace NHapiTools.Model.V251.Group
         public static AL1 AddAL1(this ORM_O01_PATIENT message)
         {
             return message.GetAL1(message.AL1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORN_O08_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORN_O08_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORN_O08_ORDER
+        /// </summary>
+        public static List<ORN_O08_TIMING> GetAllTIMINGRecords(this ORN_O08_ORDER message)
+        {
+            return message.GetAllRecords<ORN_O08_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORN_O08_ORDER to TIMING
+        /// </summary>
+        public static ORN_O08_TIMING AddTIMING(this ORN_O08_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -8780,6 +11630,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from ORP_O10_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORP_O10_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORP_O10_ORDER
+        /// </summary>
+        public static List<ORP_O10_TIMING> GetAllTIMINGRecords(this ORP_O10_ORDER message)
+        {
+            return message.GetAllRecords<ORP_O10_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORP_O10_ORDER to TIMING
+        /// </summary>
+        public static ORP_O10_TIMING AddTIMING(this ORP_O10_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from ORP_O10_ORDER_DETAIL
         /// </summary>
         public static IEnumerable GetNTERecords(this ORP_O10_ORDER_DETAIL message)
@@ -8837,6 +11717,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXR AddRXR(this ORP_O10_ORDER_DETAIL message)
         {
             return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get COMPONENT Records from ORP_O10_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetCOMPONENTRecords(this ORP_O10_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENT Records from ORP_O10_ORDER_DETAIL
+        /// </summary>
+        public static List<ORP_O10_COMPONENT> GetAllCOMPONENTRecords(this ORP_O10_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<ORP_O10_COMPONENT>("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+        }
+
+        /// <summary>
+        /// Add a new ORP_O10_ORDER_DETAIL to COMPONENT
+        /// </summary>
+        public static ORP_O10_COMPONENT AddCOMPONENT(this ORP_O10_ORDER_DETAIL message)
+        {
+            return message.GetCOMPONENT(message.COMPONENTRepetitionsUsed);
         }
 
         /// <summary>
@@ -9047,6 +11957,36 @@ namespace NHapiTools.Model.V251.Group
         public static ORR_O02_ORDER AddORDER(this ORR_O02_RESPONSE message)
         {
             return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from ORS_O06_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this ORS_O06_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from ORS_O06_ORDER
+        /// </summary>
+        public static List<ORS_O06_TIMING> GetAllTIMINGRecords(this ORS_O06_ORDER message)
+        {
+            return message.GetAllRecords<ORS_O06_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new ORS_O06_ORDER to TIMING
+        /// </summary>
+        public static ORS_O06_TIMING AddTIMING(this ORS_O06_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -9590,6 +12530,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from OSR_Q06_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this OSR_Q06_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from OSR_Q06_ORDER
+        /// </summary>
+        public static List<OSR_Q06_TIMING> GetAllTIMINGRecords(this OSR_Q06_ORDER message)
+        {
+            return message.GetAllRecords<OSR_Q06_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new OSR_Q06_ORDER to TIMING
+        /// </summary>
+        public static OSR_Q06_TIMING AddTIMING(this OSR_Q06_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from OSR_Q06_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OSR_Q06_ORDER message)
@@ -9830,6 +12800,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_QTY Records from OUL_R21_ORDER_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this OUL_R21_ORDER_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from OUL_R21_ORDER_OBSERVATION
+        /// </summary>
+        public static List<OUL_R21_TIMING_QTY> GetAllTIMING_QTYRecords(this OUL_R21_ORDER_OBSERVATION message)
+        {
+            return message.GetAllRecords<OUL_R21_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R21_ORDER_OBSERVATION to TIMING_QTY
+        /// </summary>
+        public static OUL_R21_TIMING_QTY AddTIMING_QTY(this OUL_R21_ORDER_OBSERVATION message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION Records from OUL_R21_ORDER_OBSERVATION
         /// </summary>
         public static IEnumerable GetOBSERVATIONRecords(this OUL_R21_ORDER_OBSERVATION message)
@@ -9950,66 +12950,6 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get SID Records from OUL_R22_OBXTCDSIDNTE
-        /// </summary>
-        public static IEnumerable GetSIDRecords(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            object[] result = message.GetRecords("SIDRepetitionsUsed", "GetSID");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all SID Records from OUL_R22_OBXTCDSIDNTE
-        /// </summary>
-        public static List<SID> GetAllSIDRecords(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            return message.GetAllRecords<SID>("SIDRepetitionsUsed", "GetSID");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R22_OBXTCDSIDNTE to SID
-        /// </summary>
-        public static SID AddSID(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            return message.GetSID(message.SIDRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NTE Records from OUL_R22_OBXTCDSIDNTE
-        /// </summary>
-        public static IEnumerable GetNTERecords(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE Records from OUL_R22_OBXTCDSIDNTE
-        /// </summary>
-        public static List<NTE> GetAllNTERecords(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R22_OBXTCDSIDNTE to NTE
-        /// </summary>
-        public static NTE AddNTE(this OUL_R22_OBXTCDSIDNTE message)
-        {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get NTE Records from OUL_R22_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OUL_R22_ORDER message)
@@ -10037,6 +12977,66 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OUL_R22_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_QTY Records from OUL_R22_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this OUL_R22_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from OUL_R22_ORDER
+        /// </summary>
+        public static List<OUL_R22_TIMING_QTY> GetAllTIMING_QTYRecords(this OUL_R22_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R22_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R22_ORDER to TIMING_QTY
+        /// </summary>
+        public static OUL_R22_TIMING_QTY AddTIMING_QTY(this OUL_R22_ORDER message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RESULT Records from OUL_R22_ORDER
+        /// </summary>
+        public static IEnumerable GetRESULTRecords(this OUL_R22_ORDER message)
+        {
+            object[] result = message.GetRecords("RESULTRepetitionsUsed", "GetRESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RESULT Records from OUL_R22_ORDER
+        /// </summary>
+        public static List<OUL_R22_RESULT> GetAllRESULTRecords(this OUL_R22_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R22_RESULT>("RESULTRepetitionsUsed", "GetRESULT");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R22_ORDER to RESULT
+        /// </summary>
+        public static OUL_R22_RESULT AddRESULT(this OUL_R22_ORDER message)
+        {
+            return message.GetRESULT(message.RESULTRepetitionsUsed);
         }
 
         /// <summary>
@@ -10100,6 +13100,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get SID Records from OUL_R22_RESULT
+        /// </summary>
+        public static IEnumerable GetSIDRecords(this OUL_R22_RESULT message)
+        {
+            object[] result = message.GetRecords("SIDRepetitionsUsed", "GetSID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SID Records from OUL_R22_RESULT
+        /// </summary>
+        public static List<SID> GetAllSIDRecords(this OUL_R22_RESULT message)
+        {
+            return message.GetAllRecords<SID>("SIDRepetitionsUsed", "GetSID");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R22_RESULT to SID
+        /// </summary>
+        public static SID AddSID(this OUL_R22_RESULT message)
+        {
+            return message.GetSID(message.SIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from OUL_R22_RESULT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this OUL_R22_RESULT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from OUL_R22_RESULT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this OUL_R22_RESULT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R22_RESULT to NTE
+        /// </summary>
+        public static NTE AddNTE(this OUL_R22_RESULT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBX Records from OUL_R22_SPECIMEN
         /// </summary>
         public static IEnumerable GetOBXRecords(this OUL_R22_SPECIMEN message)
@@ -10127,6 +13187,36 @@ namespace NHapiTools.Model.V251.Group
         public static OBX AddOBX(this OUL_R22_SPECIMEN message)
         {
             return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get CONTAINER Records from OUL_R22_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetCONTAINERRecords(this OUL_R22_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OUL_R22_SPECIMEN
+        /// </summary>
+        public static List<OUL_R22_CONTAINER> GetAllCONTAINERRecords(this OUL_R22_SPECIMEN message)
+        {
+            return message.GetAllRecords<OUL_R22_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R22_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OUL_R22_CONTAINER AddCONTAINER(this OUL_R22_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
         }
 
         /// <summary>
@@ -10220,66 +13310,6 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get SID Records from OUL_R23_OBXTCDSIDNTE
-        /// </summary>
-        public static IEnumerable GetSIDRecords(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            object[] result = message.GetRecords("SIDRepetitionsUsed", "GetSID");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all SID Records from OUL_R23_OBXTCDSIDNTE
-        /// </summary>
-        public static List<SID> GetAllSIDRecords(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            return message.GetAllRecords<SID>("SIDRepetitionsUsed", "GetSID");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R23_OBXTCDSIDNTE to SID
-        /// </summary>
-        public static SID AddSID(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            return message.GetSID(message.SIDRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NTE Records from OUL_R23_OBXTCDSIDNTE
-        /// </summary>
-        public static IEnumerable GetNTERecords(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NTE Records from OUL_R23_OBXTCDSIDNTE
-        /// </summary>
-        public static List<NTE> GetAllNTERecords(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R23_OBXTCDSIDNTE to NTE
-        /// </summary>
-        public static NTE AddNTE(this OUL_R23_OBXTCDSIDNTE message)
-        {
-            return message.GetNTE(message.NTERepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get NTE Records from OUL_R23_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this OUL_R23_ORDER message)
@@ -10307,6 +13337,66 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this OUL_R23_ORDER message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_QTY Records from OUL_R23_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this OUL_R23_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from OUL_R23_ORDER
+        /// </summary>
+        public static List<OUL_R23_TIMING_QTY> GetAllTIMING_QTYRecords(this OUL_R23_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R23_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_ORDER to TIMING_QTY
+        /// </summary>
+        public static OUL_R23_TIMING_QTY AddTIMING_QTY(this OUL_R23_ORDER message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RESULT Records from OUL_R23_ORDER
+        /// </summary>
+        public static IEnumerable GetRESULTRecords(this OUL_R23_ORDER message)
+        {
+            object[] result = message.GetRecords("RESULTRepetitionsUsed", "GetRESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RESULT Records from OUL_R23_ORDER
+        /// </summary>
+        public static List<OUL_R23_RESULT> GetAllRESULTRecords(this OUL_R23_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R23_RESULT>("RESULTRepetitionsUsed", "GetRESULT");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_ORDER to RESULT
+        /// </summary>
+        public static OUL_R23_RESULT AddRESULT(this OUL_R23_ORDER message)
+        {
+            return message.GetRESULT(message.RESULTRepetitionsUsed);
         }
 
         /// <summary>
@@ -10340,9 +13430,9 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get NTE Records from OUL_R23_PIDPD1NTE
+        /// Get NTE Records from OUL_R23_PATIENT
         /// </summary>
-        public static IEnumerable GetNTERecords(this OUL_R23_PIDPD1NTE message)
+        public static IEnumerable GetNTERecords(this OUL_R23_PATIENT message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -10354,115 +13444,25 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from OUL_R23_PIDPD1NTE
+        /// Get all NTE Records from OUL_R23_PATIENT
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this OUL_R23_PIDPD1NTE message)
+        public static List<NTE> GetAllNTERecords(this OUL_R23_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new OUL_R23_PIDPD1NTE to NTE
+        /// Add a new OUL_R23_PATIENT to NTE
         /// </summary>
-        public static NTE AddNTE(this OUL_R23_PIDPD1NTE message)
+        public static NTE AddNTE(this OUL_R23_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
-        /// Get OBX Records from OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
+        /// Get SID Records from OUL_R23_RESULT
         /// </summary>
-        public static IEnumerable GetOBXRecords(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all OBX Records from OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
-        /// </summary>
-        public static List<OBX> GetAllOBXRecords(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI to OBX
-        /// </summary>
-        public static OBX AddOBX(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            return message.GetOBX(message.OBXRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get CONTAINER Records from OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
-        /// </summary>
-        public static IEnumerable GetCONTAINERRecords(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all CONTAINER Records from OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
-        /// </summary>
-        public static List<OUL_R23_CONTAINER> GetAllCONTAINERRecords(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            return message.GetAllRecords<OUL_R23_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI to CONTAINER
-        /// </summary>
-        public static OUL_R23_CONTAINER AddCONTAINER(this OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI message)
-        {
-            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get TQ2 Records from OUL_R23_TQ1TQ2
-        /// </summary>
-        public static IEnumerable GetTQ2Records(this OUL_R23_TQ1TQ2 message)
-        {
-            object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all TQ2 Records from OUL_R23_TQ1TQ2
-        /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this OUL_R23_TQ1TQ2 message)
-        {
-            return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
-        }
-
-        /// <summary>
-        /// Add a new OUL_R23_TQ1TQ2 to TQ2
-        /// </summary>
-        public static TQ2 AddTQ2(this OUL_R23_TQ1TQ2 message)
-        {
-            return message.GetTQ2(message.TQ2RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get SID Records from OUL_R24_OBXTCDSIDNTE
-        /// </summary>
-        public static IEnumerable GetSIDRecords(this OUL_R24_OBXTCDSIDNTE message)
+        public static IEnumerable GetSIDRecords(this OUL_R23_RESULT message)
         {
             object[] result = message.GetRecords("SIDRepetitionsUsed", "GetSID");
 
@@ -10474,25 +13474,25 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all SID Records from OUL_R24_OBXTCDSIDNTE
+        /// Get all SID Records from OUL_R23_RESULT
         /// </summary>
-        public static List<SID> GetAllSIDRecords(this OUL_R24_OBXTCDSIDNTE message)
+        public static List<SID> GetAllSIDRecords(this OUL_R23_RESULT message)
         {
             return message.GetAllRecords<SID>("SIDRepetitionsUsed", "GetSID");
         }
 
         /// <summary>
-        /// Add a new OUL_R24_OBXTCDSIDNTE to SID
+        /// Add a new OUL_R23_RESULT to SID
         /// </summary>
-        public static SID AddSID(this OUL_R24_OBXTCDSIDNTE message)
+        public static SID AddSID(this OUL_R23_RESULT message)
         {
             return message.GetSID(message.SIDRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get NTE Records from OUL_R24_OBXTCDSIDNTE
+        /// Get NTE Records from OUL_R23_RESULT
         /// </summary>
-        public static IEnumerable GetNTERecords(this OUL_R24_OBXTCDSIDNTE message)
+        public static IEnumerable GetNTERecords(this OUL_R23_RESULT message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -10504,19 +13504,109 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from OUL_R24_OBXTCDSIDNTE
+        /// Get all NTE Records from OUL_R23_RESULT
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this OUL_R24_OBXTCDSIDNTE message)
+        public static List<NTE> GetAllNTERecords(this OUL_R23_RESULT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new OUL_R24_OBXTCDSIDNTE to NTE
+        /// Add a new OUL_R23_RESULT to NTE
         /// </summary>
-        public static NTE AddNTE(this OUL_R24_OBXTCDSIDNTE message)
+        public static NTE AddNTE(this OUL_R23_RESULT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this OUL_R23_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBX Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static List<OBX> GetAllOBXRecords(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_SPECIMEN to OBX
+        /// </summary>
+        public static OBX AddOBX(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get CONTAINER Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetCONTAINERRecords(this OUL_R23_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OUL_R23_SPECIMEN
+        /// </summary>
+        public static List<OUL_R23_CONTAINER> GetAllCONTAINERRecords(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetAllRecords<OUL_R23_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OUL_R23_CONTAINER AddCONTAINER(this OUL_R23_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TQ2 Records from OUL_R23_TIMING_QTY
+        /// </summary>
+        public static IEnumerable GetTQ2Records(this OUL_R23_TIMING_QTY message)
+        {
+            object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TQ2 Records from OUL_R23_TIMING_QTY
+        /// </summary>
+        public static List<TQ2> GetAllTQ2Records(this OUL_R23_TIMING_QTY message)
+        {
+            return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R23_TIMING_QTY to TQ2
+        /// </summary>
+        public static TQ2 AddTQ2(this OUL_R23_TIMING_QTY message)
+        {
+            return message.GetTQ2(message.TQ2RepetitionsUsed);
         }
 
         /// <summary>
@@ -10550,6 +13640,96 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_QTY Records from OUL_R24_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_QTYRecords(this OUL_R24_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_QTY Records from OUL_R24_ORDER
+        /// </summary>
+        public static List<OUL_R24_TIMING_QTY> GetAllTIMING_QTYRecords(this OUL_R24_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R24_TIMING_QTY>("TIMING_QTYRepetitionsUsed", "GetTIMING_QTY");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_ORDER to TIMING_QTY
+        /// </summary>
+        public static OUL_R24_TIMING_QTY AddTIMING_QTY(this OUL_R24_ORDER message)
+        {
+            return message.GetTIMING_QTY(message.TIMING_QTYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from OUL_R24_ORDER
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this OUL_R24_ORDER message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from OUL_R24_ORDER
+        /// </summary>
+        public static List<OUL_R24_SPECIMEN> GetAllSPECIMENRecords(this OUL_R24_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R24_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_ORDER to SPECIMEN
+        /// </summary>
+        public static OUL_R24_SPECIMEN AddSPECIMEN(this OUL_R24_ORDER message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RESULT Records from OUL_R24_ORDER
+        /// </summary>
+        public static IEnumerable GetRESULTRecords(this OUL_R24_ORDER message)
+        {
+            object[] result = message.GetRecords("RESULTRepetitionsUsed", "GetRESULT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RESULT Records from OUL_R24_ORDER
+        /// </summary>
+        public static List<OUL_R24_RESULT> GetAllRESULTRecords(this OUL_R24_ORDER message)
+        {
+            return message.GetAllRecords<OUL_R24_RESULT>("RESULTRepetitionsUsed", "GetRESULT");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_ORDER to RESULT
+        /// </summary>
+        public static OUL_R24_RESULT AddRESULT(this OUL_R24_ORDER message)
+        {
+            return message.GetRESULT(message.RESULTRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CTI Records from OUL_R24_ORDER
         /// </summary>
         public static IEnumerable GetCTIRecords(this OUL_R24_ORDER message)
@@ -10580,9 +13760,9 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get NTE Records from OUL_R24_PIDPD1NTE
+        /// Get NTE Records from OUL_R24_PATIENT
         /// </summary>
-        public static IEnumerable GetNTERecords(this OUL_R24_PIDPD1NTE message)
+        public static IEnumerable GetNTERecords(this OUL_R24_PATIENT message)
         {
             object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
 
@@ -10594,25 +13774,85 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all NTE Records from OUL_R24_PIDPD1NTE
+        /// Get all NTE Records from OUL_R24_PATIENT
         /// </summary>
-        public static List<NTE> GetAllNTERecords(this OUL_R24_PIDPD1NTE message)
+        public static List<NTE> GetAllNTERecords(this OUL_R24_PATIENT message)
         {
             return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
         }
 
         /// <summary>
-        /// Add a new OUL_R24_PIDPD1NTE to NTE
+        /// Add a new OUL_R24_PATIENT to NTE
         /// </summary>
-        public static NTE AddNTE(this OUL_R24_PIDPD1NTE message)
+        public static NTE AddNTE(this OUL_R24_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
         }
 
         /// <summary>
-        /// Get OBX Records from OUL_R24_SPMOBXSACINV
+        /// Get SID Records from OUL_R24_RESULT
         /// </summary>
-        public static IEnumerable GetOBXRecords(this OUL_R24_SPMOBXSACINV message)
+        public static IEnumerable GetSIDRecords(this OUL_R24_RESULT message)
+        {
+            object[] result = message.GetRecords("SIDRepetitionsUsed", "GetSID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SID Records from OUL_R24_RESULT
+        /// </summary>
+        public static List<SID> GetAllSIDRecords(this OUL_R24_RESULT message)
+        {
+            return message.GetAllRecords<SID>("SIDRepetitionsUsed", "GetSID");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_RESULT to SID
+        /// </summary>
+        public static SID AddSID(this OUL_R24_RESULT message)
+        {
+            return message.GetSID(message.SIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from OUL_R24_RESULT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this OUL_R24_RESULT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from OUL_R24_RESULT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this OUL_R24_RESULT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_RESULT to NTE
+        /// </summary>
+        public static NTE AddNTE(this OUL_R24_RESULT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from OUL_R24_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this OUL_R24_SPECIMEN message)
         {
             object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
 
@@ -10624,25 +13864,55 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all OBX Records from OUL_R24_SPMOBXSACINV
+        /// Get all OBX Records from OUL_R24_SPECIMEN
         /// </summary>
-        public static List<OBX> GetAllOBXRecords(this OUL_R24_SPMOBXSACINV message)
+        public static List<OBX> GetAllOBXRecords(this OUL_R24_SPECIMEN message)
         {
             return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
         }
 
         /// <summary>
-        /// Add a new OUL_R24_SPMOBXSACINV to OBX
+        /// Add a new OUL_R24_SPECIMEN to OBX
         /// </summary>
-        public static OBX AddOBX(this OUL_R24_SPMOBXSACINV message)
+        public static OBX AddOBX(this OUL_R24_SPECIMEN message)
         {
             return message.GetOBX(message.OBXRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get TQ2 Records from OUL_R24_TQ1TQ2
+        /// Get CONTAINER Records from OUL_R24_SPECIMEN
         /// </summary>
-        public static IEnumerable GetTQ2Records(this OUL_R24_TQ1TQ2 message)
+        public static IEnumerable GetCONTAINERRecords(this OUL_R24_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("CONTAINERRepetitionsUsed", "GetCONTAINER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all CONTAINER Records from OUL_R24_SPECIMEN
+        /// </summary>
+        public static List<OUL_R24_CONTAINER> GetAllCONTAINERRecords(this OUL_R24_SPECIMEN message)
+        {
+            return message.GetAllRecords<OUL_R24_CONTAINER>("CONTAINERRepetitionsUsed", "GetCONTAINER");
+        }
+
+        /// <summary>
+        /// Add a new OUL_R24_SPECIMEN to CONTAINER
+        /// </summary>
+        public static OUL_R24_CONTAINER AddCONTAINER(this OUL_R24_SPECIMEN message)
+        {
+            return message.GetCONTAINER(message.CONTAINERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TQ2 Records from OUL_R24_TIMING_QTY
+        /// </summary>
+        public static IEnumerable GetTQ2Records(this OUL_R24_TIMING_QTY message)
         {
             object[] result = message.GetRecords("TQ2RepetitionsUsed", "GetTQ2");
 
@@ -10654,19 +13924,49 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all TQ2 Records from OUL_R24_TQ1TQ2
+        /// Get all TQ2 Records from OUL_R24_TIMING_QTY
         /// </summary>
-        public static List<TQ2> GetAllTQ2Records(this OUL_R24_TQ1TQ2 message)
+        public static List<TQ2> GetAllTQ2Records(this OUL_R24_TIMING_QTY message)
         {
             return message.GetAllRecords<TQ2>("TQ2RepetitionsUsed", "GetTQ2");
         }
 
         /// <summary>
-        /// Add a new OUL_R24_TQ1TQ2 to TQ2
+        /// Add a new OUL_R24_TIMING_QTY to TQ2
         /// </summary>
-        public static TQ2 AddTQ2(this OUL_R24_TQ1TQ2 message)
+        public static TQ2 AddTQ2(this OUL_R24_TIMING_QTY message)
         {
             return message.GetTQ2(message.TQ2RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ASSOCIATED_RX_ADMIN Records from PEX_P07_ASSOCIATED_PERSON
+        /// </summary>
+        public static IEnumerable GetASSOCIATED_RX_ADMINRecords(this PEX_P07_ASSOCIATED_PERSON message)
+        {
+            object[] result = message.GetRecords("ASSOCIATED_RX_ADMINRepetitionsUsed", "GetASSOCIATED_RX_ADMIN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ASSOCIATED_RX_ADMIN Records from PEX_P07_ASSOCIATED_PERSON
+        /// </summary>
+        public static List<PEX_P07_ASSOCIATED_RX_ADMIN> GetAllASSOCIATED_RX_ADMINRecords(this PEX_P07_ASSOCIATED_PERSON message)
+        {
+            return message.GetAllRecords<PEX_P07_ASSOCIATED_RX_ADMIN>("ASSOCIATED_RX_ADMINRepetitionsUsed", "GetASSOCIATED_RX_ADMIN");
+        }
+
+        /// <summary>
+        /// Add a new PEX_P07_ASSOCIATED_PERSON to ASSOCIATED_RX_ADMIN
+        /// </summary>
+        public static PEX_P07_ASSOCIATED_RX_ADMIN AddASSOCIATED_RX_ADMIN(this PEX_P07_ASSOCIATED_PERSON message)
+        {
+            return message.GetASSOCIATED_RX_ADMIN(message.ASSOCIATED_RX_ADMINRepetitionsUsed);
         }
 
         /// <summary>
@@ -10850,6 +14150,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get RX_ADMINISTRATION Records from PEX_P07_PEX_CAUSE
+        /// </summary>
+        public static IEnumerable GetRX_ADMINISTRATIONRecords(this PEX_P07_PEX_CAUSE message)
+        {
+            object[] result = message.GetRecords("RX_ADMINISTRATIONRepetitionsUsed", "GetRX_ADMINISTRATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RX_ADMINISTRATION Records from PEX_P07_PEX_CAUSE
+        /// </summary>
+        public static List<PEX_P07_RX_ADMINISTRATION> GetAllRX_ADMINISTRATIONRecords(this PEX_P07_PEX_CAUSE message)
+        {
+            return message.GetAllRecords<PEX_P07_RX_ADMINISTRATION>("RX_ADMINISTRATIONRepetitionsUsed", "GetRX_ADMINISTRATION");
+        }
+
+        /// <summary>
+        /// Add a new PEX_P07_PEX_CAUSE to RX_ADMINISTRATION
+        /// </summary>
+        public static PEX_P07_RX_ADMINISTRATION AddRX_ADMINISTRATION(this PEX_P07_PEX_CAUSE message)
+        {
+            return message.GetRX_ADMINISTRATION(message.RX_ADMINISTRATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get PRB Records from PEX_P07_PEX_CAUSE
         /// </summary>
         public static IEnumerable GetPRBRecords(this PEX_P07_PEX_CAUSE message)
@@ -10937,6 +14267,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this PEX_P07_PEX_CAUSE message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get STUDY Records from PEX_P07_PEX_CAUSE
+        /// </summary>
+        public static IEnumerable GetSTUDYRecords(this PEX_P07_PEX_CAUSE message)
+        {
+            object[] result = message.GetRecords("STUDYRepetitionsUsed", "GetSTUDY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all STUDY Records from PEX_P07_PEX_CAUSE
+        /// </summary>
+        public static List<PEX_P07_STUDY> GetAllSTUDYRecords(this PEX_P07_PEX_CAUSE message)
+        {
+            return message.GetAllRecords<PEX_P07_STUDY>("STUDYRepetitionsUsed", "GetSTUDY");
+        }
+
+        /// <summary>
+        /// Add a new PEX_P07_PEX_CAUSE to STUDY
+        /// </summary>
+        public static PEX_P07_STUDY AddSTUDY(this PEX_P07_PEX_CAUSE message)
+        {
+            return message.GetSTUDY(message.STUDYRepetitionsUsed);
         }
 
         /// <summary>
@@ -11150,6 +14510,156 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PGL_PC6_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PGL_PC6_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PGL_PC6_GOAL
+        /// </summary>
+        public static List<PGL_PC6_GOAL_ROLE> GetAllGOAL_ROLERecords(this PGL_PC6_GOAL message)
+        {
+            return message.GetAllRecords<PGL_PC6_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PGL_PC6_GOAL_ROLE AddGOAL_ROLE(this PGL_PC6_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATHWAY Records from PGL_PC6_GOAL
+        /// </summary>
+        public static IEnumerable GetPATHWAYRecords(this PGL_PC6_GOAL message)
+        {
+            object[] result = message.GetRecords("PATHWAYRepetitionsUsed", "GetPATHWAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY Records from PGL_PC6_GOAL
+        /// </summary>
+        public static List<PGL_PC6_PATHWAY> GetAllPATHWAYRecords(this PGL_PC6_GOAL message)
+        {
+            return message.GetAllRecords<PGL_PC6_PATHWAY>("PATHWAYRepetitionsUsed", "GetPATHWAY");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_GOAL to PATHWAY
+        /// </summary>
+        public static PGL_PC6_PATHWAY AddPATHWAY(this PGL_PC6_GOAL message)
+        {
+            return message.GetPATHWAY(message.PATHWAYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from PGL_PC6_GOAL
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this PGL_PC6_GOAL message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from PGL_PC6_GOAL
+        /// </summary>
+        public static List<PGL_PC6_OBSERVATION> GetAllOBSERVATIONRecords(this PGL_PC6_GOAL message)
+        {
+            return message.GetAllRecords<PGL_PC6_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_GOAL to OBSERVATION
+        /// </summary>
+        public static PGL_PC6_OBSERVATION AddOBSERVATION(this PGL_PC6_GOAL message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PGL_PC6_GOAL
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PGL_PC6_GOAL message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PGL_PC6_GOAL
+        /// </summary>
+        public static List<PGL_PC6_PROBLEM> GetAllPROBLEMRecords(this PGL_PC6_GOAL message)
+        {
+            return message.GetAllRecords<PGL_PC6_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_GOAL to PROBLEM
+        /// </summary>
+        public static PGL_PC6_PROBLEM AddPROBLEM(this PGL_PC6_GOAL message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PGL_PC6_GOAL
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PGL_PC6_GOAL message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PGL_PC6_GOAL
+        /// </summary>
+        public static List<PGL_PC6_ORDER> GetAllORDERRecords(this PGL_PC6_GOAL message)
+        {
+            return message.GetAllRecords<PGL_PC6_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_GOAL to ORDER
+        /// </summary>
+        public static PGL_PC6_ORDER AddORDER(this PGL_PC6_GOAL message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get VAR Records from PGL_PC6_GOAL_ROLE
         /// </summary>
         public static IEnumerable GetVARRecords(this PGL_PC6_GOAL_ROLE message)
@@ -11267,6 +14777,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PGL_PC6_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PGL_PC6_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PGL_PC6_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PGL_PC6_ORDER_DETAIL
+        /// </summary>
+        public static List<PGL_PC6_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PGL_PC6_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PGL_PC6_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PGL_PC6_ORDER_OBSERVATION AddORDER_OBSERVATION(this PGL_PC6_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -11420,6 +14960,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROBLEM_ROLE Records from PGL_PC6_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PGL_PC6_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PGL_PC6_PROBLEM
+        /// </summary>
+        public static List<PGL_PC6_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PGL_PC6_PROBLEM message)
+        {
+            return message.GetAllRecords<PGL_PC6_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PGL_PC6_PROBLEM_ROLE AddPROBLEM_ROLE(this PGL_PC6_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PGL_PC6_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PGL_PC6_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PGL_PC6_PROBLEM
+        /// </summary>
+        public static List<PGL_PC6_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PGL_PC6_PROBLEM message)
+        {
+            return message.GetAllRecords<PGL_PC6_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PGL_PC6_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PGL_PC6_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PGL_PC6_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PGL_PC6_PROBLEM_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PGL_PC6_PROBLEM_OBSERVATION message)
@@ -11570,6 +15170,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PPG_PCG_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PPG_PCG_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PPG_PCG_GOAL
+        /// </summary>
+        public static List<PPG_PCG_GOAL_ROLE> GetAllGOAL_ROLERecords(this PPG_PCG_GOAL message)
+        {
+            return message.GetAllRecords<PPG_PCG_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PPG_PCG_GOAL_ROLE AddGOAL_ROLE(this PPG_PCG_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PPG_PCG_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PPG_PCG_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PPG_PCG_GOAL
+        /// </summary>
+        public static List<PPG_PCG_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PPG_PCG_GOAL message)
+        {
+            return message.GetAllRecords<PPG_PCG_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PPG_PCG_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PPG_PCG_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PPG_PCG_GOAL
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PPG_PCG_GOAL message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PPG_PCG_GOAL
+        /// </summary>
+        public static List<PPG_PCG_PROBLEM> GetAllPROBLEMRecords(this PPG_PCG_GOAL message)
+        {
+            return message.GetAllRecords<PPG_PCG_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_GOAL to PROBLEM
+        /// </summary>
+        public static PPG_PCG_PROBLEM AddPROBLEM(this PPG_PCG_GOAL message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PPG_PCG_GOAL
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PPG_PCG_GOAL message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PPG_PCG_GOAL
+        /// </summary>
+        public static List<PPG_PCG_ORDER> GetAllORDERRecords(this PPG_PCG_GOAL message)
+        {
+            return message.GetAllRecords<PPG_PCG_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_GOAL to ORDER
+        /// </summary>
+        public static PPG_PCG_ORDER AddORDER(this PPG_PCG_GOAL message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPG_PCG_GOAL_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPG_PCG_GOAL_OBSERVATION message)
@@ -11687,6 +15407,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPG_PCG_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PPG_PCG_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PPG_PCG_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PPG_PCG_ORDER_DETAIL
+        /// </summary>
+        public static List<PPG_PCG_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PPG_PCG_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PPG_PCG_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PPG_PCG_ORDER_OBSERVATION AddORDER_OBSERVATION(this PPG_PCG_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -11810,6 +15560,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PATHWAY_ROLE Records from PPG_PCG_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPATHWAY_ROLERecords(this PPG_PCG_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY_ROLE Records from PPG_PCG_PATHWAY
+        /// </summary>
+        public static List<PPG_PCG_PATHWAY_ROLE> GetAllPATHWAY_ROLERecords(this PPG_PCG_PATHWAY message)
+        {
+            return message.GetAllRecords<PPG_PCG_PATHWAY_ROLE>("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_PATHWAY to PATHWAY_ROLE
+        /// </summary>
+        public static PPG_PCG_PATHWAY_ROLE AddPATHWAY_ROLE(this PPG_PCG_PATHWAY message)
+        {
+            return message.GetPATHWAY_ROLE(message.PATHWAY_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PPG_PCG_PATHWAY
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PPG_PCG_PATHWAY message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PPG_PCG_PATHWAY
+        /// </summary>
+        public static List<PPG_PCG_GOAL> GetAllGOALRecords(this PPG_PCG_PATHWAY message)
+        {
+            return message.GetAllRecords<PPG_PCG_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_PATHWAY to GOAL
+        /// </summary>
+        public static PPG_PCG_GOAL AddGOAL(this PPG_PCG_PATHWAY message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get VAR Records from PPG_PCG_PATHWAY_ROLE
         /// </summary>
         public static IEnumerable GetVARRecords(this PPG_PCG_PATHWAY_ROLE message)
@@ -11897,6 +15707,66 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPG_PCG_PROBLEM message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_ROLE Records from PPG_PCG_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PPG_PCG_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PPG_PCG_PROBLEM
+        /// </summary>
+        public static List<PPG_PCG_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PPG_PCG_PROBLEM message)
+        {
+            return message.GetAllRecords<PPG_PCG_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PPG_PCG_PROBLEM_ROLE AddPROBLEM_ROLE(this PPG_PCG_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PPG_PCG_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PPG_PCG_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PPG_PCG_PROBLEM
+        /// </summary>
+        public static List<PPG_PCG_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PPG_PCG_PROBLEM message)
+        {
+            return message.GetAllRecords<PPG_PCG_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPG_PCG_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PPG_PCG_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PPG_PCG_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -12020,6 +15890,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PPP_PCB_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PPP_PCB_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PPP_PCB_GOAL
+        /// </summary>
+        public static List<PPP_PCB_GOAL_ROLE> GetAllGOAL_ROLERecords(this PPP_PCB_GOAL message)
+        {
+            return message.GetAllRecords<PPP_PCB_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PPP_PCB_GOAL_ROLE AddGOAL_ROLE(this PPP_PCB_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PPP_PCB_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PPP_PCB_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PPP_PCB_GOAL
+        /// </summary>
+        public static List<PPP_PCB_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PPP_PCB_GOAL message)
+        {
+            return message.GetAllRecords<PPP_PCB_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PPP_PCB_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PPP_PCB_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPP_PCB_GOAL_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPP_PCB_GOAL_OBSERVATION message)
@@ -12137,6 +16067,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPP_PCB_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PPP_PCB_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PPP_PCB_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PPP_PCB_ORDER_DETAIL
+        /// </summary>
+        public static List<PPP_PCB_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PPP_PCB_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PPP_PCB_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PPP_PCB_ORDER_OBSERVATION AddORDER_OBSERVATION(this PPP_PCB_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -12260,6 +16220,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PATHWAY_ROLE Records from PPP_PCB_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPATHWAY_ROLERecords(this PPP_PCB_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY_ROLE Records from PPP_PCB_PATHWAY
+        /// </summary>
+        public static List<PPP_PCB_PATHWAY_ROLE> GetAllPATHWAY_ROLERecords(this PPP_PCB_PATHWAY message)
+        {
+            return message.GetAllRecords<PPP_PCB_PATHWAY_ROLE>("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PATHWAY to PATHWAY_ROLE
+        /// </summary>
+        public static PPP_PCB_PATHWAY_ROLE AddPATHWAY_ROLE(this PPP_PCB_PATHWAY message)
+        {
+            return message.GetPATHWAY_ROLE(message.PATHWAY_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PPP_PCB_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PPP_PCB_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PPP_PCB_PATHWAY
+        /// </summary>
+        public static List<PPP_PCB_PROBLEM> GetAllPROBLEMRecords(this PPP_PCB_PATHWAY message)
+        {
+            return message.GetAllRecords<PPP_PCB_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PATHWAY to PROBLEM
+        /// </summary>
+        public static PPP_PCB_PROBLEM AddPROBLEM(this PPP_PCB_PATHWAY message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get VAR Records from PPP_PCB_PATHWAY_ROLE
         /// </summary>
         public static IEnumerable GetVARRecords(this PPP_PCB_PATHWAY_ROLE message)
@@ -12347,6 +16367,126 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPP_PCB_PROBLEM message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_ROLE Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PPP_PCB_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static List<PPP_PCB_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetAllRecords<PPP_PCB_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PPP_PCB_PROBLEM_ROLE AddPROBLEM_ROLE(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PPP_PCB_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static List<PPP_PCB_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetAllRecords<PPP_PCB_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PPP_PCB_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PPP_PCB_PROBLEM message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static List<PPP_PCB_GOAL> GetAllGOALRecords(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetAllRecords<PPP_PCB_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PROBLEM to GOAL
+        /// </summary>
+        public static PPP_PCB_GOAL AddGOAL(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PPP_PCB_PROBLEM message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PPP_PCB_PROBLEM
+        /// </summary>
+        public static List<PPP_PCB_ORDER> GetAllORDERRecords(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetAllRecords<PPP_PCB_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PPP_PCB_PROBLEM to ORDER
+        /// </summary>
+        public static PPP_PCB_ORDER AddORDER(this PPP_PCB_PROBLEM message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -12470,6 +16610,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PPR_PC1_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PPR_PC1_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PPR_PC1_GOAL
+        /// </summary>
+        public static List<PPR_PC1_GOAL_ROLE> GetAllGOAL_ROLERecords(this PPR_PC1_GOAL message)
+        {
+            return message.GetAllRecords<PPR_PC1_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PPR_PC1_GOAL_ROLE AddGOAL_ROLE(this PPR_PC1_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PPR_PC1_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PPR_PC1_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PPR_PC1_GOAL
+        /// </summary>
+        public static List<PPR_PC1_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PPR_PC1_GOAL message)
+        {
+            return message.GetAllRecords<PPR_PC1_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PPR_PC1_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PPR_PC1_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPR_PC1_GOAL_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPR_PC1_GOAL_OBSERVATION message)
@@ -12587,6 +16787,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPR_PC1_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PPR_PC1_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PPR_PC1_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PPR_PC1_ORDER_DETAIL
+        /// </summary>
+        public static List<PPR_PC1_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PPR_PC1_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PPR_PC1_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PPR_PC1_ORDER_OBSERVATION AddORDER_OBSERVATION(this PPR_PC1_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -12740,6 +16970,156 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROBLEM_ROLE Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PPR_PC1_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static List<PPR_PC1_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetAllRecords<PPR_PC1_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PPR_PC1_PROBLEM_ROLE AddPROBLEM_ROLE(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATHWAY Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPATHWAYRecords(this PPR_PC1_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PATHWAYRepetitionsUsed", "GetPATHWAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static List<PPR_PC1_PATHWAY> GetAllPATHWAYRecords(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetAllRecords<PPR_PC1_PATHWAY>("PATHWAYRepetitionsUsed", "GetPATHWAY");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_PROBLEM to PATHWAY
+        /// </summary>
+        public static PPR_PC1_PATHWAY AddPATHWAY(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetPATHWAY(message.PATHWAYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PPR_PC1_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static List<PPR_PC1_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetAllRecords<PPR_PC1_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PPR_PC1_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PPR_PC1_PROBLEM message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static List<PPR_PC1_GOAL> GetAllGOALRecords(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetAllRecords<PPR_PC1_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_PROBLEM to GOAL
+        /// </summary>
+        public static PPR_PC1_GOAL AddGOAL(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PPR_PC1_PROBLEM message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PPR_PC1_PROBLEM
+        /// </summary>
+        public static List<PPR_PC1_ORDER> GetAllORDERRecords(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetAllRecords<PPR_PC1_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PPR_PC1_PROBLEM to ORDER
+        /// </summary>
+        public static PPR_PC1_ORDER AddORDER(this PPR_PC1_PROBLEM message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPR_PC1_PROBLEM_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPR_PC1_PROBLEM_OBSERVATION message)
@@ -12857,6 +17237,126 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPT_PCL_GOAL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_ROLE Records from PPT_PCL_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PPT_PCL_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PPT_PCL_GOAL
+        /// </summary>
+        public static List<PPT_PCL_GOAL_ROLE> GetAllGOAL_ROLERecords(this PPT_PCL_GOAL message)
+        {
+            return message.GetAllRecords<PPT_PCL_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PPT_PCL_GOAL_ROLE AddGOAL_ROLE(this PPT_PCL_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PPT_PCL_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PPT_PCL_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PPT_PCL_GOAL
+        /// </summary>
+        public static List<PPT_PCL_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PPT_PCL_GOAL message)
+        {
+            return message.GetAllRecords<PPT_PCL_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PPT_PCL_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PPT_PCL_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PPT_PCL_GOAL
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PPT_PCL_GOAL message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PPT_PCL_GOAL
+        /// </summary>
+        public static List<PPT_PCL_PROBLEM> GetAllPROBLEMRecords(this PPT_PCL_GOAL message)
+        {
+            return message.GetAllRecords<PPT_PCL_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_GOAL to PROBLEM
+        /// </summary>
+        public static PPT_PCL_PROBLEM AddPROBLEM(this PPT_PCL_GOAL message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PPT_PCL_GOAL
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PPT_PCL_GOAL message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PPT_PCL_GOAL
+        /// </summary>
+        public static List<PPT_PCL_ORDER> GetAllORDERRecords(this PPT_PCL_GOAL message)
+        {
+            return message.GetAllRecords<PPT_PCL_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_GOAL to ORDER
+        /// </summary>
+        public static PPT_PCL_ORDER AddORDER(this PPT_PCL_GOAL message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -12980,6 +17480,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get ORDER_OBSERVATION Records from PPT_PCL_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PPT_PCL_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PPT_PCL_ORDER_DETAIL
+        /// </summary>
+        public static List<PPT_PCL_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PPT_PCL_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PPT_PCL_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PPT_PCL_ORDER_OBSERVATION AddORDER_OBSERVATION(this PPT_PCL_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPT_PCL_ORDER_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPT_PCL_ORDER_OBSERVATION message)
@@ -13097,6 +17627,66 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPT_PCL_PATHWAY message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATHWAY_ROLE Records from PPT_PCL_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPATHWAY_ROLERecords(this PPT_PCL_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY_ROLE Records from PPT_PCL_PATHWAY
+        /// </summary>
+        public static List<PPT_PCL_PATHWAY_ROLE> GetAllPATHWAY_ROLERecords(this PPT_PCL_PATHWAY message)
+        {
+            return message.GetAllRecords<PPT_PCL_PATHWAY_ROLE>("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_PATHWAY to PATHWAY_ROLE
+        /// </summary>
+        public static PPT_PCL_PATHWAY_ROLE AddPATHWAY_ROLE(this PPT_PCL_PATHWAY message)
+        {
+            return message.GetPATHWAY_ROLE(message.PATHWAY_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PPT_PCL_PATHWAY
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PPT_PCL_PATHWAY message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PPT_PCL_PATHWAY
+        /// </summary>
+        public static List<PPT_PCL_GOAL> GetAllGOALRecords(this PPT_PCL_PATHWAY message)
+        {
+            return message.GetAllRecords<PPT_PCL_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_PATHWAY to GOAL
+        /// </summary>
+        public static PPT_PCL_GOAL AddGOAL(this PPT_PCL_PATHWAY message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
         }
 
         /// <summary>
@@ -13220,6 +17810,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROBLEM_ROLE Records from PPT_PCL_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PPT_PCL_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PPT_PCL_PROBLEM
+        /// </summary>
+        public static List<PPT_PCL_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PPT_PCL_PROBLEM message)
+        {
+            return message.GetAllRecords<PPT_PCL_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PPT_PCL_PROBLEM_ROLE AddPROBLEM_ROLE(this PPT_PCL_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PPT_PCL_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PPT_PCL_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PPT_PCL_PROBLEM
+        /// </summary>
+        public static List<PPT_PCL_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PPT_PCL_PROBLEM message)
+        {
+            return message.GetAllRecords<PPT_PCL_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPT_PCL_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PPT_PCL_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PPT_PCL_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPT_PCL_PROBLEM_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPT_PCL_PROBLEM_OBSERVATION message)
@@ -13337,6 +17987,156 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PPV_PCA_GOAL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_ROLE Records from PPV_PCA_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PPV_PCA_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PPV_PCA_GOAL
+        /// </summary>
+        public static List<PPV_PCA_GOAL_ROLE> GetAllGOAL_ROLERecords(this PPV_PCA_GOAL message)
+        {
+            return message.GetAllRecords<PPV_PCA_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PPV_PCA_GOAL_ROLE AddGOAL_ROLE(this PPV_PCA_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_PATHWAY Records from PPV_PCA_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_PATHWAYRecords(this PPV_PCA_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_PATHWAYRepetitionsUsed", "GetGOAL_PATHWAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_PATHWAY Records from PPV_PCA_GOAL
+        /// </summary>
+        public static List<PPV_PCA_GOAL_PATHWAY> GetAllGOAL_PATHWAYRecords(this PPV_PCA_GOAL message)
+        {
+            return message.GetAllRecords<PPV_PCA_GOAL_PATHWAY>("GOAL_PATHWAYRepetitionsUsed", "GetGOAL_PATHWAY");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_GOAL to GOAL_PATHWAY
+        /// </summary>
+        public static PPV_PCA_GOAL_PATHWAY AddGOAL_PATHWAY(this PPV_PCA_GOAL message)
+        {
+            return message.GetGOAL_PATHWAY(message.GOAL_PATHWAYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PPV_PCA_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PPV_PCA_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PPV_PCA_GOAL
+        /// </summary>
+        public static List<PPV_PCA_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PPV_PCA_GOAL message)
+        {
+            return message.GetAllRecords<PPV_PCA_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PPV_PCA_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PPV_PCA_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PPV_PCA_GOAL
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PPV_PCA_GOAL message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PPV_PCA_GOAL
+        /// </summary>
+        public static List<PPV_PCA_PROBLEM> GetAllPROBLEMRecords(this PPV_PCA_GOAL message)
+        {
+            return message.GetAllRecords<PPV_PCA_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_GOAL to PROBLEM
+        /// </summary>
+        public static PPV_PCA_PROBLEM AddPROBLEM(this PPV_PCA_GOAL message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PPV_PCA_GOAL
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PPV_PCA_GOAL message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PPV_PCA_GOAL
+        /// </summary>
+        public static List<PPV_PCA_ORDER> GetAllORDERRecords(this PPV_PCA_GOAL message)
+        {
+            return message.GetAllRecords<PPV_PCA_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_GOAL to ORDER
+        /// </summary>
+        public static PPV_PCA_ORDER AddORDER(this PPV_PCA_GOAL message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -13490,6 +18290,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get ORDER_OBSERVATION Records from PPV_PCA_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PPV_PCA_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PPV_PCA_ORDER_DETAIL
+        /// </summary>
+        public static List<PPV_PCA_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PPV_PCA_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PPV_PCA_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PPV_PCA_ORDER_OBSERVATION AddORDER_OBSERVATION(this PPV_PCA_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPV_PCA_ORDER_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPV_PCA_ORDER_OBSERVATION message)
@@ -13640,6 +18470,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROBLEM_ROLE Records from PPV_PCA_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PPV_PCA_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PPV_PCA_PROBLEM
+        /// </summary>
+        public static List<PPV_PCA_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PPV_PCA_PROBLEM message)
+        {
+            return message.GetAllRecords<PPV_PCA_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PPV_PCA_PROBLEM_ROLE AddPROBLEM_ROLE(this PPV_PCA_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PPV_PCA_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PPV_PCA_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PPV_PCA_PROBLEM
+        /// </summary>
+        public static List<PPV_PCA_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PPV_PCA_PROBLEM message)
+        {
+            return message.GetAllRecords<PPV_PCA_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PPV_PCA_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PPV_PCA_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PPV_PCA_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PPV_PCA_PROBLEM_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PPV_PCA_PROBLEM_OBSERVATION message)
@@ -13760,6 +18650,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PRR_PC5_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PRR_PC5_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PRR_PC5_GOAL
+        /// </summary>
+        public static List<PRR_PC5_GOAL_ROLE> GetAllGOAL_ROLERecords(this PRR_PC5_GOAL message)
+        {
+            return message.GetAllRecords<PRR_PC5_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PRR_PC5_GOAL_ROLE AddGOAL_ROLE(this PRR_PC5_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PRR_PC5_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PRR_PC5_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PRR_PC5_GOAL
+        /// </summary>
+        public static List<PRR_PC5_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PRR_PC5_GOAL message)
+        {
+            return message.GetAllRecords<PRR_PC5_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PRR_PC5_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PRR_PC5_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PRR_PC5_GOAL_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PRR_PC5_GOAL_OBSERVATION message)
@@ -13877,6 +18827,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PRR_PC5_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PRR_PC5_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PRR_PC5_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PRR_PC5_ORDER_DETAIL
+        /// </summary>
+        public static List<PRR_PC5_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PRR_PC5_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PRR_PC5_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PRR_PC5_ORDER_OBSERVATION AddORDER_OBSERVATION(this PRR_PC5_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -14030,6 +19010,156 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PROBLEM_ROLE Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PRR_PC5_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static List<PRR_PC5_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetAllRecords<PRR_PC5_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PRR_PC5_PROBLEM_ROLE AddPROBLEM_ROLE(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_PATHWAY Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_PATHWAYRecords(this PRR_PC5_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_PATHWAYRepetitionsUsed", "GetPROBLEM_PATHWAY");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_PATHWAY Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static List<PRR_PC5_PROBLEM_PATHWAY> GetAllPROBLEM_PATHWAYRecords(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetAllRecords<PRR_PC5_PROBLEM_PATHWAY>("PROBLEM_PATHWAYRepetitionsUsed", "GetPROBLEM_PATHWAY");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_PROBLEM to PROBLEM_PATHWAY
+        /// </summary>
+        public static PRR_PC5_PROBLEM_PATHWAY AddPROBLEM_PATHWAY(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetPROBLEM_PATHWAY(message.PROBLEM_PATHWAYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PRR_PC5_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static List<PRR_PC5_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetAllRecords<PRR_PC5_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PRR_PC5_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PRR_PC5_PROBLEM message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static List<PRR_PC5_GOAL> GetAllGOALRecords(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetAllRecords<PRR_PC5_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_PROBLEM to GOAL
+        /// </summary>
+        public static PRR_PC5_GOAL AddGOAL(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PRR_PC5_PROBLEM message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PRR_PC5_PROBLEM
+        /// </summary>
+        public static List<PRR_PC5_ORDER> GetAllORDERRecords(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetAllRecords<PRR_PC5_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PRR_PC5_PROBLEM to ORDER
+        /// </summary>
+        public static PRR_PC5_ORDER AddORDER(this PRR_PC5_PROBLEM message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PRR_PC5_PROBLEM_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PRR_PC5_PROBLEM_OBSERVATION message)
@@ -14180,6 +19310,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get GOAL_ROLE Records from PTR_PCF_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_ROLERecords(this PTR_PCF_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_ROLE Records from PTR_PCF_GOAL
+        /// </summary>
+        public static List<PTR_PCF_GOAL_ROLE> GetAllGOAL_ROLERecords(this PTR_PCF_GOAL message)
+        {
+            return message.GetAllRecords<PTR_PCF_GOAL_ROLE>("GOAL_ROLERepetitionsUsed", "GetGOAL_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_GOAL to GOAL_ROLE
+        /// </summary>
+        public static PTR_PCF_GOAL_ROLE AddGOAL_ROLE(this PTR_PCF_GOAL message)
+        {
+            return message.GetGOAL_ROLE(message.GOAL_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL_OBSERVATION Records from PTR_PCF_GOAL
+        /// </summary>
+        public static IEnumerable GetGOAL_OBSERVATIONRecords(this PTR_PCF_GOAL message)
+        {
+            object[] result = message.GetRecords("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL_OBSERVATION Records from PTR_PCF_GOAL
+        /// </summary>
+        public static List<PTR_PCF_GOAL_OBSERVATION> GetAllGOAL_OBSERVATIONRecords(this PTR_PCF_GOAL message)
+        {
+            return message.GetAllRecords<PTR_PCF_GOAL_OBSERVATION>("GOAL_OBSERVATIONRepetitionsUsed", "GetGOAL_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_GOAL to GOAL_OBSERVATION
+        /// </summary>
+        public static PTR_PCF_GOAL_OBSERVATION AddGOAL_OBSERVATION(this PTR_PCF_GOAL message)
+        {
+            return message.GetGOAL_OBSERVATION(message.GOAL_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from PTR_PCF_GOAL_OBSERVATION
         /// </summary>
         public static IEnumerable GetNTERecords(this PTR_PCF_GOAL_OBSERVATION message)
@@ -14297,6 +19487,36 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PTR_PCF_ORDER_DETAIL message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER_OBSERVATION Records from PTR_PCF_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetORDER_OBSERVATIONRecords(this PTR_PCF_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER_OBSERVATION Records from PTR_PCF_ORDER_DETAIL
+        /// </summary>
+        public static List<PTR_PCF_ORDER_OBSERVATION> GetAllORDER_OBSERVATIONRecords(this PTR_PCF_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<PTR_PCF_ORDER_OBSERVATION>("ORDER_OBSERVATIONRepetitionsUsed", "GetORDER_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_ORDER_DETAIL to ORDER_OBSERVATION
+        /// </summary>
+        public static PTR_PCF_ORDER_OBSERVATION AddORDER_OBSERVATION(this PTR_PCF_ORDER_DETAIL message)
+        {
+            return message.GetORDER_OBSERVATION(message.ORDER_OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -14420,6 +19640,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get PATHWAY_ROLE Records from PTR_PCF_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPATHWAY_ROLERecords(this PTR_PCF_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATHWAY_ROLE Records from PTR_PCF_PATHWAY
+        /// </summary>
+        public static List<PTR_PCF_PATHWAY_ROLE> GetAllPATHWAY_ROLERecords(this PTR_PCF_PATHWAY message)
+        {
+            return message.GetAllRecords<PTR_PCF_PATHWAY_ROLE>("PATHWAY_ROLERepetitionsUsed", "GetPATHWAY_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PATHWAY to PATHWAY_ROLE
+        /// </summary>
+        public static PTR_PCF_PATHWAY_ROLE AddPATHWAY_ROLE(this PTR_PCF_PATHWAY message)
+        {
+            return message.GetPATHWAY_ROLE(message.PATHWAY_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM Records from PTR_PCF_PATHWAY
+        /// </summary>
+        public static IEnumerable GetPROBLEMRecords(this PTR_PCF_PATHWAY message)
+        {
+            object[] result = message.GetRecords("PROBLEMRepetitionsUsed", "GetPROBLEM");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM Records from PTR_PCF_PATHWAY
+        /// </summary>
+        public static List<PTR_PCF_PROBLEM> GetAllPROBLEMRecords(this PTR_PCF_PATHWAY message)
+        {
+            return message.GetAllRecords<PTR_PCF_PROBLEM>("PROBLEMRepetitionsUsed", "GetPROBLEM");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PATHWAY to PROBLEM
+        /// </summary>
+        public static PTR_PCF_PROBLEM AddPROBLEM(this PTR_PCF_PATHWAY message)
+        {
+            return message.GetPROBLEM(message.PROBLEMRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get VAR Records from PTR_PCF_PATHWAY_ROLE
         /// </summary>
         public static IEnumerable GetVARRecords(this PTR_PCF_PATHWAY_ROLE message)
@@ -14537,6 +19817,126 @@ namespace NHapiTools.Model.V251.Group
         public static VAR AddVAR(this PTR_PCF_PROBLEM message)
         {
             return message.GetVAR(message.VARRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_ROLE Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_ROLERecords(this PTR_PCF_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_ROLE Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static List<PTR_PCF_PROBLEM_ROLE> GetAllPROBLEM_ROLERecords(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetAllRecords<PTR_PCF_PROBLEM_ROLE>("PROBLEM_ROLERepetitionsUsed", "GetPROBLEM_ROLE");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PROBLEM to PROBLEM_ROLE
+        /// </summary>
+        public static PTR_PCF_PROBLEM_ROLE AddPROBLEM_ROLE(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetPROBLEM_ROLE(message.PROBLEM_ROLERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROBLEM_OBSERVATION Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static IEnumerable GetPROBLEM_OBSERVATIONRecords(this PTR_PCF_PROBLEM message)
+        {
+            object[] result = message.GetRecords("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROBLEM_OBSERVATION Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static List<PTR_PCF_PROBLEM_OBSERVATION> GetAllPROBLEM_OBSERVATIONRecords(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetAllRecords<PTR_PCF_PROBLEM_OBSERVATION>("PROBLEM_OBSERVATIONRepetitionsUsed", "GetPROBLEM_OBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PROBLEM to PROBLEM_OBSERVATION
+        /// </summary>
+        public static PTR_PCF_PROBLEM_OBSERVATION AddPROBLEM_OBSERVATION(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetPROBLEM_OBSERVATION(message.PROBLEM_OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GOAL Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static IEnumerable GetGOALRecords(this PTR_PCF_PROBLEM message)
+        {
+            object[] result = message.GetRecords("GOALRepetitionsUsed", "GetGOAL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GOAL Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static List<PTR_PCF_GOAL> GetAllGOALRecords(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetAllRecords<PTR_PCF_GOAL>("GOALRepetitionsUsed", "GetGOAL");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PROBLEM to GOAL
+        /// </summary>
+        public static PTR_PCF_GOAL AddGOAL(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetGOAL(message.GOALRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this PTR_PCF_PROBLEM message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from PTR_PCF_PROBLEM
+        /// </summary>
+        public static List<PTR_PCF_ORDER> GetAllORDERRecords(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetAllRecords<PTR_PCF_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new PTR_PCF_PROBLEM to ORDER
+        /// </summary>
+        public static PTR_PCF_ORDER AddORDER(this PTR_PCF_PROBLEM message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>
@@ -14780,6 +20180,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from RAS_O17_ADMINISTRATION
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RAS_O17_ADMINISTRATION message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RAS_O17_ADMINISTRATION
+        /// </summary>
+        public static List<RAS_O17_OBSERVATION> GetAllOBSERVATIONRecords(this RAS_O17_ADMINISTRATION message)
+        {
+            return message.GetAllRecords<RAS_O17_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RAS_O17_ADMINISTRATION to OBSERVATION
+        /// </summary>
+        public static RAS_O17_OBSERVATION AddOBSERVATION(this RAS_O17_ADMINISTRATION message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RAS_O17_COMPONENTS
         /// </summary>
         public static IEnumerable GetNTERecords(this RAS_O17_COMPONENTS message)
@@ -14930,6 +20360,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RAS_O17_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RAS_O17_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RAS_O17_ORDER
+        /// </summary>
+        public static List<RAS_O17_TIMING> GetAllTIMINGRecords(this RAS_O17_ORDER message)
+        {
+            return message.GetAllRecords<RAS_O17_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RAS_O17_ORDER to TIMING
+        /// </summary>
+        public static RAS_O17_TIMING AddTIMING(this RAS_O17_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ADMINISTRATION Records from RAS_O17_ORDER
         /// </summary>
         public static IEnumerable GetADMINISTRATIONRecords(this RAS_O17_ORDER message)
@@ -15047,6 +20507,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXR AddRXR(this RAS_O17_ORDER_DETAIL_SUPPLEMENT message)
         {
             return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get COMPONENTS Records from RAS_O17_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static IEnumerable GetCOMPONENTSRecords(this RAS_O17_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            object[] result = message.GetRecords("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENTS Records from RAS_O17_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static List<RAS_O17_COMPONENTS> GetAllCOMPONENTSRecords(this RAS_O17_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetAllRecords<RAS_O17_COMPONENTS>("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+        }
+
+        /// <summary>
+        /// Add a new RAS_O17_ORDER_DETAIL_SUPPLEMENT to COMPONENTS
+        /// </summary>
+        public static RAS_O17_COMPONENTS AddCOMPONENTS(this RAS_O17_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetCOMPONENTS(message.COMPONENTSRepetitionsUsed);
         }
 
         /// <summary>
@@ -15380,6 +20870,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RDE_O11_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RDE_O11_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RDE_O11_ORDER
+        /// </summary>
+        public static List<RDE_O11_TIMING> GetAllTIMINGRecords(this RDE_O11_ORDER message)
+        {
+            return message.GetAllRecords<RDE_O11_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RDE_O11_ORDER to TIMING
+        /// </summary>
+        public static RDE_O11_TIMING AddTIMING(this RDE_O11_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RDE_O11_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this RDE_O11_ORDER message)
@@ -15497,6 +21017,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXC AddRXC(this RDE_O11_ORDER message)
         {
             return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from RDE_O11_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RDE_O11_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RDE_O11_ORDER
+        /// </summary>
+        public static List<RDE_O11_OBSERVATION> GetAllOBSERVATIONRecords(this RDE_O11_ORDER message)
+        {
+            return message.GetAllRecords<RDE_O11_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RDE_O11_ORDER to OBSERVATION
+        /// </summary>
+        public static RDE_O11_OBSERVATION AddOBSERVATION(this RDE_O11_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -15620,6 +21170,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get COMPONENT Records from RDE_O11_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetCOMPONENTRecords(this RDE_O11_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENT Records from RDE_O11_ORDER_DETAIL
+        /// </summary>
+        public static List<RDE_O11_COMPONENT> GetAllCOMPONENTRecords(this RDE_O11_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<RDE_O11_COMPONENT>("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+        }
+
+        /// <summary>
+        /// Add a new RDE_O11_ORDER_DETAIL to COMPONENT
+        /// </summary>
+        public static RDE_O11_COMPONENT AddCOMPONENT(this RDE_O11_ORDER_DETAIL message)
+        {
+            return message.GetCOMPONENT(message.COMPONENTRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RDE_O11_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this RDE_O11_PATIENT message)
@@ -15647,6 +21227,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this RDE_O11_PATIENT message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from RDE_O11_PATIENT
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this RDE_O11_PATIENT message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from RDE_O11_PATIENT
+        /// </summary>
+        public static List<RDE_O11_INSURANCE> GetAllINSURANCERecords(this RDE_O11_PATIENT message)
+        {
+            return message.GetAllRecords<RDE_O11_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new RDE_O11_PATIENT to INSURANCE
+        /// </summary>
+        public static RDE_O11_INSURANCE AddINSURANCE(this RDE_O11_PATIENT message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -15920,6 +21530,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RDS_O13_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RDS_O13_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RDS_O13_ORDER
+        /// </summary>
+        public static List<RDS_O13_TIMING> GetAllTIMINGRecords(this RDS_O13_ORDER message)
+        {
+            return message.GetAllRecords<RDS_O13_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RDS_O13_ORDER to TIMING
+        /// </summary>
+        public static RDS_O13_TIMING AddTIMING(this RDS_O13_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RDS_O13_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this RDS_O13_ORDER message)
@@ -16010,6 +21650,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get OBSERVATION Records from RDS_O13_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RDS_O13_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RDS_O13_ORDER
+        /// </summary>
+        public static List<RDS_O13_OBSERVATION> GetAllOBSERVATIONRecords(this RDS_O13_ORDER message)
+        {
+            return message.GetAllRecords<RDS_O13_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RDS_O13_ORDER to OBSERVATION
+        /// </summary>
+        public static RDS_O13_OBSERVATION AddOBSERVATION(this RDS_O13_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get FT1 Records from RDS_O13_ORDER
         /// </summary>
         public static IEnumerable GetFT1Records(this RDS_O13_ORDER message)
@@ -16097,6 +21767,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXR AddRXR(this RDS_O13_ORDER_DETAIL_SUPPLEMENT message)
         {
             return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get COMPONENT Records from RDS_O13_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static IEnumerable GetCOMPONENTRecords(this RDS_O13_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            object[] result = message.GetRecords("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENT Records from RDS_O13_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static List<RDS_O13_COMPONENT> GetAllCOMPONENTRecords(this RDS_O13_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetAllRecords<RDS_O13_COMPONENT>("COMPONENTRepetitionsUsed", "GetCOMPONENT");
+        }
+
+        /// <summary>
+        /// Add a new RDS_O13_ORDER_DETAIL_SUPPLEMENT to COMPONENT
+        /// </summary>
+        public static RDS_O13_COMPONENT AddCOMPONENT(this RDS_O13_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetCOMPONENT(message.COMPONENTRepetitionsUsed);
         }
 
         /// <summary>
@@ -16940,6 +22640,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RGV_O15_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RGV_O15_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RGV_O15_ORDER
+        /// </summary>
+        public static List<RGV_O15_TIMING> GetAllTIMINGRecords(this RGV_O15_ORDER message)
+        {
+            return message.GetAllRecords<RGV_O15_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O15_ORDER to TIMING
+        /// </summary>
+        public static RGV_O15_TIMING AddTIMING(this RGV_O15_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get GIVE Records from RGV_O15_ORDER
         /// </summary>
         public static IEnumerable GetGIVERecords(this RGV_O15_ORDER message)
@@ -17027,6 +22757,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXR AddRXR(this RGV_O15_ORDER_DETAIL_SUPPLEMENT message)
         {
             return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get COMPONENTS Records from RGV_O15_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static IEnumerable GetCOMPONENTSRecords(this RGV_O15_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            object[] result = message.GetRecords("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENTS Records from RGV_O15_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static List<RGV_O15_COMPONENTS> GetAllCOMPONENTSRecords(this RGV_O15_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetAllRecords<RGV_O15_COMPONENTS>("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O15_ORDER_DETAIL_SUPPLEMENT to COMPONENTS
+        /// </summary>
+        public static RGV_O15_COMPONENTS AddCOMPONENTS(this RGV_O15_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetCOMPONENTS(message.COMPONENTSRepetitionsUsed);
         }
 
         /// <summary>
@@ -17327,6 +23087,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this RPA_I08_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RESULTS Records from RPA_I08_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetRESULTSRecords(this RPA_I08_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("RESULTSRepetitionsUsed", "GetRESULTS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RESULTS Records from RPA_I08_OBSERVATION
+        /// </summary>
+        public static List<RPA_I08_RESULTS> GetAllRESULTSRecords(this RPA_I08_OBSERVATION message)
+        {
+            return message.GetAllRecords<RPA_I08_RESULTS>("RESULTSRepetitionsUsed", "GetRESULTS");
+        }
+
+        /// <summary>
+        /// Add a new RPA_I08_OBSERVATION to RESULTS
+        /// </summary>
+        public static RPA_I08_RESULTS AddRESULTS(this RPA_I08_OBSERVATION message)
+        {
+            return message.GetRESULTS(message.RESULTSRepetitionsUsed);
         }
 
         /// <summary>
@@ -17720,6 +23510,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get RESULTS Records from RQA_I08_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetRESULTSRecords(this RQA_I08_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("RESULTSRepetitionsUsed", "GetRESULTS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RESULTS Records from RQA_I08_OBSERVATION
+        /// </summary>
+        public static List<RQA_I08_RESULTS> GetAllRESULTSRecords(this RQA_I08_OBSERVATION message)
+        {
+            return message.GetAllRecords<RQA_I08_RESULTS>("RESULTSRepetitionsUsed", "GetRESULTS");
+        }
+
+        /// <summary>
+        /// Add a new RQA_I08_OBSERVATION to RESULTS
+        /// </summary>
+        public static RQA_I08_RESULTS AddRESULTS(this RQA_I08_OBSERVATION message)
+        {
+            return message.GetRESULTS(message.RESULTSRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get CTD Records from RQA_I08_PROVIDER
         /// </summary>
         public static IEnumerable GetCTDRecords(this RQA_I08_PROVIDER message)
@@ -17960,6 +23780,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RRA_O18_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RRA_O18_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RRA_O18_ORDER
+        /// </summary>
+        public static List<RRA_O18_TIMING> GetAllTIMINGRecords(this RRA_O18_ORDER message)
+        {
+            return message.GetAllRecords<RRA_O18_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RRA_O18_ORDER to TIMING
+        /// </summary>
+        public static RRA_O18_TIMING AddTIMING(this RRA_O18_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RRA_O18_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this RRA_O18_PATIENT message)
@@ -18140,6 +23990,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RRD_O14_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RRD_O14_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RRD_O14_ORDER
+        /// </summary>
+        public static List<RRD_O14_TIMING> GetAllTIMINGRecords(this RRD_O14_ORDER message)
+        {
+            return message.GetAllRecords<RRD_O14_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RRD_O14_ORDER to TIMING
+        /// </summary>
+        public static RRD_O14_TIMING AddTIMING(this RRD_O14_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RRD_O14_PATIENT
         /// </summary>
         public static IEnumerable GetNTERecords(this RRD_O14_PATIENT message)
@@ -18317,6 +24197,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXC AddRXC(this RRE_O12_ENCODING message)
         {
             return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from RRE_O12_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RRE_O12_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RRE_O12_ORDER
+        /// </summary>
+        public static List<RRE_O12_TIMING> GetAllTIMINGRecords(this RRE_O12_ORDER message)
+        {
+            return message.GetAllRecords<RRE_O12_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RRE_O12_ORDER to TIMING
+        /// </summary>
+        public static RRE_O12_TIMING AddTIMING(this RRE_O12_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -18527,6 +24437,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXC AddRXC(this RRG_O16_GIVE message)
         {
             return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from RRG_O16_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RRG_O16_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RRG_O16_ORDER
+        /// </summary>
+        public static List<RRG_O16_TIMING> GetAllTIMINGRecords(this RRG_O16_ORDER message)
+        {
+            return message.GetAllRecords<RRG_O16_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RRG_O16_ORDER to TIMING
+        /// </summary>
+        public static RRG_O16_TIMING AddTIMING(this RRG_O16_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
         }
 
         /// <summary>
@@ -19160,6 +25100,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RSP_K31_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RSP_K31_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RSP_K31_ORDER
+        /// </summary>
+        public static List<RSP_K31_TIMING> GetAllTIMINGRecords(this RSP_K31_ORDER message)
+        {
+            return message.GetAllRecords<RSP_K31_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RSP_K31_ORDER to TIMING
+        /// </summary>
+        public static RSP_K31_TIMING AddTIMING(this RSP_K31_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RXR Records from RSP_K31_ORDER
         /// </summary>
         public static IEnumerable GetRXRRecords(this RSP_K31_ORDER message)
@@ -19307,6 +25277,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXR AddRXR(this RSP_K31_ORDER_DETAIL message)
         {
             return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get COMPONENTS Records from RSP_K31_ORDER_DETAIL
+        /// </summary>
+        public static IEnumerable GetCOMPONENTSRecords(this RSP_K31_ORDER_DETAIL message)
+        {
+            object[] result = message.GetRecords("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all COMPONENTS Records from RSP_K31_ORDER_DETAIL
+        /// </summary>
+        public static List<RSP_K31_COMPONENTS> GetAllCOMPONENTSRecords(this RSP_K31_ORDER_DETAIL message)
+        {
+            return message.GetAllRecords<RSP_K31_COMPONENTS>("COMPONENTSRepetitionsUsed", "GetCOMPONENTS");
+        }
+
+        /// <summary>
+        /// Add a new RSP_K31_ORDER_DETAIL to COMPONENTS
+        /// </summary>
+        public static RSP_K31_COMPONENTS AddCOMPONENTS(this RSP_K31_ORDER_DETAIL message)
+        {
+            return message.GetCOMPONENTS(message.COMPONENTSRepetitionsUsed);
         }
 
         /// <summary>
@@ -19610,6 +25610,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RSP_Z82_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RSP_Z82_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RSP_Z82_COMMON_ORDER
+        /// </summary>
+        public static List<RSP_Z82_TIMING> GetAllTIMINGRecords(this RSP_Z82_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z82_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z82_COMMON_ORDER to TIMING
+        /// </summary>
+        public static RSP_Z82_TIMING AddTIMING(this RSP_Z82_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RXR Records from RSP_Z82_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetRXRRecords(this RSP_Z82_COMMON_ORDER message)
@@ -19697,6 +25727,36 @@ namespace NHapiTools.Model.V251.Group
         public static RSP_Z82_OBSERVATION AddOBSERVATION(this RSP_Z82_COMMON_ORDER message)
         {
             return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_ENCODED Records from RSP_Z82_ENCODED_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_ENCODEDRecords(this RSP_Z82_ENCODED_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_ENCODED Records from RSP_Z82_ENCODED_ORDER
+        /// </summary>
+        public static List<RSP_Z82_TIMING_ENCODED> GetAllTIMING_ENCODEDRecords(this RSP_Z82_ENCODED_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z82_TIMING_ENCODED>("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z82_ENCODED_ORDER to TIMING_ENCODED
+        /// </summary>
+        public static RSP_Z82_TIMING_ENCODED AddTIMING_ENCODED(this RSP_Z82_ENCODED_ORDER message)
+        {
+            return message.GetTIMING_ENCODED(message.TIMING_ENCODEDRepetitionsUsed);
         }
 
         /// <summary>
@@ -20120,6 +26180,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RSP_Z86_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RSP_Z86_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RSP_Z86_COMMON_ORDER
+        /// </summary>
+        public static List<RSP_Z86_TIMING> GetAllTIMINGRecords(this RSP_Z86_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z86_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z86_COMMON_ORDER to TIMING
+        /// </summary>
+        public static RSP_Z86_TIMING AddTIMING(this RSP_Z86_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get OBSERVATION Records from RSP_Z86_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetOBSERVATIONRecords(this RSP_Z86_COMMON_ORDER message)
@@ -20207,6 +26297,36 @@ namespace NHapiTools.Model.V251.Group
         public static RXC AddRXC(this RSP_Z86_DISPENSE message)
         {
             return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING_ENCODED Records from RSP_Z86_ENCODED_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMING_ENCODEDRecords(this RSP_Z86_ENCODED_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_ENCODED Records from RSP_Z86_ENCODED_ORDER
+        /// </summary>
+        public static List<RSP_Z86_TIMING_ENCODED> GetAllTIMING_ENCODEDRecords(this RSP_Z86_ENCODED_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z86_TIMING_ENCODED>("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z86_ENCODED_ORDER to TIMING_ENCODED
+        /// </summary>
+        public static RSP_Z86_TIMING_ENCODED AddTIMING_ENCODED(this RSP_Z86_ENCODED_ORDER message)
+        {
+            return message.GetTIMING_ENCODED(message.TIMING_ENCODEDRepetitionsUsed);
         }
 
         /// <summary>
@@ -20600,6 +26720,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RSP_Z88_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RSP_Z88_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RSP_Z88_COMMON_ORDER
+        /// </summary>
+        public static List<RSP_Z88_TIMING> GetAllTIMINGRecords(this RSP_Z88_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z88_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z88_COMMON_ORDER to TIMING
+        /// </summary>
+        public static RSP_Z88_TIMING AddTIMING(this RSP_Z88_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RXR Records from RSP_Z88_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetRXRRecords(this RSP_Z88_COMMON_ORDER message)
@@ -20840,6 +26990,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING_ENCODED Records from RSP_Z88_ORDER_ENCODED
+        /// </summary>
+        public static IEnumerable GetTIMING_ENCODEDRecords(this RSP_Z88_ORDER_ENCODED message)
+        {
+            object[] result = message.GetRecords("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING_ENCODED Records from RSP_Z88_ORDER_ENCODED
+        /// </summary>
+        public static List<RSP_Z88_TIMING_ENCODED> GetAllTIMING_ENCODEDRecords(this RSP_Z88_ORDER_ENCODED message)
+        {
+            return message.GetAllRecords<RSP_Z88_TIMING_ENCODED>("TIMING_ENCODEDRepetitionsUsed", "GetTIMING_ENCODED");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z88_ORDER_ENCODED to TIMING_ENCODED
+        /// </summary>
+        public static RSP_Z88_TIMING_ENCODED AddTIMING_ENCODED(this RSP_Z88_ORDER_ENCODED message)
+        {
+            return message.GetTIMING_ENCODED(message.TIMING_ENCODEDRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get RXR Records from RSP_Z88_ORDER_ENCODED
         /// </summary>
         public static IEnumerable GetRXRRecords(this RSP_Z88_ORDER_ENCODED message)
@@ -21020,6 +27200,36 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from RSP_Z90_COMMON_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this RSP_Z90_COMMON_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from RSP_Z90_COMMON_ORDER
+        /// </summary>
+        public static List<RSP_Z90_TIMING> GetAllTIMINGRecords(this RSP_Z90_COMMON_ORDER message)
+        {
+            return message.GetAllRecords<RSP_Z90_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z90_COMMON_ORDER to TIMING
+        /// </summary>
+        public static RSP_Z90_TIMING AddTIMING(this RSP_Z90_COMMON_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from RSP_Z90_COMMON_ORDER
         /// </summary>
         public static IEnumerable GetNTERecords(this RSP_Z90_COMMON_ORDER message)
@@ -21197,6 +27407,36 @@ namespace NHapiTools.Model.V251.Group
         public static RSP_Z90_COMMON_ORDER AddCOMMON_ORDER(this RSP_Z90_QUERY_RESPONSE message)
         {
             return message.GetCOMMON_ORDER(message.COMMON_ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SPECIMEN Records from RSP_Z90_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetSPECIMENRecords(this RSP_Z90_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SPECIMEN Records from RSP_Z90_QUERY_RESPONSE
+        /// </summary>
+        public static List<RSP_Z90_SPECIMEN> GetAllSPECIMENRecords(this RSP_Z90_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<RSP_Z90_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+        }
+
+        /// <summary>
+        /// Add a new RSP_Z90_QUERY_RESPONSE to SPECIMEN
+        /// </summary>
+        public static RSP_Z90_SPECIMEN AddSPECIMEN(this RSP_Z90_QUERY_RESPONSE message)
+        {
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
         }
 
         /// <summary>
@@ -21470,6 +27710,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get SERVICE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static IEnumerable GetSERVICERecords(this SIU_S12_RESOURCES message)
+        {
+            object[] result = message.GetRecords("SERVICERepetitionsUsed", "GetSERVICE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SERVICE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static List<SIU_S12_SERVICE> GetAllSERVICERecords(this SIU_S12_RESOURCES message)
+        {
+            return message.GetAllRecords<SIU_S12_SERVICE>("SERVICERepetitionsUsed", "GetSERVICE");
+        }
+
+        /// <summary>
+        /// Add a new SIU_S12_RESOURCES to SERVICE
+        /// </summary>
+        public static SIU_S12_SERVICE AddSERVICE(this SIU_S12_RESOURCES message)
+        {
+            return message.GetSERVICE(message.SERVICERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GENERAL_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static IEnumerable GetGENERAL_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            object[] result = message.GetRecords("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GENERAL_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static List<SIU_S12_GENERAL_RESOURCE> GetAllGENERAL_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            return message.GetAllRecords<SIU_S12_GENERAL_RESOURCE>("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SIU_S12_RESOURCES to GENERAL_RESOURCE
+        /// </summary>
+        public static SIU_S12_GENERAL_RESOURCE AddGENERAL_RESOURCE(this SIU_S12_RESOURCES message)
+        {
+            return message.GetGENERAL_RESOURCE(message.GENERAL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get LOCATION_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static IEnumerable GetLOCATION_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            object[] result = message.GetRecords("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LOCATION_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static List<SIU_S12_LOCATION_RESOURCE> GetAllLOCATION_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            return message.GetAllRecords<SIU_S12_LOCATION_RESOURCE>("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SIU_S12_RESOURCES to LOCATION_RESOURCE
+        /// </summary>
+        public static SIU_S12_LOCATION_RESOURCE AddLOCATION_RESOURCE(this SIU_S12_RESOURCES message)
+        {
+            return message.GetLOCATION_RESOURCE(message.LOCATION_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PERSONNEL_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static IEnumerable GetPERSONNEL_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            object[] result = message.GetRecords("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PERSONNEL_RESOURCE Records from SIU_S12_RESOURCES
+        /// </summary>
+        public static List<SIU_S12_PERSONNEL_RESOURCE> GetAllPERSONNEL_RESOURCERecords(this SIU_S12_RESOURCES message)
+        {
+            return message.GetAllRecords<SIU_S12_PERSONNEL_RESOURCE>("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SIU_S12_RESOURCES to PERSONNEL_RESOURCE
+        /// </summary>
+        public static SIU_S12_PERSONNEL_RESOURCE AddPERSONNEL_RESOURCE(this SIU_S12_RESOURCES message)
+        {
+            return message.GetPERSONNEL_RESOURCE(message.PERSONNEL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from SIU_S12_SERVICE
         /// </summary>
         public static IEnumerable GetNTERecords(this SIU_S12_SERVICE message)
@@ -21527,6 +27887,126 @@ namespace NHapiTools.Model.V251.Group
         public static SQM_S25_RESOURCES AddRESOURCES(this SQM_S25_REQUEST message)
         {
             return message.GetRESOURCES(message.RESOURCESRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SERVICE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetSERVICERecords(this SQM_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("SERVICERepetitionsUsed", "GetSERVICE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SERVICE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static List<SQM_S25_SERVICE> GetAllSERVICERecords(this SQM_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQM_S25_SERVICE>("SERVICERepetitionsUsed", "GetSERVICE");
+        }
+
+        /// <summary>
+        /// Add a new SQM_S25_RESOURCES to SERVICE
+        /// </summary>
+        public static SQM_S25_SERVICE AddSERVICE(this SQM_S25_RESOURCES message)
+        {
+            return message.GetSERVICE(message.SERVICERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GENERAL_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetGENERAL_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GENERAL_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static List<SQM_S25_GENERAL_RESOURCE> GetAllGENERAL_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQM_S25_GENERAL_RESOURCE>("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQM_S25_RESOURCES to GENERAL_RESOURCE
+        /// </summary>
+        public static SQM_S25_GENERAL_RESOURCE AddGENERAL_RESOURCE(this SQM_S25_RESOURCES message)
+        {
+            return message.GetGENERAL_RESOURCE(message.GENERAL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PERSONNEL_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetPERSONNEL_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PERSONNEL_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static List<SQM_S25_PERSONNEL_RESOURCE> GetAllPERSONNEL_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQM_S25_PERSONNEL_RESOURCE>("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQM_S25_RESOURCES to PERSONNEL_RESOURCE
+        /// </summary>
+        public static SQM_S25_PERSONNEL_RESOURCE AddPERSONNEL_RESOURCE(this SQM_S25_RESOURCES message)
+        {
+            return message.GetPERSONNEL_RESOURCE(message.PERSONNEL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get LOCATION_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetLOCATION_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LOCATION_RESOURCE Records from SQM_S25_RESOURCES
+        /// </summary>
+        public static List<SQM_S25_LOCATION_RESOURCE> GetAllLOCATION_RESOURCERecords(this SQM_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQM_S25_LOCATION_RESOURCE>("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQM_S25_RESOURCES to LOCATION_RESOURCE
+        /// </summary>
+        public static SQM_S25_LOCATION_RESOURCE AddLOCATION_RESOURCE(this SQM_S25_RESOURCES message)
+        {
+            return message.GetLOCATION_RESOURCE(message.LOCATION_RESOURCERepetitionsUsed);
         }
 
         /// <summary>
@@ -21617,6 +28097,126 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this SQR_S25_PERSONNEL_RESOURCE message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SERVICE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetSERVICERecords(this SQR_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("SERVICERepetitionsUsed", "GetSERVICE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SERVICE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static List<SQR_S25_SERVICE> GetAllSERVICERecords(this SQR_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQR_S25_SERVICE>("SERVICERepetitionsUsed", "GetSERVICE");
+        }
+
+        /// <summary>
+        /// Add a new SQR_S25_RESOURCES to SERVICE
+        /// </summary>
+        public static SQR_S25_SERVICE AddSERVICE(this SQR_S25_RESOURCES message)
+        {
+            return message.GetSERVICE(message.SERVICERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GENERAL_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetGENERAL_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GENERAL_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static List<SQR_S25_GENERAL_RESOURCE> GetAllGENERAL_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQR_S25_GENERAL_RESOURCE>("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQR_S25_RESOURCES to GENERAL_RESOURCE
+        /// </summary>
+        public static SQR_S25_GENERAL_RESOURCE AddGENERAL_RESOURCE(this SQR_S25_RESOURCES message)
+        {
+            return message.GetGENERAL_RESOURCE(message.GENERAL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PERSONNEL_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetPERSONNEL_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PERSONNEL_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static List<SQR_S25_PERSONNEL_RESOURCE> GetAllPERSONNEL_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQR_S25_PERSONNEL_RESOURCE>("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQR_S25_RESOURCES to PERSONNEL_RESOURCE
+        /// </summary>
+        public static SQR_S25_PERSONNEL_RESOURCE AddPERSONNEL_RESOURCE(this SQR_S25_RESOURCES message)
+        {
+            return message.GetPERSONNEL_RESOURCE(message.PERSONNEL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get LOCATION_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static IEnumerable GetLOCATION_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            object[] result = message.GetRecords("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LOCATION_RESOURCE Records from SQR_S25_RESOURCES
+        /// </summary>
+        public static List<SQR_S25_LOCATION_RESOURCE> GetAllLOCATION_RESOURCERecords(this SQR_S25_RESOURCES message)
+        {
+            return message.GetAllRecords<SQR_S25_LOCATION_RESOURCE>("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SQR_S25_RESOURCES to LOCATION_RESOURCE
+        /// </summary>
+        public static SQR_S25_LOCATION_RESOURCE AddLOCATION_RESOURCE(this SQR_S25_RESOURCES message)
+        {
+            return message.GetLOCATION_RESOURCE(message.LOCATION_RESOURCERepetitionsUsed);
         }
 
         /// <summary>
@@ -21890,6 +28490,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get SERVICE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetSERVICERecords(this SRM_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("SERVICERepetitionsUsed", "GetSERVICE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SERVICE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static List<SRM_S01_SERVICE> GetAllSERVICERecords(this SRM_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRM_S01_SERVICE>("SERVICERepetitionsUsed", "GetSERVICE");
+        }
+
+        /// <summary>
+        /// Add a new SRM_S01_RESOURCES to SERVICE
+        /// </summary>
+        public static SRM_S01_SERVICE AddSERVICE(this SRM_S01_RESOURCES message)
+        {
+            return message.GetSERVICE(message.SERVICERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GENERAL_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetGENERAL_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GENERAL_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static List<SRM_S01_GENERAL_RESOURCE> GetAllGENERAL_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRM_S01_GENERAL_RESOURCE>("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRM_S01_RESOURCES to GENERAL_RESOURCE
+        /// </summary>
+        public static SRM_S01_GENERAL_RESOURCE AddGENERAL_RESOURCE(this SRM_S01_RESOURCES message)
+        {
+            return message.GetGENERAL_RESOURCE(message.GENERAL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get LOCATION_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetLOCATION_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LOCATION_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static List<SRM_S01_LOCATION_RESOURCE> GetAllLOCATION_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRM_S01_LOCATION_RESOURCE>("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRM_S01_RESOURCES to LOCATION_RESOURCE
+        /// </summary>
+        public static SRM_S01_LOCATION_RESOURCE AddLOCATION_RESOURCE(this SRM_S01_RESOURCES message)
+        {
+            return message.GetLOCATION_RESOURCE(message.LOCATION_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PERSONNEL_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetPERSONNEL_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PERSONNEL_RESOURCE Records from SRM_S01_RESOURCES
+        /// </summary>
+        public static List<SRM_S01_PERSONNEL_RESOURCE> GetAllPERSONNEL_RESOURCERecords(this SRM_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRM_S01_PERSONNEL_RESOURCE>("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRM_S01_RESOURCES to PERSONNEL_RESOURCE
+        /// </summary>
+        public static SRM_S01_PERSONNEL_RESOURCE AddPERSONNEL_RESOURCE(this SRM_S01_RESOURCES message)
+        {
+            return message.GetPERSONNEL_RESOURCE(message.PERSONNEL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NTE Records from SRM_S01_SERVICE
         /// </summary>
         public static IEnumerable GetNTERecords(this SRM_S01_SERVICE message)
@@ -22040,6 +28760,126 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get SERVICE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetSERVICERecords(this SRR_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("SERVICERepetitionsUsed", "GetSERVICE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SERVICE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static List<SRR_S01_SERVICE> GetAllSERVICERecords(this SRR_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRR_S01_SERVICE>("SERVICERepetitionsUsed", "GetSERVICE");
+        }
+
+        /// <summary>
+        /// Add a new SRR_S01_RESOURCES to SERVICE
+        /// </summary>
+        public static SRR_S01_SERVICE AddSERVICE(this SRR_S01_RESOURCES message)
+        {
+            return message.GetSERVICE(message.SERVICERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GENERAL_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetGENERAL_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GENERAL_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static List<SRR_S01_GENERAL_RESOURCE> GetAllGENERAL_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRR_S01_GENERAL_RESOURCE>("GENERAL_RESOURCERepetitionsUsed", "GetGENERAL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRR_S01_RESOURCES to GENERAL_RESOURCE
+        /// </summary>
+        public static SRR_S01_GENERAL_RESOURCE AddGENERAL_RESOURCE(this SRR_S01_RESOURCES message)
+        {
+            return message.GetGENERAL_RESOURCE(message.GENERAL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get LOCATION_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetLOCATION_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all LOCATION_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static List<SRR_S01_LOCATION_RESOURCE> GetAllLOCATION_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRR_S01_LOCATION_RESOURCE>("LOCATION_RESOURCERepetitionsUsed", "GetLOCATION_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRR_S01_RESOURCES to LOCATION_RESOURCE
+        /// </summary>
+        public static SRR_S01_LOCATION_RESOURCE AddLOCATION_RESOURCE(this SRR_S01_RESOURCES message)
+        {
+            return message.GetLOCATION_RESOURCE(message.LOCATION_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PERSONNEL_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static IEnumerable GetPERSONNEL_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            object[] result = message.GetRecords("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PERSONNEL_RESOURCE Records from SRR_S01_RESOURCES
+        /// </summary>
+        public static List<SRR_S01_PERSONNEL_RESOURCE> GetAllPERSONNEL_RESOURCERecords(this SRR_S01_RESOURCES message)
+        {
+            return message.GetAllRecords<SRR_S01_PERSONNEL_RESOURCE>("PERSONNEL_RESOURCERepetitionsUsed", "GetPERSONNEL_RESOURCE");
+        }
+
+        /// <summary>
+        /// Add a new SRR_S01_RESOURCES to PERSONNEL_RESOURCE
+        /// </summary>
+        public static SRR_S01_PERSONNEL_RESOURCE AddPERSONNEL_RESOURCE(this SRR_S01_RESOURCES message)
+        {
+            return message.GetPERSONNEL_RESOURCE(message.PERSONNEL_RESOURCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ1 Records from SRR_S01_SCHEDULE
         /// </summary>
         public static IEnumerable GetTQ1Records(this SRR_S01_SCHEDULE message)
@@ -22097,6 +28937,36 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this SRR_S01_SCHEDULE message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PATIENT Records from SRR_S01_SCHEDULE
+        /// </summary>
+        public static IEnumerable GetPATIENTRecords(this SRR_S01_SCHEDULE message)
+        {
+            object[] result = message.GetRecords("PATIENTRepetitionsUsed", "GetPATIENT");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PATIENT Records from SRR_S01_SCHEDULE
+        /// </summary>
+        public static List<SRR_S01_PATIENT> GetAllPATIENTRecords(this SRR_S01_SCHEDULE message)
+        {
+            return message.GetAllRecords<SRR_S01_PATIENT>("PATIENTRepetitionsUsed", "GetPATIENT");
+        }
+
+        /// <summary>
+        /// Add a new SRR_S01_SCHEDULE to PATIENT
+        /// </summary>
+        public static SRR_S01_PATIENT AddPATIENT(this SRR_S01_SCHEDULE message)
+        {
+            return message.GetPATIENT(message.PATIENTRepetitionsUsed);
         }
 
         /// <summary>
@@ -22250,11 +29120,11 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get PSHPDC Records from SUR_P09_FACPSHPDCPSHFACPDCNTEED
+        /// Get SPECIMEN Records from SSU_U03_SPECIMEN_CONTAINER
         /// </summary>
-        public static IEnumerable GetPSHPDCRecords(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static IEnumerable GetSPECIMENRecords(this SSU_U03_SPECIMEN_CONTAINER message)
         {
-            object[] result = message.GetRecords("PSHPDCRepetitionsUsed", "GetPSHPDC");
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -22264,27 +29134,27 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all PSHPDC Records from SUR_P09_FACPSHPDCPSHFACPDCNTEED
+        /// Get all SPECIMEN Records from SSU_U03_SPECIMEN_CONTAINER
         /// </summary>
-        public static List<SUR_P09_PSHPDC> GetAllPSHPDCRecords(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static List<SSU_U03_SPECIMEN> GetAllSPECIMENRecords(this SSU_U03_SPECIMEN_CONTAINER message)
         {
-            return message.GetAllRecords<SUR_P09_PSHPDC>("PSHPDCRepetitionsUsed", "GetPSHPDC");
+            return message.GetAllRecords<SSU_U03_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
         }
 
         /// <summary>
-        /// Add a new SUR_P09_FACPSHPDCPSHFACPDCNTEED to PSHPDC
+        /// Add a new SSU_U03_SPECIMEN_CONTAINER to SPECIMEN
         /// </summary>
-        public static SUR_P09_PSHPDC AddPSHPDC(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static SSU_U03_SPECIMEN AddSPECIMEN(this SSU_U03_SPECIMEN_CONTAINER message)
         {
-            return message.GetPSHPDC(message.PSHPDCRepetitionsUsed);
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
         }
 
         /// <summary>
-        /// Get FACPDCNTE Records from SUR_P09_FACPSHPDCPSHFACPDCNTEED
+        /// Get PRODUCT Records from SUR_P09_FACILITY
         /// </summary>
-        public static IEnumerable GetFACPDCNTERecords(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static IEnumerable GetPRODUCTRecords(this SUR_P09_FACILITY message)
         {
-            object[] result = message.GetRecords("FACPDCNTERepetitionsUsed", "GetFACPDCNTE");
+            object[] result = message.GetRecords("PRODUCTRepetitionsUsed", "GetPRODUCT");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -22294,19 +29164,49 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all FACPDCNTE Records from SUR_P09_FACPSHPDCPSHFACPDCNTEED
+        /// Get all PRODUCT Records from SUR_P09_FACILITY
         /// </summary>
-        public static List<SUR_P09_FACPDCNTE> GetAllFACPDCNTERecords(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static List<SUR_P09_PRODUCT> GetAllPRODUCTRecords(this SUR_P09_FACILITY message)
         {
-            return message.GetAllRecords<SUR_P09_FACPDCNTE>("FACPDCNTERepetitionsUsed", "GetFACPDCNTE");
+            return message.GetAllRecords<SUR_P09_PRODUCT>("PRODUCTRepetitionsUsed", "GetPRODUCT");
         }
 
         /// <summary>
-        /// Add a new SUR_P09_FACPSHPDCPSHFACPDCNTEED to FACPDCNTE
+        /// Add a new SUR_P09_FACILITY to PRODUCT
         /// </summary>
-        public static SUR_P09_FACPDCNTE AddFACPDCNTE(this SUR_P09_FACPSHPDCPSHFACPDCNTEED message)
+        public static SUR_P09_PRODUCT AddPRODUCT(this SUR_P09_FACILITY message)
         {
-            return message.GetFACPDCNTE(message.FACPDCNTERepetitionsUsed);
+            return message.GetPRODUCT(message.PRODUCTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get FACILITY_DETAIL Records from SUR_P09_FACILITY
+        /// </summary>
+        public static IEnumerable GetFACILITY_DETAILRecords(this SUR_P09_FACILITY message)
+        {
+            object[] result = message.GetRecords("FACILITY_DETAILRepetitionsUsed", "GetFACILITY_DETAIL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all FACILITY_DETAIL Records from SUR_P09_FACILITY
+        /// </summary>
+        public static List<SUR_P09_FACILITY_DETAIL> GetAllFACILITY_DETAILRecords(this SUR_P09_FACILITY message)
+        {
+            return message.GetAllRecords<SUR_P09_FACILITY_DETAIL>("FACILITY_DETAILRepetitionsUsed", "GetFACILITY_DETAIL");
+        }
+
+        /// <summary>
+        /// Add a new SUR_P09_FACILITY to FACILITY_DETAIL
+        /// </summary>
+        public static SUR_P09_FACILITY_DETAIL AddFACILITY_DETAIL(this SUR_P09_FACILITY message)
+        {
+            return message.GetFACILITY_DETAIL(message.FACILITY_DETAILRepetitionsUsed);
         }
 
         /// <summary>
@@ -22370,6 +29270,66 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
+        /// Get TIMING Records from VXR_V03_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this VXR_V03_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from VXR_V03_ORDER
+        /// </summary>
+        public static List<VXR_V03_TIMING> GetAllTIMINGRecords(this VXR_V03_ORDER message)
+        {
+            return message.GetAllRecords<VXR_V03_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new VXR_V03_ORDER to TIMING
+        /// </summary>
+        public static VXR_V03_TIMING AddTIMING(this VXR_V03_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from VXR_V03_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this VXR_V03_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from VXR_V03_ORDER
+        /// </summary>
+        public static List<VXR_V03_OBSERVATION> GetAllOBSERVATIONRecords(this VXR_V03_ORDER message)
+        {
+            return message.GetAllRecords<VXR_V03_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new VXR_V03_ORDER to OBSERVATION
+        /// </summary>
+        public static VXR_V03_OBSERVATION AddOBSERVATION(this VXR_V03_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get TQ2 Records from VXR_V03_TIMING
         /// </summary>
         public static IEnumerable GetTQ2Records(this VXR_V03_TIMING message)
@@ -22427,6 +29387,66 @@ namespace NHapiTools.Model.V251.Group
         public static NTE AddNTE(this VXU_V04_OBSERVATION message)
         {
             return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get TIMING Records from VXU_V04_ORDER
+        /// </summary>
+        public static IEnumerable GetTIMINGRecords(this VXU_V04_ORDER message)
+        {
+            object[] result = message.GetRecords("TIMINGRepetitionsUsed", "GetTIMING");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all TIMING Records from VXU_V04_ORDER
+        /// </summary>
+        public static List<VXU_V04_TIMING> GetAllTIMINGRecords(this VXU_V04_ORDER message)
+        {
+            return message.GetAllRecords<VXU_V04_TIMING>("TIMINGRepetitionsUsed", "GetTIMING");
+        }
+
+        /// <summary>
+        /// Add a new VXU_V04_ORDER to TIMING
+        /// </summary>
+        public static VXU_V04_TIMING AddTIMING(this VXU_V04_ORDER message)
+        {
+            return message.GetTIMING(message.TIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from VXU_V04_ORDER
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this VXU_V04_ORDER message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from VXU_V04_ORDER
+        /// </summary>
+        public static List<VXU_V04_OBSERVATION> GetAllOBSERVATIONRecords(this VXU_V04_ORDER message)
+        {
+            return message.GetAllRecords<VXU_V04_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new VXU_V04_ORDER to OBSERVATION
+        /// </summary>
+        public static VXU_V04_OBSERVATION AddOBSERVATION(this VXU_V04_ORDER message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>

@@ -19,6 +19,36 @@ namespace NHapiTools.Model.V23.Message
     {
         #region Extension methods
         /// <summary>
+        /// Get QUERY_RESPONSE Records from ADR_A19
+        /// </summary>
+        public static IEnumerable GetQUERY_RESPONSERecords(this ADR_A19 message)
+        {
+            object[] result = message.GetRecords("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all QUERY_RESPONSE Records from ADR_A19
+        /// </summary>
+        public static List<ADR_A19_QUERY_RESPONSE> GetAllQUERY_RESPONSERecords(this ADR_A19 message)
+        {
+            return message.GetAllRecords<ADR_A19_QUERY_RESPONSE>("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19 to QUERY_RESPONSE
+        /// </summary>
+        public static ADR_A19_QUERY_RESPONSE AddQUERY_RESPONSE(this ADR_A19 message)
+        {
+            return message.GetQUERY_RESPONSE(message.QUERY_RESPONSERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get NK1 Records from ADT_A01
         /// </summary>
         public static IEnumerable GetNK1Records(this ADT_A01 message)
@@ -4156,36 +4186,6 @@ namespace NHapiTools.Model.V23.Message
         public static ADT_A45_MERGE_INFO AddMERGE_INFO(this ADT_A45 message)
         {
             return message.GetMERGE_INFO(message.MERGE_INFORepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get QUERY_RESPONSE Records from ARD_A19
-        /// </summary>
-        public static IEnumerable GetQUERY_RESPONSERecords(this ARD_A19 message)
-        {
-            object[] result = message.GetRecords("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all QUERY_RESPONSE Records from ARD_A19
-        /// </summary>
-        public static List<ARD_A19_QUERY_RESPONSE> GetAllQUERY_RESPONSERecords(this ARD_A19 message)
-        {
-            return message.GetAllRecords<ARD_A19_QUERY_RESPONSE>("QUERY_RESPONSERepetitionsUsed", "GetQUERY_RESPONSE");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19 to QUERY_RESPONSE
-        /// </summary>
-        public static ARD_A19_QUERY_RESPONSE AddQUERY_RESPONSE(this ARD_A19 message)
-        {
-            return message.GetQUERY_RESPONSE(message.QUERY_RESPONSERepetitionsUsed);
         }
 
         /// <summary>
@@ -8779,6 +8779,66 @@ namespace NHapiTools.Model.V23.Message
         }
 
         /// <summary>
+        /// Get NTE Records from RGV_O01
+        /// </summary>
+        public static IEnumerable GetNTERecords(this RGV_O01 message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from RGV_O01
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this RGV_O01 message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01 to NTE
+        /// </summary>
+        public static NTE AddNTE(this RGV_O01 message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get ORDER Records from RGV_O01
+        /// </summary>
+        public static IEnumerable GetORDERRecords(this RGV_O01 message)
+        {
+            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ORDER Records from RGV_O01
+        /// </summary>
+        public static List<RGV_O01_ORDER> GetAllORDERRecords(this RGV_O01 message)
+        {
+            return message.GetAllRecords<RGV_O01_ORDER>("ORDERRepetitionsUsed", "GetORDER");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01 to ORDER
+        /// </summary>
+        public static RGV_O01_ORDER AddORDER(this RGV_O01 message)
+        {
+            return message.GetORDER(message.ORDERRepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get DEFINITION Records from ROR_ROR
         /// </summary>
         public static IEnumerable GetDEFINITIONRecords(this ROR_ROR message)
@@ -11419,11 +11479,11 @@ namespace NHapiTools.Model.V23.Message
         }
 
         /// <summary>
-        /// Get PRDCTD Records from RQI_I01
+        /// Get PROVIDER Records from RQI_I01
         /// </summary>
-        public static IEnumerable GetPRDCTDRecords(this RQI_I01 message)
+        public static IEnumerable GetPROVIDERRecords(this RQI_I01 message)
         {
-            object[] result = message.GetRecords("PRDCTDRepetitionsUsed", "GetPRDCTD");
+            object[] result = message.GetRecords("PROVIDERRepetitionsUsed", "GetPROVIDER");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -11433,19 +11493,19 @@ namespace NHapiTools.Model.V23.Message
         }
 
         /// <summary>
-        /// Get all PRDCTD Records from RQI_I01
+        /// Get all PROVIDER Records from RQI_I01
         /// </summary>
-        public static List<RQI_I01_PRDCTD> GetAllPRDCTDRecords(this RQI_I01 message)
+        public static List<RQI_I01_PROVIDER> GetAllPROVIDERRecords(this RQI_I01 message)
         {
-            return message.GetAllRecords<RQI_I01_PRDCTD>("PRDCTDRepetitionsUsed", "GetPRDCTD");
+            return message.GetAllRecords<RQI_I01_PROVIDER>("PROVIDERRepetitionsUsed", "GetPROVIDER");
         }
 
         /// <summary>
-        /// Add a new RQI_I01 to PRDCTD
+        /// Add a new RQI_I01 to PROVIDER
         /// </summary>
-        public static RQI_I01_PRDCTD AddPRDCTD(this RQI_I01 message)
+        public static RQI_I01_PROVIDER AddPROVIDER(this RQI_I01 message)
         {
-            return message.GetPRDCTD(message.PRDCTDRepetitionsUsed);
+            return message.GetPROVIDER(message.PROVIDERRepetitionsUsed);
         }
 
         /// <summary>

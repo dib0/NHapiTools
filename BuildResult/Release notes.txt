@@ -12,6 +12,10 @@ curve and not everything works as easy as it should. NHapiTools aims to improve 
 - Two sets of context implementation to easily add all or configurable validation rules.
 
 3. Changelog
+- V1.7 Release (March 2017)
+  Updated nHapi to v2.5.0.6
+  Added extension models for HL7 v26, v27, v271, v28, v281
+
 - V1.6 Release (April 2015)
   Updated to work with NuGet. Updated to the latest version of NHapi and fixed some bugs.
   

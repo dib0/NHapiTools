@@ -20,6 +20,276 @@ namespace NHapiTools.Model.V23.Group
     {
         #region Extension methods
         /// <summary>
+        /// Get ROL Records from ADR_A19_PROCEDURE
+        /// </summary>
+        public static IEnumerable GetROLRecords(this ADR_A19_PROCEDURE message)
+        {
+            object[] result = message.GetRecords("ROLRepetitionsUsed", "GetROL");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ROL Records from ADR_A19_PROCEDURE
+        /// </summary>
+        public static List<ROL> GetAllROLRecords(this ADR_A19_PROCEDURE message)
+        {
+            return message.GetAllRecords<ROL>("ROLRepetitionsUsed", "GetROL");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_PROCEDURE to ROL
+        /// </summary>
+        public static ROL AddROL(this ADR_A19_PROCEDURE message)
+        {
+            return message.GetROL(message.ROLRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NK1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetNK1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("NK1RepetitionsUsed", "GetNK1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NK1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<NK1> GetAllNK1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<NK1>("NK1RepetitionsUsed", "GetNK1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to NK1
+        /// </summary>
+        public static NK1 AddNK1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetNK1(message.NK1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get DB1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetDB1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("DB1RepetitionsUsed", "GetDB1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all DB1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<DB1> GetAllDB1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<DB1>("DB1RepetitionsUsed", "GetDB1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to DB1
+        /// </summary>
+        public static DB1 AddDB1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetDB1(message.DB1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBX Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetOBXRecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBX Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<OBX> GetAllOBXRecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to OBX
+        /// </summary>
+        public static OBX AddOBX(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetOBX(message.OBXRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AL1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetAL1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("AL1RepetitionsUsed", "GetAL1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AL1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<AL1> GetAllAL1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<AL1>("AL1RepetitionsUsed", "GetAL1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to AL1
+        /// </summary>
+        public static AL1 AddAL1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAL1(message.AL1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get DG1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetDG1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("DG1RepetitionsUsed", "GetDG1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all DG1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<DG1> GetAllDG1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<DG1>("DG1RepetitionsUsed", "GetDG1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to DG1
+        /// </summary>
+        public static DG1 AddDG1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetDG1(message.DG1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get PROCEDURE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetPROCEDURERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PROCEDURE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<ADR_A19_PROCEDURE> GetAllPROCEDURERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<ADR_A19_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to PROCEDURE
+        /// </summary>
+        public static ADR_A19_PROCEDURE AddPROCEDURE(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GT1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetGT1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("GT1RepetitionsUsed", "GetGT1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GT1 Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<GT1> GetAllGT1Records(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<GT1>("GT1RepetitionsUsed", "GetGT1");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to GT1
+        /// </summary>
+        public static GT1 AddGT1(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetGT1(message.GT1RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static IEnumerable GetINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all INSURANCE Records from ADR_A19_QUERY_RESPONSE
+        /// </summary>
+        public static List<ADR_A19_INSURANCE> GetAllINSURANCERecords(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetAllRecords<ADR_A19_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
+        }
+
+        /// <summary>
+        /// Add a new ADR_A19_QUERY_RESPONSE to INSURANCE
+        /// </summary>
+        public static ADR_A19_INSURANCE AddINSURANCE(this ADR_A19_QUERY_RESPONSE message)
+        {
+            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ROL Records from ADT_A01_PROCEDURE
         /// </summary>
         public static IEnumerable GetROLRecords(this ADT_A01_PROCEDURE message)
@@ -347,276 +617,6 @@ namespace NHapiTools.Model.V23.Group
         public static ROL AddROL(this ADT_A31_PROCEDURE message)
         {
             return message.GetROL(message.ROLRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get ROL Records from ARD_A19_PROCEDURE
-        /// </summary>
-        public static IEnumerable GetROLRecords(this ARD_A19_PROCEDURE message)
-        {
-            object[] result = message.GetRecords("ROLRepetitionsUsed", "GetROL");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all ROL Records from ARD_A19_PROCEDURE
-        /// </summary>
-        public static List<ROL> GetAllROLRecords(this ARD_A19_PROCEDURE message)
-        {
-            return message.GetAllRecords<ROL>("ROLRepetitionsUsed", "GetROL");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_PROCEDURE to ROL
-        /// </summary>
-        public static ROL AddROL(this ARD_A19_PROCEDURE message)
-        {
-            return message.GetROL(message.ROLRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get NK1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetNK1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("NK1RepetitionsUsed", "GetNK1");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all NK1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<NK1> GetAllNK1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<NK1>("NK1RepetitionsUsed", "GetNK1");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to NK1
-        /// </summary>
-        public static NK1 AddNK1(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetNK1(message.NK1RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get DB1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetDB1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("DB1RepetitionsUsed", "GetDB1");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all DB1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<DB1> GetAllDB1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<DB1>("DB1RepetitionsUsed", "GetDB1");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to DB1
-        /// </summary>
-        public static DB1 AddDB1(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetDB1(message.DB1RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get OBX Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetOBXRecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all OBX Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<OBX> GetAllOBXRecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to OBX
-        /// </summary>
-        public static OBX AddOBX(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetOBX(message.OBXRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get AL1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetAL1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("AL1RepetitionsUsed", "GetAL1");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all AL1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<AL1> GetAllAL1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<AL1>("AL1RepetitionsUsed", "GetAL1");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to AL1
-        /// </summary>
-        public static AL1 AddAL1(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAL1(message.AL1RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get DG1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetDG1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("DG1RepetitionsUsed", "GetDG1");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all DG1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<DG1> GetAllDG1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<DG1>("DG1RepetitionsUsed", "GetDG1");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to DG1
-        /// </summary>
-        public static DG1 AddDG1(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetDG1(message.DG1RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get PROCEDURE Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetPROCEDURERecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("PROCEDURERepetitionsUsed", "GetPROCEDURE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all PROCEDURE Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<ARD_A19_PROCEDURE> GetAllPROCEDURERecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<ARD_A19_PROCEDURE>("PROCEDURERepetitionsUsed", "GetPROCEDURE");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to PROCEDURE
-        /// </summary>
-        public static ARD_A19_PROCEDURE AddPROCEDURE(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetPROCEDURE(message.PROCEDURERepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get GT1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetGT1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("GT1RepetitionsUsed", "GetGT1");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all GT1 Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<GT1> GetAllGT1Records(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<GT1>("GT1RepetitionsUsed", "GetGT1");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to GT1
-        /// </summary>
-        public static GT1 AddGT1(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetGT1(message.GT1RepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get INSURANCE Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static IEnumerable GetINSURANCERecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            object[] result = message.GetRecords("INSURANCERepetitionsUsed", "GetINSURANCE");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all INSURANCE Records from ARD_A19_QUERY_RESPONSE
-        /// </summary>
-        public static List<ARD_A19_INSURANCE> GetAllINSURANCERecords(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetAllRecords<ARD_A19_INSURANCE>("INSURANCERepetitionsUsed", "GetINSURANCE");
-        }
-
-        /// <summary>
-        /// Add a new ARD_A19_QUERY_RESPONSE to INSURANCE
-        /// </summary>
-        public static ARD_A19_INSURANCE AddINSURANCE(this ARD_A19_QUERY_RESPONSE message)
-        {
-            return message.GetINSURANCE(message.INSURANCERepetitionsUsed);
         }
 
         /// <summary>
@@ -2690,9 +2690,9 @@ namespace NHapiTools.Model.V23.Group
         }
 
         /// <summary>
-        /// Get OM4 Records from MFN_M10_MF_TEST_BATTERIES
+        /// Get OM4 Records from MFN_M10_MF_TEST_BATT_DETAIL
         /// </summary>
-        public static IEnumerable GetOM4Records(this MFN_M10_MF_TEST_BATTERIES message)
+        public static IEnumerable GetOM4Records(this MFN_M10_MF_TEST_BATT_DETAIL message)
         {
             object[] result = message.GetRecords("OM4RepetitionsUsed", "GetOM4");
 
@@ -2704,17 +2704,17 @@ namespace NHapiTools.Model.V23.Group
         }
 
         /// <summary>
-        /// Get all OM4 Records from MFN_M10_MF_TEST_BATTERIES
+        /// Get all OM4 Records from MFN_M10_MF_TEST_BATT_DETAIL
         /// </summary>
-        public static List<OM4> GetAllOM4Records(this MFN_M10_MF_TEST_BATTERIES message)
+        public static List<OM4> GetAllOM4Records(this MFN_M10_MF_TEST_BATT_DETAIL message)
         {
             return message.GetAllRecords<OM4>("OM4RepetitionsUsed", "GetOM4");
         }
 
         /// <summary>
-        /// Add a new MFN_M10_MF_TEST_BATTERIES to OM4
+        /// Add a new MFN_M10_MF_TEST_BATT_DETAIL to OM4
         /// </summary>
-        public static OM4 AddOM4(this MFN_M10_MF_TEST_BATTERIES message)
+        public static OM4 AddOM4(this MFN_M10_MF_TEST_BATT_DETAIL message)
         {
             return message.GetOM4(message.OM4RepetitionsUsed);
         }
@@ -19070,6 +19070,396 @@ namespace NHapiTools.Model.V23.Group
         }
 
         /// <summary>
+        /// Get RXC Records from RGV_O01_COMPONENTS
+        /// </summary>
+        public static IEnumerable GetRXCRecords(this RGV_O01_COMPONENTS message)
+        {
+            object[] result = message.GetRecords("RXCRepetitionsUsed", "GetRXC");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXC Records from RGV_O01_COMPONENTS
+        /// </summary>
+        public static List<RXC> GetAllRXCRecords(this RGV_O01_COMPONENTS message)
+        {
+            return message.GetAllRecords<RXC>("RXCRepetitionsUsed", "GetRXC");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_COMPONENTS to RXC
+        /// </summary>
+        public static RXC AddRXC(this RGV_O01_COMPONENTS message)
+        {
+            return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from RGV_O01_COMPONENTS
+        /// </summary>
+        public static IEnumerable GetNTERecords(this RGV_O01_COMPONENTS message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from RGV_O01_COMPONENTS
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this RGV_O01_COMPONENTS message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_COMPONENTS to NTE
+        /// </summary>
+        public static NTE AddNTE(this RGV_O01_COMPONENTS message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RXR Records from RGV_O01_ENCODING
+        /// </summary>
+        public static IEnumerable GetRXRRecords(this RGV_O01_ENCODING message)
+        {
+            object[] result = message.GetRecords("RXRRepetitionsUsed", "GetRXR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXR Records from RGV_O01_ENCODING
+        /// </summary>
+        public static List<RXR> GetAllRXRRecords(this RGV_O01_ENCODING message)
+        {
+            return message.GetAllRecords<RXR>("RXRRepetitionsUsed", "GetRXR");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_ENCODING to RXR
+        /// </summary>
+        public static RXR AddRXR(this RGV_O01_ENCODING message)
+        {
+            return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RXC Records from RGV_O01_ENCODING
+        /// </summary>
+        public static IEnumerable GetRXCRecords(this RGV_O01_ENCODING message)
+        {
+            object[] result = message.GetRecords("RXCRepetitionsUsed", "GetRXC");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXC Records from RGV_O01_ENCODING
+        /// </summary>
+        public static List<RXC> GetAllRXCRecords(this RGV_O01_ENCODING message)
+        {
+            return message.GetAllRecords<RXC>("RXCRepetitionsUsed", "GetRXC");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_ENCODING to RXC
+        /// </summary>
+        public static RXC AddRXC(this RGV_O01_ENCODING message)
+        {
+            return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RXR Records from RGV_O01_GIVE
+        /// </summary>
+        public static IEnumerable GetRXRRecords(this RGV_O01_GIVE message)
+        {
+            object[] result = message.GetRecords("RXRRepetitionsUsed", "GetRXR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXR Records from RGV_O01_GIVE
+        /// </summary>
+        public static List<RXR> GetAllRXRRecords(this RGV_O01_GIVE message)
+        {
+            return message.GetAllRecords<RXR>("RXRRepetitionsUsed", "GetRXR");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_GIVE to RXR
+        /// </summary>
+        public static RXR AddRXR(this RGV_O01_GIVE message)
+        {
+            return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RXC Records from RGV_O01_GIVE
+        /// </summary>
+        public static IEnumerable GetRXCRecords(this RGV_O01_GIVE message)
+        {
+            object[] result = message.GetRecords("RXCRepetitionsUsed", "GetRXC");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXC Records from RGV_O01_GIVE
+        /// </summary>
+        public static List<RXC> GetAllRXCRecords(this RGV_O01_GIVE message)
+        {
+            return message.GetAllRecords<RXC>("RXCRepetitionsUsed", "GetRXC");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_GIVE to RXC
+        /// </summary>
+        public static RXC AddRXC(this RGV_O01_GIVE message)
+        {
+            return message.GetRXC(message.RXCRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get OBSERVATION Records from RGV_O01_GIVE
+        /// </summary>
+        public static IEnumerable GetOBSERVATIONRecords(this RGV_O01_GIVE message)
+        {
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all OBSERVATION Records from RGV_O01_GIVE
+        /// </summary>
+        public static List<RGV_O01_OBSERVATION> GetAllOBSERVATIONRecords(this RGV_O01_GIVE message)
+        {
+            return message.GetAllRecords<RGV_O01_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_GIVE to OBSERVATION
+        /// </summary>
+        public static RGV_O01_OBSERVATION AddOBSERVATION(this RGV_O01_GIVE message)
+        {
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from RGV_O01_OBSERVATION
+        /// </summary>
+        public static IEnumerable GetNTERecords(this RGV_O01_OBSERVATION message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from RGV_O01_OBSERVATION
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this RGV_O01_OBSERVATION message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_OBSERVATION to NTE
+        /// </summary>
+        public static NTE AddNTE(this RGV_O01_OBSERVATION message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get GIVE Records from RGV_O01_ORDER
+        /// </summary>
+        public static IEnumerable GetGIVERecords(this RGV_O01_ORDER message)
+        {
+            object[] result = message.GetRecords("GIVERepetitionsUsed", "GetGIVE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all GIVE Records from RGV_O01_ORDER
+        /// </summary>
+        public static List<RGV_O01_GIVE> GetAllGIVERecords(this RGV_O01_ORDER message)
+        {
+            return message.GetAllRecords<RGV_O01_GIVE>("GIVERepetitionsUsed", "GetGIVE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_ORDER to GIVE
+        /// </summary>
+        public static RGV_O01_GIVE AddGIVE(this RGV_O01_ORDER message)
+        {
+            return message.GetGIVE(message.GIVERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from RGV_O01_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from RGV_O01_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_ORDER_DETAIL_SUPPLEMENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get RXR Records from RGV_O01_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static IEnumerable GetRXRRecords(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            object[] result = message.GetRecords("RXRRepetitionsUsed", "GetRXR");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all RXR Records from RGV_O01_ORDER_DETAIL_SUPPLEMENT
+        /// </summary>
+        public static List<RXR> GetAllRXRRecords(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetAllRecords<RXR>("RXRRepetitionsUsed", "GetRXR");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_ORDER_DETAIL_SUPPLEMENT to RXR
+        /// </summary>
+        public static RXR AddRXR(this RGV_O01_ORDER_DETAIL_SUPPLEMENT message)
+        {
+            return message.GetRXR(message.RXRRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get NTE Records from RGV_O01_PATIENT
+        /// </summary>
+        public static IEnumerable GetNTERecords(this RGV_O01_PATIENT message)
+        {
+            object[] result = message.GetRecords("NTERepetitionsUsed", "GetNTE");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NTE Records from RGV_O01_PATIENT
+        /// </summary>
+        public static List<NTE> GetAllNTERecords(this RGV_O01_PATIENT message)
+        {
+            return message.GetAllRecords<NTE>("NTERepetitionsUsed", "GetNTE");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_PATIENT to NTE
+        /// </summary>
+        public static NTE AddNTE(this RGV_O01_PATIENT message)
+        {
+            return message.GetNTE(message.NTERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get AL1 Records from RGV_O01_PATIENT
+        /// </summary>
+        public static IEnumerable GetAL1Records(this RGV_O01_PATIENT message)
+        {
+            object[] result = message.GetRecords("AL1RepetitionsUsed", "GetAL1");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AL1 Records from RGV_O01_PATIENT
+        /// </summary>
+        public static List<AL1> GetAllAL1Records(this RGV_O01_PATIENT message)
+        {
+            return message.GetAllRecords<AL1>("AL1RepetitionsUsed", "GetAL1");
+        }
+
+        /// <summary>
+        /// Add a new RGV_O01_PATIENT to AL1
+        /// </summary>
+        public static AL1 AddAL1(this RGV_O01_PATIENT message)
+        {
+            return message.GetAL1(message.AL1RepetitionsUsed);
+        }
+
+        /// <summary>
         /// Get ORDER Records from ROR_ROR_DEFINITION
         /// </summary>
         public static IEnumerable GetORDERRecords(this ROR_ROR_DEFINITION message)
@@ -20870,9 +21260,9 @@ namespace NHapiTools.Model.V23.Group
         }
 
         /// <summary>
-        /// Get CTD Records from RQI_I01_PRDCTD
+        /// Get CTD Records from RQI_I01_PROVIDER
         /// </summary>
-        public static IEnumerable GetCTDRecords(this RQI_I01_PRDCTD message)
+        public static IEnumerable GetCTDRecords(this RQI_I01_PROVIDER message)
         {
             object[] result = message.GetRecords("CTDRepetitionsUsed", "GetCTD");
 
@@ -20884,17 +21274,17 @@ namespace NHapiTools.Model.V23.Group
         }
 
         /// <summary>
-        /// Get all CTD Records from RQI_I01_PRDCTD
+        /// Get all CTD Records from RQI_I01_PROVIDER
         /// </summary>
-        public static List<CTD> GetAllCTDRecords(this RQI_I01_PRDCTD message)
+        public static List<CTD> GetAllCTDRecords(this RQI_I01_PROVIDER message)
         {
             return message.GetAllRecords<CTD>("CTDRepetitionsUsed", "GetCTD");
         }
 
         /// <summary>
-        /// Add a new RQI_I01_PRDCTD to CTD
+        /// Add a new RQI_I01_PROVIDER to CTD
         /// </summary>
-        public static CTD AddCTD(this RQI_I01_PRDCTD message)
+        public static CTD AddCTD(this RQI_I01_PROVIDER message)
         {
             return message.GetCTD(message.CTDRepetitionsUsed);
         }

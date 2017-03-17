@@ -5749,11 +5749,11 @@ namespace NHapiTools.Model.V25.Message
         }
 
         /// <summary>
-        /// Get OBXNTE Records from MDM_T02
+        /// Get OBSERVATION Records from MDM_T02
         /// </summary>
-        public static IEnumerable GetOBXNTERecords(this MDM_T02 message)
+        public static IEnumerable GetOBSERVATIONRecords(this MDM_T02 message)
         {
-            object[] result = message.GetRecords("OBXNTERepetitionsUsed", "GetOBXNTE");
+            object[] result = message.GetRecords("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -5763,19 +5763,19 @@ namespace NHapiTools.Model.V25.Message
         }
 
         /// <summary>
-        /// Get all OBXNTE Records from MDM_T02
+        /// Get all OBSERVATION Records from MDM_T02
         /// </summary>
-        public static List<MDM_T02_OBXNTE> GetAllOBXNTERecords(this MDM_T02 message)
+        public static List<MDM_T02_OBSERVATION> GetAllOBSERVATIONRecords(this MDM_T02 message)
         {
-            return message.GetAllRecords<MDM_T02_OBXNTE>("OBXNTERepetitionsUsed", "GetOBXNTE");
+            return message.GetAllRecords<MDM_T02_OBSERVATION>("OBSERVATIONRepetitionsUsed", "GetOBSERVATION");
         }
 
         /// <summary>
-        /// Add a new MDM_T02 to OBXNTE
+        /// Add a new MDM_T02 to OBSERVATION
         /// </summary>
-        public static MDM_T02_OBXNTE AddOBXNTE(this MDM_T02 message)
+        public static MDM_T02_OBSERVATION AddOBSERVATION(this MDM_T02 message)
         {
-            return message.GetOBXNTE(message.OBXNTERepetitionsUsed);
+            return message.GetOBSERVATION(message.OBSERVATIONRepetitionsUsed);
         }
 
         /// <summary>
@@ -9949,11 +9949,11 @@ namespace NHapiTools.Model.V25.Message
         }
 
         /// <summary>
-        /// Get SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI Records from OUL_R23
+        /// Get SPECIMEN Records from OUL_R23
         /// </summary>
-        public static IEnumerable GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRecords(this OUL_R23 message)
+        public static IEnumerable GetSPECIMENRecords(this OUL_R23 message)
         {
-            object[] result = message.GetRecords("SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed", "GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI");
+            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -9963,19 +9963,19 @@ namespace NHapiTools.Model.V25.Message
         }
 
         /// <summary>
-        /// Get all SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI Records from OUL_R23
+        /// Get all SPECIMEN Records from OUL_R23
         /// </summary>
-        public static List<OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI> GetAllSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRecords(this OUL_R23 message)
+        public static List<OUL_R23_SPECIMEN> GetAllSPECIMENRecords(this OUL_R23 message)
         {
-            return message.GetAllRecords<OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI>("SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed", "GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI");
+            return message.GetAllRecords<OUL_R23_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
         }
 
         /// <summary>
-        /// Add a new OUL_R23 to SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI
+        /// Add a new OUL_R23 to SPECIMEN
         /// </summary>
-        public static OUL_R23_SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI AddSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI(this OUL_R23 message)
+        public static OUL_R23_SPECIMEN AddSPECIMEN(this OUL_R23 message)
         {
-            return message.GetSPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTI(message.SPMOBXSACINVOBRORCNTETQ1TQ2OBXTCDSIDNTECTIRepetitionsUsed);
+            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
         }
 
         /// <summary>
