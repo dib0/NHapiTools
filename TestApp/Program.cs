@@ -329,6 +329,17 @@ namespace TestApp
                         Console.WriteLine("OK!");
                     else
                         Console.WriteLine("Failure!");
+
+                    Console.WriteLine("Testing Remove method.");
+                    x = a08msg.PID.PatientAddressRepetitionsUsed;
+                    Console.WriteLine("Message has {0} PatientAddress record(s).", x);
+                    Console.WriteLine("Removing record.");
+                    a08msg.PID.RemovePatientAddress(x - 1);
+                    Console.Write("Message has {0} PatientAddress record(s): ", a08msg.PID.PatientAddressRepetitionsUsed);
+                    if ((a08msg.PID.PatientAddressRepetitionsUsed) == 1)
+                        Console.WriteLine("OK!");
+                    else
+                        Console.WriteLine("Failure!");
                 }
 
                 Console.WriteLine("\nDone!");

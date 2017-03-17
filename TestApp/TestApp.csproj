@@ -38,7 +38,7 @@
     </Reference>
     <Reference Include="NHapi.Base, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Base.dll</HintPath>
+      <HintPath>..\..\nHapi\NHapi20\NHapi.Base\bin\Debug\NHapi.Base.dll</HintPath>
     </Reference>
     <Reference Include="NHapi.Model.V21, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

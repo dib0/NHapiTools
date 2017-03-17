@@ -42,11 +42,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new ERR to ERRORCODEANDLOCATION
+        /// Add a new ERRORCODEANDLOCATION to ERR
         /// </summary>
         public static ID AddERRORCODEANDLOCATION(this ERR message)
         {
             return message.GetERRORCODEANDLOCATION(message.ERRORCODEANDLOCATIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an ERRORCODEANDLOCATION record from ERR
+        /// </summary>
+        public static void RemoveERRORCODEANDLOCATION(this ERR message, ID item)
+        {
+            int fieldNum = message.FindField("ERRORCODEANDLOCATION");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an ERRORCODEANDLOCATION record from ERR
+        /// </summary>
+        public static void RemoveERRORCODEANDLOCATION(this ERR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("ERRORCODEANDLOCATION");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -72,11 +90,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new NK1 to NEXTOFKINPHONENUMBER
+        /// Add a new NEXTOFKINPHONENUMBER to NK1
         /// </summary>
         public static TN AddNEXTOFKINPHONENUMBER(this NK1 message)
         {
             return message.GetNEXTOFKINPHONENUMBER(message.NEXTOFKINPHONENUMBERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an NEXTOFKINPHONENUMBER record from NK1
+        /// </summary>
+        public static void RemoveNEXTOFKINPHONENUMBER(this NK1 message, TN item)
+        {
+            int fieldNum = message.FindField("NEXTOFKINPHONENUMBER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an NEXTOFKINPHONENUMBER record from NK1
+        /// </summary>
+        public static void RemoveNEXTOFKINPHONENUMBER(this NK1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("NEXTOFKINPHONENUMBER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -102,11 +138,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new NTE to COMMENT
+        /// Add a new COMMENT to NTE
         /// </summary>
         public static TX AddCOMMENT(this NTE message)
         {
             return message.GetCOMMENT(message.COMMENTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an COMMENT record from NTE
+        /// </summary>
+        public static void RemoveCOMMENT(this NTE message, TX item)
+        {
+            int fieldNum = message.FindField("COMMENT");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an COMMENT record from NTE
+        /// </summary>
+        public static void RemoveCOMMENT(this NTE message, int itemIndex)
+        {
+            int fieldNum = message.FindField("COMMENT");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -132,11 +186,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to COLLECTORIDENTIFIER
+        /// Add a new COLLECTORIDENTIFIER to OBR
         /// </summary>
         public static CN AddCOLLECTORIDENTIFIER(this OBR message)
         {
             return message.GetCOLLECTORIDENTIFIER(message.COLLECTORIDENTIFIERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an COLLECTORIDENTIFIER record from OBR
+        /// </summary>
+        public static void RemoveCOLLECTORIDENTIFIER(this OBR message, CN item)
+        {
+            int fieldNum = message.FindField("COLLECTORIDENTIFIER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an COLLECTORIDENTIFIER record from OBR
+        /// </summary>
+        public static void RemoveCOLLECTORIDENTIFIER(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("COLLECTORIDENTIFIER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -162,11 +234,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to ORDERINGPROVIDER
+        /// Add a new ORDERINGPROVIDER to OBR
         /// </summary>
         public static CN AddORDERINGPROVIDER(this OBR message)
         {
             return message.GetORDERINGPROVIDER(message.ORDERINGPROVIDERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an ORDERINGPROVIDER record from OBR
+        /// </summary>
+        public static void RemoveORDERINGPROVIDER(this OBR message, CN item)
+        {
+            int fieldNum = message.FindField("ORDERINGPROVIDER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an ORDERINGPROVIDER record from OBR
+        /// </summary>
+        public static void RemoveORDERINGPROVIDER(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("ORDERINGPROVIDER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -192,11 +282,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to ORDERCALLBACKPHONENUM
+        /// Add a new ORDERCALLBACKPHONENUM to OBR
         /// </summary>
         public static TN AddORDERCALLBACKPHONENUM(this OBR message)
         {
             return message.GetORDERCALLBACKPHONENUM(message.ORDERCALLBACKPHONENUMRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an ORDERCALLBACKPHONENUM record from OBR
+        /// </summary>
+        public static void RemoveORDERCALLBACKPHONENUM(this OBR message, TN item)
+        {
+            int fieldNum = message.FindField("ORDERCALLBACKPHONENUM");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an ORDERCALLBACKPHONENUM record from OBR
+        /// </summary>
+        public static void RemoveORDERCALLBACKPHONENUM(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("ORDERCALLBACKPHONENUM");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -222,11 +330,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to QUANTITYTIMING
+        /// Add a new QUANTITYTIMING to OBR
         /// </summary>
         public static CM AddQUANTITYTIMING(this OBR message)
         {
             return message.GetQUANTITYTIMING(message.QUANTITYTIMINGRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an QUANTITYTIMING record from OBR
+        /// </summary>
+        public static void RemoveQUANTITYTIMING(this OBR message, CM item)
+        {
+            int fieldNum = message.FindField("QUANTITYTIMING");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an QUANTITYTIMING record from OBR
+        /// </summary>
+        public static void RemoveQUANTITYTIMING(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("QUANTITYTIMING");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -252,11 +378,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to RESULTCOPIESTO
+        /// Add a new RESULTCOPIESTO to OBR
         /// </summary>
         public static CN AddRESULTCOPIESTO(this OBR message)
         {
             return message.GetRESULTCOPIESTO(message.RESULTCOPIESTORepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RESULTCOPIESTO record from OBR
+        /// </summary>
+        public static void RemoveRESULTCOPIESTO(this OBR message, CN item)
+        {
+            int fieldNum = message.FindField("RESULTCOPIESTO");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RESULTCOPIESTO record from OBR
+        /// </summary>
+        public static void RemoveRESULTCOPIESTO(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RESULTCOPIESTO");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -282,11 +426,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBR to REASONFORSTUDY
+        /// Add a new REASONFORSTUDY to OBR
         /// </summary>
         public static CE AddREASONFORSTUDY(this OBR message)
         {
             return message.GetREASONFORSTUDY(message.REASONFORSTUDYRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an REASONFORSTUDY record from OBR
+        /// </summary>
+        public static void RemoveREASONFORSTUDY(this OBR message, CE item)
+        {
+            int fieldNum = message.FindField("REASONFORSTUDY");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an REASONFORSTUDY record from OBR
+        /// </summary>
+        public static void RemoveREASONFORSTUDY(this OBR message, int itemIndex)
+        {
+            int fieldNum = message.FindField("REASONFORSTUDY");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -312,11 +474,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new OBX to ABNORMALFLAGS
+        /// Add a new ABNORMALFLAGS to OBX
         /// </summary>
         public static ST AddABNORMALFLAGS(this OBX message)
         {
             return message.GetABNORMALFLAGS(message.ABNORMALFLAGSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an ABNORMALFLAGS record from OBX
+        /// </summary>
+        public static void RemoveABNORMALFLAGS(this OBX message, ST item)
+        {
+            int fieldNum = message.FindField("ABNORMALFLAGS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an ABNORMALFLAGS record from OBX
+        /// </summary>
+        public static void RemoveABNORMALFLAGS(this OBX message, int itemIndex)
+        {
+            int fieldNum = message.FindField("ABNORMALFLAGS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -342,11 +522,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new ORC to CALLBACKPHONENUMBER
+        /// Add a new CALLBACKPHONENUMBER to ORC
         /// </summary>
         public static TN AddCALLBACKPHONENUMBER(this ORC message)
         {
             return message.GetCALLBACKPHONENUMBER(message.CALLBACKPHONENUMBERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CALLBACKPHONENUMBER record from ORC
+        /// </summary>
+        public static void RemoveCALLBACKPHONENUMBER(this ORC message, TN item)
+        {
+            int fieldNum = message.FindField("CALLBACKPHONENUMBER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CALLBACKPHONENUMBER record from ORC
+        /// </summary>
+        public static void RemoveCALLBACKPHONENUMBER(this ORC message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CALLBACKPHONENUMBER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -372,11 +570,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new ORO to RESULTSCOPIESTO
+        /// Add a new RESULTSCOPIESTO to ORO
         /// </summary>
         public static CN AddRESULTSCOPIESTO(this ORO message)
         {
             return message.GetRESULTSCOPIESTO(message.RESULTSCOPIESTORepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RESULTSCOPIESTO record from ORO
+        /// </summary>
+        public static void RemoveRESULTSCOPIESTO(this ORO message, CN item)
+        {
+            int fieldNum = message.FindField("RESULTSCOPIESTO");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RESULTSCOPIESTO record from ORO
+        /// </summary>
+        public static void RemoveRESULTSCOPIESTO(this ORO message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RESULTSCOPIESTO");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -402,11 +618,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PID to PATIENTALIAS
+        /// Add a new PATIENTALIAS to PID
         /// </summary>
         public static PN AddPATIENTALIAS(this PID message)
         {
             return message.GetPATIENTALIAS(message.PATIENTALIASRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PATIENTALIAS record from PID
+        /// </summary>
+        public static void RemovePATIENTALIAS(this PID message, PN item)
+        {
+            int fieldNum = message.FindField("PATIENTALIAS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PATIENTALIAS record from PID
+        /// </summary>
+        public static void RemovePATIENTALIAS(this PID message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PATIENTALIAS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -432,11 +666,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PID to PHONENUMBERHOME
+        /// Add a new PHONENUMBERHOME to PID
         /// </summary>
         public static TN AddPHONENUMBERHOME(this PID message)
         {
             return message.GetPHONENUMBERHOME(message.PHONENUMBERHOMERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PHONENUMBERHOME record from PID
+        /// </summary>
+        public static void RemovePHONENUMBERHOME(this PID message, TN item)
+        {
+            int fieldNum = message.FindField("PHONENUMBERHOME");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PHONENUMBERHOME record from PID
+        /// </summary>
+        public static void RemovePHONENUMBERHOME(this PID message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PHONENUMBERHOME");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -462,11 +714,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PID to PHONENUMBERBUSINESS
+        /// Add a new PHONENUMBERBUSINESS to PID
         /// </summary>
         public static TN AddPHONENUMBERBUSINESS(this PID message)
         {
             return message.GetPHONENUMBERBUSINESS(message.PHONENUMBERBUSINESSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PHONENUMBERBUSINESS record from PID
+        /// </summary>
+        public static void RemovePHONENUMBERBUSINESS(this PID message, TN item)
+        {
+            int fieldNum = message.FindField("PHONENUMBERBUSINESS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PHONENUMBERBUSINESS record from PID
+        /// </summary>
+        public static void RemovePHONENUMBERBUSINESS(this PID message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PHONENUMBERBUSINESS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -492,11 +762,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PR1 to SETIDPROCEDURE
+        /// Add a new SETIDPROCEDURE to PR1
         /// </summary>
         public static SI AddSETIDPROCEDURE(this PR1 message)
         {
             return message.GetSETIDPROCEDURE(message.SETIDPROCEDURERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an SETIDPROCEDURE record from PR1
+        /// </summary>
+        public static void RemoveSETIDPROCEDURE(this PR1 message, SI item)
+        {
+            int fieldNum = message.FindField("SETIDPROCEDURE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an SETIDPROCEDURE record from PR1
+        /// </summary>
+        public static void RemoveSETIDPROCEDURE(this PR1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("SETIDPROCEDURE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -522,11 +810,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to CONSULTINGDOCTOR
+        /// Add a new CONSULTINGDOCTOR to PV1
         /// </summary>
         public static CN AddCONSULTINGDOCTOR(this PV1 message)
         {
             return message.GetCONSULTINGDOCTOR(message.CONSULTINGDOCTORRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONSULTINGDOCTOR record from PV1
+        /// </summary>
+        public static void RemoveCONSULTINGDOCTOR(this PV1 message, CN item)
+        {
+            int fieldNum = message.FindField("CONSULTINGDOCTOR");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONSULTINGDOCTOR record from PV1
+        /// </summary>
+        public static void RemoveCONSULTINGDOCTOR(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONSULTINGDOCTOR");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -552,11 +858,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to FINANCIALCLASS
+        /// Add a new FINANCIALCLASS to PV1
         /// </summary>
         public static ID AddFINANCIALCLASS(this PV1 message)
         {
             return message.GetFINANCIALCLASS(message.FINANCIALCLASSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an FINANCIALCLASS record from PV1
+        /// </summary>
+        public static void RemoveFINANCIALCLASS(this PV1 message, ID item)
+        {
+            int fieldNum = message.FindField("FINANCIALCLASS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an FINANCIALCLASS record from PV1
+        /// </summary>
+        public static void RemoveFINANCIALCLASS(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("FINANCIALCLASS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -582,11 +906,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to CONTRACTCODE
+        /// Add a new CONTRACTCODE to PV1
         /// </summary>
         public static ID AddCONTRACTCODE(this PV1 message)
         {
             return message.GetCONTRACTCODE(message.CONTRACTCODERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTCODE record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTCODE(this PV1 message, ID item)
+        {
+            int fieldNum = message.FindField("CONTRACTCODE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTCODE record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTCODE(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONTRACTCODE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -612,11 +954,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to CONTRACTEFFECTIVEDATE
+        /// Add a new CONTRACTEFFECTIVEDATE to PV1
         /// </summary>
         public static DT AddCONTRACTEFFECTIVEDATE(this PV1 message)
         {
             return message.GetCONTRACTEFFECTIVEDATE(message.CONTRACTEFFECTIVEDATERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTEFFECTIVEDATE record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTEFFECTIVEDATE(this PV1 message, DT item)
+        {
+            int fieldNum = message.FindField("CONTRACTEFFECTIVEDATE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTEFFECTIVEDATE record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTEFFECTIVEDATE(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONTRACTEFFECTIVEDATE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -642,11 +1002,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to CONTRACTAMOUNT
+        /// Add a new CONTRACTAMOUNT to PV1
         /// </summary>
         public static NM AddCONTRACTAMOUNT(this PV1 message)
         {
             return message.GetCONTRACTAMOUNT(message.CONTRACTAMOUNTRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTAMOUNT record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTAMOUNT(this PV1 message, NM item)
+        {
+            int fieldNum = message.FindField("CONTRACTAMOUNT");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTAMOUNT record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTAMOUNT(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONTRACTAMOUNT");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -672,11 +1050,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new PV1 to CONTRACTPERIOD
+        /// Add a new CONTRACTPERIOD to PV1
         /// </summary>
         public static NM AddCONTRACTPERIOD(this PV1 message)
         {
             return message.GetCONTRACTPERIOD(message.CONTRACTPERIODRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTPERIOD record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTPERIOD(this PV1 message, NM item)
+        {
+            int fieldNum = message.FindField("CONTRACTPERIOD");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONTRACTPERIOD record from PV1
+        /// </summary>
+        public static void RemoveCONTRACTPERIOD(this PV1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONTRACTPERIOD");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -702,11 +1098,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRD to WHOSUBJECTFILTER
+        /// Add a new WHOSUBJECTFILTER to QRD
         /// </summary>
         public static ST AddWHOSUBJECTFILTER(this QRD message)
         {
             return message.GetWHOSUBJECTFILTER(message.WHOSUBJECTFILTERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHOSUBJECTFILTER record from QRD
+        /// </summary>
+        public static void RemoveWHOSUBJECTFILTER(this QRD message, ST item)
+        {
+            int fieldNum = message.FindField("WHOSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHOSUBJECTFILTER record from QRD
+        /// </summary>
+        public static void RemoveWHOSUBJECTFILTER(this QRD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHOSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -732,11 +1146,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRD to WHATSUBJECTFILTER
+        /// Add a new WHATSUBJECTFILTER to QRD
         /// </summary>
         public static ID AddWHATSUBJECTFILTER(this QRD message)
         {
             return message.GetWHATSUBJECTFILTER(message.WHATSUBJECTFILTERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHATSUBJECTFILTER record from QRD
+        /// </summary>
+        public static void RemoveWHATSUBJECTFILTER(this QRD message, ID item)
+        {
+            int fieldNum = message.FindField("WHATSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHATSUBJECTFILTER record from QRD
+        /// </summary>
+        public static void RemoveWHATSUBJECTFILTER(this QRD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHATSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -762,11 +1194,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRD to WHATDEPARTMENTDATACODE
+        /// Add a new WHATDEPARTMENTDATACODE to QRD
         /// </summary>
         public static ST AddWHATDEPARTMENTDATACODE(this QRD message)
         {
             return message.GetWHATDEPARTMENTDATACODE(message.WHATDEPARTMENTDATACODERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHATDEPARTMENTDATACODE record from QRD
+        /// </summary>
+        public static void RemoveWHATDEPARTMENTDATACODE(this QRD message, ST item)
+        {
+            int fieldNum = message.FindField("WHATDEPARTMENTDATACODE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHATDEPARTMENTDATACODE record from QRD
+        /// </summary>
+        public static void RemoveWHATDEPARTMENTDATACODE(this QRD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHATDEPARTMENTDATACODE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -792,11 +1242,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRD to WHATDATACODEVALUEQUAL
+        /// Add a new WHATDATACODEVALUEQUAL to QRD
         /// </summary>
         public static ST AddWHATDATACODEVALUEQUAL(this QRD message)
         {
             return message.GetWHATDATACODEVALUEQUAL(message.WHATDATACODEVALUEQUALRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHATDATACODEVALUEQUAL record from QRD
+        /// </summary>
+        public static void RemoveWHATDATACODEVALUEQUAL(this QRD message, ST item)
+        {
+            int fieldNum = message.FindField("WHATDATACODEVALUEQUAL");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHATDATACODEVALUEQUAL record from QRD
+        /// </summary>
+        public static void RemoveWHATDATACODEVALUEQUAL(this QRD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHATDATACODEVALUEQUAL");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -822,11 +1290,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRF to WHERESUBJECTFILTER
+        /// Add a new WHERESUBJECTFILTER to QRF
         /// </summary>
         public static ST AddWHERESUBJECTFILTER(this QRF message)
         {
             return message.GetWHERESUBJECTFILTER(message.WHERESUBJECTFILTERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHERESUBJECTFILTER record from QRF
+        /// </summary>
+        public static void RemoveWHERESUBJECTFILTER(this QRF message, ST item)
+        {
+            int fieldNum = message.FindField("WHERESUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHERESUBJECTFILTER record from QRF
+        /// </summary>
+        public static void RemoveWHERESUBJECTFILTER(this QRF message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHERESUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -852,11 +1338,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRF to WHATUSERQUALIFIER
+        /// Add a new WHATUSERQUALIFIER to QRF
         /// </summary>
         public static ST AddWHATUSERQUALIFIER(this QRF message)
         {
             return message.GetWHATUSERQUALIFIER(message.WHATUSERQUALIFIERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an WHATUSERQUALIFIER record from QRF
+        /// </summary>
+        public static void RemoveWHATUSERQUALIFIER(this QRF message, ST item)
+        {
+            int fieldNum = message.FindField("WHATUSERQUALIFIER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an WHATUSERQUALIFIER record from QRF
+        /// </summary>
+        public static void RemoveWHATUSERQUALIFIER(this QRF message, int itemIndex)
+        {
+            int fieldNum = message.FindField("WHATUSERQUALIFIER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -882,11 +1386,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new QRF to OTHERQRYSUBJECTFILTER
+        /// Add a new OTHERQRYSUBJECTFILTER to QRF
         /// </summary>
         public static ST AddOTHERQRYSUBJECTFILTER(this QRF message)
         {
             return message.GetOTHERQRYSUBJECTFILTER(message.OTHERQRYSUBJECTFILTERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an OTHERQRYSUBJECTFILTER record from QRF
+        /// </summary>
+        public static void RemoveOTHERQRYSUBJECTFILTER(this QRF message, ST item)
+        {
+            int fieldNum = message.FindField("OTHERQRYSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an OTHERQRYSUBJECTFILTER record from QRF
+        /// </summary>
+        public static void RemoveOTHERQRYSUBJECTFILTER(this QRF message, int itemIndex)
+        {
+            int fieldNum = message.FindField("OTHERQRYSUBJECTFILTER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -912,11 +1434,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new RX1 to COMPONENTDRUGIDS
+        /// Add a new COMPONENTDRUGIDS to RX1
         /// </summary>
         public static ID AddCOMPONENTDRUGIDS(this RX1 message)
         {
             return message.GetCOMPONENTDRUGIDS(message.COMPONENTDRUGIDSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an COMPONENTDRUGIDS record from RX1
+        /// </summary>
+        public static void RemoveCOMPONENTDRUGIDS(this RX1 message, ID item)
+        {
+            int fieldNum = message.FindField("COMPONENTDRUGIDS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an COMPONENTDRUGIDS record from RX1
+        /// </summary>
+        public static void RemoveCOMPONENTDRUGIDS(this RX1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("COMPONENTDRUGIDS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -942,11 +1482,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new RX1 to PHARMACYINSTRUCTIONS
+        /// Add a new PHARMACYINSTRUCTIONS to RX1
         /// </summary>
         public static TX AddPHARMACYINSTRUCTIONS(this RX1 message)
         {
             return message.GetPHARMACYINSTRUCTIONS(message.PHARMACYINSTRUCTIONSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PHARMACYINSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemovePHARMACYINSTRUCTIONS(this RX1 message, TX item)
+        {
+            int fieldNum = message.FindField("PHARMACYINSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PHARMACYINSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemovePHARMACYINSTRUCTIONS(this RX1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PHARMACYINSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -972,11 +1530,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new RX1 to PATIENTINSTRUCTIONS
+        /// Add a new PATIENTINSTRUCTIONS to RX1
         /// </summary>
         public static TX AddPATIENTINSTRUCTIONS(this RX1 message)
         {
             return message.GetPATIENTINSTRUCTIONS(message.PATIENTINSTRUCTIONSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PATIENTINSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemovePATIENTINSTRUCTIONS(this RX1 message, TX item)
+        {
+            int fieldNum = message.FindField("PATIENTINSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PATIENTINSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemovePATIENTINSTRUCTIONS(this RX1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PATIENTINSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1002,11 +1578,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new RX1 to INSTRUCTIONS
+        /// Add a new INSTRUCTIONS to RX1
         /// </summary>
         public static TX AddINSTRUCTIONS(this RX1 message)
         {
             return message.GetINSTRUCTIONS(message.INSTRUCTIONSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an INSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemoveINSTRUCTIONS(this RX1 message, TX item)
+        {
+            int fieldNum = message.FindField("INSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an INSTRUCTIONS record from RX1
+        /// </summary>
+        public static void RemoveINSTRUCTIONS(this RX1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("INSTRUCTIONS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1032,11 +1626,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new UB1 to CONDITIONCODE
+        /// Add a new CONDITIONCODE to UB1
         /// </summary>
         public static ID AddCONDITIONCODE(this UB1 message)
         {
             return message.GetCONDITIONCODE(message.CONDITIONCODERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an CONDITIONCODE record from UB1
+        /// </summary>
+        public static void RemoveCONDITIONCODE(this UB1 message, ID item)
+        {
+            int fieldNum = message.FindField("CONDITIONCODE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an CONDITIONCODE record from UB1
+        /// </summary>
+        public static void RemoveCONDITIONCODE(this UB1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("CONDITIONCODE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1062,11 +1674,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new UB1 to VALUEAMOUNTCODE
+        /// Add a new VALUEAMOUNTCODE to UB1
         /// </summary>
         public static CM AddVALUEAMOUNTCODE(this UB1 message)
         {
             return message.GetVALUEAMOUNTCODE(message.VALUEAMOUNTCODERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an VALUEAMOUNTCODE record from UB1
+        /// </summary>
+        public static void RemoveVALUEAMOUNTCODE(this UB1 message, CM item)
+        {
+            int fieldNum = message.FindField("VALUEAMOUNTCODE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an VALUEAMOUNTCODE record from UB1
+        /// </summary>
+        public static void RemoveVALUEAMOUNTCODE(this UB1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("VALUEAMOUNTCODE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1092,11 +1722,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new UB1 to OCCURRENCE2832
+        /// Add a new OCCURRENCE2832 to UB1
         /// </summary>
         public static ID AddOCCURRENCE2832(this UB1 message)
         {
             return message.GetOCCURRENCE2832(message.OCCURRENCE2832RepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an OCCURRENCE2832 record from UB1
+        /// </summary>
+        public static void RemoveOCCURRENCE2832(this UB1 message, ID item)
+        {
+            int fieldNum = message.FindField("OCCURRENCE2832");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an OCCURRENCE2832 record from UB1
+        /// </summary>
+        public static void RemoveOCCURRENCE2832(this UB1 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("OCCURRENCE2832");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1122,11 +1770,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URD to RUWHOSUBJECTDEFINITION
+        /// Add a new RUWHOSUBJECTDEFINITION to URD
         /// </summary>
         public static ST AddRUWHOSUBJECTDEFINITION(this URD message)
         {
             return message.GetRUWHOSUBJECTDEFINITION(message.RUWHOSUBJECTDEFINITIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUWHOSUBJECTDEFINITION record from URD
+        /// </summary>
+        public static void RemoveRUWHOSUBJECTDEFINITION(this URD message, ST item)
+        {
+            int fieldNum = message.FindField("RUWHOSUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUWHOSUBJECTDEFINITION record from URD
+        /// </summary>
+        public static void RemoveRUWHOSUBJECTDEFINITION(this URD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUWHOSUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1152,11 +1818,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URD to RUWHATSUBJECTDEFINITION
+        /// Add a new RUWHATSUBJECTDEFINITION to URD
         /// </summary>
         public static ID AddRUWHATSUBJECTDEFINITION(this URD message)
         {
             return message.GetRUWHATSUBJECTDEFINITION(message.RUWHATSUBJECTDEFINITIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATSUBJECTDEFINITION record from URD
+        /// </summary>
+        public static void RemoveRUWHATSUBJECTDEFINITION(this URD message, ID item)
+        {
+            int fieldNum = message.FindField("RUWHATSUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATSUBJECTDEFINITION record from URD
+        /// </summary>
+        public static void RemoveRUWHATSUBJECTDEFINITION(this URD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUWHATSUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1182,11 +1866,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URD to RUWHATDEPARTMENTCODE
+        /// Add a new RUWHATDEPARTMENTCODE to URD
         /// </summary>
         public static ST AddRUWHATDEPARTMENTCODE(this URD message)
         {
             return message.GetRUWHATDEPARTMENTCODE(message.RUWHATDEPARTMENTCODERepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATDEPARTMENTCODE record from URD
+        /// </summary>
+        public static void RemoveRUWHATDEPARTMENTCODE(this URD message, ST item)
+        {
+            int fieldNum = message.FindField("RUWHATDEPARTMENTCODE");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATDEPARTMENTCODE record from URD
+        /// </summary>
+        public static void RemoveRUWHATDEPARTMENTCODE(this URD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUWHATDEPARTMENTCODE");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1212,11 +1914,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URD to RUDISPLAYPRINTLOCATIONS
+        /// Add a new RUDISPLAYPRINTLOCATIONS to URD
         /// </summary>
         public static ST AddRUDISPLAYPRINTLOCATIONS(this URD message)
         {
             return message.GetRUDISPLAYPRINTLOCATIONS(message.RUDISPLAYPRINTLOCATIONSRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUDISPLAYPRINTLOCATIONS record from URD
+        /// </summary>
+        public static void RemoveRUDISPLAYPRINTLOCATIONS(this URD message, ST item)
+        {
+            int fieldNum = message.FindField("RUDISPLAYPRINTLOCATIONS");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUDISPLAYPRINTLOCATIONS record from URD
+        /// </summary>
+        public static void RemoveRUDISPLAYPRINTLOCATIONS(this URD message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUDISPLAYPRINTLOCATIONS");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1242,11 +1962,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URS to RUWHERESUBJECTDEFINITION
+        /// Add a new RUWHERESUBJECTDEFINITION to URS
         /// </summary>
         public static ST AddRUWHERESUBJECTDEFINITION(this URS message)
         {
             return message.GetRUWHERESUBJECTDEFINITION(message.RUWHERESUBJECTDEFINITIONRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUWHERESUBJECTDEFINITION record from URS
+        /// </summary>
+        public static void RemoveRUWHERESUBJECTDEFINITION(this URS message, ST item)
+        {
+            int fieldNum = message.FindField("RUWHERESUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUWHERESUBJECTDEFINITION record from URS
+        /// </summary>
+        public static void RemoveRUWHERESUBJECTDEFINITION(this URS message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUWHERESUBJECTDEFINITION");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1272,11 +2010,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URS to RUWHATUSERQUALIFIER
+        /// Add a new RUWHATUSERQUALIFIER to URS
         /// </summary>
         public static ST AddRUWHATUSERQUALIFIER(this URS message)
         {
             return message.GetRUWHATUSERQUALIFIER(message.RUWHATUSERQUALIFIERRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATUSERQUALIFIER record from URS
+        /// </summary>
+        public static void RemoveRUWHATUSERQUALIFIER(this URS message, ST item)
+        {
+            int fieldNum = message.FindField("RUWHATUSERQUALIFIER");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUWHATUSERQUALIFIER record from URS
+        /// </summary>
+        public static void RemoveRUWHATUSERQUALIFIER(this URS message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUWHATUSERQUALIFIER");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 
         /// <summary>
@@ -1302,11 +2058,29 @@ namespace NHapiTools.Model.V21.Segment
         }
 
         /// <summary>
-        /// Add a new URS to RUOTHERRESULTSSUBJECTDEFINI
+        /// Add a new RUOTHERRESULTSSUBJECTDEFINI to URS
         /// </summary>
         public static ST AddRUOTHERRESULTSSUBJECTDEFINI(this URS message)
         {
             return message.GetRUOTHERRESULTSSUBJECTDEFINI(message.RUOTHERRESULTSSUBJECTDEFINIRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an RUOTHERRESULTSSUBJECTDEFINI record from URS
+        /// </summary>
+        public static void RemoveRUOTHERRESULTSSUBJECTDEFINI(this URS message, ST item)
+        {
+            int fieldNum = message.FindField("RUOTHERRESULTSSUBJECTDEFINI");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an RUOTHERRESULTSSUBJECTDEFINI record from URS
+        /// </summary>
+        public static void RemoveRUOTHERRESULTSSUBJECTDEFINI(this URS message, int itemIndex)
+        {
+            int fieldNum = message.FindField("RUOTHERRESULTSSUBJECTDEFINI");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
         #endregion
     }
