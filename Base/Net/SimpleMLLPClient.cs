@@ -25,6 +25,7 @@ namespace NHapiTools.Base.Net
         private X509CertificateCollection cCollection;
         private NetworkStream clientStream;
         private Stream streamToUse;
+        private Encoding encodingForStream;
         #endregion
 
         #region Constructor
@@ -41,6 +42,18 @@ namespace NHapiTools.Base.Net
             clientStream = tcpClient.GetStream();
             streamToUse = clientStream;
         }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="hostname">Hostname to connect to.</param>
+        /// <param name="port">Port</param>
+        public SimpleMLLPClient(string hostname, int port, Encoding encoding)
+            : this(hostname, port)
+        {
+            encodingForStream = encoding;            
+        }
+
         #endregion
 
         #region Public methods
@@ -95,7 +108,7 @@ namespace NHapiTools.Base.Net
             message = MLLP.CreateMLLPMessage(message);
 
             // Send the message
-            StreamWriter sw = new StreamWriter(streamToUse);
+            StreamWriter sw = new StreamWriter(streamToUse, encodingForStream);
             sw.Write(message);
             sw.Flush();
 
@@ -107,6 +120,37 @@ namespace NHapiTools.Base.Net
                 int b = streamToUse.ReadByte();
                 if (b != -1)
                     sb.Append((char) b);
+
+                messageComplete = MLLP.ValidateMLLPMessage(sb);
+            }
+            MLLP.StripMLLPContainer(sb);
+
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Send a HL7 message
+        /// </summary>
+        /// <param name="message">Message to send</param>
+        /// <param name="encoding"></param>
+        /// <returns>Reply message</returns>
+        public string SendHL7Message(string message, Encoding encoding)
+        {
+            message = MLLP.CreateMLLPMessage(message);
+
+            // Send the message
+            StreamWriter sw = new StreamWriter(streamToUse);
+            sw.Write(encoding.GetBytes(message));
+            sw.Flush();
+
+            // Read the reply
+            StringBuilder sb = new StringBuilder();
+            bool messageComplete = false;
+            while (!messageComplete)
+            {
+                int b = streamToUse.ReadByte();
+                if (b != -1)
+                    sb.Append((char)b);
 
                 messageComplete = MLLP.ValidateMLLPMessage(sb);
             }
