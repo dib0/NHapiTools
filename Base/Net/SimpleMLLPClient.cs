@@ -25,6 +25,7 @@ namespace NHapiTools.Base.Net
         private X509CertificateCollection cCollection;
         private NetworkStream clientStream;
         private Stream streamToUse;
+        private Encoding encodingForStream;
         #endregion
 
         #region Constructor
@@ -41,6 +42,19 @@ namespace NHapiTools.Base.Net
             clientStream = tcpClient.GetStream();
             streamToUse = clientStream;
         }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="hostname">Hostname to connect to.</param>
+        /// <param name="port">Port</param>
+        /// <param name="encoding">Encoding of the byte stream (Default utf-8)</param>
+        public SimpleMLLPClient(string hostname, int port, Encoding encoding)
+            : this(hostname, port)
+        {
+            encodingForStream = encoding;            
+        }
+
         #endregion
 
         #region Public methods
@@ -95,7 +109,7 @@ namespace NHapiTools.Base.Net
             message = MLLP.CreateMLLPMessage(message);
 
             // Send the message
-            StreamWriter sw = new StreamWriter(streamToUse);
+            StreamWriter sw = new StreamWriter(streamToUse, encodingForStream);
             sw.Write(message);
             sw.Flush();
 
