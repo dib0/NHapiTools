@@ -48,7 +48,7 @@ namespace NHapiTools.Base.Net
         /// </summary>
         /// <param name="hostname">Hostname to connect to.</param>
         /// <param name="port">Port</param>
-        /// <param name="encoding">Ecoding of the byte stream (Default utf-8)</param>
+        /// <param name="encoding">Encoding of the byte stream (Default utf-8)</param>
         public SimpleMLLPClient(string hostname, int port, Encoding encoding)
             : this(hostname, port)
         {
