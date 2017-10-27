@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>NHapiTools</id>
+    <id>IC.NHapiTools</id>
     <version>1.8.0.0</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
