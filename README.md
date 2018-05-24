@@ -26,7 +26,7 @@ Using the package manager console withing visual studio, simply run the followin
 PM > Install-Package NHapiTools
 ```
 
-##Introduction
+## Introduction
 
 On my blog I get a lot of questions on how to set up a complete .Net system for HL7 message integration. In other words: all over the world developers create integration components from scratch to add HL7 integration to their applications. After working for a while with NHapi, the most complete and free component to support HL7 with .Net, I started to miss functionality. To make my life easier (and hopefully the life of other developers, I created the NHapiTools. 
 In this document the functionality that NHapiTools adds to the NHapi component will be explained.
