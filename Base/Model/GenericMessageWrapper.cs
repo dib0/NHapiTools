@@ -71,24 +71,6 @@ namespace NHapiTools.Base.Model
         /// <returns>Unwrapped message</returns>
         public IMessage Unwrap()
         {
-            foreach (string segment in Names)
-            {
-                ISegment structureFrom = GetStructure(segment) as ISegment;
-                ISegment structureTo = null;
-                try
-                {
-                    structureTo = wrappedMessage.GetStructure(segment) as ISegment;
-
-                    if (structureTo != null)
-                        NHapi.Base.Util.DeepCopy.copy(structureFrom, structureTo);
-                }
-                catch
-                {
-                    // Ignore error. This segment won't be copied, but can be retrieved
-                    // through the GetSegment<T> method.
-                }
-            }
-
             return wrappedMessage;
         }
 

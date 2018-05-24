@@ -23,6 +23,9 @@ namespace NHapiTools.Base.Parser
         private static bool lastAskedIsExplicit;
         #endregion
 
+        public EnhancedModelClassFactory() : base()
+        { }
+
         #region Public properties
         /// <summary>
         /// Validation context.
@@ -53,8 +56,6 @@ namespace NHapiTools.Base.Parser
 
         public override Type GetSegmentClass(string theName, string theVersion)
         {
-            List<string> l = DefaultModelClassFactory.PackageList("2.3");
-
             Type t = base.GetSegmentClass(theName, theVersion);
             return t;
         }
