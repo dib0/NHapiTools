@@ -12,7 +12,7 @@ curve and not everything works as easy as it should. NHapiTools aims to improve 
 - Default validation rules to be used by the NHapi parser
 - Two sets of context implementation to easily add all or configurable validation rules.
 
-##Requirements
+##Requirements##
 
 NHapiTools currently targets version 4.5 of the .NET Framework
 
