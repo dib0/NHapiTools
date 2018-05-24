@@ -211,11 +211,11 @@ The `HL7InputStreamMessageStringEnumerator` does the same thing, but enumerates 
 
 The `SimpleMLLPClient` is a TCP/IP client that allows you to connect to a HL7 server and send a HL7 message using the MLLP protocol. It will return the response as an IMessage object. It uses the MLLP class to perform MLLP actions.
 
-###HL7
+### HL7
 
 There are some other interesting tools for handeling HL7 messages. The `Ack` class is a simple ACK message generator, that generates any possible ACK message based on a IMessage object.
 
-####GenericMessageWrapper
+#### GenericMessageWrapper
 
 A slightly more complicated tool is the `GenericMessageWrapper`. As you know you can add custom segments to HL7 messages. The parser will automatically recognize these and load the custom segments. The harder part is that you need to override the message structure as well. If you need to override standard segments, for example the PID segment, the only way is to add a custom implementation of the complete message. But if you want to use this custom PID segment on all messages, you’re about to recompile the complete NHapi structure.<br />
 On the other hand, making custom changes in standard components should always be prevented!
