@@ -71,7 +71,9 @@ namespace NHapiTools.Base.Model
         /// <returns>Unwrapped message</returns>
         public IMessage Unwrap()
         {
-            return wrappedMessage;
+            PipeParser p = new PipeParser();
+            string m = p.Encode(this);
+            return p.Parse(m);
         }
 
         /// <summary>
@@ -96,7 +98,7 @@ namespace NHapiTools.Base.Model
                 throw new ArgumentNullException("The GenericMessageWrapper only works with the EnhancedModelClassFactory");
 
             wrappedMessage = InstantiateMessage(fact);
-            this.addNonstandardSegment("MSH");
+            this.addNonstandardSegment( "MSH");
         }
 
         private IMessage InstantiateMessage(EnhancedModelClassFactory factory)

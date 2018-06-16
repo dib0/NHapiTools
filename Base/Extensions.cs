@@ -136,10 +136,17 @@ namespace NHapiTools.Base
 
                 int aIndex = aMessage.IndexOf(structName);
                 int bIndex = bMessage.IndexOf(structName);
-                string aStruct = aMessage.Substring(aIndex, aMessage.IndexOf("\r", aIndex) - aIndex);
-                string bStruct = bMessage.Substring(bIndex, bMessage.IndexOf("\r", bIndex) - bIndex);
 
-                result = (string.Compare(aStruct, bStruct) == 0);
+                if (aIndex == -1 || bIndex == -1)
+                    result = false;
+
+                if (result)
+                {
+                    string aStruct = aMessage.Substring(aIndex, aMessage.IndexOf("\r", aIndex) - aIndex);
+                    string bStruct = bMessage.Substring(bIndex, bMessage.IndexOf("\r", bIndex) - bIndex);
+
+                    result = (string.Compare(aStruct, bStruct) == 0);
+                }
             }
                
             return result;

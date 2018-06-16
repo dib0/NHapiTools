@@ -51,6 +51,7 @@ namespace TestApp
             TestAckGeneration();
             TestExtensionMethods();
             TestBase64Attachments();
+            ZRTTest();
 
             Console.WriteLine("\n==============================================\nAll tests done!. Press <enter> to exit.");
             Console.ReadLine();
@@ -381,6 +382,60 @@ namespace TestApp
             }
         }
 
+        private static void ZRTTest()
+        {
+            string txtMessage = "MSH|^~\\&|ABC|DEF|DAL|QUEST|20160907113230||ORM^O01^ORM_O01|201609071132304107|P|2.5.1\rPID|1||[PATIENTID]^^^^MR||[LASTNAME]^[FIRSTNAME]^M^^^^L|SMITH|[DOB]|[GENDER]||2106-3^White^HL70005|123 Main St.^^Fischer^TX^78623^USA^H||^PRN^PH^anyone@mycompany.com^^704^5551212~^^CP^^^980^5551414|^PRN^PH^^^704^5551313|eng^English^ISO639|S^Single|||123-45-6789|||N^Not Hispanic or Latino^HL70189\rPV1|1|O|^^^ZZZZZ00002^^C^^^Bleeding Edge Trauma Center||||NPIDA^Allthework^Dew^^^Mr^PA^^^^^^NPI^^^^^^^^PA||||||||||||ZZZZZ000EJ^^^^VN|||||||||||||||||||||||||20110511132339-0400\rORC|SN|[PON]||||||||||^Jekyll^Burt^^^^^^NPI^L\rOBR||[PON]||87590^Neisseria gonorrhoeae detection by nucleic acid, direct probe^C4|||201609071108|||||||| ^^^ |^Jekyll^Burt^^^^^^NPI^L||||||||LAB\rDG1|1||I25700^Atherosclerosis of CABG, unsp, w unstable angina pectoris^ICD\rZRT|1|Inbound Processor - Prod|ConfigID=1406;MessageID=16971290;MessageType=ORM;LabOrderID=32271;PatientID=1234;|SPLINTER|";
+
+            var emch = new EnhancedModelClassFactory();
+            var parser = new PipeParser(emch);
+            emch.ValidationContext = parser.ValidationContext;
+
+            IMessage genericIM = parser.Parse(txtMessage);
+
+            if (genericIM is GenericMessageWrapper gcw)
+            {
+                var strictIM = gcw.Unwrap();
+                var structureName = strictIM.GetStructureName();
+
+                if (structureName.Contains("ORM_O01"))
+                {
+                    var orm = (NHapi.Model.V251.Message.ORM_O01)strictIM;
+                    var sex = orm.PATIENT.PID.AdministrativeSex.Value;
+                    Console.WriteLine(sex);
+                }
+
+                XMLParser xmlParser = new DefaultXMLParser();
+                var xmlMessageStrict = xmlParser.Encode(strictIM);
+                Console.WriteLine(xmlMessageStrict);
+
+                var xmlMessageGeneric = xmlParser.Encode(genericIM);
+                Console.WriteLine(xmlMessageGeneric);
+
+                try
+                {
+                    var zrt = gcw.GetSegment<ISegment>("ZRT");
+
+                    //if (zrt is TestApp.CustomImplementation.V251.Segment.ZRT)
+                    //{
+                    //  Console.WriteLine("Got a ZRT!!!");
+                    //}
+
+                    int numFields = zrt.NumFields();
+
+                    for (int i = 1; i <= numFields; i++)
+                    {
+                        IType field = zrt.GetField(i, 0);
+                        var value = ((Varies)field).Data;
+                        Console.WriteLine(value);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+        }
+
         private static void SpinnerWhileWaiting(Action processingMethod)
         {
             char[] spinner = new char[] { '|', '/', '-', '\\' };
@@ -426,7 +481,6 @@ namespace TestApp
             Console.CursorVisible = oldCursorVisibility;
             Console.WriteLine("... Done!");
         }
-
         #endregion Static methods
 
         #region Events
