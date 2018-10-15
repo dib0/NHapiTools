@@ -70,6 +70,10 @@ namespace NHapiTools.Base.Util
         /// <returns>Created ACK message</returns>
         public IMessage MakeACK(IMessage inboundMessage, AckTypes ackResult, string errorMessage)
         {
+            //this should avoid an unhandled null reference exception in "inboundMessage.Version", because people tend to send the inboudMessage without a check
+            if (inboundMessage == null)
+                throw new ArgumentNullException("Either process the valid message while retreiving the ack or handle invalid message differently");
+                
             IMessage ackMessage = null;
             // Get an object from the right ACK class
             string ackClassType = string.Format("NHapi.Model.V{0}.Message.ACK, NHapi.Model.V{0}", inboundMessage.Version.Replace(".", ""));
