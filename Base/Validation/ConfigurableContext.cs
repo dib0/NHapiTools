@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
+#if NETSTANDARD2_0
 using System.Linq;
-using System.Text;
 using System.Reflection;
+#endif
 using System.Configuration;
-using System.Threading.Tasks;
 using NHapi.Base.validation;
 using NHapiTools.Base.Configuration;
+#if NET45
 using System.Runtime.Remoting;
+#endif
 
 namespace NHapiTools.Base.Validation
 {
@@ -67,8 +68,16 @@ namespace NHapiTools.Base.Validation
 
         private T ActivateObject<T>(string assembly, string classType) where T:class
         {
+        #if NETSTANDARD2_0
+            var loadedAssembly = Assembly.Load(assembly);
+            var type = loadedAssembly.GetTypes().SingleOrDefault(t => !t.IsAbstract && !t.IsInterface && t.IsClass && t.Name == classType);
+
+            var instance = Activator.CreateInstance(type);
+            return instance as T;
+        #elif NET45
             ObjectHandle oh = Activator.CreateInstance(assembly, classType);
             return oh.Unwrap() as T;
+        #endif
         }
         #endregion
     }
