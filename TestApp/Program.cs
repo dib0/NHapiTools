@@ -42,10 +42,8 @@ namespace TestApp
             _parsedMessages = new List<IMessage>();
 
             TestSourceGenerator();
-            // HL7InputStreamMessageStringEnumerator is possibly broken throws DirectoryNotFoundException "Could not find part of the path." or the test is broken?
-            //TestHl7FileStream();
-            // HL7InputStreamMessageStringEnumerator is possibly broken throws DirectoryNotFoundException "Could not find part of the path." or the test is broken?
-            //TestHl7FileMessageStream();
+            TestHl7FileStream();
+            TestHl7FileMessageStream();
             TestParserAutomatedContext();
             TestParserConfigurableContext();
             TestGenericMessageWrapper();
@@ -499,6 +497,7 @@ namespace TestApp
         private static void mfs_FileCompleted(object sender, FileCompletedEventArgs e)
         {
             var path = _basePath + "\\TestApp\\TestMessages\\Done";
+            Directory.CreateDirectory(path);
 
             var fi = new FileInfo(e.FileName);
             fi.MoveTo(path + "\\" + fi.Name);
