@@ -70,7 +70,15 @@ namespace NHapiTools.Base.Validation
         {
         #if NETSTANDARD2_0
             var loadedAssembly = Assembly.Load(assembly);
-            var type = loadedAssembly.GetTypes().SingleOrDefault(t => !t.IsAbstract && !t.IsInterface && t.IsClass && t.Name == classType);
+            var type =
+                loadedAssembly.GetTypes()
+                    .SingleOrDefault(
+                        t => !t.IsAbstract && !t.IsInterface && t.IsClass && t.FullName == classType.Trim());
+
+            if (type == null)
+            {
+                throw new ArgumentException($"Could not find classType: {classType} in Assembly: {assembly}");
+            }
 
             var instance = Activator.CreateInstance(type);
             return instance as T;
