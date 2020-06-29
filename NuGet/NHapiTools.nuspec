@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NHapiTools</id>
-    <version>1.11.0.0</version>
+    <version>1.11.0.1</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
     <license type="file">LICENSE</license>
