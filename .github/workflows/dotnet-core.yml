@@ -1,0 +1,29 @@
+name: .NET Core
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: windows-2019
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Generate Classes
+      run: dotnet run -c Release -f netcoreapp3.1 -p tools\NHapiTools.Generator\NHapiTools.Generator.csproj
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Initial Build
+      run: dotnet build -c Release --no-restore
+    - name: Run tests for target framework net45
+      run: dotnet test -c Release -f net45 --no-build --no-restore --logger trx
+    - name: Run tests for target framework netstandard2.0
+      run: dotnet test -c Release -f netstandard2.0 --no-build --no-restore --logger trx
+    - name: NuGet Pack
+      run: NuGet.exe pack NHapiTools.nuspec
+      working-directory: tools\nuget
+      
