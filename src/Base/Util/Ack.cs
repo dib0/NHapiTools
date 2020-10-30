@@ -121,7 +121,7 @@ namespace NHapiTools.Base.Util
             terser.Set("/MSH-4", environmentIdentifier);
             terser.Set("/MSH-5", sendingApp);
             terser.Set("/MSH-6", sendingEnv);
-            terser.Set("/MSH-7", DateTime.Now.ToString("yyyyMMddmmhh"));
+            terser.Set("/MSH-7", DateTime.Now.ToString("yyyyMMddHHmm"));
             terser.Set("/MSH-9", "ACK");
             terser.Set("/MSH-12", version);
             terser.Set("/MSA-1", Enum.GetName(typeof(AckTypes), ackResult));
