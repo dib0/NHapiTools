@@ -1,0 +1,9 @@
+MSH|^~\&|^pMDsoft|321|^AnotherSoftwareSystem||20091014145837||DFT^P03|6583558|P|2.3||||AL|
+EVN|P03|20091014145837|
+PID||987654|987654||Smith^John^Q||19600411|M|||123 Main St.^^New York^NY^11101^USA||(123)456-7890||||||888776666|
+PV1||I|^^^00123||||^Jones^Mary^Q^^^^^^&1356421622&NPI|^Baker^Joseph^Q^^^^^&1861436503&NPI|||||||||||1222222222||||||||||||||||||||00123|||^^^00123||20091004|
+FT1||||20091007000000|20091014|CG||||1|||||||||780.4^Dizziness/Giddiness~785.2^Heart Murmur~272.0^Hypercholesterolemia Pure~458.9^Hypotension Nos||||||99261^Consult F/U Inp 61 Low|12~25
+FT1||||20091007000000|20091007|CG||||1|||||||||780.4^Dizziness/Giddiness~785.2^Heart Murmur~272.0^Hypercholesterolemia Pure~458.9^Hypotension Nos||||||93742^Defib-Analy Sngl w/Prog|
+FT1||||20091007000000|20091007|CG||||1|||||||||780.4^Dizziness/Giddiness~785.2^Heart Murmur~272.0^Hypercholesterolemia Pure~458.9^Hypotension Nos||||||93621^EP-EPS w/ CS or LA|
+IN1|1||999|Some Carrier||||643232498|||||||||Self|||||||||||||||||||11111111111|
+IN1|2||3333|Another Carrier||||6884213665||||||||Doe^Jane|Spouse|19570304||||||||||||||||||555555555|

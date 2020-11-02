@@ -1,0 +1,5 @@
+MSH|^~\&|Otogram||||||ORU^R01^ORU_R01|||2.4^^||||| USA|ASCII
+PID|1||||Family^Given^Middle^^^^L|||||||||||||
+OBX|1|ED|28615-3^Audiology study^LN|1|Acrobat^text^pdf^Base64^JVBERi0xLjMKJeT jz9IKNSAwI
+OBX|2|ED|28615-3^Audiology study^LN|1|Acrobat^text^pdf^Base64^JVBERi0xLjMKJeT jz9IKNSAwIASasnasjdAA==
+OBR|1|9999^^^||28615-3^Audiology study^LN||||||||||||

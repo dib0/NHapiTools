@@ -1,6 +1,0 @@
-MSH|^~\&|AnotherSoftwareSystem|EmpireMedicalAssociates|pMDsoft|123456|20080722124050||SIU^S14|5487642135|P|2.3||||NE
-SCH||123456|||||||||^^1800^20080722080000^20080722083000
-NTE|1|Patient Appointment Notes|Follow-up from July 19 w/ Dr. Doe
-NTE|2|Appointment Notes|Scheduled for tilt table
-PID|1||987654||Smith^John^Q||19600411000000|M|||123 Main St.^^New York^NY^11101||(123)456-7890^^^^^123^4567890|(321)654-0987X3000^^^^^321^6540987^3000|||||888-77-6666
-PV1|1|O|^^^00123||||97^Jones^Mary^Q^MD|||||||||||||||||||||||||||||||||||||||||||123456

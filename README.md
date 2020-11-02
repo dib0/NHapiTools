@@ -12,11 +12,11 @@ curve and not everything works as easy as it should. NHapiTools aims to improve 
 - Default validation rules to be used by the NHapi parser
 - Two sets of context implementation to easily add all or configurable validation rules.
 
-##Requirements
+## Requirements
 
 NHapiTools currently targets version 4.5 of the .NET Framework
 
-##Getting Started
+## Getting Started
 
 The easiest way to get started using nHapi is to use the [NuGet package 'NHapiTools'](https://www.nuget.org/packages/NHapiTools/):
 
@@ -26,7 +26,7 @@ Using the package manager console withing visual studio, simply run the followin
 PM > Install-Package NHapiTools
 ```
 
-##Introduction
+## Introduction
 
 On my blog I get a lot of questions on how to set up a complete .Net system for HL7 message integration. In other words: all over the world developers create integration components from scratch to add HL7 integration to their applications. After working for a while with NHapi, the most complete and free component to support HL7 with .Net, I started to miss functionality. To make my life easier (and hopefully the life of other developers, I created the NHapiTools. 
 In this document the functionality that NHapiTools adds to the NHapi component will be explained.
@@ -40,7 +40,7 @@ https://github.com/dib0/HL7Fuse
 And, of course, The NHapi Beginner’s Guide:
 http://www.smashwords.com/books/view/344824
 
-##The Structure of NHapiTools
+## The Structure of NHapiTools
 
 For the most important part NHapiTools is a set of extension methods that extend NHapi. NHapi uses a code generator to generate the HL7 message structure into classes and then assemblies. NHapiTools uses the same mechanism to generate classes with extension methods based on the NHapi assemblies. The generated classes are provided within the source, so you don’t have to do this (of course, if you want to, you can).
 
@@ -48,7 +48,7 @@ The extension methods make it far easier to enumerate through the messages. For 
 
 Besides the extension methods and richer validations NHapiTools provide tools for commonly used patterns within HL7 and HL7 integration. For example support for MLLP, a TCP/IP MLLP client, a method of generation ACK messages based on any method and alternative streams that filter out attached Base64 encoded documents that makes parsing large message easier and (much) faster.
 
-##Extension Methods
+## Extension Methods
 
 NHapi, probably the part you'll never use, is actually a code generator. Based on the HL7 structure database, that can be obtained through the local HL7 organization, it will generate the classes for the data types, segments and message structures. It also forces the Hl7 standard within these classes.
 
@@ -82,13 +82,13 @@ foreach (ORU_R01_PATIENT_RESULT patient in oMessage.GetAllPATIENT_RESULTRecords(
 
 Besides methods to easily use the foreach statement NHapiTools also provide a clearer way to add repeating fields. Instead of the NHapi method to “get” the next (non existing) enumeration NHapiTools provides a simple add extention methods to perform this operation.
 
-##Validation
+## Validation
 
 The validation of HL7 messages is embedded in the classes of NHapi. That means that the messages are validated if they are conform the HL7 specification standard. The NHapi parser utilizes a context for parsing. If you choose to use your own context you can influence the parsing. For example, by adding validation rules.
 
 The way these validation rules are implemented and the context you have to create aren't really complicated, but since the rules are version specific and you might have to develop complex rules or many rules, maintaining them can be a hassle. NHapiTools provides two different contexts and a set of generic validation rules.
 
-###Automated Context
+### Automated Context
 
 The automated context allows you to develop you own set of validation rules. You will have to implement the ISpecificEncodingRule, ISpecificMessageRule or the ISpecificPrimitiveRule interface. The automated context will search through every type within a namespace and applies all the rules it can find to the parser. This will save you a lot of time maintaining and building the context. It needs a namespace:
 ```
@@ -104,7 +104,7 @@ AutomatedContext context = new AutomatedContext(parser.ValidationContext);
 parser.ValidationContext = context;
 ```
 
-###Configurable Context
+### Configurable Context
 
 The configurable context also allows you to implement your own validation rules, by implementing the same interfaces. The difference with the automated context is that you can configure which rules must be applied. This will give you far more control over the behavior of you application in different circumstances. To configure rules do the following:
 ```
@@ -137,7 +137,7 @@ ConfigurableContext context = new ConfigurableContext(parser.ValidationContext);
 parser.ValidationContext = context;
 ```
 
-###Standard Validation Rules
+### Standard Validation Rules
 
 Developing you own set of validation rules can be a hassle on it's own. It would be better if there were a set of configurable rules the will cover the basics (and hopefully all that you will need). NHapiTools provides a set of generic rules that you can use by configuration. These work well with the configurable context. 
 
@@ -193,11 +193,11 @@ And:
 </SpecificRulesGroup>
 ```
 
-##Utils
+## Utils
 
 There is quite a diversity of tools within the NHapiTools. In this chapter IO tools, network tools and HL7 tooling.
 
-###IO
+### IO
 
 The IO namespace has two stream classes and two enumeration classes. The `HL7FilterBase64AttachmentsStream` allows you to read a HL7 message, but separate Base64 content. In some cases, for example lab results that contain PDF files, the HL7 message become quite large. These large messages take a lot of time to parse with NHapi. Using this stream will insert a dummy text (thus increasing the parsing speed) and allows you to read the attachments after parsing the message.
 
@@ -207,15 +207,15 @@ The `HL7InputStreamMessageEnumerator` is a port of the Hl7InputStreamMessageIter
 
 The `HL7InputStreamMessageStringEnumerator` does the same thing, but enumerates the message as a string instead of parsing it to an IMessage object.
 
-###Net
+### Net
 
 The `SimpleMLLPClient` is a TCP/IP client that allows you to connect to a HL7 server and send a HL7 message using the MLLP protocol. It will return the response as an IMessage object. It uses the MLLP class to perform MLLP actions.
 
-###HL7
+### HL7
 
 There are some other interesting tools for handeling HL7 messages. The `Ack` class is a simple ACK message generator, that generates any possible ACK message based on a IMessage object.
 
-####GenericMessageWrapper
+#### GenericMessageWrapper
 
 A slightly more complicated tool is the `GenericMessageWrapper`. As you know you can add custom segments to HL7 messages. The parser will automatically recognize these and load the custom segments. The harder part is that you need to override the message structure as well. If you need to override standard segments, for example the PID segment, the only way is to add a custom implementation of the complete message. But if you want to use this custom PID segment on all messages, you’re about to recompile the complete NHapi structure.<br />
 On the other hand, making custom changes in standard components should always be prevented!
