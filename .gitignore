@@ -185,3 +185,4 @@ FakesAssemblies/
 # Visual studio folder
 .vs/
 *.ide
+*.zip
