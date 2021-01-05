@@ -23,6 +23,9 @@ namespace NHapiTools.Base.Parser
         private static bool lastAskedIsExplicit;
         #endregion
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public EnhancedModelClassFactory() : base()
         { }
 
@@ -54,6 +57,12 @@ namespace NHapiTools.Base.Parser
             return typeof(NHapiTools.Base.Model.GenericMessageWrapper);
         }
 
+        /// <summary>
+        /// Get type of segment
+        /// </summary>
+        /// <param name="theName"></param>
+        /// <param name="theVersion"></param>
+        /// <returns></returns>
         public override Type GetSegmentClass(string theName, string theVersion)
         {
             Type t = base.GetSegmentClass(theName, theVersion);

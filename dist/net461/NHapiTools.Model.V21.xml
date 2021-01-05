@@ -571,7 +571,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddERRORCODEANDLOCATION(NHapi.Model.V21.Segment.ERR)">
             <summary>
-            Add a new ERR to ERRORCODEANDLOCATION
+            Add a new ERRORCODEANDLOCATION to ERR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetNEXTOFKINPHONENUMBERRecords(NHapi.Model.V21.Segment.NK1)">
@@ -586,7 +586,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddNEXTOFKINPHONENUMBER(NHapi.Model.V21.Segment.NK1)">
             <summary>
-            Add a new NK1 to NEXTOFKINPHONENUMBER
+            Add a new NEXTOFKINPHONENUMBER to NK1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOMMENTRecords(NHapi.Model.V21.Segment.NTE)">
@@ -601,7 +601,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOMMENT(NHapi.Model.V21.Segment.NTE)">
             <summary>
-            Add a new NTE to COMMENT
+            Add a new COMMENT to NTE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOLLECTORIDENTIFIERRecords(NHapi.Model.V21.Segment.OBR)">
@@ -616,7 +616,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOLLECTORIDENTIFIER(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to COLLECTORIDENTIFIER
+            Add a new COLLECTORIDENTIFIER to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetORDERINGPROVIDERRecords(NHapi.Model.V21.Segment.OBR)">
@@ -631,7 +631,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddORDERINGPROVIDER(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to ORDERINGPROVIDER
+            Add a new ORDERINGPROVIDER to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetORDERCALLBACKPHONENUMRecords(NHapi.Model.V21.Segment.OBR)">
@@ -646,7 +646,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddORDERCALLBACKPHONENUM(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to ORDERCALLBACKPHONENUM
+            Add a new ORDERCALLBACKPHONENUM to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetQUANTITYTIMINGRecords(NHapi.Model.V21.Segment.OBR)">
@@ -661,7 +661,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddQUANTITYTIMING(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to QUANTITYTIMING
+            Add a new QUANTITYTIMING to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRESULTCOPIESTORecords(NHapi.Model.V21.Segment.OBR)">
@@ -676,7 +676,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRESULTCOPIESTO(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to RESULTCOPIESTO
+            Add a new RESULTCOPIESTO to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetREASONFORSTUDYRecords(NHapi.Model.V21.Segment.OBR)">
@@ -691,7 +691,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddREASONFORSTUDY(NHapi.Model.V21.Segment.OBR)">
             <summary>
-            Add a new OBR to REASONFORSTUDY
+            Add a new REASONFORSTUDY to OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetABNORMALFLAGSRecords(NHapi.Model.V21.Segment.OBX)">
@@ -706,7 +706,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddABNORMALFLAGS(NHapi.Model.V21.Segment.OBX)">
             <summary>
-            Add a new OBX to ABNORMALFLAGS
+            Add a new ABNORMALFLAGS to OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCALLBACKPHONENUMBERRecords(NHapi.Model.V21.Segment.ORC)">
@@ -721,7 +721,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCALLBACKPHONENUMBER(NHapi.Model.V21.Segment.ORC)">
             <summary>
-            Add a new ORC to CALLBACKPHONENUMBER
+            Add a new CALLBACKPHONENUMBER to ORC
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRESULTSCOPIESTORecords(NHapi.Model.V21.Segment.ORO)">
@@ -736,7 +736,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRESULTSCOPIESTO(NHapi.Model.V21.Segment.ORO)">
             <summary>
-            Add a new ORO to RESULTSCOPIESTO
+            Add a new RESULTSCOPIESTO to ORO
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPATIENTALIASRecords(NHapi.Model.V21.Segment.PID)">
@@ -751,7 +751,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPATIENTALIAS(NHapi.Model.V21.Segment.PID)">
             <summary>
-            Add a new PID to PATIENTALIAS
+            Add a new PATIENTALIAS to PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPHONENUMBERHOMERecords(NHapi.Model.V21.Segment.PID)">
@@ -766,7 +766,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHONENUMBERHOME(NHapi.Model.V21.Segment.PID)">
             <summary>
-            Add a new PID to PHONENUMBERHOME
+            Add a new PHONENUMBERHOME to PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPHONENUMBERBUSINESSRecords(NHapi.Model.V21.Segment.PID)">
@@ -781,7 +781,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHONENUMBERBUSINESS(NHapi.Model.V21.Segment.PID)">
             <summary>
-            Add a new PID to PHONENUMBERBUSINESS
+            Add a new PHONENUMBERBUSINESS to PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetSETIDPROCEDURERecords(NHapi.Model.V21.Segment.PR1)">
@@ -796,7 +796,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddSETIDPROCEDURE(NHapi.Model.V21.Segment.PR1)">
             <summary>
-            Add a new PR1 to SETIDPROCEDURE
+            Add a new SETIDPROCEDURE to PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONSULTINGDOCTORRecords(NHapi.Model.V21.Segment.PV1)">
@@ -811,7 +811,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONSULTINGDOCTOR(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to CONSULTINGDOCTOR
+            Add a new CONSULTINGDOCTOR to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetFINANCIALCLASSRecords(NHapi.Model.V21.Segment.PV1)">
@@ -826,7 +826,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddFINANCIALCLASS(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to FINANCIALCLASS
+            Add a new FINANCIALCLASS to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTCODERecords(NHapi.Model.V21.Segment.PV1)">
@@ -841,7 +841,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTCODE(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to CONTRACTCODE
+            Add a new CONTRACTCODE to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTEFFECTIVEDATERecords(NHapi.Model.V21.Segment.PV1)">
@@ -856,7 +856,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTEFFECTIVEDATE(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to CONTRACTEFFECTIVEDATE
+            Add a new CONTRACTEFFECTIVEDATE to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTAMOUNTRecords(NHapi.Model.V21.Segment.PV1)">
@@ -871,7 +871,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTAMOUNT(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to CONTRACTAMOUNT
+            Add a new CONTRACTAMOUNT to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONTRACTPERIODRecords(NHapi.Model.V21.Segment.PV1)">
@@ -886,7 +886,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONTRACTPERIOD(NHapi.Model.V21.Segment.PV1)">
             <summary>
-            Add a new PV1 to CONTRACTPERIOD
+            Add a new CONTRACTPERIOD to PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHOSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
@@ -901,7 +901,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHOSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
             <summary>
-            Add a new QRD to WHOSUBJECTFILTER
+            Add a new WHOSUBJECTFILTER to QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRD)">
@@ -916,7 +916,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATSUBJECTFILTER(NHapi.Model.V21.Segment.QRD)">
             <summary>
-            Add a new QRD to WHATSUBJECTFILTER
+            Add a new WHATSUBJECTFILTER to QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDEPARTMENTDATACODERecords(NHapi.Model.V21.Segment.QRD)">
@@ -931,7 +931,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDEPARTMENTDATACODE(NHapi.Model.V21.Segment.QRD)">
             <summary>
-            Add a new QRD to WHATDEPARTMENTDATACODE
+            Add a new WHATDEPARTMENTDATACODE to QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATDATACODEVALUEQUALRecords(NHapi.Model.V21.Segment.QRD)">
@@ -946,7 +946,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATDATACODEVALUEQUAL(NHapi.Model.V21.Segment.QRD)">
             <summary>
-            Add a new QRD to WHATDATACODEVALUEQUAL
+            Add a new WHATDATACODEVALUEQUAL to QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHERESUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
@@ -961,7 +961,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHERESUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
             <summary>
-            Add a new QRF to WHERESUBJECTFILTER
+            Add a new WHERESUBJECTFILTER to QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.QRF)">
@@ -976,7 +976,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddWHATUSERQUALIFIER(NHapi.Model.V21.Segment.QRF)">
             <summary>
-            Add a new QRF to WHATUSERQUALIFIER
+            Add a new WHATUSERQUALIFIER to QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOTHERQRYSUBJECTFILTERRecords(NHapi.Model.V21.Segment.QRF)">
@@ -991,7 +991,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOTHERQRYSUBJECTFILTER(NHapi.Model.V21.Segment.QRF)">
             <summary>
-            Add a new QRF to OTHERQRYSUBJECTFILTER
+            Add a new OTHERQRYSUBJECTFILTER to QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCOMPONENTDRUGIDSRecords(NHapi.Model.V21.Segment.RX1)">
@@ -1006,7 +1006,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCOMPONENTDRUGIDS(NHapi.Model.V21.Segment.RX1)">
             <summary>
-            Add a new RX1 to COMPONENTDRUGIDS
+            Add a new COMPONENTDRUGIDS to RX1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPHARMACYINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
@@ -1021,7 +1021,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPHARMACYINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
             <summary>
-            Add a new RX1 to PHARMACYINSTRUCTIONS
+            Add a new PHARMACYINSTRUCTIONS to RX1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetPATIENTINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
@@ -1036,7 +1036,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddPATIENTINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
             <summary>
-            Add a new RX1 to PATIENTINSTRUCTIONS
+            Add a new PATIENTINSTRUCTIONS to RX1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetINSTRUCTIONSRecords(NHapi.Model.V21.Segment.RX1)">
@@ -1051,7 +1051,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddINSTRUCTIONS(NHapi.Model.V21.Segment.RX1)">
             <summary>
-            Add a new RX1 to INSTRUCTIONS
+            Add a new INSTRUCTIONS to RX1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetCONDITIONCODERecords(NHapi.Model.V21.Segment.UB1)">
@@ -1066,7 +1066,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddCONDITIONCODE(NHapi.Model.V21.Segment.UB1)">
             <summary>
-            Add a new UB1 to CONDITIONCODE
+            Add a new CONDITIONCODE to UB1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetVALUEAMOUNTCODERecords(NHapi.Model.V21.Segment.UB1)">
@@ -1081,7 +1081,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddVALUEAMOUNTCODE(NHapi.Model.V21.Segment.UB1)">
             <summary>
-            Add a new UB1 to VALUEAMOUNTCODE
+            Add a new VALUEAMOUNTCODE to UB1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetOCCURRENCE2832Records(NHapi.Model.V21.Segment.UB1)">
@@ -1096,7 +1096,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddOCCURRENCE2832(NHapi.Model.V21.Segment.UB1)">
             <summary>
-            Add a new UB1 to OCCURRENCE2832
+            Add a new OCCURRENCE2832 to UB1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHOSUBJECTDEFINITIONRecords(NHapi.Model.V21.Segment.URD)">
@@ -1111,7 +1111,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUWHOSUBJECTDEFINITION(NHapi.Model.V21.Segment.URD)">
             <summary>
-            Add a new URD to RUWHOSUBJECTDEFINITION
+            Add a new RUWHOSUBJECTDEFINITION to URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHATSUBJECTDEFINITIONRecords(NHapi.Model.V21.Segment.URD)">
@@ -1126,7 +1126,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUWHATSUBJECTDEFINITION(NHapi.Model.V21.Segment.URD)">
             <summary>
-            Add a new URD to RUWHATSUBJECTDEFINITION
+            Add a new RUWHATSUBJECTDEFINITION to URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHATDEPARTMENTCODERecords(NHapi.Model.V21.Segment.URD)">
@@ -1141,7 +1141,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUWHATDEPARTMENTCODE(NHapi.Model.V21.Segment.URD)">
             <summary>
-            Add a new URD to RUWHATDEPARTMENTCODE
+            Add a new RUWHATDEPARTMENTCODE to URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUDISPLAYPRINTLOCATIONSRecords(NHapi.Model.V21.Segment.URD)">
@@ -1156,7 +1156,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUDISPLAYPRINTLOCATIONS(NHapi.Model.V21.Segment.URD)">
             <summary>
-            Add a new URD to RUDISPLAYPRINTLOCATIONS
+            Add a new RUDISPLAYPRINTLOCATIONS to URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHERESUBJECTDEFINITIONRecords(NHapi.Model.V21.Segment.URS)">
@@ -1171,7 +1171,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUWHERESUBJECTDEFINITION(NHapi.Model.V21.Segment.URS)">
             <summary>
-            Add a new URS to RUWHERESUBJECTDEFINITION
+            Add a new RUWHERESUBJECTDEFINITION to URS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUWHATUSERQUALIFIERRecords(NHapi.Model.V21.Segment.URS)">
@@ -1186,7 +1186,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUWHATUSERQUALIFIER(NHapi.Model.V21.Segment.URS)">
             <summary>
-            Add a new URS to RUWHATUSERQUALIFIER
+            Add a new RUWHATUSERQUALIFIER to URS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.GetRUOTHERRESULTSSUBJECTDEFINIRecords(NHapi.Model.V21.Segment.URS)">
@@ -1201,7 +1201,7 @@
         </member>
         <member name="M:NHapiTools.Model.V21.Segment.SegmentExtensions.AddRUOTHERRESULTSSUBJECTDEFINI(NHapi.Model.V21.Segment.URS)">
             <summary>
-            Add a new URS to RUOTHERRESULTSSUBJECTDEFINI
+            Add a new RUOTHERRESULTSSUBJECTDEFINI to URS
             </summary>
         </member>
     </members>

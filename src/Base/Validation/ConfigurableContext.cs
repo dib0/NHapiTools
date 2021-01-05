@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Configuration;
 using NHapi.Base.validation;
 using NHapiTools.Base.Configuration;
-#if NET45
+#if NET461
 using System.Runtime.Remoting;
 #endif
 
@@ -82,7 +82,7 @@ namespace NHapiTools.Base.Validation
 
             var instance = Activator.CreateInstance(type);
             return instance as T;
-        #elif NET45
+        #elif NET461
             ObjectHandle oh = Activator.CreateInstance(assembly, classType);
             return oh.Unwrap() as T;
         #endif

@@ -887,6 +887,11 @@
             to overwrite segments with a custom implementation.
             </summary>
         </member>
+        <member name="M:NHapiTools.Base.Parser.EnhancedModelClassFactory.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
         <member name="P:NHapiTools.Base.Parser.EnhancedModelClassFactory.ValidationContext">
             <summary>
             Validation context.
@@ -899,6 +904,14 @@
             <param name="theName"></param>
             <param name="theVersion"></param>
             <param name="isExplicit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NHapiTools.Base.Parser.EnhancedModelClassFactory.GetSegmentClass(System.String,System.String)">
+            <summary>
+            Get type of segment
+            </summary>
+            <param name="theName"></param>
+            <param name="theVersion"></param>
             <returns></returns>
         </member>
         <member name="M:NHapiTools.Base.Parser.EnhancedModelClassFactory.GetSpecificMessageClass">

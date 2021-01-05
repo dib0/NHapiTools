@@ -21,5 +21,10 @@ namespace NHapiTools.Tests
             }
             return Structure == other.Structure && Version == other.Version;
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
