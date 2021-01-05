@@ -201,10 +201,11 @@ namespace NHapiTools.Base.ModelToolsGenerator
                 // Generate methods
                 foreach (string name in names)
                 {
-                    MethodInfo mInfo = segment.GetMethod(string.Format("Get{0}", name), new Type[] { typeof(int) });
+                    MethodInfo mInfo = segment.GetMethod($"Get{name}", new Type[] { typeof(int) });
                     string returnType = mInfo.ReturnType.Name;
 
-                    GenerateSegmentMethods(segment.Name, name, returnType);
+                    MethodInfo fInfo = segment.GetMethod($"FindField", new Type[] { typeof(string) });
+                    GenerateSegmentMethods(segment.Name, name, returnType, fInfo != null);
                 }
             }
 
@@ -212,7 +213,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
             SaveSegmentsFile();
         }
 
-        private void GenerateSegmentMethods(string typeName, string name, string returnType)
+        private void GenerateSegmentMethods(string typeName, string name, string returnType, bool findFieldMethodExists = true)
         {
             bool exists = segmentOutput.ToString().Contains(string.Format("public static IEnumerable Get{1}Records(this {0} message)", typeName, name));
 
@@ -255,24 +256,28 @@ namespace NHapiTools.Base.ModelToolsGenerator
             segmentOutput.Append("        {\n");
             segmentOutput.Append(string.Format("            return message.Get{0}(message.{0}RepetitionsUsed);\n", name, returnType));
             segmentOutput.Append("        }\n");
-            segmentOutput.Append("\n");
-            segmentOutput.Append("        /// <summary>\n");
-            segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
-            segmentOutput.Append("        /// </summary>\n");
-            segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, {returnType} item)\n");
-            segmentOutput.Append("        {\n");
-            segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
-            segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, item);\n");
-            segmentOutput.Append("        }\n");
-            segmentOutput.Append("\n");
-            segmentOutput.Append("        /// <summary>\n");
-            segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
-            segmentOutput.Append("        /// </summary>\n");
-            segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, int itemIndex)\n");
-            segmentOutput.Append("        {\n");
-            segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
-            segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, itemIndex);\n");
-            segmentOutput.Append("        }\n");
+
+            if (findFieldMethodExists)
+            {
+                segmentOutput.Append("\n");
+                segmentOutput.Append("        /// <summary>\n");
+                segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
+                segmentOutput.Append("        /// </summary>\n");
+                segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, {returnType} item)\n");
+                segmentOutput.Append("        {\n");
+                segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
+                segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, item);\n");
+                segmentOutput.Append("        }\n");
+                segmentOutput.Append("\n");
+                segmentOutput.Append("        /// <summary>\n");
+                segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
+                segmentOutput.Append("        /// </summary>\n");
+                segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, int itemIndex)\n");
+                segmentOutput.Append("        {\n");
+                segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
+                segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, itemIndex);\n");
+                segmentOutput.Append("        }\n");
+            }
         }
 
         private void AddSegmentsHeader()
