@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Reflection;
 using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 
 namespace NHapiTools.Base.ModelToolsGenerator
 {
@@ -15,13 +14,16 @@ namespace NHapiTools.Base.ModelToolsGenerator
     public class Generator
     {
         #region Private properties
-        string targetAssembly;
-        string version;
-        string outputDir;
-        StringBuilder messagesOutput, segmentOutput, groupOutput;
-        #endregion
+
+        private string targetAssembly;
+        private string version;
+        private string outputDir;
+        private StringBuilder messagesOutput, segmentOutput, groupOutput;
+
+        #endregion Private properties
 
         #region Constructor
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -31,14 +33,16 @@ namespace NHapiTools.Base.ModelToolsGenerator
         {
             targetAssembly = targetAssemblyFile;
             outputDir = outDir;
-            
+
             messagesOutput = new StringBuilder();
             segmentOutput = new StringBuilder();
             groupOutput = new StringBuilder();
         }
-        #endregion
+
+        #endregion Constructor
 
         #region Public methods
+
         /// <summary>
         /// Start source generation.
         /// </summary>
@@ -49,9 +53,11 @@ namespace NHapiTools.Base.ModelToolsGenerator
 
             ProcessAssembly(assembly);
         }
-        #endregion
+
+        #endregion Public methods
 
         #region Private methods
+
         private string GetVersion(string name)
         {
             int startIndex = name.IndexOf(".V") + 1;
@@ -68,6 +74,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
         }
 
         #region Messages
+
         private void ProcessMessages(List<Type> messageTypes)
         {
             foreach (Type message in messageTypes)
@@ -77,7 +84,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
                 // Generate methods
                 foreach (string name in names)
                 {
-                    MethodInfo mInfo = message.GetMethod(string.Format("Get{0}", name), new Type[]{typeof(int)});
+                    MethodInfo mInfo = message.GetMethod(string.Format("Get{0}", name), new Type[] { typeof(int) });
                     string returnType = mInfo.ReturnType.Name;
 
                     GenerateMessageMethods(message.Name, name, returnType);
@@ -169,7 +176,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
 
         private void SaveMessagesFile()
         {
-            string filename = outputDir.EndsWith("\\")?outputDir : outputDir + "\\";
+            string filename = outputDir.EndsWith("\\") ? outputDir : outputDir + "\\";
             filename += "Model." + version + "\\Message";
             if (!Directory.Exists(filename))
                 Directory.CreateDirectory(filename);
@@ -180,9 +187,11 @@ namespace NHapiTools.Base.ModelToolsGenerator
                 sw.Write(messagesOutput.ToString());
             }
         }
-        #endregion
+
+        #endregion Messages
 
         #region Segments
+
         private void ProcessSegments(List<Type> segmentTypes)
         {
             foreach (Type segment in segmentTypes)
@@ -240,11 +249,29 @@ namespace NHapiTools.Base.ModelToolsGenerator
             segmentOutput.Append("        }\n");
             segmentOutput.Append("\n");
             segmentOutput.Append("        /// <summary>\n");
-            segmentOutput.Append(string.Format("        /// Add a new {0} to {1}\n", typeName, name));
+            segmentOutput.Append(string.Format("        /// Add a new {0} to {1}\n", name, typeName));
             segmentOutput.Append("        /// </summary>\n");
             segmentOutput.Append(string.Format("        public static {0} Add{1}(this {2} message)\n", returnType, name, typeName));
             segmentOutput.Append("        {\n");
             segmentOutput.Append(string.Format("            return message.Get{0}(message.{0}RepetitionsUsed);\n", name, returnType));
+            segmentOutput.Append("        }\n");
+            segmentOutput.Append("\n");
+            segmentOutput.Append("        /// <summary>\n");
+            segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
+            segmentOutput.Append("        /// </summary>\n");
+            segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, {returnType} item)\n");
+            segmentOutput.Append("        {\n");
+            segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
+            segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, item);\n");
+            segmentOutput.Append("        }\n");
+            segmentOutput.Append("\n");
+            segmentOutput.Append("        /// <summary>\n");
+            segmentOutput.Append(string.Format("        /// Remove an {0} record from {1}\n", name, typeName));
+            segmentOutput.Append("        /// </summary>\n");
+            segmentOutput.Append($"        public static void Remove{name}(this {typeName} message, int itemIndex)\n");
+            segmentOutput.Append("        {\n");
+            segmentOutput.Append($"            int fieldNum = message.FindField(\"{name}\");\n");
+            segmentOutput.Append($"            message.RemoveRepetition(fieldNum + 1, itemIndex);\n");
             segmentOutput.Append("        }\n");
         }
 
@@ -296,9 +323,11 @@ namespace NHapiTools.Base.ModelToolsGenerator
                 sw.Write(segmentOutput.ToString());
             }
         }
-        #endregion
+
+        #endregion Segments
 
         #region Groups
+
         private void ProcessGroups(List<Type> groupTypes)
         {
             foreach (Type group in groupTypes)
@@ -412,7 +441,8 @@ namespace NHapiTools.Base.ModelToolsGenerator
                 sw.Write(groupOutput.ToString());
             }
         }
-        #endregion
+
+        #endregion Groups
 
         private List<string> GetPropertyNames(PropertyInfo[] properties)
         {
@@ -424,6 +454,7 @@ namespace NHapiTools.Base.ModelToolsGenerator
 
             return result;
         }
-        #endregion
+
+        #endregion Private methods
     }
 }
