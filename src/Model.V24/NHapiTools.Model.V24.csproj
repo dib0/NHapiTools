@@ -21,9 +21,13 @@
   <ItemGroup>
     <ProjectReference Include="..\Base\NHapiTools.Base.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
     <PackageReference Include="nHapi" Version="2.5.0.6" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="nHapi.Core" Version="2.6.0.2" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
