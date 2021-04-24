@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NHapiTools</id>
-    <version>1.11.0.4</version>
+    <version>1.11.0.5</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
     <license type="file">LICENSE</license>
@@ -13,15 +13,15 @@
     <copyright>Copyright 2021</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
     <dependencies>
-      <group targetFramework=".NETFramework4.6.1">
-        <dependency id="nHapi" version="2.5.0.6" />
-        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-      </group>
-      <group targetFramework=".NETStandard2.0">
-        <dependency id="nHapi" version="2.5.0.6" />
-        <dependency id="NETStandard.Library" version="2.0.0" />
-        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-    </group>
+		<group targetFramework=".NETFramework4.6.1">
+			<dependency id="nHapi" version="2.5.0.6" />
+			<dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
+		</group>
+		<group targetFramework=".NETStandard2.0">
+			<dependency id="nHapi.Core" version="2.6.0.2" />
+			<dependency id="NETStandard.Library" version="2.0.0" />
+			<dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
+		</group>
     </dependencies>
   </metadata>
   <files>
