@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NHapi.Base.Model;
 using NHapi.Base.Util;
 
@@ -91,7 +87,7 @@ namespace NHapiTools.Base.Util
 
             Terser inboundTerser = new Terser(inboundMessage);
             ISegment inboundHeader = null;
-            inboundHeader = inboundTerser.getSegment("MSH");
+            inboundHeader = inboundTerser.GetSegment("MSH");
 
             // Find the HL7 version of the inbound message:
             string version = null;
@@ -110,8 +106,8 @@ namespace NHapiTools.Base.Util
             Terser terser = new Terser(ackMessage);
 
             // Populate outbound MSH fields using data from inbound message
-            ISegment outHeader = (ISegment)terser.getSegment("MSH");
-            DeepCopy.copy(inboundHeader, outHeader);
+            ISegment outHeader = (ISegment)terser.GetSegment("MSH");
+            DeepCopy.Copy(inboundHeader, outHeader);
 
             // Now set the message type, HL7 version number, acknowledgement code
             // and message control ID fields:

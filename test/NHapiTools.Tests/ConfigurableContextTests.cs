@@ -1,33 +1,31 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using NHapi.Base.Parser;
 using NHapiTools.Base.IO;
 using NHapiTools.Base.Validation;
-using Xunit;
-using Xunit.Abstractions;
+using NUnit.Framework;
 
 namespace NHapiTools.Tests
 {
+    [TestFixture]
     public class ConfigurableContextTests
     {
-        private ITestOutputHelper Output { get; }
-
         private string CurrentDirectory { get; }
 
         private string TestMessageDirectory { get; }
 
-        public ConfigurableContextTests(ITestOutputHelper output)
+        public ConfigurableContextTests()
         {
-            Output = output;
             CurrentDirectory = Path.GetDirectoryName(GetType().Assembly.Location);
             TestMessageDirectory = Path.Combine(CurrentDirectory, "TestMessages");
         }
 
 
-        [Fact(DisplayName = "Parses Hl7 messages using ConfigurableContext")]
+        [Test(Description = "Parses Hl7 messages using ConfigurableContext")]
         public void ParsesAllHl7MessagesWithConfigurableContext()
         {
-            Output.WriteLine("\n==============================================\nTesting parsing with configurable context.");
+            Console.WriteLine("\n==============================================\nTesting parsing with configurable context.");
 
             // Arrange
             var expectedEncodingRulesCount = 1;
@@ -50,9 +48,9 @@ namespace NHapiTools.Tests
             var context = new ConfigurableContext(parser.ValidationContext);
             parser.ValidationContext = context;
 
-            Output.WriteLine("Encoding Rules added:\t\t{0}", context.EncodingRuleCount);
-            Output.WriteLine("Message Rules added:\t\t{0}", context.MessageRuleCount);
-            Output.WriteLine("PrimitiveType Rules added:\t{0}\n", context.PrimitiveRuleCount);
+            Console.WriteLine("Encoding Rules added:\t\t{0}", context.EncodingRuleCount);
+            Console.WriteLine("Message Rules added:\t\t{0}", context.MessageRuleCount);
+            Console.WriteLine("PrimitiveType Rules added:\t{0}\n", context.PrimitiveRuleCount);
 
             var parsed = new List<ParseResult>();
 
@@ -61,16 +59,16 @@ namespace NHapiTools.Tests
                 var im = parser.Parse(m);
 
                 var structure = im.GetStructureName();
-                Output.WriteLine("Parsed {0}, V{1}.", structure, im.Version);
+                Console.WriteLine("Parsed {0}, V{1}.", structure, im.Version);
                 parsed.Add(new ParseResult(structure, im.Version));
             }
 
-            Assert.Equal(expectedEncodingRulesCount, context.EncodingRuleCount);
-            Assert.Equal(expectedMessageRulesCount, context.MessageRuleCount);
-            Assert.Equal(expectedPrimitiveTypeRulesCount, context.PrimitiveRuleCount);
-            Assert.Equal(expectedParse, parsed);
+            Assert.AreEqual(expectedEncodingRulesCount, context.EncodingRuleCount);
+            Assert.AreEqual(expectedMessageRulesCount, context.MessageRuleCount);
+            Assert.AreEqual(expectedPrimitiveTypeRulesCount, context.PrimitiveRuleCount);
+            Assert.AreEqual(expectedParse, parsed);
 
-            Output.WriteLine("\nDone! (Parsed {0})", parsed.Count);
+            Console.WriteLine("\nDone! (Parsed {0})", parsed.Count);
         }
 
         private IEnumerable<string> GetHl7Strings()

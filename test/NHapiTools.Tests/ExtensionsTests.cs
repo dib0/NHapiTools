@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using NHapi.Base.Model;
@@ -7,113 +8,110 @@ using NHapi.Model.V23.Message;
 using NHapiTools.Base;
 using NHapiTools.Base.IO;
 using NHapiTools.Model.V23.Segment;
-using Xunit;
-using Xunit.Abstractions;
+using NUnit.Framework;
 
 namespace NHapiTools.Tests
 {
+    [TestFixture]
     public class ExtensionsTests
     {
-        private ITestOutputHelper Output { get; }
-
         private IList<IMessage> A08Messages { get; }
 
-        public ExtensionsTests(ITestOutputHelper output)
+        public ExtensionsTests()
         {
-            Output = output;
             A08Messages =
                 GetHl7IMessages()
                     .Where(m => m.Version == "2.3" && m.GetStructureName() == "ADT_A08")
                     .ToList();
         }
 
-        [Fact(DisplayName = "IsEqual can compare equality for IMessage")]
+        [Test(Description = "IsEqual can compare equality for IMessage")]
         public void IsEqual_CanCompareEqualityForIMassage()
         {
-            Output.WriteLine("\n==============================================\nTesting IMessage IsEqual extension method on ADT_A08 (HL7 V2.3) messages.");
+            Console.WriteLine("\n==============================================\nTesting IMessage IsEqual extension method on ADT_A08 (HL7 V2.3) messages.");
 
-            Output.WriteLine("\nFound {0} A08 messages.\n", A08Messages.Count);
+            Console.WriteLine("\nFound {0} A08 messages.\n", A08Messages.Count);
 
             // Compare messages
-            Output.WriteLine("Compare A08 messages.");
+            Console.WriteLine("Compare A08 messages.");
             Assert.True(A08Messages[0].IsEqual(A08Messages[0]));
             Assert.False(A08Messages[0].IsEqual(A08Messages[1]));
-            Output.WriteLine("A08_1 {0} A08_1.", A08Messages[0].IsEqual(A08Messages[0]) ? "is the same as" : "isn't the same as");
-            Output.WriteLine("A08_1 {0} A08_2.", A08Messages[0].IsEqual(A08Messages[1]) ? "is the same as" : "isn't the same as");
+            Console.WriteLine("A08_1 {0} A08_1.", A08Messages[0].IsEqual(A08Messages[0]) ? "is the same as" : "isn't the same as");
+            Console.WriteLine("A08_1 {0} A08_2.", A08Messages[0].IsEqual(A08Messages[1]) ? "is the same as" : "isn't the same as");
 
-            Output.WriteLine("\nDone!");
+            Console.WriteLine("\nDone!");
         }
 
-        [Fact(DisplayName = "IsEqual can compare equality for ISegment")]
+        [Test(Description = "IsEqual can compare equality for ISegment")]
         public void IsEqual_CanCompareEqualityForISegments()
         {
-            Output.WriteLine("\n==============================================\nTesting ISegment IsEqual extension method on ADT_A08 (HL7 V2.3) messages.");
+            Console.WriteLine("\n==============================================\nTesting ISegment IsEqual extension method on ADT_A08 (HL7 V2.3) messages.");
 
-            Output.WriteLine("\nFound {0} A08 messages.\n", A08Messages.Count);
+            Console.WriteLine("\nFound {0} A08 messages.\n", A08Messages.Count);
 
             // Compare segments
             var s1 = (ISegment)A08Messages[0].GetStructure("PID");
             var s2 = (ISegment)A08Messages[1].GetStructure("PID");
 
-            Output.WriteLine("Compare PID segments.");
+            Console.WriteLine("Compare PID segments.");
 
             Assert.True(s1.IsEqual(s1));
             Assert.False(s1.IsEqual(s2));
 
-            Output.WriteLine("PID1 {0} PID1.", s1.IsEqual(s1) ? "is the same as" : "isn't the same as");
-            Output.WriteLine("PID1 {0} PID2.", s1.IsEqual(s2) ? "is the same as" : "isn't the same as");
+            Console.WriteLine("PID1 {0} PID1.", s1.IsEqual(s1) ? "is the same as" : "isn't the same as");
+            Console.WriteLine("PID1 {0} PID2.", s1.IsEqual(s2) ? "is the same as" : "isn't the same as");
 
-            Output.WriteLine("\nDone!");
+            Console.WriteLine("\nDone!");
         }
 
-        [Fact(DisplayName = "GetPatientAddressRecords returns all XAD patient address segments.")]
+        [Test(Description = "GetPatientAddressRecords returns all XAD patient address segments.")]
         public void GetPatientAddressRecords_GetsXADAddressSegments()
         {
-            Output.WriteLine("\n==============================================\nTesting GetPatientAddressRecords extension method on ADT_A08 (HL7 V2.3) messages.");
+            Console.WriteLine("\n==============================================\nTesting GetPatientAddressRecords extension method on ADT_A08 (HL7 V2.3) messages.");
 
-            Assert.NotEmpty(A08Messages);
+            Assert.IsNotEmpty(A08Messages);
 
             foreach (var a08 in A08Messages.Cast<ADT_A08>())
             {
-                Output.WriteLine("Getting address from message.");
+                Console.WriteLine("Getting address from message.");
 
                 var xads = a08.PID.GetPatientAddressRecords().Cast<XAD>().ToList();
 
-                Assert.NotEmpty(xads);
+                Assert.IsNotEmpty(xads);
 
                 foreach (var xad in xads)
                 {
                     var x = xad.StreetAddress.Value;
-                    Output.WriteLine("Found street record '{0}'.", x);
+                    Console.WriteLine("Found street record '{0}'.", x);
                 }
             }
 
-            Output.WriteLine("\nDone!");
+            Console.WriteLine("\nDone!");
         }
 
-        [Fact(DisplayName = "AddPatientAddress adds new XAD segment to patient address.")]
+        [Test(Description = "AddPatientAddress adds new XAD segment to patient address.")]
         public void AddPatientAddress_AddsXADAddressSegments()
         {
-            Output.WriteLine("\n==============================================\nTesting AddPatientAddress extension method on ADT_A08 (HL7 V2.3) messages.");
+            Console.WriteLine("\n==============================================\nTesting AddPatientAddress extension method on ADT_A08 (HL7 V2.3) messages.");
 
             var a08 = A08Messages.Last() as ADT_A08;
             var expectedDifference = 1;
 
-            Output.WriteLine("Testing Add method.");
+            Console.WriteLine("Testing Add method.");
             var initialAddressRepetitionsCount = a08.PID.PatientAddressRepetitionsUsed;
-            Output.WriteLine("Message has {0} PatientAddress record(s).", initialAddressRepetitionsCount);
+            Console.WriteLine("Message has {0} PatientAddress record(s).", initialAddressRepetitionsCount);
 
-            Output.WriteLine("Adding record.");
+            Console.WriteLine("Adding record.");
             a08.PID.AddPatientAddress();
-            Output.WriteLine("Message has {0} PatientAddress record(s): ", a08.PID.PatientAddressRepetitionsUsed);
+            Console.WriteLine("Message has {0} PatientAddress record(s): ", a08.PID.PatientAddressRepetitionsUsed);
 
             var actualDifference = a08.PID.PatientAddressRepetitionsUsed - initialAddressRepetitionsCount;
 
-            Assert.Equal(expectedDifference, actualDifference);
+            Assert.AreEqual(expectedDifference, actualDifference);
 
-            Output.WriteLine(actualDifference == expectedDifference ? "OK!" : "Failure!");
+            Console.WriteLine(actualDifference == expectedDifference ? "OK!" : "Failure!");
 
-            Output.WriteLine("\nDone!");
+            Console.WriteLine("\nDone!");
         }
 
 

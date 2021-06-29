@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using NHapi.Base.Model;
 using NHapi.Base.Parser;
-using NHapi.Base.Util;
 using NHapiTools.Base.Parser;
 
 namespace NHapiTools.Base.Model
@@ -98,7 +92,7 @@ namespace NHapiTools.Base.Model
                 throw new ArgumentNullException("The GenericMessageWrapper only works with the EnhancedModelClassFactory");
 
             wrappedMessage = InstantiateMessage(fact);
-            this.addNonstandardSegment( "MSH");
+            this.AddNonstandardSegment( "MSH");
         }
 
         private IMessage InstantiateMessage(EnhancedModelClassFactory factory)

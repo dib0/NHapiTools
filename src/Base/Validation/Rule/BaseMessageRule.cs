@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using NHapiTools.Base.Configuration;
-using NHapi.Base.validation;
+using NHapi.Base.Validation;
 using NHapi.Base.Model;
 
 namespace NHapiTools.Base.Validation.Rule
@@ -27,9 +23,10 @@ namespace NHapiTools.Base.Validation.Rule
 
         #region Interface implementation
         /// <summary>
-        /// Get versions
+        /// Get the versions the rule applies to
+        /// Use the wildcard '*' to apply to all versions (use with care)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List with versions</returns>
         public string[] GetVersions()
         {
             List<string> result = new List<string>();
@@ -41,9 +38,10 @@ namespace NHapiTools.Base.Validation.Rule
         }
 
         /// <summary>
-        /// Get message types
+        /// Get the message type the rule applies to
+        /// Use the wildcard '*' to apply to all versions (use with care)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List with message types</returns>
         public string[] GetMessageTypes()
         {
             List<string> result = new List<string>();
@@ -55,9 +53,10 @@ namespace NHapiTools.Base.Validation.Rule
         }
 
         /// <summary>
-        /// Get events
+        /// Get the trigger events the rule applies to
+        /// Use the wildcard '*' to apply to all versions (use with care)
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List with trigger events.</returns>
         public string[] GetTriggerEvents()
         {
             List<string> result = new List<string>();
@@ -69,11 +68,33 @@ namespace NHapiTools.Base.Validation.Rule
         }
 
         /// <summary>
-        /// Test
+        /// Tests the given (fully populated) message against the criteria
+        /// defined by this rule class.
         /// </summary>
-        /// <param name="msg"></param>
-        /// <returns></returns>
+        /// <returns>
+        /// A list of exceptions indicating points at which the given
+        /// message failed to validate (empty if validation succeeds; may
+        /// not be a complete list as testing may be aborted after failure).
+        /// The list should be empty if this rule is evaluated against a type
+        /// of message to which it doesn't apply.
+        /// </returns>
         public virtual ValidationException[] test(IMessage msg)
+        {
+            return Test(msg);
+        }
+
+        /// <summary>
+        /// Tests the given (fully populated) message against the criteria
+        /// defined by this rule class.
+        /// </summary>
+        /// <returns>
+        /// A list of exceptions indicating points at which the given
+        /// message failed to validate (empty if validation succeeds; may
+        /// not be a complete list as testing may be aborted after failure).
+        /// The list should be empty if this rule is evaluated against a type
+        /// of message to which it doesn't apply.
+        /// </returns>
+        public ValidationException[] Test(IMessage msg)
         {
             return new ValidationException[0];
         }

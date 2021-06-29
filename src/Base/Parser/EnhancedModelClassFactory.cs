@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using NHapi.Base;
-using NHapi.Base.Log;
-using NHapi.Base.Model;
 using NHapi.Base.Parser;
-using NHapi.Base.validation;
+using NHapi.Base.Validation;
 
 namespace NHapiTools.Base.Parser
 {

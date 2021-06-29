@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 #endif
 using System.Configuration;
-using NHapi.Base.validation;
+using NHapi.Base.Validation;
 using NHapiTools.Base.Configuration;
 #if NET461
 using System.Runtime.Remoting;

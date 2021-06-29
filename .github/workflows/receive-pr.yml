@@ -1,0 +1,43 @@
+name: Receive Pull Request
+
+on: [pull_request]
+
+jobs:
+  build-and-test-windows:
+    name: Build And Test
+    runs-on: windows-2019
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.301
+
+    - name: Generate Classes
+      run: dotnet run -c Release -f net5.0 -p tools\NHapiTools.Generator\NHapiTools.Generator.csproj
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Initial Build
+      run: dotnet build -c Release --no-restore
+
+    - name: Run tests for all target frameworks
+      run: | 
+        dotnet test -c Debug -f net461 --no-restore --logger "trx;LogFilePrefix=TestResults" -r TestResults
+        dotnet test -c Debug -f net5.0 --no-restore --logger "trx;LogFilePrefix=TestResults" -r TestResults
+
+    - name: Convert trx to junit
+      if: ${{ success() || failure() }}
+      run: |
+        dotnet tool install -g trx2junit
+        trx2junit TestResults/*.trx
+
+    - name: Upload Unit Test Results
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: unit-test-results
+        path: TestResults\TestResults*.xml

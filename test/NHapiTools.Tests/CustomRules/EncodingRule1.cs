@@ -1,7 +1,9 @@
 ﻿using NHapiTools.Base.Validation;
+using NHapi.Base.Validation;
 
 namespace NHapiTools.Tests.CustomRules
 {
+    /// <inheritdoc />
     public class EncodingRule1 : ISpecificEncodingRule
     {
         public string[] GetVersions()
@@ -14,9 +16,32 @@ namespace NHapiTools.Tests.CustomRules
             return new string[] {"ER7", "XML"};
         }
 
-        public NHapi.Base.validation.ValidationException[] test(string msg)
+        /// <summary>
+        /// Tests the given encoded message text against the criteria
+        /// defined by this rule class.
+        /// </summary>
+        /// <returns>
+        /// A list of exceptions indicating points at which the given
+        /// message failed to validate (empty if validation succeeds; may
+        /// not be a complete list as testing may be aborted after failure).
+        /// </returns>
+        public ValidationException[] test(string msg)
         {
-            return new NHapi.Base.validation.ValidationException[0];
+            return Test(msg);
+        }
+
+        /// <summary>
+        /// Tests the given encoded message text against the criteria
+        /// defined by this rule class.
+        /// </summary>
+        /// <returns>
+        /// A list of exceptions indicating points at which the given
+        /// message failed to validate (empty if validation succeeds; may
+        /// not be a complete list as testing may be aborted after failure).
+        /// </returns>
+        public ValidationException[] Test(string msg)
+        {
+            return new ValidationException[0];
         }
 
         public string Description
