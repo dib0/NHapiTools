@@ -119,9 +119,9 @@ namespace NHapiTools.Base.CustomImplementation.V21.Messages
         {
             try
             {
-                this.add(typeof(MSH), true, false);
-                this.add(typeof(MSA), true, false);
-                this.add(typeof(ERR), false, false);
+                this.Add(typeof(MSH), true, false);
+                this.Add(typeof(MSA), true, false);
+                this.Add(typeof(ERR), false, false);
             }
             catch (HL7Exception ex)
             {

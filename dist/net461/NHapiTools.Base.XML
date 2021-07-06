@@ -1011,7 +1011,7 @@
             Constructor (without original context)
             </summary>
         </member>
-        <member name="M:NHapiTools.Base.Validation.AutomatedContext.#ctor(NHapi.Base.validation.IValidationContext)">
+        <member name="M:NHapiTools.Base.Validation.AutomatedContext.#ctor(NHapi.Base.Validation.IValidationContext)">
             <summary>
             Constructor.
             </summary>
@@ -1026,6 +1026,7 @@
             <summary>
             Base class for the different contexts
             </summary>
+            <inheritdoc />
         </member>
         <member name="F:NHapiTools.Base.Validation.BaseContext.encodingRules">
             <summary>
@@ -1062,7 +1063,7 @@
             Constructor
             </summary>
         </member>
-        <member name="M:NHapiTools.Base.Validation.BaseContext.#ctor(NHapi.Base.validation.IValidationContext)">
+        <member name="M:NHapiTools.Base.Validation.BaseContext.#ctor(NHapi.Base.Validation.IValidationContext)">
             <summary>
             Constructor
             </summary>
@@ -1075,29 +1076,67 @@
         </member>
         <member name="M:NHapiTools.Base.Validation.BaseContext.getEncodingRules(System.String,System.String)">
             <summary>
-            Get enconding rules
+            Get encoding rules
             </summary>
-            <param name="theVersion"></param>
-            <param name="theEncoding"></param>
-            <returns></returns>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theEncoding">an encoding name (eg "VB", "XML).</param>
+            <returns> the active encoding rules that apply to the given version and encoding.</returns>
         </member>
         <member name="M:NHapiTools.Base.Validation.BaseContext.getMessageRules(System.String,System.String,System.String)">
             <summary>
             Get message rules
             </summary>
-            <param name="theVersion"></param>
-            <param name="theMessageType"></param>
-            <param name="theTriggerEvent"></param>
-            <returns></returns>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theMessageType">a value valid for MSH-9-1.</param>
+            <param name="theTriggerEvent">a value valid fro MSH-9-2.</param>
+            <returns>
+            the active rules that apply to message of the given version, message type,
+            and trigger event.
+            </returns>
         </member>
         <member name="M:NHapiTools.Base.Validation.BaseContext.getPrimitiveRules(System.String,System.String,NHapi.Base.Model.IPrimitive)">
             <summary>
             Get primitive rules
             </summary>
-            <param name="theVersion"></param>
-            <param name="theTypeName"></param>
-            <param name="theType"></param>
-            <returns></returns>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theTypeName">a primitive datatype name (eg "ST").</param>
+            <param name="theType">the Primitive being validated.</param>
+            <returns>
+            active rules for checking the given type in the given version.
+            </returns>
+        </member>
+        <member name="M:NHapiTools.Base.Validation.BaseContext.GetPrimitiveRules(System.String,System.String,NHapi.Base.Model.IPrimitive)">
+            <summary>
+            Get primitive rules
+            </summary>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theTypeName">a primitive datatype name (eg "ST").</param>
+            <param name="theType">the Primitive being validated.</param>
+            <returns>
+            active rules for checking the given type in the given version.
+            </returns>
+        </member>
+        <member name="M:NHapiTools.Base.Validation.BaseContext.GetMessageRules(System.String,System.String,System.String)">
+            <summary>
+            Get message rules
+            </summary>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theMessageType">a value valid for MSH-9-1.</param>
+            <param name="theTriggerEvent">a value valid fro MSH-9-2.</param>
+            <returns>
+            the active rules that apply to message of the given version, message type,
+            and trigger event.
+            </returns>
+        </member>
+        <member name="M:NHapiTools.Base.Validation.BaseContext.GetEncodingRules(System.String,System.String)">
+            <summary>
+            Get encoding rules
+            </summary>
+            <param name="theVersion">an HL7 version (eg "2.1").</param>
+            <param name="theEncoding">an encoding name (eg "VB", "XML).</param>
+            <returns>
+            the active encoding rules that apply to the given version and encoding.
+            </returns>
         </member>
         <member name="T:NHapiTools.Base.Validation.ConfigurableContext">
             <summary>
@@ -1110,7 +1149,7 @@
             Constructor (without original context)
             </summary>
         </member>
-        <member name="M:NHapiTools.Base.Validation.ConfigurableContext.#ctor(NHapi.Base.validation.IValidationContext)">
+        <member name="M:NHapiTools.Base.Validation.ConfigurableContext.#ctor(NHapi.Base.Validation.IValidationContext)">
             <summary>
             Constructor.
             </summary>
@@ -1204,28 +1243,50 @@
         </member>
         <member name="M:NHapiTools.Base.Validation.Rule.BaseMessageRule.GetVersions">
             <summary>
-            Get versions
+            Get the versions the rule applies to
+            Use the wildcard '*' to apply to all versions (use with care)
             </summary>
-            <returns></returns>
+            <returns>List with versions</returns>
         </member>
         <member name="M:NHapiTools.Base.Validation.Rule.BaseMessageRule.GetMessageTypes">
             <summary>
-            Get message types
+            Get the message type the rule applies to
+            Use the wildcard '*' to apply to all versions (use with care)
             </summary>
-            <returns></returns>
+            <returns>List with message types</returns>
         </member>
         <member name="M:NHapiTools.Base.Validation.Rule.BaseMessageRule.GetTriggerEvents">
             <summary>
-            Get events
+            Get the trigger events the rule applies to
+            Use the wildcard '*' to apply to all versions (use with care)
             </summary>
-            <returns></returns>
+            <returns>List with trigger events.</returns>
         </member>
         <member name="M:NHapiTools.Base.Validation.Rule.BaseMessageRule.test(NHapi.Base.Model.IMessage)">
             <summary>
-            Test
+            Tests the given (fully populated) message against the criteria
+            defined by this rule class.
             </summary>
-            <param name="msg"></param>
-            <returns></returns>
+            <returns>
+            A list of exceptions indicating points at which the given
+            message failed to validate (empty if validation succeeds; may
+            not be a complete list as testing may be aborted after failure).
+            The list should be empty if this rule is evaluated against a type
+            of message to which it doesn't apply.
+            </returns>
+        </member>
+        <member name="M:NHapiTools.Base.Validation.Rule.BaseMessageRule.Test(NHapi.Base.Model.IMessage)">
+            <summary>
+            Tests the given (fully populated) message against the criteria
+            defined by this rule class.
+            </summary>
+            <returns>
+            A list of exceptions indicating points at which the given
+            message failed to validate (empty if validation succeeds; may
+            not be a complete list as testing may be aborted after failure).
+            The list should be empty if this rule is evaluated against a type
+            of message to which it doesn't apply.
+            </returns>
         </member>
         <member name="P:NHapiTools.Base.Validation.Rule.BaseMessageRule.Description">
             <summary>

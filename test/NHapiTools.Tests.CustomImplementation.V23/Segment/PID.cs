@@ -844,131 +844,131 @@ namespace NHapiTools.Tests.CustomImplementation.V23.Segment
       IMessage message = this.Message;
       try
       {
-        this.add(typeof (SI), 0 != 0, 1, 4, new object[1]
+        this.Add(typeof (SI), 0 != 0, 1, 4, new object[1]
         {
           (object) message
         }, "Set ID - Patient ID");
-        this.add(typeof (CX), 0 != 0, 1, 16, new object[1]
+        this.Add(typeof (CX), 0 != 0, 1, 16, new object[1]
         {
           (object) message
         }, "Patient ID (External ID)");
-        this.add(typeof (CX), 1 != 0, 0, 20, new object[1]
+        this.Add(typeof (CX), 1 != 0, 0, 20, new object[1]
         {
           (object) message
         }, "Patient ID (Internal ID)");
-        this.add(typeof (CX), 0 != 0, 10, 12, new object[1]
+        this.Add(typeof (CX), 0 != 0, 10, 12, new object[1]
         {
           (object) message
         }, "Alternate Patient ID");
-        this.add(typeof (XPN), 1 != 0, 1, 48, new object[1]
+        this.Add(typeof (XPN), 1 != 0, 1, 48, new object[1]
         {
           (object) message
         }, "Patient Name");
-        this.add(typeof (XPN), 0 != 0, 1, 48, new object[1]
+        this.Add(typeof (XPN), 0 != 0, 1, 48, new object[1]
         {
           (object) message
         }, "Mother's Maiden Name");
-        this.add(typeof (TS), 0 != 0, 1, 26, new object[1]
+        this.Add(typeof (TS), 0 != 0, 1, 26, new object[1]
         {
           (object) message
         }, "Date of Birth");
-        this.add(typeof (IS), 0 != 0, 1, 1, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 1, new object[2]
         {
           (object) message,
           (object) 1
         }, "Sex");
-        this.add(typeof (XPN), 0 != 0, 0, 48, new object[1]
+        this.Add(typeof (XPN), 0 != 0, 0, 48, new object[1]
         {
           (object) message
         }, "Patient Alias");
-        this.add(typeof (IS), 0 != 0, 1, 1, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 1, new object[2]
         {
           (object) message,
           (object) 5
         }, "Race");
-        this.add(typeof (XAD), 0 != 0, 0, 106, new object[1]
+        this.Add(typeof (XAD), 0 != 0, 0, 106, new object[1]
         {
           (object) message
         }, "Patient Address");
-        this.add(typeof (IS), 0 != 0, 1, 4, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 4, new object[2]
         {
           (object) message,
           (object) 0
         }, "County Code");
-        this.add(typeof (TN), 0 != 0, 0, 40, new object[1]
+        this.Add(typeof (TN), 0 != 0, 0, 40, new object[1]
         {
           (object) message
         }, "Phone Number - Home");
-        this.add(typeof (TN), 0 != 0, 0, 40, new object[1]
+        this.Add(typeof (TN), 0 != 0, 0, 40, new object[1]
         {
           (object) message
         }, "Phone Number - Business");
-        this.add(typeof (CE), 0 != 0, 1, 60, new object[1]
+        this.Add(typeof (CE), 0 != 0, 1, 60, new object[1]
         {
           (object) message
         }, "Primary Language");
-        this.add(typeof (IS), 0 != 0, 0, 1, new object[2]
+        this.Add(typeof (IS), 0 != 0, 0, 1, new object[2]
         {
           (object) message,
           (object) 2
         }, "Marital Status");
-        this.add(typeof (IS), 0 != 0, 1, 3, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 3, new object[2]
         {
           (object) message,
           (object) 6
         }, "Religion");
-        this.add(typeof (CX), 0 != 0, 1, 20, new object[1]
+        this.Add(typeof (CX), 0 != 0, 1, 20, new object[1]
         {
           (object) message
         }, "Patient Account Number");
-        this.add(typeof (ST), 0 != 0, 1, 16, new object[1]
+        this.Add(typeof (ST), 0 != 0, 1, 16, new object[1]
         {
           (object) message
         }, "SSN Number - Patient");
-        this.add(typeof (DLN), 0 != 0, 1, 25, new object[1]
+        this.Add(typeof (DLN), 0 != 0, 1, 25, new object[1]
         {
           (object) message
         }, "Driver's License Number");
-        this.add(typeof (CX), 0 != 0, 1, 20, new object[1]
+        this.Add(typeof (CX), 0 != 0, 1, 20, new object[1]
         {
           (object) message
         }, "Mother's Identifier");
-        this.add(typeof (IS), 0 != 0, 1, 1, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 1, new object[2]
         {
           (object) message,
           (object) 189
         }, "Ethnic Group");
-        this.add(typeof (ST), 0 != 0, 1, 60, new object[1]
+        this.Add(typeof (ST), 0 != 0, 1, 60, new object[1]
         {
           (object) message
         }, "Birth Place");
-        this.add(typeof (ID), 0 != 0, 1, 2, new object[2]
+        this.Add(typeof (ID), 0 != 0, 1, 2, new object[2]
         {
           (object) message,
           (object) 136
         }, "Multiple Birth Indicator");
-        this.add(typeof (NM), 0 != 0, 1, 2, new object[1]
+        this.Add(typeof (NM), 0 != 0, 1, 2, new object[1]
         {
           (object) message
         }, "Birth Order");
-        this.add(typeof (IS), 0 != 0, 1, 4, new object[2]
+        this.Add(typeof (IS), 0 != 0, 1, 4, new object[2]
         {
           (object) message,
           (object) 171
         }, "Citizenship");
-        this.add(typeof (CE), 0 != 0, 1, 60, new object[1]
+        this.Add(typeof (CE), 0 != 0, 1, 60, new object[1]
         {
           (object) message
         }, "Veterans Military Status");
-        this.add(typeof (CE), 0 != 0, 1, 80, new object[1]
+        this.Add(typeof (CE), 0 != 0, 1, 80, new object[1]
         {
           (object) message
         }, "Nationality Code");
-        this.add(typeof (TS), 0 != 0, 1, 26, new object[1]
+        this.Add(typeof (TS), 0 != 0, 1, 26, new object[1]
         {
           (object) message
         }, "Patient Death Date and Time");
-        this.add(typeof (ID), 0 != 0, 1, 1, new object[2]
+        this.Add(typeof (ID), 0 != 0, 1, 1, new object[2]
         {
           (object) message,
           (object) 136

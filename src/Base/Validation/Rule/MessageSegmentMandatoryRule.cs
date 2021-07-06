@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
+﻿using System.Configuration;
 using NHapi.Base.Parser;
-using NHapi.Base.validation;
+using NHapi.Base.Validation;
 using NHapi.Base.Model;
 using NHapiTools.Base.Configuration;
 
@@ -63,7 +58,7 @@ namespace NHapiTools.Base.Validation.Rule
                     }
                 }
 
-                if (result.Count() > 0)
+                if (result.Length > 0)
                     break;
             }
 

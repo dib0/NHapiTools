@@ -1,0 +1,37 @@
+name: Build Status
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-test-windows:
+    name: Build And Test
+    runs-on: windows-2019
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.301
+
+    - name: Generate Classes
+      run: dotnet run -c Release -f net5.0 -p tools\NHapiTools.Generator\NHapiTools.Generator.csproj
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Initial Build
+      run: dotnet build -c Release --no-restore
+
+    - name: Run tests for all target frameworks
+      run: | 
+        dotnet test -c Debug -f net461 --no-restore -r TestResults
+        dotnet test -c Debug -f net5.0 --no-restore -r TestResults
+
+    - name: NuGet Pack
+      run: NuGet.exe pack NHapiTools.nuspec
+      working-directory: tools\nuget

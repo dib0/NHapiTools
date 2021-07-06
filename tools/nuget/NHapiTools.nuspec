@@ -5,28 +5,30 @@
     <version>1.11.0.5</version>
     <authors>Division by Zero</authors>
     <owners>Division by Zero</owners>
-    <license type="file">LICENSE</license>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/dib0/NHapiTools</projectUrl>
+    <repository type="git" url="https://github.com/dib0/NHapiTools.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The NHapiTools are tools that will make using NHapi (the open source .Net HL7 implementation) easier. NHapi has a steep learning curve and not everything works as easy as it should. NHapiTools aims to improve that without tampering with NHapi itselves.</description>
-    <releaseNotes>Added support for netstandard2.0 support, thanks to milkshakeuk</releaseNotes>
+    <releaseNotes>Adds support for nHapi 3.0.0, thanks to milkshakeuk</releaseNotes>
     <copyright>Copyright 2021</copyright>
     <tags>HL7 NHapi NHapiTools</tags>
+    <readme>docs\README.md</readme>
     <dependencies>
-		<group targetFramework=".NETFramework4.6.1">
-			<dependency id="nHapi" version="2.5.0.6" />
-			<dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-		</group>
-		<group targetFramework=".NETStandard2.0">
-			<dependency id="nHapi.Core" version="2.6.0.2" />
-			<dependency id="NETStandard.Library" version="2.0.0" />
-			<dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-		</group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="nhapi" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="nhapi" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-  <file src="..\..\LICENSE" target="LICENSE" /> 
-  <file src="..\..\dist\net461\NHapiTools.*.dll" target="lib\net461" /> 
+  <file src="..\..\LICENSE" target="LICENSE" />
+  <file src="..\..\dist\net461\NHapiTools.*.dll" target="lib\net461" />
   <file src="..\..\dist\netstandard2.0\NHapiTools.*.dll" target="lib\netstandard2.0" />
+  <file src="..\..\README.md" target="docs\" />
   </files>
 </package>

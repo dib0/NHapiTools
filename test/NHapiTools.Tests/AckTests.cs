@@ -4,15 +4,13 @@ using System.IO;
 using NHapi.Base.Model;
 using NHapiTools.Base.IO;
 using NHapiTools.Base.Util;
-using Xunit;
-using Xunit.Abstractions;
+using NUnit.Framework;
 
 namespace NHapiTools.Tests
 {
+    [TestFixture]
     public class AckTests
     {
-        private ITestOutputHelper Output { get; }
-
         private IDictionary<string, Type> AckTypes { get; } = new Dictionary<string, Type>
         {
             {"2.3", typeof(NHapi.Model.V23.Message.ACK) },
@@ -20,15 +18,10 @@ namespace NHapiTools.Tests
             {"2.5", typeof(NHapi.Model.V25.Message.ACK) }
         };
 
-        public AckTests(ITestOutputHelper output)
-        {
-            Output = output;
-        }
-
-        [Fact(DisplayName = "Ack can be generated")]
+        [Test(Description = "Ack can be generated")]
         public void GenericMessageWrapper_AllowsOverridingSegments()
         {
-            Output.WriteLine("\n==============================================\nTesting Ack generation.");
+            Console.WriteLine("\n==============================================\nTesting Ack generation.");
 
             var ack = new Ack("TestApplication", "Development");
 
@@ -37,10 +30,10 @@ namespace NHapiTools.Tests
                 var ackMessage = ack.MakeACK(message);
                 var expectedAckType = AckTypes[message.Version];
 
-                Assert.IsType(expectedAckType, ackMessage);
-                Assert.Equal(message.Version, ackMessage.Version);
+                Assert.IsInstanceOf(expectedAckType, ackMessage);
+                Assert.AreEqual(message.Version, ackMessage.Version);
 
-                Output.WriteLine("{0} message for V{1}.", ackMessage.GetStructureName(), ackMessage.Version);
+                Console.WriteLine("{0} message for V{1}.", ackMessage.GetStructureName(), ackMessage.Version);
             }
         }
 
