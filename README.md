@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/dib0/NHapiTools/actions/workflows/build-status.yml/badge.svg)](https://github.com/dib0/NHapiTools/actions/workflows/build-status.yml)
+
 # NHapiTools
 The NHapiTools are tools that will make using NHapi (the open source .Net HL7 implementation) easier. NHapi has a steep learning 
 curve and not everything works as easy as it should. NHapiTools aims to improve that without tampering with NHapi itselves.
