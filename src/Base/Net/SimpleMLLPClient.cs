@@ -127,7 +127,7 @@ namespace NHapiTools.Base.Net
                 if (b > 0) // reset start reading time for timout check
                     startReadingTime = DateTime.Now;
 
-                if (!messageComplete && DateTime.Now.Subtract(startReadingTime).TotalMilliseconds > 30)
+                if (!messageComplete && DateTime.Now.Subtract(startReadingTime).TotalMilliseconds > timeout)
                     throw new TimeoutException($"Reading the HL7 reply timed out after {timeout} milliseconds.");
             }
             MLLP.StripMLLPContainer(sb);
