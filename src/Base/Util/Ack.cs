@@ -119,6 +119,7 @@ namespace NHapiTools.Base.Util
             terser.Set("/MSH-6", sendingEnv);
             terser.Set("/MSH-7", DateTime.Now.ToString("yyyyMMddHHmm"));
             terser.Set("/MSH-9", "ACK");
+            terser.Set("/MSH-9-3", null);
             terser.Set("/MSH-12", version);
             terser.Set("/MSA-1", Enum.GetName(typeof(AckTypes), ackResult));
             terser.Set("/MSA-2", Terser.Get(inboundHeader, 10, 0, 1, 1));
