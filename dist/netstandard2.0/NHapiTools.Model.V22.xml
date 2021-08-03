@@ -2674,6 +2674,16 @@
             Add a new BatchTotals to BTS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveBatchTotals(NHapi.Model.V22.Segment.BTS,NHapi.Model.V22.Datatype.CM_BATCH_TOTAL)">
+            <summary>
+            Remove an BatchTotals record from BTS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveBatchTotals(NHapi.Model.V22.Segment.BTS,System.Int32)">
+            <summary>
+            Remove an BatchTotals record from BTS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetErrorCodeAndLocationRecords(NHapi.Model.V22.Segment.ERR)">
             <summary>
             Get ErrorCodeAndLocation Records from ERR
@@ -2687,6 +2697,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddErrorCodeAndLocation(NHapi.Model.V22.Segment.ERR)">
             <summary>
             Add a new ErrorCodeAndLocation to ERR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveErrorCodeAndLocation(NHapi.Model.V22.Segment.ERR,NHapi.Model.V22.Datatype.CM_ELD)">
+            <summary>
+            Remove an ErrorCodeAndLocation record from ERR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveErrorCodeAndLocation(NHapi.Model.V22.Segment.ERR,System.Int32)">
+            <summary>
+            Remove an ErrorCodeAndLocation record from ERR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDiagnosisCodeRecords(NHapi.Model.V22.Segment.FT1)">
@@ -2704,6 +2724,16 @@
             Add a new DiagnosisCode to FT1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDiagnosisCode(NHapi.Model.V22.Segment.FT1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an DiagnosisCode record from FT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDiagnosisCode(NHapi.Model.V22.Segment.FT1,System.Int32)">
+            <summary>
+            Remove an DiagnosisCode record from FT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberHomeRecords(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Get GuarantorPhoneNumberHome Records from GT1
@@ -2717,6 +2747,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddGuarantorPhoneNumberHome(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Add a new GuarantorPhoneNumberHome to GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorPhoneNumberHome(NHapi.Model.V22.Segment.GT1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an GuarantorPhoneNumberHome record from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorPhoneNumberHome(NHapi.Model.V22.Segment.GT1,System.Int32)">
+            <summary>
+            Remove an GuarantorPhoneNumberHome record from GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.GT1)">
@@ -2734,6 +2774,16 @@
             Add a new GuarantorPhoneNumberBusiness to GT1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorPhoneNumberBusiness(NHapi.Model.V22.Segment.GT1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an GuarantorPhoneNumberBusiness record from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorPhoneNumberBusiness(NHapi.Model.V22.Segment.GT1,System.Int32)">
+            <summary>
+            Remove an GuarantorPhoneNumberBusiness record from GT1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetGuarantorEmployPhoneNumberRecords(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Get GuarantorEmployPhoneNumber Records from GT1
@@ -2747,6 +2797,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddGuarantorEmployPhoneNumber(NHapi.Model.V22.Segment.GT1)">
             <summary>
             Add a new GuarantorEmployPhoneNumber to GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorEmployPhoneNumber(NHapi.Model.V22.Segment.GT1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an GuarantorEmployPhoneNumber record from GT1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveGuarantorEmployPhoneNumber(NHapi.Model.V22.Segment.GT1,System.Int32)">
+            <summary>
+            Remove an GuarantorEmployPhoneNumber record from GT1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInsuranceCompanyPhoneNumberRecords(NHapi.Model.V22.Segment.IN1)">
@@ -2764,6 +2824,16 @@
             Add a new InsuranceCompanyPhoneNumber to IN1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveInsuranceCompanyPhoneNumber(NHapi.Model.V22.Segment.IN1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an InsuranceCompanyPhoneNumber record from IN1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveInsuranceCompanyPhoneNumber(NHapi.Model.V22.Segment.IN1,System.Int32)">
+            <summary>
+            Remove an InsuranceCompanyPhoneNumber record from IN1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNonCoveredInsuranceCodeRecords(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Get NonCoveredInsuranceCode Records from IN2
@@ -2777,6 +2847,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddNonCoveredInsuranceCode(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Add a new NonCoveredInsuranceCode to IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveNonCoveredInsuranceCode(NHapi.Model.V22.Segment.IN2,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an NonCoveredInsuranceCode record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveNonCoveredInsuranceCode(NHapi.Model.V22.Segment.IN2,System.Int32)">
+            <summary>
+            Remove an NonCoveredInsuranceCode record from IN2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRoomCoverageTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
@@ -2794,6 +2874,16 @@
             Add a new RoomCoverageTypeAmount to IN2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRoomCoverageTypeAmount(NHapi.Model.V22.Segment.IN2,NHapi.Model.V22.Datatype.CM_RMC)">
+            <summary>
+            Remove an RoomCoverageTypeAmount record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRoomCoverageTypeAmount(NHapi.Model.V22.Segment.IN2,System.Int32)">
+            <summary>
+            Remove an RoomCoverageTypeAmount record from IN2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPolicyTypeAmountRecords(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Get PolicyTypeAmount Records from IN2
@@ -2807,6 +2897,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPolicyTypeAmount(NHapi.Model.V22.Segment.IN2)">
             <summary>
             Add a new PolicyTypeAmount to IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePolicyTypeAmount(NHapi.Model.V22.Segment.IN2,NHapi.Model.V22.Datatype.CM_PTA)">
+            <summary>
+            Remove an PolicyTypeAmount record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePolicyTypeAmount(NHapi.Model.V22.Segment.IN2,System.Int32)">
+            <summary>
+            Remove an PolicyTypeAmount record from IN2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationContactPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
@@ -2824,6 +2924,16 @@
             Add a new CertificationContactPhoneNumber to IN3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCertificationContactPhoneNumber(NHapi.Model.V22.Segment.IN3,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an CertificationContactPhoneNumber record from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCertificationContactPhoneNumber(NHapi.Model.V22.Segment.IN3,System.Int32)">
+            <summary>
+            Remove an CertificationContactPhoneNumber record from IN3
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCertificationAgencyPhoneNumberRecords(NHapi.Model.V22.Segment.IN3)">
             <summary>
             Get CertificationAgencyPhoneNumber Records from IN3
@@ -2837,6 +2947,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCertificationAgencyPhoneNumber(NHapi.Model.V22.Segment.IN3)">
             <summary>
             Add a new CertificationAgencyPhoneNumber to IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCertificationAgencyPhoneNumber(NHapi.Model.V22.Segment.IN3,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an CertificationAgencyPhoneNumber record from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCertificationAgencyPhoneNumber(NHapi.Model.V22.Segment.IN3,System.Int32)">
+            <summary>
+            Remove an CertificationAgencyPhoneNumber record from IN3
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPreCertificationRequiredWindowRecords(NHapi.Model.V22.Segment.IN3)">
@@ -2854,6 +2974,16 @@
             Add a new PreCertificationRequiredWindow to IN3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePreCertificationRequiredWindow(NHapi.Model.V22.Segment.IN3,NHapi.Model.V22.Datatype.CM_PCF)">
+            <summary>
+            Remove an PreCertificationRequiredWindow record from IN3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePreCertificationRequiredWindow(NHapi.Model.V22.Segment.IN3,System.Int32)">
+            <summary>
+            Remove an PreCertificationRequiredWindow record from IN3
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFA)">
             <summary>
             Get PrimaryKeyValue Records from MFA
@@ -2867,6 +2997,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPrimaryKeyValue(NHapi.Model.V22.Segment.MFA)">
             <summary>
             Add a new PrimaryKeyValue to MFA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrimaryKeyValue(NHapi.Model.V22.Segment.MFA,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an PrimaryKeyValue record from MFA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrimaryKeyValue(NHapi.Model.V22.Segment.MFA,System.Int32)">
+            <summary>
+            Remove an PrimaryKeyValue record from MFA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrimaryKeyValueRecords(NHapi.Model.V22.Segment.MFE)">
@@ -2884,6 +3024,16 @@
             Add a new PrimaryKeyValue to MFE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrimaryKeyValue(NHapi.Model.V22.Segment.MFE,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an PrimaryKeyValue record from MFE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrimaryKeyValue(NHapi.Model.V22.Segment.MFE,System.Int32)">
+            <summary>
+            Remove an PrimaryKeyValue record from MFE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberRecords(NHapi.Model.V22.Segment.NK1)">
             <summary>
             Get PhoneNumber Records from NK1
@@ -2897,6 +3047,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumber(NHapi.Model.V22.Segment.NK1)">
             <summary>
             Add a new PhoneNumber to NK1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumber(NHapi.Model.V22.Segment.NK1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an PhoneNumber record from NK1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumber(NHapi.Model.V22.Segment.NK1,System.Int32)">
+            <summary>
+            Remove an PhoneNumber record from NK1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCommentRecords(NHapi.Model.V22.Segment.NTE)">
@@ -2914,6 +3074,16 @@
             Add a new Comment to NTE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveComment(NHapi.Model.V22.Segment.NTE,NHapi.Model.V22.Datatype.FT)">
+            <summary>
+            Remove an Comment record from NTE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveComment(NHapi.Model.V22.Segment.NTE,System.Int32)">
+            <summary>
+            Remove an Comment record from NTE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCollectorIdentifierRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get CollectorIdentifier Records from OBR
@@ -2927,6 +3097,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCollectorIdentifier(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Add a new CollectorIdentifier to OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCollectorIdentifier(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CN_PERSON)">
+            <summary>
+            Remove an CollectorIdentifier record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCollectorIdentifier(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an CollectorIdentifier record from OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOrderCallbackPhoneNumberRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2944,6 +3124,16 @@
             Add a new OrderCallbackPhoneNumber to OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOrderCallbackPhoneNumber(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an OrderCallbackPhoneNumber record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOrderCallbackPhoneNumber(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an OrderCallbackPhoneNumber record from OBR
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get QuantityTiming Records from OBR
@@ -2957,6 +3147,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddQuantityTiming(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Add a new QuantityTiming to OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.TQ)">
+            <summary>
+            Remove an QuantityTiming record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an QuantityTiming record from OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetResultCopiesToRecords(NHapi.Model.V22.Segment.OBR)">
@@ -2974,6 +3174,16 @@
             Add a new ResultCopiesTo to OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveResultCopiesTo(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CN_PERSON)">
+            <summary>
+            Remove an ResultCopiesTo record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveResultCopiesTo(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an ResultCopiesTo record from OBR
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReasonForStudyRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get ReasonForStudy Records from OBR
@@ -2987,6 +3197,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddReasonForStudy(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Add a new ReasonForStudy to OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReasonForStudy(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ReasonForStudy record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReasonForStudy(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an ReasonForStudy record from OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAssistantResultInterpreterRecords(NHapi.Model.V22.Segment.OBR)">
@@ -3004,6 +3224,16 @@
             Add a new AssistantResultInterpreter to OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAssistantResultInterpreter(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CM_NDL)">
+            <summary>
+            Remove an AssistantResultInterpreter record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAssistantResultInterpreter(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an AssistantResultInterpreter record from OBR
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTechnicianRecords(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Get Technician Records from OBR
@@ -3017,6 +3247,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTechnician(NHapi.Model.V22.Segment.OBR)">
             <summary>
             Add a new Technician to OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTechnician(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CM_NDL)">
+            <summary>
+            Remove an Technician record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTechnician(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an Technician record from OBR
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTranscriptionistRecords(NHapi.Model.V22.Segment.OBR)">
@@ -3034,6 +3274,16 @@
             Add a new Transcriptionist to OBR
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTranscriptionist(NHapi.Model.V22.Segment.OBR,NHapi.Model.V22.Datatype.CM_NDL)">
+            <summary>
+            Remove an Transcriptionist record from OBR
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTranscriptionist(NHapi.Model.V22.Segment.OBR,System.Int32)">
+            <summary>
+            Remove an Transcriptionist record from OBR
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAbnormalFlagsRecords(NHapi.Model.V22.Segment.OBX)">
             <summary>
             Get AbnormalFlags Records from OBX
@@ -3047,6 +3297,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddAbnormalFlags(NHapi.Model.V22.Segment.OBX)">
             <summary>
             Add a new AbnormalFlags to OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAbnormalFlags(NHapi.Model.V22.Segment.OBX,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an AbnormalFlags record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAbnormalFlags(NHapi.Model.V22.Segment.OBX,System.Int32)">
+            <summary>
+            Remove an AbnormalFlags record from OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODS)">
@@ -3064,6 +3324,16 @@
             Add a new ServicePeriod to ODS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveServicePeriod(NHapi.Model.V22.Segment.ODS,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ServicePeriod record from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveServicePeriod(NHapi.Model.V22.Segment.ODS,System.Int32)">
+            <summary>
+            Remove an ServicePeriod record from ODS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDietSupplementOrPreferenceCodeRecords(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Get DietSupplementOrPreferenceCode Records from ODS
@@ -3077,6 +3347,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDietSupplementOrPreferenceCode(NHapi.Model.V22.Segment.ODS)">
             <summary>
             Add a new DietSupplementOrPreferenceCode to ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDietSupplementOrPreferenceCode(NHapi.Model.V22.Segment.ODS,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an DietSupplementOrPreferenceCode record from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDietSupplementOrPreferenceCode(NHapi.Model.V22.Segment.ODS,System.Int32)">
+            <summary>
+            Remove an DietSupplementOrPreferenceCode record from ODS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODS)">
@@ -3094,6 +3374,16 @@
             Add a new TextInstruction to ODS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTextInstruction(NHapi.Model.V22.Segment.ODS,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an TextInstruction record from ODS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTextInstruction(NHapi.Model.V22.Segment.ODS,System.Int32)">
+            <summary>
+            Remove an TextInstruction record from ODS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServicePeriodRecords(NHapi.Model.V22.Segment.ODT)">
             <summary>
             Get ServicePeriod Records from ODT
@@ -3107,6 +3397,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddServicePeriod(NHapi.Model.V22.Segment.ODT)">
             <summary>
             Add a new ServicePeriod to ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveServicePeriod(NHapi.Model.V22.Segment.ODT,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ServicePeriod record from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveServicePeriod(NHapi.Model.V22.Segment.ODT,System.Int32)">
+            <summary>
+            Remove an ServicePeriod record from ODT
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTextInstructionRecords(NHapi.Model.V22.Segment.ODT)">
@@ -3124,6 +3424,16 @@
             Add a new TextInstruction to ODT
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTextInstruction(NHapi.Model.V22.Segment.ODT,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an TextInstruction record from ODT
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTextInstruction(NHapi.Model.V22.Segment.ODT,System.Int32)">
+            <summary>
+            Remove an TextInstruction record from ODT
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPermittedDataTypesRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get PermittedDataTypes Records from OM1
@@ -3137,6 +3447,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPermittedDataTypes(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new PermittedDataTypes to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePermittedDataTypes(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an PermittedDataTypes record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePermittedDataTypes(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an PermittedDataTypes record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherNamesRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3154,6 +3474,16 @@
             Add a new OtherNames to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOtherNames(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an OtherNames record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOtherNames(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an OtherNames record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetIdentityOfInstrumentUsedToPerformThisStudyRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get IdentityOfInstrumentUsedToPerformThisStudy Records from OM1
@@ -3167,6 +3497,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddIdentityOfInstrumentUsedToPerformThisStudy(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new IdentityOfInstrumentUsedToPerformThisStudy to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveIdentityOfInstrumentUsedToPerformThisStudy(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an IdentityOfInstrumentUsedToPerformThisStudy record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveIdentityOfInstrumentUsedToPerformThisStudy(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an IdentityOfInstrumentUsedToPerformThisStudy record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCodedRepresentationOfMethodRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3184,6 +3524,16 @@
             Add a new CodedRepresentationOfMethod to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCodedRepresentationOfMethod(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an CodedRepresentationOfMethod record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCodedRepresentationOfMethod(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an CodedRepresentationOfMethod record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationProducingDepartmentSectionRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get ObservationProducingDepartmentSection Records from OM1
@@ -3197,6 +3547,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddObservationProducingDepartmentSection(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new ObservationProducingDepartmentSection to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveObservationProducingDepartmentSection(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ObservationProducingDepartmentSection record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveObservationProducingDepartmentSection(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an ObservationProducingDepartmentSection record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcessingPriorityRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3214,6 +3574,16 @@
             Add a new ProcessingPriority to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcessingPriority(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ProcessingPriority record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcessingPriority(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an ProcessingPriority record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOutsideSiteSWhereObservationMayBePerformedRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get OutsideSiteSWhereObservationMayBePerformed Records from OM1
@@ -3227,6 +3597,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOutsideSiteSWhereObservationMayBePerformed(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new OutsideSiteSWhereObservationMayBePerformed to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOutsideSiteSWhereObservationMayBePerformed(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an OutsideSiteSWhereObservationMayBePerformed record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOutsideSiteSWhereObservationMayBePerformed(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an OutsideSiteSWhereObservationMayBePerformed record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAddressOfOutsideSiteSRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3244,6 +3624,16 @@
             Add a new AddressOfOutsideSiteS to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAddressOfOutsideSiteS(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.AD)">
+            <summary>
+            Remove an AddressOfOutsideSiteS record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAddressOfOutsideSiteS(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an AddressOfOutsideSiteS record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberOfOutsideSiteRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get PhoneNumberOfOutsideSite Records from OM1
@@ -3257,6 +3647,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumberOfOutsideSite(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new PhoneNumberOfOutsideSite to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberOfOutsideSite(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an PhoneNumberOfOutsideSite record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberOfOutsideSite(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an PhoneNumberOfOutsideSite record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetObservationsRequiredToInterpretTheObservationRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3274,6 +3674,16 @@
             Add a new ObservationsRequiredToInterpretTheObservation to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveObservationsRequiredToInterpretTheObservation(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ObservationsRequiredToInterpretTheObservation record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveObservationsRequiredToInterpretTheObservation(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an ObservationsRequiredToInterpretTheObservation record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContraindicationsToObservationsRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get ContraindicationsToObservations Records from OM1
@@ -3287,6 +3697,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContraindicationsToObservations(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new ContraindicationsToObservations to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContraindicationsToObservations(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ContraindicationsToObservations record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContraindicationsToObservations(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an ContraindicationsToObservations record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReflexTestsObservationsRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3304,6 +3724,16 @@
             Add a new ReflexTestsObservations to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReflexTestsObservations(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ReflexTestsObservations record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReflexTestsObservations(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an ReflexTestsObservations record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFixedCannedMessageRecords(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Get FixedCannedMessage Records from OM1
@@ -3317,6 +3747,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddFixedCannedMessage(NHapi.Model.V22.Segment.OM1)">
             <summary>
             Add a new FixedCannedMessage to OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveFixedCannedMessage(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an FixedCannedMessage record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveFixedCannedMessage(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an FixedCannedMessage record from OM1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestObservationPerformanceScheduleRecords(NHapi.Model.V22.Segment.OM1)">
@@ -3334,6 +3774,16 @@
             Add a new TestObservationPerformanceSchedule to OM1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTestObservationPerformanceSchedule(NHapi.Model.V22.Segment.OM1,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an TestObservationPerformanceSchedule record from OM1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTestObservationPerformanceSchedule(NHapi.Model.V22.Segment.OM1,System.Int32)">
+            <summary>
+            Remove an TestObservationPerformanceSchedule record from OM1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSIConversionFactorRecords(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Get SIConversionFactor Records from OM2
@@ -3347,6 +3797,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddSIConversionFactor(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Add a new SIConversionFactor to OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSIConversionFactor(NHapi.Model.V22.Segment.OM2,NHapi.Model.V22.Datatype.TX)">
+            <summary>
+            Remove an SIConversionFactor record from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSIConversionFactor(NHapi.Model.V22.Segment.OM2,System.Int32)">
+            <summary>
+            Remove an SIConversionFactor record from OM2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetReferenceNormalRangeOrdinalContinuousObservationsRecords(NHapi.Model.V22.Segment.OM2)">
@@ -3364,6 +3824,16 @@
             Add a new ReferenceNormalRangeOrdinalContinuousObservations to OM2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReferenceNormalRangeOrdinalContinuousObservations(NHapi.Model.V22.Segment.OM2,NHapi.Model.V22.Datatype.CM_RFR)">
+            <summary>
+            Remove an ReferenceNormalRangeOrdinalContinuousObservations record from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveReferenceNormalRangeOrdinalContinuousObservations(NHapi.Model.V22.Segment.OM2,System.Int32)">
+            <summary>
+            Remove an ReferenceNormalRangeOrdinalContinuousObservations record from OM2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDeltaCheckCriteriaRecords(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Get DeltaCheckCriteria Records from OM2
@@ -3377,6 +3847,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDeltaCheckCriteria(NHapi.Model.V22.Segment.OM2)">
             <summary>
             Add a new DeltaCheckCriteria to OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDeltaCheckCriteria(NHapi.Model.V22.Segment.OM2,NHapi.Model.V22.Datatype.CM_DLT)">
+            <summary>
+            Remove an DeltaCheckCriteria record from OM2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDeltaCheckCriteria(NHapi.Model.V22.Segment.OM2,System.Int32)">
+            <summary>
+            Remove an DeltaCheckCriteria record from OM2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValidCodedAnswersRecords(NHapi.Model.V22.Segment.OM3)">
@@ -3394,6 +3874,16 @@
             Add a new ValidCodedAnswers to OM3
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValidCodedAnswers(NHapi.Model.V22.Segment.OM3,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ValidCodedAnswers record from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValidCodedAnswers(NHapi.Model.V22.Segment.OM3,System.Int32)">
+            <summary>
+            Remove an ValidCodedAnswers record from OM3
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetNormalTestCodesForCategoricalObservationsRecords(NHapi.Model.V22.Segment.OM3)">
             <summary>
             Get NormalTestCodesForCategoricalObservations Records from OM3
@@ -3407,6 +3897,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddNormalTestCodesForCategoricalObservations(NHapi.Model.V22.Segment.OM3)">
             <summary>
             Add a new NormalTestCodesForCategoricalObservations to OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveNormalTestCodesForCategoricalObservations(NHapi.Model.V22.Segment.OM3,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an NormalTestCodesForCategoricalObservations record from OM3
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveNormalTestCodesForCategoricalObservations(NHapi.Model.V22.Segment.OM3,System.Int32)">
+            <summary>
+            Remove an NormalTestCodesForCategoricalObservations record from OM3
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecimenPrioritiesRecords(NHapi.Model.V22.Segment.OM4)">
@@ -3424,6 +3924,16 @@
             Add a new SpecimenPriorities to OM4
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSpecimenPriorities(NHapi.Model.V22.Segment.OM4,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an SpecimenPriorities record from OM4
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSpecimenPriorities(NHapi.Model.V22.Segment.OM4,System.Int32)">
+            <summary>
+            Remove an SpecimenPriorities record from OM4
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetTestsObservationsIncludedWithinAnOrderedTestBatteryRecords(NHapi.Model.V22.Segment.OM5)">
             <summary>
             Get TestsObservationsIncludedWithinAnOrderedTestBattery Records from OM5
@@ -3437,6 +3947,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddTestsObservationsIncludedWithinAnOrderedTestBattery(NHapi.Model.V22.Segment.OM5)">
             <summary>
             Add a new TestsObservationsIncludedWithinAnOrderedTestBattery to OM5
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTestsObservationsIncludedWithinAnOrderedTestBattery(NHapi.Model.V22.Segment.OM5,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an TestsObservationsIncludedWithinAnOrderedTestBattery record from OM5
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveTestsObservationsIncludedWithinAnOrderedTestBattery(NHapi.Model.V22.Segment.OM5,System.Int32)">
+            <summary>
+            Remove an TestsObservationsIncludedWithinAnOrderedTestBattery record from OM5
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.ORC)">
@@ -3454,6 +3974,16 @@
             Add a new QuantityTiming to ORC
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.ORC,NHapi.Model.V22.Datatype.TQ)">
+            <summary>
+            Remove an QuantityTiming record from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.ORC,System.Int32)">
+            <summary>
+            Remove an QuantityTiming record from ORC
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCallBackPhoneNumberRecords(NHapi.Model.V22.Segment.ORC)">
             <summary>
             Get CallBackPhoneNumber Records from ORC
@@ -3467,6 +3997,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCallBackPhoneNumber(NHapi.Model.V22.Segment.ORC)">
             <summary>
             Add a new CallBackPhoneNumber to ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCallBackPhoneNumber(NHapi.Model.V22.Segment.ORC,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an CallBackPhoneNumber record from ORC
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCallBackPhoneNumber(NHapi.Model.V22.Segment.ORC,System.Int32)">
+            <summary>
+            Remove an CallBackPhoneNumber record from ORC
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientIDInternalIDRecords(NHapi.Model.V22.Segment.PID)">
@@ -3484,6 +4024,16 @@
             Add a new PatientIDInternalID to PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientIDInternalID(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.CM_PAT_ID)">
+            <summary>
+            Remove an PatientIDInternalID record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientIDInternalID(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an PatientIDInternalID record from PID
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAliasRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get PatientAlias Records from PID
@@ -3497,6 +4047,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPatientAlias(NHapi.Model.V22.Segment.PID)">
             <summary>
             Add a new PatientAlias to PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientAlias(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.PN)">
+            <summary>
+            Remove an PatientAlias record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientAlias(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an PatientAlias record from PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientAddressRecords(NHapi.Model.V22.Segment.PID)">
@@ -3514,6 +4074,16 @@
             Add a new PatientAddress to PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientAddress(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.AD)">
+            <summary>
+            Remove an PatientAddress record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientAddress(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an PatientAddress record from PID
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberHomeRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get PhoneNumberHome Records from PID
@@ -3527,6 +4097,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPhoneNumberHome(NHapi.Model.V22.Segment.PID)">
             <summary>
             Add a new PhoneNumberHome to PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberHome(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an PhoneNumberHome record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberHome(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an PhoneNumberHome record from PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneNumberBusinessRecords(NHapi.Model.V22.Segment.PID)">
@@ -3544,6 +4124,16 @@
             Add a new PhoneNumberBusiness to PID
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberBusiness(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an PhoneNumberBusiness record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhoneNumberBusiness(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an PhoneNumberBusiness record from PID
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetCitizenshipRecords(NHapi.Model.V22.Segment.PID)">
             <summary>
             Get Citizenship Records from PID
@@ -3557,6 +4147,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddCitizenship(NHapi.Model.V22.Segment.PID)">
             <summary>
             Add a new Citizenship to PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCitizenship(NHapi.Model.V22.Segment.PID,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an Citizenship record from PID
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveCitizenship(NHapi.Model.V22.Segment.PID,System.Int32)">
+            <summary>
+            Remove an Citizenship record from PID
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodingMethodRecords(NHapi.Model.V22.Segment.PR1)">
@@ -3574,6 +4174,16 @@
             Add a new ProcedureCodingMethod to PR1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureCodingMethod(NHapi.Model.V22.Segment.PR1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ProcedureCodingMethod record from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureCodingMethod(NHapi.Model.V22.Segment.PR1,System.Int32)">
+            <summary>
+            Remove an ProcedureCodingMethod record from PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureCodeRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get ProcedureCode Records from PR1
@@ -3587,6 +4197,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedureCode(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Add a new ProcedureCode to PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureCode(NHapi.Model.V22.Segment.PR1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ProcedureCode record from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureCode(NHapi.Model.V22.Segment.PR1,System.Int32)">
+            <summary>
+            Remove an ProcedureCode record from PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedureDescriptionRecords(NHapi.Model.V22.Segment.PR1)">
@@ -3604,6 +4224,16 @@
             Add a new ProcedureDescription to PR1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureDescription(NHapi.Model.V22.Segment.PR1,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an ProcedureDescription record from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedureDescription(NHapi.Model.V22.Segment.PR1,System.Int32)">
+            <summary>
+            Remove an ProcedureDescription record from PR1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProcedurePractitionerRecords(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Get ProcedurePractitioner Records from PR1
@@ -3617,6 +4247,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProcedurePractitioner(NHapi.Model.V22.Segment.PR1)">
             <summary>
             Add a new ProcedurePractitioner to PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedurePractitioner(NHapi.Model.V22.Segment.PR1,NHapi.Model.V22.Datatype.CM_PRACTITIONER)">
+            <summary>
+            Remove an ProcedurePractitioner record from PR1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProcedurePractitioner(NHapi.Model.V22.Segment.PR1,System.Int32)">
+            <summary>
+            Remove an ProcedurePractitioner record from PR1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerGroupRecords(NHapi.Model.V22.Segment.PRA)">
@@ -3634,6 +4274,16 @@
             Add a new PractitionerGroup to PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerGroup(NHapi.Model.V22.Segment.PRA,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an PractitionerGroup record from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerGroup(NHapi.Model.V22.Segment.PRA,System.Int32)">
+            <summary>
+            Remove an PractitionerGroup record from PRA
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerCategoryRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get PractitionerCategory Records from PRA
@@ -3647,6 +4297,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPractitionerCategory(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Add a new PractitionerCategory to PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerCategory(NHapi.Model.V22.Segment.PRA,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an PractitionerCategory record from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerCategory(NHapi.Model.V22.Segment.PRA,System.Int32)">
+            <summary>
+            Remove an PractitionerCategory record from PRA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetSpecialtyRecords(NHapi.Model.V22.Segment.PRA)">
@@ -3664,6 +4324,16 @@
             Add a new Specialty to PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSpecialty(NHapi.Model.V22.Segment.PRA,NHapi.Model.V22.Datatype.CM_SPD)">
+            <summary>
+            Remove an Specialty record from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveSpecialty(NHapi.Model.V22.Segment.PRA,System.Int32)">
+            <summary>
+            Remove an Specialty record from PRA
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPractitionerIDNumbersRecords(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Get PractitionerIDNumbers Records from PRA
@@ -3677,6 +4347,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPractitionerIDNumbers(NHapi.Model.V22.Segment.PRA)">
             <summary>
             Add a new PractitionerIDNumbers to PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerIDNumbers(NHapi.Model.V22.Segment.PRA,NHapi.Model.V22.Datatype.CM_PLN)">
+            <summary>
+            Remove an PractitionerIDNumbers record from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePractitionerIDNumbers(NHapi.Model.V22.Segment.PRA,System.Int32)">
+            <summary>
+            Remove an PractitionerIDNumbers record from PRA
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPrivilegesRecords(NHapi.Model.V22.Segment.PRA)">
@@ -3694,6 +4374,16 @@
             Add a new Privileges to PRA
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrivileges(NHapi.Model.V22.Segment.PRA,NHapi.Model.V22.Datatype.CM_PIP)">
+            <summary>
+            Remove an Privileges record from PRA
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePrivileges(NHapi.Model.V22.Segment.PRA,System.Int32)">
+            <summary>
+            Remove an Privileges record from PRA
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConsultingDoctorRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get ConsultingDoctor Records from PV1
@@ -3707,6 +4397,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddConsultingDoctor(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Add a new ConsultingDoctor to PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConsultingDoctor(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.CN_PHYSICIAN)">
+            <summary>
+            Remove an ConsultingDoctor record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConsultingDoctor(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an ConsultingDoctor record from PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetAmbulatoryStatusRecords(NHapi.Model.V22.Segment.PV1)">
@@ -3724,6 +4424,16 @@
             Add a new AmbulatoryStatus to PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAmbulatoryStatus(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an AmbulatoryStatus record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveAmbulatoryStatus(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an AmbulatoryStatus record from PV1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetFinancialClassRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get FinancialClass Records from PV1
@@ -3737,6 +4447,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddFinancialClass(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Add a new FinancialClass to PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveFinancialClass(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.CM_FINANCE)">
+            <summary>
+            Remove an FinancialClass record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveFinancialClass(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an FinancialClass record from PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractCodeRecords(NHapi.Model.V22.Segment.PV1)">
@@ -3754,6 +4474,16 @@
             Add a new ContractCode to PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractCode(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ContractCode record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractCode(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an ContractCode record from PV1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractEffectiveDateRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get ContractEffectiveDate Records from PV1
@@ -3767,6 +4497,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractEffectiveDate(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Add a new ContractEffectiveDate to PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractEffectiveDate(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.DT)">
+            <summary>
+            Remove an ContractEffectiveDate record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractEffectiveDate(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an ContractEffectiveDate record from PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractAmountRecords(NHapi.Model.V22.Segment.PV1)">
@@ -3784,6 +4524,16 @@
             Add a new ContractAmount to PV1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractAmount(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.NM)">
+            <summary>
+            Remove an ContractAmount record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractAmount(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an ContractAmount record from PV1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetContractPeriodRecords(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Get ContractPeriod Records from PV1
@@ -3797,6 +4547,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddContractPeriod(NHapi.Model.V22.Segment.PV1)">
             <summary>
             Add a new ContractPeriod to PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractPeriod(NHapi.Model.V22.Segment.PV1,NHapi.Model.V22.Datatype.NM)">
+            <summary>
+            Remove an ContractPeriod record from PV1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveContractPeriod(NHapi.Model.V22.Segment.PV1,System.Int32)">
+            <summary>
+            Remove an ContractPeriod record from PV1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPatientValuablesRecords(NHapi.Model.V22.Segment.PV2)">
@@ -3814,6 +4574,16 @@
             Add a new PatientValuables to PV2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientValuables(NHapi.Model.V22.Segment.PV2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an PatientValuables record from PV2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePatientValuables(NHapi.Model.V22.Segment.PV2,System.Int32)">
+            <summary>
+            Remove an PatientValuables record from PV2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhoSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get WhoSubjectFilter Records from QRD
@@ -3827,6 +4597,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhoSubjectFilter(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Add a new WhoSubjectFilter to QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhoSubjectFilter(NHapi.Model.V22.Segment.QRD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an WhoSubjectFilter record from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhoSubjectFilter(NHapi.Model.V22.Segment.QRD,System.Int32)">
+            <summary>
+            Remove an WhoSubjectFilter record from QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatSubjectFilterRecords(NHapi.Model.V22.Segment.QRD)">
@@ -3844,6 +4624,16 @@
             Add a new WhatSubjectFilter to QRD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatSubjectFilter(NHapi.Model.V22.Segment.QRD,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an WhatSubjectFilter record from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatSubjectFilter(NHapi.Model.V22.Segment.QRD,System.Int32)">
+            <summary>
+            Remove an WhatSubjectFilter record from QRD
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDepartmentDataCodeRecords(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Get WhatDepartmentDataCode Records from QRD
@@ -3857,6 +4647,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhatDepartmentDataCode(NHapi.Model.V22.Segment.QRD)">
             <summary>
             Add a new WhatDepartmentDataCode to QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatDepartmentDataCode(NHapi.Model.V22.Segment.QRD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an WhatDepartmentDataCode record from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatDepartmentDataCode(NHapi.Model.V22.Segment.QRD,System.Int32)">
+            <summary>
+            Remove an WhatDepartmentDataCode record from QRD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatDataCodeValueQualifierRecords(NHapi.Model.V22.Segment.QRD)">
@@ -3874,6 +4674,16 @@
             Add a new WhatDataCodeValueQualifier to QRD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatDataCodeValueQualifier(NHapi.Model.V22.Segment.QRD,NHapi.Model.V22.Datatype.CM_VR)">
+            <summary>
+            Remove an WhatDataCodeValueQualifier record from QRD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatDataCodeValueQualifier(NHapi.Model.V22.Segment.QRD,System.Int32)">
+            <summary>
+            Remove an WhatDataCodeValueQualifier record from QRD
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhereSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get WhereSubjectFilter Records from QRF
@@ -3887,6 +4697,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhereSubjectFilter(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Add a new WhereSubjectFilter to QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhereSubjectFilter(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an WhereSubjectFilter record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhereSubjectFilter(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an WhereSubjectFilter record from QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhatUserQualifierRecords(NHapi.Model.V22.Segment.QRF)">
@@ -3904,6 +4724,16 @@
             Add a new WhatUserQualifier to QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatUserQualifier(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an WhatUserQualifier record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhatUserQualifier(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an WhatUserQualifier record from QRF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOtherQRYSubjectFilterRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get OtherQRYSubjectFilter Records from QRF
@@ -3917,6 +4747,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOtherQRYSubjectFilter(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Add a new OtherQRYSubjectFilter to QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOtherQRYSubjectFilter(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an OtherQRYSubjectFilter record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOtherQRYSubjectFilter(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an OtherQRYSubjectFilter record from QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.QRF)">
@@ -3934,6 +4774,16 @@
             Add a new WhichDateTimeQualifier to QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhichDateTimeQualifier(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an WhichDateTimeQualifier record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhichDateTimeQualifier(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an WhichDateTimeQualifier record from QRF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Get WhichDateTimeStatusQualifier Records from QRF
@@ -3947,6 +4797,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.QRF)">
             <summary>
             Add a new WhichDateTimeStatusQualifier to QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an WhichDateTimeStatusQualifier record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an WhichDateTimeStatusQualifier record from QRF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.QRF)">
@@ -3964,6 +4824,16 @@
             Add a new DateTimeSelectionQualifier to QRF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDateTimeSelectionQualifier(NHapi.Model.V22.Segment.QRF,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an DateTimeSelectionQualifier record from QRF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDateTimeSelectionQualifier(NHapi.Model.V22.Segment.QRF,System.Int32)">
+            <summary>
+            Remove an DateTimeSelectionQualifier record from QRF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDispenseNotesRecords(NHapi.Model.V22.Segment.RXD)">
             <summary>
             Get DispenseNotes Records from RXD
@@ -3977,6 +4847,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDispenseNotes(NHapi.Model.V22.Segment.RXD)">
             <summary>
             Add a new DispenseNotes to RXD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDispenseNotes(NHapi.Model.V22.Segment.RXD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an DispenseNotes record from RXD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDispenseNotes(NHapi.Model.V22.Segment.RXD,System.Int32)">
+            <summary>
+            Remove an DispenseNotes record from RXD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXE)">
@@ -3994,6 +4874,16 @@
             Add a new QuantityTiming to RXE
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.RXE,NHapi.Model.V22.Datatype.TQ)">
+            <summary>
+            Remove an QuantityTiming record from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.RXE,System.Int32)">
+            <summary>
+            Remove an QuantityTiming record from RXE
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXE)">
             <summary>
             Get ProviderSAdministrationInstructions Records from RXE
@@ -4007,6 +4897,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXE)">
             <summary>
             Add a new ProviderSAdministrationInstructions to RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXE,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ProviderSAdministrationInstructions record from RXE
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXE,System.Int32)">
+            <summary>
+            Remove an ProviderSAdministrationInstructions record from RXE
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetQuantityTimingRecords(NHapi.Model.V22.Segment.RXG)">
@@ -4024,6 +4924,16 @@
             Add a new QuantityTiming to RXG
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.RXG,NHapi.Model.V22.Datatype.TQ)">
+            <summary>
+            Remove an QuantityTiming record from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveQuantityTiming(NHapi.Model.V22.Segment.RXG,System.Int32)">
+            <summary>
+            Remove an QuantityTiming record from RXG
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPharmacySpecialAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXG)">
             <summary>
             Get PharmacySpecialAdministrationInstructions Records from RXG
@@ -4037,6 +4947,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddPharmacySpecialAdministrationInstructions(NHapi.Model.V22.Segment.RXG)">
             <summary>
             Add a new PharmacySpecialAdministrationInstructions to RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePharmacySpecialAdministrationInstructions(NHapi.Model.V22.Segment.RXG,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an PharmacySpecialAdministrationInstructions record from RXG
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePharmacySpecialAdministrationInstructions(NHapi.Model.V22.Segment.RXG,System.Int32)">
+            <summary>
+            Remove an PharmacySpecialAdministrationInstructions record from RXG
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSPharmacyInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
@@ -4054,6 +4974,16 @@
             Add a new ProviderSPharmacyInstructions to RXO
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSPharmacyInstructions(NHapi.Model.V22.Segment.RXO,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ProviderSPharmacyInstructions record from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSPharmacyInstructions(NHapi.Model.V22.Segment.RXO,System.Int32)">
+            <summary>
+            Remove an ProviderSPharmacyInstructions record from RXO
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetProviderSAdministrationInstructionsRecords(NHapi.Model.V22.Segment.RXO)">
             <summary>
             Get ProviderSAdministrationInstructions Records from RXO
@@ -4067,6 +4997,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXO)">
             <summary>
             Add a new ProviderSAdministrationInstructions to RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXO,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an ProviderSAdministrationInstructions record from RXO
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveProviderSAdministrationInstructions(NHapi.Model.V22.Segment.RXO,System.Int32)">
+            <summary>
+            Remove an ProviderSAdministrationInstructions record from RXO
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffIDCodeRecords(NHapi.Model.V22.Segment.STF)">
@@ -4084,6 +5024,16 @@
             Add a new StaffIDCode to STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveStaffIDCode(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an StaffIDCode record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveStaffIDCode(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an StaffIDCode record from STF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetStaffTypeRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get StaffType Records from STF
@@ -4097,6 +5047,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddStaffType(NHapi.Model.V22.Segment.STF)">
             <summary>
             Add a new StaffType to STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveStaffType(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an StaffType record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveStaffType(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an StaffType record from STF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDepartmentRecords(NHapi.Model.V22.Segment.STF)">
@@ -4114,6 +5074,16 @@
             Add a new Department to STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDepartment(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an Department record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDepartment(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an Department record from STF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetServiceRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get Service Records from STF
@@ -4127,6 +5097,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddService(NHapi.Model.V22.Segment.STF)">
             <summary>
             Add a new Service to STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveService(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an Service record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveService(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an Service record from STF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetPhoneRecords(NHapi.Model.V22.Segment.STF)">
@@ -4144,6 +5124,16 @@
             Add a new Phone to STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhone(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.TN)">
+            <summary>
+            Remove an Phone record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemovePhone(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an Phone record from STF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOfficeHomeAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get OfficeHomeAddress Records from STF
@@ -4157,6 +5147,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOfficeHomeAddress(NHapi.Model.V22.Segment.STF)">
             <summary>
             Add a new OfficeHomeAddress to STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOfficeHomeAddress(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.AD)">
+            <summary>
+            Remove an OfficeHomeAddress record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOfficeHomeAddress(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an OfficeHomeAddress record from STF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetActivationDateRecords(NHapi.Model.V22.Segment.STF)">
@@ -4174,6 +5174,16 @@
             Add a new ActivationDate to STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveActivationDate(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CM_DIN)">
+            <summary>
+            Remove an ActivationDate record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveActivationDate(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an ActivationDate record from STF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetInactivationDateRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get InactivationDate Records from STF
@@ -4187,6 +5197,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddInactivationDate(NHapi.Model.V22.Segment.STF)">
             <summary>
             Add a new InactivationDate to STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveInactivationDate(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CM_DIN)">
+            <summary>
+            Remove an InactivationDate record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveInactivationDate(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an InactivationDate record from STF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetBackupPersonIDRecords(NHapi.Model.V22.Segment.STF)">
@@ -4204,6 +5224,16 @@
             Add a new BackupPersonID to STF
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveBackupPersonID(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.CE)">
+            <summary>
+            Remove an BackupPersonID record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveBackupPersonID(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an BackupPersonID record from STF
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetEMailAddressRecords(NHapi.Model.V22.Segment.STF)">
             <summary>
             Get EMailAddress Records from STF
@@ -4217,6 +5247,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddEMailAddress(NHapi.Model.V22.Segment.STF)">
             <summary>
             Add a new EMailAddress to STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveEMailAddress(NHapi.Model.V22.Segment.STF,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an EMailAddress record from STF
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveEMailAddress(NHapi.Model.V22.Segment.STF,System.Int32)">
+            <summary>
+            Remove an EMailAddress record from STF
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode3539Records(NHapi.Model.V22.Segment.UB1)">
@@ -4234,6 +5274,16 @@
             Add a new ConditionCode3539 to UB1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConditionCode3539(NHapi.Model.V22.Segment.UB1,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ConditionCode3539 record from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConditionCode3539(NHapi.Model.V22.Segment.UB1,System.Int32)">
+            <summary>
+            Remove an ConditionCode3539 record from UB1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode4649Records(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Get ValueAmountAndCode4649 Records from UB1
@@ -4247,6 +5297,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddValueAmountAndCode4649(NHapi.Model.V22.Segment.UB1)">
             <summary>
             Add a new ValueAmountAndCode4649 to UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValueAmountAndCode4649(NHapi.Model.V22.Segment.UB1,NHapi.Model.V22.Datatype.CM_UVC)">
+            <summary>
+            Remove an ValueAmountAndCode4649 record from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValueAmountAndCode4649(NHapi.Model.V22.Segment.UB1,System.Int32)">
+            <summary>
+            Remove an ValueAmountAndCode4649 record from UB1
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrence2832Records(NHapi.Model.V22.Segment.UB1)">
@@ -4264,6 +5324,16 @@
             Add a new Occurrence2832 to UB1
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrence2832(NHapi.Model.V22.Segment.UB1,NHapi.Model.V22.Datatype.CM_OCD)">
+            <summary>
+            Remove an Occurrence2832 record from UB1
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrence2832(NHapi.Model.V22.Segment.UB1,System.Int32)">
+            <summary>
+            Remove an Occurrence2832 record from UB1
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetConditionCode2430Records(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get ConditionCode2430 Records from UB2
@@ -4277,6 +5347,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddConditionCode2430(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Add a new ConditionCode2430 to UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConditionCode2430(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an ConditionCode2430 record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveConditionCode2430(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an ConditionCode2430 record from UB2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetValueAmountAndCode3941Records(NHapi.Model.V22.Segment.UB2)">
@@ -4294,6 +5374,16 @@
             Add a new ValueAmountAndCode3941 to UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValueAmountAndCode3941(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.CM_UVC)">
+            <summary>
+            Remove an ValueAmountAndCode3941 record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveValueAmountAndCode3941(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an ValueAmountAndCode3941 record from UB2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceCodeAndDate3235Records(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get OccurrenceCodeAndDate3235 Records from UB2
@@ -4307,6 +5397,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddOccurrenceCodeAndDate3235(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Add a new OccurrenceCodeAndDate3235 to UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrenceCodeAndDate3235(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.CM_OCD)">
+            <summary>
+            Remove an OccurrenceCodeAndDate3235 record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrenceCodeAndDate3235(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an OccurrenceCodeAndDate3235 record from UB2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetOccurrenceSpanCodeDatesRecords(NHapi.Model.V22.Segment.UB2)">
@@ -4324,6 +5424,16 @@
             Add a new OccurrenceSpanCodeDates to UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrenceSpanCodeDates(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.CM_OSP)">
+            <summary>
+            Remove an OccurrenceSpanCodeDates record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveOccurrenceSpanCodeDates(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an OccurrenceSpanCodeDates record from UB2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator2StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get UB92Locator2State Records from UB2
@@ -4337,6 +5447,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator2State(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Add a new UB92Locator2State to UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator2State(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an UB92Locator2State record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator2State(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an UB92Locator2State record from UB2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator11StateRecords(NHapi.Model.V22.Segment.UB2)">
@@ -4354,6 +5474,16 @@
             Add a new UB92Locator11State to UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator11State(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an UB92Locator11State record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator11State(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an UB92Locator11State record from UB2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetDocumentControlNumberRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get DocumentControlNumber Records from UB2
@@ -4367,6 +5497,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddDocumentControlNumber(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Add a new DocumentControlNumber to UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDocumentControlNumber(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an DocumentControlNumber record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveDocumentControlNumber(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an DocumentControlNumber record from UB2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator49NationalRecords(NHapi.Model.V22.Segment.UB2)">
@@ -4384,6 +5524,16 @@
             Add a new UB92Locator49National to UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator49National(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an UB92Locator49National record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator49National(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an UB92Locator49National record from UB2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator56StateRecords(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Get UB92Locator56State Records from UB2
@@ -4397,6 +5547,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddUB92Locator56State(NHapi.Model.V22.Segment.UB2)">
             <summary>
             Add a new UB92Locator56State to UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator56State(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an UB92Locator56State record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator56State(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an UB92Locator56State record from UB2
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetUB92Locator78StateRecords(NHapi.Model.V22.Segment.UB2)">
@@ -4414,6 +5574,16 @@
             Add a new UB92Locator78State to UB2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator78State(NHapi.Model.V22.Segment.UB2,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an UB92Locator78State record from UB2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveUB92Locator78State(NHapi.Model.V22.Segment.UB2,System.Int32)">
+            <summary>
+            Remove an UB92Locator78State record from UB2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhoSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get RUWhoSubjectDefinition Records from URD
@@ -4427,6 +5597,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhoSubjectDefinition(NHapi.Model.V22.Segment.URD)">
             <summary>
             Add a new RUWhoSubjectDefinition to URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhoSubjectDefinition(NHapi.Model.V22.Segment.URD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUWhoSubjectDefinition record from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhoSubjectDefinition(NHapi.Model.V22.Segment.URD,System.Int32)">
+            <summary>
+            Remove an RUWhoSubjectDefinition record from URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatSubjectDefinitionRecords(NHapi.Model.V22.Segment.URD)">
@@ -4444,6 +5624,16 @@
             Add a new RUWhatSubjectDefinition to URD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatSubjectDefinition(NHapi.Model.V22.Segment.URD,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an RUWhatSubjectDefinition record from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatSubjectDefinition(NHapi.Model.V22.Segment.URD,System.Int32)">
+            <summary>
+            Remove an RUWhatSubjectDefinition record from URD
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatDepartmentCodeRecords(NHapi.Model.V22.Segment.URD)">
             <summary>
             Get RUWhatDepartmentCode Records from URD
@@ -4457,6 +5647,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhatDepartmentCode(NHapi.Model.V22.Segment.URD)">
             <summary>
             Add a new RUWhatDepartmentCode to URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatDepartmentCode(NHapi.Model.V22.Segment.URD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUWhatDepartmentCode record from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatDepartmentCode(NHapi.Model.V22.Segment.URD,System.Int32)">
+            <summary>
+            Remove an RUWhatDepartmentCode record from URD
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDisplayPrintLocationsRecords(NHapi.Model.V22.Segment.URD)">
@@ -4474,6 +5674,16 @@
             Add a new RUDisplayPrintLocations to URD
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUDisplayPrintLocations(NHapi.Model.V22.Segment.URD,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUDisplayPrintLocations record from URD
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUDisplayPrintLocations(NHapi.Model.V22.Segment.URD,System.Int32)">
+            <summary>
+            Remove an RUDisplayPrintLocations record from URD
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhereSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUWhereSubjectDefinition Records from URS
@@ -4487,6 +5697,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUWhereSubjectDefinition(NHapi.Model.V22.Segment.URS)">
             <summary>
             Add a new RUWhereSubjectDefinition to URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhereSubjectDefinition(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUWhereSubjectDefinition record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhereSubjectDefinition(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUWhereSubjectDefinition record from URS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhatUserQualifierRecords(NHapi.Model.V22.Segment.URS)">
@@ -4504,6 +5724,16 @@
             Add a new RUWhatUserQualifier to URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatUserQualifier(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUWhatUserQualifier record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhatUserQualifier(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUWhatUserQualifier record from URS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUOtherResultsSubjectDefinitionRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUOtherResultsSubjectDefinition Records from URS
@@ -4517,6 +5747,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUOtherResultsSubjectDefinition(NHapi.Model.V22.Segment.URS)">
             <summary>
             Add a new RUOtherResultsSubjectDefinition to URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUOtherResultsSubjectDefinition(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ST)">
+            <summary>
+            Remove an RUOtherResultsSubjectDefinition record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUOtherResultsSubjectDefinition(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUOtherResultsSubjectDefinition record from URS
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeQualifierRecords(NHapi.Model.V22.Segment.URS)">
@@ -4534,6 +5774,16 @@
             Add a new RUWhichDateTimeQualifier to URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhichDateTimeQualifier(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an RUWhichDateTimeQualifier record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhichDateTimeQualifier(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUWhichDateTimeQualifier record from URS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUWhichDateTimeStatusQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUWhichDateTimeStatusQualifier Records from URS
@@ -4549,6 +5799,16 @@
             Add a new RUWhichDateTimeStatusQualifier to URS
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an RUWhichDateTimeStatusQualifier record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUWhichDateTimeStatusQualifier(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUWhichDateTimeStatusQualifier record from URS
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.GetRUDateTimeSelectionQualifierRecords(NHapi.Model.V22.Segment.URS)">
             <summary>
             Get RUDateTimeSelectionQualifier Records from URS
@@ -4562,6 +5822,16 @@
         <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.AddRUDateTimeSelectionQualifier(NHapi.Model.V22.Segment.URS)">
             <summary>
             Add a new RUDateTimeSelectionQualifier to URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUDateTimeSelectionQualifier(NHapi.Model.V22.Segment.URS,NHapi.Model.V22.Datatype.ID)">
+            <summary>
+            Remove an RUDateTimeSelectionQualifier record from URS
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V22.Segment.SegmentExtensions.RemoveRUDateTimeSelectionQualifier(NHapi.Model.V22.Segment.URS,System.Int32)">
+            <summary>
+            Remove an RUDateTimeSelectionQualifier record from URS
             </summary>
         </member>
     </members>

@@ -851,12 +851,14 @@
             <param name="message">Message to send</param>
             <returns>Reply message</returns>
         </member>
-        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.SendHL7Message(System.String)">
+        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.SendHL7Message(System.String,System.Double)">
             <summary>
             Send a HL7 message
             </summary>
             <param name="message">Message to send</param>
+            <param name="timeout">Read timeout, throws exception when receiving no data until timeout</param>
             <returns>Reply message</returns>
+            <exception cref="T:System.TimeoutException">throws exception on read timeout</exception>
         </member>
         <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.Disconnect">
             <summary>
