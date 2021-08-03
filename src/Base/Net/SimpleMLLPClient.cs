@@ -100,8 +100,10 @@ namespace NHapiTools.Base.Net
         /// Send a HL7 message
         /// </summary>
         /// <param name="message">Message to send</param>
+        /// <param name="timeout">Read timeout, throws exception when receiving no data until timeout</param>
         /// <returns>Reply message</returns>
-        public string SendHL7Message(string message)
+        /// <exception cref="TimeoutException">throws exception on read timeout</exception>
+        public string SendHL7Message(string message, double timeout = 30000)
         {
             message = MLLP.CreateMLLPMessage(message);
 
@@ -113,6 +115,7 @@ namespace NHapiTools.Base.Net
             // Read the reply
             StringBuilder sb = new StringBuilder();
             bool messageComplete = false;
+            DateTime startReadingTime = DateTime.Now;
             while (!messageComplete)
             {
                 int b = streamToUse.ReadByte();
@@ -120,6 +123,12 @@ namespace NHapiTools.Base.Net
                     sb.Append((char) b);
 
                 messageComplete = MLLP.ValidateMLLPMessage(sb);
+
+                if (b > 0) // reset start reading time for timout check
+                    startReadingTime = DateTime.Now;
+
+                if (!messageComplete && DateTime.Now.Subtract(startReadingTime).TotalMilliseconds > 30)
+                    throw new TimeoutException($"Reading the HL7 reply timed out after {timeout} milliseconds.");
             }
             MLLP.StripMLLPContainer(sb);
 
