@@ -186,3 +186,6 @@ FakesAssemblies/
 .vs/
 *.ide
 *.zip
+
+# Rider
+.idea/
