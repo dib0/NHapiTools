@@ -22,7 +22,7 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "nhapi/3.0.0": {
+      "nhapi/3.0.2": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
@@ -174,7 +174,7 @@
       "NHapiTools.Base/1.0.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "5.0.0",
-          "nhapi": "3.0.0"
+          "nhapi": "3.0.2"
         },
         "runtime": {
           "NHapiTools.Base.dll": {}
@@ -202,12 +202,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "nhapi/3.0.0": {
+    "nhapi/3.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TU4y6XX7cbK3ioUSTJ4LFSqMlNDFp4j5qyj7MeNBPlkK2y5nen9XOadx21Hdj2ePXvsS1uJiH1c0H5zQ/Wreww==",
-      "path": "nhapi/3.0.0",
-      "hashPath": "nhapi.3.0.0.nupkg.sha512"
+      "sha512": "sha512-i/Skf+0IyVomGZCqpm9zHYgQ+2yS/n0dNAq34Y1E7kylYUbEn1l1dt4vg52umPB0o2ULoDUH/c0XcWpFilj4SQ==",
+      "path": "nhapi/3.0.2",
+      "hashPath": "nhapi.3.0.2.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",
