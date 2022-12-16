@@ -31,11 +31,15 @@ namespace NHapiTools.Base.Net
         /// </summary>
         /// <param name="hostname">Hostname to connect to.</param>
         /// <param name="port">Port</param>
-        public SimpleMLLPClient(string hostname, int port)
+        /// <param name="receiveTimeout">Timeout (in milliseconds) used when receiving a response from the recipient</param>
+        public SimpleMLLPClient(string hostname, int port, int receiveTimeout = 30000)
         {
             serverHostname = hostname;
             cCollection = new X509CertificateCollection();
-            tcpClient = new TcpClient(hostname, port);
+            tcpClient = new TcpClient(hostname, port)
+            {
+                ReceiveTimeout = receiveTimeout
+            };
             clientStream = tcpClient.GetStream();
             streamToUse = clientStream;
         }
@@ -46,8 +50,9 @@ namespace NHapiTools.Base.Net
         /// <param name="hostname">Hostname to connect to.</param>
         /// <param name="port">Port</param>
         /// <param name="encoding">Encoding of the byte stream (Default utf-8)</param>
-        public SimpleMLLPClient(string hostname, int port, Encoding encoding)
-            : this(hostname, port)
+        /// <param name="receiveTimeout">Timeout (in milliseconds) used when receiving a response from the recipient</param>
+        public SimpleMLLPClient(string hostname, int port, Encoding encoding, int receiveTimeout = 30000)
+            : this(hostname, port, receiveTimeout)
         {
             encodingForStream = encoding;            
         }
