@@ -113,7 +113,7 @@ namespace NHapiTools.Base.Net
             message = MLLP.CreateMLLPMessage(message);
 
             // Send the message
-            StreamWriter sw = new StreamWriter(streamToUse, encodingForStream);
+            StreamWriter sw = encodingForStream == null ?  new StreamWriter(streamToUse) : new StreamWriter(streamToUse, encodingForStream);
             sw.Write(message);
             sw.Flush();
 
