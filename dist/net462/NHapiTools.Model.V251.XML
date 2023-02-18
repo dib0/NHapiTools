@@ -5394,19 +5394,34 @@
             Add a new ORL_O22_TIMING to TQ2
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetSPECIMENRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetOBSERVATION_REQUEST_SPECIMENRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
             <summary>
-            Get SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+            Get OBSERVATION_REQUEST_SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetAllSPECIMENRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetAllOBSERVATION_REQUEST_SPECIMENRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
             <summary>
-            Get all SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+            Get all OBSERVATION_REQUEST_SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.AddSPECIMEN(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.AddOBSERVATION_REQUEST_SPECIMEN(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST)">
             <summary>
-            Add a new ORL_O34_OBSERVATION_REQUEST to SPECIMEN
+            Add a new ORL_O34_OBSERVATION_REQUEST to OBSERVATION_REQUEST_SPECIMEN
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetSACRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST_SPECIMEN)">
+            <summary>
+            Get SAC Records from ORL_O34_OBSERVATION_REQUEST_SPECIMEN
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetAllSACRecords(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST_SPECIMEN)">
+            <summary>
+            Get all SAC Records from ORL_O34_OBSERVATION_REQUEST_SPECIMEN
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.AddSAC(NHapi.Model.V251.Group.ORL_O34_OBSERVATION_REQUEST_SPECIMEN)">
+            <summary>
+            Add a new ORL_O34_OBSERVATION_REQUEST_SPECIMEN to SAC
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V251.Group.GroupExtensions.GetTIMINGRecords(NHapi.Model.V251.Group.ORL_O34_ORDER)">

@@ -26859,6 +26859,56 @@
             Remove an NonCoveredInsuranceCode record from IN2
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.GetPayorIDRecords(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Get PayorID Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.GetAllPayorIDRecords(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Get all PayorID Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.AddPayorID(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Add a new PayorID to IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.RemovePayorID(NHapi.Model.V23.Segment.IN2,NHapi.Model.V23.Datatype.CX)">
+            <summary>
+            Remove an PayorID record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.RemovePayorID(NHapi.Model.V23.Segment.IN2,System.Int32)">
+            <summary>
+            Remove an PayorID record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.GetPayorSubscriberIDRecords(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Get PayorSubscriberID Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.GetAllPayorSubscriberIDRecords(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Get all PayorSubscriberID Records from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.AddPayorSubscriberID(NHapi.Model.V23.Segment.IN2)">
+            <summary>
+            Add a new PayorSubscriberID to IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.RemovePayorSubscriberID(NHapi.Model.V23.Segment.IN2,NHapi.Model.V23.Datatype.CX)">
+            <summary>
+            Remove an PayorSubscriberID record from IN2
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.RemovePayorSubscriberID(NHapi.Model.V23.Segment.IN2,System.Int32)">
+            <summary>
+            Remove an PayorSubscriberID record from IN2
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V23.Segment.SegmentExtensions.GetRoomCoverageTypeAmountRecords(NHapi.Model.V23.Segment.IN2)">
             <summary>
             Get RoomCoverageTypeAmount Records from IN2

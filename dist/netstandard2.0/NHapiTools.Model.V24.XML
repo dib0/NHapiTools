@@ -19209,6 +19209,31 @@
             Remove an ObservationValue record from OBX
             </summary>
         </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetAbnormalFlagsRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get AbnormalFlags Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetAllAbnormalFlagsRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get all AbnormalFlags Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.AddAbnormalFlags(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Add a new AbnormalFlags to OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveAbnormalFlags(NHapi.Model.V24.Segment.OBX,NHapi.Model.V24.Datatype.IS)">
+            <summary>
+            Remove an AbnormalFlags record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveAbnormalFlags(NHapi.Model.V24.Segment.OBX,System.Int32)">
+            <summary>
+            Remove an AbnormalFlags record from OBX
+            </summary>
+        </member>
         <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetProbabilityRecords(NHapi.Model.V24.Segment.OBX)">
             <summary>
             Get Probability Records from OBX
@@ -19232,6 +19257,56 @@
         <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveProbability(NHapi.Model.V24.Segment.OBX,System.Int32)">
             <summary>
             Remove an Probability record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetNatureOfAbnormalTestRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get NatureOfAbnormalTest Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetAllNatureOfAbnormalTestRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get all NatureOfAbnormalTest Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.AddNatureOfAbnormalTest(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Add a new NatureOfAbnormalTest to OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveNatureOfAbnormalTest(NHapi.Model.V24.Segment.OBX,NHapi.Model.V24.Datatype.ID)">
+            <summary>
+            Remove an NatureOfAbnormalTest record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveNatureOfAbnormalTest(NHapi.Model.V24.Segment.OBX,System.Int32)">
+            <summary>
+            Remove an NatureOfAbnormalTest record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetResponsibleObserverRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get ResponsibleObserver Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetAllResponsibleObserverRecords(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Get all ResponsibleObserver Records from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.AddResponsibleObserver(NHapi.Model.V24.Segment.OBX)">
+            <summary>
+            Add a new ResponsibleObserver to OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveResponsibleObserver(NHapi.Model.V24.Segment.OBX,NHapi.Model.V24.Datatype.XCN)">
+            <summary>
+            Remove an ResponsibleObserver record from OBX
+            </summary>
+        </member>
+        <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.RemoveResponsibleObserver(NHapi.Model.V24.Segment.OBX,System.Int32)">
+            <summary>
+            Remove an ResponsibleObserver record from OBX
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V24.Segment.SegmentExtensions.GetObservationMethodRecords(NHapi.Model.V24.Segment.OBX)">

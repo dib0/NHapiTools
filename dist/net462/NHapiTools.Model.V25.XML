@@ -5469,21 +5469,6 @@
             Add a new ORL_O34_PATIENT to SPECIMEN
             </summary>
         </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetOBXRecords(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Get OBX Records from ORL_O34_SPECIMEN
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetAllOBXRecords(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Get all OBX Records from ORL_O34_SPECIMEN
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.AddOBX(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Add a new ORL_O34_SPECIMEN to OBX
-            </summary>
-        </member>
         <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetSACRecords(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
             <summary>
             Get SAC Records from ORL_O34_SPECIMEN
@@ -5497,21 +5482,6 @@
         <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.AddSAC(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
             <summary>
             Add a new ORL_O34_SPECIMEN to SAC
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetORDERRecords(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Get ORDER Records from ORL_O34_SPECIMEN
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetAllORDERRecords(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Get all ORDER Records from ORL_O34_SPECIMEN
-            </summary>
-        </member>
-        <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.AddORDER(NHapi.Model.V25.Group.ORL_O34_SPECIMEN)">
-            <summary>
-            Add a new ORL_O34_SPECIMEN to ORDER
             </summary>
         </member>
         <member name="M:NHapiTools.Model.V25.Group.GroupExtensions.GetTQ2Records(NHapi.Model.V25.Group.ORL_O34_TIMING)">

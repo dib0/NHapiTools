@@ -817,20 +817,22 @@
             and receiving a reply
             </summary>
         </member>
-        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.#ctor(System.String,System.Int32)">
+        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.#ctor(System.String,System.Int32,System.Int32)">
             <summary>
             Constructor
             </summary>
             <param name="hostname">Hostname to connect to.</param>
             <param name="port">Port</param>
+            <param name="receiveTimeout">Timeout (in milliseconds) used when receiving a response from the recipient</param>
         </member>
-        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.#ctor(System.String,System.Int32,System.Text.Encoding)">
+        <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.#ctor(System.String,System.Int32,System.Text.Encoding,System.Int32)">
             <summary>
             Constructor
             </summary>
             <param name="hostname">Hostname to connect to.</param>
             <param name="port">Port</param>
             <param name="encoding">Encoding of the byte stream (Default utf-8)</param>
+            <param name="receiveTimeout">Timeout (in milliseconds) used when receiving a response from the recipient</param>
         </member>
         <member name="M:NHapiTools.Base.Net.SimpleMLLPClient.EnableSsl">
             <summary>
