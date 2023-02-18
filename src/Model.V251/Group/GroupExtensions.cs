@@ -10790,11 +10790,11 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+        /// Get OBSERVATION_REQUEST_SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
         /// </summary>
-        public static IEnumerable GetSPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
+        public static IEnumerable GetOBSERVATION_REQUEST_SPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
         {
-            object[] result = message.GetRecords("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+            object[] result = message.GetRecords("OBSERVATION_REQUEST_SPECIMENRepetitionsUsed", "GetOBSERVATION_REQUEST_SPECIMEN");
 
             if ((result != null) && (result.Count() > 0))
             {
@@ -10804,19 +10804,49 @@ namespace NHapiTools.Model.V251.Group
         }
 
         /// <summary>
-        /// Get all SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
+        /// Get all OBSERVATION_REQUEST_SPECIMEN Records from ORL_O34_OBSERVATION_REQUEST
         /// </summary>
-        public static List<ORL_O34_SPECIMEN> GetAllSPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
+        public static List<ORL_O34_OBSERVATION_REQUEST_SPECIMEN> GetAllOBSERVATION_REQUEST_SPECIMENRecords(this ORL_O34_OBSERVATION_REQUEST message)
         {
-            return message.GetAllRecords<ORL_O34_SPECIMEN>("SPECIMENRepetitionsUsed", "GetSPECIMEN");
+            return message.GetAllRecords<ORL_O34_OBSERVATION_REQUEST_SPECIMEN>("OBSERVATION_REQUEST_SPECIMENRepetitionsUsed", "GetOBSERVATION_REQUEST_SPECIMEN");
         }
 
         /// <summary>
-        /// Add a new ORL_O34_OBSERVATION_REQUEST to SPECIMEN
+        /// Add a new ORL_O34_OBSERVATION_REQUEST to OBSERVATION_REQUEST_SPECIMEN
         /// </summary>
-        public static ORL_O34_SPECIMEN AddSPECIMEN(this ORL_O34_OBSERVATION_REQUEST message)
+        public static ORL_O34_OBSERVATION_REQUEST_SPECIMEN AddOBSERVATION_REQUEST_SPECIMEN(this ORL_O34_OBSERVATION_REQUEST message)
         {
-            return message.GetSPECIMEN(message.SPECIMENRepetitionsUsed);
+            return message.GetOBSERVATION_REQUEST_SPECIMEN(message.OBSERVATION_REQUEST_SPECIMENRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Get SAC Records from ORL_O34_OBSERVATION_REQUEST_SPECIMEN
+        /// </summary>
+        public static IEnumerable GetSACRecords(this ORL_O34_OBSERVATION_REQUEST_SPECIMEN message)
+        {
+            object[] result = message.GetRecords("SACRepetitionsUsed", "GetSAC");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all SAC Records from ORL_O34_OBSERVATION_REQUEST_SPECIMEN
+        /// </summary>
+        public static List<SAC> GetAllSACRecords(this ORL_O34_OBSERVATION_REQUEST_SPECIMEN message)
+        {
+            return message.GetAllRecords<SAC>("SACRepetitionsUsed", "GetSAC");
+        }
+
+        /// <summary>
+        /// Add a new ORL_O34_OBSERVATION_REQUEST_SPECIMEN to SAC
+        /// </summary>
+        public static SAC AddSAC(this ORL_O34_OBSERVATION_REQUEST_SPECIMEN message)
+        {
+            return message.GetSAC(message.SACRepetitionsUsed);
         }
 
         /// <summary>

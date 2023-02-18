@@ -3428,6 +3428,102 @@ namespace NHapiTools.Model.V23.Segment
         }
 
         /// <summary>
+        /// Get PayorID Records from IN2
+        /// </summary>
+        public static IEnumerable GetPayorIDRecords(this IN2 message)
+        {
+            object[] result = message.GetRecords("PayorIDRepetitionsUsed", "GetPayorID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PayorID Records from IN2
+        /// </summary>
+        public static List<CX> GetAllPayorIDRecords(this IN2 message)
+        {
+            return message.GetAllRecords<CX>("PayorIDRepetitionsUsed", "GetPayorID");
+        }
+
+        /// <summary>
+        /// Add a new PayorID to IN2
+        /// </summary>
+        public static CX AddPayorID(this IN2 message)
+        {
+            return message.GetPayorID(message.PayorIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PayorID record from IN2
+        /// </summary>
+        public static void RemovePayorID(this IN2 message, CX item)
+        {
+            int fieldNum = message.FindField("PayorID");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PayorID record from IN2
+        /// </summary>
+        public static void RemovePayorID(this IN2 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PayorID");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
+        }
+
+        /// <summary>
+        /// Get PayorSubscriberID Records from IN2
+        /// </summary>
+        public static IEnumerable GetPayorSubscriberIDRecords(this IN2 message)
+        {
+            object[] result = message.GetRecords("PayorSubscriberIDRepetitionsUsed", "GetPayorSubscriberID");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all PayorSubscriberID Records from IN2
+        /// </summary>
+        public static List<CX> GetAllPayorSubscriberIDRecords(this IN2 message)
+        {
+            return message.GetAllRecords<CX>("PayorSubscriberIDRepetitionsUsed", "GetPayorSubscriberID");
+        }
+
+        /// <summary>
+        /// Add a new PayorSubscriberID to IN2
+        /// </summary>
+        public static CX AddPayorSubscriberID(this IN2 message)
+        {
+            return message.GetPayorSubscriberID(message.PayorSubscriberIDRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an PayorSubscriberID record from IN2
+        /// </summary>
+        public static void RemovePayorSubscriberID(this IN2 message, CX item)
+        {
+            int fieldNum = message.FindField("PayorSubscriberID");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an PayorSubscriberID record from IN2
+        /// </summary>
+        public static void RemovePayorSubscriberID(this IN2 message, int itemIndex)
+        {
+            int fieldNum = message.FindField("PayorSubscriberID");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
+        }
+
+        /// <summary>
         /// Get RoomCoverageTypeAmount Records from IN2
         /// </summary>
         public static IEnumerable GetRoomCoverageTypeAmountRecords(this IN2 message)

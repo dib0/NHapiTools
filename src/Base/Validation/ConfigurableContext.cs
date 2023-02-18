@@ -6,8 +6,10 @@ using System.Reflection;
 using System.Configuration;
 using NHapi.Base.Validation;
 using NHapiTools.Base.Configuration;
-#if NET461
+#if NET462
 using System.Runtime.Remoting;
+using System.Linq;
+using System.Reflection;
 #endif
 
 namespace NHapiTools.Base.Validation
@@ -66,10 +68,9 @@ namespace NHapiTools.Base.Validation
             }
         }
 
-        private T ActivateObject<T>(string assembly, string classType) where T:class
+        private T ActivateObject<T>(string assemblyName, string classType) where T:class
         {
-        #if NETSTANDARD2_0
-            var loadedAssembly = Assembly.Load(assembly);
+            var loadedAssembly = Assembly.Load(assemblyName);
             var type =
                 loadedAssembly.GetTypes()
                     .SingleOrDefault(
@@ -77,15 +78,11 @@ namespace NHapiTools.Base.Validation
 
             if (type == null)
             {
-                throw new ArgumentException($"Could not find classType: {classType} in Assembly: {assembly}");
+                throw new ArgumentException($"Could not find classType: {classType} in Assembly: {assemblyName}");
             }
 
             var instance = Activator.CreateInstance(type);
             return instance as T;
-        #elif NET461
-            ObjectHandle oh = Activator.CreateInstance(assembly, classType);
-            return oh.Unwrap() as T;
-        #endif
         }
         #endregion
     }

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net461" Version="1.0.2">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net461" Version="1.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

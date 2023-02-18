@@ -9332,6 +9332,54 @@ namespace NHapiTools.Model.V24.Segment
         }
 
         /// <summary>
+        /// Get AbnormalFlags Records from OBX
+        /// </summary>
+        public static IEnumerable GetAbnormalFlagsRecords(this OBX message)
+        {
+            object[] result = message.GetRecords("AbnormalFlagsRepetitionsUsed", "GetAbnormalFlags");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all AbnormalFlags Records from OBX
+        /// </summary>
+        public static List<IS> GetAllAbnormalFlagsRecords(this OBX message)
+        {
+            return message.GetAllRecords<IS>("AbnormalFlagsRepetitionsUsed", "GetAbnormalFlags");
+        }
+
+        /// <summary>
+        /// Add a new AbnormalFlags to OBX
+        /// </summary>
+        public static IS AddAbnormalFlags(this OBX message)
+        {
+            return message.GetAbnormalFlags(message.AbnormalFlagsRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an AbnormalFlags record from OBX
+        /// </summary>
+        public static void RemoveAbnormalFlags(this OBX message, IS item)
+        {
+            int fieldNum = message.FindField("AbnormalFlags");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an AbnormalFlags record from OBX
+        /// </summary>
+        public static void RemoveAbnormalFlags(this OBX message, int itemIndex)
+        {
+            int fieldNum = message.FindField("AbnormalFlags");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
+        }
+
+        /// <summary>
         /// Get Probability Records from OBX
         /// </summary>
         public static IEnumerable GetProbabilityRecords(this OBX message)
@@ -9376,6 +9424,102 @@ namespace NHapiTools.Model.V24.Segment
         public static void RemoveProbability(this OBX message, int itemIndex)
         {
             int fieldNum = message.FindField("Probability");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
+        }
+
+        /// <summary>
+        /// Get NatureOfAbnormalTest Records from OBX
+        /// </summary>
+        public static IEnumerable GetNatureOfAbnormalTestRecords(this OBX message)
+        {
+            object[] result = message.GetRecords("NatureOfAbnormalTestRepetitionsUsed", "GetNatureOfAbnormalTest");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all NatureOfAbnormalTest Records from OBX
+        /// </summary>
+        public static List<ID> GetAllNatureOfAbnormalTestRecords(this OBX message)
+        {
+            return message.GetAllRecords<ID>("NatureOfAbnormalTestRepetitionsUsed", "GetNatureOfAbnormalTest");
+        }
+
+        /// <summary>
+        /// Add a new NatureOfAbnormalTest to OBX
+        /// </summary>
+        public static ID AddNatureOfAbnormalTest(this OBX message)
+        {
+            return message.GetNatureOfAbnormalTest(message.NatureOfAbnormalTestRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an NatureOfAbnormalTest record from OBX
+        /// </summary>
+        public static void RemoveNatureOfAbnormalTest(this OBX message, ID item)
+        {
+            int fieldNum = message.FindField("NatureOfAbnormalTest");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an NatureOfAbnormalTest record from OBX
+        /// </summary>
+        public static void RemoveNatureOfAbnormalTest(this OBX message, int itemIndex)
+        {
+            int fieldNum = message.FindField("NatureOfAbnormalTest");
+            message.RemoveRepetition(fieldNum + 1, itemIndex);
+        }
+
+        /// <summary>
+        /// Get ResponsibleObserver Records from OBX
+        /// </summary>
+        public static IEnumerable GetResponsibleObserverRecords(this OBX message)
+        {
+            object[] result = message.GetRecords("ResponsibleObserverRepetitionsUsed", "GetResponsibleObserver");
+
+            if ((result != null) && (result.Count() > 0))
+            {
+                for (int i = 0; i < result.Count(); i++)
+                    yield return result[i];
+            }
+        }
+
+        /// <summary>
+        /// Get all ResponsibleObserver Records from OBX
+        /// </summary>
+        public static List<XCN> GetAllResponsibleObserverRecords(this OBX message)
+        {
+            return message.GetAllRecords<XCN>("ResponsibleObserverRepetitionsUsed", "GetResponsibleObserver");
+        }
+
+        /// <summary>
+        /// Add a new ResponsibleObserver to OBX
+        /// </summary>
+        public static XCN AddResponsibleObserver(this OBX message)
+        {
+            return message.GetResponsibleObserver(message.ResponsibleObserverRepetitionsUsed);
+        }
+
+        /// <summary>
+        /// Remove an ResponsibleObserver record from OBX
+        /// </summary>
+        public static void RemoveResponsibleObserver(this OBX message, XCN item)
+        {
+            int fieldNum = message.FindField("ResponsibleObserver");
+            message.RemoveRepetition(fieldNum + 1, item);
+        }
+
+        /// <summary>
+        /// Remove an ResponsibleObserver record from OBX
+        /// </summary>
+        public static void RemoveResponsibleObserver(this OBX message, int itemIndex)
+        {
+            int fieldNum = message.FindField("ResponsibleObserver");
             message.RemoveRepetition(fieldNum + 1, itemIndex);
         }
 

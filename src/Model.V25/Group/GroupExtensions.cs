@@ -10940,36 +10940,6 @@ namespace NHapiTools.Model.V25.Group
         }
 
         /// <summary>
-        /// Get OBX Records from ORL_O34_SPECIMEN
-        /// </summary>
-        public static IEnumerable GetOBXRecords(this ORL_O34_SPECIMEN message)
-        {
-            object[] result = message.GetRecords("OBXRepetitionsUsed", "GetOBX");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all OBX Records from ORL_O34_SPECIMEN
-        /// </summary>
-        public static List<OBX> GetAllOBXRecords(this ORL_O34_SPECIMEN message)
-        {
-            return message.GetAllRecords<OBX>("OBXRepetitionsUsed", "GetOBX");
-        }
-
-        /// <summary>
-        /// Add a new ORL_O34_SPECIMEN to OBX
-        /// </summary>
-        public static OBX AddOBX(this ORL_O34_SPECIMEN message)
-        {
-            return message.GetOBX(message.OBXRepetitionsUsed);
-        }
-
-        /// <summary>
         /// Get SAC Records from ORL_O34_SPECIMEN
         /// </summary>
         public static IEnumerable GetSACRecords(this ORL_O34_SPECIMEN message)
@@ -10997,36 +10967,6 @@ namespace NHapiTools.Model.V25.Group
         public static SAC AddSAC(this ORL_O34_SPECIMEN message)
         {
             return message.GetSAC(message.SACRepetitionsUsed);
-        }
-
-        /// <summary>
-        /// Get ORDER Records from ORL_O34_SPECIMEN
-        /// </summary>
-        public static IEnumerable GetORDERRecords(this ORL_O34_SPECIMEN message)
-        {
-            object[] result = message.GetRecords("ORDERRepetitionsUsed", "GetORDER");
-
-            if ((result != null) && (result.Count() > 0))
-            {
-                for (int i = 0; i < result.Count(); i++)
-                    yield return result[i];
-            }
-        }
-
-        /// <summary>
-        /// Get all ORDER Records from ORL_O34_SPECIMEN
-        /// </summary>
-        public static List<ORL_O34_ORDER> GetAllORDERRecords(this ORL_O34_SPECIMEN message)
-        {
-            return message.GetAllRecords<ORL_O34_ORDER>("ORDERRepetitionsUsed", "GetORDER");
-        }
-
-        /// <summary>
-        /// Add a new ORL_O34_SPECIMEN to ORDER
-        /// </summary>
-        public static ORL_O34_ORDER AddORDER(this ORL_O34_SPECIMEN message)
-        {
-            return message.GetORDER(message.ORDERRepetitionsUsed);
         }
 
         /// <summary>

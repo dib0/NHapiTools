@@ -22,62 +22,163 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "nhapi/3.0.2": {
+      "nhapi/3.2.2": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "5.0.0"
+          "nhapi.base": "3.2.0",
+          "nhapi.model.v21": "3.2.0",
+          "nhapi.model.v22": "3.2.0",
+          "nhapi.model.v23": "3.2.0",
+          "nhapi.model.v231": "3.2.0",
+          "nhapi.model.v24": "3.2.0",
+          "nhapi.model.v25": "3.2.0",
+          "nhapi.model.v251": "3.2.0",
+          "nhapi.model.v26": "3.2.0",
+          "nhapi.model.v27": "3.2.0",
+          "nhapi.model.v271": "3.2.0",
+          "nhapi.model.v28": "3.2.0",
+          "nhapi.model.v281": "3.2.0"
+        }
+      },
+      "nhapi.base/3.2.0": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/NHapi.Base.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v21/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V21.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v22/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V22.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v23/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V23.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v231/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V231.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v24/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V24.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v25/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V25.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v251/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V251.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v26/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V26.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v27/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V27.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v271/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V271.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v28/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V28.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          },
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "nhapi.model.v281/3.2.0": {
+        "dependencies": {
+          "nhapi.base": "3.2.0"
+        },
+        "runtime": {
           "lib/netstandard2.0/NHapi.Model.V281.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -89,15 +190,15 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/5.0.0": {
+      "System.Configuration.ConfigurationManager/6.0.0": {
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "5.0.0",
-          "System.Security.Permissions": "5.0.0"
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
+          "System.Security.Permissions": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -130,36 +231,36 @@
           }
         }
       },
-      "System.Security.AccessControl/5.0.0": {
+      "System.Security.AccessControl/6.0.0": {
         "dependencies": {
           "System.Security.Principal.Windows": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/5.0.0": {
+      "System.Security.Cryptography.ProtectedData/6.0.0": {
         "dependencies": {
           "System.Memory": "4.5.4"
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
-      "System.Security.Permissions/5.0.0": {
+      "System.Security.Permissions/6.0.0": {
         "dependencies": {
-          "System.Security.AccessControl": "5.0.0"
+          "System.Security.AccessControl": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Permissions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -173,8 +274,8 @@
       },
       "NHapiTools.Base/1.0.0": {
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "5.0.0",
-          "nhapi": "3.0.2"
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "nhapi": "3.2.2"
         },
         "runtime": {
           "NHapiTools.Base.dll": {}
@@ -202,12 +303,103 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "nhapi/3.0.2": {
+    "nhapi/3.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-i/Skf+0IyVomGZCqpm9zHYgQ+2yS/n0dNAq34Y1E7kylYUbEn1l1dt4vg52umPB0o2ULoDUH/c0XcWpFilj4SQ==",
-      "path": "nhapi/3.0.2",
-      "hashPath": "nhapi.3.0.2.nupkg.sha512"
+      "sha512": "sha512-NvYPWR6EnHizlfsxDC6Q9gLoczNUdbAUaovcgW9GDMYf0YknTWmejlzplI+Rp/P1ZdxBcq+NWWqDp3FCklEHeQ==",
+      "path": "nhapi/3.2.2",
+      "hashPath": "nhapi.3.2.2.nupkg.sha512"
+    },
+    "nhapi.base/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4DhPIas3BTVoo5+3rOrVwMt42EDKzuJv28p1cNrGk4FhDVq08Mm/Tgr6LndAqhhj+iyA4GCdnyLo7D/RGPPCjA==",
+      "path": "nhapi.base/3.2.0",
+      "hashPath": "nhapi.base.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v21/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eKY9qsk6pAOp5CYwP+jIjZ+OlzCNGIAGp9jDOxPABCKQx0R6UhtJIa5MI/sIW4UbMaMFNeVVQ/bY2Yvg481WPw==",
+      "path": "nhapi.model.v21/3.2.0",
+      "hashPath": "nhapi.model.v21.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v22/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zWMZnedvr8QunFwFfdrEiNdD3Dv3x4YhGHRoyWAsChFmQe8vXDGiaw7Ko6cr0JTS30ZWt4+x3OZmqgMOYCLXng==",
+      "path": "nhapi.model.v22/3.2.0",
+      "hashPath": "nhapi.model.v22.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v23/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MeApTCjnFZ+spIJeRNxo3/0LvniWOoh9wvNivlMqO63Vl3FdbqEXtUCRk1zf8Xld+sPubQ31vRKuLr0SzBXFlQ==",
+      "path": "nhapi.model.v23/3.2.0",
+      "hashPath": "nhapi.model.v23.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v231/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+MbsPndLf/Y/fVWPhIv+m/hpBuEpMN6PL+mPgSjx5XGGdiaCQEYZuIso/EQkW+EVkoQEY5tW4ShNHsTjW7pZSw==",
+      "path": "nhapi.model.v231/3.2.0",
+      "hashPath": "nhapi.model.v231.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v24/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dtrWMS+Y69ACm1vU5DZBqZ6jaHdnIrRjc1apRAwxXfvZ2RAEBdanl5/80R/PMKTaNtYDzgnzTRCNjCENKYZ7ug==",
+      "path": "nhapi.model.v24/3.2.0",
+      "hashPath": "nhapi.model.v24.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v25/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-78VBbNgOKeWNctM19qk3HtAgP9xVEjq/wEY+9ypRd33P8lKSVkR4ovGq0WZlWG+wX6RyHHr24puxiDoizrTYKA==",
+      "path": "nhapi.model.v25/3.2.0",
+      "hashPath": "nhapi.model.v25.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v251/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q06qCt2MsN4/G6Y2ORtOliUABwFO/mtJ+uLpv+wHy1LmyHfqcKfLqusuE5xPS+SIey80j7hsER9zE8oXYhi/nA==",
+      "path": "nhapi.model.v251/3.2.0",
+      "hashPath": "nhapi.model.v251.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v26/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cxqll6EsgZJ7nCS4D+8wExkfRTJg6i2DMn8xxPQUxanpUhjJ9vSgIsffdfUaJdW8wsJNHXYVmdtGwZ/89uk7sA==",
+      "path": "nhapi.model.v26/3.2.0",
+      "hashPath": "nhapi.model.v26.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v27/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Frq1Jo5hjIkcr/tQOYiPaI7LNih3Xk1fbtx9+Vbe7X79m55XDPh66fFulEZxl+7pjjdgDT+VT7qBwbQcD2ziwQ==",
+      "path": "nhapi.model.v27/3.2.0",
+      "hashPath": "nhapi.model.v27.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v271/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qy7zQAsA1T8VBj3qXcERjDy14itiBA+cfju2JWtnEuoYjy8xjT3uqL+DlnLMR0C4rexYBmYayL31mC/7418RrQ==",
+      "path": "nhapi.model.v271/3.2.0",
+      "hashPath": "nhapi.model.v271.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v28/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-to4BrMPYOWfhiAQEkjsjWpB+0Wr53KlGwG/eLHYx5sgTh8SakCdZV46dpvqbG5+H04L79AuyRLm/vT9Ke38Kpw==",
+      "path": "nhapi.model.v28/3.2.0",
+      "hashPath": "nhapi.model.v28.3.2.0.nupkg.sha512"
+    },
+    "nhapi.model.v281/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aD10lqsadeY24NnsMseIPZgP7uTHbtxMz/0QkYdP/91+2Z6lxBMyFUGeZ9e7e/Uu1eYLlrFI2ve+e+oKnznjyQ==",
+      "path": "nhapi.model.v281/3.2.0",
+      "hashPath": "nhapi.model.v281.3.2.0.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",
@@ -216,12 +408,12 @@
       "path": "system.buffers/4.5.1",
       "hashPath": "system.buffers.4.5.1.nupkg.sha512"
     },
-    "System.Configuration.ConfigurationManager/5.0.0": {
+    "System.Configuration.ConfigurationManager/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aM7cbfEfVNlEEOj3DsZP+2g9NRwbkyiAv2isQEzw7pnkDg9ekCU2m1cdJLM02Uq691OaCS91tooaxcEn8d0q5w==",
-      "path": "system.configuration.configurationmanager/5.0.0",
-      "hashPath": "system.configuration.configurationmanager.5.0.0.nupkg.sha512"
+      "sha512": "sha512-7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g==",
+      "path": "system.configuration.configurationmanager/6.0.0",
+      "hashPath": "system.configuration.configurationmanager.6.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",
@@ -233,7 +425,7 @@
     "System.Numerics.Vectors/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
       "path": "system.numerics.vectors/4.4.0",
       "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
     },
@@ -244,26 +436,26 @@
       "path": "system.runtime.compilerservices.unsafe/4.5.3",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
     },
-    "System.Security.AccessControl/5.0.0": {
+    "System.Security.AccessControl/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
-      "path": "system.security.accesscontrol/5.0.0",
-      "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
+      "sha512": "sha512-AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
+      "path": "system.security.accesscontrol/6.0.0",
+      "hashPath": "system.security.accesscontrol.6.0.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.ProtectedData/5.0.0": {
+    "System.Security.Cryptography.ProtectedData/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
-      "path": "system.security.cryptography.protecteddata/5.0.0",
-      "hashPath": "system.security.cryptography.protecteddata.5.0.0.nupkg.sha512"
+      "sha512": "sha512-rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
+      "path": "system.security.cryptography.protecteddata/6.0.0",
+      "hashPath": "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512"
     },
-    "System.Security.Permissions/5.0.0": {
+    "System.Security.Permissions/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uE8juAhEkp7KDBCdjDIE3H9R1HJuEHqeqX8nLX9gmYKWwsqk3T5qZlPx8qle5DPKimC/Fy3AFTdV7HamgCh9qQ==",
-      "path": "system.security.permissions/5.0.0",
-      "hashPath": "system.security.permissions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
+      "path": "system.security.permissions/6.0.0",
+      "hashPath": "system.security.permissions.6.0.0.nupkg.sha512"
     },
     "System.Security.Principal.Windows/5.0.0": {
       "type": "package",
