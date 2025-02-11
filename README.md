@@ -39,9 +39,6 @@ https://github.com/dib0/NHapiTools
 Also check out HL7Fuse:
 https://github.com/dib0/HL7Fuse
 
-And, of course, The NHapi Beginner’s Guide:
-http://www.smashwords.com/books/view/344824
-
 ## The Structure of NHapiTools
 
 For the most important part NHapiTools is a set of extension methods that extend NHapi. NHapi uses a code generator to generate the HL7 message structure into classes and then assemblies. NHapiTools uses the same mechanism to generate classes with extension methods based on the NHapi assemblies. The generated classes are provided within the source, so you don’t have to do this (of course, if you want to, you can).
